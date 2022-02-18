@@ -14,11 +14,12 @@ class ImageScroller(SampleBase):
         print('++++++++++++++++++++++++++++')
         url = requests.get("https://www.rotowire.com/rss/news.php?sport=NFL")
         text = url.text
+        print(text)
 
-        data = json.loads(text)
+        # data = json.loads(text)
 
         # user = data[0]
-        print(data)
+        # print(data)
 
         # address = user['address']
         # print(address)
