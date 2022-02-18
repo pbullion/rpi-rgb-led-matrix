@@ -15,7 +15,6 @@ class ImageScroller(SampleBase):
         NewsFeed = feedparser.parse("https://www.rotowire.com/rss/news.php?sport=NBA")
         entry = NewsFeed.entries[1]
         print(entry)
-        print entry.keys()
         # url = requests.get("https://www.rotowire.com/rss/news.php?sport=NBA")
         # text = url.text.items
 
