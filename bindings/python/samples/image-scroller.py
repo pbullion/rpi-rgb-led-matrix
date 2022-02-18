@@ -10,6 +10,7 @@ class ImageScroller(SampleBase):
         self.parser.add_argument("-i", "--image", help="The image to display", default="../../../examples-api-use/runtext.ppm")
 
     def run(self):
+        print('Please wait while the program is loading...')
         print
         if not 'image' in self.__dict__:
             self.image = Image.open(self.args.image).convert('RGB')
@@ -17,7 +18,6 @@ class ImageScroller(SampleBase):
 
         double_buffer = self.matrix.CreateFrameCanvas()
         img_width, img_height = self.image.size
-        print('Please wait while the program is loading...')
         # let's scroll
         xpos = 0
         while True:
