@@ -12,7 +12,7 @@ class ImageScroller(SampleBase):
 
     def run(self):
         print('++++++++++++++++++++++++++++')
-        url = requests.get("https://www.rotowire.com/rss/news.php?sport=NFL")
+        url = requests.get("https://www.rotowire.com/rss/news.php?sport=NBA")
         text = url.text
         print(text)
 
