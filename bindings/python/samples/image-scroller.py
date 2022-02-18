@@ -2,6 +2,7 @@
 import time
 from samplebase import SampleBase
 from PIL import Image
+import requests, json
 
 
 class ImageScroller(SampleBase):
@@ -10,7 +11,17 @@ class ImageScroller(SampleBase):
         self.parser.add_argument("-i", "--image", help="The image to display", default="../../../examples-api-use/runtext.ppm")
 
     def run(self):
-        print('Please wait while the program is loading...')
+        print('++++++++++++++++++++++++++++')
+        url = requests.get("https://jsonplaceholder.typicode.com/users")
+        text = url.text
+
+        data = json.loads(text)
+
+        user = data[0]
+        print(user['name'])
+
+        address = user['address']
+        print(address)
         print
         if not 'image' in self.__dict__:
             self.image = Image.open(self.args.image).convert('RGB')
