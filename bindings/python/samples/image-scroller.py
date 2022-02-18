@@ -12,16 +12,16 @@ class ImageScroller(SampleBase):
 
     def run(self):
         print('++++++++++++++++++++++++++++')
-        url = requests.get("https://jsonplaceholder.typicode.com/users")
+        url = requests.get("https://www.rotowire.com/rss/news.php?sport=NFL")
         text = url.text
 
         data = json.loads(text)
 
-        user = data[0]
-        print(user['name'])
+        # user = data[0]
+        print(data)
 
-        address = user['address']
-        print(address)
+        # address = user['address']
+        # print(address)
         print
         if not 'image' in self.__dict__:
             self.image = Image.open(self.args.image).convert('RGB')
