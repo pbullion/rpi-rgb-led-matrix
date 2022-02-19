@@ -19,7 +19,7 @@ class RunText(SampleBase):
         print
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
-        font.LoadFont("../../../fonts/9x18B.bdf")
+        font.LoadFont("../../../fonts/clR6x12.bdf")
         textColor = graphics.Color(0, 255, 0)
         pos = offscreen_canvas.width
         my_text = text
