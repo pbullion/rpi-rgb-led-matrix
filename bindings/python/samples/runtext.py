@@ -5,7 +5,6 @@ from rgbmatrix import graphics
 import time
 import feedparser
 
-
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
         print(self)
