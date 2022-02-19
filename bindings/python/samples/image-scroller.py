@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 import time
+import feedparser
 from samplebase import SampleBase
 from PIL import Image
 import requests, json
-import feedparser
 
 class ImageScroller(SampleBase):
     def __init__(self, *args, **kwargs):
