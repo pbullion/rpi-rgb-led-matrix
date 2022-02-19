@@ -3,6 +3,7 @@
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
+import feedparser
 
 
 class RunText(SampleBase):
@@ -11,6 +12,10 @@ class RunText(SampleBase):
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
 
     def run(self):
+        print('++++++++++++++++++++++++++++')
+        NewsFeed = feedparser.parse("https://www.rotowire.com/rss/news.php?sport=NBA")
+        entry = NewsFeed.entries[1]
+        print(entry)
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
         font.LoadFont("../../../fonts/7x13.bdf")
