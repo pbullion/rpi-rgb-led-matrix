@@ -12,19 +12,17 @@ class ImageScroller(SampleBase):
 
     def run(self):
         print('++++++++++++++++++++++++++++')
-        NewsFeed = feedparser.parse("https://www.rotowire.com/rss/news.php?sport=NBA")
-        entry = NewsFeed.entries[1]
-        print(entry)
-        # url = requests.get("https://www.rotowire.com/rss/news.php?sport=NBA")
-        # text = url.text.items
+        url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
+        text = url.text
+        print(text)
 
-        # data = json.loads(text)
+        data = json.loads(text)
 
-        # user = data[0]
-        # print(data)
+        user = data[0]
+        print(data)
 
-        # address = user['address']
-        # print(address)
+        address = user['address']
+        print(address)
         print
         if not 'image' in self.__dict__:
             self.image = Image.open(self.args.image).convert('RGB')
