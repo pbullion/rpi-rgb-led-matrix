@@ -3,7 +3,7 @@
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
-import feedparser
+from feedparser import feedparser
 
 
 class RunText(SampleBase):
