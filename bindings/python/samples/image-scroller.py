@@ -7,6 +7,7 @@ import requests, json
 
 class ImageScroller(SampleBase):
     def __init__(self, *args, **kwargs):
+        print(self)
         super(ImageScroller, self).__init__(*args, **kwargs)
         self.parser.add_argument("-i", "--image", help="The image to display", default="../../../examples-api-use/runtext.ppm")
 
