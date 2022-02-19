@@ -16,12 +16,7 @@ class ImageScroller(SampleBase):
         print(text)
 
         data = json.loads(text)
-
-        user = data[0]
         print(data)
-
-        address = user['address']
-        print(address)
         print
         if not 'image' in self.__dict__:
             self.image = Image.open(self.args.image).convert('RGB')
