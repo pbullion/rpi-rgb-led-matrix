@@ -3,7 +3,6 @@ import time
 from samplebase import SampleBase
 from PIL import Image
 import requests, json
-import feedparser
 
 class ImageScroller(SampleBase):
     def __init__(self, *args, **kwargs):
@@ -12,7 +11,7 @@ class ImageScroller(SampleBase):
 
     def run(self):
         print('++++++++++++++++++++++++++++')
-        NewsFeed = feedparser.parse("https://www.rotowire.com/rss/news.php?sport=NBA")
+        NewsFeed = self.parser("https://www.rotowire.com/rss/news.php?sport=NBA")
         entry = NewsFeed.entries[1]
         print(entry)
         # url = requests.get("https://www.rotowire.com/rss/news.php?sport=NBA")
