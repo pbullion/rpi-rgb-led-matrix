@@ -14,9 +14,6 @@ class ImageScroller(SampleBase):
         url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
         text = url.text
         print(text)
-
-        data = json.loads(text)
-        print(data)
         print
         if not 'image' in self.__dict__:
             self.image = Image.open(self.args.image).convert('RGB')

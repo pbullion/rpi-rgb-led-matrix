@@ -3,7 +3,7 @@
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
-import feedparser
+import requests, json
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
@@ -13,9 +13,10 @@ class RunText(SampleBase):
 
     def run(self):
         print('++++++++++++++++++++++++++++')
-        NewsFeed = feedparser.parse("https://www.rotowire.com/rss/news.php?sport=NBA")
-        entry = NewsFeed.entries[1]
-        print(entry)
+        url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
+        text = url.text
+        print(text)
+        print
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
         font.LoadFont("../../../fonts/7x13.bdf")
