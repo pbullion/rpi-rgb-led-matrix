@@ -31,7 +31,9 @@ class RunText(SampleBase):
         while True:
             for string in my_text:
                 running = True
-                if '-' in string and '$' in string:
+                if 'CURRENT WEATHER' in string:
+                    color = blue
+                elif '-' in string and '$' in string:
                     color = red
                 elif '+' in string and '$' in string:
                     color = green
