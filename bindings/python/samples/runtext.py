@@ -24,17 +24,16 @@ class RunText(SampleBase):
         red = graphics.Color(255, 0, 0)
         pos = offscreen_canvas.width
         # my_text = text
-        strings = ['Helllllllllllllllllllllo mutha fucka','tits fart turd and twat']
+        strings = ['Hellllllo mutha fucka','tits fart turd and twat']
 
         while True:
             for string in strings:
-                while True:
+                while done:
                     offscreen_canvas.Clear()
                     len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, string)
                     pos -= 1
                     if (pos + len < 0):
-                        print(pos)
-                        print(pos + len < 0)
+                        done = true
                         pos = offscreen_canvas.width
                     time.sleep(0.02)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
