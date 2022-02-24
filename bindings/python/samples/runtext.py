@@ -4,6 +4,7 @@ from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
 import requests, json
+import asyncio
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
