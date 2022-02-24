@@ -31,7 +31,7 @@ class RunText(SampleBase):
             for string in strings:
                 await print(string)
                 await offscreen_canvas.Clear()
-                await len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, string)
+                len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, string)
                 await pos -= 1
                 if (pos + len < 0):
                     await pos = offscreen_canvas.width
@@ -39,7 +39,7 @@ class RunText(SampleBase):
                 await offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
                 await offscreen_canvas.Clear()
-                await len = graphics.DrawText(offscreen_canvas, font, pos, 24, red, string)
+                len = graphics.DrawText(offscreen_canvas, font, pos, 24, red, string)
                 await pos -= 1
                 if (pos + len < 0):
                     await pos = offscreen_canvas.width
