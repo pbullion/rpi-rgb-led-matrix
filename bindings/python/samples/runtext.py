@@ -4,7 +4,6 @@ from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
 import requests, json
-import asyncio
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
@@ -12,11 +11,11 @@ class RunText(SampleBase):
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
 
-    async def run(self):
+    def run(self):
         print('++++++++++++++++++++++++++++')
         url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
         text = url.text
-        # print(text)
+        print(text)
         print
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
@@ -27,24 +26,19 @@ class RunText(SampleBase):
         # my_text = text
         strings = ['Helllllllllllllllllllllo mutha fucka','tits fart turd and twat']
 
-        while True:
-            for string in strings:
-                await print(string)
-                await offscreen_canvas.Clear()
-                len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, string)
+        async def scrollingText(self,color):
+            offscreen_canvas.Clear()
+                len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                 pos -= 1
                 if (pos + len < 0):
                     pos = offscreen_canvas.width
-                await time.sleep(0.02)
+                time.sleep(0.02)
                 offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
-                await offscreen_canvas.Clear()
-                len = graphics.DrawText(offscreen_canvas, font, pos, 24, red, string)
-                pos -= 1
-                if (pos + len < 0):
-                    pos = offscreen_canvas.width
-                await time.sleep(0.02)
-                offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+        while True:
+            for string in strings:
+                await scrollingText(green)
+                await scrollingText(red)
 
 
 # Main function
