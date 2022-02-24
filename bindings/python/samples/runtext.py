@@ -24,7 +24,7 @@ class RunText(SampleBase):
         red = graphics.Color(255, 0, 0)
         pos = offscreen_canvas.width
         # my_text = text
-        my_text = ['Helllllllllllllllllllllo mutha fucka','tits fart turd and twat']
+        strings = ['Helllllllllllllllllllllo mutha fucka','tits fart turd and twat']
 
         while True:
             for string in strings:
