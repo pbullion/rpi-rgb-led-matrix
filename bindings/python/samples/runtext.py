@@ -11,7 +11,7 @@ class RunText(SampleBase):
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
 
-    async def run(self):
+    def run(self):
         print('++++++++++++++++++++++++++++')
         url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
         text = url.text
@@ -26,9 +26,9 @@ class RunText(SampleBase):
         # my_text = text
         strings = ['Helllllllllllllllllllllo mutha fucka','tits fart turd and twat']
 
-        async def getScrollingText():
+        async def getScrollingText(color, string):
             offscreen_canvas.Clear()
-            len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, string)
+            len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
             pos -= 1
             if (pos + len < 0):
                 pos = offscreen_canvas.width
@@ -36,8 +36,8 @@ class RunText(SampleBase):
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
         while True:
-            async for string in strings:
-                yield getScrollingText()
+            for string in strings:
+                getScrollingText(green, string)
 
 
 
