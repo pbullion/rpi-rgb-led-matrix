@@ -4,6 +4,7 @@ from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
 import requests, json
+import asyncio
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
@@ -26,7 +27,7 @@ class RunText(SampleBase):
         # my_text = text
         strings = ['Helllllllllllllllllllllo mutha fucka','tits fart turd and twat']
 
-        async def scrollingText(self,color):
+        async def scrollingText(string, color):
             offscreen_canvas.Clear()
             len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
             pos -= 1
@@ -34,12 +35,10 @@ class RunText(SampleBase):
                 pos = offscreen_canvas.width
             time.sleep(0.02)
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
-            return
 
         while True:
-            await for string in strings:
-                await scrollingText(green)
-                await scrollingText(red)
+            for string in strings:
+                await scrollingText(string, green)
 
 
 # Main function
