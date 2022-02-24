@@ -15,7 +15,7 @@ class RunText(SampleBase):
         print('++++++++++++++++++++++++++++')
         url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
         text = url.text
-        # print(text)
+        print(text)
         print
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
@@ -24,14 +24,18 @@ class RunText(SampleBase):
         red = graphics.Color(255, 0, 0)
         pos = offscreen_canvas.width
         # my_text = text
-        strings = ['Hellllllo mutha fucka','tits fart turd and twat']
+        strings = ['Hellllllo -3 mut','tits fart turd and twat']
 
         while True:
             for string in strings:
                 done = True
+                if '-' in string
+                    color = red
+                else
+                    color = green
                 while done:
                     offscreen_canvas.Clear()
-                    len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, string)
+                    len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                     pos -= 1
                     if (pos + len < 0):
                         done = False
