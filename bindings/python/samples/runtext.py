@@ -26,7 +26,7 @@ class RunText(SampleBase):
         # my_text = text
         strings = ['Helllllllllllllllllllllo mutha fucka','tits fart turd and twat']
 
-        async def getScrollingText(color, string):
+        def getScrollingText(color, string):
             offscreen_canvas.Clear()
             len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
             pos -= 1
