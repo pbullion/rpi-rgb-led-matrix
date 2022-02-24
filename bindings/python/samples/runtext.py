@@ -4,7 +4,6 @@ from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
 import requests, json
-import asyncio
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
@@ -12,12 +11,11 @@ class RunText(SampleBase):
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
 
-    async def run(self):
-        await asyncio.sleep(0)
+    def run(self):
         print('++++++++++++++++++++++++++++')
         url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
         text = url.text
-        # print(text)
+        print(text)
         print
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
@@ -26,16 +24,18 @@ class RunText(SampleBase):
         red = graphics.Color(255, 0, 0)
         pos = offscreen_canvas.width
         # my_text = text
-        strings = ['Helllllllllllllllllllllo mutha fucka','tits fart turd and twat']
-        async for string in strings:
-            print(string)
-            offscreen_canvas.Clear()
-            len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, string)
-            pos -= 1
-            if (pos + len < 0):
-                pos = offscreen_canvas.width
-            time.sleep(0.02)
-            offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+        my_text = ['Helllllllllllllllllllllo mutha fucka','tits fart turd and twat']
+
+        while True:
+            for string in strings:
+                offscreen_canvas.Clear()
+                len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, string)
+                pos -= 1
+                if (pos + len < 0):
+                    pos = offscreen_canvas.width
+                time.sleep(0.02)
+                offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+
 
 
 # Main function
