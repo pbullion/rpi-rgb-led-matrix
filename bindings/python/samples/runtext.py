@@ -30,7 +30,7 @@ class RunText(SampleBase):
         while True:
             async for string in strings:
                 offscreen_canvas.Clear()
-                len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, string)
+                len = graphics.DrawText(offscreen_canvas, font, pos, 24, red, string)
                 pos -= 1
                 if (pos + len < 0):
                     pos = offscreen_canvas.width
