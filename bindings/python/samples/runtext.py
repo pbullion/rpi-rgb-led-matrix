@@ -27,7 +27,7 @@ class RunText(SampleBase):
         strings = ['Helllllllllllllllllllllo mutha fucka','tits fart turd and twat']
 
         while True:
-            for string in strings:
+            async for string in strings:
                 print(string)
                 offscreen_canvas.Clear()
                 len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, string)
