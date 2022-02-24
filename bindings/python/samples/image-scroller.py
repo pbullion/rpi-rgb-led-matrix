@@ -2,7 +2,7 @@
 import time
 from samplebase import SampleBase
 from PIL import Image
-import requests, json
+
 
 class ImageScroller(SampleBase):
     def __init__(self, *args, **kwargs):
@@ -10,17 +10,13 @@ class ImageScroller(SampleBase):
         self.parser.add_argument("-i", "--image", help="The image to display", default="../../../examples-api-use/runtext.ppm")
 
     def run(self):
-        print('++++++++++++++++++++++++++++')
-        url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
-        text = url.text
-        print(text)
-        print
         if not 'image' in self.__dict__:
             self.image = Image.open(self.args.image).convert('RGB')
         self.image.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
 
         double_buffer = self.matrix.CreateFrameCanvas()
         img_width, img_height = self.image.size
+
         # let's scroll
         xpos = 0
         while True:
@@ -28,11 +24,11 @@ class ImageScroller(SampleBase):
             if (xpos > img_width):
                 xpos = 0
 
-            double_buffer.SetImage(text, -xpos)
-            double_buffer.SetImage(text, -xpos + img_width)
+            double_buffer.SetImage(self.image, -xpos)
+            double_buffer.SetImage(self.image, -xpos + img_width)
 
             double_buffer = self.matrix.SwapOnVSync(double_buffer)
-            time.sleep(0.05)
+            time.sleep(0.01)
 
 # Main function
 # e.g. call with

@@ -20,17 +20,27 @@ class RunText(SampleBase):
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
         font.LoadFont("../../../fonts/texgyre-27.bdf")
-        textColor = graphics.Color(0, 255, 0)
+        green = graphics.Color(0, 255, 0)
+        red = graphics.Color(255, 0, 0)
         pos = offscreen_canvas.width
-        my_text = text
+        # my_text = text
+        my_text = 'Helllllllllllllllllllllo mutha fucka'
+        second_text = 'tits fart turd and twat'
 
         while True:
             offscreen_canvas.Clear()
-            len = graphics.DrawText(offscreen_canvas, font, pos, 24, textColor, my_text)
+            len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, my_text)
             pos -= 1
             if (pos + len < 0):
                 pos = offscreen_canvas.width
+            time.sleep(0.02)
+            offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
+            offscreen_canvas.Clear()
+            len = graphics.DrawText(offscreen_canvas, font, pos, 24, red, second_text)
+            pos -= 1
+            if (pos + len < 0):
+                pos = offscreen_canvas.width
             time.sleep(0.02)
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
