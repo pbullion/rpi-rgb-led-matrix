@@ -36,7 +36,7 @@ class RunText(SampleBase):
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
         while True:
-            for string in strings:
+            async for string in strings:
                 yield getScrollingText()
 
 
