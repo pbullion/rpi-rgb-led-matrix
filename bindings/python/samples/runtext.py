@@ -15,7 +15,7 @@ class RunText(SampleBase):
         print('++++++++++++++++++++++++++++')
         url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
         text = url.text
-        print(text)
+        # print(text)
         print
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
@@ -33,14 +33,8 @@ class RunText(SampleBase):
                     len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, string)
                     pos -= 1
                     if (pos + len < 0):
-                        pos = offscreen_canvas.width
-                    time.sleep(0.02)
-                    offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
-                while True:
-                    offscreen_canvas.Clear()
-                    len = graphics.DrawText(offscreen_canvas, font, pos, 24, red, string)
-                    pos -= 1
-                    if (pos + len < 0):
+                        print(pos)
+                        print(pos + len < 0)
                         pos = offscreen_canvas.width
                     time.sleep(0.02)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
