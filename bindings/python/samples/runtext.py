@@ -31,9 +31,9 @@ class RunText(SampleBase):
         while True:
             for string in my_text:
                 running = True
-                if '-' in string AND '%' in string:
+                if '-' in string and '%' in string:
                     color = red
-                elif '+' in string AND '%' in string:
+                elif '+' in string and '%' in string:
                     color = green
                 else:
                     color = blue
