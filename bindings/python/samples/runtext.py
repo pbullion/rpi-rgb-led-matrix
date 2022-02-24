@@ -37,7 +37,7 @@ class RunText(SampleBase):
             return
 
         while True:
-            for string in strings:
+            await for string in strings:
                 await scrollingText(green)
                 await scrollingText(red)
 
