@@ -4,6 +4,7 @@ from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
 import requests, json
+import asyncio
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
@@ -11,7 +12,7 @@ class RunText(SampleBase):
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
 
-    def run(self):
+    async def run(self):
         print('++++++++++++++++++++++++++++')
         url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
         text = url.text
@@ -28,22 +29,22 @@ class RunText(SampleBase):
 
         while True:
             for string in strings:
-                print(string)
-                offscreen_canvas.Clear()
-                len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, string)
-                pos -= 1
+                await print(string)
+                await offscreen_canvas.Clear()
+                await len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, string)
+                await pos -= 1
                 if (pos + len < 0):
-                    pos = offscreen_canvas.width
-                time.sleep(0.02)
-                offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+                    await pos = offscreen_canvas.width
+                await time.sleep(0.02)
+                await offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
-                offscreen_canvas.Clear()
-                len = graphics.DrawText(offscreen_canvas, font, pos, 24, red, string)
-                pos -= 1
+                await offscreen_canvas.Clear()
+                await len = graphics.DrawText(offscreen_canvas, font, pos, 24, red, string)
+                await pos -= 1
                 if (pos + len < 0):
-                    pos = offscreen_canvas.width
-                time.sleep(0.02)
-                offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+                    await pos = offscreen_canvas.width
+                await time.sleep(0.02)
+                await offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
 # Main function
