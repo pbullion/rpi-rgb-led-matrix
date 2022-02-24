@@ -32,7 +32,7 @@ class RunText(SampleBase):
                 await print(string)
                 await offscreen_canvas.Clear()
                 len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, string)
-                await pos -= 1
+                pos -= 1
                 if (pos + len < 0):
                     await pos = offscreen_canvas.width
                 await time.sleep(0.02)
@@ -40,7 +40,7 @@ class RunText(SampleBase):
 
                 await offscreen_canvas.Clear()
                 len = graphics.DrawText(offscreen_canvas, font, pos, 24, red, string)
-                await pos -= 1
+                pos -= 1
                 if (pos + len < 0):
                     await pos = offscreen_canvas.width
                 await time.sleep(0.02)
