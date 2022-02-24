@@ -35,7 +35,7 @@ class RunText(SampleBase):
                 pos = offscreen_canvas.width
             time.sleep(0.02)
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
-            await asyncio.sleep(5)
+            asyncio.sleep(5)
             offscreen_canvas.Clear()
             len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, string)
             pos -= 1
