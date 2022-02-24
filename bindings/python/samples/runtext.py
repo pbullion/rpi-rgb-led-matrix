@@ -28,12 +28,12 @@ class RunText(SampleBase):
 
         async def scrollingText(self,color):
             offscreen_canvas.Clear()
-                len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
-                pos -= 1
-                if (pos + len < 0):
-                    pos = offscreen_canvas.width
-                time.sleep(0.02)
-                offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+            len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
+            pos -= 1
+            if (pos + len < 0):
+                pos = offscreen_canvas.width
+            time.sleep(0.02)
+            offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
         while True:
             for string in strings:
