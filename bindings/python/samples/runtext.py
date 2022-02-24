@@ -22,20 +22,20 @@ class RunText(SampleBase):
         font.LoadFont("../../../fonts/texgyre-27.bdf")
         green = graphics.Color(0, 255, 0)
         red = graphics.Color(255, 0, 0)
-        yellow = graphics.Color(0, 0, 255)
+        blue = graphics.Color(0, 0, 255)
         pos = offscreen_canvas.width
-        # my_text = text
+        my_text = text
         strings = ['Hellllllo -3 mut','tits +fart turd and twat', 'tits fart turd and twat']
 
         while True:
-            for string in strings:
+            for string in my_text:
                 done = True
                 if '-' in string:
                     color = red
                 elif '+' in string:
-                    color = yellow
-                else:
                     color = green
+                else:
+                    color = blue
                 while done:
                     offscreen_canvas.Clear()
                     len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
