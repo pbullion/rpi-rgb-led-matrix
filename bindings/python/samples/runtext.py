@@ -22,7 +22,7 @@ class RunText(SampleBase):
         font.LoadFont("../../../fonts/texgyre-27.bdf")
         green = graphics.Color(0, 255, 0)
         red = graphics.Color(255, 0, 0)
-        red = graphics.Color(0, 0, 255)
+        yellow = graphics.Color(0, 0, 255)
         pos = offscreen_canvas.width
         # my_text = text
         strings = ['Hellllllo -3 mut','tits +fart turd and twat', 'tits fart turd and twat']
