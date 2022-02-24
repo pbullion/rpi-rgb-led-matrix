@@ -24,6 +24,7 @@ class RunText(SampleBase):
         green = graphics.Color(0, 255, 0)
         red = graphics.Color(255, 0, 0)
         blue = graphics.Color(0, 0, 255)
+        other = graphics.Color(20, 150, 255)
         pos = offscreen_canvas.width
         my_text = text
         strings = ['Hellllllo -3 mut','tits +fart turd and twat', 'tits fart turd and twat']
@@ -32,7 +33,7 @@ class RunText(SampleBase):
             for string in my_text:
                 running = True
                 if 'CURRENT WEATHER' in string:
-                    color = blue
+                    color = other
                 elif '-' in string in string:
                     color = red
                 elif '+' in string in string:
