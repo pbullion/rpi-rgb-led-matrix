@@ -29,9 +29,9 @@ class RunText(SampleBase):
         while True:
             for string in strings:
                 done = True
-                if '-' in string
+                if '-' in string:
                     color = red
-                else
+                else:
                     color = green
                 while done:
                     offscreen_canvas.Clear()
