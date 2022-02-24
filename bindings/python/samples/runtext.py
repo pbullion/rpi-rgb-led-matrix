@@ -16,7 +16,7 @@ class RunText(SampleBase):
         print('++++++++++++++++++++++++++++')
         url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
         text = url.text
-        print(text)
+        # print(text)
         print
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
@@ -47,6 +47,6 @@ class RunText(SampleBase):
 
 # Main function
 if __name__ == "__main__":
-    run_text = RunText()
+    run_text = asyncio.RunText()
     if (not run_text.process()):
         run_text.print_help()
