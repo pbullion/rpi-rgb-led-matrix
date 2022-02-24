@@ -6,7 +6,7 @@ import time
 import requests, json
 
 class RunText(SampleBase):
-    async def __init__(self, *args, **kwargs):
+    def __init__(self, *args, **kwargs):
         print(self)
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
@@ -34,6 +34,7 @@ class RunText(SampleBase):
                 pos = offscreen_canvas.width
             time.sleep(0.02)
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+            return
 
         while True:
             for string in strings:
