@@ -12,7 +12,7 @@ class RunText(SampleBase):
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
 
-    def run(self):
+    async def run(self):
         print('++++++++++++++++++++++++++++')
         url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
         text = url.text
@@ -35,7 +35,7 @@ class RunText(SampleBase):
                 pos = offscreen_canvas.width
             time.sleep(0.02)
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
-            asyncio.sleep(5)
+            await asyncio.sleep(5)
             offscreen_canvas.Clear()
             len = graphics.DrawText(offscreen_canvas, font, pos, 24, green, strings[1])
             pos -= 1
