@@ -20,7 +20,6 @@ class RunText(SampleBase):
         def getData():
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
             strings = json.loads(url.text)
-        if len(strings) > 0:
             scrolling = True
         print
         offscreen_canvas = self.matrix.CreateFrameCanvas()
