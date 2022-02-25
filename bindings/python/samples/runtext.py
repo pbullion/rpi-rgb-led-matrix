@@ -17,11 +17,10 @@ class RunText(SampleBase):
         print('++++++++++++++++++++++++++++')
         scrolling = False
         strings = []
-        stringLen = len(strings)
         def getData():
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
             strings = json.loads(url.text)
-        if stringLen > 0:
+        if len(strings) > 0:
             scrolling = True
         print
         offscreen_canvas = self.matrix.CreateFrameCanvas()
