@@ -16,7 +16,6 @@ class RunText(SampleBase):
 
     def run(self):
         while True:
-            sleep(60 - time() % 60)
             print('++++++++++++++++++++++++++++')
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
             strings = json.loads(url.text)
@@ -50,6 +49,7 @@ class RunText(SampleBase):
                         pos = offscreen_canvas.width
                     time.sleep(0.02)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+            sleep(10)
 
 
 
