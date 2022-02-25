@@ -42,8 +42,6 @@ class RunText(SampleBase):
                     length = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                     pos -= 1
                     if (pos + length < 0):
-                        if (string == strings[stringLen]):
-                            scrolling = False
                         running = False
                         pos = offscreen_canvas.width
                     time.sleep(0.02)
