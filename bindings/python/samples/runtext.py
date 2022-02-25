@@ -45,9 +45,9 @@ class RunText(SampleBase):
                     color = blue
                 while running:
                     offscreen_canvas.Clear()
-                    len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
+                    length = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                     pos -= 1
-                    if (pos + len < 0):
+                    if (pos + length < 0):
                         if (string == strings[stringLen]):
                             scrolling = False
                         running = False
