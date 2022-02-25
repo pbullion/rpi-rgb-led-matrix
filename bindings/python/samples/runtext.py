@@ -18,6 +18,7 @@ class RunText(SampleBase):
         scrolling = False
         strings = []
         def getData():
+            print('getting data')
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
             strings = json.loads(url.text)
             scrolling = True
