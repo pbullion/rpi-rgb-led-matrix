@@ -9,7 +9,7 @@ from threading import Timer
 import asyncio
 
 class RunText(SampleBase):
-    def __init__(self, *args, **kwargs):
+    async def __init__(self, *args, **kwargs):
         print(self)
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
