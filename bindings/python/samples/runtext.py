@@ -30,6 +30,8 @@ class RunText(SampleBase):
         blue = graphics.Color(0, 0, 255)
         teal = graphics.Color(0, 255, 255)
         pos = offscreen_canvas.width
+        print(scrolling)
+        print(strings)
 
         while scrolling:
             for string in strings:
