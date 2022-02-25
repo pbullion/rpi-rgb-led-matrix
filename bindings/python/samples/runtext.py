@@ -5,7 +5,6 @@ from rgbmatrix import graphics
 import time
 import requests, json
 import json
-import time
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
