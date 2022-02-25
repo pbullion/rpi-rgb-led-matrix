@@ -6,7 +6,7 @@ import time
 import requests, json
 import json
 from threading import Timer
-import asyncio
+from time import time, sleep
 
 class RunText(SampleBase):
     async def __init__(self, *args, **kwargs):
@@ -15,27 +15,20 @@ class RunText(SampleBase):
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
 
     async def run(self):
-        print('++++++++++++++++++++++++++++')
-        scrolling = False
-        strings = []
-        async def getData():
-            print('getting data')
+        while True:
+            sleep(60 - time() % 60)
+            print('++++++++++++++++++++++++++++')
             url = await requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
             strings = await json.loads(url.text)
-            scrolling = True
-        print
-        offscreen_canvas = self.matrix.CreateFrameCanvas()
-        font = graphics.Font()
-        font.LoadFont("../../../fonts/texgyre-27.bdf")
-        green = graphics.Color(0, 255, 0)
-        red = graphics.Color(255, 0, 0)
-        blue = graphics.Color(0, 0, 255)
-        teal = graphics.Color(0, 255, 255)
-        pos = offscreen_canvas.width
-        print(scrolling)
-        print(strings)
-
-        while scrolling:
+            print(strings)
+            offscreen_canvas = self.matrix.CreateFrameCanvas()
+            font = graphics.Font()
+            font.LoadFont("../../../fonts/texgyre-27.bdf")
+            green = graphics.Color(0, 255, 0)
+            red = graphics.Color(255, 0, 0)
+            blue = graphics.Color(0, 0, 255)
+            teal = graphics.Color(0, 255, 255)
+            pos = offscreen_canvas.width
             for string in strings:
                 running = True
                 if 'CURRENT WEATHER' in string:
@@ -57,15 +50,17 @@ class RunText(SampleBase):
                         pos = offscreen_canvas.width
                     time.sleep(0.02)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
-        
-        while not scrolling:
-            getData()
 
 
 
 
 # Main function
 if __name__ == "__main__":
+    import time
+    s = time.perf_counter()
+    asyncio.run(main())
+    elapsed = time.perf_counter() - s
+    print(f"{__file__} executed in {elapsed:0.2f} seconds.")
     run_text = RunText()
     if (not run_text.process()):
         run_text.print_help()
