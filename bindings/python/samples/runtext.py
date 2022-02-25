@@ -5,6 +5,7 @@ from rgbmatrix import graphics
 import time
 import requests, json
 import json
+from threading import Timer
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
@@ -14,9 +15,12 @@ class RunText(SampleBase):
 
     def run(self):
         print('++++++++++++++++++++++++++++')
+        scrolling = False
         url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
-        text = json.loads(url.text)
-        print(text)
+        strings = json.loads(url.text)
+        stringLen = len(strings)
+        if stringLen > 0:
+            scrolling = True
         print
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
@@ -24,16 +28,14 @@ class RunText(SampleBase):
         green = graphics.Color(0, 255, 0)
         red = graphics.Color(255, 0, 0)
         blue = graphics.Color(0, 0, 255)
-        other = graphics.Color(0, 255, 255)
+        teal = graphics.Color(0, 255, 255)
         pos = offscreen_canvas.width
-        my_text = text
-        strings = ['Hellllllo -3 mut','tits +fart turd and twat', 'tits fart turd and twat']
 
-        while True:
-            for string in my_text:
+        while scrolling:
+            for string in strings:
                 running = True
                 if 'CURRENT WEATHER' in string:
-                    color = other
+                    color = teal
                 elif '-' in string in string:
                     color = red
                 elif '+' in string in string:
@@ -45,10 +47,16 @@ class RunText(SampleBase):
                     len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                     pos -= 1
                     if (pos + len < 0):
+                        if (string == strings[stringLen]):
+                            scrolling = False
                         running = False
                         pos = offscreen_canvas.width
                     time.sleep(0.02)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+        
+        while not scrolling:
+            # get updated data
+
 
 
 
