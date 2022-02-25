@@ -9,17 +9,17 @@ from threading import Timer
 from time import time, sleep
 
 class RunText(SampleBase):
-    async def __init__(self, *args, **kwargs):
+    def __init__(self, *args, **kwargs):
         print(self)
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
 
-    async def run(self):
+    def run(self):
         while True:
             sleep(60 - time() % 60)
             print('++++++++++++++++++++++++++++')
-            url = await requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
-            strings = await json.loads(url.text)
+            url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
+            strings = json.loads(url.text)
             print(strings)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             font = graphics.Font()
@@ -56,11 +56,6 @@ class RunText(SampleBase):
 
 # Main function
 if __name__ == "__main__":
-    import time
-    s = time.perf_counter()
-    asyncio.run(main())
-    elapsed = time.perf_counter() - s
-    print(f"{__file__} executed in {elapsed:0.2f} seconds.")
     run_text = RunText()
     if (not run_text.process()):
         run_text.print_help()
