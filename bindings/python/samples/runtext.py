@@ -5,8 +5,7 @@ from rgbmatrix import graphics
 import time
 import requests, json
 import json
-from threading import Timer
-from time import time, sleep
+import time
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
@@ -49,7 +48,7 @@ class RunText(SampleBase):
                         pos = offscreen_canvas.width
                     time.sleep(0.02)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
-            sleep(10)
+            time.sleep(10)
 
 
 
