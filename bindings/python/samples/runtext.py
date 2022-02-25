@@ -17,11 +17,10 @@ class RunText(SampleBase):
         print('++++++++++++++++++++++++++++')
         scrolling = False
         strings = []
-        stringLen = 0
+        stringLen = len(strings)
         def getData():
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
             strings = json.loads(url.text)
-            stringLen = len(strings)
         if stringLen > 0:
             scrolling = True
         print
