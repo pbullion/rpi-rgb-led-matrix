@@ -6,6 +6,7 @@ import time
 import requests, json
 import json
 from threading import Timer
+import asyncio
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
@@ -17,10 +18,10 @@ class RunText(SampleBase):
         print('++++++++++++++++++++++++++++')
         scrolling = False
         strings = []
-        def getData():
+        async def getData():
             print('getting data')
-            url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
-            strings = json.loads(url.text)
+            url = await requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
+            strings = await json.loads(url.text)
             scrolling = True
         print
         offscreen_canvas = self.matrix.CreateFrameCanvas()
