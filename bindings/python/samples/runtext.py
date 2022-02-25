@@ -16,9 +16,12 @@ class RunText(SampleBase):
     def run(self):
         print('++++++++++++++++++++++++++++')
         scrolling = False
-        url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
-        strings = json.loads(url.text)
-        stringLen = len(strings)
+        strings = []
+        stringLen = 0
+        def getData():
+            url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/espn")
+            strings = json.loads(url.text)
+            stringLen = len(strings)
         if stringLen > 0:
             scrolling = True
         print
@@ -55,7 +58,7 @@ class RunText(SampleBase):
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
         
         while not scrolling:
-            # get updated data
+            getData()
 
 
 
