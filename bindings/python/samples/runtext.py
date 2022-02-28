@@ -25,43 +25,46 @@ class RunText(SampleBase):
             red = graphics.Color(255, 0, 0)
             blue = graphics.Color(0, 0, 255)
             teal = graphics.Color(0, 255, 255)
+            purple = graphics.Color(102, 0, 204)
+            colors = [blue, teal, purple]
             pos = offscreen_canvas.width
+            print(random.randint(0,2))
             for string in strings:
                 running = True
                 if 'CURRENT WEATHER' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'MARKETWATCH' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'ESPNNBA' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'ESPNNFL' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'ESPNMLB' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'ESPNTOPSTORIES' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'ESPNCOLLEGEFOOTBALL' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'ESPNCOLLEGEBASKETBALL' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'ESPNBIG12' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'ESPNSEC' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'CNN' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'NYTIMES' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'FOXNEWS' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'USATODAY' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'NPR' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'ABCHOUSTON' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif 'INVESTINGDOTCOM' in string:
-                    color = teal
+                    color = colors[random.randint(0,2)]
                 elif '-' in string in string:
                     color = red
                 elif '+' in string in string:
