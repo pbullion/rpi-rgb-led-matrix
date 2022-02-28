@@ -30,6 +30,38 @@ class RunText(SampleBase):
                 running = True
                 if 'CURRENT WEATHER' in string:
                     color = teal
+                elif 'MARKETWATCH' in string:
+                    color = teal
+                elif 'ESPNNBA' in string:
+                    color = teal
+                elif 'ESPNNFL' in string:
+                    color = teal
+                elif 'ESPNMLB' in string:
+                    color = teal
+                elif 'ESPNTOPSTORIES' in string:
+                    color = teal
+                elif 'ESPNCOLLEGEFOOTBALL' in string:
+                    color = teal
+                elif 'ESPNCOLLEGEBASKETBALL' in string:
+                    color = teal
+                elif 'ESPNBIG12' in string:
+                    color = teal
+                elif 'ESPNSEC' in string:
+                    color = teal
+                elif 'CNN' in string:
+                    color = teal
+                elif 'NYTIMES' in string:
+                    color = teal
+                elif 'FOXNEWS' in string:
+                    color = teal
+                elif 'USATODAY' in string:
+                    color = teal
+                elif 'NPR' in string:
+                    color = teal
+                elif 'ABCHOUSTON' in string:
+                    color = teal
+                elif 'INVESTINGDOTCOM' in string:
+                    color = teal
                 elif '-' in string in string:
                     color = red
                 elif '+' in string in string:
@@ -45,8 +77,6 @@ class RunText(SampleBase):
                         pos = offscreen_canvas.width
                     time.sleep(0.01)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
-            print('hello')
-            time.sleep(5)
 
 
 
