@@ -33,7 +33,9 @@ class RunText(SampleBase):
             randomNum = random.randint(0,3)
             for string in strings:
                 running = True
-                if 'AP POLL' in string:
+                if 'POLL' in string:
+                    color = green
+                ELif 'BAYLOR' in string:
                     color = green
                 elif 'CURRENT WEATHER' in string:
                     color = colors[randomNum]
