@@ -35,7 +35,7 @@ class RunText(SampleBase):
                 running = True
                 if 'POLL' in string:
                     color = green
-                ELif 'BAYLOR' in string:
+                elif 'BAYLOR' in string:
                     color = green
                 elif 'CURRENT WEATHER' in string:
                     color = colors[randomNum]
