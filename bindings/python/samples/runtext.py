@@ -22,6 +22,8 @@ class RunText(SampleBase):
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             font = graphics.Font()
             font.LoadFont("../../../fonts/texgyre-27.bdf")
+            gameFont = graphics.Font()
+            gameFont.LoadFont("../../../fonts/6x13.bdf")
             green = graphics.Color(0, 255, 0)
             red = graphics.Color(255, 0, 0)
             blue = graphics.Color(0, 0, 255)
@@ -80,9 +82,11 @@ class RunText(SampleBase):
                 while running:
                     gameLength = len(string)
                     print(gameLength)
+                    print(string[0])
+                    print(string[1])
                     offscreen_canvas.Clear()
-                    line1 = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string[0])
-                    line2 = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string[1])
+                    line1 = graphics.DrawText(offscreen_canvas, gameFont, pos, 1, green, string[0])
+                    line2 = graphics.DrawText(offscreen_canvas, gameFont, pos, 24, green, string[1])
                     # length = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                     pos -= 1
                     if (pos + length < 0):
