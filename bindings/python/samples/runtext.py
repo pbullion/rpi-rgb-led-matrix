@@ -85,13 +85,15 @@ class RunText(SampleBase):
                     print(string[0])
                     print(string[1])
                     offscreen_canvas.Clear()
-                    line1 = graphics.DrawText(offscreen_canvas, gameFont, pos, 1, green, string[0])
-                    line2 = graphics.DrawText(offscreen_canvas, gameFont, pos, 24, green, string[1])
+                    line1 = graphics.DrawText(offscreen_canvas, gameFont, gamePos1, 1, green, string[0])
+                    line2 = graphics.DrawText(offscreen_canvas, gameFont, gamePos2, 24, green, string[1])
                     # length = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                     pos -= 1
-                    if (pos + length < 0):
+                    gamePos1 -= 1
+                    gamePos2 -= 1
+                    if (gamePos1 + length < 0):
                         running = False
-                        pos = offscreen_canvas.width
+                        gamePos1 = offscreen_canvas.width
                     time.sleep(0.01)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
