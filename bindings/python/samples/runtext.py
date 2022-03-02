@@ -81,13 +81,13 @@ class RunText(SampleBase):
                     color = green
                 else:
                     color = blue
+                gameLength = len(string)
+                length = 1
+                line1 = 1
+                line2 = 1
                 while running:
-                    gameLength = len(string)
                     print(gameLength)
                     offscreen_canvas.Clear()
-                    length = 1
-                    line1 = 1
-                    line2 = 1
                     if gameLength > 0:
                         line1 = graphics.DrawText(offscreen_canvas, gameFont, gamePos1, 10, green, string[0])
                         line2 = graphics.DrawText(offscreen_canvas, gameFont, gamePos2, 24, green, string[1])
