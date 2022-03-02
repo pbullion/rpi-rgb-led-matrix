@@ -32,6 +32,8 @@ class RunText(SampleBase):
             yellow = graphics.Color(255, 255, 0)
             colors = [blue, teal, purple, yellow]
             pos = offscreen_canvas.width
+            gamePos1 = offscreen_canvas.width
+            gamePos2 = offscreen_canvas.width
             randomNum = random.randint(0,3)
             for string in strings:
                 running = True
