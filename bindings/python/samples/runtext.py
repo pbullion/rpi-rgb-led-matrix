@@ -93,7 +93,7 @@ class RunText(SampleBase):
                     pos -= 1
                     gamePos1 -= 1
                     gamePos2 -= 1
-                    if (gamePos1 + length < 0):
+                    if (gamePos1 + line1 < 0):
                         running = False
                         gamePos1 = offscreen_canvas.width
                     time.sleep(0.01)
