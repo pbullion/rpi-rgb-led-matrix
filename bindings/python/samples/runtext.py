@@ -95,7 +95,7 @@ class RunText(SampleBase):
                             running = False
                             gamePos1 = offscreen_canvas.width
                             gamePos2 = offscreen_canvas.width
-                        time.sleep(0.03)
+                        time.sleep(0.02)
                     else:
                         length = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                         pos -= 1
