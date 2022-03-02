@@ -16,7 +16,8 @@ class RunText(SampleBase):
     def run(self):
         while True:
             print('++++++++++++++++++++++++++++')
-            url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
+            # url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
+            url = requests.get("localhost:3001/patrick/all-data/pbullion@gmail.com")
             strings = json.loads(url.text)
             print(strings)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
@@ -78,8 +79,12 @@ class RunText(SampleBase):
                 else:
                     color = blue
                 while running:
+                    gameLength = len(string)
+                    print(gameLength)
                     offscreen_canvas.Clear()
-                    length = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
+                    line1 = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string[0])
+                    line2 = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string[1])
+                    # length = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                     pos -= 1
                     if (pos + length < 0):
                         running = False
