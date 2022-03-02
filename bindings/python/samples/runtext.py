@@ -84,8 +84,6 @@ class RunText(SampleBase):
                 while running:
                     gameLength = len(string)
                     print(gameLength)
-                    print(string[0])
-                    print(string[1])
                     offscreen_canvas.Clear()
                     length = 1
                     line1 = 1
