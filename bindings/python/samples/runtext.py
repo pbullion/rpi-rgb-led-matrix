@@ -91,11 +91,9 @@ class RunText(SampleBase):
                         line2 = graphics.DrawText(offscreen_canvas, gameFont, gamePos2, 24, green, string[1])
                         gamePos1 -= 1
                         gamePos2 -= 1
-                        if (gamePos1 + line1 < 0):
+                        if (gamePos1 + line1 < 0) or (gamePos2 + line2 < 0):
                             running = False
                             gamePos1 = offscreen_canvas.width
-                        if (gamePos2 + line2 < 0):
-                            running = False
                             gamePos2 = offscreen_canvas.width
                     else:
                         length = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
