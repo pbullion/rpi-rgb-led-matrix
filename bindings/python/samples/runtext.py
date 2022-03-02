@@ -87,7 +87,7 @@ class RunText(SampleBase):
                     print(string[0])
                     print(string[1])
                     offscreen_canvas.Clear()
-                    line1 = graphics.DrawText(offscreen_canvas, gameFont, gamePos1, 1, green, string[0])
+                    line1 = graphics.DrawText(offscreen_canvas, gameFont, gamePos1, 10, green, string[0])
                     line2 = graphics.DrawText(offscreen_canvas, gameFont, gamePos2, 24, green, string[1])
                     # length = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                     pos -= 1
