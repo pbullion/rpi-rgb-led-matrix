@@ -75,6 +75,8 @@ class RunText(SampleBase):
                     color = colors[randomNum]
                 elif 'INVESTINGDOTCOM' in string:
                     color = colors[randomNum]
+                elif '#' in string in string:
+                    color = green
                 elif '-' in string in string:
                     color = red
                 elif '+' in string in string:
