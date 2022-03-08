@@ -78,8 +78,8 @@ def run(self):
         offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 #Main function
 if name == "main":
-run_text = RunText()
-if (not run_text.process()):
-run_text.print_help()
+    run_text = RunText()
+    if (not run_text.process()):
+        run_text.print_help()
 
 `
