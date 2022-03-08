@@ -67,8 +67,8 @@ class RunText(SampleBase):
                         running = False
                         pos = offscreen_canvas.width
                     time.sleep(0.01)
-                    double_buffer.SetImage(self.image, pos)
-                    double_buffer.SetImage(self.image, pos + img_width)
+                    offscreen_canvas.SetImage(self.image, pos)
+                    offscreen_canvas.SetImage(self.image, pos + img_width)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
