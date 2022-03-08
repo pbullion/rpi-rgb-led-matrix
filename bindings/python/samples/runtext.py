@@ -71,7 +71,7 @@ class RunText(SampleBase):
                             self.counter = 0
                         print(self.counter)
                         pos = offscreen_canvas.width
-                        # run_text.run()
+                        run_text.run()
                     time.sleep(0.01)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
