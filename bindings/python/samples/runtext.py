@@ -64,9 +64,14 @@ class RunText(SampleBase):
                     img_width, img_height = self.image.size
                     len = graphics.DrawText(offscreen_canvas, font, pos, 22, color, string) + img_width
                     pos -= 1
-                    if (pos + length < 0):
-                        running = False
+                    if (pos + len < 0):
+                        if (self.counter < 2):
+                            self.counter += 1
+                        else:
+                            self.counter = 0
+                        print(self.counter)
                         pos = offscreen_canvas.width
+                        # run_text.run()
                     time.sleep(0.01)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
