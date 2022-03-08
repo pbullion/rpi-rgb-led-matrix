@@ -6,24 +6,24 @@ import time
 import requests, json
 import json
 import random
+from PIL import Image
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
         print(self)
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
+        self.parser.add_argument("-i", "--image", help="The image to display", default="../../../examples-api-use/runtext.ppm")
 
     def run(self):
+        if not 'image' in self.__dict__:
+            self.image = Image.open(self.args.image)
+            print("hello i did it")
+        self.image.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
+        offscreen_canvas = self.matrix.CreateFrameCanvas()
+        pos = offscreen_canvas.width
+
         while True:
-            print('++++++++++++++++++++++++++++')
-            url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
-            strings = json.loads(url.text)
-            print(strings)
-            offscreen_canvas = self.matrix.CreateFrameCanvas()
-            font = graphics.Font()
-            font.LoadFont("../../../fonts/texgyre-27.bdf")
-            gameFont = graphics.Font()
-            gameFont.LoadFont("../../../fonts/6x13.bdf")
             green = graphics.Color(0, 255, 0)
             red = graphics.Color(255, 0, 0)
             blue = graphics.Color(0, 0, 255)
@@ -31,10 +31,17 @@ class RunText(SampleBase):
             purple = graphics.Color(102, 0, 204)
             yellow = graphics.Color(255, 255, 0)
             colors = [blue, teal, purple, yellow]
-            pos = offscreen_canvas.width
-            gamePos1 = offscreen_canvas.width
-            gamePos2 = offscreen_canvas.width
+            print('++++++++++++++++++++++++++++')
+            url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
+            strings = json.loads(url.text)
+            print(strings)
+            # offscreen_canvas = self.matrix.CreateFrameCanvas()
+            font = graphics.Font()
+            font.LoadFont("../../../fonts/texgyre-27.bdf")
+            gameFont = graphics.Font()
+            gameFont.LoadFont("../../../fonts/6x13.bdf")
             randomNum = random.randint(0,3)
+            pos = offscreen_canvas.width
             for string in strings:
                 running = True
                 if 'POLL' in string:
@@ -42,38 +49,6 @@ class RunText(SampleBase):
                 elif 'BAYLOR' in string:
                     color = green
                 elif 'CURRENT WEATHER' in string:
-                    color = colors[randomNum]
-                elif 'MARKETWATCH' in string:
-                    color = colors[randomNum]
-                elif 'ESPNNBA' in string:
-                    color = colors[randomNum]
-                elif 'ESPNNFL' in string:
-                    color = colors[randomNum]
-                elif 'ESPNMLB' in string:
-                    color = colors[randomNum]
-                elif 'ESPNTOPSTORIES' in string:
-                    color = colors[randomNum]
-                elif 'ESPNCOLLEGEFOOTBALL' in string:
-                    color = colors[randomNum]
-                elif 'ESPNCOLLEGEBASKETBALL' in string:
-                    color = colors[randomNum]
-                elif 'ESPNBIG12' in string:
-                    color = colors[randomNum]
-                elif 'ESPNSEC' in string:
-                    color = colors[randomNum]
-                elif 'CNN' in string:
-                    color = colors[randomNum]
-                elif 'NYTIMES' in string:
-                    color = colors[randomNum]
-                elif 'FOXNEWS' in string:
-                    color = colors[randomNum]
-                elif 'USATODAY' in string:
-                    color = colors[randomNum]
-                elif 'NPR' in string:
-                    color = colors[randomNum]
-                elif 'ABCHOUSTON' in string:
-                    color = colors[randomNum]
-                elif 'INVESTINGDOTCOM' in string:
                     color = colors[randomNum]
                 elif '#' in string in string:
                     color = green
@@ -83,28 +58,16 @@ class RunText(SampleBase):
                     color = green
                 else:
                     color = blue
-                length = 1
-                line1 = 1
-                line2 = 1
+                len = 1
                 while running:
                     offscreen_canvas.Clear()
-                    if isinstance(string,list):
-                        line1 = graphics.DrawText(offscreen_canvas, gameFont, gamePos1, 10, green, string[0])
-                        line2 = graphics.DrawText(offscreen_canvas, gameFont, gamePos2, 24, green, string[1])
-                        gamePos1 -= 1
-                        gamePos2 -= 1
-                        if (gamePos2 + line2 < 0):
-                            running = False
-                            gamePos1 = offscreen_canvas.width
-                            gamePos2 = offscreen_canvas.width
-                        time.sleep(0.02)
-                    else:
-                        length = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
-                        pos -= 1
-                        if (pos + length < 0):
-                            running = False
-                            pos = offscreen_canvas.width
-                        time.sleep(0.01)
+                    img_width, img_height = self.image.size
+                    len = graphics.DrawText(offscreen_canvas, font, pos, 22, textColor, my_text) + img_width
+                    pos -= 1
+                    if (pos + len < 0):
+                        running = False
+                        pos = offscreen_canvas.width
+                    time.sleep(0.01)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
