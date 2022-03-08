@@ -14,7 +14,8 @@ class RunText(SampleBase):
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
         self.parser.add_argument("-i", "--image", help="The image to display", default="../../../examples-api-use/runtext.ppm")
-
+        self.counter = 0   
+        
     def run(self):
         if not 'image' in self.__dict__:
             self.image = Image.open(self.args.image)
@@ -64,11 +65,10 @@ class RunText(SampleBase):
                     img_width, img_height = self.image.size
                     len = graphics.DrawText(offscreen_canvas, font, pos, 22, color, string) + img_width
                     pos -= 1
-                    if (pos + len < 0):
-                        if (self.counter < 2):
-                            self.counter += 1
-                        else:
-                            self.counter = 0
+                    if (self.counter < 2):
+                        self.counter += 1
+                    else:
+                        self.counter = 0
                         print(self.counter)
                         pos = offscreen_canvas.width
                         run_text.run()
