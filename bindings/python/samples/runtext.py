@@ -14,9 +14,9 @@ class RunText(SampleBase):
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
         self.parser.add_argument("-i", "--image", help="The image to display", default="../../../examples-api-use/runtext.ppm")
-        self.counter = 0   
         
     def run(self):
+        self.counter = 0   
         if not 'image' in self.__dict__:
             self.image = Image.open(self.args.image)
             print("hello i did it")
