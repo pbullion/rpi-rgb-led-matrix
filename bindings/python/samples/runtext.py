@@ -57,6 +57,7 @@ class RunText(SampleBase):
                     color = blue
                 len = 1
                 while running:
+                    offscreen_canvas.Clear()
                     if 'imageeee' in string:
                         pos += 1
                         if (pos > img_width):
@@ -66,7 +67,6 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(self.image, -pos + img_width)
                         time.sleep(0.01)
                     else:
-                        offscreen_canvas.Clear()
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                         pos -= 1
                         if (pos + len < 0):
