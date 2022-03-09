@@ -71,14 +71,17 @@ class RunText(SampleBase):
                         time.sleep(0.01)
                     elif 'CLOUDY' in string:
                         img_width, img_height = partlyCloudyImage.size
+                        image_editable = ImageDraw.Draw(partlyCloudyImage)
+                        image_editable.text((15,15), "Text goes here", (237, 230, 211), font=font)
+                        my_image.save("image-text.png")
                         pos -= 1
-                        if (pos + img_width < 0):
+                        if (pos + my_image.width < 0):
                             running = False
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(partlyCloudyImage, pos)
                         time.sleep(0.01)
                     else:
-                        len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
+                        len = graphics.DrawText(offscreen_canvas, font=font, pos, 24, color, string)
                         pos -= 1
                         if (pos + len < 0):
                             running = False
