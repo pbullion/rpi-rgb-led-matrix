@@ -17,6 +17,7 @@ class RunText(SampleBase):
 
     def run(self):
         while True:
+            # COLORS
             green = graphics.Color(0, 255, 0)
             red = graphics.Color(255, 0, 0)
             blue = graphics.Color(0, 0, 255)
@@ -25,6 +26,7 @@ class RunText(SampleBase):
             yellow = graphics.Color(255, 255, 0)
             colors = [blue, teal, purple, yellow]
             randomNum = random.randint(0,3)
+            # END COLORS
             font = graphics.Font()
             font.LoadFont("../../../fonts/texgyre-27.bdf")
             print('++++++++++++++++++++++++++++')
@@ -34,23 +36,37 @@ class RunText(SampleBase):
             strings.insert(0,'imageeee')
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
+            # IMAGES FOR WEATHER
+            print('********************')
+            print('matrix width', self.matrix.width)
+            print('matrix height', self.matrix.height)
+            partlyCloudyImage = Image.open('./images/weather/icons8-partly-cloudy-day-48.png').convert('RGB')
+            thunderstormImage = Image.open('./images/weather/icons8-cloud-lightning-48.png').convert('RGB')
+            cloudyImage = Image.open('./images/weather/icons8-clouds-48.png').convert('RGB')
+            rainImage = Image.open('./images/weather/icons8-heavy-rain-48.png').convert('RGB')
+            stormyImage = Image.open('./images/weather/icons8-stormy-weather-48.png').convert('RGB')
+            sunnyImage = Image.open('./images/weather/icons8-summer-48.png').convert('RGB')
+            windyImage = Image.open('./images/weather/icons8-wind-48.png').convert('RGB')
+            partlyCloudyImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
+            thunderstormImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
+            cloudyImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
+            rainImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
+            windyImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
+            stormyImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
+            sunnyImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
+            print('********************')
+            # END IMAGES FOR WEATHER
             for string in strings:
-                print('********************')
-                print('matrix width', self.matrix.width)
-                print('matrix height', self.matrix.height)
-                image = Image.open('./sun.png').convert('RGB')
-                image.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
-                img_width, img_height = image.size
+                # set image here
+                currentImage = cloudyImage
+                img_width, img_height = currentImage.size
                 print('new image width', img_width)
                 print('new image height', img_height)
-                print('********************')
                 running = True
                 if 'Poll' in string:
                     color = green
                 elif 'BAYLOR' in string:
                     color = green
-                elif 'CURRENT WEATHER' in string:
-                    color = colors[randomNum]
                 elif '#' in string in string:
                     color = green
                 elif '-' in string in string:
@@ -58,7 +74,7 @@ class RunText(SampleBase):
                 elif '+' in string in string:
                     color = green
                 else:
-                    color = blue
+                    color = colors[randomNum]
                 len = 1
                 while running:
                     offscreen_canvas.Clear()
@@ -67,7 +83,7 @@ class RunText(SampleBase):
                         if (pos + img_width < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(image, pos)
+                        offscreen_canvas.SetImage(currentImage, pos)
                         time.sleep(0.01)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
@@ -86,3 +102,13 @@ if __name__ == "__main__":
     run_text = RunText()
     if (not run_text.process()):
         run_text.print_help()
+
+
+        # if includes 'rain' do the rain image
+        # sunny
+        # partly cloudy
+        # includes 'thunder' do lightning image
+        #
+        #
+        #
+        #
