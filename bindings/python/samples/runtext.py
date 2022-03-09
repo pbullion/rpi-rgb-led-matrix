@@ -19,7 +19,8 @@ class RunText(SampleBase):
         #     self.image = Image.open(self.args.image).convert('RGB')
         self.image = Image.open('./t.png').convert('RGB')
         print(self.image)
-        self.image.resize((self.matrix.width / 2, self.matrix.height), Image.ANTIALIAS)
+        matrix_width = self.matrix.witdth / 2
+        self.image.resize((matrix_width, self.matrix.height), Image.ANTIALIAS)
         print(self.image)
         while True:
             green = graphics.Color(0, 255, 0)
