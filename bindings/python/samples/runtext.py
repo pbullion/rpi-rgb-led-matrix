@@ -40,8 +40,8 @@ class RunText(SampleBase):
                 print(self.matrix.width)
                 print(self.matrix.height)
                 # self.image.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
-                self.image.height = self.matrix.height
-                self.image.width = self.matrix.width
+                self.image.size.height = self.matrix.height
+                self.image.size.width = self.matrix.width
                 img_width, img_height = self.image.size
                 print(self.image)
                 print(self.image.resize)
