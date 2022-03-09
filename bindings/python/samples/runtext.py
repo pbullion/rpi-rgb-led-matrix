@@ -36,8 +36,8 @@ class RunText(SampleBase):
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
             # IMAGES FOR WEATHER
-            stockDown = Image.open('./images/stocks/icons8-down-48.png').convert('RGB').resize((8, 8), Image.ANTIALIAS)
-            stockUp = Image.open('./images/stocks/icons8-up-48.png').convert('RGB').resize((8, 8), Image.ANTIALIAS)
+            stockDown = Image.open('./images/stocks/icons8-down-48.png').convert('RGB').resize((11,11), Image.ANTIALIAS)
+            stockUp = Image.open('./images/stocks/icons8-up-48.png').convert('RGB').resize((11,11), Image.ANTIALIAS)
             partlyCloudyImage = Image.open('./images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             thunderstormImage = Image.open('./images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             cloudyImage = Image.open('./images/weather/icons8-clouds-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
@@ -86,7 +86,7 @@ class RunText(SampleBase):
                         if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(stockDown, pos,14)
+                        offscreen_canvas.SetImage(stockDown, pos, 16)
                         len = graphics.DrawText(offscreen_canvas, font, pos + stockDown.width, 24, color, string)
                         time.sleep(0.01)
                     elif '+' in string:
@@ -95,7 +95,7 @@ class RunText(SampleBase):
                         if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(stockUp, pos, 14)
+                        offscreen_canvas.SetImage(stockUp, pos, 16)
                         len = graphics.DrawText(offscreen_canvas, font, pos + stockUp.width, 24, color, string)
                         time.sleep(0.01)
                     else:
