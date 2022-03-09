@@ -60,8 +60,10 @@ class RunText(SampleBase):
                 # set image here
                 currentImage = cloudyImage
                 img_width, img_height = currentImage.size
+                print('|||||||||||||||||||||')
                 print('new image width', img_width)
                 print('new image height', img_height)
+                print('|||||||||||||||||||||')
                 running = True
                 if 'Poll' in string:
                     color = green
