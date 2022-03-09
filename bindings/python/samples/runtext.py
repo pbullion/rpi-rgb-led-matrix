@@ -50,13 +50,6 @@ class RunText(SampleBase):
             print('********************')
             # END IMAGES FOR WEATHER
             for string in strings:
-                # set image here
-                currentImage = windyImage
-                img_width, img_height = currentImage.size
-                print('|||||||||||||||||||||')
-                print('new image width', img_width)
-                print('new image height', img_height)
-                print('|||||||||||||||||||||')
                 running = True
                 if 'Poll' in string:
                     color = green
@@ -73,12 +66,25 @@ class RunText(SampleBase):
                 len = 1
                 while running:
                     offscreen_canvas.Clear()
-                    if 'imageeee' in string:
+                    if 'RAIN' in string:
+                        img_width, img_height = rainImage.size
                         pos -= 1
                         if (pos + img_width < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(currentImage, pos)
+                        offscreen_canvas.SetImage(rainImage, pos)
+                        time.sleep(0.01)
+                    elif 'CLOUDY' in string:
+                        img_width, img_height = cloudyImage.size
+                        imgPos -= 1
+                        if (imgPos + img_width < 0):
+                            imgPos = offscreen_canvas.width
+                        offscreen_canvas.SetImage(cloudyImage, imgPos)
+                        len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string) + img_width
+                        pos -= 1
+                        if (pos + len < 0):
+                            running = False
+                            pos = offscreen_canvas.width
                         time.sleep(0.01)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
