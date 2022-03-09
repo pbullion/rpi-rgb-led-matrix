@@ -16,6 +16,10 @@ class RunText(SampleBase):
         self.parser.add_argument("-i", "--image", help="The image to display", default="../../../examples-api-use/runtext.ppm")
 
     def run(self):
+        if not 'image' in self.__dict__:
+            self.image = Image.open(self.args.image).convert('RGB')
+        self.image.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
+
         while True:
             green = graphics.Color(0, 255, 0)
             red = graphics.Color(255, 0, 0)
