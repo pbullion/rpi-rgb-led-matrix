@@ -86,8 +86,8 @@ class RunText(SampleBase):
                         if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(stockDown, pos, 16)
-                        len = graphics.DrawText(offscreen_canvas, font, pos + stockDown.width, 24, color, string)
+                        offscreen_canvas.SetImage(stockDown, pos, 12)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + stockDown.width + 3, 24, color, string)
                         time.sleep(0.01)
                     elif '+' in string:
                         img_width, img_height = stockUp.size
@@ -95,8 +95,8 @@ class RunText(SampleBase):
                         if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(stockUp, pos, 16)
-                        len = graphics.DrawText(offscreen_canvas, font, pos + stockUp.width, 24, color, string)
+                        offscreen_canvas.SetImage(stockUp, pos, 12)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + stockUp.width + 3, 24, color, string)
                         time.sleep(0.01)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
