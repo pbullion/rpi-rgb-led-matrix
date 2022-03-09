@@ -35,7 +35,7 @@ class RunText(SampleBase):
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
             strings = json.loads(url.text)
             print(strings)
-            strings.append('imageeee')
+            strings.insert(0,'imageeee')
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
             img_width, img_height = self.image.size

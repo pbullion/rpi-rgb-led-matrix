@@ -12,6 +12,7 @@ class ImageScroller(SampleBase):
     def run(self):
         if not 'image' in self.__dict__:
             self.image = Image.open(self.args.image).convert('RGB')
+        print(self.matrix)
         self.image.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
 
         double_buffer = self.matrix.CreateFrameCanvas()
