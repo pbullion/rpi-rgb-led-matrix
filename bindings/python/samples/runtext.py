@@ -13,7 +13,7 @@ class RunText(SampleBase):
         print(self)
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
-        self.parser.add_argument("-i", "--image", help="The image to display", default="../../../examples-api-use/runtext.ppm")
+        self.parser.add_argument("-i", "--image", help="The image to display", default="./tesla.png")
 
     def run(self):
         if not 'image' in self.__dict__:
