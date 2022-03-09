@@ -38,6 +38,7 @@ class RunText(SampleBase):
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
             for string in strings:
+                print('********************')
                 self.image = Image.open('./sun.png').convert('RGB')
                 print(self.matrix.width)
                 print(self.matrix.height)
@@ -49,6 +50,7 @@ class RunText(SampleBase):
                 img_width, img_height = self.image.size
                 print(img_width)
                 print(img_height)
+                print('********************')
                 running = True
                 if 'Poll' in string:
                     color = green
