@@ -36,15 +36,12 @@ class RunText(SampleBase):
             pos = offscreen_canvas.width
             for string in strings:
                 print('********************')
-                self.image = Image.open('./sun.png').convert('RGB')
+                image = Image.open('./sun.png').convert('RGB')
                 print(self.matrix.width)
                 print(self.matrix.height)
-                # self.image.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
-                self.image.size = self.matrix.width, self.matrix.height
+                image.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
                 img_width, img_height = self.image.size
-                print(self.image)
-                print(self.image.resize)
-                print(self.image.size)
+                print(image)
                 print(img_width)
                 print(img_height)
                 print('********************')
@@ -71,7 +68,7 @@ class RunText(SampleBase):
                         if (pos + img_width < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(self.image, pos)
+                        offscreen_canvas.SetImage(image, pos)
                         time.sleep(0.01)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
