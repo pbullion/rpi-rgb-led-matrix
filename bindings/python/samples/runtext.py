@@ -16,9 +16,6 @@ class RunText(SampleBase):
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
 
     def run(self):
-        # if not 'image' in self.__dict__:
-        #     self.image = Image.open(self.args.image).convert('RGB')
-
         while True:
             green = graphics.Color(0, 255, 0)
             red = graphics.Color(255, 0, 0)
@@ -46,7 +43,7 @@ class RunText(SampleBase):
                 matrix_height = math.ceil(self.matrix.height / 2)
                 print(matrix_width)
                 print(matrix_height)
-                self.image.resize((matrix_width, matrix_height), Image.ANTIALIAS)
+                self.image.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
                 img_width, img_height = self.image.size
                 print(img_width)
                 print(img_height)
