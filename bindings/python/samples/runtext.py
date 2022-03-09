@@ -72,10 +72,14 @@ class RunText(SampleBase):
                     elif 'CLOUDY' in string:
                         img_width, img_height = partlyCloudyImage.size
                         pos -= 1
-                        if (pos + img_width < 0):
+                        # if (pos + img_width < 0):
+                        #     running = False
+                        #     pos = offscreen_canvas.width
+                        if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(partlyCloudyImage + string, pos)
+                        offscreen_canvas.SetImage(partlyCloudyImage, pos)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
                         time.sleep(0.01)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
