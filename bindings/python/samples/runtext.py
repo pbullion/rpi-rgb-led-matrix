@@ -18,7 +18,7 @@ class RunText(SampleBase):
     def run(self):
         # if not 'image' in self.__dict__:
         #     self.image = Image.open(self.args.image).convert('RGB')
-        self.image = Image.open('./t.png').convert('RGB')
+        self.image = Image.open('./sun.png').convert('RGB')
         print(self.matrix.width)
         print(self.matrix.height)
         print(self.image)
