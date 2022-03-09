@@ -36,6 +36,8 @@ class RunText(SampleBase):
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
             # IMAGES FOR WEATHER
+            stockDown = Image.open('./images/weather/icons8-down-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            stockUp = Image.open('./images/weather/icons8-up-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             partlyCloudyImage = Image.open('./images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             thunderstormImage = Image.open('./images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             cloudyImage = Image.open('./images/weather/icons8-clouds-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
@@ -72,14 +74,29 @@ class RunText(SampleBase):
                     elif 'CLOUDY' in string:
                         img_width, img_height = partlyCloudyImage.size
                         pos -= 1
-                        # if (pos + img_width < 0):
-                        #     running = False
-                        #     pos = offscreen_canvas.width
                         if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(partlyCloudyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
+                        time.sleep(0.01)
+                    elif '-' in string:
+                        img_width, img_height = stockDown.size
+                        pos -= 1
+                        if (pos + len < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        offscreen_canvas.SetImage(stockDown, pos)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + stockDown.width, 24, color, string)
+                        time.sleep(0.01)
+                    elif '+' in string:
+                        img_width, img_height = stockUp.size
+                        pos -= 1
+                        if (pos + len < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        offscreen_canvas.SetImage(stockUp, pos)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + stockUp.width, 24, color, string)
                         time.sleep(0.01)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
