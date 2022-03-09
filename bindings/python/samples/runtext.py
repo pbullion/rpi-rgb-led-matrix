@@ -37,7 +37,7 @@ class RunText(SampleBase):
             for string in strings:
                 print('********************')
                 basewidth = 300
-                image = Image.open('./sun.png').convert('RGB')
+                image = Image.open('./sun.png')
                 print(self.matrix.width)
                 print(self.matrix.height)
                 image.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
