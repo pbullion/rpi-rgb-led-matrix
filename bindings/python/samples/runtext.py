@@ -40,8 +40,8 @@ class RunText(SampleBase):
                 print(self.matrix.height)
                 image = Image.open('./sun.png').convert('RGB')
                 image.resize((math.ceil(self.matrix.width / 2), self.matrix.height), Image.ANTIALIAS)
+                image.save('./sun.png').convert('RGB')
                 img_width, img_height = image.size
-                print(image)
                 print(img_width)
                 print(img_height)
                 print('********************')
