@@ -58,7 +58,7 @@ class RunText(SampleBase):
             # END IMAGES FOR WEATHER
             for string in strings:
                 # set image here
-                currentImage = cloudyImage
+                currentImage = thunderstormImage
                 img_width, img_height = currentImage.size
                 print('|||||||||||||||||||||')
                 print('new image width', img_width)
