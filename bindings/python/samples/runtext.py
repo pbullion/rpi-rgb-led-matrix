@@ -12,6 +12,7 @@ class RunText(SampleBase):
         print(self)
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
+        self.parser.add_argument("-i", "--image", help="The image to display", default="../../../examples-api-use/runtext.ppm")
 
     def run(self):
         while True:
@@ -29,11 +30,13 @@ class RunText(SampleBase):
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
             strings = json.loads(url.text)
             print(strings)
+            strings.append('imageeee')
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
+            img_width, img_height = self.image.size
             for string in strings:
                 running = True
-                if 'POLL' in string:
+                if 'Poll' in string:
                     color = green
                 elif 'BAYLOR' in string:
                     color = green
@@ -49,13 +52,20 @@ class RunText(SampleBase):
                     color = blue
                 len = 1
                 while running:
-                    offscreen_canvas.Clear()
-                    len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
-                    pos -= 1
-                    if (pos + len < 0):
-                        running = False
-                        pos = offscreen_canvas.width
-                    time.sleep(0.01)
+                    if 'imageeee' in string:
+                        pos += 1
+                        if (pos > img_width):
+                            pos = 0
+                        offscreen_canvas.SetImage(self.image, -pos)
+                        offscreen_canvas.SetImage(self.image, -pos + img_width)
+                    else:
+                        offscreen_canvas.Clear()
+                        len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
+                        pos -= 1
+                        if (pos + len < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        time.sleep(0.01)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
