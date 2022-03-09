@@ -57,6 +57,13 @@ class RunText(SampleBase):
             print('********************')
             # END IMAGES FOR WEATHER
             for string in strings:
+                # set image here
+                currentImage = cloudyImage
+                img_width, img_height = currentImage.size
+                print('|||||||||||||||||||||')
+                print('new image width', img_width)
+                print('new image height', img_height)
+                print('|||||||||||||||||||||')
                 running = True
                 if 'Poll' in string:
                     color = green
@@ -74,13 +81,6 @@ class RunText(SampleBase):
                 while running:
                     offscreen_canvas.Clear()
                     if 'imageeee' in string:
-                        # set image here
-                        currentImage = cloudyImage
-                        img_width, img_height = currentImage.size
-                        print('|||||||||||||||||||||')
-                        print('new image width', img_width)
-                        print('new image height', img_height)
-                        print('|||||||||||||||||||||')
                         pos -= 1
                         if (pos + img_width < 0):
                             running = False
