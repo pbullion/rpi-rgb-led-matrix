@@ -39,7 +39,9 @@ class RunText(SampleBase):
                 self.image = Image.open('./sun.png').convert('RGB')
                 print(self.matrix.width)
                 print(self.matrix.height)
-                self.image.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
+                # self.image.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
+                self.image.height = self.matrix.height
+                self.image.width = self.matrix.width
                 img_width, img_height = self.image.size
                 print(self.image)
                 print(self.image.resize)
