@@ -34,6 +34,7 @@ class RunText(SampleBase):
             strings = json.loads(url.text)
             print(strings)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
+            imgPos = offscreen_canvas.width
             pos = offscreen_canvas.width
             # IMAGES FOR WEATHER
             partlyCloudyImage = Image.open('./images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
