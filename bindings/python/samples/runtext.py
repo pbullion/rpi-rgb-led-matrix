@@ -33,8 +33,8 @@ class RunText(SampleBase):
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
             strings = json.loads(url.text)
             print(strings)
+            strings.insert(0,'imageeee')
             offscreen_canvas = self.matrix.CreateFrameCanvas()
-            imgPos = offscreen_canvas.width
             pos = offscreen_canvas.width
             # IMAGES FOR WEATHER
             partlyCloudyImage = Image.open('./images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
@@ -44,7 +44,6 @@ class RunText(SampleBase):
             stormyImage = Image.open('./images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             sunnyImage = Image.open('./images/weather/icons8-summer-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             windyImage = Image.open('./images/weather/icons8-wind-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-            print('********************')
             # END IMAGES FOR WEATHER
             for string in strings:
                 running = True
@@ -73,15 +72,11 @@ class RunText(SampleBase):
                         time.sleep(0.01)
                     elif 'CLOUDY' in string:
                         img_width, img_height = cloudyImage.size
-                        imgPos -= 1
-                        if (imgPos + img_width < 0):
-                            imgPos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(cloudyImage, imgPos)
-                        len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string) + img_width
                         pos -= 1
-                        if (pos + len < 0):
+                        if (pos + img_width < 0):
                             running = False
                             pos = offscreen_canvas.width
+                        offscreen_canvas.SetImage(cloudyImage, pos)
                         time.sleep(0.01)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
