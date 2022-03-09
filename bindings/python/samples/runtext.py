@@ -81,7 +81,7 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(partlyCloudyImage, pos)
                         time.sleep(0.01)
                     else:
-                        len = graphics.DrawText(offscreen_canvas, font=font, pos, 24, color, string)
+                        len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                         pos -= 1
                         if (pos + len < 0):
                             running = False
