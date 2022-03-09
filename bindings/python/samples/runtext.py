@@ -23,8 +23,9 @@ class RunText(SampleBase):
         print(self.matrix.height)
         print(self.image)
         matrix_width = math.ceil(self.matrix.width / 2)
+        matrix_height = math.ceil(self.matrix.height / 2)
         print(matrix_width)
-        self.image.resize((matrix_width, self.matrix.height), Image.ANTIALIAS)
+        self.image.resize((matrix_width, matrix_height), Image.ANTIALIAS)
         print(self.image)
         while True:
             green = graphics.Color(0, 255, 0)
