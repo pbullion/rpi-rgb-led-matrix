@@ -18,6 +18,8 @@ class ImageScroller(SampleBase):
 
         double_buffer = self.matrix.CreateFrameCanvas()
         img_width, img_height = self.image.size
+        print(img_width)
+        print(img_height)
 
         # let's scroll
         xpos = 0
