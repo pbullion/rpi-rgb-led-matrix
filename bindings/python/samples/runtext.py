@@ -33,7 +33,6 @@ class RunText(SampleBase):
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
             strings = json.loads(url.text)
             print(strings)
-            strings.insert(0,'imageeee')
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
             # IMAGES FOR WEATHER
@@ -71,12 +70,12 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(rainImage, pos)
                         time.sleep(0.01)
                     elif 'CLOUDY' in string:
-                        img_width, img_height = cloudyImage.size
+                        img_width, img_height = partlyCloudyImage.size
                         pos -= 1
                         if (pos + img_width < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(cloudyImage, pos)
+                        offscreen_canvas.SetImage(partlyCloudyImage, pos)
                         time.sleep(0.01)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
