@@ -13,7 +13,7 @@ class RunText(SampleBase):
         print(self)
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
-        self.parser.add_argument("-i", "--image", help="The image to display", default="./tesla1.png")
+        self.parser.add_argument("-i", "--image", help="The image to display", default="./tesla2.png")
 
     def run(self):
         # if not 'image' in self.__dict__:
@@ -22,7 +22,7 @@ class RunText(SampleBase):
         print(self.matrix.width)
         print(self.matrix.height)
         print('==========')
-        self.image = Image.open('./tesla.png').convert('RGB')
+        self.image = Image.open('./tesla2.png').convert('RGB')
         self.image.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
         while True:
             green = graphics.Color(0, 255, 0)
