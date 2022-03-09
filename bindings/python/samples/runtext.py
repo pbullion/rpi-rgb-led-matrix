@@ -6,6 +6,7 @@ import time
 import requests, json
 import json
 import random
+from PIL import Image
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
