@@ -48,7 +48,7 @@ class RunText(SampleBase):
             sunnyImage = Image.open('./images/weather/icons8-summer-48.png').convert('RGB')
             windyImage = Image.open('./images/weather/icons8-wind-48.png').convert('RGB')
             partlyCloudyImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
-            thunderstormImage.resize((self.matrix.width, self.matrix.height))
+            thunderstormImage.resize((32, self.matrix.height), Image.ANTIALIAS)
             cloudyImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
             rainImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
             windyImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
