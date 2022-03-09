@@ -36,11 +36,12 @@ class RunText(SampleBase):
             pos = offscreen_canvas.width
             for string in strings:
                 print('********************')
+                basewidth = 300
                 image = Image.open('./sun.png').convert('RGB')
                 print(self.matrix.width)
                 print(self.matrix.height)
                 image.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
-                img_width, img_height = self.image.size
+                img_width, img_height = image.size
                 print(image)
                 print(img_width)
                 print(img_height)
