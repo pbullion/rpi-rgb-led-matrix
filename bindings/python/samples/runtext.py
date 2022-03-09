@@ -20,7 +20,7 @@ class RunText(SampleBase):
         #     self.image = Image.open(self.args.image).convert('RGB')
         self.image = Image.open('./t.png').convert('RGB')
         print(self.image)
-        matrix_width = math.ciel(self.matrix.width / 2)
+        matrix_width = math.ceil(self.matrix.width / 2)
         print(matrix_width)
         self.image.resize((matrix_width, self.matrix.height), Image.ANTIALIAS)
         print(self.image)
