@@ -37,13 +37,12 @@ class RunText(SampleBase):
             for string in strings:
                 print('********************')
                 print('matrix width', self.matrix.width)
-                print(self.matrix.height)
+                print('matrix height', self.matrix.height)
                 image = Image.open('./sun.png').convert('RGB')
                 image.resize((math.ceil(self.matrix.width / 2), self.matrix.height), Image.ANTIALIAS)
-                image.save('./sun.png').convert('RGB')
                 img_width, img_height = image.size
-                print(img_width)
-                print(img_height)
+                print('new image width', img_width)
+                print('new image height', img_height)
                 print('********************')
                 running = True
                 if 'Poll' in string:
