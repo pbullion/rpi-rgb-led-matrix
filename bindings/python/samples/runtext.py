@@ -40,25 +40,18 @@ class RunText(SampleBase):
             print('********************')
             print('matrix width', self.matrix.width)
             print('matrix height', self.matrix.height)
-            partlyCloudyImage = Image.open('./images/weather/icons8-partly-cloudy-day-48.png').convert('RGB')
-            thunderstormImage = Image.open('./images/weather/icons8-cloud-lightning-48.png').convert('RGB')
-            cloudyImage = Image.open('./images/weather/icons8-clouds-48.png').convert('RGB')
-            rainImage = Image.open('./images/weather/icons8-heavy-rain-48.png').convert('RGB')
-            stormyImage = Image.open('./images/weather/icons8-stormy-weather-48.png').convert('RGB')
-            sunnyImage = Image.open('./images/weather/icons8-summer-48.png').convert('RGB')
-            windyImage = Image.open('./images/weather/icons8-wind-48.png').convert('RGB')
-            partlyCloudyImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
-            resizedThunderstormImage = thunderstormImage.resize((32, self.matrix.height), Image.ANTIALIAS)
-            cloudyImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
-            rainImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
-            windyImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
-            stormyImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
-            sunnyImage.resize((self.matrix.width, self.matrix.height), Image.ANTIALIAS)
+            partlyCloudyImage = Image.open('./images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            thunderstormImage = Image.open('./images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            cloudyImage = Image.open('./images/weather/icons8-clouds-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            rainImage = Image.open('./images/weather/icons8-heavy-rain-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            stormyImage = Image.open('./images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            sunnyImage = Image.open('./images/weather/icons8-summer-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            windyImage = Image.open('./images/weather/icons8-wind-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             print('********************')
             # END IMAGES FOR WEATHER
             for string in strings:
                 # set image here
-                currentImage = resizedThunderstormImage
+                currentImage = windyImage
                 img_width, img_height = currentImage.size
                 print('|||||||||||||||||||||')
                 print('new image width', img_width)
