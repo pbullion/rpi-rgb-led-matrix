@@ -46,6 +46,8 @@ class RunText(SampleBase):
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
             img_width, img_height = self.image.size
+            print(img_width)
+            print(img_height)
             for string in strings:
                 running = True
                 if 'Poll' in string:
