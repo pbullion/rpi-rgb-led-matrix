@@ -7,7 +7,7 @@ import time
 import requests, json
 import json
 import random
-from PIL import Image, ImageDraw
+from PIL import Image, ImageFont, ImageDraw
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
@@ -43,6 +43,8 @@ class RunText(SampleBase):
             stormyImage = Image.open('./images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             sunnyImage = Image.open('./images/weather/icons8-summer-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             windyImage = Image.open('./images/weather/icons8-wind-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            title_font = ImageFont.truetype('font.ttf', 200)
+
             # END IMAGES FOR WEATHER
             for string in strings:
                 running = True
@@ -72,7 +74,7 @@ class RunText(SampleBase):
                     elif 'CLOUDY' in string:
                         img_width, img_height = partlyCloudyImage.size
                         image_editable = ImageDraw.Draw(partlyCloudyImage)
-                        image_editable.text((15,15), "Text goes here", (237, 230, 211), font=font)
+                        image_editable.text((15,15), "Text goes here", (237, 230, 211), font=title_font)
                         my_image.save("image-text.png")
                         pos -= 1
                         if (pos + my_image.width < 0):
