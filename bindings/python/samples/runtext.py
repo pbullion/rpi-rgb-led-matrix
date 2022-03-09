@@ -18,15 +18,7 @@ class RunText(SampleBase):
     def run(self):
         # if not 'image' in self.__dict__:
         #     self.image = Image.open(self.args.image).convert('RGB')
-        self.image = Image.open('./sun.png').convert('RGB')
-        print(self.matrix.width)
-        print(self.matrix.height)
-        print(self.image)
-        matrix_width = math.ceil(self.matrix.width / 2)
-        matrix_height = math.ceil(self.matrix.height / 2)
-        print(matrix_width)
-        self.image.resize((matrix_width, matrix_height), Image.ANTIALIAS)
-        print(self.image)
+
         while True:
             green = graphics.Color(0, 255, 0)
             red = graphics.Color(255, 0, 0)
@@ -45,10 +37,18 @@ class RunText(SampleBase):
             strings.insert(0,'imageeee')
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
-            img_width, img_height = self.image.size
-            print(img_width)
-            print(img_height)
             for string in strings:
+                self.image = Image.open('./sun.png').convert('RGB')
+                print(self.matrix.width)
+                print(self.matrix.height)
+                matrix_width = math.ceil(self.matrix.width / 2)
+                matrix_height = math.ceil(self.matrix.height / 2)
+                print(matrix_width)
+                print(matrix_height)
+                self.image.resize((matrix_width, matrix_height), Image.ANTIALIAS)
+                img_width, img_height = self.image.size
+                print(img_width)
+                print(img_height)
                 running = True
                 if 'Poll' in string:
                     color = green
