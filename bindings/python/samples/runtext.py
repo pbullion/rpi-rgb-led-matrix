@@ -95,6 +95,8 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         time.sleep(0.01)
                     elif '+' in string[1]:
+                        [print('-====================================')]
+                        print(string)
                         img_width, img_height = stockLogo.size
                         pos -= 1
                         offscreen_canvas.SetImage(stockLogo, pos)
