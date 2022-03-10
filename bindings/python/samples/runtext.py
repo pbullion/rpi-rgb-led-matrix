@@ -63,7 +63,7 @@ class RunText(SampleBase):
                     color = colors[randomNum]
                 len = 1
                 if 'http' in string[0]:
-                    stockLogo = Image.open(requests.get(string[0], stream=True).raw).resize((16,16), Image.ANTIALIAS)
+                    stockLogo = Image.open(requests.get(string[0], stream=True).raw).resize((32,32), Image.ANTIALIAS)
                 else:
                     stockLogo = Image.open(requests.get('https://the5ers.com/wp-content/uploads/2019/09/DOW_JONES_logo_2013.png', stream=True).raw).resize((32,32), Image.ANTIALIAS)
                 while running:
@@ -91,7 +91,7 @@ class RunText(SampleBase):
                         if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(stockLogo, pos, 10)
+                        offscreen_canvas.SetImage(stockLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + 36, 24, color, string[1])
                         time.sleep(0.01)
                     elif '+' in string[1]:
@@ -100,7 +100,7 @@ class RunText(SampleBase):
                         if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(stockLogo, pos, 10)
+                        offscreen_canvas.SetImage(stockLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + 36, 24, color, string[1])
                         time.sleep(0.01)
                     else:
