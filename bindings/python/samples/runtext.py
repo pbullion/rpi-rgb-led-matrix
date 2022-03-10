@@ -62,10 +62,7 @@ class RunText(SampleBase):
                 else:
                     color = colors[randomNum]
                 len = 1
-                tsla = Image.open(requests.get('https://logo.clearbit.com/tesla.com', stream=True).raw).resize((32,32), Image.ANTIALIAS)
-                aapl = Image.open(requests.get('https://logo.clearbit.com/apple.com', stream=True).raw).resize((32,32), Image.ANTIALIAS)
-                stem = Image.open(requests.get('https://logo.clearbit.com/stem.com', stream=True).raw).resize((32,32), Image.ANTIALIAS)
-                obnk = Image.open(requests.get('https://logo.clearbit.com/originbank.com', stream=True).raw).resize((32,32), Image.ANTIALIAS)
+                stockLogo = Image.open(requests.get(string[0], stream=True).raw).resize((32,32), Image.ANTIALIAS)
                 while running:
                     offscreen_canvas.Clear()
                     if 'RAIN' in string:
@@ -86,18 +83,6 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
                         time.sleep(0.01)
                     elif '-' in string[1]:
-                        print('in the -')
-                        if string[0] == 'tsla':
-                            stockLogo = tsla
-                        elif string[0] == 'aapl':
-                            print('it was appppple')
-                            stockLogo = aapl
-                        elif string[0] == 'stem':
-                            stockLogo = stem
-                        elif string[0] == 'obnk':
-                            stockLogo = obnk
-                        else:
-                            stockLogo = stockDown
                         img_width, img_height = stockLogo.size
                         pos -= 1
                         if (pos + len < 0):
@@ -107,19 +92,6 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string[1])
                         time.sleep(0.01)
                     elif '+' in string[1]:
-                        print('in the +')
-                        name, data = string;
-                        if string[0] == 'tsla':
-                            stockLogo = tsla
-                        elif string[0] == 'aapl':
-                            print('it was appppple')
-                            stockLogo = aapl
-                        elif string[0] == 'stem':
-                            stockLogo = stem
-                        elif string[0] == 'obnk':
-                            stockLogo = obnk
-                        else:
-                            stockLogo = stockUp
                         img_width, img_height = stockLogo.size
                         pos -= 1
                         if (pos + len < 0):
