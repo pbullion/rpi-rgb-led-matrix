@@ -89,6 +89,7 @@ class RunText(SampleBase):
                         if string[0] == 'tsla':
                             stockLogo = tsla
                         elif string[0] == 'aapl':
+                            print('it was appppple')
                             stockLogo = aapl
                         elif string[0] == 'stem':
                             stockLogo = stem
@@ -108,6 +109,7 @@ class RunText(SampleBase):
                         if string[0] == 'tsla':
                             stockLogo = tsla
                         elif string[0] == 'aapl':
+                            print('it was appppple')
                             stockLogo = aapl
                         elif string[0] == 'stem':
                             stockLogo = stem
