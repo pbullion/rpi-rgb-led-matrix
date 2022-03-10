@@ -86,6 +86,7 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
                         time.sleep(0.01)
                     elif '-' in string[1]:
+                        print('in the -')
                         if string[0] == 'tsla':
                             stockLogo = tsla
                         elif string[0] == 'aapl':
@@ -106,6 +107,7 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                         time.sleep(0.01)
                     elif '+' in string[1]:
+                        print('in the +')
                         if string[0] == 'tsla':
                             stockLogo = tsla
                         elif string[0] == 'aapl':
