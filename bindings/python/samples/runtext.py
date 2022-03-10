@@ -84,6 +84,8 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
                         time.sleep(0.01)
                     elif '-' and '%' in string[1]:
+                        print('===---------=======')
+                        print(stockLogo)
                         img_width, img_height = stockLogo.size
                         pos -= 1
                         if (pos + len < 0):
