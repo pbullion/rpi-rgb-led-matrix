@@ -53,11 +53,11 @@ class RunText(SampleBase):
                     color = green
                 elif 'BAYLOR' in string:
                     color = green
-                elif '#' in string in string:
+                elif '#' in string:
                     color = green
-                elif '-' in string in string[1]:
+                elif '-' in string[1]:
                     color = red
-                elif '+' in string in string[1]:
+                elif '+' in string[1]:
                     color = green
                 else:
                     color = colors[randomNum]
