@@ -60,6 +60,7 @@ class RunText(SampleBase):
                     print(string[0])
                     print(string[1])
                     stockLogo = Image.open(requests.get(string[0], stream=True).raw).resize((32,32), Image.ANTIALIAS)
+                    print(stockLogo)
                 else:
                     color = colors[randomNum]
                 len = 1
@@ -92,6 +93,8 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos + stockLogo.width + 3, 24, red, string)
                         time.sleep(0.01)
                     elif '+' and '%' in string[1]:
+                        print('888888888')
+                        print(stockLogo)
                         img_width, img_height = stockLogo.size
                         pos -= 1
                         if (pos + len < 0):
