@@ -62,11 +62,13 @@ class RunText(SampleBase):
                 else:
                     color = colors[randomNum]
                 len = 1
-                if 'http' in string[0]:
-                    stockLogo = Image.open(requests.get(string[0], stream=True).raw).resize((32,32), Image.ANTIALIAS)
-                else:
-                    stockLogo = Image.open(requests.get('https://the5ers.com/wp-content/uploads/2019/09/DOW_JONES_logo_2013.png', stream=True).raw).resize((32,32), Image.ANTIALIAS)
                 while running:
+                    if 'http' in string[0]:
+                        print('HTTPPPPPPPPPP')
+                        print(string)
+                        stockLogo = Image.open(requests.get(string[0], stream=True).raw).resize((32,32), Image.ANTIALIAS)
+                    else:
+                        stockLogo = Image.open(requests.get('https://the5ers.com/wp-content/uploads/2019/09/DOW_JONES_logo_2013.png', stream=True).raw).resize((32,32), Image.ANTIALIAS)
                     offscreen_canvas.Clear()
                     if 'RAIN' in string:
                         img_width, img_height = rainImage.size
@@ -95,7 +97,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         time.sleep(0.01)
                     elif '+' in string[1]:
-                        [print('-====================================')]
+                        print('-====================================')
                         print(string)
                         img_width, img_height = stockLogo.size
                         pos -= 1
