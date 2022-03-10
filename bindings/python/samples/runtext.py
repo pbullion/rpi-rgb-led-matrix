@@ -60,11 +60,11 @@ class RunText(SampleBase):
                         color = red
                     elif '+' in string[1]:
                         color = green
-                len = 1
-                if 'http' in string[0]:
+                if isinstance(string, list) and 'http' in string[0]:
                     stockLogo = Image.open(requests.get(string[0], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                stockDown = Image.open('./images/stocks/icons8-down-48.png').convert('RGB').resize((16,16), Image.ANTIALIAS)
-                stockUp = Image.open('./images/stocks/icons8-up-48.png').convert('RGB').resize((16,16), Image.ANTIALIAS)
+                    stockDown = Image.open('./images/stocks/icons8-down-48.png').convert('RGB').resize((16,16), Image.ANTIALIAS)
+                    stockUp = Image.open('./images/stocks/icons8-up-48.png').convert('RGB').resize((16,16), Image.ANTIALIAS)
+                len = 1
                 while running:
                     offscreen_canvas.Clear()
                     if 'RAIN' in string:
