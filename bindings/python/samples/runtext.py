@@ -85,7 +85,7 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(partlyCloudyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
                         time.sleep(0.01)
-                    elif '-' and '%' in string[1]:
+                    elif '-' in string[1]:
                         if string[0] == 'tsla':
                             stockLogo = tsla
                         elif string[0] == 'aapl':
@@ -104,7 +104,7 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(stockLogo, pos, 10)
                         len = graphics.DrawText(offscreen_canvas, font, pos + 36, 24, color, string)
                         time.sleep(0.01)
-                    elif '+' and '%' in string[1]:
+                    elif '+' in string[1]:
                         if string[0] == 'tsla':
                             stockLogo = tsla
                         elif string[0] == 'aapl':
