@@ -49,7 +49,6 @@ class RunText(SampleBase):
             # END IMAGES FOR WEATHER
             for string in strings:
                 running = True
-                stockLogo = Image.open(requests.get('https://logo.clearbit.com/apple.com', stream=True).raw).resize((32,32), Image.ANTIALIAS)
                 if 'Poll' in string:
                     color = green
                 elif 'BAYLOR' in string:
