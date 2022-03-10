@@ -85,24 +85,25 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(partlyCloudyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
                         time.sleep(0.01)
-                    elif '-' in string[1]:
-                        img_width, img_height = stockLogo.size
-                        pos -= 1
-                        offscreen_canvas.SetImage(stockLogo, pos)
-                        len = graphics.DrawText(offscreen_canvas, font, pos + 36, 24, color, string[1])
-                        if (pos + 36 + len < 0):
-                            running = False
-                            pos = offscreen_canvas.width
-                        time.sleep(0.01)
-                    elif '+' in string[1]:
-                        img_width, img_height = stockLogo.size
-                        pos -= 1
-                        offscreen_canvas.SetImage(stockLogo, pos)
-                        len = graphics.DrawText(offscreen_canvas, font, pos + 36, 24, color, string[1])
-                        if (pos + 36 + len < 0):
-                            running = False
-                            pos = offscreen_canvas.width
-                        time.sleep(0.01)
+                    elif isInstance(string, list)
+                        if '-' in string[1]:
+                            img_width, img_height = stockLogo.size
+                            pos -= 1
+                            offscreen_canvas.SetImage(stockLogo, pos)
+                            len = graphics.DrawText(offscreen_canvas, font, pos + 36, 24, color, string[1])
+                            if (pos + 36 + len < 0):
+                                running = False
+                                pos = offscreen_canvas.width
+                            time.sleep(0.01)
+                        elif '+' in string[1]:
+                            img_width, img_height = stockLogo.size
+                            pos -= 1
+                            offscreen_canvas.SetImage(stockLogo, pos)
+                            len = graphics.DrawText(offscreen_canvas, font, pos + 36, 24, color, string[1])
+                            if (pos + 36 + len < 0):
+                                running = False
+                                pos = offscreen_canvas.width
+                            time.sleep(0.01)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                         pos -= 1
