@@ -63,7 +63,7 @@ class RunText(SampleBase):
                     color = colors[randomNum]
                 len = 1
                 if 'http' in string[0]:
-                    stockLogo = Image.open(requests.get(string[0], stream=True).raw).resize((32,32), Image.ANTIALIAS)
+                    stockLogo = Image.open(requests.get(string[0], stream=True).raw).resize((16,16), Image.ANTIALIAS)
                 else:
                     stockLogo = Image.open(requests.get('https://the5ers.com/wp-content/uploads/2019/09/DOW_JONES_logo_2013.png', stream=True).raw).resize((32,32), Image.ANTIALIAS)
                 while running:
