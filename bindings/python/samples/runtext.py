@@ -62,7 +62,8 @@ class RunText(SampleBase):
                 else:
                     color = colors[randomNum]
                 len = 1
-                stockLogo = Image.open(requests.get(string[0], stream=True).raw).resize((32,32), Image.ANTIALIAS)
+                if 'http' in string[0]:
+                    stockLogo = Image.open(requests.get(string[0], stream=True).raw).resize((32,32), Image.ANTIALIAS)
                 while running:
                     offscreen_canvas.Clear()
                     if 'RAIN' in string:
