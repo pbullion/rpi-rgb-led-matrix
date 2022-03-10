@@ -89,7 +89,7 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(stockLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + stockLogo.width + 3, 24, red, string)
                         time.sleep(0.01)
-                    elif '+' and '%' in string[1]::
+                    elif '+' and '%' in string[1]:
                         img_width, img_height = stockLogo.size
                         pos -= 1
                         if (pos + len < 0):
