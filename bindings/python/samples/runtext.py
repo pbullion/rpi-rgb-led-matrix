@@ -65,9 +65,9 @@ class RunText(SampleBase):
                 if 'http' in string[0]:
                     print('HTTPPPPPPPPPP')
                     print(string)
-                    stockLogo = Image.open(requests.get(string[0], stream=True).raw).resize((32,32), Image.ANTIALIAS)
+                    stockLogo = Image.open(requests.get(string[0], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 else:
-                    stockLogo = Image.open(requests.get('https://the5ers.com/wp-content/uploads/2019/09/DOW_JONES_logo_2013.png', stream=True).raw).resize((32,32), Image.ANTIALIAS)
+                    stockLogo = Image.open(requests.get('https://the5ers.com/wp-content/uploads/2019/09/DOW_JONES_logo_2013.png', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 while running:
                     offscreen_canvas.Clear()
                     if 'RAIN' in string:
