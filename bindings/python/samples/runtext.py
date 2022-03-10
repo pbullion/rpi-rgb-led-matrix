@@ -37,8 +37,6 @@ class RunText(SampleBase):
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
             # IMAGES FOR WEATHER
-            stockDown = Image.open('./images/stocks/icons8-down-48.png').convert('RGB').resize((11,11), Image.ANTIALIAS)
-            stockUp = Image.open('./images/stocks/icons8-up-48.png').convert('RGB').resize((11,11), Image.ANTIALIAS)
             partlyCloudyImage = Image.open('./images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             thunderstormImage = Image.open('./images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             cloudyImage = Image.open('./images/weather/icons8-clouds-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
@@ -64,6 +62,8 @@ class RunText(SampleBase):
                 len = 1
                 if 'http' in string[0]:
                     stockLogo = Image.open(requests.get(string[0], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                stockDown = Image.open('./images/stocks/icons8-down-48.png').convert('RGB').resize((11,11), Image.ANTIALIAS)
+                stockUp = Image.open('./images/stocks/icons8-up-48.png').convert('RGB').resize((11,11), Image.ANTIALIAS)
                 while running:
                     offscreen_canvas.Clear()
                     if 'RAIN' in string:
@@ -88,7 +88,8 @@ class RunText(SampleBase):
                             img_width, img_height = stockLogo.size
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
-                            len = graphics.DrawText(offscreen_canvas, font, pos + 36, 24, color, string[1])
+                            offscreen_canvas.SetImage(stockDown, pos + 32)
+                            len = graphics.DrawText(offscreen_canvas, font, pos + 36 + 33, 24, color, string[1])
                             if (pos + 36 + len < 0):
                                 running = False
                                 pos = offscreen_canvas.width
@@ -97,7 +98,8 @@ class RunText(SampleBase):
                             img_width, img_height = stockLogo.size
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
-                            len = graphics.DrawText(offscreen_canvas, font, pos + 36, 24, color, string[1])
+                            offscreen_canvas.SetImage(stockUp, pos + 32)
+                            len = graphics.DrawText(offscreen_canvas, font, pos + 36 + 33, 24, color, string[1])
                             if (pos + 36 + len < 0):
                                 running = False
                                 pos = offscreen_canvas.width
