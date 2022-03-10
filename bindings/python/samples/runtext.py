@@ -49,20 +49,18 @@ class RunText(SampleBase):
             # END IMAGES FOR WEATHER
             for string in strings:
                 running = True
+                stockLogo = Image.open(requests.get('https://logo.clearbit.com/apple.com', stream=True).raw).resize((32,32), Image.ANTIALIAS)
                 if 'Poll' in string:
                     color = green
                 elif 'BAYLOR' in string:
                     color = green
-                elif '#' in string in string:
+                elif '#' in string:
                     color = green
-                elif '-' in string in string:
-                    color = red
-                elif '+' in string in string:
-                    color = green
+                elif 'http' in string[0]:
+                    return stockLogo = Image.open(requests.get(string[0], stream=True).raw).resize((32,32), Image.ANTIALIAS)
                 else:
                     color = colors[randomNum]
                 len = 1
-                stockLogo = Image.open(requests.get('https://logo.clearbit.com/apple.com', stream=True).raw).resize((32,32), Image.ANTIALIAS)
                 while running:
                     offscreen_canvas.Clear()
                     if 'RAIN' in string:
@@ -82,23 +80,23 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(partlyCloudyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
                         time.sleep(0.01)
-                    elif '-' and '%' in string:
+                    elif '-' and '%' in string[1]:
                         img_width, img_height = stockLogo.size
                         pos -= 1
                         if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(stockLogo, pos)
-                        len = graphics.DrawText(offscreen_canvas, font, pos + stockLogo.width + 3, 24, color, string)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + stockLogo.width + 3, 24, red, string)
                         time.sleep(0.01)
-                    elif '+' and '%' in string:
+                    elif '+' and '%' in string[1]::
                         img_width, img_height = stockLogo.size
                         pos -= 1
                         if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(stockLogo, pos)
-                        len = graphics.DrawText(offscreen_canvas, font, pos + stockLogo.width + 3, 24, color, string)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + stockLogo.width + 3, 24, green, string)
                         time.sleep(0.01)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
