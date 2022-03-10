@@ -81,7 +81,7 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
                         time.sleep(0.01)
                     elif '-' and '%' in string:
-                        const stockLogo = Image.open('https://logo.clearbit.com/apple.com').convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        stockLogo = Image.open('https://logo.clearbit.com/apple.com').convert('RGB').resize((32,32), Image.ANTIALIAS)
                         img_width, img_height = stockLogo.size
                         pos -= 1
                         if (pos + len < 0):
@@ -91,7 +91,7 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos + 36, 24, color, string)
                         time.sleep(0.01)
                     elif '+' and '%' in string:
-                        const stockLogo = Image.open('https://logo.clearbit.com/apple.com').convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        stockLogo = Image.open('https://logo.clearbit.com/apple.com').convert('RGB').resize((32,32), Image.ANTIALIAS)
                         img_width, img_height = stockLogo.size
                         pos -= 1
                         if (pos + len < 0):
