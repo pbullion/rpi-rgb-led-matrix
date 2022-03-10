@@ -53,12 +53,13 @@ class RunText(SampleBase):
                     color = green
                 elif '#' in string:
                     color = green
-                elif '-' in string[1]:
-                    color = red
-                elif '+' in string[1]:
-                    color = green
                 else:
                     color = colors[randomNum]
+                if isinstance(string, list):
+                    if '-' in string[1]:
+                        color = red
+                    elif '+' in string[1]:
+                        color = green
                 len = 1
                 if 'http' in string[0]:
                     stockLogo = Image.open(requests.get(string[0], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
@@ -88,7 +89,7 @@ class RunText(SampleBase):
                             img_width, img_height = stockLogo.size
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
-                            offscreen_canvas.SetImage(stockDown, pos + 45, 10)
+                            offscreen_canvas.SetImage(stockDown, pos + 45, 8)
                             len = graphics.DrawText(offscreen_canvas, font, pos + 36 + 36, 24, color, string[1])
                             if (pos + 36 + len < 0):
                                 running = False
@@ -98,7 +99,7 @@ class RunText(SampleBase):
                             img_width, img_height = stockLogo.size
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
-                            offscreen_canvas.SetImage(stockUp, pos + 45, 10)
+                            offscreen_canvas.SetImage(stockUp, pos + 45, 8)
                             len = graphics.DrawText(offscreen_canvas, font, pos + 36 + 36, 24, color, string[1])
                             if (pos + 36 + len < 0):
                                 running = False
