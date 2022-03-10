@@ -64,8 +64,6 @@ class RunText(SampleBase):
                 len = 1
                 if 'http' in string[0]:
                     stockLogo = Image.open(requests.get(string[0], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                else:
-                    stockLogo = Image.open(requests.get('https://the5ers.com/wp-content/uploads/2019/09/DOW_JONES_logo_2013.png', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 while running:
                     offscreen_canvas.Clear()
                     if 'RAIN' in string:
@@ -79,7 +77,7 @@ class RunText(SampleBase):
                     elif 'CLOUDY' in string:
                         img_width, img_height = partlyCloudyImage.size
                         pos -= 1
-                        if (pos + len < 0):
+                        if (pos + partlyCloudyImage.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(partlyCloudyImage, pos)
