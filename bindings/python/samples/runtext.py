@@ -92,7 +92,7 @@ class RunText(SampleBase):
                         pos -= 1
                         offscreen_canvas.SetImage(stockLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + 36, 24, color, string[1])
-                        if (pos + len < 0):
+                        if (pos + 36 + len < 0):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.01)
@@ -103,7 +103,7 @@ class RunText(SampleBase):
                         pos -= 1
                         offscreen_canvas.SetImage(stockLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + 36, 24, color, string[1])
-                        if (pos + len < 0):
+                        if (pos + 36 + len < 0):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.01)
