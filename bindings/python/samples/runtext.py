@@ -62,6 +62,7 @@ class RunText(SampleBase):
                 else:
                     color = colors[randomNum]
                 len = 1
+                stockLogo = Image.open(requests.get('https://logo.clearbit.com/apple.com', stream=True).raw).resize((32,32), Image.ANTIALIAS)
                 while running:
                     offscreen_canvas.Clear()
                     if 'RAIN' in string:
@@ -82,13 +83,12 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
                         time.sleep(0.01)
                     elif '-' and '%' in string:
-                        stockLogo = Image.open(requests.get('https://logo.clearbit.com/apple.com', stream=True).raw).resize((32,32), Image.ANTIALIAS)
                         img_width, img_height = stockLogo.size
                         pos -= 1
                         if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(stockLogo, pos, 10)
+                        offscreen_canvas.SetImage(stockLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + 36, 24, color, string)
                         time.sleep(0.01)
                     elif '+' and '%' in string:
