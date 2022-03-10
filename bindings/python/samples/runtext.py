@@ -85,7 +85,7 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(partlyCloudyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
                         time.sleep(0.01)
-                    elif isInstance(string, list):
+                    elif isinstance(string, list):
                         if '-' in string[1]:
                             img_width, img_height = stockLogo.size
                             pos -= 1
