@@ -80,23 +80,25 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(partlyCloudyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
                         time.sleep(0.01)
-                    elif '-' in string:
-                        img_width, img_height = stockDown.size
+                    elif '-' and '%' in string:
+                        const stockLogo = Image.open('https://logo.clearbit.com/apple.com').convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        img_width, img_height = stockLogo.size
                         pos -= 1
                         if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
-                        offscreen_canvas.SetImage(stockDown, pos + len, 10)
+                        offscreen_canvas.SetImage(stockLogo, pos, 10)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + 36, 24, color, string)
                         time.sleep(0.01)
-                    elif '+' in string:
-                        img_width, img_height = stockUp.size
+                    elif '+' and '%' in string:
+                        const stockLogo = Image.open('https://logo.clearbit.com/apple.com').convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        img_width, img_height = stockLogo.size
                         pos -= 1
                         if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
-                        offscreen_canvas.SetImage(stockUp, pos + len, 10)
+                        offscreen_canvas.SetImage(stockLogo, pos, 10)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + 36, 24, color, string)
                         time.sleep(0.01)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
