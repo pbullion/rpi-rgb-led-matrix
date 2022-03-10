@@ -57,7 +57,7 @@ class RunText(SampleBase):
                 elif '#' in string:
                     color = green
                 elif 'http' in string[0]:
-                    return stockLogo = Image.open(requests.get(string[0], stream=True).raw).resize((32,32), Image.ANTIALIAS)
+                    stockLogo = Image.open(requests.get(string[0], stream=True).raw).resize((32,32), Image.ANTIALIAS)
                 else:
                     color = colors[randomNum]
                 len = 1
