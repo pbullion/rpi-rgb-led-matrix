@@ -49,18 +49,18 @@ class RunText(SampleBase):
                 running = True
                 if 'Poll' in string:
                     color = green
-                elif 'BAYLOR' in string:
-                    color = green
                 elif '#' in string:
                     color = green
                 else:
                     color = colors[randomNum]
-                if isinstance(string, list):
-                    if '-' in string[1]:
-                        color = red
-                    elif '+' in string[1]:
-                        color = green
+                if isinstance(string, list) and 'game' in string[0]:
+                    awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    homeLogo = Image.open(requests.get(string[4], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 if isinstance(string, list) and 'http' in string[0]:
+                    if '-' in string[3]:
+                        color = red
+                    elif '+' in string[3]:
+                        color = green
                     stockLogo = Image.open(requests.get(string[0], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     stockDown = Image.open('./images/stocks/icons8-down-48.png').convert('RGB').resize((16,16), Image.ANTIALIAS)
                     stockUp = Image.open('./images/stocks/icons8-up-48.png').convert('RGB').resize((16,16), Image.ANTIALIAS)
@@ -68,6 +68,7 @@ class RunText(SampleBase):
                 while running:
                     offscreen_canvas.Clear()
                     if 'RAIN' in string:
+                        color = blue
                         img_width, img_height = rainImage.size
                         pos -= 1
                         if (pos + img_width < 0):
@@ -75,7 +76,8 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(rainImage, pos)
                         time.sleep(0.01)
-                    elif 'CLOUDY' in string:
+                    elif 'CLOUDY' in string or 'OVERCAST' in string:
+                        color = blue
                         img_width, img_height = partlyCloudyImage.size
                         pos -= 1
                         if (pos + partlyCloudyImage.width + len < 0):
@@ -84,27 +86,100 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(partlyCloudyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
                         time.sleep(0.01)
+                    elif 'THUNDER' in string:
+                        color = purple
+                        img_width, img_height = thunderstormImage.size
+                        pos -= 1
+                        if (pos + thunderstormImage.width + len < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        offscreen_canvas.SetImage(thunderstormImage, pos)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + thunderstormImage.width, 24, color, string)
+                        time.sleep(0.01)
+                    elif 'SUN' in string:
+                        color = yellow
+                        img_width, img_height = sunnyImage.size
+                        pos -= 1
+                        if (pos + sunnyImage.width + len < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        offscreen_canvas.SetImage(sunnyImage, pos)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.width, 24, color, string)
+                        time.sleep(0.01)
+                    elif isinstance(string, list) and 'game' in string[0]:
+                            awayColor = graphics.Color(string[2])
+                            homeColor = graphics.Color(string[5])
+                            awayTeamString = string[3]
+                            homeTeamString = string[6]
+                            statusString = string[7]
+                            pos -= 1
+                            # away team logo
+                            offscreen_canvas.SetImage(awayLogo, pos)
+                            # away team string
+                            awayTeam = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, awayColor, awayTeamString)
+                            # home team logo
+                            offscreen_canvas.SetImage(homeLogo, pos + 35 + awayTeam)
+                            # home team string
+                            homeTeam = graphics.DrawText(offscreen_canvas, font, pos + 35 + awayTeam + 35, 24, homeColor, homeTeamString)
+                             # game time
+                            status = graphics.DrawText(offscreen_canvas, font, pos + 35 + awayTeam + 35 + homeTeam, 24, blue, statusString)
+                            if ( pos + 35 + awayTeam + 35 + homeTeam + status < 0):
+                                running = False
+                                pos = offscreen_canvas.width
+                            time.sleep(0.01)
                     elif isinstance(string, list):
-                        if '-' in string[1]:
-                            img_width, img_height = stockLogo.size
+                        if '-' in string[3]:
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
-                            offscreen_canvas.SetImage(stockDown, pos + 45, 8)
-                            len = graphics.DrawText(offscreen_canvas, font, pos + 36 + 36, 24, color, string[1])
-                            if (pos + 36 + 36 + len < 0):
+                            len = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, color, string[1])
+                            len = graphics.DrawText(offscreen_canvas, font, pos + 35 + 15, 24, color, string[2])
+                            offscreen_canvas.SetImage(stockDown, pos + 35 + 15 + 20, 8)
+                            len = graphics.DrawText(offscreen_canvas, font, pos + 35 + 15 + 20 + 17, 24, color, string[3])
+                            if (pos + 35 + 15 + 20 + 17 + len < 0):
                                 running = False
                                 pos = offscreen_canvas.width
                             time.sleep(0.01)
-                        elif '+' in string[1]:
-                            img_width, img_height = stockLogo.size
+                        elif '+' in string[3]:
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
-                            offscreen_canvas.SetImage(stockUp, pos + 45, 8)
-                            len = graphics.DrawText(offscreen_canvas, font, pos + 36 + 36, 24, color, string[1])
-                            if (pos + 36 + 36 + len < 0):
+                            len = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, color, string[1])
+                            len = graphics.DrawText(offscreen_canvas, font, pos + 35 + 15, 24, color, string[2])
+                            offscreen_canvas.SetImage(stockUp, pos + 35 + 15 + 20, 8)
+                            len = graphics.DrawText(offscreen_canvas, font, pos + 35 + 15 + 20 + 17, 24, color, string[3])
+                            if (pos + 35 + 15 + 20 + 17 + len < 0):
                                 running = False
                                 pos = offscreen_canvas.width
                             time.sleep(0.01)
+                    elif 'AP Poll' in string:
+                        color = green
+                        basketballLogo = Image.open('./images/logos/basketball.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        pos -= 1
+                        if (pos + basketballLogo.width + len < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        offscreen_canvas.SetImage(basketballLogo, pos)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + basketballLogo.width + 4, 24, color, string)
+                        time.sleep(0.01)
+                    elif 'ESPN' in string:
+                        color = green
+                        espnLogo = Image.open('./images/logos/espn.png').convert('RGB').resize((130,32), Image.ANTIALIAS)
+                        pos -= 1
+                        if (pos + espnLogo.width + len < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        offscreen_canvas.SetImage(espnLogo, pos)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + espnLogo.width + 4, 24, color, string)
+                        time.sleep(0.01)
+                    elif 'FOXNEWS' in string:
+                        color = blue
+                        foxNewsLogo = Image.open('./images/logos/foxnews.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        pos -= 1
+                        if (pos + foxNewsLogo.width + len < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        offscreen_canvas.SetImage(foxNewsLogo, pos)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + foxNewsLogo.width + 4, 24, color, string)
+                        time.sleep(0.01)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                         pos -= 1
@@ -122,13 +197,3 @@ if __name__ == "__main__":
     run_text = RunText()
     if (not run_text.process()):
         run_text.print_help()
-
-
-        # if includes 'rain' do the rain image
-        # sunny
-        # partly cloudy
-        # includes 'thunder' do lightning image
-        #
-        #
-        #
-        #
