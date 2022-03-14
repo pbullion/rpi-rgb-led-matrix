@@ -180,6 +180,16 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(foxNewsLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + foxNewsLogo.width + 4, 24, color, string)
                         time.sleep(0.01)
+                    elif 'CNN' in string:
+                        color = blue
+                        cnnLogo = Image.open('./images/logos/cnn.png').convert('RGB').resize((69,32), Image.ANTIALIAS)
+                        pos -= 1
+                        if (pos + cnnLogo.width + len < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        offscreen_canvas.SetImage(cnnLogo, pos)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + cnnLogo.width + 4, 24, color, string)
+                        time.sleep(0.01)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                         pos -= 1
