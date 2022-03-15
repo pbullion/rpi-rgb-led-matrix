@@ -30,6 +30,8 @@ class RunText(SampleBase):
             # END COLORS
             font = graphics.Font()
             font.LoadFont("../../../fonts/texgyre-27.bdf")
+            smallFont = graphics.Font()
+            smallFont.LoadFont("../../../fonts/6x13.bdf")
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
             strings = json.loads(url.text)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
@@ -110,25 +112,48 @@ class RunText(SampleBase):
                         homeColor = graphics.Color(string[7], string[8], string[9])
                         awayTeamString = string[5]
                         homeTeamString = string[10]
+                        awayTeamStatusString = string[12]
+                        homeTeamStatusString = string[13]
                         statusString = string[11]
-                        versusString = ' vs '
+                        versusString = ' at '
                         pos -= 1
-                        # away team logo
+                        buffer = 6
                         offscreen_canvas.SetImage(awayLogo, pos)
-                        # away team string
-                        awayTeam = graphics.DrawText(offscreen_canvas, font, 15 + pos + 35, 24, awayColor, awayTeamString)
-                        # versus
-                        versus = graphics.DrawText(offscreen_canvas, font, 25 + pos + 35 + awayTeam, 24, green, versusString)
-                        # home team logo
-                        offscreen_canvas.SetImage(homeLogo, 30 + pos + 35 + awayTeam + versus)
-                        # home team string
-                        homeTeam = graphics.DrawText(offscreen_canvas, font, 35 + pos + 35 + awayTeam + 35 + versus, 24, homeColor, homeTeamString)
-                        # game time
-                        status = graphics.DrawText(offscreen_canvas, font, 80 + pos + 45 + awayTeam + 35 + homeTeam, 24, blue, statusString)
-                        if (60 + pos + 45 + awayTeam + 35 + homeTeam + status + versus < 0):
+                        awayTeam = graphics.DrawText(offscreen_canvas, smallFont, awayLogo.width + buffer, 2, awayColor, awayTeamString)
+                        awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, awayLogo.width + buffer + 5, 15, awayColor, awayTeamStatusString)
+                        versus = graphics.DrawText(offscreen_canvas, font, awayLogo.width + buffer + buffer + awayTeam, 24, purple, versusString)
+                        offscreen_canvas.SetImage(homeLogo, awayLogo.width + buffer + buffer + versus)
+                        homeTeam = graphics.DrawText(offscreen_canvas, smallFont, awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width, 2, homeColor, homeTeamString)
+                        homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam, awayColor, awayTeamStatusString)
+                        status = graphics.DrawText(offscreen_canvas, smallFont, awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 24, purple, statusString)
+                        if ( awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer < 0):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.01)
+                    # elif isinstance(string, list) and 'game' in string[0]:
+                    #     awayColor = graphics.Color(string[2], string[3], string[4])
+                    #     homeColor = graphics.Color(string[7], string[8], string[9])
+                    #     awayTeamString = string[5]
+                    #     homeTeamString = string[10]
+                    #     statusString = string[11]
+                    #     versusString = ' vs '
+                    #     pos -= 1
+                    #     # away team logo
+                    #     offscreen_canvas.SetImage(awayLogo, pos)
+                    #     # away team string
+                    #     awayTeam = graphics.DrawText(offscreen_canvas, font, 15 + pos + 35, 24, awayColor, awayTeamString)
+                    #     # versus
+                    #     versus = graphics.DrawText(offscreen_canvas, font, 25 + pos + 35 + awayTeam, 24, green, versusString)
+                    #     # home team logo
+                    #     offscreen_canvas.SetImage(homeLogo, 30 + pos + 35 + awayTeam + versus)
+                    #     # home team string
+                    #     homeTeam = graphics.DrawText(offscreen_canvas, font, 35 + pos + 35 + awayTeam + 35 + versus, 24, homeColor, homeTeamString)
+                    #     # game time
+                    #     status = graphics.DrawText(offscreen_canvas, font, 80 + pos + 45 + awayTeam + 35 + homeTeam, 24, blue, statusString)
+                    #     if (60 + pos + 45 + awayTeam + 35 + homeTeam + status + versus < 0):
+                    #         running = False
+                    #         pos = offscreen_canvas.width
+                    #     time.sleep(0.01)
                     elif isinstance(string, list):
                         if '-' in string[3]:
                             pos -= 1
