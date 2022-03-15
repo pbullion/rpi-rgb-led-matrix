@@ -126,7 +126,7 @@ class RunText(SampleBase):
                         # home team string
                         homeTeam = graphics.DrawText(offscreen_canvas, font, 15 + pos + 35 + awayTeam + 35, 24, homeColor, homeTeamString)
                         # game time
-                        status = graphics.DrawText(offscreen_canvas, font, 15 + pos + 35 + awayTeam + 35 + homeTeam, 24, blue, statusString)
+                        status = graphics.DrawText(offscreen_canvas, font, 25 + pos + 35 + awayTeam + 35 + homeTeam, 24, blue, statusString)
                         if (60 + pos + 35 + awayTeam + 35 + homeTeam + status < 0):
                             running = False
                             pos = offscreen_canvas.width
