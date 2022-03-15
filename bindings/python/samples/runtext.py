@@ -138,7 +138,7 @@ class RunText(SampleBase):
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
                             first = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, color, string[1])
-                            second = graphics.DrawText(offscreen_canvas, font, pos + first + 35, color, string[2])
+                            second = graphics.DrawText(offscreen_canvas, font, pos + first + 35, 24, color, string[2])
                             offscreen_canvas.SetImage(stockDown,  pos + first + 35 + second, 8)
                             third = graphics.DrawText(offscreen_canvas, font,  pos + first + 35 + third, 24, color, string[3])
                             if (pos + 35 + 15 + 20 + 17 + len < 0):
