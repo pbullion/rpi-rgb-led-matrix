@@ -164,7 +164,7 @@ class RunText(SampleBase):
                         if (pos + basketballLogo.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(basketballLogo, pos)
+                        # offscreen_canvas.SetImage(basketballLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + basketballLogo.width + 4, 24, color, string)
                         time.sleep(0.01)
                     elif 'ESPN' in string:
