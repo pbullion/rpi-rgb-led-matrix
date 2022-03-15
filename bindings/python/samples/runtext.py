@@ -66,6 +66,7 @@ class RunText(SampleBase):
                     stockUp = Image.open('./images/stocks/icons8-up-48.png').convert('RGB').resize((16,16), Image.ANTIALIAS)
                 len = 1
                 while running:
+                    print('runnnnnnnnnning')
                     offscreen_canvas.Clear()
                     if 'RAIN' in string:
                         color = blue
