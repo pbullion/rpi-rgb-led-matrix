@@ -107,36 +107,36 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.width, 24, color, string)
                         time.sleep(0.01)
                     elif isinstance(string, list) and 'game' in string[0]:
-                            awayColor = graphics.Color(string[2])
-                            homeColor = graphics.Color(string[5])
-                            print(homeColor)
-                            print(awayColor)
-                            awayTeamString = string[3]
-                            homeTeamString = string[6]
-                            statusString = string[7]
-                            pos -= 1
-                            # away team logo
-                            offscreen_canvas.SetImage(awayLogo, pos)
-                            # away team string
-                            awayTeam = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, awayColor, awayTeamString)
-                            # home team logo
-                            offscreen_canvas.SetImage(homeLogo, pos + 35 + awayTeam)
-                            # home team string
-                            homeTeam = graphics.DrawText(offscreen_canvas, font, pos + 35 + awayTeam + 35, 24, homeColor, homeTeamString)
-                             # game time
-                            status = graphics.DrawText(offscreen_canvas, font, pos + 35 + awayTeam + 35 + homeTeam, 24, blue, statusString)
-                            if ( pos + 35 + awayTeam + 35 + homeTeam + status < 0):
-                                running = False
-                                pos = offscreen_canvas.width
-                            time.sleep(0.01)
+                        awayColor = graphics.Color(string[2])
+                        homeColor = graphics.Color(string[5])
+                        print(homeColor)
+                        print(awayColor)
+                        awayTeamString = string[3]
+                        homeTeamString = string[6]
+                        statusString = string[7]
+                        pos -= 1
+                        # away team logo
+                        offscreen_canvas.SetImage(awayLogo, pos)
+                        # away team string
+                        awayTeam = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, awayColor, awayTeamString)
+                        # home team logo
+                        offscreen_canvas.SetImage(homeLogo, pos + 35 + awayTeam)
+                        # home team string
+                        homeTeam = graphics.DrawText(offscreen_canvas, font, pos + 35 + awayTeam + 35, 24, homeColor, homeTeamString)
+                            # game time
+                        status = graphics.DrawText(offscreen_canvas, font, pos + 35 + awayTeam + 35 + homeTeam, 24, blue, statusString)
+                        if ( pos + 35 + awayTeam + 35 + homeTeam + status < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        time.sleep(0.01)
                     elif isinstance(string, list):
                         if '-' in string[3]:
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
                             first = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, color, string[1])
-                            second = graphics.DrawText(offscreen_canvas, font, pos + 35 + 15, 24, color, string[2])
-                            offscreen_canvas.SetImage(stockDown, pos + 35 + 15 + 20, 8)
-                            third = graphics.DrawText(offscreen_canvas, font, pos + 35 + 15 + 20 + 17, 24, color, string[3])
+                            second = graphics.DrawText(offscreen_canvas, font, pos + first + 35, color, string[2])
+                            offscreen_canvas.SetImage(stockDown,  pos + first + 35 + second, 8)
+                            third = graphics.DrawText(offscreen_canvas, font,  pos + first + 35 + third, 24, color, string[3])
                             if (pos + 35 + 15 + 20 + 17 + len < 0):
                                 running = False
                                 pos = offscreen_canvas.width
@@ -145,9 +145,9 @@ class RunText(SampleBase):
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
                             first = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, color, string[1])
-                            second = graphics.DrawText(offscreen_canvas, font, pos + 35 + 15, 24, color, string[2])
-                            offscreen_canvas.SetImage(stockUp, pos + 35 + 15 + 20, 8)
-                            third = graphics.DrawText(offscreen_canvas, font, pos + 35 + 15 + 20 + 17, 24, color, string[3])
+                            second = graphics.DrawText(offscreen_canvas, font, pos + 35 + first, 24, color, string[2])
+                            offscreen_canvas.SetImage(stockUp, pos + 35 + 15 + 20 + first + second, 8)
+                            third = graphics.DrawText(offscreen_canvas, font,  pos + first + 35 second + third, 24, color, string[3])
                             if (pos + 35 + 15 + 20 + 17 + len < 0):
                                 running = False
                                 pos = offscreen_canvas.width
