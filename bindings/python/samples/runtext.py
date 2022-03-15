@@ -165,7 +165,7 @@ class RunText(SampleBase):
                         time.sleep(0.01)
                     elif 'ESPN' in string:
                         color = green
-                        espnLogo = Image.open('./images/logos/espnLogo.png').convert('RGB').resize((130,32), Image.ANTIALIAS)
+                        espnLogo = Image.open('./images/logos/espnLogo.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
                         pos -= 1
                         if (pos + espnLogo.width + len < 0):
                             running = False
