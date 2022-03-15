@@ -116,20 +116,20 @@ class RunText(SampleBase):
                         awayTeamString = string[5]
                         homeTeamString = string[10]
                         statusString = string[11]
-                        versus = ' vs '
+                        versusString = ' vs '
                         pos -= 1
                         # away team logo
                         offscreen_canvas.SetImage(awayLogo, pos)
                         # away team string
                         awayTeam = graphics.DrawText(offscreen_canvas, font, 15 + pos + 35, 24, awayColor, awayTeamString)
                         # home team logo
-                        versusString = graphics.DrawText(offscreen_canvas, font, 25 + pos + 35 + awayTeam + 35, 24, blue, versus)
+                        versus = graphics.DrawText(offscreen_canvas, font, 25 + pos + 35 + awayTeam + 35, 24, green, versusString)
                         # home team string
-                        offscreen_canvas.SetImage(homeLogo, 25 + pos + 35 + awayTeam + versusString)
-                        homeTeam = graphics.DrawText(offscreen_canvas, font, 30 + pos + 35 + awayTeam + 35 + versusString, 24, homeColor, homeTeamString)
+                        offscreen_canvas.SetImage(homeLogo, 25 + pos + 35 + awayTeam + versus)
+                        homeTeam = graphics.DrawText(offscreen_canvas, font, 30 + pos + 35 + awayTeam + 35 + versus, 24, homeColor, homeTeamString)
                         # game time
-                        status = graphics.DrawText(offscreen_canvas, font, 40 + pos + 35 + awayTeam + 35 + homeTeam, 24, blue, statusString)
-                        if (60 + pos + 35 + awayTeam + 35 + homeTeam + status + versusString < 0):
+                        status = graphics.DrawText(offscreen_canvas, font, 65 + pos + 35 + awayTeam + 35 + homeTeam, 24, blue, statusString)
+                        if (60 + pos + 35 + awayTeam + 35 + homeTeam + status + versus < 0):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.01)
