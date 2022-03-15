@@ -140,7 +140,7 @@ class RunText(SampleBase):
                             first = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, color, string[1])
                             second = graphics.DrawText(offscreen_canvas, font, pos + first + 35, 24, color, string[2])
                             offscreen_canvas.SetImage(stockDown,  pos + first + 35 + second, 8)
-                            third = graphics.DrawText(offscreen_canvas, font,  pos + first + 35 + third, 24, color, string[3])
+                            third = graphics.DrawText(offscreen_canvas, font,  pos + first + 35 + second, 24, color, string[3])
                             if (pos + 35 + 15 + 20 + 17 + len < 0):
                                 running = False
                                 pos = offscreen_canvas.width
@@ -151,7 +151,7 @@ class RunText(SampleBase):
                             first = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, color, string[1])
                             second = graphics.DrawText(offscreen_canvas, font, pos + 35 + first, 24, color, string[2])
                             offscreen_canvas.SetImage(stockUp, pos + 35 + 15 + 20 + first + second, 8)
-                            third = graphics.DrawText(offscreen_canvas, font,  pos + first + 35 + second + third, 24, color, string[3])
+                            third = graphics.DrawText(offscreen_canvas, font,  pos + first + 35 + second, 24, color, string[3])
                             if (pos + 35 + 15 + 20 + 17 + len < 0):
                                 running = False
                                 pos = offscreen_canvas.width
