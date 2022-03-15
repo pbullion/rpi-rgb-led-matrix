@@ -134,7 +134,7 @@ class RunText(SampleBase):
                         if (pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer + status < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.01)
+                        time.sleep(0.02)
                     # elif isinstance(string, list) and 'game' in string[0]:
                     #     awayColor = graphics.Color(string[2], string[3], string[4])
                     #     homeColor = graphics.Color(string[7], string[8], string[9])
