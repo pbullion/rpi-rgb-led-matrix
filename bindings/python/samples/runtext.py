@@ -30,10 +30,8 @@ class RunText(SampleBase):
             # END COLORS
             font = graphics.Font()
             font.LoadFont("../../../fonts/texgyre-27.bdf")
-            # print('++++++++++++++++++++++++++++')
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
             strings = json.loads(url.text)
-            # print(strings)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
             # IMAGES FOR WEATHER
@@ -67,7 +65,6 @@ class RunText(SampleBase):
                 len = 1
                 while running:
                     offscreen_canvas.Clear()
-                    print(string)
                     if 'RAIN' in string:
                         color = blue
                         img_width, img_height = rainImage.size
@@ -79,7 +76,6 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos + rainImage.width, 24, color, string)
                         time.sleep(0.01)
                     elif 'CLOUDY' in string or 'OVERCAST' in string:
-                        print('lkjsdflkjsdlkfjlksdjflksdjflkjsdklfjslkdjflksjd')
                         color = blue
                         img_width, img_height = partlyCloudyImage.size
                         pos -= 1
@@ -169,7 +165,6 @@ class RunText(SampleBase):
                     elif 'ESPN' in string:
                         color = green
                         pos -= 1
-                        offscreen_canvas.SetImage(espnLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                         if (pos + len < 0):
                             running = False
