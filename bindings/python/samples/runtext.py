@@ -107,6 +107,7 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.width, 24, color, string)
                         time.sleep(0.01)
                     elif isinstance(string, list) and 'game' in string[0]:
+                        print('+++++++++++++++++++++++')
                         awayColor = graphics.Color(string[2])
                         homeColor = graphics.Color(string[5])
                         print(homeColor)
