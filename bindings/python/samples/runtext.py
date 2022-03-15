@@ -115,6 +115,7 @@ class RunText(SampleBase):
                         awayTeamStatusString = string[12]
                         homeTeamStatusString = string[13]
                         statusString = string[11]
+                        oddsString = string[14]
                         versusString = ' at '
                         pos -= 1
                         buffer = 6
@@ -130,6 +131,7 @@ class RunText(SampleBase):
                         homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width, 15, homeColor, homeTeamString)
                         homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + 15, 26, homeColor, awayTeamStatusString)
                         
+                        odds = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 15, purple, oddsString)
                         status = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 24, purple, statusString)
                         if (pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer + status < 0):
                             running = False
