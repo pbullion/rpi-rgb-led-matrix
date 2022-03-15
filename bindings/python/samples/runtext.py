@@ -70,43 +70,39 @@ class RunText(SampleBase):
                     print(string)
                     if 'RAIN' in string:
                         color = blue
-                        img_width, img_height = rainImage.size
                         pos -= 1
-                        if (pos + img_width < 0):
+                        if (pos + partlyCloudyImage.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(rainImage, pos)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + rainImage.size.width, 24, color, string)
                         time.sleep(0.01)
                     elif 'CLOUDY' in string or 'OVERCAST' in string:
-                        print('lkjsdflkjsdlkfjlksdjflksdjflkjsdklfjslkdjflksjd')
                         color = blue
-                        img_width, img_height = partlyCloudyImage.size
                         pos -= 1
                         if (pos + partlyCloudyImage.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(partlyCloudyImage, pos)
-                        len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.size.width, 24, color, string)
                         time.sleep(0.01)
                     elif 'THUNDER' in string:
                         color = purple
-                        img_width, img_height = thunderstormImage.size
                         pos -= 1
                         if (pos + thunderstormImage.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(thunderstormImage, pos)
-                        len = graphics.DrawText(offscreen_canvas, font, pos + thunderstormImage.width, 24, color, string)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + thunderstormImage.size.width, 24, color, string)
                         time.sleep(0.01)
                     elif 'SUN' in string:
                         color = yellow
-                        img_width, img_height = sunnyImage.size
                         pos -= 1
                         if (pos + sunnyImage.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(sunnyImage, pos)
-                        len = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.width, 24, color, string)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.size.width, 24, color, string)
                         time.sleep(0.01)
                     elif isinstance(string, list) and 'game' in string[0]:
                         awayColor = graphics.Color(string[2], string[3], string[4])
