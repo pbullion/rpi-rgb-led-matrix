@@ -125,12 +125,12 @@ class RunText(SampleBase):
                         # versus
                         versus = graphics.DrawText(offscreen_canvas, font, 25 + pos + 35 + awayTeam, 24, green, versusString)
                         # home team logo
-                        offscreen_canvas.SetImage(homeLogo, 25 + pos + 35 + awayTeam + versus)
+                        offscreen_canvas.SetImage(homeLogo, 30 + pos + 35 + awayTeam + versus)
                         # home team string
-                        homeTeam = graphics.DrawText(offscreen_canvas, font, 30 + pos + 35 + awayTeam + 35 + versus, 24, homeColor, homeTeamString)
+                        homeTeam = graphics.DrawText(offscreen_canvas, font, 35 + pos + 35 + awayTeam + 35 + versus, 24, homeColor, homeTeamString)
                         # game time
-                        status = graphics.DrawText(offscreen_canvas, font, 80 + pos + 35 + awayTeam + 35 + homeTeam, 24, blue, statusString)
-                        if (60 + pos + 35 + awayTeam + 35 + homeTeam + status + versus < 0):
+                        status = graphics.DrawText(offscreen_canvas, font, 80 + pos + 45 + awayTeam + 35 + homeTeam, 24, blue, statusString)
+                        if (60 + pos + 45 + awayTeam + 35 + homeTeam + status + versus < 0):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.01)
@@ -139,8 +139,8 @@ class RunText(SampleBase):
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
                             first = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, color, string[1])
-                            second = graphics.DrawText(offscreen_canvas, font, pos + first + 35, 24, color, string[2])
-                            offscreen_canvas.SetImage(stockDown,  pos + first + 35 + second, 8)
+                            second = graphics.DrawText(offscreen_canvas, font, pos + 35 + first, 24, color, string[2])
+                            offscreen_canvas.SetImage(stockUp, pos + 35 + 15 + 20 + first + second, 8)
                             third = graphics.DrawText(offscreen_canvas, font,  pos + first + 35 + second, 24, color, string[3])
                             if (pos + 35 + 15 + 20 + 17 + len < 0):
                                 running = False
