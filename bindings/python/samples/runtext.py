@@ -131,7 +131,7 @@ class RunText(SampleBase):
                         homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + 15, 26, homeColor, awayTeamStatusString)
                         
                         status = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 24, purple, statusString)
-                        if (pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer + 10 < 0):
+                        if (pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer + status < 0):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.01)
