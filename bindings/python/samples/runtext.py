@@ -67,6 +67,7 @@ class RunText(SampleBase):
                 len = 1
                 while running:
                     offscreen_canvas.Clear()
+                    print(string)
                     if 'RAIN' in string:
                         color = blue
                         img_width, img_height = rainImage.size
@@ -77,6 +78,7 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(rainImage, pos)
                         time.sleep(0.01)
                     elif 'CLOUDY' in string or 'OVERCAST' in string:
+                        print('lkjsdflkjsdlkfjlksdjflksdjflkjsdklfjslkdjflksjd')
                         color = blue
                         img_width, img_height = partlyCloudyImage.size
                         pos -= 1
