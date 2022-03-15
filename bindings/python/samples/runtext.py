@@ -122,10 +122,11 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(awayLogo, pos)
                         # away team string
                         awayTeam = graphics.DrawText(offscreen_canvas, font, 15 + pos + 35, 24, awayColor, awayTeamString)
+                        # versus
+                        versus = graphics.DrawText(offscreen_canvas, font, 25 + pos + 35 + awayTeam, 24, green, versusString)
                         # home team logo
-                        versus = graphics.DrawText(offscreen_canvas, font, 25 + pos + 35 + awayTeam + 35, 24, green, versusString)
-                        # home team string
                         offscreen_canvas.SetImage(homeLogo, 25 + pos + 35 + awayTeam + versus)
+                        # home team string
                         homeTeam = graphics.DrawText(offscreen_canvas, font, 30 + pos + 35 + awayTeam + 35 + versus, 24, homeColor, homeTeamString)
                         # game time
                         status = graphics.DrawText(offscreen_canvas, font, 80 + pos + 35 + awayTeam + 35 + homeTeam, 24, blue, statusString)
