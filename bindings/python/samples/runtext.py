@@ -138,10 +138,10 @@ class RunText(SampleBase):
                         if '-' in string[3]:
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
-                            first = graphics.DrawText(offscreen_canvas, font, pos + 55, 24, color, string[1])
-                            second = graphics.DrawText(offscreen_canvas, font, pos + 55 + first, 24, color, string[2])
-                            offscreen_canvas.SetImage(stockUp, pos + 55 + 15 + 20 + first + second, 8)
-                            third = graphics.DrawText(offscreen_canvas, font,  pos + first + 55 + second, 24, color, string[3])
+                            first = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, color, string[1])
+                            second = graphics.DrawText(offscreen_canvas, font, pos + 45 + first, 24, color, string[2])
+                            offscreen_canvas.SetImage(stockUp, pos + 35 + 15 + 45 + first + second, 8)
+                            third = graphics.DrawText(offscreen_canvas, font,  pos + first + 45 + second, 24, color, string[3])
                             if (pos + 55 + 15 + 20 + 17 + len < 0):
                                 running = False
                                 pos = offscreen_canvas.width
