@@ -124,7 +124,7 @@ class RunText(SampleBase):
                         versus = graphics.DrawText(offscreen_canvas, font, awayLogo.width + buffer + buffer + awayTeam, 24, purple, versusString)
                         offscreen_canvas.SetImage(homeLogo, awayLogo.width + buffer + buffer + versus)
                         homeTeam = graphics.DrawText(offscreen_canvas, smallFont, awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width, 2, homeColor, homeTeamString)
-                        homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam, awayColor, awayTeamStatusString)
+                        homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam, 15, awayColor, awayTeamStatusString)
                         status = graphics.DrawText(offscreen_canvas, smallFont, awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 24, purple, statusString)
                         if ( awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer < 0):
                             running = False
