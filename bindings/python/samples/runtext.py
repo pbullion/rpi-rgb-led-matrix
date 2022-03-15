@@ -54,7 +54,6 @@ class RunText(SampleBase):
                 else:
                     color = colors[randomNum]
                 if isinstance(string, list) and 'game' in string[0]:
-                    print(string)
                     awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 if isinstance(string, list) and 'http' in string[0]:
@@ -67,7 +66,6 @@ class RunText(SampleBase):
                     stockUp = Image.open('./images/stocks/icons8-up-48.png').convert('RGB').resize((16,16), Image.ANTIALIAS)
                 len = 1
                 while running:
-                    print('runnnnnnnnnning')
                     offscreen_canvas.Clear()
                     if 'RAIN' in string:
                         color = blue
@@ -159,7 +157,7 @@ class RunText(SampleBase):
                             time.sleep(0.01)
                     elif 'AP Poll' in string:
                         color = green
-                        basketballLogo = Image.open('./images/logos/basketball.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        basketballLogo = Image.open('./images/logos/bball.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
                         pos -= 1
                         if (pos + basketballLogo.width + len < 0):
                             running = False
@@ -169,7 +167,7 @@ class RunText(SampleBase):
                         time.sleep(0.01)
                     elif 'ESPN' in string:
                         color = green
-                        espnLogo = Image.open('./images/logos/espn.png').convert('RGB').resize((130,32), Image.ANTIALIAS)
+                        espnLogo = Image.open('./images/logos/espnLogo.png').convert('RGB').resize((130,32), Image.ANTIALIAS)
                         pos -= 1
                         if (pos + espnLogo.width + len < 0):
                             running = False
