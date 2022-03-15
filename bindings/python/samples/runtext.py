@@ -165,7 +165,6 @@ class RunText(SampleBase):
                         time.sleep(0.01)
                     elif 'ESPN' in string:
                         color = green
-                        espnLogo = Image.open('./images/logos/espn2.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
                         pos -= 1
                         offscreen_canvas.SetImage(espnLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
