@@ -174,7 +174,7 @@ class RunText(SampleBase):
                         if (pos + espnLogo.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(espnLogo, pos)
+                        # offscreen_canvas.SetImage(espnLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + espnLogo.width + 4, 24, color, string)
                         time.sleep(0.01)
                     elif 'FOXNEWS' in string:
@@ -184,7 +184,7 @@ class RunText(SampleBase):
                         if (pos + foxNewsLogo.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(foxNewsLogo, pos)
+                        # offscreen_canvas.SetImage(foxNewsLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + foxNewsLogo.width + 4, 24, color, string)
                         time.sleep(0.01)
                     elif 'CNN' in string:
@@ -194,7 +194,7 @@ class RunText(SampleBase):
                         if (pos + cnnLogo.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(cnnLogo, pos)
+                        # offscreen_canvas.SetImage(cnnLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + cnnLogo.width + 4, 24, color, string)
                         time.sleep(0.01)
                     else:
