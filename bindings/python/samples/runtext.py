@@ -120,12 +120,13 @@ class RunText(SampleBase):
                         buffer = 6
 
                         offscreen_canvas.SetImage(awayLogo, pos)
-                        awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer, 10, awayColor, awayTeamString)
-                        awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + 5, 22, awayColor, awayTeamStatusString)
+                        awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer, 12, awayColor, awayTeamString)
+                        awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + 5, 24, awayColor, awayTeamStatusString)
 
                         versus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + buffer + awayTeam, 24, purple, versusString)
                         
-                        offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + versus)
+                        offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + awayTeam + versus)
+
                         homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width, 10, homeColor, homeTeamString)
                         homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam, 22, awayColor, awayTeamStatusString)
                         
