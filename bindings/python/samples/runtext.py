@@ -120,11 +120,11 @@ class RunText(SampleBase):
                         # away team logo
                         offscreen_canvas.SetImage(awayLogo, pos)
                         # away team string
-                        awayTeam = graphics.DrawText(offscreen_canvas, font, 25 + pos + 35, 24, awayColor, awayTeamString)
+                        awayTeam = graphics.DrawText(offscreen_canvas, font, 15 + pos + 35, 24, awayColor, awayTeamString)
                         # home team logo
                         offscreen_canvas.SetImage(homeLogo, 25 + pos + 35 + awayTeam)
                         # home team string
-                        homeTeam = graphics.DrawText(offscreen_canvas, font, 25 + pos + 35 + awayTeam + 35, 24, homeColor, homeTeamString)
+                        homeTeam = graphics.DrawText(offscreen_canvas, font, 15 + pos + 35 + awayTeam + 35, 24, homeColor, homeTeamString)
                         # game time
                         status = graphics.DrawText(offscreen_canvas, font, 25 + pos + 35 + awayTeam + 35 + homeTeam, 24, blue, statusString)
                         if (60 + pos + 35 + awayTeam + 35 + homeTeam + status < 0):
