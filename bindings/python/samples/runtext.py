@@ -140,9 +140,9 @@ class RunText(SampleBase):
                             offscreen_canvas.SetImage(stockLogo, pos)
                             first = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, color, string[1])
                             second = graphics.DrawText(offscreen_canvas, font, pos + 45 + first, 24, color, string[2])
-                            offscreen_canvas.SetImage(stockUp, pos + 45 + first + second, 8)
-                            third = graphics.DrawText(offscreen_canvas, font, pos + 45 + first + second + 20, 24, color, string[3])
-                            if ( pos + 45 + first + second + 20 < 0):
+                            offscreen_canvas.SetImage(stockUp, pos + 50 + first + second, 8)
+                            third = graphics.DrawText(offscreen_canvas, font, pos + 55 + first + second + 20, 24, color, string[3])
+                            if ( pos + 45 + first + second + 40 < 0):
                                 running = False
                                 pos = offscreen_canvas.width
                             time.sleep(0.01)
@@ -151,9 +151,9 @@ class RunText(SampleBase):
                             offscreen_canvas.SetImage(stockLogo, pos)
                             first = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, color, string[1])
                             second = graphics.DrawText(offscreen_canvas, font, pos + 45 + first, 24, color, string[2])
-                            offscreen_canvas.SetImage(stockUp, pos + 45 + first + second, 8)
-                            third = graphics.DrawText(offscreen_canvas, font, pos + 45 + first + second + 20, 24, color, string[3])
-                            if ( pos + 45 + first + second + 20 < 0):
+                            offscreen_canvas.SetImage(stockDown, pos + 50 + first + second, 8)
+                            third = graphics.DrawText(offscreen_canvas, font, pos + 55 + first + second + 20, 24, color, string[3])
+                            if ( pos + 45 + first + second + 40 < 0):
                                 running = False
                                 pos = offscreen_canvas.width
                             time.sleep(0.01)
