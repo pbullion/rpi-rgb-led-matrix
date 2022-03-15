@@ -111,11 +111,11 @@ class RunText(SampleBase):
                     elif isinstance(string, list) and 'game' in string[0]:
                         print('+++++++++++++++++++++++')
                         print(string)
-                        awayColor = graphics.Color(int(string[2]))
-                        homeColor = graphics.Color(int(string[5]))
-                        awayTeamString = string[3]
-                        homeTeamString = string[6]
-                        statusString = string[7]
+                        awayColor = graphics.Color(string[2], string[3], string[4])
+                        homeColor = graphics.Color(string[7], string[8], string[9])
+                        awayTeamString = string[5]
+                        homeTeamString = string[10]
+                        statusString = string[11]
                         pos -= 1
                         # away team logo
                         offscreen_canvas.SetImage(awayLogo, pos)
