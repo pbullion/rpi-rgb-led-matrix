@@ -30,10 +30,10 @@ class RunText(SampleBase):
             # END COLORS
             font = graphics.Font()
             font.LoadFont("../../../fonts/texgyre-27.bdf")
-            print('++++++++++++++++++++++++++++')
+            # print('++++++++++++++++++++++++++++')
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
             strings = json.loads(url.text)
-            print(strings)
+            # print(strings)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
             # IMAGES FOR WEATHER
