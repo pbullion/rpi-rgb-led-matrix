@@ -111,8 +111,8 @@ class RunText(SampleBase):
                     elif isinstance(string, list) and 'game' in string[0]:
                         print('+++++++++++++++++++++++')
                         print(string)
-                        awayColor = graphics.Color(string[2])
-                        homeColor = graphics.Color(string[5])
+                        awayColor = graphics.Color(int(string[2]))
+                        homeColor = graphics.Color(int(string[5]))
                         awayTeamString = string[3]
                         homeTeamString = string[6]
                         statusString = string[7]
