@@ -165,10 +165,10 @@ class RunText(SampleBase):
                         if '-' in string[4]:
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
-                            first = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, color, string[1])
-                            second = graphics.DrawText(offscreen_canvas, font, pos + 45 + first, 24, color, string[2])
+                            first = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, red, string[1])
+                            second = graphics.DrawText(offscreen_canvas, font, pos + 45 + first, 24, red, string[2])
                             offscreen_canvas.SetImage(stockDown, pos + 60 + first + second, 8)
-                            third = graphics.DrawText(offscreen_canvas, font, pos + 70 + first + second + 20, 24, color, string[3])
+                            third = graphics.DrawText(offscreen_canvas, font, pos + 70 + first + second + 20, 24, red, string[3])
                             if ( pos + 45 + first + second + 65 + third < 0):
                                 running = False
                                 pos = offscreen_canvas.width
@@ -176,10 +176,10 @@ class RunText(SampleBase):
                         elif '+' in string[4]:
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
-                            first = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, color, string[1])
-                            second = graphics.DrawText(offscreen_canvas, font, pos + 45 + first, 24, color, string[2])
+                            first = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, green, string[1])
+                            second = graphics.DrawText(offscreen_canvas, font, pos + 45 + first, 24, green, string[2])
                             offscreen_canvas.SetImage(stockUp, pos + 60 + first + second, 8)
-                            third = graphics.DrawText(offscreen_canvas, font, pos + 70 + first + second + 20, 24, color, string[3])
+                            third = graphics.DrawText(offscreen_canvas, font, pos + 70 + first + second + 20, 24, green, string[3])
                             if ( pos + 45 + first + second + 65 + third < 0):
                                 running = False
                                 pos = offscreen_canvas.width
