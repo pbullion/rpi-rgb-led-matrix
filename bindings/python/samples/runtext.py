@@ -186,7 +186,7 @@ class RunText(SampleBase):
                             time.sleep(0.01)
                     elif 'AP Poll' in string:
                         color = green
-                        basketballLogo = Image.open('./images/logos/bball.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        basketballLogo = Image.open('./images/logos/basketball2.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
                         pos -= 1
                         if (pos + basketballLogo.width + len < 0):
                             running = False
@@ -196,7 +196,7 @@ class RunText(SampleBase):
                         time.sleep(0.01)
                     elif 'ESPN' in string:
                         color = blue
-                        espnLogo = Image.open('./images/logos/espnnn.png').convert('RGB').resize((98,32), Image.ANTIALIAS)
+                        espnLogo = Image.open('./images/logos/espn3.png').convert('RGB').resize((98,32), Image.ANTIALIAS)
                         pos -= 1
                         if (pos + espnLogo.width + len < 0):
                             running = False
