@@ -162,7 +162,7 @@ class RunText(SampleBase):
                     #         pos = offscreen_canvas.width
                     #     time.sleep(0.01)
                     elif isinstance(string, list):
-                        if '-' in string[3]:
+                        if '-' in string[4]:
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
                             first = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, color, string[1])
@@ -173,7 +173,7 @@ class RunText(SampleBase):
                                 running = False
                                 pos = offscreen_canvas.width
                             time.sleep(0.01)
-                        elif '+' in string[3]:
+                        elif '+' in string[4]:
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
                             first = graphics.DrawText(offscreen_canvas, font, pos + 35, 24, color, string[1])
