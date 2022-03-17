@@ -56,8 +56,8 @@ class RunText(SampleBase):
                 else:
                     color = colors[randomNum]
                 if isinstance(string, list) and 'game' in string[0]:
-                    awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((16,16), Image.ANTIALIAS)
-                    homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((16,16), Image.ANTIALIAS)
+                    awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 if isinstance(string, list) and 'http' in string[0]:
                     if '-' in string[3]:
                         color = red
