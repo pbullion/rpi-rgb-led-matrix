@@ -207,13 +207,11 @@ class RunText(SampleBase):
                         time.sleep(0.01)
                     elif 'ESPN' in string:
                         color = blue
-                        espnLogo = Image.open(requests.get('https://i.pinimg.com/564x/b3/69/c7/b369c7454adc03bfea8c6b2f4268be5a.jpg', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                         pos -= 1
-                        if (pos + espnLogo.width + len < 0):
+                        if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(espnLogo, pos)
-                        len = graphics.DrawText(offscreen_canvas, font, pos + espnLogo.width + 4, 24, color, string)
+                        len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                         time.sleep(0.01)
                     elif 'FOXNEWS' in string:
                         color = blue
