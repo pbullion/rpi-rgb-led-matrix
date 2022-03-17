@@ -119,7 +119,6 @@ class RunText(SampleBase):
                         versusString = ' at '
                         pos -= 1
                         buffer = 6
-
                         offscreen_canvas.SetImage(awayLogo, pos)
                         awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer, 15, awayColor, awayTeamString)
                         awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + 15, 26, awayColor, awayTeamStatusString)
