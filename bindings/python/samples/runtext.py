@@ -122,8 +122,7 @@ class RunText(SampleBase):
                         pos -= 1
                         buffer = 6
                         offscreen_canvas.SetImage(awayLogo, pos)
-                        print(type(awayTeamString))
-                        print(len(awayTeamString))
+                        print(len(string[5]))
                         awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer, 10, awayColor, awayTeamString)
                         awayTeamStatus = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + 15, 26, awayColor, awayTeamStatusString)
 
