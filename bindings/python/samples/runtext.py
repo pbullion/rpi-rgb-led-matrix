@@ -33,7 +33,7 @@ class RunText(SampleBase):
             smallFont = graphics.Font()
             smallFont.LoadFont("../../../fonts/6x13.bdf")
             middleFont = graphics.Font()
-            middleFont.LoadFont("../../../fonts/8x13.bdf")
+            middleFont.LoadFont("../../../fonts/10x20.bdf")
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
             strings = json.loads(url.text)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
