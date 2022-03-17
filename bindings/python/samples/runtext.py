@@ -112,8 +112,8 @@ class RunText(SampleBase):
                         homeColor = graphics.Color(string[7], string[8], string[9])
                         awayTeamString = string[5]
                         homeTeamString = string[10]
-                        awayTeamStatusString = string[11]
-                        homeTeamStatusString = string[12]
+                        awayTeamStatusString = string[12]
+                        homeTeamStatusString = string[13]
                         statusString = string[11]
                         oddsString = string[14]
                         versusString = ' at '
