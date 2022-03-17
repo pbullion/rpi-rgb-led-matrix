@@ -32,6 +32,8 @@ class RunText(SampleBase):
             font.LoadFont("../../../fonts/texgyre-27.bdf")
             smallFont = graphics.Font()
             smallFont.LoadFont("../../../fonts/6x13.bdf")
+            middleFont = graphics.Font()
+            middleFont.LoadFont("../../../fonts/8x13.bdf")
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
             strings = json.loads(url.text)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
@@ -120,15 +122,15 @@ class RunText(SampleBase):
                         pos -= 1
                         buffer = 6
                         offscreen_canvas.SetImage(awayLogo, pos)
-                        awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer, 15, awayColor, awayTeamString)
-                        awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + 15, 26, awayColor, awayTeamStatusString)
+                        awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer, 10, awayColor, awayTeamString)
+                        awayTeamStatus = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + 15, 26, awayColor, awayTeamStatusString)
 
                         versus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + buffer + awayTeam, 24, green, versusString)
                         
                         offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + awayTeam + versus)
 
-                        homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width, 15, homeColor, homeTeamString)
-                        homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + 15, 26, homeColor, homeTeamStatusString)
+                        homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width, 10, homeColor, homeTeamString)
+                        homeTeamStatus = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + 15, 26, homeColor, homeTeamStatusString)
                         
                         odds = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 15, green, oddsString)
                         status = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 26, green, statusString)
