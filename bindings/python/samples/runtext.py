@@ -49,14 +49,12 @@ class RunText(SampleBase):
             # END IMAGES FOR WEATHER
             for string in strings:
                 running = True
-                if 'Championship' in string:
-                    color = green
                 if 'Poll' in string:
                     color = green
                 elif '#' in string:
                     color = green
                 else:
-                    color = colors[randomNum]
+                    color = green
                 if isinstance(string, list) and 'game' in string[0]:
                     awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
