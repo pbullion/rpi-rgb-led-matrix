@@ -49,7 +49,7 @@ class RunText(SampleBase):
             # END IMAGES FOR WEATHER
             for string in strings:
                 running = True
-                if 'Valspar' in string:
+                if 'Championship' in string:
                     color = green
                 if 'Poll' in string:
                     color = green
