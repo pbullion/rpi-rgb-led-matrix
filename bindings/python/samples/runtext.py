@@ -49,6 +49,8 @@ class RunText(SampleBase):
             # END IMAGES FOR WEATHER
             for string in strings:
                 running = True
+                if 'Valspar' in string:
+                    color = green
                 if 'Poll' in string:
                     color = green
                 elif '#' in string:
@@ -110,8 +112,14 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.width, 24, color, string)
                         time.sleep(0.01)
                     elif isinstance(string, list) and 'game' in string[0]:
-                        awayColor = graphics.Color(string[2], string[3], string[4])
-                        homeColor = graphics.Color(string[7], string[8], string[9])
+                        if 'BAYLOR' in string[5]:
+                            awayColor = green
+                        else:
+                            awayColor = graphics.Color(string[2], string[3], string[4])
+                        if 'BAYLOR' in string[10]:
+                            homeColor = green
+                        else:
+                            homeColor = graphics.Color(string[7], string[8], string[9])
                         awayTeamString = string[5]
                         homeTeamString = string[10]
                         awayTeamStatusString = string[12]
