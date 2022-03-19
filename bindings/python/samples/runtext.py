@@ -47,6 +47,7 @@ class RunText(SampleBase):
             sunnyImage = Image.open('./images/weather/icons8-summer-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             windyImage = Image.open('./images/weather/icons8-wind-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             # END IMAGES FOR WEATHER
+            print(strings)
             for string in strings:
                 running = True
                 if 'Poll' in string:
