@@ -72,7 +72,7 @@ class RunText(SampleBase):
                     if 'dickbutt' in string:
                         dickbutt = Image.open(requests.get('https://i.imgur.com/VmZ6l7v.png', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                         pos -= 1
-                        if (pos + partlyCloudyImage.width + len < 0):
+                        if (pos + dickbutt.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(dickbutt, pos)
