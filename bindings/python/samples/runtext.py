@@ -70,6 +70,7 @@ class RunText(SampleBase):
                 while running:
                     offscreen_canvas.Clear()
                     if 'dickbutt' in string:
+                        running = False
                         dickbutt = Image.open(requests.get('https://m.media-amazon.com/images/I/41q1QAln+QL._AC_.jpg', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                         pos -= 1
                         if (pos + dickbutt.width + len < 0):
