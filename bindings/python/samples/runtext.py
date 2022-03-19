@@ -76,7 +76,6 @@ class RunText(SampleBase):
                             running = False
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(dickbutt, pos)
-                        len = graphics.DrawText(offscreen_canvas, font, pos + dickbutt.width, 24, color, string)
                         time.sleep(0.008)
                     elif 'RAIN' in string:
                         color = blue
