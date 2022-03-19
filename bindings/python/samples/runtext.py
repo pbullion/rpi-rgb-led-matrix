@@ -47,7 +47,6 @@ class RunText(SampleBase):
             sunnyImage = Image.open('./images/weather/icons8-summer-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             windyImage = Image.open('./images/weather/icons8-wind-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             # END IMAGES FOR WEATHER
-            sleepyTime = 0.005
             for string in strings:
                 running = True
                 if 'Poll' in string:
@@ -79,7 +78,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(rainImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + rainImage.width, 24, color, string)
-                        time.sleep(sleepyTIme
+                        time.sleep(0.01)
                     elif 'CLOUDY' in string or 'OVERCAST' in string:
                         color = blue
                         img_width, img_height = partlyCloudyImage.size
@@ -89,7 +88,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(partlyCloudyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
-                        time.sleep(sleepyTIme
+                        time.sleep(0.01)
                     elif 'THUNDER' in string:
                         color = purple
                         img_width, img_height = thunderstormImage.size
@@ -99,7 +98,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(thunderstormImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + thunderstormImage.width, 24, color, string)
-                        time.sleep(sleepyTIme
+                        time.sleep(0.01)
                     elif 'SUN' in string:
                         color = yellow
                         img_width, img_height = sunnyImage.size
@@ -109,7 +108,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(sunnyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.width, 24, color, string)
-                        time.sleep(sleepyTIme
+                        time.sleep(0.01)
                     elif isinstance(string, list) and 'game' in string[0]:
                         if 'BAYLOR' in string[5]:
                             awayColor = green
@@ -160,7 +159,7 @@ class RunText(SampleBase):
                             if (pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter < 0):
                                 running = False
                                 pos = offscreen_canvas.width
-                        time.sleep(sleepyTIme
+                        time.sleep(0.01)
                     # elif isinstance(string, list) and 'game' in string[0]:
                     #     awayColor = graphics.Color(string[2], string[3], string[4])
                     #     homeColor = graphics.Color(string[7], string[8], string[9])
@@ -184,7 +183,7 @@ class RunText(SampleBase):
                     #     if (60 + pos + 45 + awayTeam + 35 + homeTeam + status + versus < 0):
                     #         running = False
                     #         pos = offscreen_canvas.width
-                    #     time.sleep(sleepyTIme
+                    #     time.sleep(0.01)
                     elif isinstance(string, list):
                         if '-' in string[4]:
                             pos -= 1
@@ -196,7 +195,7 @@ class RunText(SampleBase):
                             if ( pos + 45 + first + second + 65 + third < 0):
                                 running = False
                                 pos = offscreen_canvas.width
-                            time.sleep(sleepyTIme
+                            time.sleep(0.01)
                         elif '+' in string[4]:
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
@@ -207,7 +206,7 @@ class RunText(SampleBase):
                             if ( pos + 45 + first + second + 65 + third < 0):
                                 running = False
                                 pos = offscreen_canvas.width
-                            time.sleep(sleepyTIme
+                            time.sleep(0.01)
                     elif 'AP Poll' in string:
                         color = green
                         basketballLogo = Image.open('./images/logos/bball.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
@@ -217,7 +216,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(basketballLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + basketballLogo.width + 4, 24, color, string)
-                        time.sleep(sleepyTIme
+                        time.sleep(0.01)
                     elif 'ESPN' in string:
                         color = blue
                         espnLogo = Image.open('./images/logos/bball.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
@@ -227,7 +226,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(espnLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + espnLogo.width + 4, 24, color, string)
-                        time.sleep(sleepyTIme
+                        time.sleep(0.01)
                     elif 'FOXNEWS' in string:
                         color = blue
                         foxNewsLogo = Image.open('./images/logos/foxnews.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
@@ -237,7 +236,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(foxNewsLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + foxNewsLogo.width + 4, 24, color, string)
-                        time.sleep(sleepyTIme
+                        time.sleep(0.01)
                     elif 'CNN' in string:
                         color = blue
                         cnnLogo = Image.open('./images/logos/cnn.png').convert('RGB').resize((69,32), Image.ANTIALIAS)
@@ -247,14 +246,14 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(cnnLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + cnnLogo.width + 4, 24, color, string)
-                        time.sleep(sleepyTIme
+                        time.sleep(0.01)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                         pos -= 1
                         if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(sleepyTIme
+                        time.sleep(0.01)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
