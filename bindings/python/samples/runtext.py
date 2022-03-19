@@ -70,7 +70,8 @@ class RunText(SampleBase):
                 while running:
                     offscreen_canvas.Clear()
                     if 'dickbutt' in string:
-                        dickbutt = Image.open(requests.get('https://m.media-amazon.com/images/I/41q1QAln+QL._AC_.jpg', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        # dickbutt = Image.open(requests.get('https://m.media-amazon.com/images/I/41q1QAln+QL._AC_.jpg', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        dickbutt = Image.open(requests.get('https://external-preview.redd.it/VTXBwN5lqP7ohIL9fPf2VK3CV0ZcMOCiuj9cHQatJ6k.gif?width=640&crop=smart&format=png8&s=7bd0dbc9311e8f4eb73e829f2aaab245b8d11c05', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                         pos -= 1
                         if (pos + dickbutt.width + len < 0):
                             running = False
