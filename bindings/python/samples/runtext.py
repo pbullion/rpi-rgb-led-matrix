@@ -69,7 +69,16 @@ class RunText(SampleBase):
                 len = 1
                 while running:
                     offscreen_canvas.Clear()
-                    if 'RAIN' in string:
+                    if 'dickbutt' in string:
+                        dickbutt = Image.open(requests.get('https://i.imgur.com/VmZ6l7v.png', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        pos -= 1
+                        if (pos + partlyCloudyImage.width + len < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        offscreen_canvas.SetImage(dickbutt, pos)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + dickbutt.width, 24, color, string)
+                        time.sleep(0.008)
+                    elif 'RAIN' in string:
                         color = blue
                         img_width, img_height = rainImage.size
                         pos -= 1
