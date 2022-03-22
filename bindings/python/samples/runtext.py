@@ -121,10 +121,10 @@ class RunText(SampleBase):
                         runningCount = 0
                         string.pop(0)
                         print(runningCount)
+                        pos -= 1
                         for game in string:
                             print('\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\')
                             print(runningCount)
-                            pos -= 1
                             awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                             homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                             if 'BAYLOR' in game[5]:
