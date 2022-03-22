@@ -122,26 +122,26 @@ class RunText(SampleBase):
                         string.pop(0)
                         for game in string:
                             print('=====================')
-                            print(string)
+                            print(game)
                             pos -= 1
-                            print(string[1])
-                            print(string[6])
-                            awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                            homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                            if 'BAYLOR' in string[5]:
+                            print(game[1])
+                            print(game[6])
+                            awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                            homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                            if 'BAYLOR' in game[5]:
                                 awayColor = green
                             else:
-                                awayColor = graphics.Color(string[2], string[3], string[4])
-                            if 'BAYLOR' in string[10]:
+                                awayColor = graphics.Color(game[2], game[3], game[4])
+                            if 'BAYLOR' in game[10]:
                                 homeColor = green
                             else:
-                                homeColor = graphics.Color(string[7], string[8], string[9])
-                            awayTeamString = string[5]
-                            homeTeamString = string[10]
-                            awayTeamStatusString = string[12]
-                            homeTeamStatusString = string[13]
-                            statusString = string[11]
-                            oddsString = string[14]
+                                homeColor = graphics.Color(game[7], game[8], game[9])
+                            awayTeamString = game[5]
+                            homeTeamString = game[10]
+                            awayTeamStatusString = game[12]
+                            homeTeamStatusString = game[13]
+                            statusString = game[11]
+                            oddsString = game[14]
                             versusString = ' at '
                             offscreen_canvas.SetImage(awayLogo, pos + runningCount)
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + awayLogo.width + buffer, 10, awayColor, awayTeamString)
