@@ -121,6 +121,8 @@ class RunText(SampleBase):
                         runningCount = 0
                         string.pop(0)
                         for game in string:
+                            print('=====================')
+                            print(string)
                             pos -= 1
                             print(string[1])
                             print(string[6])
