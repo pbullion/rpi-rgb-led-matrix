@@ -120,6 +120,9 @@ class RunText(SampleBase):
                         pos -= 1
                         buffer = 6
                         runningCount = 0
+                        print (string)
+                        string.pop(0)
+                        print (string)
                         for game in string:
                             awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                             homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
