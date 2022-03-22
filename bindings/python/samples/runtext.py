@@ -158,7 +158,7 @@ class RunText(SampleBase):
                             homeCentered = homeTeam / 2
                             homeTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + homeLogo.width + homeCentered, 31, homeColor, homeTeamStatusString)
                             runningCount = runningCount + pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter 
-                            time.sleep(0.008)
+                        time.sleep(0.008)
                         if (runningCount < pos):
                             running = False
                             pos = offscreen_canvas.width
