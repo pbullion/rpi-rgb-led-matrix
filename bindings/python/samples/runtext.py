@@ -120,10 +120,9 @@ class RunText(SampleBase):
                         buffer = 6
                         runningCount = 0
                         string.pop(0)
-                        pos -= 1
                         print(runningCount)
-                        print(pos)
                         for game in string:
+                            pos -= 1
                             print('\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\')
                             print(runningCount)
                             print(pos)
