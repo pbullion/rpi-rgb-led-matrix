@@ -122,6 +122,8 @@ class RunText(SampleBase):
                         string.pop(0)
                         for game in string:
                             pos -= 1
+                            print(string[1])
+                            print(string[6])
                             awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                             homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                             if 'BAYLOR' in string[5]:
