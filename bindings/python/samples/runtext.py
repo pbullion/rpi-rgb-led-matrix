@@ -117,13 +117,11 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.width, 24, color, string)
                         time.sleep(0.008)
                     elif isinstance(string, list) and 'game' in string[0]:
-                        pos -= 1
                         buffer = 6
-                        runningCount = 0
-                        print (string)
+                        runningCount -= 0
                         string.pop(0)
-                        print (string)
                         for game in string:
+                            pos -= 1
                             awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                             homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                             if 'BAYLOR' in string[5]:
