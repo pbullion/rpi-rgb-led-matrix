@@ -121,12 +121,14 @@ class RunText(SampleBase):
                         runningCount = 0
                         string.pop(0)
                         print(runningCount)
-                        for game in string:
+                        for game, idx in string:
                             pos -= 1
                             print('\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\')
                             print(runningCount)
                             print(pos)
-                            awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                            awayLogo + str(idx) = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                            print(awayLogo + str(idx))
+                            print(str(awayLogo + str(idx)).width)
                             homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                             if 'BAYLOR' in game[5]:
                                 awayColor = green
