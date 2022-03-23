@@ -147,14 +147,15 @@ class RunText(SampleBase):
                                 print(game)
                                 logoWidth = 32
                                 awayLogo = offscreen_canvas.SetImage(Image.open(requests.get(games[idx][1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos + runningCount)
+                                print(awayLogo)
                                 # graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + logoWidth + buffer, 10, white, var_holder['awayTeamString' + str(idx)])
                                 # offscreen_canvas.SetImage(Image.open(requests.get(games[idx][6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos + runningCount)
                                 runningCount = runningCount + logoWidth
+                                time.sleep(0.2)
                             if (pos + logoWidth < 0):
                                 gamesRunning = False
                                 running = False
                                 pos = offscreen_canvas.width
-                            time.sleep(0.2)
                     # elif isinstance(string, list) and 'game' in string[0]:
                     #     if 'BAYLOR' in string[5]:
                     #         awayColor = green
