@@ -47,7 +47,7 @@ class RunText(SampleBase):
             sunnyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             windyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             # END IMAGES FOR WEATHER
-            print(strings)
+            # print(strings)
             for string in strings:
                 running = True
                 if 'Poll' in string:
@@ -67,15 +67,6 @@ class RunText(SampleBase):
                 len = 1
                 while running:
                     offscreen_canvas.Clear()
-                    if 'dickbutt' in string:
-                        running = False
-                        dickbutt = Image.open(requests.get('https://m.media-amazon.com/images/I/41q1QAln+QL._AC_.jpg', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                        pos -= 1
-                        if (pos + dickbutt.width + len < 0):
-                            running = False
-                            pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(dickbutt, pos)
-                        time.sleep(0.001)
                     elif 'RAIN' in string:
                         color = blue
                         img_width, img_height = rainImage.size
@@ -118,6 +109,7 @@ class RunText(SampleBase):
                         time.sleep(0.008)
                     elif isinstance(string, list) and 'game' in string[0]:
                         string.pop(0)
+                        print(string)
                         gamesRunning = True
                         while gamesRunning:
                             buffer = 6
@@ -130,14 +122,8 @@ class RunText(SampleBase):
                                 print(pos)
                                 awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                                 homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                                if 'BAYLOR' in game[5]:
-                                    awayColor = green
-                                else:
-                                    awayColor = graphics.Color(game[2], game[3], game[4])
-                                if 'BAYLOR' in game[10]:
-                                    homeColor = green
-                                else:
-                                    homeColor = graphics.Color(game[7], game[8], game[9])
+                                awayColor = graphics.Color(game[2], game[3], game[4])
+                                homeColor = graphics.Color(game[7], game[8], game[9])
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
                                 awayTeamStatusString = game[12]
