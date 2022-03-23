@@ -135,7 +135,7 @@ class RunText(SampleBase):
                             var_holder['homeTeamStatus' + str(i)] = graphics.DrawText(offscreen_canvas, font, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + var_holder['awayTeam' + str(i)] + var_holder['quarter' + str(i)] + buffer + var_holder['homeLogo' + str(i)].width + var_holder['homeCentered' + str(i)], 31, white, var_holder['homeTeamStatusString' + str(i)])
                         while gamesRunning:
                             pos -= 1
-                            for i in range(len(games))
+                            for i in range(len(games)):
                                 print(games[i])
                             #     offscreen_canvas.SetImage(awayLogo, pos)
                             #     offscreen_canvas.SetImage(homeLogo, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer)
