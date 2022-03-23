@@ -121,47 +121,50 @@ class RunText(SampleBase):
                         runningCount = 0
                         string.pop(0)
                         print(runningCount)
-                        for game, idx in string:
-                            pos -= 1
-                            print('\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\')
-                            print(runningCount)
-                            print(pos)
-                            'awayLogo' + str(idx) = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                            print(str('awayLogo' + str(idx)).width)
-                            homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                            if 'BAYLOR' in game[5]:
-                                awayColor = green
-                            else:
-                                awayColor = graphics.Color(game[2], game[3], game[4])
-                            if 'BAYLOR' in game[10]:
-                                homeColor = green
-                            else:
-                                homeColor = graphics.Color(game[7], game[8], game[9])
-                            awayTeamString = game[5]
-                            homeTeamString = game[10]
-                            awayTeamStatusString = game[12]
-                            homeTeamStatusString = game[13]
-                            statusString = game[11]
-                            oddsString = game[14]
-                            versusString = ' at '
-                            offscreen_canvas.SetImage(awayLogo, pos + runningCount)
-                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + awayLogo.width + buffer, 10, awayColor, awayTeamString)
-                            awayCentered = awayTeam / 3
-                            awayTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningCount + awayLogo.width + buffer + awayCentered, 31, awayColor, awayTeamStatusString)
-                            if 'HALF' in oddsString:
-                                quarter = graphics.DrawText(offscreen_canvas, middleFont, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam, 12, green, oddsString)
-                            else:
-                                quarter = graphics.DrawText(offscreen_canvas, middleFont, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + 4, 12, green, oddsString)
-                            status = graphics.DrawText(offscreen_canvas, middleFont, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam, 26, green, statusString)
-                            offscreen_canvas.SetImage(homeLogo, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer)
-                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, 10, homeColor, homeTeamString)
-                            homeCentered = homeTeam / 2
-                            homeTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + homeLogo.width + homeCentered, 31, homeColor, homeTeamStatusString)
-                            runningCount = runningCount + pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter 
-                        time.sleep(0.008)
-                        if (runningCount < pos):
-                            running = False
-                            pos = offscreen_canvas.width
+                        gamesRunning = True
+                        while gamesRunning:
+                            for game, idx in string:
+                                pos -= 1
+                                print('\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\')
+                                print(runningCount)
+                                print(pos)
+                                'awayLogo' + str(idx) = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                                print(str('awayLogo' + str(idx)).width)
+                                homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                                if 'BAYLOR' in game[5]:
+                                    awayColor = green
+                                else:
+                                    awayColor = graphics.Color(game[2], game[3], game[4])
+                                if 'BAYLOR' in game[10]:
+                                    homeColor = green
+                                else:
+                                    homeColor = graphics.Color(game[7], game[8], game[9])
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                statusString = game[11]
+                                oddsString = game[14]
+                                versusString = ' at '
+                                offscreen_canvas.SetImage(awayLogo, pos + runningCount)
+                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + awayLogo.width + buffer, 10, awayColor, awayTeamString)
+                                awayCentered = awayTeam / 3
+                                awayTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningCount + awayLogo.width + buffer + awayCentered, 31, awayColor, awayTeamStatusString)
+                                if 'HALF' in oddsString:
+                                    quarter = graphics.DrawText(offscreen_canvas, middleFont, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam, 12, green, oddsString)
+                                else:
+                                    quarter = graphics.DrawText(offscreen_canvas, middleFont, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + 4, 12, green, oddsString)
+                                status = graphics.DrawText(offscreen_canvas, middleFont, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam, 26, green, statusString)
+                                offscreen_canvas.SetImage(homeLogo, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer)
+                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, 10, homeColor, homeTeamString)
+                                homeCentered = homeTeam / 2
+                                homeTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + homeLogo.width + homeCentered, 31, homeColor, homeTeamStatusString)
+                                runningCount = runningCount + pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter 
+                            if (runningCount < pos):
+                                gamesRunning = False
+                                running = False
+                                pos = offscreen_canvas.width
+                            time.sleep(0.008)
                     # elif isinstance(string, list) and 'game' in string[0]:
                     #     if 'BAYLOR' in string[5]:
                     #         awayColor = green
