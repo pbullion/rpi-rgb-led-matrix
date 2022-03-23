@@ -111,6 +111,7 @@ class RunText(SampleBase):
                         string.pop(0)
                         gamesRunning = True
                         games = string
+                        runningCount = 0
                         var_holder = {}
                         for i in range(len(games)):
                             var_holder['awayLogo' + str(i)] = Image.open(requests.get(games[i][1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
@@ -133,7 +134,6 @@ class RunText(SampleBase):
                         print(var_holder)
                         while gamesRunning:
                             buffer = 6
-                            runningCount = 0
                             pos -= 1
                             for game in string:
                                 offscreen_canvas.SetImage(Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos)
