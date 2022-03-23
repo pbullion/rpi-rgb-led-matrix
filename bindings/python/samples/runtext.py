@@ -138,14 +138,15 @@ class RunText(SampleBase):
                         while gamesRunning:
                             pos -= 1
                             print('====================')
+                            runningCount = 0
                             print(pos)
                             print(runningCount)
                             for idx,game in enumerate(games):
                                 logoWidth = 32
-                                offscreen_canvas.SetImage(Image.open(requests.get(games[idx][1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos)
-                                graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + logoWidth + buffer, 10, white, var_holder['awayTeamString' + str(idx)])
-                                offscreen_canvas.SetImage(Image.open(requests.get(games[idx][6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos + runningCount)
-                                runningCount = runningCount + pos + logoWidth + logoWidth + len(var_holder['awayTeamString' + str(idx)])
+                                offscreen_canvas.SetImage(Image.open(requests.get(games[idx][1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos + runningCount)
+                                # graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + logoWidth + buffer, 10, white, var_holder['awayTeamString' + str(idx)])
+                                # offscreen_canvas.SetImage(Image.open(requests.get(games[idx][6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos + runningCount)
+                                runningCount = runningCount + 32
                             if (pos < 0):
                                 gamesRunning = False
                                 running = False
