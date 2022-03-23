@@ -133,13 +133,11 @@ class RunText(SampleBase):
                             var_holder['homeTeam' + str(i)] = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + var_holder['awayTeam' + str(i)] + var_holder['quarter' + str(i)] + buffer + buffer + buffer + buffer + var_holder['homeLogo' + str(i)].width, 10, white, var_holder['homeTeamString' + str(i)])
                             var_holder['homeCentered' + str(i)] = var_holder['homeTeam' + str(i)] / 2
                             var_holder['homeTeamStatus' + str(i)] = graphics.DrawText(offscreen_canvas, font, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + var_holder['awayTeam' + str(i)] + var_holder['quarter' + str(i)] + buffer + var_holder['homeLogo' + str(i)].width + var_holder['homeCentered' + str(i)], 31, white, var_holder['homeTeamStatusString' + str(i)])
-                        print(var_holder)
                         while gamesRunning:
                             pos -= 1
-                            for game,idx in var_holder:
-                                print(game)
-                                print(idx)
-                            #     offscreen_canvas.SetImage(Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos)
+                            for i in range(len(games))
+                                print(games[i])
+                            #     offscreen_canvas.SetImage(awayLogo, pos)
                             #     offscreen_canvas.SetImage(homeLogo, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer)
                             #     runningCount = runningCount + pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter 
                             # if (pos < 0):
