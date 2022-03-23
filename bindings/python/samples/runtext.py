@@ -112,13 +112,13 @@ class RunText(SampleBase):
                         gamesRunning = True
                         games = string
                         print(games)
-                        testing = len(games)
-                        print(testing)
-                        var_holder = {}
-                        for i in range(len(games)):
-                            print(i)
-                            var_holder['my_var_' + str(i)] = "iterationNumber=="+str(i)
-                        print(var_holder)
+                        lenOfGames = len(games)
+                        print(lenOfGames)
+                        # var_holder = {}
+                        # for i in range(len(games)):
+                        #     print(i)
+                        #     var_holder['my_var_' + str(i)] = "iterationNumber=="+str(i)
+                        # print(var_holder)
                         # while gamesRunning:
                         #     buffer = 6
                         #     runningCount = 0
