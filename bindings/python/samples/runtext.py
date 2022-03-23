@@ -57,9 +57,6 @@ class RunText(SampleBase):
                     color = green
                 else:
                     color = green
-                if isinstance(string, list) and 'game' in string[0]:
-                    awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                    homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 if isinstance(string, list) and 'http' in string[0]:
                     if '-' in string[3]:
                         color = red
@@ -71,16 +68,7 @@ class RunText(SampleBase):
                 len = 1
                 while running:
                     offscreen_canvas.Clear()
-                    if 'dickbutt' in string:
-                        running = False
-                        dickbutt = Image.open(requests.get('https://m.media-amazon.com/images/I/41q1QAln+QL._AC_.jpg', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                        pos -= 1
-                        if (pos + dickbutt.width + len < 0):
-                            running = False
-                            pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(dickbutt, pos)
-                        time.sleep(0.001)
-                    elif 'RAIN' in string:
+                    if 'RAIN' in string:
                         color = blue
                         img_width, img_height = rainImage.size
                         pos -= 1
@@ -120,8 +108,9 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(sunnyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.width, 24, color, string)
                         time.sleep(0.008)
-
                     elif isinstance(string, list) and 'game' in string[0]:
+                        awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                         awayColor = graphics.Color(string[2], string[3], string[4])
                         homeColor = graphics.Color(string[7], string[8], string[9])
                         awayTeamString = string[5]
@@ -132,7 +121,7 @@ class RunText(SampleBase):
                         oddsString = string[14]
                         versusString = ' at '
                         pos -= 1
-                        buffer = 6
+                        buffer = 6)
                         if 'pregame' in string[0]:                            
                             offscreen_canvas.SetImage(awayLogo, pos)
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer, 10, white, awayTeamString)
@@ -146,6 +135,60 @@ class RunText(SampleBase):
                             odds = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 15, green, oddsString)
                             status = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 26, green, statusString)
                             if (pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + status < 0):
+                                running = False
+                                pos = offscreen_canvas.width
+                        elif 'mlb' in string[0]:
+                            runnerSituation = string[15]
+                            pitcherHeadshot = string[16]
+                            pitcherNameString = string[17]
+                            pitcherSummaryString = string[21]
+                            batterSummary = string[22]
+                            batterHeadshot = string[18]
+                            batterName = string[19]
+                            situation = string[20]
+                            pitcherImage = Image.open(requests.get(pitcherHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                            batterImage = Image.open(requests.get(batterHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                            # image = Image.new("RGB", (8,8))
+                            # draw = ImageDraw.Draw(image)
+                            # topInning = draw.regular_polygon(((9,9),9),3,rotation=0,fill=yellow,outline=None)
+                            # bottomInning = draw.regular_polygon(((9,9),9),3,rotation=180,fill=yellow,outline=None)
+                            # x, y = (base["x"], base["y"])
+                            # size = base["size"]
+                            # half = abs(size/2)
+                            if int(awayTeamStatusString) < int(homeTeamStatusString):
+                                homeColor = green
+                                awayColor = red
+                            elif int(awayTeamStatusString) == int(homeTeamStatusString):
+                                homeColor = yellow
+                                awayColor = yellow
+                            else:
+                                homeColor = red
+                                awayColor = green
+                            if 'Bases Loaded' in runnerSituation:
+                                runnersColor = green
+                            else:
+                                runnersColor = yellow
+                            offscreen_canvas.SetImage(awayLogo, pos)
+                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer, 10, awayColor, awayTeamString)
+                            awayCentered = awayTeam / 3
+                            awayTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + awayCentered, 31, awayColor, awayTeamStatusString)
+                            if 'HALF' in oddsString:
+                                quarter = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + awayTeam, 12, yellow, oddsString)
+                            else:
+                                quarter = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + awayTeam + 4, 12, yellow, oddsString)
+                            status = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + awayTeam, 26, yellow, statusString)
+                            offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer)
+                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, 10, homeColor, homeTeamString)
+                            homeCentered = homeTeam / 2
+                            homeTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + homeLogo.width + homeCentered, 31, homeColor, homeTeamStatusString)
+                            offscreen_canvas.SetImage(pitcherImage,  pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, homeTeam)
+                            pitcherName = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, pitcherImage.width, 12, white, pitcherNameString)
+                            pitcherSummary = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, pitcherImage.width + pitcherNameString, 26, white, pitcherSummaryString)
+                            offscreen_canvas.SetImage(batterImage,  pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, pitcherImage.width + pitcherNameString)
+                            batterName = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, pitcherImage.width + pitcherNameString + batterImage.width + buffer, 12, white, batterNameString)
+                            batterSummary = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, pitcherImage.width + pitcherNameString + batterImage.width + buffer, 26, white, batterSummaryString)
+                            
+                            if ( pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, pitcherImage.width + pitcherNameString + batterImage.width + buffer + quarter < 0):
                                 running = False
                                 pos = offscreen_canvas.width
                         else:
