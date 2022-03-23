@@ -115,11 +115,11 @@ class RunText(SampleBase):
                             runningCount = 0
                             pos -= 1
                             var_holder = {}
-                            for i in range(len(string)):
+                            for game, idx in string:
                                 var_holder['my_var_' + str(i)] = "iterationNumber=="+str(i)
                             print(var_holder)
-                            for game in string:
-                                awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                            # for game in string:
+                                # awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                                 # homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                                 # awayColor = graphics.Color(game[2], game[3], game[4])
                                 # homeColor = graphics.Color(game[7], game[8], game[9])
@@ -130,7 +130,7 @@ class RunText(SampleBase):
                                 # statusString = game[11]
                                 # oddsString = game[14]
                                 # versusString = ' at '
-                                offscreen_canvas.SetImage(Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos)
+                                # offscreen_canvas.SetImage(Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos)
                                 # awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + awayLogo.width + buffer, 10, awayColor, awayTeamString)
                                 # awayCentered = awayTeam / 3
                                 # awayTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningCount + awayLogo.width + buffer + awayCentered, 31, awayColor, awayTeamStatusString)
@@ -144,11 +144,11 @@ class RunText(SampleBase):
                                 # homeCentered = homeTeam / 2
                                 # homeTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + homeLogo.width + homeCentered, 31, homeColor, homeTeamStatusString)
                                 # runningCount = runningCount + pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter 
-                            if (pos < 0):
-                                gamesRunning = False
-                                running = False
-                                pos = offscreen_canvas.width
-                            time.sleep(0.1)
+                            # if (pos < 0):
+                            #     gamesRunning = False
+                            #     running = False
+                            #     pos = offscreen_canvas.width
+                            # time.sleep(0.1)
                     # elif isinstance(string, list) and 'game' in string[0]:
                     #     if 'BAYLOR' in string[5]:
                     #         awayColor = green
