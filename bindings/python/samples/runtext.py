@@ -142,6 +142,9 @@ class RunText(SampleBase):
                             print(pos)
                             print(runningCount)
                             for idx,game in enumerate(games):
+                                print('****************************')
+                                print(idx)
+                                print(game)
                                 logoWidth = 32
                                 awayLogo = offscreen_canvas.SetImage(Image.open(requests.get(games[idx][1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos + runningCount)
                                 # graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + logoWidth + buffer, 10, white, var_holder['awayTeamString' + str(idx)])
