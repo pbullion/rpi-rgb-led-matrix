@@ -138,13 +138,13 @@ class RunText(SampleBase):
                             for game,idx in var_holder:
                                 print(game)
                                 print(idx)
-                                offscreen_canvas.SetImage(Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos)
-                                offscreen_canvas.SetImage(homeLogo, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer)
-                                runningCount = runningCount + pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter 
-                            if (pos < 0):
-                                gamesRunning = False
-                                running = False
-                                pos = offscreen_canvas.width
+                            #     offscreen_canvas.SetImage(Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos)
+                            #     offscreen_canvas.SetImage(homeLogo, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer)
+                            #     runningCount = runningCount + pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter 
+                            # if (pos < 0):
+                            #     gamesRunning = False
+                            #     running = False
+                            #     pos = offscreen_canvas.width
                             time.sleep(0.1)
                     # elif isinstance(string, list) and 'game' in string[0]:
                     #     if 'BAYLOR' in string[5]:
