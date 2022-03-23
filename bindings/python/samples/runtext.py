@@ -111,13 +111,18 @@ class RunText(SampleBase):
                         string.pop(0)
                         gamesRunning = True
                         games = string
-                        print(games)
-                        lenOfGames = len(games)
-                        print(lenOfGames)
                         var_holder = {}
                         for i in range(len(games)):
-                            print(i)
-                            var_holder['my_var_' + str(i)] = "iterationNumber=="+str(i)
+                            var_holder['awayLogo' + str(i)] = Image.open(requests.get(games[i][1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                            var_holder['homeLogo' + str(i)] = Image.open(requests.get(games[i][6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                            var_holder['awayTeamString' + str(i)] = games[i][5]
+                            var_holder['homeTeamString' + str(i)] = games[i][10]
+                            var_holder['awayTeamStatusString' + str(i)] = games[i][12]
+                            var_holder['homeTeamStatusString' + str(i)] = games[i][13]
+                            var_holder['statusString' + str(i)] = games[i][11]
+                            var_holder['oddsString' + str(i)] = games[i][14]
+                            var_holder['versusString' + str(i)] = ' at '
+
                         print(var_holder)
                         # while gamesRunning:
                         #     buffer = 6
@@ -135,6 +140,10 @@ class RunText(SampleBase):
                                 # statusString = game[11]
                                 # oddsString = game[14]
                                 # versusString = ' at '
+
+
+
+                                
                                 # offscreen_canvas.SetImage(Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos)
                                 # awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + awayLogo.width + buffer, 10, awayColor, awayTeamString)
                                 # awayCentered = awayTeam / 3
