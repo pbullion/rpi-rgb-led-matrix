@@ -135,10 +135,10 @@ class RunText(SampleBase):
                             var_holder['homeTeam' + str(i)] = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + var_holder['awayTeam' + str(i)] + var_holder['quarter' + str(i)] + buffer + buffer + buffer + buffer + var_holder['homeLogo' + str(i)].width, 10, white, var_holder['homeTeamString' + str(i)])
                             var_holder['homeCentered' + str(i)] = var_holder['homeTeam' + str(i)] / 2
                             var_holder['homeTeamStatus' + str(i)] = graphics.DrawText(offscreen_canvas, font, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + var_holder['awayTeam' + str(i)] + var_holder['quarter' + str(i)] + buffer + var_holder['homeLogo' + str(i)].width + var_holder['homeCentered' + str(i)], 31, white, var_holder['homeTeamStatusString' + str(i)])
+                        pos -= 1
+                        runningCount = 0
                         while gamesRunning:
-                            pos -= 1
                             print('====================')
-                            runningCount = 0
                             print(pos)
                             print(runningCount)
                             for idx,game in enumerate(games):
@@ -151,11 +151,11 @@ class RunText(SampleBase):
                                 # graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + logoWidth + buffer, 10, white, var_holder['awayTeamString' + str(idx)])
                                 # offscreen_canvas.SetImage(Image.open(requests.get(games[idx][6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos + runningCount)
                                 runningCount = runningCount + logoWidth
-                                time.sleep(0.2)
-                            if (pos + logoWidth < 0):
-                                gamesRunning = False
-                                running = False
-                                pos = offscreen_canvas.width
+                        if (pos + logoWidth < 0):
+                            gamesRunning = False
+                            running = False
+                            pos = offscreen_canvas.width
+                        time.sleep(0.2)
                     # elif isinstance(string, list) and 'game' in string[0]:
                     #     if 'BAYLOR' in string[5]:
                     #         awayColor = green
