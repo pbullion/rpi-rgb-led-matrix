@@ -149,10 +149,10 @@ class RunText(SampleBase):
                                 running = False
                                 pos = offscreen_canvas.width
                         else:
-                            if int(awayTeamString) < int(homeTeamString):
+                            if int(awayTeamStatusString) < int(homeTeamStatusString):
                                 homeColor = green
                                 awayColor = red
-                            elif int(awayTeamString) == int(homeTeamString):
+                            elif int(awayTeamStatusString) == int(homeTeamStatusString):
                                 homeColor = yellow
                                 awayColor = yellow
                             else:
