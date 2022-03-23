@@ -115,7 +115,7 @@ class RunText(SampleBase):
                         games = string
                         runningCount = 0
                         var_holder = {}
-                        stuff = {}
+                        stufffff = {}
                         for i in range(len(games)):
                             var_holder['awayLogo' + str(i)] = Image.open(requests.get(games[i][1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                             var_holder['homeLogo' + str(i)] = Image.open(requests.get(games[i][6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
