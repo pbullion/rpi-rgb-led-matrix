@@ -131,7 +131,7 @@ class RunText(SampleBase):
                                 statusString = game[11]
                                 oddsString = game[14]
                                 versusString = ' at '
-                                offscreen_canvas.SetImage(awayLogo, pos + runningCount)
+                                offscreen_canvas.SetImage(Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos + runningCount)
                                 # awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + awayLogo.width + buffer, 10, awayColor, awayTeamString)
                                 # awayCentered = awayTeam / 3
                                 # awayTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningCount + awayLogo.width + buffer + awayCentered, 31, awayColor, awayTeamStatusString)
