@@ -147,7 +147,7 @@ class RunText(SampleBase):
                                 # graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + logoWidth + buffer, 10, white, var_holder['awayTeamString' + str(idx)])
                                 # offscreen_canvas.SetImage(Image.open(requests.get(games[idx][6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos + runningCount)
                                 runningCount = runningCount + logoWidth
-                            if (pos + awayLogo < 0):
+                            if (pos + logoWidth < 0):
                                 gamesRunning = False
                                 running = False
                                 pos = offscreen_canvas.width
