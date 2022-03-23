@@ -67,7 +67,7 @@ class RunText(SampleBase):
                 len = 1
                 while running:
                     offscreen_canvas.Clear()
-                    elif 'RAIN' in string:
+                    if 'RAIN' in string:
                         color = blue
                         img_width, img_height = rainImage.size
                         pos -= 1
