@@ -137,7 +137,7 @@ class RunText(SampleBase):
                             # stufffff['homeTeamStatus' + str(i)] = graphics.DrawText(offscreen_canvas, font, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + var_holder['awayTeam' + str(i)] + var_holder['quarter' + str(i)] + buffer + var_holder['homeLogo' + str(i)].width + var_holder['homeCentered' + str(i)], 31, white, var_holder['homeTeamStatusString' + str(i)])
                         while gamesRunning:
                             pos -= 1
-                            for game,idx in enumerate(games):
+                            for idx,game in enumerate(games):
                                 print('==============')
                                 print(idx)
                                 print(game)
