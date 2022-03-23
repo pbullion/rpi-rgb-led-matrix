@@ -110,14 +110,15 @@ class RunText(SampleBase):
                     elif isinstance(string, list) and 'game' in string[0]:
                         string.pop(0)
                         gamesRunning = True
-                        while gamesRunning:
-                            buffer = 6
-                            runningCount = 0
-                            pos -= 1
-                            var_holder = {}
-                            for idx, game in string:
-                                var_holder['my_var_' + str(i)] = "iterationNumber=="+str(i)
+                        print(string)
+                        var_holder = {}
+                        for idx, game in string:
+                            var_holder['my_var_' + str(i)] = "iterationNumber=="+str(i)
                             print(var_holder)
+                        # while gamesRunning:
+                        #     buffer = 6
+                        #     runningCount = 0
+                        #     pos -= 1
                             # for game in string:
                                 # awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                                 # homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
