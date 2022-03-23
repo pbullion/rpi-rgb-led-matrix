@@ -19,6 +19,7 @@ class RunText(SampleBase):
     def run(self):
         while True:
             # COLORS
+            white = graphics.Color(255,255,255)
             green = graphics.Color(0, 255, 0)
             red = graphics.Color(255, 0, 0)
             blue = graphics.Color(0, 0, 255)
@@ -124,14 +125,14 @@ class RunText(SampleBase):
                             var_holder['statusString' + str(i)] = games[i][11]
                             var_holder['oddsString' + str(i)] = games[i][14]
                             var_holder['versusString' + str(i)] = ' at '
-                            var_holder['awayTeam' + str(i)] = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer, 10, awayColor, awayTeamString)
+                            var_holder['awayTeam' + str(i)] = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer, 10, white, awayTeamString)
                             var_holder['awayCentered' + str(i)] = awayTeam / 3
-                            var_holder['awayTeamStatus' + str(i)] = graphics.DrawText(offscreen_canvas, font, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + awayCentered, 31, awayColor, awayTeamStatusString)
+                            var_holder['awayTeamStatus' + str(i)] = graphics.DrawText(offscreen_canvas, font, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + awayCentered, 31, white, awayTeamStatusString)
                             var_holder['quarter' + str(i)] = graphics.DrawText(offscreen_canvas, middleFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + awayTeam + 4, 12, green, oddsString)
                             var_holder['status' + str(i)] = graphics.DrawText(offscreen_canvas, middleFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + awayTeam, 26, green, statusString)
-                            var_holder['homeTeam' + str(i)] = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, 10, homeColor, homeTeamString)
+                            var_holder['homeTeam' + str(i)] = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, 10, white, homeTeamString)
                             var_holder['homeCentered' + str(i)] = homeTeam / 2
-                            var_holder['homeTeamStatus' + str(i)] = graphics.DrawText(offscreen_canvas, font, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + awayTeam + quarter + buffer + homeLogo.width + homeCentered, 31, homeColor, homeTeamStatusString)
+                            var_holder['homeTeamStatus' + str(i)] = graphics.DrawText(offscreen_canvas, font, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + awayTeam + quarter + buffer + homeLogo.width + homeCentered, 31, white, homeTeamStatusString)
                         print(var_holder)
                         while gamesRunning:
                             pos -= 1
