@@ -117,19 +117,18 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.width, 24, color, string)
                         time.sleep(0.008)
                     elif isinstance(string, list) and 'game' in string[0]:
-                        buffer = 6
-                        runningCount = 0
                         string.pop(0)
-                        print(runningCount)
                         gamesRunning = True
                         while gamesRunning:
+                            buffer = 6
+                            runningCount = 0
+                            print(runningCount)
+                            pos -= 1
                             for game, idx in string:
-                                pos -= 1
                                 print('\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\')
                                 print(runningCount)
                                 print(pos)
                                 awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                                print(str('awayLogo' + str(idx)).width)
                                 homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                                 if 'BAYLOR' in game[5]:
                                     awayColor = green
