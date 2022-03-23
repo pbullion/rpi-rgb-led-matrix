@@ -110,7 +110,7 @@ class RunText(SampleBase):
                     elif isinstance(string, list) and 'game' in string[0]:
                         string.pop(0)
                         gamesRunning = True
-                        print(string)
+                        print(len(string))
                         var_holder = {}
                         for i in range(len(string)):
                             print(i)
