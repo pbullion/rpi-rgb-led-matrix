@@ -115,6 +115,7 @@ class RunText(SampleBase):
                         games = string
                         runningCount = 0
                         var_holder = {}
+                        stuff = {}
                         for i in range(len(games)):
                             var_holder['awayLogo' + str(i)] = Image.open(requests.get(games[i][1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                             var_holder['homeLogo' + str(i)] = Image.open(requests.get(games[i][6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
@@ -125,18 +126,20 @@ class RunText(SampleBase):
                             var_holder['statusString' + str(i)] = games[i][11]
                             var_holder['oddsString' + str(i)] = games[i][14]
                             var_holder['versusString' + str(i)] = ' at '
-                            var_holder['awayTeam' + str(i)] = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer, 10, white, var_holder['awayTeamString' + str(i)])
-                            var_holder['awayCentered' + str(i)] = var_holder['awayTeam' + str(i)] / 3
-                            var_holder['awayTeamStatus' + str(i)] = graphics.DrawText(offscreen_canvas, font, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + var_holder['awayCentered' + str(i)], 31, white, var_holder['awayTeamStatusString' + str(i)])
-                            var_holder['quarter' + str(i)] = graphics.DrawText(offscreen_canvas, middleFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + var_holder['awayTeam' + str(i)] + 4, 12, green, var_holder['oddsString' + str(i)])
-                            var_holder['status' + str(i)] = graphics.DrawText(offscreen_canvas, middleFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + var_holder['awayTeam' + str(i)], 26, green, var_holder['statusString' + str(i)])
-                            var_holder['homeTeam' + str(i)] = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + var_holder['awayTeam' + str(i)] + var_holder['quarter' + str(i)] + buffer + buffer + buffer + buffer + var_holder['homeLogo' + str(i)].width, 10, white, var_holder['homeTeamString' + str(i)])
-                            var_holder['homeCentered' + str(i)] = var_holder['homeTeam' + str(i)] / 2
-                            var_holder['homeTeamStatus' + str(i)] = graphics.DrawText(offscreen_canvas, font, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + var_holder['awayTeam' + str(i)] + var_holder['quarter' + str(i)] + buffer + var_holder['homeLogo' + str(i)].width + var_holder['homeCentered' + str(i)], 31, white, var_holder['homeTeamStatusString' + str(i)])
+                            stufffff['awayTeam' + str(i)] = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer, 10, white, var_holder['awayTeamString' + str(i)])
+                            stufffff['awayCentered' + str(i)] = var_holder['awayTeam' + str(i)] / 3
+                            stufffff['awayTeamStatus' + str(i)] = graphics.DrawText(offscreen_canvas, font, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + var_holder['awayCentered' + str(i)], 31, white, var_holder['awayTeamStatusString' + str(i)])
+                            stufffff['quarter' + str(i)] = graphics.DrawText(offscreen_canvas, middleFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + var_holder['awayTeam' + str(i)] + 4, 12, green, var_holder['oddsString' + str(i)])
+                            stufffff['status' + str(i)] = graphics.DrawText(offscreen_canvas, middleFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + var_holder['awayTeam' + str(i)], 26, green, var_holder['statusString' + str(i)])
+                            stufffff['homeTeam' + str(i)] = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + var_holder['awayTeam' + str(i)] + var_holder['quarter' + str(i)] + buffer + buffer + buffer + buffer + var_holder['homeLogo' + str(i)].width, 10, white, var_holder['homeTeamString' + str(i)])
+                            stufffff['homeCentered' + str(i)] = var_holder['homeTeam' + str(i)] / 2
+                            stufffff['homeTeamStatus' + str(i)] = graphics.DrawText(offscreen_canvas, font, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + var_holder['awayTeam' + str(i)] + var_holder['quarter' + str(i)] + buffer + var_holder['homeLogo' + str(i)].width + var_holder['homeCentered' + str(i)], 31, white, var_holder['homeTeamStatusString' + str(i)])
                         while gamesRunning:
                             pos -= 1
-                            for i in range(len(games)):
-                                print(games[i])
+                            for game,idx in enumerate(games):
+                                print('==============')
+                                print(idx)
+                                print(game)
                             #     offscreen_canvas.SetImage(awayLogo, pos)
                             #     offscreen_canvas.SetImage(homeLogo, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer)
                             #     runningCount = runningCount + pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter 
@@ -144,7 +147,7 @@ class RunText(SampleBase):
                             #     gamesRunning = False
                             #     running = False
                             #     pos = offscreen_canvas.width
-                            time.sleep(0.1)
+                            time.sleep(0.2)
                     # elif isinstance(string, list) and 'game' in string[0]:
                     #     if 'BAYLOR' in string[5]:
                     #         awayColor = green
