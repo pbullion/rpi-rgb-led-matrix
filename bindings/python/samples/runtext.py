@@ -116,7 +116,7 @@ class RunText(SampleBase):
                             runningCount = 0
                             print(runningCount)
                             pos -= 1
-                            for game, idx in string:
+                            for game in string:
                                 print('\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\')
                                 print(runningCount)
                                 print(pos)
