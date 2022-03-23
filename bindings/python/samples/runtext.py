@@ -140,7 +140,8 @@ class RunText(SampleBase):
                             for idx,game in enumerate(games):
                                 print('==============')
                                 print(idx)
-                                print(game)
+                                # print(game)
+                                print(var_holder['awayTeamString' + str(idx)])
                             #     offscreen_canvas.SetImage(awayLogo, pos)
                             #     offscreen_canvas.SetImage(homeLogo, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer)
                             #     runningCount = runningCount + pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter 
