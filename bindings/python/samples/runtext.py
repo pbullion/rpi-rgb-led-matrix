@@ -108,6 +108,7 @@ class RunText(SampleBase):
                         length = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.width, 24, color, string)
                         time.sleep(0.008)
                     elif isinstance(string, list) and 'game' in string[0]:
+                        buffer = 6
                         string.pop(0)
                         gamesRunning = True
                         games = string
@@ -133,7 +134,6 @@ class RunText(SampleBase):
                             var_holder['homeTeamStatus' + str(i)] = graphics.DrawText(offscreen_canvas, font, pos + runningCount + var_holder['awayLogo' + str(i)].width + buffer + buffer + awayTeam + quarter + buffer + homeLogo.width + homeCentered, 31, homeColor, homeTeamStatusString)
                         print(var_holder)
                         while gamesRunning:
-                            buffer = 6
                             pos -= 1
                             for game,idx in var_holder:
                                 print(game)
