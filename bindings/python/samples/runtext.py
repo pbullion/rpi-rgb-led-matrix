@@ -118,7 +118,6 @@ class RunText(SampleBase):
                             pos -= 1
                             for game in string:
                                 print('\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\')
-                                print(runningCount)
                                 print(pos)
                                 awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                                 homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
@@ -145,7 +144,7 @@ class RunText(SampleBase):
                                 # homeCentered = homeTeam / 2
                                 # homeTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + homeLogo.width + homeCentered, 31, homeColor, homeTeamStatusString)
                                 # runningCount = runningCount + pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter 
-                            if (runningCount < pos):
+                            if (pos < 0):
                                 gamesRunning = False
                                 running = False
                                 pos = offscreen_canvas.width
