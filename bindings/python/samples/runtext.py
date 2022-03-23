@@ -135,7 +135,9 @@ class RunText(SampleBase):
                         while gamesRunning:
                             buffer = 6
                             pos -= 1
-                            for game in string:
+                            for game,idx in var_holder:
+                                print(game)
+                                print(idx)
                                 offscreen_canvas.SetImage(Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos)
                                 offscreen_canvas.SetImage(homeLogo, pos + runningCount + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer)
                                 runningCount = runningCount + pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter 
