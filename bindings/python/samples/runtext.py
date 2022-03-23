@@ -109,15 +109,17 @@ class RunText(SampleBase):
                         time.sleep(0.008)
                     elif isinstance(string, list) and 'game' in string[0]:
                         string.pop(0)
-                        print(string)
                         gamesRunning = True
                         while gamesRunning:
                             buffer = 6
                             runningCount = 0
                             pos -= 1
+                            var_holder = {}
+                            for i in range(len(string)):
+                                var_holder['my_var_' + str(i)] = "iterationNumber=="+str(i)
+                            print(var_holder)
                             for game in string:
-                                print('\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\')
-                                # awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                                awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                                 # homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                                 # awayColor = graphics.Color(game[2], game[3], game[4])
                                 # homeColor = graphics.Color(game[7], game[8], game[9])
