@@ -114,22 +114,20 @@ class RunText(SampleBase):
                         while gamesRunning:
                             buffer = 6
                             runningCount = 0
-                            print(runningCount)
                             pos -= 1
                             for game in string:
                                 print('\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\')
-                                print(pos)
-                                awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                                homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                                awayColor = graphics.Color(game[2], game[3], game[4])
-                                homeColor = graphics.Color(game[7], game[8], game[9])
-                                awayTeamString = game[5]
-                                homeTeamString = game[10]
-                                awayTeamStatusString = game[12]
-                                homeTeamStatusString = game[13]
-                                statusString = game[11]
-                                oddsString = game[14]
-                                versusString = ' at '
+                                # awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                                # homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                                # awayColor = graphics.Color(game[2], game[3], game[4])
+                                # homeColor = graphics.Color(game[7], game[8], game[9])
+                                # awayTeamString = game[5]
+                                # homeTeamString = game[10]
+                                # awayTeamStatusString = game[12]
+                                # homeTeamStatusString = game[13]
+                                # statusString = game[11]
+                                # oddsString = game[14]
+                                # versusString = ' at '
                                 offscreen_canvas.SetImage(Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS), pos)
                                 # awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningCount + awayLogo.width + buffer, 10, awayColor, awayTeamString)
                                 # awayCentered = awayTeam / 3
