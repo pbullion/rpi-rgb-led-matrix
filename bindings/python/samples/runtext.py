@@ -149,13 +149,6 @@ class RunText(SampleBase):
                             situation = string[20]
                             pitcherImage = Image.open(requests.get(pitcherHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                             batterImage = Image.open(requests.get(batterHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                            # image = Image.new("RGB", (8,8))
-                            # draw = ImageDraw.Draw(image)
-                            # topInning = draw.regular_polygon(((9,9),9),3,rotation=0,fill=yellow,outline=None)
-                            # bottomInning = draw.regular_polygon(((9,9),9),3,rotation=180,fill=yellow,outline=None)
-                            # x, y = (base["x"], base["y"])
-                            # size = base["size"]
-                            # half = abs(size/2)
                             if int(awayTeamStatusString) < int(homeTeamStatusString):
                                 homeColor = green
                                 awayColor = red
@@ -219,7 +212,7 @@ class RunText(SampleBase):
                             if (pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter < 0):
                                 running = False
                                 pos = offscreen_canvas.width
-                            time.sleep(0.008)
+                        time.sleep(0.008)
                     # elif isinstance(string, list) and 'game' in string[0]:
                     #     if 'BAYLOR' in string[5]:
                     #         awayColor = green
