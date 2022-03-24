@@ -191,7 +191,10 @@ class RunText(SampleBase):
                             print('-------------------------')
                             print(awayTeamStatusString)
                             print(homeTeamStatusString)
-                            if int(awayTeamStatusString) < int(homeTeamStatusString):
+                            if awayTeamStatusString == '':
+                                homeColor = yellow
+                                awayColor = yellow
+                            elif int(awayTeamStatusString) < int(homeTeamStatusString):
                                 homeColor = green
                                 awayColor = red
                             elif int(awayTeamStatusString) == int(homeTeamStatusString):
