@@ -57,7 +57,7 @@ class RunText(SampleBase):
                     color = green
                 else:
                     color = green
-                if isinstance(string, list) and 'inprogress mlb' in string[0]:
+                if isinstance(string, list) and 'inprogess mlb' in string[0]:
                     awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     pitcherHeadshot = string[16]
