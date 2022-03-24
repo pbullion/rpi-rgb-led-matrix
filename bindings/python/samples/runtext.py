@@ -121,7 +121,7 @@ class RunText(SampleBase):
                         oddsString = string[14]
                         versusString = ' at '
                         pos -= 1
-                        buffer = 6)
+                        buffer = 6
                         if 'pregame' in string[0]:                            
                             offscreen_canvas.SetImage(awayLogo, pos)
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer, 10, white, awayTeamString)
