@@ -191,6 +191,7 @@ class RunText(SampleBase):
                                 running = False
                                 pos = offscreen_canvas.width
                         else:
+                            print('======================')
                             print('right here')
                             if int(awayTeamStatusString) < int(homeTeamStatusString):
                                 homeColor = green
