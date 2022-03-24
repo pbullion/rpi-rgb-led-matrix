@@ -217,7 +217,7 @@ class RunText(SampleBase):
                             if (pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter < 0):
                                 running = False
                                 pos = offscreen_canvas.width
-                        time.sleep(0.008)
+                            time.sleep(0.008)
                     # elif isinstance(string, list) and 'game' in string[0]:
                     #     if 'BAYLOR' in string[5]:
                     #         awayColor = green
