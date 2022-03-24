@@ -108,20 +108,20 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(sunnyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.width, 24, color, string)
                         time.sleep(0.008)
-                    elif isinstance(string, list) and 'game' in string[0]:
-                        awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                        homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                        awayColor = graphics.Color(string[2], string[3], string[4])
-                        homeColor = graphics.Color(string[7], string[8], string[9])
-                        awayTeamString = string[5]
-                        homeTeamString = string[10]
-                        awayTeamStatusString = string[12]
-                        homeTeamStatusString = string[13]
-                        statusString = string[11]
-                        oddsString = string[14]
-                        versusString = ' at '
-                        pos -= 1
-                        buffer = 6
+                    # elif isinstance(string, list) and 'game' in string[0]:
+                    #     awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    #     homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    #     awayColor = graphics.Color(string[2], string[3], string[4])
+                    #     homeColor = graphics.Color(string[7], string[8], string[9])
+                    #     awayTeamString = string[5]
+                    #     homeTeamString = string[10]
+                    #     awayTeamStatusString = string[12]
+                    #     homeTeamStatusString = string[13]
+                    #     statusString = string[11]
+                    #     oddsString = string[14]
+                    #     versusString = ' at '
+                    #     pos -= 1
+                    #     buffer = 6
                         # if 'pregame' in string[0]:                            
                         #     offscreen_canvas.SetImage(awayLogo, pos)
                         #     awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer, 10, white, awayTeamString)
