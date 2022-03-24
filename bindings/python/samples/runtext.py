@@ -190,7 +190,7 @@ class RunText(SampleBase):
                             if ( pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, pitcherImage.width + pitcherNameString + batterImage.width + buffer + quarter < 0):
                                 running = False
                                 pos = offscreen_canvas.width
-                            time.sleep(0.008)
+                        time.sleep(0.01)
                         else:
                             if int(awayTeamStatusString) < int(homeTeamStatusString):
                                 homeColor = green
