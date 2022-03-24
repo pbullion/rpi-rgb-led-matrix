@@ -137,7 +137,7 @@ class RunText(SampleBase):
                             if (pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + status < 0):
                                 running = False
                                 pos = offscreen_canvas.width
-                        elif 'mlb' in string[0]:
+                        elif 'inprogess mlb' in string[0]:
                             runnerSituation = string[15]
                             pitcherHeadshot = string[16]
                             pitcherNameString = string[17]
