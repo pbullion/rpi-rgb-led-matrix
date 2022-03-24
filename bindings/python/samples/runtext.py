@@ -196,7 +196,7 @@ class RunText(SampleBase):
                             else:
                                 homeColor = red
                                 awayColor = green
-                            offscreen_canvas.SetImage(awayLogo, pos)
+                            # offscreen_canvas.SetImage(awayLogo, pos)
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer, 10, awayColor, awayTeamString)
                             awayCentered = awayTeam / 3
                             awayTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + awayCentered, 31, awayColor, awayTeamStatusString)
@@ -205,7 +205,7 @@ class RunText(SampleBase):
                             else:
                                 quarter = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + awayTeam + 4, 12, yellow, oddsString)
                             status = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + awayTeam, 26, yellow, statusString)
-                            offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer)
+                            # offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer)
                             homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, 10, homeColor, homeTeamString)
                             homeCentered = homeTeam / 2
                             homeTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + homeLogo.width + homeCentered, 31, homeColor, homeTeamStatusString)
