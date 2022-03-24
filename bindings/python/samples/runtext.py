@@ -214,6 +214,8 @@ class RunText(SampleBase):
                         #         pos = offscreen_canvas.width
                         # time.sleep(0.008)
                     elif isinstance(string, list) and 'game' in string[0]:
+                        awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                         if 'BAYLOR' in string[5]:
                             awayColor = green
                         else:
