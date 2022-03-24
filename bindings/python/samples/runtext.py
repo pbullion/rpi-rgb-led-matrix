@@ -187,10 +187,10 @@ class RunText(SampleBase):
                             offscreen_canvas.SetImage(batterImage,  pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, pitcherImage.width + pitcherNameString)
                             batterName = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, pitcherImage.width + pitcherNameString + batterImage.width + buffer, 12, white, batterNameString)
                             batterSummary = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, pitcherImage.width + pitcherNameString + batterImage.width + buffer, 26, white, batterSummaryString)
-                            
                             if ( pos + awayLogo.width + buffer + buffer + awayTeam + quarter + buffer + buffer + buffer + buffer + homeLogo.width, pitcherImage.width + pitcherNameString + batterImage.width + buffer + quarter < 0):
                                 running = False
                                 pos = offscreen_canvas.width
+                            time.sleep(0.008)
                         else:
                             if int(awayTeamStatusString) < int(homeTeamStatusString):
                                 homeColor = green
