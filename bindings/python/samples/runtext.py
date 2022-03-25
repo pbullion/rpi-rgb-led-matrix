@@ -149,6 +149,7 @@ class RunText(SampleBase):
                             print('--------------------------------')
                             runnerSituationString = string[15]
                             pitcherNameString = string[17]
+                            print(pitcherNameString)
                             pitcherSummaryString = string[21]
                             batterSummaryString = string[22]
                             batterNameString = string[19]
