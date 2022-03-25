@@ -162,7 +162,7 @@ class RunText(SampleBase):
                             else:
                                 homeColor = red
                                 awayColor = green
-                            if 'Bases Loaded' in runnerSituation:
+                            if 'Bases Loaded' in runnerSituationString:
                                 runnersColor = green
                             else:
                                 runnersColor = yellow
