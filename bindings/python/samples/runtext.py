@@ -166,23 +166,34 @@ class RunText(SampleBase):
                                 runnersColor = green
                             else:
                                 runnersColor = yellow
+                            runningTotal = 0
                             offscreen_canvas.SetImage(awayLogo, pos)
-                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer, 10, awayColor, awayTeamString)
+                            runningTotal = runningTotal + awayLogo.width + buffer
+                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 10, awayColor, awayTeamString)
+                            runningTotal = runningTotal + awayTeam + buffer
                             awayCentered = awayTeam / 3
-                            awayTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + awayCentered, 31, awayColor, awayTeamStatusString)
-                            situation = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam, 10, yellow, situationString)
-                            runnerSituation = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam, 25, yellow, runnerSituationString)
-                            offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + awayTeam + situation + buffer + buffer + buffer)
-                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + situation + buffer + buffer + buffer + buffer + homeLogo.width, 10, homeColor, homeTeamString)
+                            awayTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningTotal, 31, awayColor, awayTeamStatusString)
+                            runningTotal = runningTotal + awayTeamStatus                            
+                            situation = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 10, yellow, situationString)
+                            runningTotal = runningTotal + situation                            
+                            runnerSituation = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 25, yellow, runnerSituationString)
+                            offscreen_canvas.SetImage(homeLogo, pos + runningTotal)
+                            runningTotal = runningTotal + homeLogo.width
+                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 10, homeColor, homeTeamString)
+                            runningTotal = runningTotal + homeTeam                            
                             homeCentered = homeTeam / 2
-                            homeTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + buffer + awayTeam + situation + buffer + homeLogo.width + homeCentered, 31, homeColor, homeTeamStatusString)
-                            offscreen_canvas.SetImage(pitcherImage,  pos + awayLogo.width + buffer + buffer + awayTeam + situation + buffer + buffer + buffer + buffer + homeLogo.width + homeTeam)
-                            pitcherName = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + situation + buffer + buffer + buffer + buffer + homeLogo.width + homeTeam + pitcherImage.width, 12, white, pitcherNameString)
-                            pitcherSummary = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + situation + buffer + buffer + buffer + buffer + homeLogo.width + homeTeam + pitcherImage.width + pitcherName, 26, white, pitcherSummaryString)
-                            offscreen_canvas.SetImage(batterImage,  pos + awayLogo.width + buffer + buffer + awayTeam + situation + buffer + buffer + buffer + buffer + homeLogo.width + homeTeam + pitcherImage.width + pitcherName)
-                            batterName = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + situation + buffer + buffer + buffer + buffer + homeLogo.width + homeTeam + pitcherImage.width + pitcherName + batterImage.width + buffer, 12, white, batterNameString)
-                            batterSummary = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + situation + buffer + buffer + buffer + buffer + homeLogo.width + homeTeam + pitcherImage.width + pitcherName + batterImage.width + buffer, 26, white, batterSummaryString)
-                            if (pos + awayLogo.width + buffer + buffer + awayTeam + situation + buffer + buffer + buffer + buffer + homeLogo.width + homeTeam + pitcherImage.width + pitcherName + batterImage.width + buffer + situation < 0):
+                            homeTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningTotal, 31, homeColor, homeTeamStatusString)                            
+                            offscreen_canvas.SetImage(pitcherImage,  pos + runningTotal)
+                            runningTotal = runningTotal + pitcherImage.width
+                            pitcherName = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 12, white, pitcherNameString)
+                            runningTotal = runningTotal + pitcherName
+                            pitcherSummary = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 26, white, pitcherSummaryString)
+                            offscreen_canvas.SetImage(batterImage,  pos + runningTotal)
+                            runningTotal = runningTotal + batterImage.width
+                            batterName = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 12, white, batterNameString)
+                            runningTotal = runningTotal + batterName
+                            batterSummary = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 26, white, batterSummaryString)
+                            if (pos + runningTotal < 0):
                                 running = False
                                 pos = offscreen_canvas.width
                         else:
