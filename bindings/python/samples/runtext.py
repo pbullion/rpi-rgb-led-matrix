@@ -176,23 +176,23 @@ class RunText(SampleBase):
                             awayTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningTotal, 31, awayColor, awayTeamStatusString)
                             runningTotal = runningTotal + awayTeamStatus                            
                             situation = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 10, yellow, situationString)
-                            runningTotal = runningTotal + situation                            
                             runnerSituation = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 25, yellow, runnerSituationString)
+                            runningTotal = runningTotal + situation + buffer                    
                             offscreen_canvas.SetImage(homeLogo, pos + runningTotal)
                             runningTotal = runningTotal + homeLogo.width
                             homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 10, homeColor, homeTeamString)
-                            runningTotal = runningTotal + homeTeam                            
+                            runningTotal = runningTotal + homeTeam  + buffer                          
                             homeCentered = homeTeam / 2
                             homeTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningTotal, 31, homeColor, homeTeamStatusString)                            
                             offscreen_canvas.SetImage(pitcherImage,  pos + runningTotal)
-                            runningTotal = runningTotal + pitcherImage.width
+                            runningTotal = runningTotal + pitcherImage.width + buffer
                             pitcherName = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 12, white, pitcherNameString)
-                            runningTotal = runningTotal + pitcherName
+                            runningTotal = runningTotal + pitcherName + buffer
                             pitcherSummary = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 26, white, pitcherSummaryString)
                             offscreen_canvas.SetImage(batterImage,  pos + runningTotal)
-                            runningTotal = runningTotal + batterImage.width
+                            runningTotal = runningTotal + batterImage.width + buffer
                             batterName = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 12, white, batterNameString)
-                            runningTotal = runningTotal + batterName
+                            runningTotal = runningTotal + batterName + buffer
                             batterSummary = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 26, white, batterSummaryString)
                             if (pos + runningTotal < 0):
                                 running = False
