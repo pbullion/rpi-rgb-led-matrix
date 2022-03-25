@@ -146,6 +146,7 @@ class RunText(SampleBase):
                                 running = False
                                 pos = offscreen_canvas.width
                         elif 'inprogess mlb' in string[0]:
+                            print('--------------------------------')
                             runnerSituationString = string[15]
                             pitcherNameString = string[17]
                             pitcherSummaryString = string[21]
