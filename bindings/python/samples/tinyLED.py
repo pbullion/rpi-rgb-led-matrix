@@ -37,7 +37,7 @@ class RunText(SampleBase):
             middleFont = graphics.Font()
             middleFont.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/9x18B.bdf")
             # END FONTS
-            url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
+            url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
             responseArr = json.loads(url.text)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
