@@ -39,7 +39,8 @@ class RunText(SampleBase):
             # END FONTS
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
             responseArr = json.loads(url.text)
-            pos = 64
+            canvas = self.matrix
+
             for item in responseArr:
                 running = True
                 len = 1
@@ -53,11 +54,8 @@ class RunText(SampleBase):
                         homeColorPrimary = graphics.Color(item['homeTeam']['colors']['main'][0],item['homeTeam']['colors']['main'][1],item['homeTeam']['colors']['main'][2])
                         homeColorSecondary = graphics.Color(item['homeTeam']['colors']['secondary'][0],item['homeTeam']['colors']['secondary'][1],item['homeTeam']['colors']['secondary'][2])
                         if item['pregame'] == False:              
-                            print(item['awayTeam']['name'])
-                            print(item['homeTeam']['name'])
-                            awayTeam = graphics.DrawText(self.matrix, smallFont, 1, 12, awayColorPrimary, item['awayTeam']['name'])
-                            homeTeam = graphics.DrawText(self.matrix, smallFont, 1, 24, homeColorPrimary, item['homeTeam']['name'])
-
+                            awayTeam = graphics.DrawText(canvasx, smallFont, 1, 12, awayColorPrimary, item['awayTeam']['name'])
+                            homeTeam = graphics.DrawText(canvasx, smallFont, 1, 24, homeColorPrimary, item['homeTeam']['name'])
                         time.sleep(6)
 
 
@@ -78,7 +76,7 @@ class RunText(SampleBase):
                             # odds = graphics.DrawText(self.matrix, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 15, green, oddsString)
                             # status = graphics.DrawText(self.matrix, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 26, green, statusString)
                         # pos = self.matrix.width
-                    self.matrix = self.matrix.SwapOnVSync(self.matrix)
+                    # self.matrix = self.matrix.SwapOnVSync(self.matrix)
 
 
 
