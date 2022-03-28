@@ -67,7 +67,9 @@ class RunText(SampleBase):
                         finalDetail = graphics.DrawText(canvas, smallFont, 41, 22, yellow, 'F')
                     elif item['inprogress'] == True:    
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
+                        print(awayTeam)
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 22, homeColorSecondary, item['homeTeam']['name'])
+                        print(homeTeam)
                         awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + awayTeam + 5, 12, awayColorSecondary, item['awayTeam']['score'])
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + homeTeam + 5, 22, homeColorSecondary, item['homeTeam']['score'])
                         inning = graphics.DrawText(canvas, smallestFont, 30, 29, yellow, item['inning'])
