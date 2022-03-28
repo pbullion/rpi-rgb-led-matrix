@@ -41,7 +41,7 @@ cdef class Font:
         def __get__(self): return self.__font.baseline()
 
 def DrawText(core.Canvas c, Font f, int x, int y, Color color, Color color, text):
-    return cppinc.DrawText(c.__getCanvas(), f.__font, x, y, color.__color, color.__color, text.encode('utf-8'))
+    return cppinc.DrawText(c.__getCanvas(), f.__font, x, y, color.__color, color.__color, text.encode('utf-8'), kerning_offset = 0)
 
 def DrawCircle(core.Canvas c, int x, int y, int r, Color color):
     cppinc.DrawCircle(c.__getCanvas(), x, y, r, color.__color)
