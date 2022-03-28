@@ -54,8 +54,10 @@ class RunText(SampleBase):
                     homeColorSecondary = graphics.Color(item['homeTeam']['colors']['secondary'][0],item['homeTeam']['colors']['secondary'][1],item['homeTeam']['colors']['secondary'][2])
                     if item['pregame'] == False:    
                         # canvas.Fill(item['homeTeam']['colors']['secondary'][0],item['homeTeam']['colors']['secondary'][1],item['homeTeam']['colors']['secondary'][2])          
-                        awayTeam = graphics.DrawText(canvas, smallFont, 1, 12, awayColorPrimary, awayColorSecondary, item['awayTeam']['name'])
-                        homeTeam = graphics.DrawText(canvas, smallFont, 1, 24, homeColorPrimary, homeColorSecondary, item['homeTeam']['name'])
+                        awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorPrimary, item['awayTeam']['name'])
+                        awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorPrimary, item['awayTeam']['name'])
+                        homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + awayTeam + 5, 12, homeColorPrimary, item['homeTeam']['score'])
+                        homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + homeTeam + 5, 24, homeColorPrimary, item['homeTeam']['score'])
                         print('######################')
                         print(awayTeam)
                         print(homeTeam)
