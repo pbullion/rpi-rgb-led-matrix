@@ -58,9 +58,9 @@ class RunText(SampleBase):
                         if item['pregame'] == False:              
                             print(item['awayTeam']['name'])
                             print(item['homeTeam']['name'])
-                            testing = graphics.DrawText(offscreen_canvas, smallFont, pos + 15, 2, awayColorPrimary, awayColorSecondary, 'testing')
-                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos, 2, awayColorPrimary, awayColorSecondary, item['awayTeam']['name'])
-                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos, 12, homeColorPrimary, homeColorSecondary, item['homeTeam']['name'])
+                            testing = graphics.DrawText(offscreen_canvas, smallFont, pos + 15, 2, awayColorPrimary, 'testing')
+                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos, 2, awayColorPrimary, item['awayTeam']['name'])
+                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos, 12, homeColorPrimary, item['homeTeam']['name'])
 
                         time.sleep(20)
                         running = False
