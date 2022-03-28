@@ -59,7 +59,6 @@ class RunText(SampleBase):
                             homeTeam = graphics.DrawText(self.matrix, smallFont, 1, 24, homeColorPrimary, item['homeTeam']['name'])
 
                         time.sleep(20)
-                        running = False
 
 
 
