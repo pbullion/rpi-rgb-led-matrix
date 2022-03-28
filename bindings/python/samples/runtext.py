@@ -170,7 +170,7 @@ class RunText(SampleBase):
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 10, awayColor, awayTeamString)
                             runningTotal = runningTotal + awayTeam + buffer
                             awayCentered = awayTeam / 3
-                            awayTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningTotal, 31, awayColor, awayTeamStatusString)
+                            awayTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningTotal - awayTeam - buffer + awayCentered, 31, awayColor, awayTeamStatusString)
                             runningTotal = runningTotal + awayTeamStatus                            
                             situation = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 10, yellow, situationString)
                             runnerSituation = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 25, yellow, runnerSituationString)
@@ -180,7 +180,7 @@ class RunText(SampleBase):
                             homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 10, homeColor, homeTeamString)
                             runningTotal = runningTotal + homeTeam  + buffer                          
                             homeCentered = homeTeam / 2
-                            homeTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningTotal, 31, homeColor, homeTeamStatusString)         
+                            homeTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningTotal - homeTeam - buffer + homeCentered, 31, homeColor, homeTeamStatusString)         
                             pitcherTitle = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 12, white, 'Pitcher:')
                             pitcherName = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 26, white, pitcherNameString)
                             runningTotal = runningTotal + pitcherName + buffer
