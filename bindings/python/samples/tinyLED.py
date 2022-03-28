@@ -39,15 +39,15 @@ class RunText(SampleBase):
             # END FONTS
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
             responseArr = json.loads(url.text)
-            offscreen_canvas = self.matrix.CreateFrameCanvas()
-            pos = offscreen_canvas.width
+            self.matrix = self.matrix.CreateFrameCanvas()
+            pos = self.matrix.width
             print(pos)
-            # print(responseArr)
+            print(responseArr)
             for item in responseArr:
                 running = True
                 len = 1
                 while running:
-                    offscreen_canvas.Clear()
+                    self.matrix.Clear()
                     print('*****************************************')
                     print(item)
                     if type(item) is dict and item['league'] == 'mlb':
@@ -59,9 +59,9 @@ class RunText(SampleBase):
                         if item['pregame'] == False:              
                             print(item['awayTeam']['name'])
                             print(item['homeTeam']['name'])
-                            testing = graphics.DrawText(self.matrix, smallFont, 1, 2, blue, 'testing')
-                            # awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos, 2, blue, item['awayTeam']['name'])
-                            # homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos, 12, blue, item['homeTeam']['name'])
+                            testing = graphics.DrawText(self.matrix, smallFont, pos + 15, 2, awayColorPrimary, 'testing')
+                            awayTeam = graphics.DrawText(self.matrix, smallFont, pos, 2, awayColorPrimary, item['awayTeam']['name'])
+                            homeTeam = graphics.DrawText(self.matrix, smallFont, pos, 12, homeColorPrimary, item['homeTeam']['name'])
 
                         time.sleep(20)
                         running = False
@@ -75,16 +75,16 @@ class RunText(SampleBase):
 
 
                             # awayCentered = awayTeam / 2 - 5
-                            # awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + awayCentered, 26, white, awayTeamStatusString)
-                            # versus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + buffer + awayTeam, 24, green, versusString)
-                            # offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + awayTeam + versus)
-                            # homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width, 10, white, homeTeamString)
+                            # awayTeamStatus = graphics.DrawText(self.matrix, smallFont, pos + awayLogo.width + buffer + awayCentered, 26, white, awayTeamStatusString)
+                            # versus = graphics.DrawText(self.matrix, font, pos + awayLogo.width + buffer + buffer + awayTeam, 24, green, versusString)
+                            # self.matrix.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + awayTeam + versus)
+                            # homeTeam = graphics.DrawText(self.matrix, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width, 10, white, homeTeamString)
                             # homeCentered = homeTeam / 2 - 5
-                            # homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeCentered, 26, white, homeTeamStatusString)
-                            # odds = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 15, green, oddsString)
-                            # status = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 26, green, statusString)
-                        # pos = offscreen_canvas.width
-                    offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+                            # homeTeamStatus = graphics.DrawText(self.matrix, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeCentered, 26, white, homeTeamStatusString)
+                            # odds = graphics.DrawText(self.matrix, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 15, green, oddsString)
+                            # status = graphics.DrawText(self.matrix, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 26, green, statusString)
+                        # pos = self.matrix.width
+                    self.matrix = self.matrix.SwapOnVSync(self.matrix)
 
 
 
