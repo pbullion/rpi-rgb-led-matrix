@@ -32,6 +32,8 @@ class RunText(SampleBase):
             # FONTS
             font = graphics.Font()
             font.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/texgyre-27.bdf")
+            smallestFont = graphics.Font()
+            smallestFont.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/4x6.bdf")
             smallFont = graphics.Font()
             smallFont.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/6x13.bdf")
             middleFont = graphics.Font()
@@ -57,7 +59,10 @@ class RunText(SampleBase):
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 24, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + awayTeam + 5, 12, awayColorSecondary, item['awayTeam']['score'])
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + homeTeam + 5, 24, homeColorSecondary, item['homeTeam']['score'])
+                        inning = graphics.DrawText(canvas, smallestFont, 0, 24, yellow, item['inning'])
                         print('######################')
+                else:
+                    return
                 time.sleep(6)
                 canvas.Clear()
 
