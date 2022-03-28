@@ -42,14 +42,7 @@ class RunText(SampleBase):
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
             responseArr = json.loads(url.text)
             canvas = self.matrix
-            bases =  [
-                    ["x": 44,
-                    "y": 22],
-                    ["x": 39,
-                    "y": 17],
-                    ["x": 34,
-                    "y": 22,]
-            ]
+            bases =  [[44,22],[39,17],[34,22]]
             for item in responseArr:
                 running = True
                 len = 1
