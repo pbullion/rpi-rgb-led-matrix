@@ -58,7 +58,7 @@ class RunText(SampleBase):
                             awayTeam = graphics.DrawText(self.matrix, smallFont, 1, 12, awayColorPrimary, item['awayTeam']['name'])
                             homeTeam = graphics.DrawText(self.matrix, smallFont, 1, 24, homeColorPrimary, item['homeTeam']['name'])
 
-                        time.sleep(20)
+                        time.sleep(6)
 
 
 
