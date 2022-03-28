@@ -75,6 +75,7 @@ class RunText(SampleBase):
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 22, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 12, awayColorSecondary, item['awayTeam']['score'])
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 22, homeColorSecondary, item['homeTeam']['score'])
+                        count = graphics.DrawText(canvas, smallFont, 30, 22, yellow, '3 - 1')
                         inning = graphics.DrawText(canvas, smallestFont, 30, 29, yellow, item['inning'])
                 else:
                     return
