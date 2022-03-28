@@ -66,7 +66,8 @@ class RunText(SampleBase):
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 24, homeColorSecondary, item['homeTeam']['score'])
                         finalDetail = graphics.DrawText(canvas, smallFont, 41, 22, yellow, 'F')
                     elif item['inprogress'] == True:  
-                        half = abs(6/2)
+                        size = 6
+                        half = abs(size/2)
                         for base in bases:
                             graphics.DrawLine(canvas, base[0] + half, base[1], base[0], base[1]+ half, yellow)
                             graphics.DrawLine(canvas, base[0] + half, base[1], base[0] + size, base[1]+ half, yellow)
