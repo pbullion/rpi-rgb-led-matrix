@@ -39,15 +39,11 @@ class RunText(SampleBase):
             # END FONTS
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
             responseArr = json.loads(url.text)
-            self.matrix = self.matrix.CreateFrameCanvas()
-            pos = self.matrix.width
-            print(pos)
             print(responseArr)
             for item in responseArr:
                 running = True
                 len = 1
                 while running:
-                    self.matrix.Clear()
                     print('*****************************************')
                     print(item)
                     if type(item) is dict and item['league'] == 'mlb':
