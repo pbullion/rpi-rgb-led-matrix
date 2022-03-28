@@ -59,8 +59,8 @@ class RunText(SampleBase):
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos, 2, awayColorPrimary, awayColorSecondary, item['awayTeam']['name'])
                             homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos, 12, homeColorPrimary, homeColorSecondary, item['homeTeam']['name'])
 
-                            time.sleep(20)
-                            running = False
+                        time.sleep(20)
+                        running = False
 
 
 
