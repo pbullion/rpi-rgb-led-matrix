@@ -45,7 +45,7 @@ class RunText(SampleBase):
                 running = True
                 len = 1
                 print('*****************************************')
-                if type(item) is dict and item['league'] == 'mlb':
+                if type(item) is dict and item['league'] != type(None) and item['league'] == 'mlb':
                     print('+++++++++++++')
                     print(item)
                     awayColorPrimary = graphics.Color(item['awayTeam']['colors']['main'][0],item['awayTeam']['colors']['main'][1],item['awayTeam']['colors']['main'][2])
@@ -55,7 +55,7 @@ class RunText(SampleBase):
                     if item['pregame'] == False:    
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorPrimary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 24, homeColorPrimary, item['homeTeam']['name'])
-                        awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + awayTeam + 5, 12, homeColorPrimary, item['awayTeam']['score'])
+                        awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + awayTeam + 5, 12, awayColorPrimary, item['awayTeam']['score'])
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + homeTeam + 5, 24, homeColorPrimary, item['homeTeam']['score'])
                         print('######################')
                         print(awayTeam)
