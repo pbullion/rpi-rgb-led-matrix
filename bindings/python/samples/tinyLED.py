@@ -42,7 +42,7 @@ class RunText(SampleBase):
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
             print(pos)
-            print(responseArr)
+            # print(responseArr)
             for item in responseArr:
                 running = True
                 len = 1
@@ -60,8 +60,8 @@ class RunText(SampleBase):
                             print(item['awayTeam']['name'])
                             print(item['homeTeam']['name'])
                             testing = graphics.DrawText(offscreen_canvas, smallFont, pos + 15, 2, blue, 'testing')
-                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos, 2, blue, item['awayTeam']['name'])
-                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos, 12, blue, item['homeTeam']['name'])
+                            # awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos, 2, blue, item['awayTeam']['name'])
+                            # homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos, 12, blue, item['homeTeam']['name'])
 
                         time.sleep(20)
                         running = False
