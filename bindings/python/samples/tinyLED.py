@@ -42,7 +42,14 @@ class RunText(SampleBase):
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
             responseArr = json.loads(url.text)
             canvas = self.matrix
-
+            bases =  [
+                    ["x": 44,
+                    "y": 22],
+                    ["x": 39,
+                    "y": 17],
+                    ["x": 34,
+                    "y": 22,]
+            ]
             for item in responseArr:
                 running = True
                 len = 1
@@ -62,17 +69,25 @@ class RunText(SampleBase):
                     if item['final'] == True:    
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 24, homeColorSecondary, item['homeTeam']['name'])
-                        awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + awayTeam + 5, 12, awayColorSecondary, item['awayTeam']['score'])
-                        homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + homeTeam + 5, 24, homeColorSecondary, item['homeTeam']['score'])
+                        awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 12, awayColorSecondary, item['awayTeam']['score'])
+                        homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 24, homeColorSecondary, item['homeTeam']['score'])
                         finalDetail = graphics.DrawText(canvas, smallFont, 41, 22, yellow, 'F')
-                    elif item['inprogress'] == True:    
+                    elif item['inprogress'] == True:  
+
+                        for base in bases:
+                            graphics.DrawLine(canvas, base[0] + half, base[1], base[0], base[1]+ half, yellow)
+                            graphics.DrawLine(canvas, base[0] + half, base[1], base[0] + size, base[1]+ half, yellow)
+                            graphics.DrawLine(canvas, base[0] + half, base[1]+ size, base[0], base[1]+ half, yellow)
+                            graphics.DrawLine(canvas, base[0] + half, base[1]+ size, base[0] + size, base[1]+ half, yellow)
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
                         print(awayTeam)
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 22, homeColorSecondary, item['homeTeam']['name'])
                         print(homeTeam)
-                        awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + awayTeam + 5, 12, awayColorSecondary, item['awayTeam']['score'])
-                        homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + homeTeam + 5, 22, homeColorSecondary, item['homeTeam']['score'])
+                        awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 12, awayColorSecondary, item['awayTeam']['score'])
+                        homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 22, homeColorSecondary, item['homeTeam']['score'])
                         inning = graphics.DrawText(canvas, smallestFont, 30, 29, yellow, item['inning'])
+                        half = abs(6/2)
+                        
                 else:
                     return
                 time.sleep(2)
