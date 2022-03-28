@@ -2418,7 +2418,7 @@ static PyObject *__pyx_pf_9rgbmatrix_8graphics_4Font_6height___get__(struct __py
  *     property baseline:
  *         def __get__(self): return self.__font.baseline()             # <<<<<<<<<<<<<<
  * 
- * def DrawText(core.Canvas c, Font f, int x, int y, Color color, Color color, text, int kerning):
+ * def DrawText(core.Canvas c, Font f, int x, int y, Color color, text):
  */
 
 /* Python wrapper */
@@ -2604,10 +2604,6 @@ static PyObject *__pyx_pw_9rgbmatrix_8graphics_1DrawText(PyObject *__pyx_self, P
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
       switch (pos_args) {
-        case  6: values[7] = PyTuple_GET_ITEM(__pyx_args, 7);
-        CYTHON_FALLTHROUGH;
-        case  6: values[6] = PyTuple_GET_ITEM(__pyx_args, 6);
-        CYTHON_FALLTHROUGH;
         case  6: values[5] = PyTuple_GET_ITEM(__pyx_args, 5);
         CYTHON_FALLTHROUGH;
         case  5: values[4] = PyTuple_GET_ITEM(__pyx_args, 4);
@@ -2658,18 +2654,6 @@ static PyObject *__pyx_pw_9rgbmatrix_8graphics_1DrawText(PyObject *__pyx_self, P
         else {
           __Pyx_RaiseArgtupleInvalid("DrawText", 1, 6, 6, 5); __PYX_ERR(1, 43, __pyx_L3_error)
         }
-        CYTHON_FALLTHROUGH;
-        case  6:
-        if (likely((values[6] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_text)) != 0)) kw_args--;
-        else {
-          __Pyx_RaiseArgtupleInvalid("DrawText", 1, 6, 6, 6); __PYX_ERR(1, 43, __pyx_L3_error)
-        }
-        CYTHON_FALLTHROUGH;
-        case  7:
-        if (likely((values[7] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_text)) != 0)) kw_args--;
-        else {
-          __Pyx_RaiseArgtupleInvalid("DrawText", 1, 6, 6, 7); __PYX_ERR(1, 43, __pyx_L3_error)
-        }
       }
       if (unlikely(kw_args > 0)) {
         if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "DrawText") < 0)) __PYX_ERR(1, 43, __pyx_L3_error)
@@ -2683,16 +2667,13 @@ static PyObject *__pyx_pw_9rgbmatrix_8graphics_1DrawText(PyObject *__pyx_self, P
       values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
       values[4] = PyTuple_GET_ITEM(__pyx_args, 4);
       values[5] = PyTuple_GET_ITEM(__pyx_args, 5);
-      values[6] = PyTuple_GET_ITEM(__pyx_args, 6);
-      values[7] = PyTuple_GET_ITEM(__pyx_args, 7);
     }
     __pyx_v_c = ((struct __pyx_obj_9rgbmatrix_4core_Canvas *)values[0]);
     __pyx_v_f = ((struct __pyx_obj_9rgbmatrix_8graphics_Font *)values[1]);
     __pyx_v_x = __Pyx_PyInt_As_int(values[2]); if (unlikely((__pyx_v_x == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 43, __pyx_L3_error)
     __pyx_v_y = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_y == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 43, __pyx_L3_error)
     __pyx_v_color = ((struct __pyx_obj_9rgbmatrix_8graphics_Color *)values[4]);
-    __pyx_v_background = ((struct __pyx_obj_9rgbmatrix_8graphics_Color *)values[5]);
-    __pyx_v_text = values[6];
+    __pyx_v_text = values[5];
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
@@ -2705,7 +2686,7 @@ static PyObject *__pyx_pw_9rgbmatrix_8graphics_1DrawText(PyObject *__pyx_self, P
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_c), __pyx_ptype_9rgbmatrix_4core_Canvas, 1, "c", 0))) __PYX_ERR(1, 43, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_f), __pyx_ptype_9rgbmatrix_8graphics_Font, 1, "f", 0))) __PYX_ERR(1, 43, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_color), __pyx_ptype_9rgbmatrix_8graphics_Color, 1, "color", 0))) __PYX_ERR(1, 43, __pyx_L1_error)
-  __pyx_r = __pyx_pf_9rgbmatrix_8graphics_DrawText(__pyx_self, __pyx_v_c, __pyx_v_f, __pyx_v_x, __pyx_v_y, __pyx_v_color,__pyx_v_background, __pyx_v_text);
+  __pyx_r = __pyx_pf_9rgbmatrix_8graphics_DrawText(__pyx_self, __pyx_v_c, __pyx_v_f, __pyx_v_x, __pyx_v_y, __pyx_v_color, __pyx_v_text);
 
   /* function exit code */
   goto __pyx_L0;
