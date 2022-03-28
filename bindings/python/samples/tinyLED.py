@@ -39,7 +39,7 @@ class RunText(SampleBase):
             # END FONTS
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
             responseArr = json.loads(url.text)
-            print(responseArr)
+            pos = 64
             for item in responseArr:
                 running = True
                 len = 1
