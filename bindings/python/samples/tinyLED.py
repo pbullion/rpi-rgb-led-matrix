@@ -56,6 +56,7 @@ class RunText(SampleBase):
                         awayTeam = graphics.DrawText(canvas, smallFont, 1, 12, awayColorPrimary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 1, 24, homeColorPrimary, item['homeTeam']['name'])
                 time.sleep(6)
+                canvas.Clear()
 
 
 
