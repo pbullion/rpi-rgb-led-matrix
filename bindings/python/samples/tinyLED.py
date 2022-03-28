@@ -47,6 +47,7 @@ class RunText(SampleBase):
                 len = 1
                 while running:
                     offscreen_canvas.Clear()
+                    print(item)
                     if type(item) is dict and item.league == 'mlb':
                         print('+++++++++++++')
                         awayColorPrimary = graphics.Color(item.awayTeam.colors.main[0],item.awayTeam.colors.main[1],item.awayTeam.colors.main[2])
