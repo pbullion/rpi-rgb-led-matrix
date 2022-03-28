@@ -75,7 +75,7 @@ class RunText(SampleBase):
                         inning = graphics.DrawText(canvas, smallestFont, 30, 29, yellow, item['inning'])
                 else:
                     return
-                time.sleep(6)
+                time.sleep(2)
                 canvas.Clear()
 
 
