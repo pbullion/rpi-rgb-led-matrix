@@ -61,6 +61,8 @@ class RunText(SampleBase):
             outs = [[15,26],[19,26],[23,26]]
             print('here')
             for item in responseArr:
+                print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
+                print(item)
                 running = True
                 len = 1
                 if type(item) is dict and 'league' in item.keys() and item['league'] == 'mlb':
