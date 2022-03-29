@@ -101,11 +101,11 @@ class RunText(SampleBase):
                             __render_baserunner(base[1])
                         elif item['runners']['onThird'] == True:
                             __render_baserunner(base[2])
-                        if item['situtation']['outs'] == 1:
+                        if item['situation']['outs'] == 1:
                             __fill_circle(outs[0])
-                        elif item['situtation']['outs'] == 2:
+                        elif item['situation']['outs'] == 2:
                             __fill_circle(outs[1])
-                        elif item['situtation']['outs'] == 3:
+                        elif item['situation']['outs'] == 3:
                             __fill_circle(outs[2])
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 22, homeColorSecondary, item['homeTeam']['name'])
@@ -205,7 +205,7 @@ class RunText(SampleBase):
                         canvas.Clear()
                 else:
                     print('there was nothing')
-                time.sleep(7)
+                time.sleep(4)
                 canvas.Clear()
 
 
