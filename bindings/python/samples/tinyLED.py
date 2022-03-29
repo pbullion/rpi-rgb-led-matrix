@@ -31,7 +31,7 @@ class RunText(SampleBase):
         for y_offset in range(size):
             graphics.DrawLine(self.canvas, x, y + y_offset, x + size, y + y_offset, color)
 
-    def __render_arrow(self, x, y, size, direction, color):
+    def render_arrow(self, x, y, size, direction, color):
         for offset in range(size):
             graphics.DrawLine(self.canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
 
@@ -167,7 +167,7 @@ class RunText(SampleBase):
                     canvas.SetImage(stockLogo, 0)
                     stockSymbol = graphics.DrawText(canvas, smallFont, 39, 2, color, item['stockSymbol'])
                     currentPrice = graphics.DrawText(canvas, smallestFont, 39, 25, color, item['currentPrice'])
-                    __render_arrow(25, 30, 6, direction, color)
+                    render_arrow(25, 30, 6, direction, color)
                     percentChange = graphics.DrawText(canvas, smallestFont, 39, 30, color, item['percentChange'])
                 elif type(item) is dict and 'condition' in item.keys() :
                     locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
