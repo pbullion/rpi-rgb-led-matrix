@@ -207,30 +207,6 @@ class RunText(SampleBase):
                     return
                 time.sleep(7)
                 canvas.Clear()
-                # time.sleep(2)
-                # canvas.Clear()
-
-
-
-
-
-
-
-
-
-                        # awayCentered = awayTeam / 2 - 5
-                        # awayTeamStatus = graphics.DrawText(self.matrix, smallFont, pos + awayLogo.width + buffer + awayCentered, 26, white, awayTeamStatusString)
-                        # versus = graphics.DrawText(self.matrix, font, pos + awayLogo.width + buffer + buffer + awayTeam, 24, green, versusString)
-                        # self.matrix.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + awayTeam + versus)
-                        # homeTeam = graphics.DrawText(self.matrix, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width, 10, white, homeTeamString)
-                        # homeCentered = homeTeam / 2 - 5
-                        # homeTeamStatus = graphics.DrawText(self.matrix, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeCentered, 26, white, homeTeamStatusString)
-                        # odds = graphics.DrawText(self.matrix, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 15, green, oddsString)
-                        # status = graphics.DrawText(self.matrix, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width + homeTeam + buffer, 26, green, statusString)
-                    # pos = self.matrix.width
-                # self.matrix = self.matrix.SwapOnVSync(self.matrix)
-
-
 
 
 # Main function
