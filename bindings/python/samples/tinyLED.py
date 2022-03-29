@@ -63,7 +63,6 @@ class RunText(SampleBase):
             for item in responseArr:
                 running = True
                 len = 1
-                print(item.keys())
                 if type(item) is dict and 'league' in item.keys() and item['league'] == 'mlb':
                     print('+++++++++++++')
                     print(item)
