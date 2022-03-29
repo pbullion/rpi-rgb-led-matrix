@@ -16,7 +16,7 @@ class RunText(SampleBase):
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
 
-    def __render_baserunner(self, base, color):
+    def render_baserunner(self, base, color):
         x = base[0]
         y = base[1]
         size = 6
@@ -25,7 +25,7 @@ class RunText(SampleBase):
             graphics.DrawLine(self.canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
             graphics.DrawLine(self.canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
     
-    def __fill_circle(self, out, color):
+    def fill_circle(self, out, color):
         size = out["size"]
         x, y = (out["x"], out["y"])
         for y_offset in range(size):
@@ -96,17 +96,17 @@ class RunText(SampleBase):
                             graphics.DrawLine(canvas, base[0] + half, base[1]+ size, base[0], base[1]+ half, yellow)
                             graphics.DrawLine(canvas, base[0] + half, base[1]+ size, base[0] + size, base[1]+ half, yellow)
                         if item['runners']['onFirst'] == True:
-                            __render_baserunner(base[0])
+                            render_baserunner(base[0])
                         elif item['runners']['onSecond'] == True:
-                            __render_baserunner(base[1])
+                            render_baserunner(base[1])
                         elif item['runners']['onThird'] == True:
-                            __render_baserunner(base[2])
+                            render_baserunner(base[2])
                         if item['situation']['outs'] == 1:
-                            __fill_circle(outs[0])
+                            fill_circle(outs[0])
                         elif item['situation']['outs'] == 2:
-                            __fill_circle(outs[1])
+                            fill_circle(outs[1])
                         elif item['situation']['outs'] == 3:
-                            __fill_circle(outs[2])
+                            fill_circle(outs[2])
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 22, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 12, awayColorSecondary, item['awayTeam']['score'])
