@@ -11,6 +11,7 @@ from PIL import Image
 import requests
 
 def render_baserunner(base, color):
+    print(base)
     x = base[0]
     y = base[1]
     size = 6
