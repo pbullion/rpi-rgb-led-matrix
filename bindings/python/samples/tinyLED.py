@@ -186,15 +186,18 @@ class RunText(SampleBase):
                         highLow = graphics.DrawText(canvas, smallestFont, runningX, 40, blue, day['highLow'])
                         runningX = runningX + 20
                 elif type(item) is dict and item['tourneyName'] != type(None):
-                    tourneyName = graphics.DrawText(canvas, smallestFont, 10, 5, blue, item['tourneyName'])
-                    tourneyStatus = graphics.DrawText(canvas, smallestFont, 10, 12, blue, item['tourneyStatus'])
-                    runningTotal = 18
-                    for player in item['players']:
-                        position = graphics.DrawText(canvas, smallestFont, 0, runningTotal, blue, player['position'])
-                        name = graphics.DrawText(canvas, smallestFont, 10, runningTotal, blue, player['name'])
-                        score = graphics.DrawText(canvas, smallestFont, 30, runningTotal, blue, player['score'])
-                        thru = graphics.DrawText(canvas, smallestFont, 45, runningTotal, blue, player['thru'])
-                        runningTotal = runningTotal + 8
+                    for page in item['players']
+                        for player in page:
+                            tourneyName = graphics.DrawText(canvas, smallestFont, 10, 5, blue, item['tourneyName'])
+                            tourneyStatus = graphics.DrawText(canvas, smallestFont, 10, 12, blue, item['tourneyStatus'])
+                            runningTotal = 18
+                            position = graphics.DrawText(canvas, smallestFont, 0, runningTotal, blue, player['position'])
+                            name = graphics.DrawText(canvas, smallestFont, 10, runningTotal, blue, player['name'])
+                            score = graphics.DrawText(canvas, smallestFont, 30, runningTotal, blue, player['score'])
+                            thru = graphics.DrawText(canvas, smallestFont, 45, runningTotal, blue, player['thru'])
+                            runningTotal = runningTotal + 8
+                        time.sleep(2)
+                        canvas.Clear()
 
                 else:
                     return
