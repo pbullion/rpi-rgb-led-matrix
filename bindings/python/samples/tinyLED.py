@@ -199,8 +199,8 @@ class RunText(SampleBase):
                             score = graphics.DrawText(canvas, smallestFont, 30, runningTotal, blue, player['score'])
                             thru = graphics.DrawText(canvas, smallestFont, 45, runningTotal, blue, player['teeTime'])
                             runningTotal = runningTotal + 8
-                    time.sleep(2)
-                    canvas.Clear()
+                        time.sleep(7)
+                        canvas.Clear()
 
                 else:
                     return
