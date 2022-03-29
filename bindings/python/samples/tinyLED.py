@@ -39,7 +39,7 @@ class RunText(SampleBase):
             responseArr = json.loads(url.text)
             canvas = self.matrix
             bases =  [[54,7],[49,2],[44,7]]
-            outs = [[54,25],[54,25],[54,25]]
+            outs = [[48,25],[52,25],[56,25]]
             print('here')
             print(responseArr)
             for item in responseArr:
@@ -62,7 +62,7 @@ class RunText(SampleBase):
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 24, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 12, awayColorSecondary, item['awayTeam']['score'])
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 24, homeColorSecondary, item['homeTeam']['score'])
-                        finalDetail = graphics.DrawText(canvas, smallFont, 41, 22, yellow, 'F')
+                        finalDetail = graphics.DrawText(canvas, middleFont, 45, 20, yellow, 'F')
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
