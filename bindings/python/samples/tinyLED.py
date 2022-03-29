@@ -10,17 +10,6 @@ import random
 from PIL import Image
 import requests
 
-def render_baserunner(self, base, color):
-    print(base)
-    x = base[0]
-    y = base[1]
-    size = 6
-    half = round(abs(size/2))
-    print(half)
-    for offset in range(1, half + 1):
-        graphics.DrawLine(self.canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
-        graphics.DrawLine(self.canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
-
 def fill_circle(self, out, color):
     size = 6
     x = out[0]
@@ -100,18 +89,47 @@ class RunText(SampleBase):
                             graphics.DrawLine(canvas, base[0] + half, base[1]+ size, base[0], base[1]+ half, red)
                             graphics.DrawLine(canvas, base[0] + half, base[1]+ size, base[0] + size, base[1]+ half, red)
                         if item['runners']['onFirst'] == True:
-                            render_baserunner(self, bases[0], yellow)
+                            x = bases[0][0]
+                            y = bases[0][1]
+                            size = 6
+                            half = round(abs(size/2))
+                            for offset in range(1, half + 1):
+                                graphics.DrawLine(canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
+                                graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
                         elif item['runners']['onSecond'] == True:
-                            render_baserunner(self, bases[1], yellow)
+                            x = bases[1][0]
+                            y = bases[1][1]
+                            size = 6
+                            half = round(abs(size/2))
+                            for offset in range(1, half + 1):
+                                graphics.DrawLine(canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
+                                graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
                         elif item['runners']['onThird'] == True:
-                            render_baserunner(self, bases[2], yellow)
+                            x = bases[2][0]
+                            y = bases[2][1]
+                            size = 6
+                            half = round(abs(size/2))
+                            for offset in range(1, half + 1):
+                                graphics.DrawLine(canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
+                                graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
                         if item['situation']['outs'] == 1:
-                            print(outs[0])
-                            fill_circle(self, outs[0], red)
+                            size = 6
+                            x = outs[0][0]
+                            y = outs[0][1]
+                            for y_offset in range(size):
+                                graphics.DrawLine(self.canvas, x, y + y_offset, x + size, y + y_offset, red)
                         elif item['situation']['outs'] == 2:
-                            fill_circle(self, outs[1], red)
+                            size = 6
+                            x = outs[1][0]
+                            y = outs[1][1]
+                            for y_offset in range(size):
+                                graphics.DrawLine(self.canvas, x, y + y_offset, x + size, y + y_offset, red)
                         elif item['situation']['outs'] == 3:
-                            fill_circle(self, outs[2], red)
+                            size = 6
+                            x = outs[2][0]
+                            y = outs[2][1]
+                            for y_offset in range(size):
+                                graphics.DrawLine(self.canvas, x, y + y_offset, x + size, y + y_offset, red)
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 22, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 12, awayColorSecondary, item['awayTeam']['score'])
