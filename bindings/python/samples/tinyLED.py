@@ -201,6 +201,8 @@ class RunText(SampleBase):
                             runningTotal = runningTotal + 8
                         time.sleep(7)
                         canvas.Clear()
+                time.sleep(7)
+                canvas.Clear()
 
                 else:
                     return
