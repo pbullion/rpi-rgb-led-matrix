@@ -60,6 +60,7 @@ class RunText(SampleBase):
             bases =  [[54,7],[49,2],[44,7]]
             outs = [[15,26],[19,26],[23,26]]
             print('here')
+            print(responseArr)
             for item in responseArr:
                 print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
                 print(item)
