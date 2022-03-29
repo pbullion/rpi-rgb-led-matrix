@@ -29,7 +29,7 @@ class RunText(SampleBase):
         size = out["size"]
         x, y = (out["x"], out["y"])
         for y_offset in range(size):
-        graphics.DrawLine(self.canvas, x, y + y_offset, x + size, y + y_offset, color)
+            graphics.DrawLine(self.canvas, x, y + y_offset, x + size, y + y_offset, color)
 
     def __render_arrow(self, x, y, size, direction, color):
         for offset in range(size):
