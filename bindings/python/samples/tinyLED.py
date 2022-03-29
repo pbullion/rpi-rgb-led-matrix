@@ -204,7 +204,7 @@ class RunText(SampleBase):
                         time.sleep(7)
                         canvas.Clear()
                 else:
-                    return
+                    print('there was nothing')
                 time.sleep(7)
                 canvas.Clear()
 
