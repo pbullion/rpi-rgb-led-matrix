@@ -15,7 +15,7 @@ def render_baserunner(base, color):
     x = base[0]
     y = base[1]
     size = 6
-    half = abs(size/2)
+    half = round(abs(size/2))
     print(half)
     for offset in range(1, half + 1):
         graphics.DrawLine(self.canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
