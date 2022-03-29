@@ -39,7 +39,7 @@ class RunText(SampleBase):
             responseArr = json.loads(url.text)
             canvas = self.matrix
             bases =  [[54,7],[49,2],[44,7]]
-            outs = [[15,33],[19,33],[23,33]]
+            outs = [[54,25],[54,25],[54,25]]
             print('here')
             print(responseArr)
             for item in responseArr:
@@ -83,24 +83,24 @@ class RunText(SampleBase):
                             size = 6
                             half = round(abs(size/2))
                             for offset in range(1, half + 1):
-                                graphics.DrawLine(canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, green)
-                                graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, green)
+                                graphics.DrawLine(canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
+                                graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
                         elif item['runners']['onSecond'] == True:
                             x = bases[1][0]
                             y = bases[1][1]
                             size = 6
                             half = round(abs(size/2))
                             for offset in range(1, half + 1):
-                                graphics.DrawLine(canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, green)
-                                graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, green)
+                                graphics.DrawLine(canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
+                                graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
                         elif item['runners']['onThird'] == True:
                             x = bases[2][0]
                             y = bases[2][1]
                             size = 6
                             half = round(abs(size/2))
                             for offset in range(1, half + 1):
-                                graphics.DrawLine(canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, green)
-                                graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, green)
+                                graphics.DrawLine(canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
+                                graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
                         if item['situation']['outs'] == 1:
                             size = 6
                             x = outs[0][0]
