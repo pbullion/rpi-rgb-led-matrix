@@ -26,8 +26,9 @@ class RunText(SampleBase):
             graphics.DrawLine(self.canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
     
     def fill_circle(self, out, color):
-        size = out["size"]
-        x, y = (out["x"], out["y"])
+        size = 6
+        x = out[0]
+        y = out[1]
         for y_offset in range(size):
             graphics.DrawLine(self.canvas, x, y + y_offset, x + size, y + y_offset, color)
 
@@ -102,6 +103,7 @@ class RunText(SampleBase):
                         elif item['runners']['onThird'] == True:
                             render_baserunner(base[2])
                         if item['situation']['outs'] == 1:
+                            print(outs[0])
                             fill_circle(outs[0])
                         elif item['situation']['outs'] == 2:
                             fill_circle(outs[1])
