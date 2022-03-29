@@ -75,10 +75,10 @@ class RunText(SampleBase):
                             graphics.DrawLine(canvas, base[0] + baseHalf, base[1]+ baseSize, base[0], base[1]+ baseHalf, yellow)
                             graphics.DrawLine(canvas, base[0] + baseHalf, base[1]+ baseSize, base[0] + baseSize, base[1]+ baseHalf, yellow)
                         for out in outs:
-                            graphics.DrawLine(canvas, out[0] + outsHalf, out[1], out[0], out[1]+ outsHalf, red)
-                            graphics.DrawLine(canvas, out[0] + outsHalf, out[1], out[0] + outsSize, out[1]+ outsHalf, red)
-                            graphics.DrawLine(canvas, out[0] + outsHalf, out[1]+ outsSize, out[0], out[1]+ outsHalf, red)
-                            graphics.DrawLine(canvas, out[0] + outsHalf, out[1]+ outsSize, out[0] + outsSize, out[1]+ outsHalf, red)
+                            graphics.DrawLine(canvas, out[0], out[1], out[0] + outsSize, out[1], red)
+                            graphics.DrawLine(canvas, out[0], out[1], out[0], out[1] + outsSize, red)
+                            graphics.DrawLine(canvas, out[0] + outsSize, out[1] + outsSize, out[0], out[1] + outsSize, red)
+                            graphics.DrawLine(canvas, out[0] + outsSize, out[1] + outsSize, out[0] + outsSize, out[1], red)
                         if item['runners']['onFirst'] == True:
                             x = bases[0][0]
                             y = bases[0][1]
@@ -104,23 +104,23 @@ class RunText(SampleBase):
                                 graphics.DrawLine(canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
                                 graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
                         if item['situation']['outs'] == 1:
-                            size = 3
+                            outsSize = 3
                             x = outs[0][0]
                             y = outs[0][1]
-                            for y_offset in range(size):
-                                graphics.DrawLine(canvas, x, y + y_offset, x + size, y + y_offset, red)
+                            for y_offset in range(outsSize):
+                                graphics.DrawLine(canvas, outs[0][0], outs[0][1] + y_offset, outs[0][0] + outsSize, outs[0][1] + y_offset, red)
                         elif item['situation']['outs'] == 2:
-                            size = 3
+                            outsSize = 3
                             x = outs[1][0]
                             y = outs[1][1]
-                            for y_offset in range(size):
-                                graphics.DrawLine(canvas, x, y + y_offset, x + size, y + y_offset, red)
+                            for y_offset in range(outsSize):
+                                graphics.DrawLine(canvas, outs[0][0], outs[0][1] + y_offset, outs[0][0] + outsSize, outs[0][1] + y_offset, red)
                         elif item['situation']['outs'] == 3:
-                            size = 3
+                            outsSize = 3
                             x = outs[2][0]
                             y = outs[2][1]
-                            for y_offset in range(size):
-                                graphics.DrawLine(canvas, x, y + y_offset, x + size, y + y_offset, red)
+                            for y_offset in range(outsSize):
+                                graphics.DrawLine(canvas, outs[0][0], outs[0][1] + y_offset, outs[0][0] + outsSize, outs[0][1] + y_offset, red)
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 22, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 12, awayColorSecondary, item['awayTeam']['score'])
