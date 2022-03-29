@@ -106,19 +106,19 @@ class RunText(SampleBase):
                             x = outs[0][0]
                             y = outs[0][1]
                             for y_offset in range(size):
-                                graphics.DrawLine(self.canvas, x, y + y_offset, x + size, y + y_offset, red)
+                                graphics.DrawLine(canvas, x, y + y_offset, x + size, y + y_offset, red)
                         elif item['situation']['outs'] == 2:
                             size = 6
                             x = outs[1][0]
                             y = outs[1][1]
                             for y_offset in range(size):
-                                graphics.DrawLine(self.canvas, x, y + y_offset, x + size, y + y_offset, red)
+                                graphics.DrawLine(canvas, x, y + y_offset, x + size, y + y_offset, red)
                         elif item['situation']['outs'] == 3:
                             size = 6
                             x = outs[2][0]
                             y = outs[2][1]
                             for y_offset in range(size):
-                                graphics.DrawLine(self.canvas, x, y + y_offset, x + size, y + y_offset, red)
+                                graphics.DrawLine(canvas, x, y + y_offset, x + size, y + y_offset, red)
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 22, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 12, awayColorSecondary, item['awayTeam']['score'])
