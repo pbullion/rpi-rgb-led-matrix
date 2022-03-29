@@ -65,7 +65,7 @@ class RunText(SampleBase):
                 len = 1
                 print('*****************************************')
                 print(item)
-                if type(item) is dict and item['league'] == 'mlb':
+                if type(item) is dict and 'league' in item.values():
                     print('+++++++++++++')
                     print(item)
                     awayColorPrimary = graphics.Color(item['awayTeam']['colors']['main'][0],item['awayTeam']['colors']['main'][1],item['awayTeam']['colors']['main'][2])
