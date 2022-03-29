@@ -39,7 +39,7 @@ class RunText(SampleBase):
             responseArr = json.loads(url.text)
             canvas = self.matrix
             bases =  [[54,7],[49,2],[44,7]]
-            outs = [[35,25],[52,25],[60,25]]
+            outs = [[45,25],[52,25],[60,25]]
             print('here')
             print(responseArr)
             for item in responseArr:
