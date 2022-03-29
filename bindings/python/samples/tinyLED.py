@@ -39,7 +39,7 @@ class RunText(SampleBase):
             responseArr = json.loads(url.text)
             canvas = self.matrix
             bases =  [[54,7],[49,2],[44,7]]
-            outs = [[45,25],[52,25],[60,25]]
+            outs = [[47,25],[52,25],[58,25]]
             print('here')
             print(responseArr)
             for item in responseArr:
@@ -125,7 +125,7 @@ class RunText(SampleBase):
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 22, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 12, awayColorSecondary, item['awayTeam']['score'])
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 22, homeColorSecondary, item['homeTeam']['score'])
-                        count = graphics.DrawText(canvas, smallestFont, 43, 22, yellow, situationString)
+                        count = graphics.DrawText(canvas, smallestFont, 45, 22, yellow, situationString)
                         inning = graphics.DrawText(canvas, smallestFont, 0, 29, yellow, item['inning'])
                 elif type(item) is dict and 'league' in item.keys() and item['league'] == 'nba':
                     print('+++++++++++++')
