@@ -168,7 +168,7 @@ class RunText(SampleBase):
                     currentPrice = graphics.DrawText(canvas, smallestFont, 39, 25, color, item['currentPrice'])
                     __render_arrow(25, 30, 6, direction, color)
                     percentChange = graphics.DrawText(canvas, smallestFont, 39, 30, color, item['percentChange'])
-                elif type(item) is dict and and 'condition' in item.values() :
+                elif type(item) is dict and 'condition' in item.values() :
                     locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
                     weatherImage = Image.open(locationString).convert('RGB').resize((32, 32), Image.ANTIALIAS)
                     canvas.SetImage(weatherImage, 0)
