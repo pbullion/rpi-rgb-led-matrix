@@ -204,8 +204,8 @@ class RunText(SampleBase):
 
                 else:
                     return
-                time.sleep(2)
-                canvas.Clear()
+                # time.sleep(2)
+                # canvas.Clear()
 
 
 
