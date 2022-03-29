@@ -187,8 +187,10 @@ class RunText(SampleBase):
                         currentTemp = graphics.DrawText(canvas, smallFont, runningX, 36, blue, day['temp'])
                         highLow = graphics.DrawText(canvas, smallestFont, runningX, 40, blue, day['highLow'])
                         runningX = runningX + 20
-                elif type(item) is dict and 'tourneyName' in item.values() :
+                elif type(item) is dict and 'tourneyName' in item.values():
+                    print('*********************')
                     for page in item['players']:
+                        print(page)
                         for player in page:
                             tourneyName = graphics.DrawText(canvas, smallestFont, 10, 5, blue, item['tourneyName'])
                             tourneyStatus = graphics.DrawText(canvas, smallestFont, 10, 12, blue, item['tourneyStatus'])
@@ -198,8 +200,8 @@ class RunText(SampleBase):
                             score = graphics.DrawText(canvas, smallestFont, 30, runningTotal, blue, player['score'])
                             thru = graphics.DrawText(canvas, smallestFont, 45, runningTotal, blue, player['thru'])
                             runningTotal = runningTotal + 8
-                        time.sleep(2)
-                        canvas.Clear()
+                    time.sleep(2)
+                    canvas.Clear()
 
                 else:
                     return
