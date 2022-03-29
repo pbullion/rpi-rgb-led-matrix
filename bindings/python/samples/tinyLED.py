@@ -64,8 +64,6 @@ class RunText(SampleBase):
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 24, homeColorSecondary, item['homeTeam']['score'])
                         finalDetail = graphics.DrawText(canvas, smallFont, 41, 22, yellow, 'F')
                     elif item['inprogress'] == True: 
-                        print(item['balls'])
-                        print(item['strikes'])
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         size = 6
                         half = abs(size/2)
