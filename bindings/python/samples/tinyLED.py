@@ -65,18 +65,18 @@ class RunText(SampleBase):
                         finalDetail = graphics.DrawText(canvas, smallFont, 41, 22, yellow, 'F')
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
-                        size = 6
-                        half = abs(size/2)
+                        baseHalf = abs(6/2)
+                        outsHalf = abs(3/2)
                         for base in bases:
-                            graphics.DrawLine(canvas, base[0] + half, base[1], base[0], base[1]+ half, yellow)
-                            graphics.DrawLine(canvas, base[0] + half, base[1], base[0] + size, base[1]+ half, yellow)
-                            graphics.DrawLine(canvas, base[0] + half, base[1]+ size, base[0], base[1]+ half, yellow)
-                            graphics.DrawLine(canvas, base[0] + half, base[1]+ size, base[0] + size, base[1]+ half, yellow)
+                            graphics.DrawLine(canvas, base[0] + baseHalf, base[1], base[0], base[1]+ baseHalf, yellow)
+                            graphics.DrawLine(canvas, base[0] + baseHalf, base[1], base[0] + size, base[1]+ baseHalf, yellow)
+                            graphics.DrawLine(canvas, base[0] + baseHalf, base[1]+ size, base[0], base[1]+ baseHalf, yellow)
+                            graphics.DrawLine(canvas, base[0] + baseHalf, base[1]+ size, base[0] + size, base[1]+ baseHalf, yellow)
                         for out in outs:
-                            graphics.DrawLine(canvas, out[0] + half, out[1], out[0], out[1]+ half, red)
-                            graphics.DrawLine(canvas, out[0] + half, out[1], out[0] + size, out[1]+ half, red)
-                            graphics.DrawLine(canvas, out[0] + half, out[1]+ size, out[0], out[1]+ half, red)
-                            graphics.DrawLine(canvas, out[0] + half, out[1]+ size, out[0] + size, out[1]+ half, red)
+                            graphics.DrawLine(canvas, out[0] + outsHalf, out[1], out[0], out[1]+ outsHalf, red)
+                            graphics.DrawLine(canvas, out[0] + outsHalf, out[1], out[0] + size, out[1]+ outsHalf, red)
+                            graphics.DrawLine(canvas, out[0] + outsHalf, out[1]+ size, out[0], out[1]+ outsHalf, red)
+                            graphics.DrawLine(canvas, out[0] + outsHalf, out[1]+ size, out[0] + size, out[1]+ outsHalf, red)
                         if item['runners']['onFirst'] == True:
                             x = bases[0][0]
                             y = bases[0][1]
@@ -102,19 +102,19 @@ class RunText(SampleBase):
                                 graphics.DrawLine(canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
                                 graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
                         if item['situation']['outs'] == 1:
-                            size = 6
+                            size = 3
                             x = outs[0][0]
                             y = outs[0][1]
                             for y_offset in range(size):
                                 graphics.DrawLine(canvas, x, y + y_offset, x + size, y + y_offset, red)
                         elif item['situation']['outs'] == 2:
-                            size = 6
+                            size = 3
                             x = outs[1][0]
                             y = outs[1][1]
                             for y_offset in range(size):
                                 graphics.DrawLine(canvas, x, y + y_offset, x + size, y + y_offset, red)
                         elif item['situation']['outs'] == 3:
-                            size = 6
+                            size = 3
                             x = outs[2][0]
                             y = outs[2][1]
                             for y_offset in range(size):
