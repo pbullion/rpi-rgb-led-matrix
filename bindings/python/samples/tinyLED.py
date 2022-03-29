@@ -10,31 +10,32 @@ import random
 from PIL import Image
 import requests
 
+def render_baserunner(self, base, color):
+    x = base[0]
+    y = base[1]
+    size = 6
+    half = abs(size/2)
+    for offset in range(1, half+1):
+        graphics.DrawLine(self.canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
+        graphics.DrawLine(self.canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
+
+def fill_circle(self, out, color):
+    size = 6
+    x = out[0]
+    y = out[1]
+    for y_offset in range(size):
+        graphics.DrawLine(self.canvas, x, y + y_offset, x + size, y + y_offset, color)
+
+def render_arrow(self, x, y, size, direction, color):
+    for offset in range(size):
+        graphics.DrawLine(self.canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
+
+
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
         print(self)
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
-
-    def render_baserunner(self, base, color):
-        x = base[0]
-        y = base[1]
-        size = 6
-        half = abs(size/2)
-        for offset in range(1, half+1):
-            graphics.DrawLine(self.canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
-            graphics.DrawLine(self.canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
-    
-    def fill_circle(self, out, color):
-        size = 6
-        x = out[0]
-        y = out[1]
-        for y_offset in range(size):
-            graphics.DrawLine(self.canvas, x, y + y_offset, x + size, y + y_offset, color)
-
-    def render_arrow(self, x, y, size, direction, color):
-        for offset in range(size):
-            graphics.DrawLine(self.canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
 
     def run(self):
         while True:
