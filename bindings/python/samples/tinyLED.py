@@ -39,7 +39,7 @@ class RunText(SampleBase):
             responseArr = json.loads(url.text)
             canvas = self.matrix
             bases =  [[54,7],[49,2],[44,7]]
-            outs = [[48,25],[52,25],[56,25]]
+            outs = [[35,25],[52,25],[60,25]]
             print('here')
             print(responseArr)
             for item in responseArr:
@@ -66,7 +66,7 @@ class RunText(SampleBase):
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
-                        outsSize = 3
+                        outsSize = 4
                         baseHalf = abs(baseSize/2)
                         outsHalf = abs(outsSize/2)
                         for base in bases:
