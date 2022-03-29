@@ -59,10 +59,12 @@ class RunText(SampleBase):
             canvas = self.matrix
             bases =  [[54,7],[49,2],[44,7]]
             outs = [[15,26],[19,26],[23,26]]
+            print('here')
             for item in responseArr:
                 running = True
                 len = 1
                 print('*****************************************')
+                print(item)
                 if type(item) is dict and item['league'] != type(None) and item['league'] == 'mlb':
                     print('+++++++++++++')
                     print(item)
