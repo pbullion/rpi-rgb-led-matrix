@@ -65,7 +65,7 @@ class RunText(SampleBase):
                 len = 1
                 print('*****************************************')
                 print(item)
-                if type(item) is dict and 'league' in item.values():
+                if type(item) is dict and 'league' in item.values() and item['league'] == 'mlb':
                     print('+++++++++++++')
                     print(item)
                     awayColorPrimary = graphics.Color(item['awayTeam']['colors']['main'][0],item['awayTeam']['colors']['main'][1],item['awayTeam']['colors']['main'][2])
@@ -112,7 +112,7 @@ class RunText(SampleBase):
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 22, homeColorSecondary, item['homeTeam']['score'])
                         count = graphics.DrawText(canvas, smallestFont, 43, 22, yellow, '3 - 1')
                         inning = graphics.DrawText(canvas, smallestFont, 0, 29, yellow, item['inning'])
-                elif type(item) is dict and item['league'] != type(None) and item['league'] == 'nba':
+                elif type(item) is dict and 'league' in item.values() and item['league'] == 'nba':
                     print('+++++++++++++')
                     print(item)
                     awayColorPrimary = graphics.Color(item['awayTeam']['colors']['main'][0],item['awayTeam']['colors']['main'][1],item['awayTeam']['colors']['main'][2])
@@ -135,7 +135,7 @@ class RunText(SampleBase):
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 22, homeColorSecondary, item['homeTeam']['score'])
                         quarter = graphics.DrawText(canvas, smallestFont, 43, 22, yellow, item['quarter'])
                         timeRemaining = graphics.DrawText(canvas, smallestFont, 43, 29, yellow, item['timeRemaining'])
-                elif type(item) is dict and item['league'] != type(None) and item['league'] == 'ncaaBasketball':
+                elif type(item) is dict and 'league' in item.values() and item['league'] == 'ncaaBasketball':
                     awayColorPrimary = graphics.Color(item['awayTeam']['colors']['main'][0],item['awayTeam']['colors']['main'][1],item['awayTeam']['colors']['main'][2])
                     awayColorSecondary = graphics.Color(item['awayTeam']['colors']['secondary'][0],item['awayTeam']['colors']['secondary'][1],item['awayTeam']['colors']['secondary'][2])
                     homeColorPrimary = graphics.Color(item['homeTeam']['colors']['main'][0],item['homeTeam']['colors']['main'][1],item['homeTeam']['colors']['main'][2])
@@ -159,7 +159,7 @@ class RunText(SampleBase):
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 22, homeColorSecondary, item['homeTeam']['score'])
                         quarter = graphics.DrawText(canvas, smallestFont, 43, 22, yellow, item['quarter'])
                         timeRemaining = graphics.DrawText(canvas, smallestFont, 43, 29, yellow, item['timeRemaining'])
-                elif type(item) is dict and item['stockSymbol'] != type(None):
+                elif type(item) is dict and 'stockSymbol' in item.values() :
                     color = green if item['up'] else red
                     direction = 1 if item['up'] else -1
                     stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
@@ -168,14 +168,14 @@ class RunText(SampleBase):
                     currentPrice = graphics.DrawText(canvas, smallestFont, 39, 25, color, item['currentPrice'])
                     __render_arrow(25, 30, 6, direction, color)
                     percentChange = graphics.DrawText(canvas, smallestFont, 39, 30, color, item['percentChange'])
-                elif type(item) is dict and item['condition'] != type(None):
+                elif type(item) is dict and and 'condition' in item.values() :
                     locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
                     weatherImage = Image.open(locationString).convert('RGB').resize((32, 32), Image.ANTIALIAS)
                     canvas.SetImage(weatherImage, 0)
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 39, 10, blue, item['condition'])
                     currentTemp = graphics.DrawText(canvas, smallFont, 39, 20, blue, item['temp'])
                     highLow = graphics.DrawText(canvas, smallestFont, 39, 30, blue, item['highLow'])
-                elif type(item) is list and item[0]['condition'] != type(None):
+                elif type(item) is list and 'league' in item[0].values():
                     runningX = 0
                     runningY = 10
                     for day in item:
@@ -187,7 +187,7 @@ class RunText(SampleBase):
                         currentTemp = graphics.DrawText(canvas, smallFont, runningX, 36, blue, day['temp'])
                         highLow = graphics.DrawText(canvas, smallestFont, runningX, 40, blue, day['highLow'])
                         runningX = runningX + 20
-                elif type(item) is dict and item['tourneyName'] != type(None):
+                elif type(item) is dict and 'tourneyName' in item.values() :
                     for page in item['players']:
                         for player in page:
                             tourneyName = graphics.DrawText(canvas, smallestFont, 10, 5, blue, item['tourneyName'])
