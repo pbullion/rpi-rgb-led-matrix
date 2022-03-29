@@ -10,18 +10,6 @@ import random
 from PIL import Image
 import requests
 
-def fill_circle(self, out, color):
-    size = 6
-    x = out[0]
-    y = out[1]
-    for y_offset in range(size):
-        graphics.DrawLine(self.canvas, x, y + y_offset, x + size, y + y_offset, color)
-
-def render_arrow(self, x, y, size, direction, color):
-    for offset in range(size):
-        graphics.DrawLine(self.canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
-
-
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
         print(self)
@@ -76,6 +64,7 @@ class RunText(SampleBase):
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 24, homeColorSecondary, item['homeTeam']['score'])
                         finalDetail = graphics.DrawText(canvas, smallFont, 41, 22, yellow, 'F')
                     elif item['inprogress'] == True: 
+                        situationString = '{}-{}'.format(item['balls'], item['strikes'])
                         size = 6
                         half = abs(size/2)
                         for base in bases:
@@ -134,7 +123,7 @@ class RunText(SampleBase):
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 22, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 12, awayColorSecondary, item['awayTeam']['score'])
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 22, homeColorSecondary, item['homeTeam']['score'])
-                        count = graphics.DrawText(canvas, smallestFont, 43, 22, yellow, '3 - 1')
+                        count = graphics.DrawText(canvas, smallestFont, 43, 22, yellow, situationString)
                         inning = graphics.DrawText(canvas, smallestFont, 0, 29, yellow, item['inning'])
                 elif type(item) is dict and 'league' in item.keys() and item['league'] == 'nba':
                     print('+++++++++++++')
@@ -190,7 +179,11 @@ class RunText(SampleBase):
                     canvas.SetImage(stockLogo, 0)
                     stockSymbol = graphics.DrawText(canvas, smallFont, 39, 2, color, item['stockSymbol'])
                     currentPrice = graphics.DrawText(canvas, smallestFont, 39, 25, color, item['currentPrice'])
-                    render_arrow(self, 25, 30, 6, direction, color)
+                    x =25
+                    y = 35
+                    size = 6
+                    for offset in range(size):
+                        graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
                     percentChange = graphics.DrawText(canvas, smallestFont, 39, 30, color, item['percentChange'])
                 elif type(item) is dict and 'condition' in item.keys() :
                     locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
