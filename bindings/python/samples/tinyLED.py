@@ -10,7 +10,7 @@ import random
 from PIL import Image
 import requests
 
-def render_baserunner(base, color):
+def render_baserunner(self, base, color):
     print(base)
     x = base[0]
     y = base[1]
@@ -21,14 +21,14 @@ def render_baserunner(base, color):
         graphics.DrawLine(self.canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
         graphics.DrawLine(self.canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
 
-def fill_circle(out, color):
+def fill_circle(self, out, color):
     size = 6
     x = out[0]
     y = out[1]
     for y_offset in range(size):
         graphics.DrawLine(self.canvas, x, y + y_offset, x + size, y + y_offset, color)
 
-def render_arrow(x, y, size, direction, color):
+def render_arrow(self, x, y, size, direction, color):
     for offset in range(size):
         graphics.DrawLine(self.canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
 
@@ -100,18 +100,18 @@ class RunText(SampleBase):
                             graphics.DrawLine(canvas, base[0] + half, base[1]+ size, base[0], base[1]+ half, red)
                             graphics.DrawLine(canvas, base[0] + half, base[1]+ size, base[0] + size, base[1]+ half, red)
                         if item['runners']['onFirst'] == True:
-                            render_baserunner(bases[0], yellow)
+                            render_baserunner(self, bases[0], yellow)
                         elif item['runners']['onSecond'] == True:
-                            render_baserunner(bases[1], yellow)
+                            render_baserunner(self, bases[1], yellow)
                         elif item['runners']['onThird'] == True:
-                            render_baserunner(bases[2], yellow)
+                            render_baserunner(self, bases[2], yellow)
                         if item['situation']['outs'] == 1:
                             print(outs[0])
-                            fill_circle(outs[0], red)
+                            fill_circle(self, outs[0], red)
                         elif item['situation']['outs'] == 2:
-                            fill_circle(outs[1], red)
+                            fill_circle(self, outs[1], red)
                         elif item['situation']['outs'] == 3:
-                            fill_circle(outs[2], red)
+                            fill_circle(self, outs[2], red)
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 22, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 12, awayColorSecondary, item['awayTeam']['score'])
@@ -172,7 +172,7 @@ class RunText(SampleBase):
                     canvas.SetImage(stockLogo, 0)
                     stockSymbol = graphics.DrawText(canvas, smallFont, 39, 2, color, item['stockSymbol'])
                     currentPrice = graphics.DrawText(canvas, smallestFont, 39, 25, color, item['currentPrice'])
-                    render_arrow(25, 30, 6, direction, color)
+                    render_arrow(self, 25, 30, 6, direction, color)
                     percentChange = graphics.DrawText(canvas, smallestFont, 39, 30, color, item['percentChange'])
                 elif type(item) is dict and 'condition' in item.keys() :
                     locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
