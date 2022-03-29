@@ -99,11 +99,11 @@ class RunText(SampleBase):
                             graphics.DrawLine(canvas, base[0] + half, base[1]+ size, base[0], base[1]+ half, red)
                             graphics.DrawLine(canvas, base[0] + half, base[1]+ size, base[0] + size, base[1]+ half, red)
                         if item['runners']['onFirst'] == True:
-                            render_baserunner(base[0], yellow)
+                            render_baserunner(bases[0], yellow)
                         elif item['runners']['onSecond'] == True:
-                            render_baserunner(base[1], yellow)
+                            render_baserunner(bases[1], yellow)
                         elif item['runners']['onThird'] == True:
-                            render_baserunner(base[2], yellow)
+                            render_baserunner(bases[2], yellow)
                         if item['situation']['outs'] == 1:
                             print(outs[0])
                             fill_circle(outs[0], red)
