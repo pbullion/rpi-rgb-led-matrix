@@ -66,7 +66,7 @@ class RunText(SampleBase):
                     elif item['inprogress'] == True: 
                         print(item['balls'])
                         print(item['strikes'])
-                        situationString = '{}-{}'.format(item['balls'], item['strikes'])
+                        situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         size = 6
                         half = abs(size/2)
                         for base in bases:
