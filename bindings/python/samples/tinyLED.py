@@ -175,7 +175,7 @@ class RunText(SampleBase):
                 elif type(item) is dict and 'stockSymbol' in item.keys() :
                     color = green if item['up'] else red
                     direction = 1 if item['up'] else -1
-                    stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((16,16), Image.ANTIALIAS)
                     canvas.SetImage(stockLogo, 0)
                     stockSymbol = graphics.DrawText(canvas, smallFont, 39, 2, color, item['stockSymbol'])
                     currentPrice = graphics.DrawText(canvas, smallestFont, 39, 25, color, item['currentPrice'])
