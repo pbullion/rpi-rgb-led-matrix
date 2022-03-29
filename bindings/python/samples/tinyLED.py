@@ -10,7 +10,8 @@ import random
 from PIL import Image
 import requests
 
-def render_baserunner(self, base, color):
+def render_baserunner(base):
+    color = yellow
     x = base[0]
     y = base[1]
     size = 6
@@ -19,14 +20,15 @@ def render_baserunner(self, base, color):
         graphics.DrawLine(self.canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
         graphics.DrawLine(self.canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
 
-def fill_circle(self, out, color):
+def fill_circle(out):
+    color = red
     size = 6
     x = out[0]
     y = out[1]
     for y_offset in range(size):
         graphics.DrawLine(self.canvas, x, y + y_offset, x + size, y + y_offset, color)
 
-def render_arrow(self, x, y, size, direction, color):
+def render_arrow(x, y, size, direction, color):
     for offset in range(size):
         graphics.DrawLine(self.canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
 
