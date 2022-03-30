@@ -185,7 +185,7 @@ class RunText(SampleBase):
                     stockSymbol = graphics.DrawText(canvas, middleFont, 25, 12, color, item['stockSymbol'])
                     currentPrice = graphics.DrawText(canvas, smallestFont, 30, 19, color, item['currentPrice'])
                     x = 26
-                    y = 22 if item['up'] else 25
+                    y = 15 if item['up'] else 30
                     size = 4
                     for offset in range(size):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
