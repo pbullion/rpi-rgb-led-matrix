@@ -40,12 +40,6 @@ class RunText(SampleBase):
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
             # responseArr = json.loads(url.text)
             responseArr = [
-                {
-                    "condition": "Overcast",
-                    "icon": 122,
-                    "temp": "74°",
-                    "highLow": "68°/82°"
-                },
                 [
                     {
                     "day": "WED",
@@ -62,6 +56,12 @@ class RunText(SampleBase):
                     "highLow": "58°/87°"
                     }
                 ],
+                {
+                    "condition": "Overcast",
+                    "icon": 122,
+                    "temp": "74°",
+                    "highLow": "68°/82°"
+                },
                 {
                     "stockSymbol": "TSLA",
                     "url": "https://logo.clearbit.com/tesla.com",
