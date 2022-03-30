@@ -804,7 +804,7 @@ class RunText(SampleBase):
                     stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((20,20), Image.ANTIALIAS)
                     canvas.SetImage(stockLogo, 2, 3)
                     stockSymbol = graphics.DrawText(canvas, middleFont, 25, 12, color, item['stockSymbol'])
-                    currentPrice = graphics.DrawText(canvas, alilbiggerFont, 34, 19, color, item['currentPrice'])
+                    currentPrice = graphics.DrawText(canvas, alilbiggerFont, 29, 20, color, item['currentPrice'])
                     x = 22
                     y = 24 if item['up'] else 26
                     size = 4
@@ -821,7 +821,14 @@ class RunText(SampleBase):
                     stormyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     sunnyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     windyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
-                    canvas.SetImage(thunderstormImage, 0, 2)
+                    if 'RAIN' in item['condition']:
+                        canvas.SetImage(rainImage, 0, 2)
+                    elif 'CLOUDY' in item['condition'] or 'OVERCAST' in item['condition']:
+                        canvas.SetImage(partlyCloudyImage, 0, 2)
+                    elif 'THUNDER' in item['condition']:
+                        canvas.SetImage(thunderstormImage, 0, 2)
+                    elif 'SUN' in item['condition']:
+                        canvas.SetImage(sunnyImage, 0, 2)
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 31, blue, item['condition'])
                     currentTemp = graphics.DrawText(canvas, middleFont, 32, 13, blue, item['temp'])
                     highLow = graphics.DrawText(canvas, alilbiggerFont, 26, 22, blue, item['highLow'])
