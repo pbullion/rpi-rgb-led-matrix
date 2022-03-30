@@ -42,78 +42,78 @@ class RunText(SampleBase):
                     "stockSymbol": "TSLA",
                     "url": "https://logo.clearbit.com/tesla.com",
                     "currentPrice": "1099.57",
-                    "up": true,
+                    "up": True,
                     "percentChange": "0.71%"
                 },
                 {
                     "stockSymbol": "OBNK",
                     "url": "https://logo.clearbit.com/originbank.com",
                     "currentPrice": "43.88",
-                    "up": true,
+                    "up": True,
                     "percentChange": "0.69%"
                 },
                 {
                     "stockSymbol": "STEM",
                     "url": "https://logo.clearbit.com/stem.com",
                     "currentPrice": "11.58",
-                    "up": true,
+                    "up": True,
                     "percentChange": "6.14%"
                 },
                 {
                     "stockSymbol": "AAPL",
                     "url": "https://logo.clearbit.com/apple.com",
                     "currentPrice": "178.96",
-                    "up": true,
+                    "up": True,
                     "percentChange": "1.91%"
                 },
                 {
                     "stockSymbol": "AMC",
                     "url": "https://logo.clearbit.com/amctheatres.com",
                     "currentPrice": "29.44",
-                    "up": true,
+                    "up": True,
                     "percentChange": "0.38%"
                 },
                 {
                     "stockSymbol": "AMD",
                     "url": "https://logo.clearbit.com/amd.com",
                     "currentPrice": "123.23",
-                    "up": true,
+                    "up": True,
                     "percentChange": "2.49%"
                 },
                 {
                     "stockSymbol": "HOOD",
                     "url": "https://logo.clearbit.com/robinhood.com",
                     "currentPrice": "15.91",
-                    "up": true,
+                    "up": True,
                     "percentChange": "24.20%"
                 },
                 {
                     "stockSymbol": "BTC",
                     "url": "https://logo.clearbit.com/bitcoin.org",
                     "currentPrice": "47061",
-                    "up": false,
+                    "up": False,
                     "percentChange": "0.87%"
                 },
                 {
                     "stockSymbol": "ETH",
                     "url": "https://logo.clearbit.com/ethereum.org",
                     "currentPrice": "3362.86",
-                    "up": false,
+                    "up": False,
                     "percentChange": "0.44%"
                 },
                 {
                     "stockSymbol": "DOGE",
                     "url": "https://logo.clearbit.com/dogecoin.com",
                     "currentPrice": "0.1415",
-                    "up": false,
+                    "up": False,
                     "percentChange": "2.61%"
                 },
                 "",
                 {
                     "league": "mlb",
-                    "pregame": false,
-                    "inprogress": false,
-                    "final": true,
+                    "pregame": False,
+                    "inprogress": False,
+                    "final": True,
                     "awayTeam": {
                     "name": "WSH",
                     "score": "1",
@@ -153,9 +153,9 @@ class RunText(SampleBase):
                 },
                 {
                     "league": "mlb",
-                    "pregame": false,
-                    "inprogress": false,
-                    "final": true,
+                    "pregame": False,
+                    "inprogress": False,
+                    "final": True,
                     "awayTeam": {
                     "name": "BOS",
                     "score": "2",
@@ -195,9 +195,9 @@ class RunText(SampleBase):
                 },
                 {
                     "league": "mlb",
-                    "pregame": false,
-                    "inprogress": false,
-                    "final": true,
+                    "pregame": False,
+                    "inprogress": False,
+                    "final": True,
                     "awayTeam": {
                     "name": "MIN",
                     "score": "2",
@@ -237,9 +237,9 @@ class RunText(SampleBase):
                 },
                 {
                     "league": "mlb",
-                    "pregame": false,
-                    "inprogress": false,
-                    "final": true,
+                    "pregame": False,
+                    "inprogress": False,
+                    "final": True,
                     "awayTeam": {
                     "name": "PHI",
                     "score": "2",
@@ -279,9 +279,9 @@ class RunText(SampleBase):
                 },
                 {
                     "league": "mlb",
-                    "pregame": false,
-                    "inprogress": false,
-                    "final": true,
+                    "pregame": False,
+                    "inprogress": False,
+                    "final": True,
                     "awayTeam": {
                     "name": "ARI",
                     "score": "2",
@@ -321,9 +321,9 @@ class RunText(SampleBase):
                 },
                 {
                     "league": "mlb",
-                    "pregame": false,
-                    "inprogress": false,
-                    "final": true,
+                    "pregame": False,
+                    "inprogress": False,
+                    "final": True,
                     "awayTeam": {
                     "name": "MIL",
                     "score": "3",
@@ -363,9 +363,9 @@ class RunText(SampleBase):
                 },
                 {
                     "league": "mlb",
-                    "pregame": false,
-                    "inprogress": false,
-                    "final": true,
+                    "pregame": False,
+                    "inprogress": False,
+                    "final": True,
                     "awayTeam": {
                     "name": "SD",
                     "score": "6",
@@ -405,9 +405,9 @@ class RunText(SampleBase):
                 },
                 {
                     "league": "mlb",
-                    "pregame": false,
-                    "inprogress": false,
-                    "final": true,
+                    "pregame": False,
+                    "inprogress": False,
+                    "final": True,
                     "awayTeam": {
                     "name": "CIN",
                     "score": "7",
@@ -447,9 +447,9 @@ class RunText(SampleBase):
                 },
                 {
                     "league": "mlb",
-                    "pregame": false,
-                    "inprogress": false,
-                    "final": true,
+                    "pregame": False,
+                    "inprogress": False,
+                    "final": True,
                     "awayTeam": {
                     "name": "LAA",
                     "score": "8",
@@ -489,9 +489,9 @@ class RunText(SampleBase):
                 },
                 {
                     "league": "mlb",
-                    "pregame": false,
-                    "inprogress": false,
-                    "final": true,
+                    "pregame": False,
+                    "inprogress": False,
+                    "final": True,
                     "awayTeam": {
                     "name": "KC",
                     "score": "11",
@@ -531,9 +531,9 @@ class RunText(SampleBase):
                 },
                 {
                     "league": "mlb",
-                    "pregame": false,
-                    "inprogress": true,
-                    "final": false,
+                    "pregame": False,
+                    "inprogress": True,
+                    "final": False,
                     "awayTeam": {
                     "name": "NYM",
                     "score": "10",
@@ -570,8 +570,8 @@ class RunText(SampleBase):
                     },
                     "inning": "End 7th",
                     "runners": {
-                    "onFirst": false,
-                    "onSecond": false,
+                    "onFirst": False,
+                    "onSecond": False,
                     "onThird": false
                     },
                     "situation": {
@@ -582,9 +582,9 @@ class RunText(SampleBase):
                 },
                 {
                     "league": "mlb",
-                    "pregame": false,
-                    "inprogress": true,
-                    "final": false,
+                    "pregame": False,
+                    "inprogress": True,
+                    "final": False,
                     "awayTeam": {
                     "name": "OAK",
                     "score": "1",
@@ -621,8 +621,8 @@ class RunText(SampleBase):
                     },
                     "inning": "End 2nd",
                     "runners": {
-                    "onFirst": false,
-                    "onSecond": false,
+                    "onFirst": False,
+                    "onSecond": False,
                     "onThird": false
                     },
                     "situation": {
