@@ -182,10 +182,10 @@ class RunText(SampleBase):
                     direction = 1 if item['up'] else -1
                     stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((20,20), Image.ANTIALIAS)
                     canvas.SetImage(stockLogo, 2, 3)
-                    stockSymbol = graphics.DrawText(canvas, middleFont, 25, 2, color, item['stockSymbol'])
+                    stockSymbol = graphics.DrawText(canvas, middleFont, 25, 0, color, item['stockSymbol'])
                     currentPrice = graphics.DrawText(canvas, smallestFont, 25, 19, color, item['currentPrice'])
                     x = 25
-                    y = 26
+                    y = 24
                     size = 4
                     for offset in range(size):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
@@ -210,7 +210,6 @@ class RunText(SampleBase):
                         highLow = graphics.DrawText(canvas, smallestFont, runningX, 40, blue, day['highLow'])
                         runningX = runningX + 20
                 elif type(item) is dict and 'tourneyName' in item.keys():
-                    print('*********************')
                     for page in item['players']:
                         print(page)
                         for player in page:
