@@ -42,14 +42,14 @@ class RunText(SampleBase):
             responseArr = [
                 [
                     {
-                    "day": "WED",
+                    "day": "Wednesday",
                     "rainPercent": "92%",
                     "condition": "Overcast",
                     "icon": 302,
                     "highLow": "67°/86°"
                     },
                     {
-                    "day": "THU",
+                    "day": "Thursday",
                     "rainPercent": "0%",
                     "condition": "Overcast",
                     "icon": 113,
@@ -840,12 +840,14 @@ class RunText(SampleBase):
                         print(day)
                         # locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(day['icon'])
                         # weatherImage = Image.open(locationString).convert('RGB').resize((8, 8), Image.ANTIALIAS)
-                        dayText = graphics.DrawText(canvas, smallestFont, runningX, 10, blue, day['day'])
+                        dayText = graphics.DrawText(canvas, smallestFont, 0, 10, blue, day['day'])
                         # canvas.SetImage(weatherImage, runningX, 15)
-                        weatherConditionText = graphics.DrawText(canvas, smallestFont, runningX, 20, blue, day['condition'])
-                        highLow = graphics.DrawText(canvas, smallestFont, runningX, 22, blue, day['highLow'])
-                        currentTemp = graphics.DrawText(canvas, smallFont, runningX, 29, blue, day['rainPercent'])
+                        weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, runningX, 20, blue, day['condition'])
+                        highLow = graphics.DrawText(canvas, alilbiggerFont, 0, 22, blue, day['highLow'])
+                        currentTemp = graphics.DrawText(canvas, alilbiggerFont, 0, 29, blue, day['rainPercent'])
                         runningX = runningX + 20
+                        time.sleep(7)
+                        canvas.Clear()
                 elif type(item) is dict and 'tourneyName' in item.keys():
                     for page in item['players']:
                         print(page)
@@ -858,8 +860,6 @@ class RunText(SampleBase):
                             score = graphics.DrawText(canvas, smallestFont, 30, runningTotal, blue, player['score'])
                             thru = graphics.DrawText(canvas, smallestFont, 45, runningTotal, blue, player['teeTime'])
                             runningTotal = runningTotal + 8
-                        time.sleep(7)
-                        canvas.Clear()
                 else:
                     print('there was nothing')
                 time.sleep(20)
