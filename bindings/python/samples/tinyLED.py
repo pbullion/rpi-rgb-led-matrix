@@ -57,6 +57,10 @@ class RunText(SampleBase):
                     if item['pregame'] == True:    
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 24, homeColorSecondary, item['homeTeam']['name'])
+                        awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 12, awayColorSecondary, item['awayTeam']['score'])
+                        homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 24, homeColorSecondary, item['homeTeam']['score'])
+                        finalDetail = graphics.DrawText(canvas, smallestFont, 40, 20, yellow, item['startTime'])
+                        winningPitcher = graphics.DrawText(canvas, smallestFont, 40, 31, green, item['odds'])
                     if item['final'] == True:    
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 24, homeColorSecondary, item['homeTeam']['name'])
@@ -126,7 +130,7 @@ class RunText(SampleBase):
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 22, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 12, awayColorSecondary, item['awayTeam']['score'])
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 22, homeColorSecondary, item['homeTeam']['score'])
-                        count = graphics.DrawText(canvas, smallestFont, 46, 22, yellow, situationString)
+                        count = graphics.DrawText(canvas, smallestFont, 48, 22, yellow, situationString)
                         inning = graphics.DrawText(canvas, smallestFont, 0, 29, yellow, item['inning'])
                 elif type(item) is dict and 'league' in item.keys() and item['league'] == 'nba':
                     print('+++++++++++++')
