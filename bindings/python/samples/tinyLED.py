@@ -806,7 +806,7 @@ class RunText(SampleBase):
                     stockSymbol = graphics.DrawText(canvas, middleFont, 25, 12, color, item['stockSymbol'])
                     currentPrice = graphics.DrawText(canvas, alilbiggerFont, 29, 20, color, item['currentPrice'])
                     x = 22
-                    y = 25 if item['up'] else 26
+                    y = 25 if item['up'] else 28
                     size = 4
                     for offset in range(size):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
@@ -846,7 +846,7 @@ class RunText(SampleBase):
                         highLow = graphics.DrawText(canvas, alilbiggerFont, 0, 25, blue, day['highLow'])
                         currentTemp = graphics.DrawText(canvas, alilbiggerFont, 0, 32, blue, 'Rain: {}'.format(day['rainPercent']))
                         runningX = runningX + 20
-                        time.sleep(7)
+                        time.sleep(3)
                         canvas.Clear()
                 elif type(item) is dict and 'tourneyName' in item.keys():
                     for page in item['players']:
