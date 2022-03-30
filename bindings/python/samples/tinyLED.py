@@ -37,626 +37,625 @@ class RunText(SampleBase):
             middleFont.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/9x18B.bdf")
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
             # responseArr = json.loads(url.text)
-            responseArr = 
-[
-  {
-    "stockSymbol": "TSLA",
-    "url": "https://logo.clearbit.com/tesla.com",
-    "currentPrice": "1099.57",
-    "up": true,
-    "percentChange": "0.71%"
-  },
-  {
-    "stockSymbol": "OBNK",
-    "url": "https://logo.clearbit.com/originbank.com",
-    "currentPrice": "43.88",
-    "up": true,
-    "percentChange": "0.69%"
-  },
-  {
-    "stockSymbol": "STEM",
-    "url": "https://logo.clearbit.com/stem.com",
-    "currentPrice": "11.58",
-    "up": true,
-    "percentChange": "6.14%"
-  },
-  {
-    "stockSymbol": "AAPL",
-    "url": "https://logo.clearbit.com/apple.com",
-    "currentPrice": "178.96",
-    "up": true,
-    "percentChange": "1.91%"
-  },
-  {
-    "stockSymbol": "AMC",
-    "url": "https://logo.clearbit.com/amctheatres.com",
-    "currentPrice": "29.44",
-    "up": true,
-    "percentChange": "0.38%"
-  },
-  {
-    "stockSymbol": "AMD",
-    "url": "https://logo.clearbit.com/amd.com",
-    "currentPrice": "123.23",
-    "up": true,
-    "percentChange": "2.49%"
-  },
-  {
-    "stockSymbol": "HOOD",
-    "url": "https://logo.clearbit.com/robinhood.com",
-    "currentPrice": "15.91",
-    "up": true,
-    "percentChange": "24.20%"
-  },
-  {
-    "stockSymbol": "BTC",
-    "url": "https://logo.clearbit.com/bitcoin.org",
-    "currentPrice": "47061",
-    "up": false,
-    "percentChange": "0.87%"
-  },
-  {
-    "stockSymbol": "ETH",
-    "url": "https://logo.clearbit.com/ethereum.org",
-    "currentPrice": "3362.86",
-    "up": false,
-    "percentChange": "0.44%"
-  },
-  {
-    "stockSymbol": "DOGE",
-    "url": "https://logo.clearbit.com/dogecoin.com",
-    "currentPrice": "0.1415",
-    "up": false,
-    "percentChange": "2.61%"
-  },
-  "",
-  {
-    "league": "mlb",
-    "pregame": false,
-    "inprogress": false,
-    "final": true,
-    "awayTeam": {
-      "name": "WSH",
-      "score": "1",
-      "colors": {
-        "main": [
-          10,
-          41,
-          93
-        ],
-        "secondary": [
-          241,
-          242,
-          243
-        ]
-      },
-      "record": "0-5"
-    },
-    "homeTeam": {
-      "name": "HOU",
-      "score": "3",
-      "colors": {
-        "main": [
-          250,
-          250,
-          250
-        ],
-        "secondary": [
-          235,
-          110,
-          31
-        ]
-      },
-      "record": "1-9"
-    },
-    "winningPitcher": "J. Verlander 2-0",
-    "finalDetail": "Final"
-  },
-  {
-    "league": "mlb",
-    "pregame": false,
-    "inprogress": false,
-    "final": true,
-    "awayTeam": {
-      "name": "BOS",
-      "score": "2",
-      "colors": {
-        "main": [
-          250,
-          250,
-          250
-        ],
-        "secondary": [
-          13,
-          43,
-          86
-        ]
-      },
-      "record": "5-1"
-    },
-    "homeTeam": {
-      "name": "PIT",
-      "score": "6",
-      "colors": {
-        "main": [
-          17,
-          17,
-          17
-        ],
-        "secondary": [
-          250,
-          250,
-          250
-        ]
-      },
-      "record": "7-5"
-    },
-    "winningPitcher": "M. Keller 1-0",
-    "finalDetail": "Final"
-  },
-  {
-    "league": "mlb",
-    "pregame": false,
-    "inprogress": false,
-    "final": true,
-    "awayTeam": {
-      "name": "MIN",
-      "score": "2",
-      "colors": {
-        "main": [
-          1,
-          39,
-          86
-        ],
-        "secondary": [
-          241,
-          242,
-          243
-        ]
-      },
-      "record": "3-2"
-    },
-    "homeTeam": {
-      "name": "TB",
-      "score": "4",
-      "colors": {
-        "main": [
-          250,
-          250,
-          250
-        ],
-        "secondary": [
-          143,
-          188,
-          230
-        ]
-      },
-      "record": "4-8"
-    },
-    "winningPitcher": "J.P. Feyereisen 1-0",
-    "finalDetail": "Final"
-  },
-  {
-    "league": "mlb",
-    "pregame": false,
-    "inprogress": false,
-    "final": true,
-    "awayTeam": {
-      "name": "PHI",
-      "score": "2",
-      "colors": {
-        "main": [
-          190,
-          0,
-          17
-        ],
-        "secondary": [
-          40,
-          72,
-          152
-        ]
-      },
-      "record": "5-0"
-    },
-    "homeTeam": {
-      "name": "NYY",
-      "score": "14",
-      "colors": {
-        "main": [
-          1,
-          23,
-          57
-        ],
-        "secondary": [
-          196,
-          206,
-          212
-        ]
-      },
-      "record": "6-4"
-    },
-    "winningPitcher": "C. Schmidt 1-0",
-    "finalDetail": "Final"
-  },
-  {
-    "league": "mlb",
-    "pregame": false,
-    "inprogress": false,
-    "final": true,
-    "awayTeam": {
-      "name": "ARI",
-      "score": "2",
-      "colors": {
-        "main": [
-          164,
-          0,
-          19
-        ],
-        "secondary": [
-          250,
-          250,
-          250
-        ]
-      },
-      "record": "3-2"
-    },
-    "homeTeam": {
-      "name": "CHC",
-      "score": "3",
-      "colors": {
-        "main": [
-          250,
-          250,
-          250
-        ],
-        "secondary": [
-          250,
-          250,
-          250
-        ]
-      },
-      "record": "5-7"
-    },
-    "winningPitcher": "J. Steele 1-0",
-    "finalDetail": "Final"
-  },
-  {
-    "league": "mlb",
-    "pregame": false,
-    "inprogress": false,
-    "final": true,
-    "awayTeam": {
-      "name": "MIL",
-      "score": "3",
-      "colors": {
-        "main": [
-          5,
-          12,
-          51
-        ],
-        "secondary": [
-          241,
-          242,
-          243
-        ]
-      },
-      "record": "2-2"
-    },
-    "homeTeam": {
-      "name": "CLE",
-      "score": "10",
-      "colors": {
-        "main": [
-          250,
-          250,
-          250
-        ],
-        "secondary": [
-          250,
-          250,
-          250
-        ]
-      },
-      "record": "4-5"
-    },
-    "winningPitcher": "B. Shaw 1-0",
-    "finalDetail": "Final"
-  },
-  {
-    "league": "mlb",
-    "pregame": false,
-    "inprogress": false,
-    "final": true,
-    "awayTeam": {
-      "name": "SD",
-      "score": "6",
-      "colors": {
-        "main": [
-          47,
-          36,
-          29
-        ],
-        "secondary": [
-          255,
-          196,
-          37
-        ]
-      },
-      "record": "3-1"
-    },
-    "homeTeam": {
-      "name": "SF",
-      "score": "11",
-      "colors": {
-        "main": [
-          22,
-          20,
-          21
-        ],
-        "secondary": [
-          250,
-          250,
-          250
-        ]
-      },
-      "record": "4-5"
-    },
-    "winningPitcher": "C. Rodon 1-0",
-    "finalDetail": "Final"
-  },
-  {
-    "league": "mlb",
-    "pregame": false,
-    "inprogress": false,
-    "final": true,
-    "awayTeam": {
-      "name": "CIN",
-      "score": "7",
-      "colors": {
-        "main": [
-          196,
-          20,
-          34
-        ],
-        "secondary": [
-          255,
-          255,
-          255
-        ]
-      },
-      "record": "3-1"
-    },
-    "homeTeam": {
-      "name": "TEX",
-      "score": "1",
-      "colors": {
-        "main": [
-          250,
-          250,
-          250
-        ],
-        "secondary": [
-          192,
-          17,
-          31
-        ]
-      },
-      "record": "6-4"
-    },
-    "winningPitcher": "R. Sanmartin 1-0",
-    "finalDetail": "Final"
-  },
-  {
-    "league": "mlb",
-    "pregame": false,
-    "inprogress": false,
-    "final": true,
-    "awayTeam": {
-      "name": "LAA",
-      "score": "8",
-      "colors": {
-        "main": [
-          165,
-          0,
-          23
-        ],
-        "secondary": [
-          134,
-          38,
-          51
-        ]
-      },
-      "record": "4-2"
-    },
-    "homeTeam": {
-      "name": "COL",
-      "score": "2",
-      "colors": {
-        "main": [
-          34,
-          13,
-          72
-        ],
-        "secondary": [
-          34,
-          13,
-          72
-        ]
-      },
-      "record": "7-4"
-    },
-    "winningPitcher": "J. Suarez 1-0",
-    "finalDetail": "Final"
-  },
-  {
-    "league": "mlb",
-    "pregame": false,
-    "inprogress": false,
-    "final": true,
-    "awayTeam": {
-      "name": "KC",
-      "score": "11",
-      "colors": {
-        "main": [
-          250,
-          250,
-          250
-        ],
-        "secondary": [
-          122,
-          178,
-          221
-        ]
-      },
-      "record": "4-2"
-    },
-    "homeTeam": {
-      "name": "SEA",
-      "score": "4",
-      "colors": {
-        "main": [
-          1,
-          42,
-          91
-        ],
-        "secondary": [
-          12,
-          44,
-          86
-        ]
-      },
-      "record": "6-3"
-    },
-    "winningPitcher": "D. Lynch 1-0",
-    "finalDetail": "Final"
-  },
-  {
-    "league": "mlb",
-    "pregame": false,
-    "inprogress": true,
-    "final": false,
-    "awayTeam": {
-      "name": "NYM",
-      "score": "10",
-      "colors": {
-        "main": [
-          250,
-          250,
-          250
-        ],
-        "secondary": [
-          250,
-          250,
-          250
-        ]
-      },
-      "record": "4-1"
-    },
-    "homeTeam": {
-      "name": "MIA",
-      "score": "0",
-      "colors": {
-        "main": [
-          250,
-          250,
-          250
-        ],
-        "secondary": [
-          250,
-          250,
-          250
-        ]
-      },
-      "record": "5-3"
-    },
-    "inning": "End 7th",
-    "runners": {
-      "onFirst": false,
-      "onSecond": false,
-      "onThird": false
-    },
-    "situation": {
-      "balls": 0,
-      "strikes": 0,
-      "outs": 0
-    }
-  },
-  {
-    "league": "mlb",
-    "pregame": false,
-    "inprogress": true,
-    "final": false,
-    "awayTeam": {
-      "name": "OAK",
-      "score": "1",
-      "colors": {
-        "main": [
-          1,
-          67,
-          38
-        ],
-        "secondary": [
-          239,
-          178,
-          30
-        ]
-      },
-      "record": "2-2"
-    },
-    "homeTeam": {
-      "name": "LAD",
-      "score": "0",
-      "colors": {
-        "main": [
-          250,
-          250,
-          250
-        ],
-        "secondary": [
-          162,
-          170,
-          173
-        ]
-      },
-      "record": "2-7"
-    },
-    "inning": "End 2nd",
-    "runners": {
-      "onFirst": false,
-      "onSecond": false,
-      "onThird": false
-    },
-    "situation": {
-      "balls": 0,
-      "strikes": 0,
-      "outs": 0
-    }
-  },
-  {
-    "condition": "Overcast",
-    "icon": 122,
-    "temp": "74°",
-    "highLow": "68°/82°"
-  },
-  [
-    {
-      "day": "WED",
-      "rainPercent": "92%",
-      "condition": "Overcast",
-      "icon": 302,
-      "highLow": "67°/86°"
-    },
-    {
-      "day": "THU",
-      "rainPercent": "0%",
-      "condition": "Overcast",
-      "icon": 113,
-      "highLow": "58°/87°"
-    }
-  ],
-  "",
-  "HELLLLLLLLOOOOO"
-]
+            responseArr = [
+                {
+                    "stockSymbol": "TSLA",
+                    "url": "https://logo.clearbit.com/tesla.com",
+                    "currentPrice": "1099.57",
+                    "up": true,
+                    "percentChange": "0.71%"
+                },
+                {
+                    "stockSymbol": "OBNK",
+                    "url": "https://logo.clearbit.com/originbank.com",
+                    "currentPrice": "43.88",
+                    "up": true,
+                    "percentChange": "0.69%"
+                },
+                {
+                    "stockSymbol": "STEM",
+                    "url": "https://logo.clearbit.com/stem.com",
+                    "currentPrice": "11.58",
+                    "up": true,
+                    "percentChange": "6.14%"
+                },
+                {
+                    "stockSymbol": "AAPL",
+                    "url": "https://logo.clearbit.com/apple.com",
+                    "currentPrice": "178.96",
+                    "up": true,
+                    "percentChange": "1.91%"
+                },
+                {
+                    "stockSymbol": "AMC",
+                    "url": "https://logo.clearbit.com/amctheatres.com",
+                    "currentPrice": "29.44",
+                    "up": true,
+                    "percentChange": "0.38%"
+                },
+                {
+                    "stockSymbol": "AMD",
+                    "url": "https://logo.clearbit.com/amd.com",
+                    "currentPrice": "123.23",
+                    "up": true,
+                    "percentChange": "2.49%"
+                },
+                {
+                    "stockSymbol": "HOOD",
+                    "url": "https://logo.clearbit.com/robinhood.com",
+                    "currentPrice": "15.91",
+                    "up": true,
+                    "percentChange": "24.20%"
+                },
+                {
+                    "stockSymbol": "BTC",
+                    "url": "https://logo.clearbit.com/bitcoin.org",
+                    "currentPrice": "47061",
+                    "up": false,
+                    "percentChange": "0.87%"
+                },
+                {
+                    "stockSymbol": "ETH",
+                    "url": "https://logo.clearbit.com/ethereum.org",
+                    "currentPrice": "3362.86",
+                    "up": false,
+                    "percentChange": "0.44%"
+                },
+                {
+                    "stockSymbol": "DOGE",
+                    "url": "https://logo.clearbit.com/dogecoin.com",
+                    "currentPrice": "0.1415",
+                    "up": false,
+                    "percentChange": "2.61%"
+                },
+                "",
+                {
+                    "league": "mlb",
+                    "pregame": false,
+                    "inprogress": false,
+                    "final": true,
+                    "awayTeam": {
+                    "name": "WSH",
+                    "score": "1",
+                    "colors": {
+                        "main": [
+                        10,
+                        41,
+                        93
+                        ],
+                        "secondary": [
+                        241,
+                        242,
+                        243
+                        ]
+                    },
+                    "record": "0-5"
+                    },
+                    "homeTeam": {
+                    "name": "HOU",
+                    "score": "3",
+                    "colors": {
+                        "main": [
+                        250,
+                        250,
+                        250
+                        ],
+                        "secondary": [
+                        235,
+                        110,
+                        31
+                        ]
+                    },
+                    "record": "1-9"
+                    },
+                    "winningPitcher": "J. Verlander 2-0",
+                    "finalDetail": "Final"
+                },
+                {
+                    "league": "mlb",
+                    "pregame": false,
+                    "inprogress": false,
+                    "final": true,
+                    "awayTeam": {
+                    "name": "BOS",
+                    "score": "2",
+                    "colors": {
+                        "main": [
+                        250,
+                        250,
+                        250
+                        ],
+                        "secondary": [
+                        13,
+                        43,
+                        86
+                        ]
+                    },
+                    "record": "5-1"
+                    },
+                    "homeTeam": {
+                    "name": "PIT",
+                    "score": "6",
+                    "colors": {
+                        "main": [
+                        17,
+                        17,
+                        17
+                        ],
+                        "secondary": [
+                        250,
+                        250,
+                        250
+                        ]
+                    },
+                    "record": "7-5"
+                    },
+                    "winningPitcher": "M. Keller 1-0",
+                    "finalDetail": "Final"
+                },
+                {
+                    "league": "mlb",
+                    "pregame": false,
+                    "inprogress": false,
+                    "final": true,
+                    "awayTeam": {
+                    "name": "MIN",
+                    "score": "2",
+                    "colors": {
+                        "main": [
+                        1,
+                        39,
+                        86
+                        ],
+                        "secondary": [
+                        241,
+                        242,
+                        243
+                        ]
+                    },
+                    "record": "3-2"
+                    },
+                    "homeTeam": {
+                    "name": "TB",
+                    "score": "4",
+                    "colors": {
+                        "main": [
+                        250,
+                        250,
+                        250
+                        ],
+                        "secondary": [
+                        143,
+                        188,
+                        230
+                        ]
+                    },
+                    "record": "4-8"
+                    },
+                    "winningPitcher": "J.P. Feyereisen 1-0",
+                    "finalDetail": "Final"
+                },
+                {
+                    "league": "mlb",
+                    "pregame": false,
+                    "inprogress": false,
+                    "final": true,
+                    "awayTeam": {
+                    "name": "PHI",
+                    "score": "2",
+                    "colors": {
+                        "main": [
+                        190,
+                        0,
+                        17
+                        ],
+                        "secondary": [
+                        40,
+                        72,
+                        152
+                        ]
+                    },
+                    "record": "5-0"
+                    },
+                    "homeTeam": {
+                    "name": "NYY",
+                    "score": "14",
+                    "colors": {
+                        "main": [
+                        1,
+                        23,
+                        57
+                        ],
+                        "secondary": [
+                        196,
+                        206,
+                        212
+                        ]
+                    },
+                    "record": "6-4"
+                    },
+                    "winningPitcher": "C. Schmidt 1-0",
+                    "finalDetail": "Final"
+                },
+                {
+                    "league": "mlb",
+                    "pregame": false,
+                    "inprogress": false,
+                    "final": true,
+                    "awayTeam": {
+                    "name": "ARI",
+                    "score": "2",
+                    "colors": {
+                        "main": [
+                        164,
+                        0,
+                        19
+                        ],
+                        "secondary": [
+                        250,
+                        250,
+                        250
+                        ]
+                    },
+                    "record": "3-2"
+                    },
+                    "homeTeam": {
+                    "name": "CHC",
+                    "score": "3",
+                    "colors": {
+                        "main": [
+                        250,
+                        250,
+                        250
+                        ],
+                        "secondary": [
+                        250,
+                        250,
+                        250
+                        ]
+                    },
+                    "record": "5-7"
+                    },
+                    "winningPitcher": "J. Steele 1-0",
+                    "finalDetail": "Final"
+                },
+                {
+                    "league": "mlb",
+                    "pregame": false,
+                    "inprogress": false,
+                    "final": true,
+                    "awayTeam": {
+                    "name": "MIL",
+                    "score": "3",
+                    "colors": {
+                        "main": [
+                        5,
+                        12,
+                        51
+                        ],
+                        "secondary": [
+                        241,
+                        242,
+                        243
+                        ]
+                    },
+                    "record": "2-2"
+                    },
+                    "homeTeam": {
+                    "name": "CLE",
+                    "score": "10",
+                    "colors": {
+                        "main": [
+                        250,
+                        250,
+                        250
+                        ],
+                        "secondary": [
+                        250,
+                        250,
+                        250
+                        ]
+                    },
+                    "record": "4-5"
+                    },
+                    "winningPitcher": "B. Shaw 1-0",
+                    "finalDetail": "Final"
+                },
+                {
+                    "league": "mlb",
+                    "pregame": false,
+                    "inprogress": false,
+                    "final": true,
+                    "awayTeam": {
+                    "name": "SD",
+                    "score": "6",
+                    "colors": {
+                        "main": [
+                        47,
+                        36,
+                        29
+                        ],
+                        "secondary": [
+                        255,
+                        196,
+                        37
+                        ]
+                    },
+                    "record": "3-1"
+                    },
+                    "homeTeam": {
+                    "name": "SF",
+                    "score": "11",
+                    "colors": {
+                        "main": [
+                        22,
+                        20,
+                        21
+                        ],
+                        "secondary": [
+                        250,
+                        250,
+                        250
+                        ]
+                    },
+                    "record": "4-5"
+                    },
+                    "winningPitcher": "C. Rodon 1-0",
+                    "finalDetail": "Final"
+                },
+                {
+                    "league": "mlb",
+                    "pregame": false,
+                    "inprogress": false,
+                    "final": true,
+                    "awayTeam": {
+                    "name": "CIN",
+                    "score": "7",
+                    "colors": {
+                        "main": [
+                        196,
+                        20,
+                        34
+                        ],
+                        "secondary": [
+                        255,
+                        255,
+                        255
+                        ]
+                    },
+                    "record": "3-1"
+                    },
+                    "homeTeam": {
+                    "name": "TEX",
+                    "score": "1",
+                    "colors": {
+                        "main": [
+                        250,
+                        250,
+                        250
+                        ],
+                        "secondary": [
+                        192,
+                        17,
+                        31
+                        ]
+                    },
+                    "record": "6-4"
+                    },
+                    "winningPitcher": "R. Sanmartin 1-0",
+                    "finalDetail": "Final"
+                },
+                {
+                    "league": "mlb",
+                    "pregame": false,
+                    "inprogress": false,
+                    "final": true,
+                    "awayTeam": {
+                    "name": "LAA",
+                    "score": "8",
+                    "colors": {
+                        "main": [
+                        165,
+                        0,
+                        23
+                        ],
+                        "secondary": [
+                        134,
+                        38,
+                        51
+                        ]
+                    },
+                    "record": "4-2"
+                    },
+                    "homeTeam": {
+                    "name": "COL",
+                    "score": "2",
+                    "colors": {
+                        "main": [
+                        34,
+                        13,
+                        72
+                        ],
+                        "secondary": [
+                        34,
+                        13,
+                        72
+                        ]
+                    },
+                    "record": "7-4"
+                    },
+                    "winningPitcher": "J. Suarez 1-0",
+                    "finalDetail": "Final"
+                },
+                {
+                    "league": "mlb",
+                    "pregame": false,
+                    "inprogress": false,
+                    "final": true,
+                    "awayTeam": {
+                    "name": "KC",
+                    "score": "11",
+                    "colors": {
+                        "main": [
+                        250,
+                        250,
+                        250
+                        ],
+                        "secondary": [
+                        122,
+                        178,
+                        221
+                        ]
+                    },
+                    "record": "4-2"
+                    },
+                    "homeTeam": {
+                    "name": "SEA",
+                    "score": "4",
+                    "colors": {
+                        "main": [
+                        1,
+                        42,
+                        91
+                        ],
+                        "secondary": [
+                        12,
+                        44,
+                        86
+                        ]
+                    },
+                    "record": "6-3"
+                    },
+                    "winningPitcher": "D. Lynch 1-0",
+                    "finalDetail": "Final"
+                },
+                {
+                    "league": "mlb",
+                    "pregame": false,
+                    "inprogress": true,
+                    "final": false,
+                    "awayTeam": {
+                    "name": "NYM",
+                    "score": "10",
+                    "colors": {
+                        "main": [
+                        250,
+                        250,
+                        250
+                        ],
+                        "secondary": [
+                        250,
+                        250,
+                        250
+                        ]
+                    },
+                    "record": "4-1"
+                    },
+                    "homeTeam": {
+                    "name": "MIA",
+                    "score": "0",
+                    "colors": {
+                        "main": [
+                        250,
+                        250,
+                        250
+                        ],
+                        "secondary": [
+                        250,
+                        250,
+                        250
+                        ]
+                    },
+                    "record": "5-3"
+                    },
+                    "inning": "End 7th",
+                    "runners": {
+                    "onFirst": false,
+                    "onSecond": false,
+                    "onThird": false
+                    },
+                    "situation": {
+                    "balls": 0,
+                    "strikes": 0,
+                    "outs": 0
+                    }
+                },
+                {
+                    "league": "mlb",
+                    "pregame": false,
+                    "inprogress": true,
+                    "final": false,
+                    "awayTeam": {
+                    "name": "OAK",
+                    "score": "1",
+                    "colors": {
+                        "main": [
+                        1,
+                        67,
+                        38
+                        ],
+                        "secondary": [
+                        239,
+                        178,
+                        30
+                        ]
+                    },
+                    "record": "2-2"
+                    },
+                    "homeTeam": {
+                    "name": "LAD",
+                    "score": "0",
+                    "colors": {
+                        "main": [
+                        250,
+                        250,
+                        250
+                        ],
+                        "secondary": [
+                        162,
+                        170,
+                        173
+                        ]
+                    },
+                    "record": "2-7"
+                    },
+                    "inning": "End 2nd",
+                    "runners": {
+                    "onFirst": false,
+                    "onSecond": false,
+                    "onThird": false
+                    },
+                    "situation": {
+                    "balls": 0,
+                    "strikes": 0,
+                    "outs": 0
+                    }
+                },
+                {
+                    "condition": "Overcast",
+                    "icon": 122,
+                    "temp": "74°",
+                    "highLow": "68°/82°"
+                },
+                [
+                    {
+                    "day": "WED",
+                    "rainPercent": "92%",
+                    "condition": "Overcast",
+                    "icon": 302,
+                    "highLow": "67°/86°"
+                    },
+                    {
+                    "day": "THU",
+                    "rainPercent": "0%",
+                    "condition": "Overcast",
+                    "icon": 113,
+                    "highLow": "58°/87°"
+                    }
+                ],
+                "",
+                "HELLLLLLLLOOOOO"
+            ]
             canvas = self.matrix
             bases =  [[54,7],[49,2],[44,7]]
             outs = [[44,25],[50,25],[56,25]]
