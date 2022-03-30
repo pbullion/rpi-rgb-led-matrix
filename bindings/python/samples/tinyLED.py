@@ -822,13 +822,13 @@ class RunText(SampleBase):
                     sunnyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     windyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     print(item['condition'])
-                    if 'RAIN' in item['condition']:
+                    if 'Rain' in item['condition']:
                         canvas.SetImage(rainImage, 0, 2)
-                    elif 'CLOUDY' in item['condition'] or 'OVERCAST' in item['condition']:
+                    elif 'Cloudy' in item['condition'] or 'Overcast' in item['condition']:
                         canvas.SetImage(partlyCloudyImage, 0, 2)
-                    elif 'THUNDER' in item['condition']:
+                    elif 'Thunder' in item['condition']:
                         canvas.SetImage(thunderstormImage, 0, 2)
-                    elif 'SUN' in item['condition']:
+                    elif 'Sun' in item['condition']:
                         canvas.SetImage(sunnyImage, 0, 2)
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 31, blue, item['condition'])
                     currentTemp = graphics.DrawText(canvas, middleFont, 32, 13, blue, item['temp'])
