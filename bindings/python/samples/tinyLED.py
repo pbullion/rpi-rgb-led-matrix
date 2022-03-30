@@ -677,7 +677,7 @@ class RunText(SampleBase):
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 24, homeColorSecondary, item['homeTeam']['name'])
                         finalDetail = graphics.DrawText(canvas, smallFont, 25, 20, yellow, item['startTime'])
-                        winningPitcher = graphics.DrawText(canvas, smallFont, 25, 31, green, item['odds'])
+                        odds = graphics.DrawText(canvas, smallFont, 25, 31, green, item['odds'])
                     if item['final'] == True:    
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 24, homeColorSecondary, item['homeTeam']['name'])
@@ -802,7 +802,7 @@ class RunText(SampleBase):
                     stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((20,20), Image.ANTIALIAS)
                     canvas.SetImage(stockLogo, 2, 3)
                     stockSymbol = graphics.DrawText(canvas, middleFont, 25, 12, color, item['stockSymbol'])
-                    currentPrice = graphics.DrawText(canvas, smallestFont, 30, 19, color, item['currentPrice'])
+                    currentPrice = graphics.DrawText(canvas, smallestFont, 34, 19, color, item['currentPrice'])
                     x = 27
                     y = 23 if item['up'] else 26
                     size = 4
@@ -811,11 +811,11 @@ class RunText(SampleBase):
                     percentChange = graphics.DrawText(canvas, smallFont, 32, 29, color, item['percentChange'])
                 elif type(item) is dict and 'condition' in item.keys() :
                     locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
-                    weatherImage = Image.open(locationString).convert('RGB').resize((32, 32), Image.ANTIALIAS)
+                    weatherImage = Image.open(locationString).convert('RGB').resize((16, 16), Image.ANTIALIAS)
                     canvas.SetImage(weatherImage, 0)
-                    weatherConditionText = graphics.DrawText(canvas, smallestFont, 39, 10, blue, item['condition'])
-                    currentTemp = graphics.DrawText(canvas, smallFont, 39, 20, blue, item['temp'])
-                    highLow = graphics.DrawText(canvas, smallestFont, 42, 40, blue, item['highLow'])
+                    weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 31, blue, item['condition'])
+                    currentTemp = graphics.DrawText(canvas, middleFont, 39, 8, blue, item['temp'])
+                    highLow = graphics.DrawText(canvas, smallestFont, 42, 20, blue, item['highLow'])
                 elif type(item) is list and 'condition' in item[0].values():
                     runningX = 0
                     runningY = 10
