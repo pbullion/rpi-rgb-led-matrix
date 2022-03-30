@@ -729,19 +729,16 @@ class RunText(SampleBase):
                                 graphics.DrawLine(canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
                                 graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
                         if item['situation']['outs'] == 1:
-                            outsSize = 3
                             x = outs[0][0]
                             y = outs[0][1]
                             for y_offset in range(outsSize):
                                 graphics.DrawLine(canvas, outs[0][0], outs[0][1] + y_offset, outs[0][0] + outsSize, outs[0][1] + y_offset, red)
                         elif item['situation']['outs'] == 2:
-                            outsSize = 3
                             x = outs[1][0]
                             y = outs[1][1]
                             for y_offset in range(outsSize):
                                 graphics.DrawLine(canvas, outs[0][0], outs[0][1] + y_offset, outs[0][0] + outsSize, outs[0][1] + y_offset, red)
                         elif item['situation']['outs'] == 3:
-                            outsSize = 3
                             x = outs[2][0]
                             y = outs[2][1]
                             for y_offset in range(outsSize):
