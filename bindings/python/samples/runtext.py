@@ -229,9 +229,9 @@ class RunText(SampleBase):
                                     graphics.DrawLine(offscreen_canvas, pos + runningTotal + outs[0][0], pos + runningTotal + outs[0][1] + y_offset, pos + runningTotal + outs[0][0] + outsSize, pos + runningTotal + outs[0][1] + y_offset, red)
                                     graphics.DrawLine(offscreen_canvas, pos + runningTotal + outs[1][0], pos + runningTotal + outs[1][1] + y_offset, pos + runningTotal + outs[1][0] + outsSize, pos + runningTotal + outs[1][1] + y_offset, red)
                                     graphics.DrawLine(offscreen_canvas, pos + runningTotal + outs[2][0], pos + runningTotal + outs[2][1] + y_offset, pos + runningTotal + outs[2][0] + outsSize, pos + runningTotal + outs[2][1] + y_offset, red)
-                            situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + runningTotal, 15, yellow, countString)
-                            inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + runningTotal, 25, yellow, inningString)
-                            runningTotal = runningTotal + 30                    
+                            situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + runningTotal, 19, yellow, countString)
+                            inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + runningTotal - 5, 29, yellow, inningString)
+                            runningTotal = runningTotal + inning + 5 + buffer        
                             offscreen_canvas.SetImage(homeLogo, pos + runningTotal)
                             runningTotal = runningTotal + homeLogo.width
                             homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 10, homeColor, homeTeamString)
