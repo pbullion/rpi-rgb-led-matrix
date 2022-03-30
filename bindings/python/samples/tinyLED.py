@@ -40,6 +40,58 @@ class RunText(SampleBase):
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
             # responseArr = json.loads(url.text)
             responseArr = [
+
+                {
+                    "league": "mlb",
+                    "pregame": False,
+                    "inprogress": True,
+                    "final": False,
+                    "awayTeam": {
+                    "name": "OAK",
+                    "score": "1",
+                    "colors": {
+                        "main": [
+                        1,
+                        67,
+                        38
+                        ],
+                        "secondary": [
+                        239,
+                        178,
+                        30
+                        ]
+                    },
+                    "record": "2-2"
+                    },
+                    "homeTeam": {
+                    "name": "LAD",
+                    "score": "0",
+                    "colors": {
+                        "main": [
+                        250,
+                        250,
+                        250
+                        ],
+                        "secondary": [
+                        162,
+                        170,
+                        173
+                        ]
+                    },
+                    "record": "2-7"
+                    },
+                    "inning": "Top 2nd",
+                    "runners": {
+                    "onFirst": False,
+                    "onSecond": True,
+                    "onThird": False
+                    },
+                    "situation": {
+                    "balls": 0,
+                    "strikes": 0,
+                    "outs": 1
+                    }
+                },
                 [
                     {
                     "day": "Wednesday",
@@ -604,63 +656,12 @@ class RunText(SampleBase):
                     "outs": 0
                     }
                 },
-                {
-                    "league": "mlb",
-                    "pregame": False,
-                    "inprogress": True,
-                    "final": False,
-                    "awayTeam": {
-                    "name": "OAK",
-                    "score": "1",
-                    "colors": {
-                        "main": [
-                        1,
-                        67,
-                        38
-                        ],
-                        "secondary": [
-                        239,
-                        178,
-                        30
-                        ]
-                    },
-                    "record": "2-2"
-                    },
-                    "homeTeam": {
-                    "name": "LAD",
-                    "score": "0",
-                    "colors": {
-                        "main": [
-                        250,
-                        250,
-                        250
-                        ],
-                        "secondary": [
-                        162,
-                        170,
-                        173
-                        ]
-                    },
-                    "record": "2-7"
-                    },
-                    "inning": "End 2nd",
-                    "runners": {
-                    "onFirst": False,
-                    "onSecond": False,
-                    "onThird": False
-                    },
-                    "situation": {
-                    "balls": 0,
-                    "strikes": 0,
-                    "outs": 0
-                    }
-                },
                 "",
                 "HELLLLLLLLOOOOO"
             ]
             canvas = self.matrix
-            bases =  [[54,7],[49,2],[44,7]]
-            outs = [[44,25],[50,25],[56,25]]
+            bases =  [[24,7],[19,2],[14,7]]
+            outs = [[14,25],[20,25],[26,25]]
             print('here')
             print(responseArr)
             for item in responseArr:
@@ -746,10 +747,10 @@ class RunText(SampleBase):
                             for y_offset in range(outsSize):
                                 graphics.DrawLine(canvas, outs[0][0], outs[0][1] + y_offset, outs[0][0] + outsSize, outs[0][1] + y_offset, red)
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
-                        homeTeam = graphics.DrawText(canvas, smallFont, 0, 22, homeColorSecondary, item['homeTeam']['name'])
-                        awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 12, awayColorSecondary, item['awayTeam']['score'])
-                        homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 22, homeColorSecondary, item['homeTeam']['score'])
-                        count = graphics.DrawText(canvas, smallestFont, 47, 22, yellow, situationString)
+                        homeTeam = graphics.DrawText(canvas, smallFont, 40, 12, homeColorSecondary, item['homeTeam']['name'])
+                        awayTeamScore = graphics.DrawText(canvas, smallFont, 5, 22, awayColorSecondary, item['awayTeam']['score'])
+                        homeTeamScore = graphics.DrawText(canvas, smallFont, 45, 22, homeColorSecondary, item['homeTeam']['score'])
+                        count = graphics.DrawText(canvas, smallestFont, 20, 22, yellow, situationString)
                         inning = graphics.DrawText(canvas, smallestFont, 0, 29, yellow, item['inning'])
                 elif type(item) is dict and 'league' in item.keys() and item['league'] == 'nba':
                     print('+++++++++++++')
@@ -805,6 +806,7 @@ class RunText(SampleBase):
                     canvas.SetImage(stockLogo, 2, 3)
                     stockSymbol = graphics.DrawText(canvas, middleFont, 25, 12, color, item['stockSymbol'])
                     currentPrice = graphics.DrawText(canvas, alilbiggerFont, 29, 20, color, item['currentPrice'])
+                    # https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png
                     x = 22
                     y = 25 if item['up'] else 28
                     size = 4
