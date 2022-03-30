@@ -133,7 +133,7 @@ class RunText(SampleBase):
                         pos -= 1
                         buffer = 6
                         bases =  [[2,5],[6,0],[12,5]]
-                        outs = [[1,20],[7,20],[13,20]]
+                        outs = [[1,23],[7,23],[13,23]]
                         if 'pregame' in string[0]:                            
                             offscreen_canvas.SetImage(awayLogo, pos)
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer, 10, white, awayTeamString)
@@ -227,7 +227,7 @@ class RunText(SampleBase):
                                     graphics.DrawLine(offscreen_canvas, pos + runningTotal + outs[1][0], pos + runningTotal + outs[1][1] + y_offset, pos + runningTotal + outs[1][0] + outsSize, pos + runningTotal + outs[1][1] + y_offset, red)
                                     graphics.DrawLine(offscreen_canvas, pos + runningTotal + outs[2][0], pos + runningTotal + outs[2][1] + y_offset, pos + runningTotal + outs[2][0] + outsSize, pos + runningTotal + outs[2][1] + y_offset, red)
                             situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + runningTotal, 19, yellow, countString)
-                            inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + runningTotal - 5, 20, yellow, inningString)
+                            inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + runningTotal - 5, 29, yellow, inningString)
                             runningTotal = runningTotal + inning + 5 + buffer        
                             offscreen_canvas.SetImage(homeLogo, pos + runningTotal)
                             runningTotal = runningTotal + homeLogo.width
