@@ -31,6 +31,8 @@ class RunText(SampleBase):
             font.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/texgyre-27.bdf")
             smallestFont = graphics.Font()
             smallestFont.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/4x6.bdf")
+            alilbiggerFont = graphics.Font()
+            alilbiggerFont.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/5x7.bdf")
             smallFont = graphics.Font()
             smallFont.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/6x13.bdf")
             middleFont = graphics.Font()
@@ -822,7 +824,7 @@ class RunText(SampleBase):
                     canvas.SetImage(thunderstormImage, 0)
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 31, blue, item['condition'])
                     currentTemp = graphics.DrawText(canvas, middleFont, 34, 13, blue, item['temp'])
-                    highLow = graphics.DrawText(canvas, smallestFont, 27, 20, blue, item['highLow'])
+                    highLow = graphics.DrawText(canvas, alilbiggerFont, 22, 20, blue, item['highLow'])
                 elif type(item) is list and 'condition' in item[0].values():
                     runningX = 0
                     runningY = 10
