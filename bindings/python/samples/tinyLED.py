@@ -57,8 +57,8 @@ class RunText(SampleBase):
                     if item['pregame'] == True:    
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 24, homeColorSecondary, item['homeTeam']['name'])
-                        finalDetail = graphics.DrawText(canvas, smallestFont, 40, 20, yellow, item['startTime'])
-                        winningPitcher = graphics.DrawText(canvas, smallestFont, 40, 31, green, item['odds'])
+                        finalDetail = graphics.DrawText(canvas, middleFont, 30, 20, yellow, item['startTime'])
+                        winningPitcher = graphics.DrawText(canvas, middleFont, 30, 31, green, item['odds'])
                     if item['final'] == True:    
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 24, homeColorSecondary, item['homeTeam']['name'])
