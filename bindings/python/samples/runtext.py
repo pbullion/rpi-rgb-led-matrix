@@ -130,8 +130,8 @@ class RunText(SampleBase):
                         versusString = ' at '
                         pos -= 1
                         buffer = 6
-                        bases =  [[33,5],[28,0],[23,5]]
-                        outs = [[23,20],[29,20],[35,20]]
+                        bases =  [[0,5],[5,0],[10,5]]
+                        outs = [[0,29],[6,29],[12,29]]
                         if 'pregame' in string[0]:                            
                             offscreen_canvas.SetImage(awayLogo, pos)
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer, 10, white, awayTeamString)
@@ -226,7 +226,7 @@ class RunText(SampleBase):
                                     graphics.DrawLine(offscreen_canvas, pos + runningTotal + outs[0][0], pos + runningTotal + outs[0][1] + y_offset, pos + runningTotal + outs[0][0] + outsSize, pos + runningTotal + outs[0][1] + y_offset, red)
                                     graphics.DrawLine(offscreen_canvas, pos + runningTotal + outs[1][0], pos + runningTotal + outs[1][1] + y_offset, pos + runningTotal + outs[1][0] + outsSize, pos + runningTotal + outs[1][1] + y_offset, red)
                                     graphics.DrawLine(offscreen_canvas, pos + runningTotal + outs[2][0], pos + runningTotal + outs[2][1] + y_offset, pos + runningTotal + outs[2][0] + outsSize, pos + runningTotal + outs[2][1] + y_offset, red)
-                            # situation = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 10, yellow, situationString)
+                            situation = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 19, yellow, situationString)
                             # runnerSituation = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 25, yellow, runnerSituationString)
                             runningTotal = runningTotal + 30                    
                             offscreen_canvas.SetImage(homeLogo, pos + runningTotal)
