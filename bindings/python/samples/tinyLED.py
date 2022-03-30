@@ -808,14 +808,14 @@ class RunText(SampleBase):
                     size = 4
                     for offset in range(size):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
-                    percentChange = graphics.DrawText(canvas, smallFont, 32, 26, color, item['percentChange'])
+                    percentChange = graphics.DrawText(canvas, smallFont, 29, 29, color, item['percentChange'])
                 elif type(item) is dict and 'condition' in item.keys() :
                     locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
                     weatherImage = Image.open(locationString).convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     canvas.SetImage(weatherImage, 0)
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 31, blue, item['condition'])
                     currentTemp = graphics.DrawText(canvas, middleFont, 34, 13, blue, item['temp'])
-                    highLow = graphics.DrawText(canvas, middleFont, 34, 20, blue, item['highLow'])
+                    highLow = graphics.DrawText(canvas, smallFont, 34, 20, blue, item['highLow'])
                 elif type(item) is list and 'condition' in item[0].values():
                     runningX = 0
                     runningY = 10
