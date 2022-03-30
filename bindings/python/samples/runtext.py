@@ -173,7 +173,7 @@ class RunText(SampleBase):
                             offscreen_canvas.SetImage(awayLogo, pos)
                             runningTotal = runningTotal + awayLogo.width + buffer
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 10, awayColor, awayTeamString)
-                            runningTotal = runningTotal + awayTeam + buffer
+                            runningTotal = runningTotal + awayTeam + buffer + buffer
                             awayCentered = awayTeam / 3
                             awayTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningTotal - awayTeam - buffer + awayCentered, 31, awayColor, awayTeamStatusString)
                             baseSize = 6
