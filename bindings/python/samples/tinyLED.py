@@ -128,7 +128,7 @@ class RunText(SampleBase):
                         homeTeam = graphics.DrawText(canvas, smallFont, 0, 22, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 12, awayColorSecondary, item['awayTeam']['score'])
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 22, homeColorSecondary, item['homeTeam']['score'])
-                        count = graphics.DrawText(canvas, smallestFont, 48, 22, yellow, situationString)
+                        count = graphics.DrawText(canvas, smallestFont, 47, 22, yellow, situationString)
                         inning = graphics.DrawText(canvas, smallestFont, 0, 29, yellow, item['inning'])
                 elif type(item) is dict and 'league' in item.keys() and item['league'] == 'nba':
                     print('+++++++++++++')
@@ -181,15 +181,15 @@ class RunText(SampleBase):
                     color = green if item['up'] else red
                     direction = 1 if item['up'] else -1
                     stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((16,16), Image.ANTIALIAS)
-                    canvas.SetImage(stockLogo, 5, 20)
-                    stockSymbol = graphics.DrawText(canvas, smallFont, 39, 2, color, item['stockSymbol'])
-                    currentPrice = graphics.DrawText(canvas, smallestFont, 39, 25, color, item['currentPrice'])
+                    canvas.SetImage(stockLogo, 5, 8)
+                    stockSymbol = graphics.DrawText(canvas, smallFont, 30, 8, color, item['stockSymbol'])
+                    currentPrice = graphics.DrawText(canvas, smallestFont, 30, 19, color, item['currentPrice'])
                     x = 25
                     y = 35
                     size = 6
                     for offset in range(size):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
-                    percentChange = graphics.DrawText(canvas, smallestFont, 39, 28, color, item['percentChange'])
+                    percentChange = graphics.DrawText(canvas, smallestFont, 30, 26, color, item['percentChange'])
                 elif type(item) is dict and 'condition' in item.keys() :
                     locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
                     weatherImage = Image.open(locationString).convert('RGB').resize((32, 32), Image.ANTIALIAS)
