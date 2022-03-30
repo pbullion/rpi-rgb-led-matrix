@@ -660,8 +660,8 @@ class RunText(SampleBase):
                 "HELLLLLLLLOOOOO"
             ]
             canvas = self.matrix
-            bases =  [[30,5],[25,0],[20,5]]
-            outs = [[17,18],[23,18],[29,18]]
+            bases =  [[32,5],[27,0],[22,5]]
+            outs = [[21,18],[27,18],[33,18]]
             print('here')
             print(responseArr)
             for item in responseArr:
@@ -748,7 +748,7 @@ class RunText(SampleBase):
                                 graphics.DrawLine(canvas, outs[0][0], outs[0][1] + y_offset, outs[0][0] + outsSize, outs[0][1] + y_offset, red)
                         awayTeam = graphics.DrawText(canvas, smallFont, 0, 10, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 45, 10, homeColorSecondary, item['homeTeam']['name'])
-                        awayTeamScore = graphics.DrawText(canvas, smallFont, 10, 20, awayColorSecondary, item['awayTeam']['score'])
+                        awayTeamScore = graphics.DrawText(canvas, smallFont, 8, 20, awayColorSecondary, item['awayTeam']['score'])
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 50, 20, homeColorSecondary, item['homeTeam']['score'])
                         count = graphics.DrawText(canvas, smallestFont, 20, 19, yellow, situationString)
                         inning = graphics.DrawText(canvas, smallestFont, 0, 31, yellow, item['inning'])
