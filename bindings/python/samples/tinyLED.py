@@ -815,7 +815,7 @@ class RunText(SampleBase):
                     canvas.SetImage(weatherImage, 0)
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 31, blue, item['condition'])
                     currentTemp = graphics.DrawText(canvas, middleFont, 34, 13, blue, item['temp'])
-                    highLow = graphics.DrawText(canvas, smallFont, 34, 20, blue, item['highLow'])
+                    highLow = graphics.DrawText(canvas, smallFont, 23, 20, blue, item['highLow'])
                 elif type(item) is list and 'condition' in item[0].values():
                     runningX = 0
                     runningY = 10
