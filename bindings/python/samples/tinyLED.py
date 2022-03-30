@@ -660,8 +660,8 @@ class RunText(SampleBase):
                 "HELLLLLLLLOOOOO"
             ]
             canvas = self.matrix
-            bases =  [[29,5],[24,0],[19,5]]
-            outs = [[14,18],[20,18],[26,18]]
+            bases =  [[30,5],[25,0],[20,5]]
+            outs = [[17,18],[23,18],[29,18]]
             print('here')
             print(responseArr)
             for item in responseArr:
@@ -750,8 +750,8 @@ class RunText(SampleBase):
                         homeTeam = graphics.DrawText(canvas, smallFont, 45, 10, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, smallFont, 10, 20, awayColorSecondary, item['awayTeam']['score'])
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 50, 20, homeColorSecondary, item['homeTeam']['score'])
-                        count = graphics.DrawText(canvas, smallestFont, 20, 17, yellow, situationString)
-                        inning = graphics.DrawText(canvas, smallestFont, 0, 29, yellow, item['inning'])
+                        count = graphics.DrawText(canvas, smallestFont, 20, 19, yellow, situationString)
+                        inning = graphics.DrawText(canvas, smallestFont, 0, 31, yellow, item['inning'])
                 elif type(item) is dict and 'league' in item.keys() and item['league'] == 'nba':
                     print('+++++++++++++')
                     print(item)
