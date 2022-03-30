@@ -661,7 +661,7 @@ class RunText(SampleBase):
             ]
             canvas = self.matrix
             bases =  [[33,5],[28,0],[23,5]]
-            outs = [[24,20],[30,20],[36,20]]
+            outs = [[23,20],[29,20],[35,20]]
             print('here')
             print(responseArr)
             for item in responseArr:
