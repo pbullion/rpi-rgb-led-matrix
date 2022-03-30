@@ -180,16 +180,16 @@ class RunText(SampleBase):
                 elif type(item) is dict and 'stockSymbol' in item.keys() :
                     color = green if item['up'] else red
                     direction = 1 if item['up'] else -1
-                    stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((24,24), Image.ANTIALIAS)
+                    stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((20,20), Image.ANTIALIAS)
                     canvas.SetImage(stockLogo, 2, 3)
-                    stockSymbol = graphics.DrawText(canvas, middleFont, 27, 2, color, item['stockSymbol'])
-                    currentPrice = graphics.DrawText(canvas, smallFont, 27, 19, color, item['currentPrice'])
+                    stockSymbol = graphics.DrawText(canvas, middleFont, 25, 2, color, item['stockSymbol'])
+                    currentPrice = graphics.DrawText(canvas, smallestFont, 25, 19, color, item['currentPrice'])
                     x = 25
                     y = 26
-                    size = 3
+                    size = 4
                     for offset in range(size):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
-                    percentChange = graphics.DrawText(canvas, smallFont, 30, 26, color, item['percentChange'])
+                    percentChange = graphics.DrawText(canvas, smallestFont, 30, 26, color, item['percentChange'])
                 elif type(item) is dict and 'condition' in item.keys() :
                     locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
                     weatherImage = Image.open(locationString).convert('RGB').resize((32, 32), Image.ANTIALIAS)
