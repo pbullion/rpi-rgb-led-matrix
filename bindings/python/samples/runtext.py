@@ -153,6 +153,7 @@ class RunText(SampleBase):
                             pitcherNameString = string[17]
                             batterNameString = string[19]
                             situationString = string[20]
+                            outsString = string[21]
                             if int(awayTeamStatusString) < int(homeTeamStatusString):
                                 homeColor = green
                                 awayColor = red
@@ -213,14 +214,14 @@ class RunText(SampleBase):
                                 for offset in range(1, half + 1):
                                     graphics.DrawLine(offscreen_canvas, runningTotal + x + half - offset, y + size - offset, runningTotal + x + half + offset, y + size - offset, yellow)
                                     graphics.DrawLine(offscreen_canvas, runningTotal + x + half - offset, y + offset, runningTotal + x + half + offset, y + offset, yellow)
-                            if item['situation']['outs'] == 1:
+                            if outsString == 1:
                                 for y_offset in range(outsSize):
                                     graphics.DrawLine(offscreen_canvas, runningTotal + outs[0][0], runningTotal + outs[0][1] + y_offset, runningTotal + outs[0][0] + outsSize, runningTotal + outs[0][1] + y_offset, red)
-                            elif item['situation']['outs'] == 2:
+                            elif outsString == 2:
                                 for y_offset in range(outsSize):
                                     graphics.DrawLine(offscreen_canvas, runningTotal + outs[0][0], runningTotal + outs[0][1] + y_offset, runningTotal + outs[0][0] + outsSize, runningTotal + outs[0][1] + y_offset, red)
                                     graphics.DrawLine(offscreen_canvas, runningTotal + outs[1][0], runningTotal + outs[1][1] + y_offset, runningTotal + outs[1][0] + outsSize, runningTotal + outs[1][1] + y_offset, red)
-                            elif item['situation']['outs'] == 3:
+                            elif outsString == 3:
                                 for y_offset in range(outsSize):
                                     graphics.DrawLine(offscreen_canvas, runningTotal + outs[0][0], runningTotal + outs[0][1] + y_offset, runningTotal + outs[0][0] + outsSize, runningTotal + outs[0][1] + y_offset, red)
                                     graphics.DrawLine(offscreen_canvas, runningTotal + outs[1][0], runningTotal + outs[1][1] + y_offset, runningTotal + outs[1][0] + outsSize, runningTotal + outs[1][1] + y_offset, red)
