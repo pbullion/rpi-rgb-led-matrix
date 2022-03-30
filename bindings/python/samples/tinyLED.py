@@ -65,7 +65,7 @@ class RunText(SampleBase):
                         awayTeam = graphics.DrawText(canvas, smallFont, 2, 10, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 45, 10, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, middleFont, 5, 22, awayColorSecondary, item['awayTeam']['score'])
-                        homeTeamScore = graphics.DrawText(canvas, middleFont, 48, 22, homeColorSecondary, item['homeTeam']['score'])
+                        homeTeamScore = graphics.DrawText(canvas, middleFont, 48 if item['homeTeam']['score'] < 10 else 45, 22, homeColorSecondary, item['homeTeam']['score'])
                         finalDetail = graphics.DrawText(canvas, middleFont, 28, 18, yellow, 'F')
                         winningPitcher = graphics.DrawText(canvas, smallestFont, 0, 31, green, item['winningPitcher'])
                     elif item['inprogress'] == True: 
@@ -123,7 +123,7 @@ class RunText(SampleBase):
                         awayTeam = graphics.DrawText(canvas, smallFont, 2, 10, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 45, 10, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, middleFont, 5, 22, awayColorSecondary, item['awayTeam']['score'])
-                        homeTeamScore = graphics.DrawText(canvas, middleFont, 48, 22, homeColorSecondary, item['homeTeam']['score'])
+                        homeTeamScore = graphics.DrawText(canvas, middleFont, 48 if item['homeTeam']['score'] < 10 else 45, 22, homeColorSecondary, item['homeTeam']['score'])
                         count = graphics.DrawText(canvas, smallestFont, 26, 19, yellow, situationString)
                         inning = graphics.DrawText(canvas, smallestFont, 18, 31, yellow, item['inning'])
                 elif type(item) is dict and 'league' in item.keys() and item['league'] == 'nba':
