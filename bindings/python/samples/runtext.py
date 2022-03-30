@@ -189,7 +189,7 @@ class RunText(SampleBase):
                                 graphics.DrawLine(offscreen_canvas, runningTotal + out[0], out[1], runningTotal + out[0], out[1] + outsSize, red)
                                 graphics.DrawLine(offscreen_canvas, runningTotal + out[0] + outsSize, out[1] + outsSize, runningTotal + out[0], out[1] + outsSize, red)
                                 graphics.DrawLine(offscreen_canvas, runningTotal + out[0] + outsSize, out[1] + outsSize, runningTotal + out[0] + outsSize, out[1], red)
-                            if item['runners']['onFirst'] == True:
+                            if '1st' in runnerSituationString or if 'Bases Loaded' in runnerSituationString:
                                 x = bases[0][0]
                                 y = bases[0][1]
                                 size = 6
@@ -197,7 +197,7 @@ class RunText(SampleBase):
                                 for offset in range(1, half + 1):
                                     graphics.DrawLine(offscreen_canvas, runningTotal + x + half - offset, y + size - offset, runningTotal + x + half + offset, y + size - offset, yellow)
                                     graphics.DrawLine(offscreen_canvas, runningTotal + x + half - offset, y + offset, runningTotal + x + half + offset, y + offset, yellow)
-                            elif item['runners']['onSecond'] == True:
+                            if '2nd' in runnerSituationString or if 'Bases Loaded' in runnerSituationString:
                                 x = bases[1][0]
                                 y = bases[1][1]
                                 size = 6
@@ -205,7 +205,7 @@ class RunText(SampleBase):
                                 for offset in range(1, half + 1):
                                     graphics.DrawLine(offscreen_canvas, runningTotal + x + half - offset, y + size - offset, runningTotal + x + half + offset, y + size - offset, yellow)
                                     graphics.DrawLine(offscreen_canvas, runningTotal + x + half - offset, y + offset, runningTotal + x + half + offset, y + offset, yellow)
-                            elif item['runners']['onThird'] == True:
+                            if '3rd' in runnerSituationString or if 'Bases Loaded' in runnerSituationString:
                                 x = bases[2][0]
                                 y = bases[2][1]
                                 size = 6
