@@ -572,7 +572,7 @@ class RunText(SampleBase):
                     "runners": {
                     "onFirst": False,
                     "onSecond": False,
-                    "onThird": false
+                    "onThird": False
                     },
                     "situation": {
                     "balls": 0,
@@ -623,7 +623,7 @@ class RunText(SampleBase):
                     "runners": {
                     "onFirst": False,
                     "onSecond": False,
-                    "onThird": false
+                    "onThird": False
                     },
                     "situation": {
                     "balls": 0,
