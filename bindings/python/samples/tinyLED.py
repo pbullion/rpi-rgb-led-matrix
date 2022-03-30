@@ -841,7 +841,7 @@ class RunText(SampleBase):
                         # locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(day['icon'])
                         # weatherImage = Image.open(locationString).convert('RGB').resize((8, 8), Image.ANTIALIAS)
                         dayText = graphics.DrawText(canvas, smallestFont, runningX, 10, blue, day['day'])
-                        canvas.SetImage(weatherImage, runningX, 15)
+                        # canvas.SetImage(weatherImage, runningX, 15)
                         weatherConditionText = graphics.DrawText(canvas, smallestFont, runningX, 30, blue, day['condition'])
                         currentTemp = graphics.DrawText(canvas, smallFont, runningX, 36, blue, day['temp'])
                         highLow = graphics.DrawText(canvas, smallestFont, runningX, 40, blue, day['highLow'])
