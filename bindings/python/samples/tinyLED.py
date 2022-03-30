@@ -842,9 +842,9 @@ class RunText(SampleBase):
                         # weatherImage = Image.open(locationString).convert('RGB').resize((8, 8), Image.ANTIALIAS)
                         # canvas.SetImage(weatherImage, runningX, 15)
                         dayText = graphics.DrawText(canvas, smallFont, 5, 10, green, day['day'])
-                        weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, 0, 17, blue, day['condition'])
-                        highLow = graphics.DrawText(canvas, alilbiggerFont, 0, 27, blue, day['highLow'])
-                        currentTemp = graphics.DrawText(canvas, alilbiggerFont, 0, 36, blue, 'Rain Chance: {}'.format(day['rainPercent']))
+                        weatherConditionText = graphics.DrawText(canvas, smallFont, 0, 17, blue, day['condition'])
+                        highLow = graphics.DrawText(canvas, alilbiggerFont, 0, 25, blue, day['highLow'])
+                        currentTemp = graphics.DrawText(canvas, alilbiggerFont, 0, 32, blue, 'Rain Chance: {}'.format(day['rainPercent']))
                         runningX = runningX + 20
                         time.sleep(7)
                         canvas.Clear()
