@@ -174,7 +174,7 @@ class RunText(SampleBase):
                             runningTotal = runningTotal + awayTeam + buffer
                             awayCentered = awayTeam / 3
                             awayTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningTotal - awayTeam - buffer + awayCentered, 31, awayColor, awayTeamStatusString)
-                            runningTotal = runningTotal + awayTeamStatus
+                            # runningTotal = runningTotal + awayTeamStatus
 ####################################################
                             baseSize = 6
                             outsSize = 4
@@ -228,7 +228,7 @@ class RunText(SampleBase):
                                     graphics.DrawLine(offscreen_canvas, pos + runningTotal + outs[2][0], pos + runningTotal + outs[2][1] + y_offset, pos + runningTotal + outs[2][0] + outsSize, pos + runningTotal + outs[2][1] + y_offset, red)
                             # situation = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 10, yellow, situationString)
                             # runnerSituation = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 25, yellow, runnerSituationString)
-                            # runningTotal = runningTotal + situation + buffer                    
+                            runningTotal = runningTotal + 30                    
                             offscreen_canvas.SetImage(homeLogo, pos + runningTotal)
                             runningTotal = runningTotal + homeLogo.width
                             homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 10, homeColor, homeTeamString)
