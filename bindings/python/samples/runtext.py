@@ -132,7 +132,7 @@ class RunText(SampleBase):
                         versusString = ' at '
                         pos -= 1
                         buffer = 6
-                        bases =  [[2,5],[6,0],[12,5]]
+                        bases =  [[2,5],[6,0],[10,5]]
                         outs = [[3,20],[9,20],[15,20]]
                         if 'pregame' in string[0]:                            
                             offscreen_canvas.SetImage(awayLogo, pos)
