@@ -87,8 +87,8 @@ class RunText(SampleBase):
                     "onThird": False
                     },
                     "situation": {
-                    "balls": 0,
-                    "strikes": 0,
+                    "balls": 3,
+                    "strikes": 1,
                     "outs": 1
                     }
                 },
@@ -746,11 +746,11 @@ class RunText(SampleBase):
                             y = outs[2][1]
                             for y_offset in range(outsSize):
                                 graphics.DrawLine(canvas, outs[0][0], outs[0][1] + y_offset, outs[0][0] + outsSize, outs[0][1] + y_offset, red)
-                        awayTeam = graphics.DrawText(canvas, smallFont, 0, 12, awayColorSecondary, item['awayTeam']['name'])
-                        homeTeam = graphics.DrawText(canvas, smallFont, 45, 12, homeColorSecondary, item['homeTeam']['name'])
-                        awayTeamScore = graphics.DrawText(canvas, smallFont, 10, 22, awayColorSecondary, item['awayTeam']['score'])
-                        homeTeamScore = graphics.DrawText(canvas, smallFont, 45, 22, homeColorSecondary, item['homeTeam']['score'])
-                        count = graphics.DrawText(canvas, smallestFont, 20, 22, yellow, situationString)
+                        awayTeam = graphics.DrawText(canvas, smallFont, 0, 10, awayColorSecondary, item['awayTeam']['name'])
+                        homeTeam = graphics.DrawText(canvas, smallFont, 45, 10, homeColorSecondary, item['homeTeam']['name'])
+                        awayTeamScore = graphics.DrawText(canvas, smallFont, 10, 20, awayColorSecondary, item['awayTeam']['score'])
+                        homeTeamScore = graphics.DrawText(canvas, smallFont, 50, 20, homeColorSecondary, item['homeTeam']['score'])
+                        count = graphics.DrawText(canvas, smallestFont, 20, 17, yellow, situationString)
                         inning = graphics.DrawText(canvas, smallestFont, 0, 29, yellow, item['inning'])
                 elif type(item) is dict and 'league' in item.keys() and item['league'] == 'nba':
                     print('+++++++++++++')
