@@ -833,7 +833,7 @@ class RunText(SampleBase):
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 31, blue, item['condition'])
                     currentTemp = graphics.DrawText(canvas, middleFont, 32, 13, blue, item['temp'])
                     highLow = graphics.DrawText(canvas, alilbiggerFont, 26, 22, blue, item['highLow'])
-                elif isinstance(item, list) and 'condition' in item[0].values():
+                elif isinstance(item, list) and 'condition' in item[0].keys():
                     runningX = 0
                     runningY = 10
                     for day in item:
