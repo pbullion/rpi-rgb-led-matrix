@@ -842,9 +842,9 @@ class RunText(SampleBase):
                         # weatherImage = Image.open(locationString).convert('RGB').resize((8, 8), Image.ANTIALIAS)
                         dayText = graphics.DrawText(canvas, smallestFont, runningX, 10, blue, day['day'])
                         # canvas.SetImage(weatherImage, runningX, 15)
-                        weatherConditionText = graphics.DrawText(canvas, smallestFont, runningX, 30, blue, day['condition'])
-                        currentTemp = graphics.DrawText(canvas, smallFont, runningX, 36, blue, day['temp'])
-                        highLow = graphics.DrawText(canvas, smallestFont, runningX, 40, blue, day['highLow'])
+                        weatherConditionText = graphics.DrawText(canvas, smallestFont, runningX, 20, blue, day['condition'])
+                        highLow = graphics.DrawText(canvas, smallestFont, runningX, 22, blue, day['highLow'])
+                        currentTemp = graphics.DrawText(canvas, smallFont, runningX, 29, blue, day['rainPercent'])
                         runningX = runningX + 20
                 elif type(item) is dict and 'tourneyName' in item.keys():
                     for page in item['players']:
