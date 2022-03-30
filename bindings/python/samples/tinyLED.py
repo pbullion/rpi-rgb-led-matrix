@@ -819,7 +819,7 @@ class RunText(SampleBase):
                     stormyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
                     sunnyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
                     windyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-                    canvas.SetImage(weatherImage, 0)
+                    canvas.SetImage(thunderstormImage, 0)
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 31, blue, item['condition'])
                     currentTemp = graphics.DrawText(canvas, middleFont, 34, 13, blue, item['temp'])
                     highLow = graphics.DrawText(canvas, smallestFont, 27, 20, blue, item['highLow'])
