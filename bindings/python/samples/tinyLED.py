@@ -185,7 +185,7 @@ class RunText(SampleBase):
                     stockSymbol = graphics.DrawText(canvas, middleFont, 25, 12, color, item['stockSymbol'])
                     currentPrice = graphics.DrawText(canvas, smallestFont, 30, 19, color, item['currentPrice'])
                     x = 26
-                    y = 27 if item['up'] else 22
+                    y = 22 if item['up'] else 25
                     size = 4
                     for offset in range(size):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
@@ -196,7 +196,7 @@ class RunText(SampleBase):
                     canvas.SetImage(weatherImage, 0)
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 39, 10, blue, item['condition'])
                     currentTemp = graphics.DrawText(canvas, smallFont, 39, 20, blue, item['temp'])
-                    highLow = graphics.DrawText(canvas, smallestFont, 39, 39, blue, item['highLow'])
+                    highLow = graphics.DrawText(canvas, smallestFont, 42, 40, blue, item['highLow'])
                 elif type(item) is list and 'condition' in item[0].values():
                     runningX = 0
                     runningY = 10
