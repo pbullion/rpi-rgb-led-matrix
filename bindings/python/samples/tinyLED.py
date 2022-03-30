@@ -746,7 +746,7 @@ class RunText(SampleBase):
                             y = outs[2][1]
                             for y_offset in range(outsSize):
                                 graphics.DrawLine(canvas, outs[0][0], outs[0][1] + y_offset, outs[0][0] + outsSize, outs[0][1] + y_offset, red)
-                        awayTeam = graphics.DrawText(canvas, smallFont, 0, 10, awayColorSecondary, item['awayTeam']['name'])
+                        awayTeam = graphics.DrawText(canvas, smallFont, 2, 10, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 45, 10, homeColorSecondary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, middleFont, 4, 22, awayColorSecondary, item['awayTeam']['score'])
                         homeTeamScore = graphics.DrawText(canvas, middleFont, 48, 22, homeColorSecondary, item['homeTeam']['score'])
