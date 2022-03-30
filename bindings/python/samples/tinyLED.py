@@ -59,8 +59,8 @@ class RunText(SampleBase):
                     if item['pregame'] == True:    
                         awayTeam = graphics.DrawText(canvas, smallFont, 2, 10, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 45, 10, homeColorSecondary, item['homeTeam']['name'])
-                        finalDetail = graphics.DrawText(canvas, middleFont, 15, 20, yellow, item['startTime'])
-                        odds = graphics.DrawText(canvas, middleFont, 0, 31, green, item['odds'])
+                        finalDetail = graphics.DrawText(canvas, smallFont, 15, 20, yellow, item['startTime'])
+                        odds = graphics.DrawText(canvas, smallFont, 0, 31, green, item['odds'])
 
                     if item['final'] == True:    
                         awayTeam = graphics.DrawText(canvas, smallFont, 2, 10, awayColorSecondary, item['awayTeam']['name'])
@@ -180,7 +180,7 @@ class RunText(SampleBase):
                         homeTeamScore = graphics.DrawText(canvas, smallFont, 0 + 18 + 5, 22, homeColorSecondary, item['homeTeam']['score'])
                         quarter = graphics.DrawText(canvas, smallestFont, 43, 22, yellow, item['quarter'])
                         timeRemaining = graphics.DrawText(canvas, smallestFont, 43, 29, yellow, item['timeRemaining'])
-                elif type(item) is dict and 'stockSymbol' in item.keys() :
+                elif type(item) is dict and 'stockSymbol' in item.keys():
                     color = green if item['up'] else red
                     direction = 1 if item['up'] else -1
                     stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((20,20), Image.ANTIALIAS)
