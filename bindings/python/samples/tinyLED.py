@@ -837,8 +837,9 @@ class RunText(SampleBase):
                     runningX = 0
                     runningY = 10
                     for day in item:
-                        locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(day['icon'])
-                        weatherImage = Image.open(locationString).convert('RGB').resize((8, 8), Image.ANTIALIAS)
+                        print(day)
+                        # locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(day['icon'])
+                        # weatherImage = Image.open(locationString).convert('RGB').resize((8, 8), Image.ANTIALIAS)
                         dayText = graphics.DrawText(canvas, smallestFont, runningX, 10, blue, day['day'])
                         canvas.SetImage(weatherImage, runningX, 15)
                         weatherConditionText = graphics.DrawText(canvas, smallestFont, runningX, 30, blue, day['condition'])
