@@ -39,6 +39,28 @@ class RunText(SampleBase):
             # responseArr = json.loads(url.text)
             responseArr = [
                 {
+                    "condition": "Overcast",
+                    "icon": 122,
+                    "temp": "74°",
+                    "highLow": "68°/82°"
+                },
+                [
+                    {
+                    "day": "WED",
+                    "rainPercent": "92%",
+                    "condition": "Overcast",
+                    "icon": 302,
+                    "highLow": "67°/86°"
+                    },
+                    {
+                    "day": "THU",
+                    "rainPercent": "0%",
+                    "condition": "Overcast",
+                    "icon": 113,
+                    "highLow": "58°/87°"
+                    }
+                ],
+                {
                     "stockSymbol": "TSLA",
                     "url": "https://logo.clearbit.com/tesla.com",
                     "currentPrice": "1099.57",
@@ -631,28 +653,6 @@ class RunText(SampleBase):
                     "outs": 0
                     }
                 },
-                {
-                    "condition": "Overcast",
-                    "icon": 122,
-                    "temp": "74°",
-                    "highLow": "68°/82°"
-                },
-                [
-                    {
-                    "day": "WED",
-                    "rainPercent": "92%",
-                    "condition": "Overcast",
-                    "icon": 302,
-                    "highLow": "67°/86°"
-                    },
-                    {
-                    "day": "THU",
-                    "rainPercent": "0%",
-                    "condition": "Overcast",
-                    "icon": 113,
-                    "highLow": "58°/87°"
-                    }
-                ],
                 "",
                 "HELLLLLLLLOOOOO"
             ]
