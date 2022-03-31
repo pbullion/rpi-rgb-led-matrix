@@ -174,7 +174,7 @@ class RunText(SampleBase):
                     direction = 1 if item['up'] else -1
                     stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((20,20), Image.ANTIALIAS)
                     canvas.SetImage(stockLogo, 2, 3)
-                    stockSymbol = graphics.DrawText(canvas, middleFont, 25 if len(item['stockSymbol'] > 3 else 28), 12, color, item['stockSymbol'])
+                    stockSymbol = graphics.DrawText(canvas, middleFont, 25 if len(item['stockSymbol']) > 3 else 28, 12, color, item['stockSymbol'])
                     currentPrice = graphics.DrawText(canvas, alilbiggerFont, 29, 20, color, item['currentPrice'])
                     # see if this logo looks better
                     # https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png
