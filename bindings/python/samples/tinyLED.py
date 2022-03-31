@@ -21,6 +21,7 @@ class RunText(SampleBase):
             green = graphics.Color(0, 255, 0)
             red = graphics.Color(255, 0, 0)
             blue = graphics.Color(0, 0, 255)
+            lightblue = graphics.Color(173,216,230)
             teal = graphics.Color(0, 255, 255)
             purple = graphics.Color(102, 0, 204)
             yellow = graphics.Color(255, 255, 0)
@@ -50,8 +51,6 @@ class RunText(SampleBase):
                 running = True
                 len = 1
                 if type(item) is dict and 'league' in item.keys() and item['league'] == 'mlb':
-                    print('+++++++++++++')
-                    print(item)
                     awayColorPrimary = graphics.Color(item['awayTeam']['colors']['main'][0],item['awayTeam']['colors']['main'][1],item['awayTeam']['colors']['main'][2])
                     awayColorSecondary = graphics.Color(item['awayTeam']['colors']['secondary'][0],item['awayTeam']['colors']['secondary'][1],item['awayTeam']['colors']['secondary'][2])
                     homeColorPrimary = graphics.Color(item['homeTeam']['colors']['main'][0],item['homeTeam']['colors']['main'][1],item['homeTeam']['colors']['main'][2])
@@ -87,26 +86,23 @@ class RunText(SampleBase):
                         if item['runners']['onFirst'] == True:
                             x = bases[0][0]
                             y = bases[0][1]
-                            size = 6
-                            half = round(abs(size/2))
+                            half = round(abs(baseSize/2))
                             for offset in range(1, half + 1):
-                                graphics.DrawLine(canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
+                                graphics.DrawLine(canvas, x + half - offset, y + baseSize - offset, x + half + offset, y + baseSize - offset, yellow)
                                 graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
                         elif item['runners']['onSecond'] == True:
                             x = bases[1][0]
                             y = bases[1][1]
-                            size = 6
-                            half = round(abs(size/2))
+                            half = round(abs(baseSize/2))
                             for offset in range(1, half + 1):
-                                graphics.DrawLine(canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
+                                graphics.DrawLine(canvas, x + half - offset, y + baseSize - offset, x + half + offset, y + baseSize - offset, yellow)
                                 graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
                         elif item['runners']['onThird'] == True:
                             x = bases[2][0]
                             y = bases[2][1]
-                            size = 6
-                            half = round(abs(size/2))
+                            half = round(abs(baseSize/2))
                             for offset in range(1, half + 1):
-                                graphics.DrawLine(canvas, x + half - offset, y + size - offset, x + half + offset, y + size - offset, yellow)
+                                graphics.DrawLine(canvas, x + half - offset, y + baseSize - offset, x + half + offset, y + baseSize - offset, yellow)
                                 graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
                         if item['situation']['outs'] == 1:
                             for y_offset in range(outsSize):
@@ -178,8 +174,9 @@ class RunText(SampleBase):
                     direction = 1 if item['up'] else -1
                     stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((20,20), Image.ANTIALIAS)
                     canvas.SetImage(stockLogo, 2, 3)
-                    stockSymbol = graphics.DrawText(canvas, middleFont, 25, 12, color, item['stockSymbol'])
+                    stockSymbol = graphics.DrawText(canvas, middleFont, 25 if len(item['stockSymbol'] > 3 else 28), 12, color, item['stockSymbol'])
                     currentPrice = graphics.DrawText(canvas, alilbiggerFont, 29, 20, color, item['currentPrice'])
+                    # see if this logo looks better
                     # https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png
                     x = 22
                     y = 25 if item['up'] else 28
@@ -198,15 +195,21 @@ class RunText(SampleBase):
                     sunnyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     windyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     print(item['condition'])
-                    if 'Rain' == item['condition']:
+                    if 'Rain' in item['condition']:
                         canvas.SetImage(rainImage, 0, 2)
-                    elif 'Cloudy' == item['condition'] or 'Overcast' == item['condition']:
+                        color = blue
+                    elif 'Cloudy' in item['condition'] or 'Overcast' in item['condition']:
                         canvas.SetImage(partlyCloudyImage, 0, 2)
-                    elif 'Thunder' == item['condition']:
+                        color = lightblue
+                    elif 'Thunder' in item['condition']:
                         canvas.SetImage(thunderstormImage, 0, 2)
-                    elif 'Sun' == item['condition']:
+                        color = blue
+                    elif 'Sun' in item['condition']:
                         canvas.SetImage(sunnyImage, 0, 2)
-                    weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 31, blue, item['condition'])
+                        color = yellow
+                    weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 31, black, item['condition'])
+                    centered = 32 - (weatherConditionText / 2)
+                    weatherConditionText = graphics.DrawText(canvas, smallestFont, centered, 31, color, item['condition'])
                     currentTemp = graphics.DrawText(canvas, middleFont, 32, 13, blue, item['temp'])
                     highLow = graphics.DrawText(canvas, alilbiggerFont, 26, 22, blue, item['highLow'])
                 elif isinstance(item, list) and 'condition' in item[0].keys():
