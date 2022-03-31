@@ -194,7 +194,7 @@ class RunText(SampleBase):
                         print(team)
                         print(runningBuffer)
                         teamName = graphics.DrawText(canvas, smallestFont, 0, runningBuffer, green, team['team'])
-                        win = graphics.DrawText(canvas, smallestFont, 30, runningBuffer, green, team['win'])
+                        win = graphics.DrawText(canvas, smallestFont, 25, runningBuffer, green, team['win'])
                         loss = graphics.DrawText(canvas, smallestFont, 35, runningBuffer, green, team['loss'])
                         gamesBack = graphics.DrawText(canvas, smallestFont, 400, runningBuffer, green, team['gamesBack'])
                         runningBuffer = runningBuffer + 8
