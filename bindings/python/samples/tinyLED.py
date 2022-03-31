@@ -186,7 +186,7 @@ class RunText(SampleBase):
                     percentChange = graphics.DrawText(canvas, smallFont, 29, 31, color, item['percentChange'])
                 elif type(item) is dict and 'standings' in item.keys():
                     runningBuffer = 10
-                    team = graphics.DrawText(canvas, smallestFont, 0, 2, green, item['divsionName'])
+                    team = graphics.DrawText(canvas, smallestFont, 0, 2, green, item['divisionName'])
                     win = graphics.DrawText(canvas, smallestFont, 30, 2, green, 'W')
                     loss = graphics.DrawText(canvas, smallestFont, 35, 2, green, 'L')
                     gamesBack = graphics.DrawText(canvas, smallestFont, 400, 2, green, 'GB')
@@ -252,7 +252,7 @@ class RunText(SampleBase):
                             thru = graphics.DrawText(canvas, smallestFont, 45, runningTotal, blue, player['teeTime'])
                             runningTotal = runningTotal + 8
                 else:
-                    print('there was nothing')
+                    time = graphics.DrawText(canvas, font, 10, 5, blue, item)
                 time.sleep(4)
                 canvas.Clear()
 
