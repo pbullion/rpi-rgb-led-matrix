@@ -191,10 +191,10 @@ class RunText(SampleBase):
                     loss = graphics.DrawText(canvas, smallestFont, 35, 2, green, 'L')
                     gamesBack = graphics.DrawText(canvas, smallestFont, 400, 2, green, 'GB')
                     for team in item['standings']:
-                        team = graphics.DrawText(canvas, smallestFont, 0, runningBuffer, green, item['team'])
-                        win = graphics.DrawText(canvas, smallestFont, 30, runningBuffer, green, item['win'])
-                        loss = graphics.DrawText(canvas, smallestFont, 35, runningBuffer, green, item['loss'])
-                        gamesBack = graphics.DrawText(canvas, smallestFont, 400, runningBuffer, green, item['gamesBack'])
+                        teamName = graphics.DrawText(canvas, smallestFont, 0, runningBuffer, green, team['team'])
+                        win = graphics.DrawText(canvas, smallestFont, 30, runningBuffer, green, team['win'])
+                        loss = graphics.DrawText(canvas, smallestFont, 35, runningBuffer, green, team['loss'])
+                        gamesBack = graphics.DrawText(canvas, smallestFont, 400, runningBuffer, green, team['gamesBack'])
                         runningBuffer = runningBuffer + 8
                 elif type(item) is dict and 'condition' in item.keys() :
                     # locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
@@ -252,7 +252,7 @@ class RunText(SampleBase):
                             thru = graphics.DrawText(canvas, smallestFont, 45, runningTotal, blue, player['teeTime'])
                             runningTotal = runningTotal + 8
                 else:
-                    currentTime = graphics.DrawText(canvas, font, 10, 5, blue, item)
+                    print('there was nothing')
                 time.sleep(4)
                 canvas.Clear()
 
