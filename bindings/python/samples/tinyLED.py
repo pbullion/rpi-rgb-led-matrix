@@ -184,6 +184,18 @@ class RunText(SampleBase):
                     for offset in range(size):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
                     percentChange = graphics.DrawText(canvas, smallFont, 29, 31, color, item['percentChange'])
+                elif type(item) is dict and 'standings' in item.keys():
+                    runningBuffer = 10
+                    team = graphics.DrawText(canvas, smallestFont, 0, 2, green, item['divsionName'])
+                    win = graphics.DrawText(canvas, smallestFont, 30, 2, green, 'W')
+                    loss = graphics.DrawText(canvas, smallestFont, 35, 2, green, 'L')
+                    gamesBack = graphics.DrawText(canvas, smallestFont, 400, 2, green, 'GB')
+                    for team in item['standings']:
+                        team = graphics.DrawText(canvas, smallestFont, 0, runningBuffer, green, item['team'])
+                        win = graphics.DrawText(canvas, smallestFont, 30, runningBuffer, green, item['win'])
+                        loss = graphics.DrawText(canvas, smallestFont, 35, runningBuffer, green, item['loss'])
+                        gamesBack = graphics.DrawText(canvas, smallestFont, 400, runningBuffer, green, item['gamesBack'])
+                        runningBuffer = runningBuffer + 8
                 elif type(item) is dict and 'condition' in item.keys() :
                     # locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
                     # weatherImage = Image.open(locationString).convert('RGB').resize((22, 22), Image.ANTIALIAS)
