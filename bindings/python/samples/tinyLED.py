@@ -55,7 +55,7 @@ class RunText(SampleBase):
                     awayColorSecondary = graphics.Color(item['awayTeam']['colors']['secondary'][0],item['awayTeam']['colors']['secondary'][1],item['awayTeam']['colors']['secondary'][2])
                     homeColorPrimary = graphics.Color(item['homeTeam']['colors']['main'][0],item['homeTeam']['colors']['main'][1],item['homeTeam']['colors']['main'][2])
                     homeColorSecondary = graphics.Color(item['homeTeam']['colors']['secondary'][0],item['homeTeam']['colors']['secondary'][1],item['homeTeam']['colors']['secondary'][2])
-                    if item['pregame'] == True:    
+                    if item['pregame'] == True:
                         awayTeam = graphics.DrawText(canvas, smallFont, 2, 10, awayColorSecondary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 45, 10, homeColorSecondary, item['homeTeam']['name'])
                         startTime = graphics.DrawText(canvas, smallestFont, 15, 20, yellow, item['startTime'])
@@ -240,13 +240,13 @@ class RunText(SampleBase):
                     if 'Rain' in item['condition'] or 'rain' in item['condition']:
                         canvas.SetImage(rainImage, 0, 2)
                         color = blue
-                    elif 'Cloudy' in item['condition'] or 'Overcast' in item['condition']:
+                    elif 'Cloudy' in item['condition'] or 'Overcast' in item['condition'] or 'cloudy' in item['condition'] or 'overcast' in item['condition']:
                         canvas.SetImage(partlyCloudyImage, 0, 2)
                         color = lightblue
-                    elif 'Thunder' in item['condition']:
+                    elif 'Thunder' in item['condition'] or 'thunder' in item['condition']:
                         canvas.SetImage(thunderstormImage, 0, 2)
                         color = blue
-                    elif 'Sun' in item['condition']:
+                    elif 'Sun' in item['condition'] or 'sun' in item['condition']:
                         canvas.SetImage(sunnyImage, 0, 2)
                         color = yellow
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 31, black, item['condition'])
@@ -283,7 +283,7 @@ class RunText(SampleBase):
                             thru = graphics.DrawText(canvas, smallestFont, 45, runningTotal, blue, player['teeTime'])
                             runningTotal = runningTotal + 8
                 else:
-                    currentTIme = graphics.DrawText(canvas, font, 0, 20, blue, item)
+                    currentTIme = graphics.DrawText(canvas, font, 0, 22, blue, item)
                 time.sleep(4)
                 canvas.Clear()
 
