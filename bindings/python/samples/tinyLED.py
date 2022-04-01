@@ -199,7 +199,7 @@ class RunText(SampleBase):
                         loss = graphics.DrawText(canvas, smallestFont, 35, runningBuffer, green, str(team['loss']))
                         gamesBack = graphics.DrawText(canvas, smallestFont, 400, runningBuffer, green, str(team['gamesBack']))
                         runningBuffer = runningBuffer + 8
-                elif type(item) is dict and 'condition' in item.keys() :
+                elif type(item) is dict and 'temp' in item.keys():
                     # locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
                     # weatherImage = Image.open(locationString).convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     partlyCloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
@@ -227,6 +227,33 @@ class RunText(SampleBase):
                     centered = 32 - (weatherConditionText / 2)
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, centered, 31, blue, item['condition'])
                     currentTemp = graphics.DrawText(canvas, middleFont, 32, 13, blue, item['temp'])
+                    highLow = graphics.DrawText(canvas, alilbiggerFont, 26, 22, blue, item['highLow'])
+                elif type(item) is dict and 'condition' in item.keys() :
+                    partlyCloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                    thunderstormImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                    cloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                    rainImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-heavy-rain-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                    stormyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                    sunnyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                    windyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                    print(item['condition'])
+                    color = blue
+                    if 'Rain' in item['condition']:
+                        canvas.SetImage(rainImage, 0, 2)
+                        color = blue
+                    elif 'Cloudy' in item['condition'] or 'Overcast' in item['condition']:
+                        canvas.SetImage(partlyCloudyImage, 0, 2)
+                        color = lightblue
+                    elif 'Thunder' in item['condition']:
+                        canvas.SetImage(thunderstormImage, 0, 2)
+                        color = blue
+                    elif 'Sun' in item['condition']:
+                        canvas.SetImage(sunnyImage, 0, 2)
+                        color = yellow
+                    weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 31, black, item['condition'])
+                    centered = 32 - (weatherConditionText / 2)
+                    weatherConditionText = graphics.DrawText(canvas, smallestFont, centered, 31, blue, item['condition'])
+                    currentTemp = graphics.DrawText(canvas, middleFont, 32, 13, blue, item['rainPercent'])
                     highLow = graphics.DrawText(canvas, alilbiggerFont, 26, 22, blue, item['highLow'])
                 elif isinstance(item, list) and 'condition' in item[0].keys():
                     runningX = 0
