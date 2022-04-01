@@ -210,6 +210,7 @@ class RunText(SampleBase):
                     sunnyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     windyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     print(item['condition'])
+                    color = blue
                     if 'Rain' in item['condition']:
                         canvas.SetImage(rainImage, 0, 2)
                         color = blue
