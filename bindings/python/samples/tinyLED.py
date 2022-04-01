@@ -255,7 +255,7 @@ class RunText(SampleBase):
                             thru = graphics.DrawText(canvas, smallestFont, 45, runningTotal, blue, player['teeTime'])
                             runningTotal = runningTotal + 8
                 else:
-                    print('there was nothing')
+                    currentTIme = graphics.DrawText(canvas, font, 0, 3, blue, item)
                 time.sleep(4)
                 canvas.Clear()
 
