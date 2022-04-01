@@ -193,10 +193,10 @@ class RunText(SampleBase):
                     for team in item['standings']:
                         print(team)
                         print(runningBuffer)
-                        teamName = graphics.DrawText(canvas, smallestFont, 0, 10, green, team['team'])
-                        win = graphics.DrawText(canvas, smallestFont, 25, 10, green, team['win'])
-                        loss = graphics.DrawText(canvas, smallestFont, 35, 10, green, team['loss'])
-                        gamesBack = graphics.DrawText(canvas, smallestFont, 400, 10, green, team['gamesBack'])
+                        teamName = graphics.DrawText(canvas, smallestFont, 0, runningBuffer, green, str(team['team']))
+                        win = graphics.DrawText(canvas, smallestFont, 25, runningBuffer, green, str(team['win']))
+                        loss = graphics.DrawText(canvas, smallestFont, 35, runningBuffer, green, str(team['loss']))
+                        gamesBack = graphics.DrawText(canvas, smallestFont, 400, runningBuffer, green, str(team['gamesBack']))
                         runningBuffer = runningBuffer + 8
                 elif type(item) is dict and 'condition' in item.keys() :
                     # locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
