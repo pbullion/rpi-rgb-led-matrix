@@ -186,11 +186,11 @@ class RunText(SampleBase):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
                     percentChange = graphics.DrawText(canvas, smallFont, 29, 31, color, item['percentChange'])
                 elif type(item) is dict and 'standings' in item.keys():
-                    runningBuffer = 10
-                    team = graphics.DrawText(canvas, smallestFont, 0, 2, green, item['divisionName'])
-                    win = graphics.DrawText(canvas, smallestFont, 30, 2, green, 'W')
-                    loss = graphics.DrawText(canvas, smallestFont, 35, 2, green, 'L')
-                    gamesBack = graphics.DrawText(canvas, smallestFont, 400, 2, green, 'GB')
+                    runningBuffer = 1
+                    # team = graphics.DrawText(canvas, smallestFont, 0, 2, green, item['divisionName'])
+                    # win = graphics.DrawText(canvas, smallestFont, 30, 2, green, 'W')
+                    # loss = graphics.DrawText(canvas, smallestFont, 35, 2, green, 'L')
+                    # gamesBack = graphics.DrawText(canvas, smallestFont, 400, 2, green, 'GB')
                     for team in item['standings']:
                         print(team)
                         print(runningBuffer)
