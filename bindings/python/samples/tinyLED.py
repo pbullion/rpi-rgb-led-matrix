@@ -50,7 +50,6 @@ class RunText(SampleBase):
                 print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
                 print(item)
                 running = True
-                len = 1
                 if type(item) is dict and 'league' in item.keys() and item['league'] == 'mlb':
                     awayColorPrimary = graphics.Color(item['awayTeam']['colors']['main'][0],item['awayTeam']['colors']['main'][1],item['awayTeam']['colors']['main'][2])
                     awayColorSecondary = graphics.Color(item['awayTeam']['colors']['secondary'][0],item['awayTeam']['colors']['secondary'][1],item['awayTeam']['colors']['secondary'][2])
@@ -67,7 +66,7 @@ class RunText(SampleBase):
                         awayTeamScore = graphics.DrawText(canvas, middleFont, 5, 22, awayColorSecondary, item['awayTeam']['score'])
                         homeTeamScore = graphics.DrawText(canvas, middleFont, 48 if int(item['homeTeam']['score']) < 10 else 44, 22, homeColorSecondary, item['homeTeam']['score'])
                         finalDetail = graphics.DrawText(canvas, middleFont, 28, 18, yellow, 'F')
-                        winningPitcher = graphics.DrawText(canvas, alilbiggerFont, 0, 29, green, item['winningPitcher'])
+                        winningPitcher = graphics.DrawText(canvas, alilbiggerFont, 0, 30, green, item['winningPitcher'])
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
@@ -194,10 +193,10 @@ class RunText(SampleBase):
                     for team in item['standings']:
                         print(team)
                         print(runningBuffer)
-                        teamName = graphics.DrawText(canvas, smallestFont, 0, runningBuffer, green, str(team['team']))
-                        win = graphics.DrawText(canvas, smallestFont, 25, runningBuffer, green, str(team['win']))
-                        loss = graphics.DrawText(canvas, smallestFont, 35, runningBuffer, green, str(team['loss']))
-                        gamesBack = graphics.DrawText(canvas, smallestFont, 400, runningBuffer, green, str(team['gamesBack']))
+                        teamName = graphics.DrawText(canvas, alilbiggerFont, 0, runningBuffer, green, str(team['team']))
+                        win = graphics.DrawText(canvas, alilbiggerFont, 25, runningBuffer, green, str(team['win']))
+                        loss = graphics.DrawText(canvas, alilbiggerFont, 35, runningBuffer, green, str(team['loss']))
+                        gamesBack = graphics.DrawText(canvas, alilbiggerFont, 400, runningBuffer, green, str(team['gamesBack']))
                         runningBuffer = runningBuffer + 8
                 elif type(item) is dict and 'temp' in item.keys():
                     # locationString = '/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
@@ -284,7 +283,7 @@ class RunText(SampleBase):
                             thru = graphics.DrawText(canvas, smallestFont, 45, runningTotal, blue, player['teeTime'])
                             runningTotal = runningTotal + 8
                 else:
-                    currentTIme = graphics.DrawText(canvas, font, 0, 3, blue, item)
+                    currentTIme = graphics.DrawText(canvas, font, 0, 20, blue, item)
                 time.sleep(4)
                 canvas.Clear()
 
