@@ -238,7 +238,7 @@ class RunText(SampleBase):
                     windyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     print(item['condition'])
                     color = blue
-                    if 'Rain' in item['condition']:
+                    if 'Rain' in item['condition'] or 'rain' in item['condition']:
                         canvas.SetImage(rainImage, 0, 2)
                         color = blue
                     elif 'Cloudy' in item['condition'] or 'Overcast' in item['condition']:
@@ -253,7 +253,8 @@ class RunText(SampleBase):
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 31, black, item['condition'])
                     centered = 32 - (weatherConditionText / 2)
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, centered, 31, blue, item['condition'])
-                    currentTemp = graphics.DrawText(canvas, middleFont, 32, 13, blue, item['rainPercent'])
+                    day = graphics.DrawText(canvas, alilbiggerFont, 32, 2, blue, 'FRI')
+                    currentTemp = graphics.DrawText(canvas, alilbiggerFont, 32, 15, blue, item['rainPercent'])
                     highLow = graphics.DrawText(canvas, alilbiggerFont, 26, 22, blue, item['highLow'])
                 elif isinstance(item, list) and 'condition' in item[0].keys():
                     runningX = 0
