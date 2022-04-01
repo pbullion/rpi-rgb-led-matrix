@@ -53,8 +53,6 @@ class RunText(SampleBase):
             print(strings)
             for string in strings:
                 running = True
-                if 'Poll' in string:
-                    color = green
                 elif '#' in string:
                     color = green
                 else:
