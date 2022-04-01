@@ -54,6 +54,8 @@ class RunText(SampleBase):
             for string in strings:
                 running = True
                 color = green
+                if string == None:
+                    print('it was NONE')
                 if isinstance(string, list) and 'inprogress mlb' in string[0]:
                     awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
