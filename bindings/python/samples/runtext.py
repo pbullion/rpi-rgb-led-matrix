@@ -56,14 +56,14 @@ class RunText(SampleBase):
                 color = green
                 if string == None:
                     print('it was NONE')
-                if isinstance(string, list) and 'inprogress mlb' in string[0]:
+                elif isinstance(string, list) and 'inprogress mlb' in string[0]:
                     awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     pitcherHeadshot = string[16]
                     batterHeadshot = string[18]
                     pitcherImage = Image.open(requests.get(pitcherHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     batterImage = Image.open(requests.get(batterHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                if isinstance(string, list) and 'game' in string[0]:
+                elif isinstance(string, list) and 'game' in string[0]:
                     awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 elif isinstance(string, list) and 'http' in string[0]:
