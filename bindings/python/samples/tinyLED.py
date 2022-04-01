@@ -225,7 +225,7 @@ class RunText(SampleBase):
                         color = yellow
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 31, black, item['condition'])
                     centered = 32 - (weatherConditionText / 2)
-                    weatherConditionText = graphics.DrawText(canvas, smallestFont, centered, 31, color, item['condition'])
+                    weatherConditionText = graphics.DrawText(canvas, smallestFont, centered, 31, blue, item['condition'])
                     currentTemp = graphics.DrawText(canvas, middleFont, 32, 13, blue, item['temp'])
                     highLow = graphics.DrawText(canvas, alilbiggerFont, 26, 22, blue, item['highLow'])
                 elif isinstance(item, list) and 'condition' in item[0].keys():
