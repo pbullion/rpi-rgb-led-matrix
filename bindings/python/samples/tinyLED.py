@@ -26,6 +26,7 @@ class RunText(SampleBase):
             purple = graphics.Color(102, 0, 204)
             yellow = graphics.Color(255, 255, 0)
             white = graphics.Color(255, 255, 255)
+            black = graphics.Color(0, 0, 0)
             colors = [blue, teal, purple, yellow]
             randomNum = random.randint(0,3)
             font = graphics.Font()
