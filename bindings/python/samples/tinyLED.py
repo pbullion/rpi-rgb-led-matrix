@@ -56,15 +56,15 @@ class RunText(SampleBase):
                     homeColorPrimary = graphics.Color(item['homeTeam']['colors']['main'][0],item['homeTeam']['colors']['main'][1],item['homeTeam']['colors']['main'][2])
                     homeColorSecondary = graphics.Color(item['homeTeam']['colors']['secondary'][0],item['homeTeam']['colors']['secondary'][1],item['homeTeam']['colors']['secondary'][2])
                     if item['pregame'] == True:
-                        for x in range(10):
-                            graphics.DrawLine(canvas, 0, 0 + x, 0, 12 + x, awayColorSecondary)
+                        for xOffset in range(10):
+                            graphics.DrawLine(canvas, 0, 0 + xOffset, 15, 0 + xOffset, awayColorSecondary)
                         awayTeam = graphics.DrawText(canvas, smallFont, 2, 10, awayColorPrimary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 45, 10, homeColorPrimary, item['homeTeam']['name'])
                         startTime = graphics.DrawText(canvas, smallestFont, 15, 20, yellow, item['startTime'])
                         odds = graphics.DrawText(canvas, smallestFont, 0, 31, green, item['odds'])
                     if item['final'] == True:
-                        for x in range(10):
-                            graphics.DrawLine(canvas, 0, 0 + x, 0, 12 + x, awayColorSecondary)
+                        for xOffset in range(10):
+                            graphics.DrawLine(canvas, 0, 0 + xOffset, 15, 0 + xOffset, awayColorSecondary)
                         awayTeam = graphics.DrawText(canvas, smallFont, 2, 10, awayColorPrimary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 45, 10, homeColorPrimary, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, middleFont, 5, 22, awayColorPrimary, item['awayTeam']['score'])
@@ -72,8 +72,8 @@ class RunText(SampleBase):
                         finalDetail = graphics.DrawText(canvas, middleFont, 28, 18, yellow, 'F')
                         winningPitcher = graphics.DrawText(canvas, alilbiggerFont, 0, 30, green, item['winningPitcher'])
                     elif item['inprogress'] == True:
-                        for x in range(10):
-                            graphics.DrawLine(canvas, 0, 0 + x, 0, 12 + x, awayColorSecondary)
+                        for xOffset in range(10):
+                            graphics.DrawLine(canvas, 0, 0 + xOffset, 15, 0 + xOffset, awayColorSecondary)
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
                         outsSize = 4
