@@ -79,6 +79,7 @@ class RunText(SampleBase):
                     pitcherImage = Image.open(requests.get(pitcherHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     batterImage = Image.open(requests.get(batterHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 elif isinstance(string, list) and 'game' in string[0]:
+                    print(string)
                     print(string[23])
                     print(string[24])
                     print('https://loodibee.com/wp-content/uploads/mlb-{}-logo.png'.format(string[23]))
