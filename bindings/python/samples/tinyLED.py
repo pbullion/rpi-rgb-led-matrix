@@ -59,7 +59,7 @@ class RunText(SampleBase):
                         for xOffset in range(11):
                             graphics.DrawLine(canvas, 0, 0 + xOffset, 20, 0 + xOffset, awayColorSecondary)
                         for xOffset in range(11):
-                            graphics.DrawLine(canvas, 45, 0 + xOffset, 20, 0 + xOffset, homeColorSecondary)
+                            graphics.DrawLine(canvas, 45, 0 + xOffset, 64, 0 + xOffset, homeColorSecondary)
                         awayTeam = graphics.DrawText(canvas, smallFont, 2, 10, awayColorPrimary, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 45, 10, homeColorPrimary, item['homeTeam']['name'])
                         startTime = graphics.DrawText(canvas, smallestFont, 15, 20, yellow, item['startTime'])
@@ -68,7 +68,7 @@ class RunText(SampleBase):
                         for xOffset in range(11):
                             graphics.DrawLine(canvas, 0, 0 + xOffset, 20, 0 + xOffset, awayColorSecondary)
                         for xOffset in range(11):
-                            graphics.DrawLine(canvas, 45, 0 + xOffset, 20, 0 + xOffset, homeColorSecondary)
+                            graphics.DrawLine(canvas, 45, 0 + xOffset, 64, 0 + xOffset, homeColorSecondary)
                         awayTeam = graphics.DrawText(canvas, smallFont, 2, 10, white, item['awayTeam']['name'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 45, 10, white, item['homeTeam']['name'])
                         awayTeamScore = graphics.DrawText(canvas, middleFont, 5, 22, awayColorSecondary, item['awayTeam']['score'])
@@ -79,7 +79,7 @@ class RunText(SampleBase):
                         for xOffset in range(11):
                             graphics.DrawLine(canvas, 0, 0 + xOffset, 20, 0 + xOffset, awayColorSecondary)
                         for xOffset in range(11):
-                            graphics.DrawLine(canvas, 45, 0 + xOffset, 20, 0 + xOffset, homeColorSecondary)
+                            graphics.DrawLine(canvas, 45, 0 + xOffset, 64, 0 + xOffset, homeColorSecondary)
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
                         outsSize = 4
