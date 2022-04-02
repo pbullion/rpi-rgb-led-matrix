@@ -71,6 +71,8 @@ class RunText(SampleBase):
                     pitcherImage = Image.open(requests.get(pitcherHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     batterImage = Image.open(requests.get(batterHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 elif isinstance(string, list) and 'game' in string[0]:
+                    print(string[1])
+                    print(string[6])
                     awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 elif isinstance(string, list) and 'http' in string[0]:
