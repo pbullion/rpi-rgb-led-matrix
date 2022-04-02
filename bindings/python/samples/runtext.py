@@ -67,7 +67,7 @@ class RunText(SampleBase):
                     batterImage = Image.open(requests.get(batterHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 elif isinstance(string, list) and 'game' in string[0]:
                     awayLogo = Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                    homeLogo = Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    homeLogo = Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-houston-astros-logo.png', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     # awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     # homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 elif isinstance(string, list) and 'http' in string[0]:
