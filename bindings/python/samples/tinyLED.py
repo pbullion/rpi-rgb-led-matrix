@@ -176,8 +176,6 @@ class RunText(SampleBase):
                     canvas.SetImage(stockLogo, 2, 3)
                     stockSymbol = graphics.DrawText(canvas, middleFont, 25 if len(item['stockSymbol']) > 3 else 28, 12, color, item['stockSymbol'])
                     currentPrice = graphics.DrawText(canvas, alilbiggerFont, 29, 20, color, item['currentPrice'])
-                    # see if this logo looks better
-                    # https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png
                     x = 22
                     y = 25 if item['up'] else 28
                     size = 4

@@ -57,15 +57,19 @@ class RunText(SampleBase):
                 if string == None:
                     print('it was NONE')
                 elif isinstance(string, list) and 'inprogress mlb' in string[0]:
-                    awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                    homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    awayLogo = Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    homeLogo = Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    # awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    # homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     pitcherHeadshot = string[16]
                     batterHeadshot = string[18]
                     pitcherImage = Image.open(requests.get(pitcherHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     batterImage = Image.open(requests.get(batterHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 elif isinstance(string, list) and 'game' in string[0]:
-                    awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                    homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    awayLogo = Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    homeLogo = Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png', stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    # awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    # homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 elif isinstance(string, list) and 'http' in string[0]:
                     if '-' in string[3]:
                         color = red
