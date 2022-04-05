@@ -262,17 +262,17 @@ class RunText(SampleBase):
                                 awayColor = green
                             offscreen_canvas.SetImage(awayLogo, pos, -20)
                             versus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + buffer, 20, yellow, 'VS')
-                            offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + buffer, -20)
-                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + buffer + homeLogo.width + buffer, 12, awayColor, awayTeamString)
-                            awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + buffer + homeLogo.width + buffer + awayTeam, 12, awayColor, awayTeamStatusString)
-                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + buffer + homeLogo.width + buffer, 26, homeColor, homeTeamString)
-                            homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + buffer + homeLogo.width + buffer + homeTeam, 26, homeColor, homeTeamStatusString)
+                            offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + buffer + versus, -20)
+                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer, 12, awayColor, awayTeamString)
+                            awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer + awayTeam + buffer, 12, awayColor, awayTeamStatusString)
+                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer, 26, homeColor, homeTeamString)
+                            homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer + homeTeam + buffer, 26, homeColor, homeTeamStatusString)
                             if 'HALF' in oddsString:
-                                quarter = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + homeLogo.width + homeTeam + buffer, 12, yellow, oddsString)
+                                quarter = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + versus + homeLogo.width + homeTeam + homeTeamStatus + buffer + buffer + buffer, 12, yellow, oddsString)
                             else:
-                                quarter = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + homeLogo.width + homeTeam + buffer, 12, yellow, oddsString)
-                            status = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + homeLogo.width + homeTeam + buffer + buffer + buffer , 26, yellow, statusString)
-                            if (pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter < 0):
+                                quarter = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + versus + homeLogo.width + homeTeam + homeTeamStatus + buffer + buffer + buffer, 12, yellow, oddsString)
+                            status = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + versus + homeLogo.width + homeTeam + homeTeamStatus + buffer + buffer + buffer, 26, yellow, statusString)
+                            if (pos + awayLogo.width + buffer + buffer + versus + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + quarter < 0):
                                 running = False
                                 pos = offscreen_canvas.width
                         time.sleep(0.008)
