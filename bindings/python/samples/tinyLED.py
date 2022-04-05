@@ -84,7 +84,7 @@ class RunText(SampleBase):
                         # runningCount = runningCount + homeSpreadOdds + 5
                         # homeTotalsOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['fanDuel']['totals']['home']['price'])
                         # awayTotalsOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['fanDuel']['totals']['away']['price'])
-                        runningCount = runningCount + homeTotalsOdds + 5
+                        # runningCount = runningCount + homeTotalsOdds + 5
                         if 'Rain' in item['weather']['text'] or 'rain' in item['weather']['text']:
                             canvas.SetImage(rainImage, runningCount, 2)
                         elif 'Cloudy' in item['weather']['text'] or 'Overcast' in item['weather']['text'] or 'cloudy' in item['weather']['text'] or 'overcast' in item['weather']['text']:
@@ -173,7 +173,7 @@ class RunText(SampleBase):
                         homeErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 11, green, item['awayTeam']['errors']['displayValue'])
                         awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 21, green, item['homeTeam']['errors']['displayValue'])
                         runningCount = runningCount + homeErrorTotal + 5
-                        count = graphics.DrawText(canvas, smallestFont, 105, 19, yellow, situationString)
+                        count = graphics.DrawText(canvas, smallestFont, 106, 19, yellow, situationString)
                         inning = graphics.DrawText(canvas, smallestFont, 97, 31, yellow, item['inning'])
                 elif type(item) is dict and 'league' in item.keys() and item['league'] == 'nba':
                     print('+++++++++++++')
