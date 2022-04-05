@@ -58,6 +58,8 @@ class RunText(SampleBase):
                 print(string)
                 if string == None:
                     print('it was NONE')
+                elif len(string) < 1:
+
                 elif isinstance(string, list) and 'inprogress mlb' in string[0]:
                     awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((64,64), Image.ANTIALIAS)
                     homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((64,64), Image.ANTIALIAS)
@@ -128,6 +130,8 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(sunnyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.width, 24, color, string)
                         time.sleep(0.008)
+                    elif isinstance(string, list) and len(string) < 1:
+                        running = False
                     elif isinstance(string, list) and 'game' in string[0]:
                         # awayColor = graphics.Color(string[2], string[3], string[4])
                         # homeColor = graphics.Color(string[7], string[8], string[9])
