@@ -263,7 +263,7 @@ class RunText(SampleBase):
                                 homeColor = red
                                 awayColor = green
                             offscreen_canvas.SetImage(awayLogo, pos, -20)
-                            versus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + buffer, 24, yellow, 'VS')
+                            versus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer, 24, yellow, 'VS')
                             offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + buffer + versus, -20)
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer, 12, awayColor, awayTeamString)
                             awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer + awayTeam + buffer, 12, awayColor, awayTeamStatusString)
