@@ -57,15 +57,15 @@ class RunText(SampleBase):
                 if string == None:
                     print('it was NONE')
                 elif isinstance(string, list) and 'inprogress mlb' in string[0]:
-                    awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                    homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((64,64), Image.ANTIALIAS)
+                    homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((64,64), Image.ANTIALIAS)
                     pitcherHeadshot = string[16]
                     batterHeadshot = string[18]
                     pitcherImage = Image.open(requests.get(pitcherHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     batterImage = Image.open(requests.get(batterHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 elif isinstance(string, list) and 'nba' in string[0]:
-                    awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                    homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((64,64), Image.ANTIALIAS)
+                    homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((64,64), Image.ANTIALIAS)
                     pitcherHeadshot = string[16]
                     batterHeadshot = string[18]
                     pitcherImage = Image.open(requests.get(pitcherHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
@@ -73,8 +73,8 @@ class RunText(SampleBase):
                 elif isinstance(string, list) and 'game' in string[0]:
                     print(string[1])
                     print(string[6])
-                    awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                    homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
+                    awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((64,64), Image.ANTIALIAS)
+                    homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((64,64), Image.ANTIALIAS)
                 elif isinstance(string, list) and 'http' in string[0]:
                     if '-' in string[3]:
                         color = red
