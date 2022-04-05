@@ -128,8 +128,6 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(sunnyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.width, 24, color, string)
                         time.sleep(0.008)
-                    elif isinstance(string, list) and len(string) < 1:
-                        running = False
                     elif isinstance(string, list) and 'game' in string[0]:
                         # awayColor = graphics.Color(string[2], string[3], string[4])
                         # homeColor = graphics.Color(string[7], string[8], string[9])
