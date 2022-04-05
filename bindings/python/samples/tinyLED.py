@@ -90,18 +90,18 @@ class RunText(SampleBase):
                         weatherTemp = graphics.DrawText(canvas, smallFont, runningCount + 5, 24, yellow, item['weather']['temp'])
                         startTime = graphics.DrawText(canvas, smallFont, runningCount, 304, yellow, item['startTime'])
                     if item['final'] == True:    
-                        awayTeam = graphics.DrawText(canvas, smallFont, 2, 7, awayColorSecondary, item['awayTeam']['teamName'])
-                        homeTeam = graphics.DrawText(canvas, smallFont, 2, 22, homeColorSecondary, item['homeTeam']['teamName'])
+                        awayTeam = graphics.DrawText(canvas, smallFont, 2, 9, awayColorSecondary, item['awayTeam']['teamName'])
+                        homeTeam = graphics.DrawText(canvas, smallFont, 2, 20, homeColorSecondary, item['homeTeam']['teamName'])
                         oddsStartNum = awayTeam + 8 if awayTeam > homeTeam else homeTeam + 8
                         runningCount = oddsStartNum
-                        homeScore = graphics.DrawText(canvas, smallFont, runningCount, 7, green, item['awayTeam']['score'])
-                        awayScore = graphics.DrawText(canvas, smallFont, runningCount, 22, green, item['homeTeam']['score'])
+                        homeScore = graphics.DrawText(canvas, smallFont, runningCount, 9, green, item['awayTeam']['score'])
+                        awayScore = graphics.DrawText(canvas, smallFont, runningCount, 20, green, item['homeTeam']['score'])
                         runningCount = runningCount + homeScore + 10
-                        homeHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 7, green, item['awayTeam']['hits']['displayValue'])
-                        awayHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 22, green, item['homeTeam']['hits']['displayValue'])
+                        homeHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 9, green, item['awayTeam']['hits']['displayValue'])
+                        awayHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 20, green, item['homeTeam']['hits']['displayValue'])
                         runningCount = runningCount + homeHitTotal + 10
-                        homeErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 7, green, item['awayTeam']['errors']['displayValue'])
-                        awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 22, green, item['homeTeam']['errors']['displayValue'])
+                        homeErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 9, green, item['awayTeam']['errors']['displayValue'])
+                        awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 20, green, item['homeTeam']['errors']['displayValue'])
                         runningCount = runningCount + homeErrorTotal + 10
                         winningPitcher = graphics.DrawText(canvas, alilbiggerFont, 0, 30, green, "WP: {}".format(item['winningPitcher']))
                         finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
