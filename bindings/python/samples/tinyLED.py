@@ -59,12 +59,12 @@ class RunText(SampleBase):
                     if item['pregame'] == True:
                         print(str(item['fanDuel']['moneyLine']['home']['price']))
                         print(item['fanDuel']['moneyLine']['away']['price'])
-                        homeMoneyLine = item['fanDuel']['moneyLine']['home']['price']
-                        awayMoneyLine = item['fanDuel']['moneyLine']['away']['price']
-                        awayspread = item['fanDuel']['spread']['away']['price']
-                        homespread = item['fanDuel']['spread']['home']['price']
-                        awaytotals = item['fanDuel']['totals']['away']['price']
-                        hometotals = item['fanDuel']['totals']['home']['price']
+                        homeMoneyLine = 'n/a' if item['fanDuel']['moneyLine']['home']['price'] == 'none' else item['fanDuel']['moneyLine']['home']['price']
+                        awayMoneyLine = 'n/a' if item['fanDuel']['moneyLine']['away']['price'] == 'none' else item['fanDuel']['moneyLine']['away']['price']
+                        awayspread = 'n/a' if item['fanDuel']['spread']['away']['price'] == 'none' else item['fanDuel']['spread']['away']['price']
+                        homespread = 'n/a' if item['fanDuel']['spread']['home']['price'] == 'none' else item['fanDuel']['spread']['home']['price']
+                        awaytotals = 'n/a' if item['fanDuel']['totals']['away']['price'] == 'none' else item['fanDuel']['totals']['away']['price']
+                        hometotals = 'n/a' if item['fanDuel']['totals']['home']['price'] == 'none' else item['fanDuel']['totals']['home']['price']
                         partlyCloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                         thunderstormImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                         cloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
