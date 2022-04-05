@@ -264,9 +264,9 @@ class RunText(SampleBase):
                             versus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + buffer, 20, yellow, 'VS')
                             offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + buffer, -20)
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + buffer + homeLogo.width + buffer, 12, awayColor, awayTeamString)
-                            awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + homeLogo.width + awayTeam + buffer, 12, awayColor, awayTeamStatusString)
-                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + homeLogo.width, 26, homeColor, homeTeamString)
-                            homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + homeLogo.width + homeTeam + buffer, 26, homeColor, homeTeamStatusString)
+                            awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + buffer + homeLogo.width + buffer + awayTeam, 12, awayColor, awayTeamStatusString)
+                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + buffer + homeLogo.width + buffer, 26, homeColor, homeTeamString)
+                            homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + buffer + homeLogo.width + buffer + homeTeam, 26, homeColor, homeTeamStatusString)
                             if 'HALF' in oddsString:
                                 quarter = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + homeLogo.width + homeTeam + buffer, 12, yellow, oddsString)
                             else:
