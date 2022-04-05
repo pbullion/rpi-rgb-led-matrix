@@ -57,7 +57,7 @@ class RunText(SampleBase):
                     homeColorPrimary = graphics.Color(item['homeTeam']['colors']['main'][0],item['homeTeam']['colors']['main'][1],item['homeTeam']['colors']['main'][2])
                     homeColorSecondary = graphics.Color(item['homeTeam']['colors']['secondary'][0],item['homeTeam']['colors']['secondary'][1],item['homeTeam']['colors']['secondary'][2])
                     if item['pregame'] == True:
-                        print(item['fanDuel']['moneyLine']['home']['price'])
+                        print(str(item['fanDuel']['moneyLine']['home']['price']))
                         print(item['fanDuel']['moneyLine']['away']['price'])
                         partlyCloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                         thunderstormImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
@@ -170,7 +170,7 @@ class RunText(SampleBase):
                         awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 21, green, item['homeTeam']['errors']['displayValue'])
                         runningCount = runningCount + homeErrorTotal + 5
                         count = graphics.DrawText(canvas, smallestFont, 105, 19, yellow, situationString)
-                        inning = graphics.DrawText(canvas, smallestFont, 95, 31, yellow, item['inning'])
+                        inning = graphics.DrawText(canvas, smallestFont, 97, 31, yellow, item['inning'])
                 elif type(item) is dict and 'league' in item.keys() and item['league'] == 'nba':
                     print('+++++++++++++')
                     print(item)
