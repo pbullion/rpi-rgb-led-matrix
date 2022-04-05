@@ -58,8 +58,6 @@ class RunText(SampleBase):
                 print(string)
                 if string == None:
                     print('it was NONE')
-                elif len(string) < 1:
-
                 elif isinstance(string, list) and 'inprogress mlb' in string[0]:
                     awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((64,64), Image.ANTIALIAS)
                     homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((64,64), Image.ANTIALIAS)
