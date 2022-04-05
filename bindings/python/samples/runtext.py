@@ -188,7 +188,7 @@ class RunText(SampleBase):
                                 scoreLocation = awayTeam + buffer
                             awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
                             homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
-                            runningTotal = awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer + scoreLocation + buffer
+                            runningTotal = awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer + scoreLocation + buffer + buffer + awayTeamStatus
                             baseSize = 6
                             outsSize = 4
                             baseHalf = abs(baseSize/2)
@@ -242,11 +242,6 @@ class RunText(SampleBase):
                             situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + runningTotal + 3, 19, yellow, countString)
                             inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + runningTotal - 5, 31, yellow, inningString)
                             runningTotal = runningTotal + inning + 5 + buffer        
-                            runningTotal = runningTotal + homeLogo.width + buffer
-                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 10, homeColor, homeTeamString)
-                            runningTotal = runningTotal + homeTeam  + buffer                          
-                            homeCentered = homeTeam / 2
-                            homeTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningTotal - homeTeam - buffer + homeCentered, 31, homeColor, homeTeamStatusString)         
                             pitcherTitle = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 12, white, 'Pitcher: {}'.format(pitcherNameString))
                             batterTitle = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 26, white, 'Batter: {}'.format(batterNameString))
                             runningTotal = runningTotal + pitcherTitle
