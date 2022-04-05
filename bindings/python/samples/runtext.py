@@ -176,15 +176,19 @@ class RunText(SampleBase):
                             else:
                                 runnersColor = yellow
                             runningTotal = 0
-                            offscreen_canvas.SetImage(awayLogo, pos, 0, -20)
-                            runningTotal = runningTotal + awayLogo.width + buffer
-                            versus = graphics.DrawText(offscreen_canvas, font, pos + runningTotal, 10, awayColor, 'vs')
-                            runningTotal = runningTotal + buffer
-                            offscreen_canvas.SetImage(homeLogo, pos + runningTotal + buffer, -20)
-                            runningTotal = runningTotal + buffer + homeLogo.width
-                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 10, awayColor, awayTeamString)
-                            awayTeamStatus = graphics.DrawText(offscreen_canvas, font, pos + runningTotal + awayTeam + buffer, 10, awayColor, awayTeamStatusString)
-                            runningTotal = runningTotal + runningTotal + awayTeam + buffer + buffer + awayTeamStatus
+                            offscreen_canvas.SetImage(awayLogo, pos, -20)
+                            versus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + buffer, 24, yellow, 'VS')
+                            offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + buffer + versus, -20)
+                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer, 12, awayColor, awayTeamString)
+                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer, 26, homeColor, homeTeamString)
+                            scoreLocation = 0
+                            if (homeTeam > awayTeam):
+                                scoreLocation = homeTeam + buffer
+                            else:
+                                scoreLocation = awayTeam + buffer
+                            awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
+                            homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
+                            runningTotal = pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer + scoreLocation + buffer
                             baseSize = 6
                             outsSize = 4
                             baseHalf = abs(baseSize/2)
