@@ -54,6 +54,8 @@ class RunText(SampleBase):
             for string in strings:
                 running = True
                 color = green
+                print('=======================')
+                print(string)
                 if string == None:
                     print('it was NONE')
                 elif isinstance(string, list) and 'inprogress mlb' in string[0]:
