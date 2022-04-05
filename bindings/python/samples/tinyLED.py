@@ -43,8 +43,8 @@ class RunText(SampleBase):
             # responseArr = json.loads(url.text)
             responseArr = ['02:59', {'divisionName': 'AL West', 'standings': [{'team': 'Astros', 'win': 75, 'loss': 44, 'gamesBack': 0, 'color': [196, 206, 212]}, {'team': 'Angels', 'win': 70, 'loss': 34, 'gamesBack': 5, 'color': [196, 206, 212]}, {'team': 'Rangers', 'win': 65, 'loss': 24, 'gamesBack': 8, 'color': [196, 206, 212]}]}, {'league': 'mlb', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'name': 'NYM', 'score': '3', 'colors': {'main': [250, 250, 250], 'secondary': [250, 250, 250]}, 'record': '5-3'}, 'homeTeam': {'name': 'HOU', 'score': '3', 'colors': {'main': [250, 250, 250], 'secondary': [235, 110, 31]}, 'record': '7-6'}, 'winningPitcher': '', 'finalDetail': 'Final'}, {'league': 'mlb', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'name': 'PIT', 'score': '9', 'colors': {'main': [17, 17, 17], 'secondary': [250, 250, 250]}, 'record': '4-2'}, 'homeTeam': {'name': 'BAL', 'score': '3', 'colors': {'main': [32, 27, 27], 'secondary': [250, 250, 250]}, 'record': '7-6'}, 'winningPitcher': 'B. Wilson 1-1', 'finalDetail': 'Final'}, {'league': 'mlb', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'name': 'TOR', 'score': '2', 'colors': {'main': [250, 250, 250], 'secondary': [29, 45, 92]}, 'record': '4-2'}, 'homeTeam': {'name': 'DET', 'score': '4', 'colors': {'main': [250, 250, 250], 'secondary': [255, 102, 0]}, 'record': '8-6'}, 'winningPitcher': 'D. Hutchison 1-1', 'finalDetail': 'Final'}, {'league': 'mlb', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'name': 'BOS', 'score': '0', 'colors': {'main': [250, 250, 250], 'secondary': [13, 43, 86]}, 'record': '7-2'}, 'homeTeam': {'name': 'MIN', 'score': '2', 'colors': {'main': [1, 39, 86], 'secondary': [241, 242, 243]}, 'record': '10-8'}, 'winningPitcher': 'B. Ober 2-0', 'finalDetail': 'Final'}, {'league': 'mlb', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'name': 'PHI', 'score': '2', 'colors': {'main': [190, 0, 17], 'secondary': [40, 72, 152]}, 'record': '7-1'}, 'homeTeam': {'name': 'NYY', 'score': '5', 'colors': {'main': [1, 23, 57], 'secondary': [196, 206, 212]}, 'record': '8-7'}, 'winningPitcher': 'C. Green 2-0', 'finalDetail': 'Final'}, {'league': 'mlb', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'name': 'WSH', 'score': '3', 'colors': {'main': [10, 41, 93], 'secondary': [241, 242, 243]}, 'record': '1-6'}, 'homeTeam': {'name': 'STL', 'score': '4', 'colors': {'main': [184, 2, 32], 'secondary': [255, 255, 255]}, 'record': '3-11'}, 'winningPitcher': 'M. Mikolas 3-0', 'finalDetail': 'Final'}, {'league': 'mlb', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'name': 'ATL', 'score': '8', 'colors': {'main': [250, 250, 250], 'secondary': [241, 242, 243]}, 'record': '5-2'}, 'homeTeam': {'name': 'TB', 'score': '2', 'colors': {'main': [250, 250, 250], 'secondary': [143, 188, 230]}, 'record': '6-7'}, 'winningPitcher': 'I. Anderson 2-1', 'finalDetail': 'Final'}, {'league': 'mlb', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'name': 'CHW', 'score': '9', 'colors': {'main': [27, 21, 22], 'secondary': [196, 206, 212]}, 'record': '3-6'}, 'homeTeam': {'name': 'CHC', 'score': '15', 'colors': {'main': [250, 250, 250], 'secondary': [250, 250, 250]}, 'record': '8-10'}, 'winningPitcher': 'D. Smyly 1-0', 'finalDetail': 'Final'}, {'league': 'mlb', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'name': 'KC', 'score': '6', 'colors': {'main': [250, 250, 250], 'secondary': [122, 178, 221]}, 'record': '4-4'}, 'homeTeam': {'name': 'CIN', 'score': '10', 'colors': {'main': [196, 20, 34], 'secondary': [255, 255, 255]}, 'record': '8-7'}, 'winningPitcher': 'V. Gutierrez 1-1', 'finalDetail': 'Final'}, {'league': 'mlb', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'name': 'SF', 'score': '5', 'colors': {'main': [22, 20, 21], 'secondary': [250, 250, 250]}, 'record': '2-5'}, 'homeTeam': {'name': 'OAK', 'score': '3', 'colors': {'main': [1, 67, 38], 'secondary': [239, 178, 30]}, 'record': '8-7'}, 'winningPitcher': 'A. DeSclafani 2-0', 'finalDetail': 'Final'}, {'league': 'mlb', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'name': 'SD', 'score': '11', 'colors': {'main': [47, 36, 29], 'secondary': [255, 196, 37]}, 'record': '5-1'}, 'homeTeam': {'name': 'TEX', 'score': '5', 'colors': {'main': [250, 250, 250], 'secondary': [192, 17, 31]}, 'record': '7-8'}, 'winningPitcher': 'N. Martinez 2-0', 'finalDetail': 'Final'}, {'league': 'mlb', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'name': 'ARI', 'score': '3', 'colors': {'main': [164, 0, 19], 'secondary': [250, 250, 250]}, 'record': '6-3'}, 'homeTeam': {'name': 'SEA', 'score': '6', 'colors': {'main': [1, 42, 91], 'secondary': [12, 44, 86]}, 'record': '9-10'}, 'winningPitcher': 'D. Castillo 1-0', 'finalDetail': 'Final'}, {'league': 'mlb', 'pregame': False, 'inprogress': True, 'final': False, 'awayTeam': {'name': 'LAA', 'score': '5', 'colors': {'main': [165, 0, 23], 'secondary': [134, 38, 51]}, 'record': '6-2'}, 'homeTeam': {'name': 'LAD', 'score': '4', 'colors': {'main': [250, 250, 250], 'secondary': [162, 170, 173]}, 'record': '10-5'}, 'inning': 'Bot 4th', 'runners': {'onFirst': True, 'onSecond': False, 'onThird': False}, 'situation': {'balls': 0, 'strikes': 1, 'outs': 2}}, {'league': 'mlb', 'pregame': False, 'inprogress': True, 'final': False, 'awayTeam': {'name': 'CLE', 'score': '0', 'colors': {'main': [250, 250, 250], 'secondary': [250, 250, 250]}, 'record': '5-4'}, 'homeTeam': {'name': 'ARI', 'score': '3', 'colors': {'main': [164, 0, 19], 'secondary': [250, 250, 250]}, 'record': '7-9'}, 'inning': 'Top 5th', 'runners': {'onFirst': True, 'onSecond': False, 'onThird': False}, 'situation': {'balls': 2, 'strikes': 2, 'outs': 1}}, {'league': 'mlb', 'pregame': False, 'inprogress': True, 'final': False, 'awayTeam': {'name': 'MIL', 'score': '2', 'colors': {'main': [5, 12, 51], 'secondary': [241, 242, 243]}, 'record': '3-4'}, 'homeTeam': {'name': 'COL', 'score': '5', 'colors': {'main': [34, 13, 72], 'secondary': [34, 13, 72]}, 'record': '5-9'}, 'inning': 'Bot 4th', 'runners': {'onFirst': False, 'onSecond': True, 'onThird': True}, 'situation': {'balls': 3, 'strikes': 2, 'outs': 2}}, {'day': 'CURRENT', 'condition': 'Mist', 'rainPercent': '0%', 'icon': 143, 'temp': '71°', 'highLow': '65°/75°'}, {'day': 'TUE', 'rainPercent': '88%', 'condition': 'Moderate rain', 'icon': 302, 'highLow': '68°/91°'}, {'day': 'WED', 'rainPercent': '0%', 'condition': 'Sunny', 'icon': 113, 'highLow': '66°/88°'}, {'stockSymbol': 'TSLA', 'url': 'https://logo.clearbit.com/tesla.com', 'currentPrice': '1145.45', 'up': True, 'percentChange': '5.61%'}, {'stockSymbol': 'OBNK', 'url': 'https://logo.clearbit.com/originbank.com', 'currentPrice': '41.69', 'up': False, 'percentChange': '1.37%'}, {'stockSymbol': 'STEM', 'url': 'https://logo.clearbit.com/stem.com', 'currentPrice': '12.15', 'up': True, 'percentChange': '7.33%'}, {'stockSymbol': 'AAPL', 'url': 'https://logo.clearbit.com/apple.com', 'currentPrice': '178.44', 'up': True, 'percentChange': '2.37%'}, {'stockSymbol': 'AMC', 'url': 'https://logo.clearbit.com/amctheatres.com', 'currentPrice': '23.31', 'up': True, 'percentChange': '0.04%'}, {'stockSymbol': 'AMD', 'url': 'https://logo.clearbit.com/amd.com', 'currentPrice': '110.53', 'up': True, 'percentChange': '2.16%'}, {'stockSymbol': 'HOOD', 'url': 'https://logo.clearbit.com/robinhood.com', 'currentPrice': '13.83', 'up': True, 'percentChange': '2.44%'}, {'stockSymbol': 'BTC', 'url': 'https://logo.clearbit.com/bitcoin.org', 'currentPrice': '46631', 'up': True, 'percentChange': '1.29%'}, {'stockSymbol': 'ETH', 'url': 'https://logo.clearbit.com/ethereum.org', 'currentPrice': '3516.34', 'up': True, 'percentChange': '0.50%'}, {'stockSymbol': 'DOGE', 'url': 'https://logo.clearbit.com/dogecoin.com', 'currentPrice': '0.1509', 'up': True, 'percentChange': '3.98%'}, {'tourneyStatus': 'Complete', 'tourneyName': 'Valero Texas Open', 'players': [[{'position': '1', 'name': 'J.J. Spaun', 'score': '-13', 'thru': 'F'}, {'position': 'T2', 'name': 'Matt Jones', 'score': '-11', 'thru': 'F'}, {'position': 'T2', 'name': 'Matt Kuchar', 'score': '-11', 'thru': 'F'}, {'position': 'T4', 'name': 'Adam Hadwin', 'score': '-10', 'thru': 'F'}, {'position': 'T4', 'name': 'Troy Merritt', 'score': '-10', 'thru': 'F'}], [{'position': 'T4', 'name': 'Charles Howell III', 'score': '-10', 'thru': 'F'}, {'position': 'T4', 'name': 'Beau Hossler', 'score': '-10', 'thru': 'F'}, {'position': 'T8', 'name': 'Keegan Bradley', 'score': '-9', 'thru': 'F'}, {'position': 'T8', 'name': 'Matthias Schwab', 'score': '-9', 'thru': 'F'}, {'position': 'T8', 'name': 'Gary Woodland', 'score': '-9', 'thru': 'F'}], [{'position': 'T8', 'name': 'Brendon Todd', 'score': '-9', 'thru': 'F'}, {'position': 'T8', 'name': 'Dylan Frittelli', 'score': '-9', 'thru': 'F'}, {'position': 'T13', 'name': 'Zach Johnson', 'score': '-8', 'thru': 'F'}, {'position': 'T13', 'name': 'Mito Pereira', 'score': '-8', 'thru': 'F'}, {'position': 'T13', 'name': 'Anirban Lahiri', 'score': '-8', 'thru': 'F'}]]}]
             canvas = self.matrix
-            bases =  [[33,5],[28,0],[23,5]]
-            outs = [[23,20],[29,20],[35,20]]
+            bases =  [[93,5],[88,0],[83,5]]
+            outs = [[83,20],[89,20],[95,20]]
             print('here')
             print(responseArr)
             for item in responseArr:
@@ -57,17 +57,54 @@ class RunText(SampleBase):
                     homeColorPrimary = graphics.Color(item['homeTeam']['colors']['main'][0],item['homeTeam']['colors']['main'][1],item['homeTeam']['colors']['main'][2])
                     homeColorSecondary = graphics.Color(item['homeTeam']['colors']['secondary'][0],item['homeTeam']['colors']['secondary'][1],item['homeTeam']['colors']['secondary'][2])
                     if item['pregame'] == True:
-                        awayTeam = graphics.DrawText(canvas, smallFont, 2, 10, awayColorSecondary, item['awayTeam']['name'])
-                        homeTeam = graphics.DrawText(canvas, smallFont, 45, 10, homeColorSecondary, item['homeTeam']['name'])
-                        startTime = graphics.DrawText(canvas, smallestFont, 15, 20, yellow, item['startTime'])
-                        odds = graphics.DrawText(canvas, smallestFont, 0, 31, green, item['odds'])
+                        partlyCloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                        thunderstormImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                        cloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                        rainImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-heavy-rain-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                        stormyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                        sunnyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                        windyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                        awayTeam = graphics.DrawText(canvas, smallFont, 2, 4, awayColorSecondary, item['awayTeam']['teamName'])
+                        awayTeamStandings = graphics.DrawText(canvas, smallestFont, 8 + awayTeam, 4, awayColorSecondary, item['awayTeam']['record'])
+                        homeTeam = graphics.DrawText(canvas, smallFont, 2, 22, homeColorSecondary, item['homeTeam']['teamName'])
+                        homeTeamStandings = graphics.DrawText(canvas, smallestFont, 8 + homeTeam, 4, homeColorSecondary, item['homeTeam']['record'])
+                        oddsStartNum = awayTeam + 8 + awayTeamStandings if awayTeam > homeTeam else homeTeam + 8 + homeTeamStandings
+                        runningCount = oddsStartNum
+                        homeMLOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['fanDuel']['moneyLine']['home']['price'])
+                        awayMLOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['fanDuel']['moneyLine']['away']['price'])
+                        runningCount = runningCount + homeMLOdds + 5
+                        homeSpreadOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['fanDuel']['spread']['home']['price'])
+                        awaySpreadOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['fanDuel']['spread']['away']['price'])
+                        runningCount = runningCount + homeSpreadOdds + 5
+                        homeTotalsOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['fanDuel']['totals']['home']['price'])
+                        awayTotalsOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['fanDuel']['totals']['away']['price'])
+                        runningCount = runningCount + homeTotalsOdds + 5
+                        if 'Rain' in item['weather']['text'] or 'rain' in item['weather']['text']:
+                            canvas.SetImage(rainImage, runningCount, 2)
+                        elif 'Cloudy' in item['weather']['text'] or 'Overcast' in item['weather']['text'] or 'cloudy' in item['weather']['text'] or 'overcast' in item['weather']['text']:
+                            canvas.SetImage(partlyCloudyImage, runningCount, 2)
+                        elif 'Thunder' in item['weather']['text'] or 'thunder' in item['weather']['text']:
+                            canvas.SetImage(thunderstormImage, runningCount, 2)
+                        elif 'Sun' in item['weather']['text'] or 'sun' in item['weather']['text']:
+                            canvas.SetImage(sunnyImage, runningCount, 2)
+                        weatherTemp = graphics.DrawText(canvas, smallFont, runningCount + 5, 24, yellow, item['weather']['temp'])
+                        startTime = graphics.DrawText(canvas, smallFont, runningCount, 304, yellow, item['startTime'])
                     if item['final'] == True:    
-                        awayTeam = graphics.DrawText(canvas, smallFont, 2, 10, awayColorSecondary, item['awayTeam']['name'])
-                        homeTeam = graphics.DrawText(canvas, smallFont, 45, 10, homeColorSecondary, item['homeTeam']['name'])
-                        awayTeamScore = graphics.DrawText(canvas, middleFont, 5, 22, awayColorSecondary, item['awayTeam']['score'])
-                        homeTeamScore = graphics.DrawText(canvas, middleFont, 48 if int(item['homeTeam']['score']) < 10 else 44, 22, homeColorSecondary, item['homeTeam']['score'])
-                        finalDetail = graphics.DrawText(canvas, middleFont, 28, 18, yellow, 'F')
+                        awayTeam = graphics.DrawText(canvas, smallFont, 2, 4, awayColorSecondary, item['awayTeam']['teamName'])
+                        homeTeam = graphics.DrawText(canvas, smallFont, 2, 22, homeColorSecondary, item['homeTeam']['teamName'])
+                        oddsStartNum = awayTeam + 8 + awayTeamStandings if awayTeam > homeTeam else homeTeam + 8 + homeTeamStandings
+                        runningCount = oddsStartNum
+                        homeScore = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['awayTeam']['score'])
+                        awayScore = graphics.DrawText(canvas, smallFont, runningCount, 22, green, item['homeTeam']['score'])
+                        runningCount = runningCount + homeScore + 5
+                        homeHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['awayTeam']['hits']['displayValue'])
+                        awayHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 22, green, item['homeTeam']['hits']['displayValue'])
+                        runningCount = runningCount + homeHitTotal + 5
+                        homeErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['awayTeam']['errors']['displayValue'])
+                        awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 22, green, item['homeTeam']['errors']['displayValue'])
+                        runningCount = runningCount + homeErrorTotal + 5
                         winningPitcher = graphics.DrawText(canvas, alilbiggerFont, 0, 30, green, item['winningPitcher'])
+                        finalDetail = graphics.DrawText(canvas, middleFont, runningCount, 20, yellow, item['finalDetail'])
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
@@ -117,12 +154,21 @@ class RunText(SampleBase):
                                 graphics.DrawLine(canvas, outs[0][0], outs[0][1] + y_offset, outs[0][0] + outsSize, outs[0][1] + y_offset, red)
                                 graphics.DrawLine(canvas, outs[1][0], outs[1][1] + y_offset, outs[1][0] + outsSize, outs[1][1] + y_offset, red)
                                 graphics.DrawLine(canvas, outs[2][0], outs[2][1] + y_offset, outs[2][0] + outsSize, outs[2][1] + y_offset, red)
-                        awayTeam = graphics.DrawText(canvas, smallFont, 2, 10, awayColorSecondary, item['awayTeam']['name'])
-                        homeTeam = graphics.DrawText(canvas, smallFont, 45, 10, homeColorSecondary, item['homeTeam']['name'])
-                        awayTeamScore = graphics.DrawText(canvas, middleFont, 5, 22, awayColorSecondary, item['awayTeam']['score'])
-                        homeTeamScore = graphics.DrawText(canvas, middleFont, 48 if int(item['homeTeam']['score']) < 10 else 44, 22, homeColorSecondary, item['homeTeam']['score'])
-                        count = graphics.DrawText(canvas, smallestFont, 26, 19, yellow, situationString)
-                        inning = graphics.DrawText(canvas, smallestFont, 18, 31, yellow, item['inning'])
+                        awayTeam = graphics.DrawText(canvas, smallFont, 2, 4, awayColorSecondary, item['awayTeam']['teamName'])
+                        homeTeam = graphics.DrawText(canvas, smallFont, 2, 22, homeColorSecondary, item['homeTeam']['teamName'])
+                        oddsStartNum = awayTeam + 8 + awayTeamStandings if awayTeam > homeTeam else homeTeam + 8 + homeTeamStandings
+                        runningCount = oddsStartNum
+                        homeScore = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['awayTeam']['score'])
+                        awayScore = graphics.DrawText(canvas, smallFont, runningCount, 22, green, item['homeTeam']['score'])
+                        runningCount = runningCount + homeScore + 5
+                        homeHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['awayTeam']['hits']['displayValue'])
+                        awayHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 22, green, item['homeTeam']['hits']['displayValue'])
+                        runningCount = runningCount + homeHitTotal + 5
+                        homeErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['awayTeam']['errors']['displayValue'])
+                        awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 22, green, item['homeTeam']['errors']['displayValue'])
+                        runningCount = runningCount + homeErrorTotal + 5
+                        count = graphics.DrawText(canvas, smallestFont, 83, 19, yellow, situationString)
+                        inning = graphics.DrawText(canvas, smallestFont, 81, 31, yellow, item['inning'])
                 elif type(item) is dict and 'league' in item.keys() and item['league'] == 'nba':
                     print('+++++++++++++')
                     print(item)
@@ -226,7 +272,7 @@ class RunText(SampleBase):
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, centered, 31, blue, item['condition'])
                     currentTemp = graphics.DrawText(canvas, middleFont, 32, 13, blue, item['temp'])
                     highLow = graphics.DrawText(canvas, alilbiggerFont, 26, 22, blue, item['highLow'])
-                elif type(item) is dict and 'condition' in item.keys() :
+                elif type(item) is dict and 'condition' in item.keys():
                     partlyCloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     thunderstormImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     cloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
