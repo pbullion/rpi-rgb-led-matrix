@@ -92,7 +92,7 @@ class RunText(SampleBase):
                     if item['final'] == True:    
                         awayTeam = graphics.DrawText(canvas, smallFont, 2, 4, awayColorSecondary, item['awayTeam']['teamName'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 2, 22, homeColorSecondary, item['homeTeam']['teamName'])
-                        oddsStartNum = awayTeam + 8 + awayTeamStandings if awayTeam > homeTeam else homeTeam + 8 + homeTeamStandings
+                        oddsStartNum = awayTeam + 8 if awayTeam > homeTeam else homeTeam + 8
                         runningCount = oddsStartNum
                         homeScore = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['awayTeam']['score'])
                         awayScore = graphics.DrawText(canvas, smallFont, runningCount, 22, green, item['homeTeam']['score'])
