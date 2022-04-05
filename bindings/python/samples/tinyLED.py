@@ -57,6 +57,8 @@ class RunText(SampleBase):
                     homeColorPrimary = graphics.Color(item['homeTeam']['colors']['main'][0],item['homeTeam']['colors']['main'][1],item['homeTeam']['colors']['main'][2])
                     homeColorSecondary = graphics.Color(item['homeTeam']['colors']['secondary'][0],item['homeTeam']['colors']['secondary'][1],item['homeTeam']['colors']['secondary'][2])
                     if item['pregame'] == True:
+                        print(item['fanDuel']['moneyLine']['home']['price'])
+                        print(item['fanDuel']['moneyLine']['away']['price'])
                         partlyCloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                         thunderstormImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                         cloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
@@ -70,14 +72,14 @@ class RunText(SampleBase):
                         homeTeamStandings = graphics.DrawText(canvas, smallestFont, 8 + homeTeam, 4, homeColorSecondary, item['homeTeam']['record'])
                         oddsStartNum = awayTeam + 8 + awayTeamStandings if awayTeam > homeTeam else homeTeam + 8 + homeTeamStandings
                         runningCount = oddsStartNum
-                        homeMLOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, str(item['fanDuel']['moneyLine']['home']['price']))
-                        awayMLOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, str(item['fanDuel']['moneyLine']['away']['price']))
+                        homeMLOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['fanDuel']['moneyLine']['home']['price'])
+                        awayMLOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['fanDuel']['moneyLine']['away']['price'])
                         runningCount = runningCount + homeMLOdds + 5
-                        homeSpreadOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, str(item['fanDuel']['spread']['home']['price']))
-                        awaySpreadOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, str(item['fanDuel']['spread']['away']['price']))
+                        homeSpreadOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['fanDuel']['spread']['home']['price'])
+                        awaySpreadOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['fanDuel']['spread']['away']['price'])
                         runningCount = runningCount + homeSpreadOdds + 5
-                        homeTotalsOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, str(item['fanDuel']['totals']['home']['price']))
-                        awayTotalsOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, str(item['fanDuel']['totals']['away']['price']))
+                        homeTotalsOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['fanDuel']['totals']['home']['price'])
+                        awayTotalsOdds = graphics.DrawText(canvas, smallFont, runningCount, 4, green, item['fanDuel']['totals']['away']['price'])
                         runningCount = runningCount + homeTotalsOdds + 5
                         if 'Rain' in item['weather']['text'] or 'rain' in item['weather']['text']:
                             canvas.SetImage(rainImage, runningCount, 2)
