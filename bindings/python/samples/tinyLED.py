@@ -226,8 +226,8 @@ class RunText(SampleBase):
                     color = green if item['up'] else red
                     direction = 1 if item['up'] else -1
                     stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                    canvas.SetImage(stockLogo, 2, 3)
-                    stockSymbol = graphics.DrawText(canvas, font, stockLogo.width + 10, 10, color, item['stockSymbol'])
+                    canvas.SetImage(stockLogo, 0, 0)
+                    stockSymbol = graphics.DrawText(canvas, middleFont, stockLogo.width + 10, 10, color, item['stockSymbol'])
                     currentPrice = graphics.DrawText(canvas, smallFont, stockLogo.width + 10 + stockSymbol + 10, 11, color, item['currentPrice'])
                     x = stockLogo.width + 10 + stockSymbol + 10 + 5
                     y = 25 if item['up'] else 28
