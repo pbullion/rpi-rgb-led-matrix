@@ -116,11 +116,11 @@ class RunText(SampleBase):
                         while running:
                             pos -= 1
                             winningPitcher = graphics.DrawText(canvas, alilbiggerFont, pos, 30, green, "WP: {}".format(item['winningPitcher']))
-                            print(pos + winningPitcher)
                             if (pos + winningPitcher < 0):
                                 pos = 128
                                 running = False
-                        time.sleep(.1)
+                            time.sleep(.1)
+                            canvas = canvas.matrix.SwapOnVSync(canvas)
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
