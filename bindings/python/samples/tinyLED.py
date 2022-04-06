@@ -48,7 +48,7 @@ class RunText(SampleBase):
             print('here')
             print(responseArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
-            pos = 128
+            pos = offscreen_canvas.width
             for item in responseArr:
                 print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
                 print(item)
@@ -120,7 +120,7 @@ class RunText(SampleBase):
                                 pos = 128
                                 running = False
                             time.sleep(.1)
-                            canvas = canvas.matrix.SwapOnVSync(canvas)
+                            self.offscreen_canvas = self.matrix.SwapOnVSync(self.offscreen_canvas)
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
