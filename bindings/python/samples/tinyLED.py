@@ -112,6 +112,7 @@ class RunText(SampleBase):
                         awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 21, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
                         runningCount = runningCount + homeErrorTotal + 10
                         finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
+                        graphics.DrawLine(canvas, 30, 128, 32, 2, black)
                         running = True
                         while running:
                             pos -= 1
@@ -120,7 +121,6 @@ class RunText(SampleBase):
                                 pos = 128
                                 running = False
                             time.sleep(.1)
-                            self.offscreen_canvas = self.matrix.SwapOnVSync(self.offscreen_canvas)
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
