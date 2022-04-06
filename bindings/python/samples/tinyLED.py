@@ -134,7 +134,7 @@ class RunText(SampleBase):
                             pos -= 1
                             winningPitcher = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos, 32, green, "WP: {}".format(item['winningPitcher']))
                             losingPitcher = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + 4 + winningPitcher, 32, red, "LP: {}".format(item['losingPitcher']))
-                            canvas = self.matrix.SwapOnVSync(canvas)
+                            offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
                             if (pos + 2 + winningPitcher + losingPitcher < 0):
                                 gameFinalRunning = False
                                 pos = 120
