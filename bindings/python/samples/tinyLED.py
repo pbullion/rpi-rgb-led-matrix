@@ -84,18 +84,18 @@ class RunText(SampleBase):
                         # awayTeamStandings = graphics.DrawText(canvas, smallestFont, 5, 12 + smallFont.height, awayColorSecondary, item['awayTeam']['record'])
                         # homeTeamStandings = graphics.DrawText(canvas, smallestFont, 5, 22 + smallFont.height, homeColorSecondary, item['homeTeam']['record'])
                         runningCount = oddsStartNum
-                        awayMLOdds = graphics.DrawText(canvas, smallFont, runningCount, 11, green, str(awayMoneyLineString))
-                        homeMLOdds = graphics.DrawText(canvas, smallFont, runningCount, 22, green, str(homeMoneyLineString))
+                        awayMLOdds = graphics.DrawText(canvas, smallestFont, runningCount, 11, green, str(awayMoneyLineString))
+                        homeMLOdds = graphics.DrawText(canvas, smallestFont, runningCount, 22, green, str(homeMoneyLineString))
                         runningCount = runningCount + homeMLOdds + 4
-                        awaySpreadOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 4, green, str(awaySpreadPointsString))
-                        # awaySpreadOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 4 + smallFont.height, green, str(awaySpreadPriceString))
-                        homeSpreadOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 18, green, str(homeSpreadPointsString))
-                        # homeSpreadOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 19 + smallFont.height, green, str(homeSpreadPriceString))
+                        awaySpreadOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 4, green, str(awaySpreadPointsString))
+                        # awaySpreadOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 4 + smallestFont.height, green, str(awaySpreadPriceString))
+                        homeSpreadOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 18, green, str(homeSpreadPointsString))
+                        # homeSpreadOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 19 + smallestFont.height, green, str(homeSpreadPriceString))
                         runningCount = runningCount + awaySpreadOddsPoints + 4
-                        overOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 8, green, str(overTotalPointsString))
-                        # overOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 9 + smallFont.height, green, str(overTotalPriceString))
-                        underOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 18, red, str(underTotalPointsString))
-                        # underOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 19 + smallFont.height, red, str(underTotalPriceString))
+                        overOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 8, green, str(overTotalPointsString))
+                        # overOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 9 + smallestFont.height, green, str(overTotalPriceString))
+                        underOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 18, red, str(underTotalPointsString))
+                        # underOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 19 + smallestFont.height, red, str(underTotalPriceString))
                         runningCount = runningCount + underOddsPoints + 4
                         # if 'Rain' in item['weather']['text'] or 'rain' in item['weather']['text']:
                         #     canvas.SetImage(rainImage, runningCount, 2)
