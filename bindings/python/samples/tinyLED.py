@@ -97,15 +97,15 @@ class RunText(SampleBase):
                         underOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 18, red, str(underTotalPointsString))
                         underOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 19 + smallestFont.height, red, str(underTotalPriceString))
                         runningCount = runningCount + underOddsPrice + 3
-                        if 'Rain' in item['weather']['text'] or 'rain' in item['weather']['text']:
-                            canvas.SetImage(rainImage, runningCount, 2)
-                        elif 'Cloudy' in item['weather']['text'] or 'Overcast' in item['weather']['text'] or 'cloudy' in item['weather']['text'] or 'overcast' in item['weather']['text']:
-                            canvas.SetImage(partlyCloudyImage, runningCount, 2)
-                        elif 'Thunder' in item['weather']['text'] or 'thunder' in item['weather']['text']:
-                            canvas.SetImage(thunderstormImage, runningCount, 2)
-                        elif 'Sun' in item['weather']['text'] or 'sun' in item['weather']['text']:
-                            canvas.SetImage(sunnyImage, runningCount, 2)
-                        weatherTemp = graphics.DrawText(canvas, smallFont, runningCount + 5, 27, yellow, item['weather']['temp'])
+                        # if 'Rain' in item['weather']['text'] or 'rain' in item['weather']['text']:
+                        #     canvas.SetImage(rainImage, runningCount, 2)
+                        # elif 'Cloudy' in item['weather']['text'] or 'Overcast' in item['weather']['text'] or 'cloudy' in item['weather']['text'] or 'overcast' in item['weather']['text']:
+                        #     canvas.SetImage(partlyCloudyImage, runningCount, 2)
+                        # elif 'Thunder' in item['weather']['text'] or 'thunder' in item['weather']['text']:
+                        #     canvas.SetImage(thunderstormImage, runningCount, 2)
+                        # elif 'Sun' in item['weather']['text'] or 'sun' in item['weather']['text']:
+                        #     canvas.SetImage(sunnyImage, runningCount, 2)
+                        # weatherTemp = graphics.DrawText(canvas, smallFont, runningCount + 5, 27, yellow, item['weather']['temp'])
                         startTime = graphics.DrawText(canvas, smallFont, runningCount, 30, yellow, item['startTime'])
                     elif item['final'] == True:
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
