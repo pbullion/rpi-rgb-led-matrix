@@ -47,6 +47,8 @@ class RunText(SampleBase):
             outs = [[103,20],[109,20],[115,20]]
             print('here')
             print(responseArr)
+            offscreen_canvas = self.matrix.CreateFrameCanvas()
+            pos = offscreen_canvas.width
             for item in responseArr:
                 print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
                 print(item)
@@ -110,12 +112,12 @@ class RunText(SampleBase):
                         awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 21, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
                         runningCount = runningCount + homeErrorTotal + 10
                         finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
-                        pos = canvas.width
                         running = True
                         pos -= 1
                         while running == True:
                             winnfingPitcher = graphics.DrawText(canvas, alilbiggerFont, pos, 30, green, "WP: {}".format(item['winningPitcher']))
                             if (pos < 0):
+                                pos = offscreen_canvas.width
                                 running = False
                             time.sleep(.01)
                     elif item['inprogress'] == True: 
