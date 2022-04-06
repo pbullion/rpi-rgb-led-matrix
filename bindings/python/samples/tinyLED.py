@@ -59,8 +59,8 @@ class RunText(SampleBase):
                         awayMoneyLineString = item['fanDuel']['moneyLine']['away']['price']
                         awaySpreadPriceString = item['fanDuel']['spread']['away']['price']
                         homeSpreadPriceString = item['fanDuel']['spread']['home']['price']
-                        awaySpreadPointsString = item['fanDuel']['spread']['away']['point']
-                        homeSpreadPointsString = item['fanDuel']['spread']['home']['point']
+                        awaySpreadPointsString = '+{}'.format(item['fanDuel']['spread']['away']['point']) if item['fanDuel']['spread']['away']['point'] > 0 else item['fanDuel']['spread']['away']['point']
+                        homeSpreadPointsString = '+{}'.format(item['fanDuel']['spread']['home']['point']) if item['fanDuel']['spread']['home']['point'] > 0 else item['fanDuel']['spread']['home']['point']
                         overTotalPriceString = item['fanDuel']['totals']['over']['price']
                         underTotalPriceString = item['fanDuel']['totals']['under']['price']
                         overTotalPointsString = item['fanDuel']['totals']['over']['point']
@@ -106,7 +106,7 @@ class RunText(SampleBase):
                         # elif 'Sun' in item['weather']['text'] or 'sun' in item['weather']['text']:
                         #     canvas.SetImage(sunnyImage, runningCount, 2)
                         # weatherTemp = graphics.DrawText(canvas, smallFont, runningCount + 5, 27, yellow, item['weather']['temp'])
-                        startTime = graphics.DrawText(canvas, smallestFont, 100, 30, yellow, item['startTime'])
+                        startTime = graphics.DrawText(canvas, smallestFont, 90, 30, yellow, item['startTime'])
                     elif item['final'] == True:
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
