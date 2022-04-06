@@ -41,7 +41,7 @@ class RunText(SampleBase):
             # responseArr = json.loads(url.text)
             responseArr = [{'league': 'mlb', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'teamName': 'Phillies', 'name': 'PHI', 'score': '9', 'hits': {'name': 'hits', 'abbreviation': 'H', 'displayValue': '10'}, 'errors': {'name': 'errors', 'abbreviation': 'E', 'displayValue': '0'}, 'colors': {'main': [190, 0, 17], 'secondary': [40, 72, 152]}, 'record': '8-1'}, 'homeTeam': {'teamName': 'Rays', 'name': 'TB', 'score': '2', 'hits': {'name': 'hits', 'abbreviation': 'H', 'displayValue': '3'}, 'errors': {'name': 'errors', 'abbreviation': 'E', 'displayValue': '0'}, 'colors': {'main': [250, 250, 250], 'secondary': [143, 188, 230]}, 'record': '10-7'}, 'winningPitcher': 'R. Suarez 1-1', 'losingPitcher': 'L. Patino 1-1', 'finalDetail': 'Final'},{'league': 'nba', 'pregame': True, 'inprogress': False, 'final': False, 'awayTeam': {'teamName': 'Mavericks', 'name': 'DAL', 'colors': {'main': [12, 71, 157], 'secondary': [196, 206, 211]}, 'record': '27-12'}, 'homeTeam': {'teamName': 'Pistons', 'name': 'DET', 'colors': {'main': [250, 0, 44], 'secondary': [250, 250, 250]}, 'record': '49-30'}, 'startTime': '7:00 PM EDT', 'weather': {'indoors': True, 'temp': 'undefined°'}, 'fanDuel': {'moneyLine': {'home': {'name': 'Detroit Pistons', 'price': 310}, 'away': {'name': 'Dallas Mavericks', 'price': -390}}, 'spread': {'home': {'name': 'Detroit Pistons', 'price': -110, 'point': 8.5}, 'away': {'name': 'Dallas Mavericks', 'price': -110, 'point': -8.5}}, 'totals': {'over': {'name': 'Over', 'price': -110, 'point': 218.5}, 'under': {'name': 'Under', 'price': -110, 'point': 218.5}}}}, {'league': 'nba', 'pregame': True, 'inprogress': False, 'final': False, 'awayTeam': {'teamName': 'Nets', 'name': 'BKN', 'colors': {'main': [250, 250, 250], 'secondary': [255, 255, 255]}, 'record': '18-21'}, 'homeTeam': {'teamName': 'Knicks', 'name': 'NY', 'colors': {'main': [34, 94, 168], 'secondary': [245, 132, 38]}, 'record': '41-38'}, 'startTime': '7:30 PM EDT', 'weather': {'indoors': True, 'temp': 'undefined°'}, 'fanDuel': {'moneyLine': {'home': {'name': 'New York Knicks', 'price': 184}, 'away': {'name': 'Brooklyn Nets', 'price': -220}}, 'spread': {'home': {'name': 'New York Knicks', 'price': -110, 'point': 5}, 'away': {'name': 'Brooklyn Nets', 'price': -110, 'point': -5}}, 'totals': {'over': {'name': 'Over', 'price': -110, 'point': 229.5}, 'under': {'name': 'Under', 'price': -110, 'point': 229.5}}}}, {'league': 'nba', 'pregame': True, 'inprogress': False, 'final': False, 'awayTeam': {'teamName': 'Wizards', 'name': 'WSH', 'colors': {'main': [14, 55, 100], 'secondary': [227, 24, 55]}, 'record': '21-19'}, 'homeTeam': {'teamName': 'Hawks', 'name': 'ATL', 'colors': {'main': [250, 250, 250], 'secondary': [250, 250, 250]}, 'record': '35-44'}, 'startTime': '8:00 PM EDT', 'weather': {'indoors': True, 'temp': 'undefined°'}, 'fanDuel': {'moneyLine': {'home': {'name': 'Atlanta Hawks', 'price': -590}, 'away': {'name': 'Washington Wizards', 'price': 410}}, 'spread': {'home': {'name': 'Atlanta Hawks', 'price': -110, 'point': -10.5}, 'away': {'name': 'Washington Wizards', 'price': -110, 'point': 10.5}}, 'totals': {'over': {'name': 'Over', 'price': -110, 'point': 234}, 'under': {'name': 'Under', 'price': -110, 'point': 234}}}}, {'league': 'nba', 'pregame': True, 'inprogress': False, 'final': False, 'awayTeam': {'teamName': 'Celtics', 'name': 'BOS', 'colors': {'main': [250, 250, 250], 'secondary': [241, 242, 243]}, 'record': '28-13'}, 'homeTeam': {'teamName': 'Bulls', 'name': 'CHI', 'colors': {'main': [250, 250, 250], 'secondary': [250, 250, 250]}, 'record': '49-30'}, 'startTime': '8:00 PM EDT', 'weather': {'indoors': True, 'temp': 'undefined°'}, 'fanDuel': {'moneyLine': {'home': {'name': 'Chicago Bulls', 'price': 235}, 'away': {'name': 'Boston Celtics', 'price': -290}}, 'spread': {'home': {'name': 'Chicago Bulls', 'price': -108, 'point': 7}, 'away': {'name': 'Boston Celtics', 'price': -112, 'point': -7}}, 'totals': {'over': {'name': 'Over', 'price': -110, 'point': 224.5}, 'under': {'name': 'Under', 'price': -110, 'point': 224.5}}}}, {'league': 'nba', 'pregame': True, 'inprogress': False, 'final': False, 'awayTeam': {'teamName': 'Thunder', 'name': 'OKC', 'colors': {'main': [198, 124, 3], 'secondary': [240, 81, 51]}, 'record': '12-29'}, 'homeTeam': {'teamName': 'Jazz', 'name': 'UTAH', 'colors': {'main': [6, 20, 63], 'secondary': [249, 160, 27]}, 'record': '24-55'}, 'startTime': '9:00 PM EDT', 'weather': {'indoors': True, 'temp': 'undefined°'}, 'fanDuel': {'moneyLine': {'home': {'name': 'Utah Jazz', 'price': -1600}, 'away': {'name': 'Oklahoma City Thunder', 'price': 900}}, 'spread': {'home': {'name': 'Utah Jazz', 'price': -108, 'point': -15.5}, 'away': {'name': 'Oklahoma City Thunder', 'price': -112, 'point': 15.5}}, 'totals': {'over': {'name': 'Over', 'price': -110, 'point': 216}, 'under': {'name': 'Under', 'price': -110, 'point': 216}}}}, {'league': 'nba', 'pregame': True, 'inprogress': False, 'final': False, 'awayTeam': {'teamName': 'Suns', 'name': 'PHX', 'colors': {'main': [35, 0, 106], 'secondary': [241, 242, 243]}, 'record': '32-8'}, 'homeTeam': {'teamName': 'Clippers', 'name': 'LAC', 'colors': {'main': [250, 0, 40], 'secondary': [241, 242, 243]}, 'record': '63-16'}, 'startTime': '10:00 PM EDT', 'weather': {'indoors': True, 'temp': 'undefined°'}, 'fanDuel': {'moneyLine': {'home': {'price': ''}, 'away': {'price': ''}}, 'spread': {'home': {'price': ''}, 'away': {'price': ''}}, 'totals': {'over': {'price': ''}, 'under': {'price': ''}}}}]
             print(responseArr)
-            canvas = self.matrix
+            canvas = self.matrix.CreateFrameCanvas()
             bases =  [[113,5],[108,0],[103,5]]
             outs = [[103,20],[109,20],[115,20]]
             offscreen_canvas = self.matrix.CreateFrameCanvas()
@@ -108,30 +108,39 @@ class RunText(SampleBase):
                         # weatherTemp = graphics.DrawText(canvas, smallFont, runningCount + 5, 27, yellow, item['weather']['temp'])
                         startTime = graphics.DrawText(canvas, smallestFont, 80, 30, yellow, item['startTime'])
                     elif item['final'] == True:
+                        awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
+                        homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
+                        oddsStartNum = awayTeamBlack + 8 if awayTeamBlack > homeTeamBlack else homeTeamBlack + 8
+                        for offset in range(13):
+                            graphics.DrawLine(canvas, 0, offset, oddsStartNum - 8, offset, awayColorSecondary)
+                        for offset in range(13):
+                            graphics.DrawLine(canvas, 0, offset + 13, oddsStartNum - 8, offset + 13, homeColorSecondary)
+                        awayTeam = graphics.DrawText(canvas, smallFont, 1, 11, awayColorPrimary, item['awayTeam']['teamName'])
+                        homeTeam = graphics.DrawText(canvas, smallFont, 1, 24, homeColorPrimary, item['homeTeam']['teamName'])
+                        runningCount = oddsStartNum
+                        awayScore = graphics.DrawText(canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['score'])
+                        homeScore = graphics.DrawText(canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
+                        runningCount = runningCount + homeScore + 10
+                        homeHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['hits']['displayValue'])
+                        awayHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['hits']['displayValue'])
+                        runningCount = runningCount + homeHitTotal + 10
+                        homeErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['errors']['displayValue'])
+                        awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
+                        runningCount = runningCount + homeErrorTotal + 10
+                        finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
+                        # winningPitcher = graphics.DrawText(canvas, alilbiggerFont, 0, 32, green, "WP: {}".format(item['winningPitcher']))
                         gameFinalRunning = True
                         while gameFinalRunning:
-                            awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
-                            homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
-                            oddsStartNum = awayTeamBlack + 8 if awayTeamBlack > homeTeamBlack else homeTeamBlack + 8
-                            for offset in range(13):
-                                graphics.DrawLine(canvas, 0, offset, oddsStartNum - 8, offset, awayColorSecondary)
-                            for offset in range(13):
-                                graphics.DrawLine(canvas, 0, offset + 13, oddsStartNum - 8, offset + 13, homeColorSecondary)
-                            awayTeam = graphics.DrawText(canvas, smallFont, 1, 11, awayColorPrimary, item['awayTeam']['teamName'])
-                            homeTeam = graphics.DrawText(canvas, smallFont, 1, 24, homeColorPrimary, item['homeTeam']['teamName'])
-                            runningCount = oddsStartNum
-                            awayScore = graphics.DrawText(canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['score'])
-                            homeScore = graphics.DrawText(canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
-                            runningCount = runningCount + homeScore + 10
-                            homeHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['hits']['displayValue'])
-                            awayHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['hits']['displayValue'])
-                            runningCount = runningCount + homeHitTotal + 10
-                            homeErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['errors']['displayValue'])
-                            awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
-                            runningCount = runningCount + homeErrorTotal + 10
-                            finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
-                            winningPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, green, item['winningPitcher'])
-                            losingPitcher = graphics.DrawText(canvas, smallestFont, winningPitcher + 4, 32, red, item['losingPitcher'])
+                            pos -= 1
+                            # winningPitcher = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos, 32, green, "WP: {}".format(item['winningPitcher']))
+                            # losingPitcher = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + 4 + winningPitcher, 32, red, "LP: {}".format(item['losingPitcher']))
+                            winningPitcher = graphics.DrawText(canvas, alilbiggerFont, pos, 32, green, 'lkjsdlkfjlskdf')
+                            losingPitcher = graphics.DrawText(canvas, alilbiggerFont, pos + 4 + winningPitcher, 32, red, 'fsskddkdkdkdkdk')
+                            canvas = self.matrix.SwapOnVSync(canvas)
+                            if (pos + 2 + winningPitcher + losingPitcher < 0):
+                                gameFinalRunning = False
+                                pos = 120
+                            time.sleep(0.1)
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
@@ -236,15 +245,15 @@ class RunText(SampleBase):
                         awayMLOdds = graphics.DrawText(canvas, smallestFont, runningCount, 11, green, str(awayMoneyLineString))
                         homeMLOdds = graphics.DrawText(canvas, smallestFont, runningCount, 22, green, str(homeMoneyLineString))
                         runningCount = runningCount + homeMLOdds + 2
-                        awaySpreadOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 11, green, str(awaySpreadPointsString))
-                        # awaySpreadOddsPrice = graphics.DrawText(canvas, alilbiggerFont, runningCount, 4 + alilbiggerFont.height, green, str(awaySpreadPriceString))
-                        homeSpreadOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 22, green, str(homeSpreadPointsString))
-                        # homeSpreadOddsPrice = graphics.DrawText(canvas, alilbiggerFont, runningCount, 19 + alilbiggerFont.height, green, str(homeSpreadPriceString))
+                        awaySpreadOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 11, green, str(awaySpreadPointsString))
+                        # awaySpreadOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 4 + smallFont.height, green, str(awaySpreadPriceString))
+                        homeSpreadOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 22, green, str(homeSpreadPointsString))
+                        # homeSpreadOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 19 + smallFont.height, green, str(homeSpreadPriceString))
                         runningCount = runningCount + awaySpreadOddsPoints + 2
-                        overOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 11, green, 'O/U')
-                        # overOddsPrice = graphics.DrawText(canvas, alilbiggerFont, runningCount, 9 + alilbiggerFont.height, green, str(overTotalPriceString))
-                        underOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 30, red, str(underTotalPointsString))
-                        # underOddsPrice = graphics.DrawText(canvas, alilbiggerFont, runningCount, 19 + alilbiggerFont.height, red, str(underTotalPriceString))
+                        overOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 11, green, 'O/U')
+                        # overOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 9 + smallFont.height, green, str(overTotalPriceString))
+                        underOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 30, red, str(underTotalPointsString))
+                        # underOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 19 + smallFont.height, red, str(underTotalPriceString))
                         runningCount = runningCount + underOddsPoints + 2
                         # if 'Rain' in item['weather']['text'] or 'rain' in item['weather']['text']:
                         #     canvas.SetImage(rainImage, runningCount, 2)
@@ -406,8 +415,8 @@ class RunText(SampleBase):
                             runningTotal = runningTotal + 8
                 else:
                     currentTIme = graphics.DrawText(canvas, font, 0, 23, blue, item)
-            time.sleep(4)
-            canvas.Clear()
+                time.sleep(10)
+                canvas.Clear()
 
 
 # Main function
