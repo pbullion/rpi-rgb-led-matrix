@@ -98,8 +98,8 @@ class RunText(SampleBase):
                         weatherTemp = graphics.DrawText(canvas, smallFont, runningCount + 5, 27, yellow, item['weather']['temp'])
                         startTime = graphics.DrawText(canvas, smallFont, runningCount, 30, yellow, item['startTime'])
                     if item['final'] == True:
-                        awayTeamBlack = graphics.DrawText(canvas, smallFont, 2, 11, black, item['awayTeam']['teamName'])
-                        homeTeamBlack = graphics.DrawText(canvas, smallFont, 2, 21, black, item['homeTeam']['teamName'])
+                        awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
+                        homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 21, black, item['homeTeam']['teamName'])
                         oddsStartNum = awayTeamBlack + 8 if awayTeamBlack > homeTeamBlack else homeTeamBlack + 8
                         for offset in range(12):
                             graphics.DrawLine(canvas, 0, offset, oddsStartNum - 8, offset, blue)
@@ -126,6 +126,7 @@ class RunText(SampleBase):
                                 pos = 128
                                 running = False
                             time.sleep(.1)
+                        canvas = matrix.SwapOnVSync(canvas) 
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
