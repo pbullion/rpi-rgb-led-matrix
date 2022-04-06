@@ -48,7 +48,7 @@ class RunText(SampleBase):
             print('here')
             print(responseArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
-            pos = canvas.width
+            pos = 128
             for item in responseArr:
                 print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
                 print(item)
@@ -117,8 +117,9 @@ class RunText(SampleBase):
                             print(pos)
                             pos -= 1
                             winningPitcher = graphics.DrawText(canvas, alilbiggerFont, pos, 30, green, "WP: {}".format(item['winningPitcher']))
+                            print(winningPitcher)
                             if (pos + winningPitcher < 0):
-                                pos = canvas.width
+                                pos = 128
                                 running = False
                             time.sleep(.1)
                     elif item['inprogress'] == True: 
