@@ -114,9 +114,9 @@ class RunText(SampleBase):
                         pos -= 1
                         running = True
                         while running == True:
+                            winningPitcher = graphics.DrawText(canvas, alilbiggerFont, pos, 30, green, "WP: {}".format(item['winningPitcher']))
                             if (pos < 0):
                                 running = False
-                                winningPitcher = graphics.DrawText(canvas, alilbiggerFont, pos, 30, green, "WP: {}".format(item['winningPitcher']))
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
