@@ -104,7 +104,7 @@ class RunText(SampleBase):
                         for offset in range(13):
                             graphics.DrawLine(canvas, 0, offset, oddsStartNum - 8, offset, blue)
                         for offset in range(13):
-                            graphics.DrawLine(canvas, 0, offset + 13, oddsStartNum - 8, offset + 12, green)
+                            graphics.DrawLine(canvas, 0, offset + 13, oddsStartNum - 8, offset + 13, green)
                         awayTeam = graphics.DrawText(canvas, smallFont, 1, 11, awayColorSecondary, item['awayTeam']['teamName'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 1, 22, homeColorSecondary, item['homeTeam']['teamName'])
                         runningCount = oddsStartNum
