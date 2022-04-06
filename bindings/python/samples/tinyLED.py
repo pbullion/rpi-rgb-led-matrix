@@ -138,7 +138,7 @@ class RunText(SampleBase):
                                 gameFinalRunning = False
                                 pos = 120
                             time.sleep(0.1)
-                        offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+                    offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
