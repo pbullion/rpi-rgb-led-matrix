@@ -76,9 +76,9 @@ class RunText(SampleBase):
                         homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
                         oddsStartNum = awayTeamBlack + 3 if awayTeamBlack > homeTeamBlack else homeTeamBlack + 3
                         for offset in range(18):
-                            graphics.DrawLine(canvas, 0, offset, oddsStartNum - 8, offset, awayColorSecondary)
+                            graphics.DrawLine(canvas, 0, offset, oddsStartNum, offset, awayColorSecondary)
                         for offset in range(18):
-                            graphics.DrawLine(canvas, 0, offset + 13, oddsStartNum - 8, offset + 13, homeColorSecondary)
+                            graphics.DrawLine(canvas, 0, offset + 13, oddsStartNum, offset + 13, homeColorSecondary)
                         awayTeam = graphics.DrawText(canvas, smallFont, 1, 11, awayColorPrimary, item['awayTeam']['teamName'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 1, 24, homeColorPrimary, item['homeTeam']['teamName'])
                         # awayTeamStandings = graphics.DrawText(canvas, smallestFont, 5, 12 + smallFont.height, awayColorSecondary, item['awayTeam']['record'])
