@@ -106,7 +106,7 @@ class RunText(SampleBase):
                         # elif 'Sun' in item['weather']['text'] or 'sun' in item['weather']['text']:
                         #     canvas.SetImage(sunnyImage, runningCount, 2)
                         # weatherTemp = graphics.DrawText(canvas, smallFont, runningCount + 5, 27, yellow, item['weather']['temp'])
-                        startTime = graphics.DrawText(canvas, smallFont, runningCount, 30, yellow, item['startTime'])
+                        startTime = graphics.DrawText(canvas, smallestFont, 120, 30, yellow, item['startTime'])
                     elif item['final'] == True:
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
