@@ -26,9 +26,8 @@ class RunText(SampleBase):
             purple = graphics.Color(102, 0, 204)
             yellow = graphics.Color(255, 255, 0)
             white = graphics.Color(255, 255, 255)
-            colors = [blue, teal, purple, yellow]
-            randomNum = random.randint(0,3)
             # END COLORS
+            # FONTS
             font = graphics.Font()
             font.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/texgyre-27.bdf")
             smallFont = graphics.Font()
@@ -37,6 +36,7 @@ class RunText(SampleBase):
             alilbiggerFont.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/5x7.bdf")
             middleFont = graphics.Font()
             middleFont.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/9x18B.bdf")
+            # END FONTS
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
             strings = json.loads(url.text)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
