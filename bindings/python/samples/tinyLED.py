@@ -114,7 +114,7 @@ class RunText(SampleBase):
                         finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
                         running = True
                         pos -= 1
-                        while running == True:
+                        while running:
                             winnfingPitcher = graphics.DrawText(canvas, alilbiggerFont, pos, 30, green, "WP: {}".format(item['winningPitcher']))
                             if (pos < 0):
                                 pos = offscreen_canvas.width
