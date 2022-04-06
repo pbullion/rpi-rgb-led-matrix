@@ -112,14 +112,14 @@ class RunText(SampleBase):
                         awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 21, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
                         runningCount = runningCount + homeErrorTotal + 10
                         finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
-                        graphics.DrawLine(canvas, 0, 25, 200, 25, blue)
-                        graphics.DrawLine(canvas, 0, 26, 200, 26, blue)
-                        graphics.DrawLine(canvas, 0, 27, 200, 27, blue)
-                        graphics.DrawLine(canvas, 0, 28, 200, 28, blue)
-                        graphics.DrawLine(canvas, 0, 29, 200, 29, blue)
-                        graphics.DrawLine(canvas, 0, 30, 200, 30, blue)
-                        graphics.DrawLine(canvas, 0, 31, 200, 31, blue)
-                        graphics.DrawLine(canvas, 0, 32, 200, 32, blue)
+                        graphics.DrawLine(canvas, 0, 25, 200, 25, black)
+                        graphics.DrawLine(canvas, 0, 26, 200, 26, black)
+                        graphics.DrawLine(canvas, 0, 27, 200, 27, black)
+                        graphics.DrawLine(canvas, 0, 28, 200, 28, black)
+                        graphics.DrawLine(canvas, 0, 29, 200, 29, black)
+                        graphics.DrawLine(canvas, 0, 30, 200, 30, black)
+                        graphics.DrawLine(canvas, 0, 31, 200, 31, black)
+                        graphics.DrawLine(canvas, 0, 32, 200, 32, black)
                         running = True
                         while running:
                             pos -= 1
