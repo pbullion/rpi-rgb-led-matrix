@@ -105,8 +105,8 @@ class RunText(SampleBase):
                             graphics.DrawLine(canvas, 0, offset, oddsStartNum - 8, offset, blue)
                         for offset in range(12):
                             graphics.DrawLine(canvas, 0, offset + 12, oddsStartNum - 8, offset + 12, green)
-                        awayTeam = graphics.DrawText(canvas, smallFont, 2, 11, awayColorSecondary, item['awayTeam']['teamName'])
-                        homeTeam = graphics.DrawText(canvas, smallFont, 2, 21, homeColorSecondary, item['homeTeam']['teamName'])
+                        awayTeam = graphics.DrawText(canvas, smallFont, 1, 11, awayColorSecondary, item['awayTeam']['teamName'])
+                        homeTeam = graphics.DrawText(canvas, smallFont, 1, 21, homeColorSecondary, item['homeTeam']['teamName'])
                         runningCount = oddsStartNum
                         awayScore = graphics.DrawText(canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['score'])
                         homeScore = graphics.DrawText(canvas, smallFont, runningCount, 22, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
