@@ -116,11 +116,11 @@ class RunText(SampleBase):
                         position = 40
                         position += 1
                         while running:
-                            winnfingPitcher = graphics.DrawText(canvas, alilbiggerFont, position, 30, green, "WP: {}".format(item['winningPitcher']))
+                            winningPitcher = graphics.DrawText(canvas, alilbiggerFont, position, 30, green, "WP: {}".format(item['winningPitcher']))
                             if (position < 0):
                                 # position = offscreen_canvas.width
                                 running = False
-                            time.sleep(.01)
+                        time.sleep(.01)
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
