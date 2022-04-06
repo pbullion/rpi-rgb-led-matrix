@@ -98,15 +98,15 @@ class RunText(SampleBase):
                         weatherTemp = graphics.DrawText(canvas, smallFont, runningCount + 5, 27, yellow, item['weather']['temp'])
                         startTime = graphics.DrawText(canvas, smallFont, runningCount, 30, yellow, item['startTime'])
                     if item['final'] == True:
-                        graphics.DrawLine(canvas, 0, 1, 64, 1, awayColorPrimary)
-                        graphics.DrawLine(canvas, 0, 2, 64, 2, awayColorPrimary)
-                        graphics.DrawLine(canvas, 0, 3, 64, 3, awayColorPrimary)
-                        graphics.DrawLine(canvas, 0, 4, 64, 4, awayColorPrimary)
-                        graphics.DrawLine(canvas, 0, 5, 64, 5, awayColorPrimary)
-                        graphics.DrawLine(canvas, 0, 6, 64, 6, awayColorPrimary)
                         awayTeam = graphics.DrawText(canvas, smallFont, 2, 11, awayColorSecondary, item['awayTeam']['teamName'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 2, 21, homeColorSecondary, item['homeTeam']['teamName'])
                         oddsStartNum = awayTeam + 8 if awayTeam > homeTeam else homeTeam + 8
+                        graphics.DrawLine(canvas, 0, 1, oddsStartNum - 8, 1, blue)
+                        graphics.DrawLine(canvas, 0, 2, oddsStartNum - 8, 2, blue)
+                        graphics.DrawLine(canvas, 0, 3, oddsStartNum - 8, 3, blue)
+                        graphics.DrawLine(canvas, 0, 4, oddsStartNum - 8, 4, blue)
+                        graphics.DrawLine(canvas, 0, 5, oddsStartNum - 8, 5, blue)
+                        graphics.DrawLine(canvas, 0, 6, oddsStartNum - 8, 6, blue)
                         runningCount = oddsStartNum
                         awayScore = graphics.DrawText(canvas, smallFont, runningCount, 11, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['score'])
                         homeScore = graphics.DrawText(canvas, smallFont, runningCount, 21, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
