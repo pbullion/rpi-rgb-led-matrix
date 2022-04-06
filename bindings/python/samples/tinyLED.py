@@ -113,9 +113,9 @@ class RunText(SampleBase):
                         runningCount = runningCount + homeErrorTotal + 10
                         finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
                         running = True
-                        pos -= 1
                         while running:
                             print(pos)
+                            pos -= 1
                             winningPitcher = graphics.DrawText(canvas, alilbiggerFont, pos, 30, green, "WP: {}".format(item['winningPitcher']))
                             if (pos < 0):
                                 pos = offscreen_canvas.width
