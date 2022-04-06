@@ -134,11 +134,11 @@ class RunText(SampleBase):
                             pos -= 1
                             winningPitcher = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos, 32, green, "WP: {}".format(item['winningPitcher']))
                             losingPitcher = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + 4 + winningPitcher, 32, red, "LP: {}".format(item['losingPitcher']))
-                            offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
                             if (pos + 2 + winningPitcher + losingPitcher < 0):
                                 gameFinalRunning = False
                                 pos = 120
                             time.sleep(0.1)
+                        offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
@@ -250,7 +250,7 @@ class RunText(SampleBase):
                         runningCount = runningCount + awaySpreadOddsPoints + 2
                         overOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 11, green, 'O/U')
                         # overOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 9 + smallFont.height, green, str(overTotalPriceString))
-                        underOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 30, red, str(underTotalPointsString))
+                        underOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 22, red, str(underTotalPointsString))
                         # underOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 19 + smallFont.height, red, str(underTotalPriceString))
                         runningCount = runningCount + underOddsPoints + 2
                         # if 'Rain' in item['weather']['text'] or 'rain' in item['weather']['text']:
