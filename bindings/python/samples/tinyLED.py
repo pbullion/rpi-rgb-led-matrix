@@ -45,7 +45,7 @@ class RunText(SampleBase):
             bases =  [[113,5],[108,0],[103,5]]
             outs = [[103,20],[109,20],[115,20]]
             offscreen_canvas = self.matrix.CreateFrameCanvas()
-            pos = offscreen_canvas.width
+            pos = 120
             for item in responseArr:
                 print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
                 print(item)
@@ -136,7 +136,7 @@ class RunText(SampleBase):
                             losingPitcher = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + 4 + winningPitcher, 32, red, "LP: {}".format(item['losingPitcher']))
                             if (pos + 2 + winningPitcher + losingPitcher < 0):
                                 gameFinalRunning = False
-                                pos = offscreen_canvas.width
+                                pos = 120
                             time.sleep(0.1)
                             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
                     elif item['inprogress'] == True: 
