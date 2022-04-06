@@ -227,9 +227,9 @@ class RunText(SampleBase):
                     direction = 1 if item['up'] else -1
                     stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     canvas.SetImage(stockLogo, 0, 0)
-                    stockSymbol = graphics.DrawText(canvas, middleFont, stockLogo.width + 10, 10, color, item['stockSymbol'])
-                    currentPrice = graphics.DrawText(canvas, smallFont, stockLogo.width + 10 + stockSymbol + 10, 11, color, item['currentPrice'])
-                    x = stockLogo.width + 10 + stockSymbol + 10 + 5
+                    stockSymbol = graphics.DrawText(canvas, middleFont, stockLogo.width, 16, color, item['stockSymbol'])
+                    currentPrice = graphics.DrawText(canvas, smallFont, stockLogo.width + stockSymbol + 10, 11, color, item['currentPrice'])
+                    x = stockLogo.width + 10 + stockSymbol + 10
                     y = 25 if item['up'] else 28
                     size = 4
                     for offset in range(size):
