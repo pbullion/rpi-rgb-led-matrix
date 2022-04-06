@@ -413,6 +413,7 @@ class RunText(SampleBase):
                 else:
                     currentTIme = graphics.DrawText(canvas, font, 0, 23, blue, item)
                 time.sleep(10)
+                offscreen_canvas.SwapOnVSync(offscreen_canvas)
                 canvas.Clear()
 
 
