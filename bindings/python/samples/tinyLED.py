@@ -126,7 +126,7 @@ class RunText(SampleBase):
                                 pos = 128
                                 running = False
                             time.sleep(.1)
-                        canvas = matrix.SwapOnVSync(canvas) 
+                        canvas = self.matrix.SwapOnVSync(canvas) 
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
