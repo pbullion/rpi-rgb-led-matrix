@@ -61,8 +61,8 @@ class RunText(SampleBase):
                         awayMoneyLine = item['fanDuel']['moneyLine']['away']['price']
                         awayspread = item['fanDuel']['spread']['away']['price']
                         homespread = item['fanDuel']['spread']['home']['price']
-                        awaytotals = item['fanDuel']['totals']['away']['price']
-                        hometotals = item['fanDuel']['totals']['home']['price']
+                        overTotal = item['fanDuel']['totals']['over']['price']
+                        underTotal = item['fanDuel']['totals']['under']['price']
                         partlyCloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                         thunderstormImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                         cloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
@@ -82,8 +82,8 @@ class RunText(SampleBase):
                         awaySpreadOdds = graphics.DrawText(canvas, smallFont, runningCount, 11, green, str(awaySpread))
                         homeSpreadOdds = graphics.DrawText(canvas, smallFont, runningCount, 21, green, str(homeSpread))
                         runningCount = runningCount + homeSpreadOdds + 10
-                        awayTotalsOdds = graphics.DrawText(canvas, smallFont, runningCount, 11, green, str(awayTotals))
-                        homeTotalsOdds = graphics.DrawText(canvas, smallFont, runningCount, 21, green, str(homeTotals))
+                        awayTotalsOdds = graphics.DrawText(canvas, smallFont, runningCount, 11, green, str(overTotal))
+                        homeTotalsOdds = graphics.DrawText(canvas, smallFont, runningCount, 21, green, str(underTotal))
                         runningCount = runningCount + homeTotalsOdds + 10
                         if 'Rain' in item['weather']['text'] or 'rain' in item['weather']['text']:
                             canvas.SetImage(rainImage, runningCount, 2)
