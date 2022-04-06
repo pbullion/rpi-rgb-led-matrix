@@ -59,8 +59,8 @@ class RunText(SampleBase):
                     if item['pregame'] == True:
                         homeMoneyLine = item['fanDuel']['moneyLine']['home']['price']
                         awayMoneyLine = item['fanDuel']['moneyLine']['away']['price']
-                        awayspread = item['fanDuel']['spread']['away']['price']
-                        homespread = item['fanDuel']['spread']['home']['price']
+                        awaySpread = item['fanDuel']['spread']['away']['price']
+                        homeSpread = item['fanDuel']['spread']['home']['price']
                         overTotal = item['fanDuel']['totals']['over']['price']
                         underTotal = item['fanDuel']['totals']['under']['price']
                         partlyCloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
