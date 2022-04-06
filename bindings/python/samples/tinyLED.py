@@ -100,14 +100,14 @@ class RunText(SampleBase):
                         homeTeam = graphics.DrawText(canvas, smallFont, 2, 21, homeColorSecondary, item['homeTeam']['teamName'])
                         oddsStartNum = awayTeam + 8 if awayTeam > homeTeam else homeTeam + 8
                         runningCount = oddsStartNum
-                        homeScore = graphics.DrawText(canvas, smallFont, runningCount, 11, green, item['awayTeam']['score'])
-                        awayScore = graphics.DrawText(canvas, smallFont, runningCount, 21, green, item['homeTeam']['score'])
+                        awayScore = graphics.DrawText(canvas, smallFont, runningCount, 11, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['score'])
+                        homeScore = graphics.DrawText(canvas, smallFont, runningCount, 21, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
                         runningCount = runningCount + homeScore + 10
-                        homeHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 11, green, item['awayTeam']['hits']['displayValue'])
-                        awayHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 21, green, item['homeTeam']['hits']['displayValue'])
+                        homeHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 11, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['hits']['displayValue'])
+                        awayHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 21, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['hits']['displayValue'])
                         runningCount = runningCount + homeHitTotal + 10
-                        homeErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 11, green, item['awayTeam']['errors']['displayValue'])
-                        awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 21, green, item['homeTeam']['errors']['displayValue'])
+                        homeErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 11, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['errors']['displayValue'])
+                        awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 21, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
                         runningCount = runningCount + homeErrorTotal + 10
                         winningPitcher = graphics.DrawText(canvas, alilbiggerFont, 2, 30, green, "WP: {}".format(item['winningPitcher']))
                         finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
@@ -227,14 +227,14 @@ class RunText(SampleBase):
                     direction = 1 if item['up'] else -1
                     stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     canvas.SetImage(stockLogo, 0, 0)
-                    stockSymbol = graphics.DrawText(canvas, middleFont, stockLogo.width, 16, color, item['stockSymbol'])
-                    currentPrice = graphics.DrawText(canvas, smallFont, stockLogo.width + stockSymbol + 10, 11, color, item['currentPrice'])
-                    x = stockLogo.width + 10 + stockSymbol + 10
+                    stockSymbol = graphics.DrawText(canvas, middleFont, stockLogo.width + 2, 20, color, item['stockSymbol'])
+                    currentPrice = graphics.DrawText(canvas, middleFont, stockLogo.width + 2 + stockSymbol + 10, 11, color, item['currentPrice'])
+                    x = stockLogo.width + 2 + 10 + stockSymbol + 10
                     y = 25 if item['up'] else 28
                     size = 4
                     for offset in range(size):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
-                    percentChange = graphics.DrawText(canvas, smallFont, stockLogo.width + 10 + stockSymbol + 10 + 5 + 2, 31, color, item['percentChange'])
+                    percentChange = graphics.DrawText(canvas, middleFont, stockLogo.width + 2 + 10 + stockSymbol + 10 + 5 + 2, 31, color, item['percentChange'])
                 elif type(item) is dict and 'standings' in item.keys():
                     runningBuffer = 1
                     # team = graphics.DrawText(canvas, smallestFont, 0, 2, green, item['divisionName'])
