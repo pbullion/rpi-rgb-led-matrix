@@ -108,6 +108,7 @@ class RunText(SampleBase):
                         # weatherTemp = graphics.DrawText(canvas, smallFont, runningCount + 5, 27, yellow, item['weather']['temp'])
                         startTime = graphics.DrawText(canvas, smallestFont, 80, 30, yellow, item['startTime'])
                     elif item['final'] == True:
+                        gameFinalRunning = True
                         while gameFinalRunning:
                             awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
                             homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
@@ -130,7 +131,6 @@ class RunText(SampleBase):
                             runningCount = runningCount + homeErrorTotal + 10
                             finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
                             # winningPitcher = graphics.DrawText(canvas, alilbiggerFont, 0, 32, green, "WP: {}".format(item['winningPitcher']))
-                            gameFinalRunning = True
                             pos -= 1
                             winningPitcher = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos, 32, green, "WP: {}".format(item['winningPitcher']))
                             losingPitcher = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + 4 + winningPitcher, 32, red, "LP: {}".format(item['losingPitcher']))
