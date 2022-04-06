@@ -86,17 +86,17 @@ class RunText(SampleBase):
                         runningCount = oddsStartNum
                         awayMLOdds = graphics.DrawText(canvas, smallFont, runningCount, 11, green, str(awayMoneyLineString))
                         homeMLOdds = graphics.DrawText(canvas, smallFont, runningCount, 22, green, str(homeMoneyLineString))
-                        runningCount = runningCount + homeMLOdds + 4
+                        runningCount = runningCount + homeMLOdds + 2
                         awaySpreadOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 11, green, str(awaySpreadPointsString))
                         # awaySpreadOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 4 + smallFont.height, green, str(awaySpreadPriceString))
                         homeSpreadOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 22, green, str(homeSpreadPointsString))
                         # homeSpreadOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 19 + smallFont.height, green, str(homeSpreadPriceString))
-                        runningCount = runningCount + awaySpreadOddsPoints + 4
-                        overOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 11, green, str(overTotalPointsString))
+                        runningCount = runningCount + awaySpreadOddsPoints + 2
+                        overOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 11, green, 'O/U')
                         # overOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 9 + smallFont.height, green, str(overTotalPriceString))
                         underOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 22, red, str(underTotalPointsString))
                         # underOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 19 + smallFont.height, red, str(underTotalPriceString))
-                        runningCount = runningCount + underOddsPoints + 4
+                        runningCount = runningCount + underOddsPoints + 2
                         # if 'Rain' in item['weather']['text'] or 'rain' in item['weather']['text']:
                         #     canvas.SetImage(rainImage, runningCount, 2)
                         # elif 'Cloudy' in item['weather']['text'] or 'Overcast' in item['weather']['text'] or 'cloudy' in item['weather']['text'] or 'overcast' in item['weather']['text']:
