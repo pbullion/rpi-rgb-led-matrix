@@ -113,12 +113,11 @@ class RunText(SampleBase):
                         runningCount = runningCount + homeErrorTotal + 10
                         finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
                         running = True
-                        position = 40
-                        position += 1
+                        pos -= 1
                         while running:
-                            winningPitcher = graphics.DrawText(canvas, alilbiggerFont, position, 30, green, "WP: {}".format(item['winningPitcher']))
-                            if (position < 0):
-                                # position = offscreen_canvas.width
+                            winningPitcher = graphics.DrawText(canvas, alilbiggerFont, pos, 30, green, "WP: {}".format(item['winningPitcher']))
+                            if (pos < 0):
+                                pos = offscreen_canvas.width
                                 running = False
                         time.sleep(.01)
                     elif item['inprogress'] == True: 
