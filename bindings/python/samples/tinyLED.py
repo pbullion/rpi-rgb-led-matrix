@@ -231,9 +231,9 @@ class RunText(SampleBase):
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
                         oddsStartNum = awayTeamBlack + 3 if awayTeamBlack > homeTeamBlack else homeTeamBlack + 3
-                        for offset in range(12):
+                        for offset in range(13):
                             graphics.DrawLine(canvas, 0, offset, oddsStartNum - 3, offset, awayColorSecondary)
-                        for offset in range(12):
+                        for offset in range(13):
                             graphics.DrawLine(canvas, 0, offset + 13, oddsStartNum - 3, offset + 13, homeColorSecondary)
                         awayTeam = graphics.DrawText(canvas, smallFont, 1, 11, awayColorPrimary, item['awayTeam']['teamName'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 1, 24, homeColorPrimary, item['homeTeam']['teamName'])
@@ -248,10 +248,10 @@ class RunText(SampleBase):
                         homeSpreadOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 22, green, str(homeSpreadPointsString))
                         # homeSpreadOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 19 + smallFont.height, green, str(homeSpreadPriceString))
                         runningCount = runningCount + awaySpreadOddsPoints + 4
-                        overOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 11, green, 'O/U')
-                        # overOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 9 + smallFont.height, green, str(overTotalPriceString))
-                        underOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 22, red, str(underTotalPointsString))
-                        # underOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 19 + smallFont.height, red, str(underTotalPriceString))
+                        overOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 11, green, 'O/U')
+                        # overOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 9 + smallestFont.height, green, str(overTotalPriceString))
+                        underOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 22, red, str(underTotalPointsString))
+                        # underOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 19 + smallestFont.height, red, str(underTotalPriceString))
                         runningCount = runningCount + underOddsPoints + 4
                         # if 'Rain' in item['weather']['text'] or 'rain' in item['weather']['text']:
                         #     canvas.SetImage(rainImage, runningCount, 2)
