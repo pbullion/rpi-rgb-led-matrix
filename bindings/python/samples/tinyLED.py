@@ -95,7 +95,7 @@ class RunText(SampleBase):
                             canvas.SetImage(sunnyImage, runningCount, 2)
                         weatherTemp = graphics.DrawText(canvas, smallFont, runningCount + 5, 27, yellow, item['weather']['temp'])
                         startTime = graphics.DrawText(canvas, smallFont, runningCount, 30, yellow, item['startTime'])
-                    if item['final'] == True:    
+                    if item['final'] == True:
                         awayTeam = graphics.DrawText(canvas, smallFont, 2, 11, awayColorSecondary, item['awayTeam']['teamName'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 2, 21, homeColorSecondary, item['homeTeam']['teamName'])
                         oddsStartNum = awayTeam + 8 if awayTeam > homeTeam else homeTeam + 8
@@ -109,8 +109,14 @@ class RunText(SampleBase):
                         homeErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 11, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['errors']['displayValue'])
                         awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 21, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
                         runningCount = runningCount + homeErrorTotal + 10
-                        winningPitcher = graphics.DrawText(canvas, alilbiggerFont, 2, 30, green, "WP: {}".format(item['winningPitcher']))
                         finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
+                        position = canvas.width
+                        pos -= 1
+                        running = True
+                        while running == True:
+                            if (pos < 0):
+                                running = False
+                                winningPitcher = graphics.DrawText(canvas, alilbiggerFont, pos, 30, green, "WP: {}".format(item['winningPitcher']))
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
