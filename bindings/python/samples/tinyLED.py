@@ -248,10 +248,10 @@ class RunText(SampleBase):
                         homeSpreadOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 22, green, str(homeSpreadPointsString))
                         # homeSpreadOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 19 + smallFont.height, green, str(homeSpreadPriceString))
                         runningCount = runningCount + awaySpreadOddsPoints + 4
-                        overOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 11, green, 'O/U')
-                        # overOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 9 + smallestFont.height, green, str(overTotalPriceString))
-                        underOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 22, red, str(underTotalPointsString))
-                        # underOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 19 + smallestFont.height, red, str(underTotalPriceString))
+                        overOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 11, green, 'O/U')
+                        # overOddsPrice = graphics.DrawText(canvas, alilbiggerFont, runningCount, 9 + alilbiggerFont.height, green, str(overTotalPriceString))
+                        underOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 22, red, str(underTotalPointsString))
+                        # underOddsPrice = graphics.DrawText(canvas, alilbiggerFont, runningCount, 19 + alilbiggerFont.height, red, str(underTotalPriceString))
                         runningCount = runningCount + underOddsPoints + 4
                         # if 'Rain' in item['weather']['text'] or 'rain' in item['weather']['text']:
                         #     canvas.SetImage(rainImage, runningCount, 2)
