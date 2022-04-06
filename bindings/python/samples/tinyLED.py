@@ -114,10 +114,9 @@ class RunText(SampleBase):
                         finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
                         running = True
                         while running:
-                            print(pos)
                             pos -= 1
                             winningPitcher = graphics.DrawText(canvas, alilbiggerFont, pos, 30, green, "WP: {}".format(item['winningPitcher']))
-                            print(winningPitcher)
+                            print(pos + winningPitcher)
                             if (pos + winningPitcher < 0):
                                 pos = 128
                                 running = False
