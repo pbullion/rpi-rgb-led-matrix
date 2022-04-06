@@ -130,8 +130,8 @@ class RunText(SampleBase):
                             awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
                             runningCount = runningCount + homeErrorTotal + 10
                             finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
-                            winningPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, green, "WP: {}".format(item['winningPitcher']))
-                            losingPitcher = graphics.DrawText(canvas, smallestFont, winningPitcher + 2, 32, red, "LP: {}".format(item['losingPitcher']))
+                            winningPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, green, item['winningPitcher'])
+                            losingPitcher = graphics.DrawText(canvas, smallestFont, winningPitcher + 2, 32, red, item['losingPitcher'])
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
