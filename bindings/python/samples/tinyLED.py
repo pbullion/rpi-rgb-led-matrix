@@ -98,6 +98,12 @@ class RunText(SampleBase):
                         weatherTemp = graphics.DrawText(canvas, smallFont, runningCount + 5, 27, yellow, item['weather']['temp'])
                         startTime = graphics.DrawText(canvas, smallFont, runningCount, 30, yellow, item['startTime'])
                     if item['final'] == True:
+                        graphics.DrawLine(canvas, 0, 1, 64, 1, awayTeamColor)
+                        graphics.DrawLine(canvas, 0, 2, 64, 2, awayTeamColor)
+                        graphics.DrawLine(canvas, 0, 3, 64, 3, awayTeamColor)
+                        graphics.DrawLine(canvas, 0, 4, 64, 4, awayTeamColor)
+                        graphics.DrawLine(canvas, 0, 5, 64, 5, awayTeamColor)
+                        graphics.DrawLine(canvas, 0, 6, 64, 6, awayTeamColor)
                         awayTeam = graphics.DrawText(canvas, smallFont, 2, 11, awayColorSecondary, item['awayTeam']['teamName'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 2, 21, homeColorSecondary, item['homeTeam']['teamName'])
                         oddsStartNum = awayTeam + 8 if awayTeam > homeTeam else homeTeam + 8
@@ -112,14 +118,6 @@ class RunText(SampleBase):
                         awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 21, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
                         runningCount = runningCount + homeErrorTotal + 10
                         finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
-                        graphics.DrawLine(canvas, 0, 25, 200, 25, black)
-                        graphics.DrawLine(canvas, 0, 26, 200, 26, black)
-                        graphics.DrawLine(canvas, 0, 27, 200, 27, black)
-                        graphics.DrawLine(canvas, 0, 28, 200, 28, black)
-                        graphics.DrawLine(canvas, 0, 29, 200, 29, black)
-                        graphics.DrawLine(canvas, 0, 30, 200, 30, black)
-                        graphics.DrawLine(canvas, 0, 31, 200, 31, black)
-                        graphics.DrawLine(canvas, 0, 32, 200, 32, black)
                         running = True
                         while running:
                             pos -= 1
