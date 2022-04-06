@@ -71,19 +71,19 @@ class RunText(SampleBase):
                         sunnyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                         windyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                         awayTeam = graphics.DrawText(canvas, smallFont, 2, 11, awayColorSecondary, item['awayTeam']['teamName'])
-                        awayTeamStandings = graphics.DrawText(canvas, smallestFont, 8 + awayTeam, 4, awayColorSecondary, item['awayTeam']['record'])
+                        awayTeamStandings = graphics.DrawText(canvas, smallestFont, 8 + awayTeam, 11, awayColorSecondary, item['awayTeam']['record'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 2, 21, homeColorSecondary, item['homeTeam']['teamName'])
-                        homeTeamStandings = graphics.DrawText(canvas, smallestFont, 8 + homeTeam, 4, homeColorSecondary, item['homeTeam']['record'])
+                        homeTeamStandings = graphics.DrawText(canvas, smallestFont, 8 + homeTeam, 21, homeColorSecondary, item['homeTeam']['record'])
                         oddsStartNum = awayTeam + 8 + awayTeamStandings if awayTeam > homeTeam else homeTeam + 8 + homeTeamStandings
                         runningCount = oddsStartNum
-                        awayMLOdds = graphics.DrawText(canvas, smallFont, runningCount, 11, green, str(awayMoneyLine))
-                        homeMLOdds = graphics.DrawText(canvas, smallFont, runningCount, 21, green, str(homeMoneyLine))
+                        awayMLOdds = graphics.DrawText(canvas, smallestFont, runningCount, 11, green, str(awayMoneyLine))
+                        homeMLOdds = graphics.DrawText(canvas, smallestFont, runningCount, 21, green, str(homeMoneyLine))
                         runningCount = runningCount + homeMLOdds + 10
-                        awaySpreadOdds = graphics.DrawText(canvas, smallFont, runningCount, 11, green, str(awaySpread))
-                        homeSpreadOdds = graphics.DrawText(canvas, smallFont, runningCount, 21, green, str(homeSpread))
+                        awaySpreadOdds = graphics.DrawText(canvas, smallestFont, runningCount, 11, green, str(awaySpread))
+                        homeSpreadOdds = graphics.DrawText(canvas, smallestFont, runningCount, 21, green, str(homeSpread))
                         runningCount = runningCount + homeSpreadOdds + 10
-                        awayTotalsOdds = graphics.DrawText(canvas, smallFont, runningCount, 11, green, str(overTotal))
-                        homeTotalsOdds = graphics.DrawText(canvas, smallFont, runningCount, 21, green, str(underTotal))
+                        awayTotalsOdds = graphics.DrawText(canvas, smallestFont, runningCount, 11, green, str(overTotal))
+                        homeTotalsOdds = graphics.DrawText(canvas, smallestFont, runningCount, 21, green, str(underTotal))
                         runningCount = runningCount + homeTotalsOdds + 10
                         if 'Rain' in item['weather']['text'] or 'rain' in item['weather']['text']:
                             canvas.SetImage(rainImage, runningCount, 2)
@@ -225,16 +225,16 @@ class RunText(SampleBase):
                 elif type(item) is dict and 'stockSymbol' in item.keys():
                     color = green if item['up'] else red
                     direction = 1 if item['up'] else -1
-                    stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((20,20), Image.ANTIALIAS)
+                    stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     canvas.SetImage(stockLogo, 2, 3)
-                    stockSymbol = graphics.DrawText(canvas, middleFont, 25 if len(item['stockSymbol']) > 3 else 28, 12, color, item['stockSymbol'])
-                    currentPrice = graphics.DrawText(canvas, alilbiggerFont, 29, 20, color, item['currentPrice'])
-                    x = 22
+                    stockSymbol = graphics.DrawText(canvas, font, stockLogo.width + 10, 10, color, item['stockSymbol'])
+                    currentPrice = graphics.DrawText(canvas, smallFont, stockLogo.width + 10 + stockSymbol + 10, 11, color, item['currentPrice'])
+                    x = stockLogo.width + 10 + stockSymbol + 10 + 5
                     y = 25 if item['up'] else 28
                     size = 4
                     for offset in range(size):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
-                    percentChange = graphics.DrawText(canvas, smallFont, 29, 31, color, item['percentChange'])
+                    percentChange = graphics.DrawText(canvas, smallFont, stockLogo.width + 10 + stockSymbol + 10 + 5 + 2, 31, color, item['percentChange'])
                 elif type(item) is dict and 'standings' in item.keys():
                     runningBuffer = 1
                     # team = graphics.DrawText(canvas, smallestFont, 0, 2, green, item['divisionName'])
