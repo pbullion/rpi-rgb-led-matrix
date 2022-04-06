@@ -120,7 +120,7 @@ class RunText(SampleBase):
                             if (pos < 0):
                                 pos = offscreen_canvas.width
                                 running = False
-                            time.sleep(.01)
+                            time.sleep(.1)
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
