@@ -96,7 +96,7 @@ class RunText(SampleBase):
                         overOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 9 + smallestFont.height, green, str(overTotalPriceString))
                         underOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 18, red, str(underTotalPointsString))
                         underOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 19 + smallestFont.height, red, str(underTotalPriceString))
-                        runningCount = runningCount + homeTotalsOdds + 3
+                        runningCount = runningCount + underOddsPrice + 3
                         if 'Rain' in item['weather']['text'] or 'rain' in item['weather']['text']:
                             canvas.SetImage(rainImage, runningCount, 2)
                         elif 'Cloudy' in item['weather']['text'] or 'Overcast' in item['weather']['text'] or 'cloudy' in item['weather']['text'] or 'overcast' in item['weather']['text']:
