@@ -99,29 +99,29 @@ class RunText(SampleBase):
                         startTime = graphics.DrawText(canvas, smallFont, runningCount, 30, yellow, item['startTime'])
                     if item['final'] == True:
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
-                        homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 21, black, item['homeTeam']['teamName'])
+                        homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
                         oddsStartNum = awayTeamBlack + 8 if awayTeamBlack > homeTeamBlack else homeTeamBlack + 8
-                        for offset in range(12):
+                        for offset in range(13):
                             graphics.DrawLine(canvas, 0, offset, oddsStartNum - 8, offset, blue)
-                        for offset in range(12):
-                            graphics.DrawLine(canvas, 0, offset + 12, oddsStartNum - 8, offset + 12, green)
+                        for offset in range(13):
+                            graphics.DrawLine(canvas, 0, offset + 13, oddsStartNum - 8, offset + 12, green)
                         awayTeam = graphics.DrawText(canvas, smallFont, 1, 11, awayColorSecondary, item['awayTeam']['teamName'])
-                        homeTeam = graphics.DrawText(canvas, smallFont, 1, 21, homeColorSecondary, item['homeTeam']['teamName'])
+                        homeTeam = graphics.DrawText(canvas, smallFont, 1, 22, homeColorSecondary, item['homeTeam']['teamName'])
                         runningCount = oddsStartNum
                         awayScore = graphics.DrawText(canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['score'])
-                        homeScore = graphics.DrawText(canvas, smallFont, runningCount, 22, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
+                        homeScore = graphics.DrawText(canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
                         runningCount = runningCount + homeScore + 10
                         homeHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['hits']['displayValue'])
-                        awayHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 22, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['hits']['displayValue'])
+                        awayHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['hits']['displayValue'])
                         runningCount = runningCount + homeHitTotal + 10
                         homeErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['errors']['displayValue'])
-                        awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 22, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
+                        awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
                         runningCount = runningCount + homeErrorTotal + 10
                         finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
                         running = True
                         while running:
                             pos -= 1
-                            winningPitcher = graphics.DrawText(canvas, alilbiggerFont, pos, 30, green, "WP: {}".format(item['winningPitcher']))
+                            winningPitcher = graphics.DrawText(canvas, alilbiggerFont, pos, 31, green, "WP: {}".format(item['winningPitcher']))
                             if (pos + winningPitcher < 0):
                                 pos = 128
                                 running = False
