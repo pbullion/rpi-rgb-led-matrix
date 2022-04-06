@@ -136,11 +136,11 @@ class RunText(SampleBase):
                             # losingPitcher = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + 4 + winningPitcher, 32, red, "LP: {}".format(item['losingPitcher']))
                             winningPitcher = graphics.DrawText(canvas, alilbiggerFont, pos, 32, green, 'lkjsdlkfjlskdf')
                             losingPitcher = graphics.DrawText(canvas, alilbiggerFont, pos + 4 + winningPitcher, 32, red, 'fsskddkdkdkdkdk')
-                            canvas = self.matrix.SwapOnVSync(canvas)
                             if (pos + 2 + winningPitcher + losingPitcher < 0):
                                 gameFinalRunning = False
                                 pos = 120
                             time.sleep(0.1)
+                        canvas = self.matrix.SwapOnVSync(canvas)
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
