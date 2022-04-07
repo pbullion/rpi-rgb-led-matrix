@@ -258,17 +258,18 @@ class RunText(SampleBase):
                         awayTeamBlack = graphics.DrawText(canvas, middleFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, middleFont, 1, 23, black, item['homeTeam']['teamName'])
                         oddsStartNum = awayTeamBlack + 8 if awayTeamBlack > homeTeamBlack else homeTeamBlack + 8
-                        for offset in range(18):
+                        for offset in range(16):
                             graphics.DrawLine(canvas, 0, offset, oddsStartNum - 8, offset, awayColorPrimary)
-                        for offset in range(18):
-                            graphics.DrawLine(canvas, 0, offset + 18, oddsStartNum - 8, offset + 18, homeColorPrimary)
-                        awayTeam = graphics.DrawText(canvas, middleFont, 1, 11, awayColorSecondary, item['awayTeam']['teamName'])
-                        homeTeam = graphics.DrawText(canvas, middleFont, 1, 24, homeColorSecondary, item['homeTeam']['teamName'])
+                        for offset in range(16):
+                            graphics.DrawLine(canvas, 0, offset + 16, oddsStartNum - 8, offset + 16, homeColorPrimary)
+                        awayTeam = graphics.DrawText(canvas, middleFont, 1, 13, awayColorSecondary, item['awayTeam']['teamName'])
+                        homeTeam = graphics.DrawText(canvas, middleFont, 1, 26, homeColorSecondary, item['homeTeam']['teamName'])
                         runningCount = oddsStartNum
                         awayScore = graphics.DrawText(canvas, middleFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['score'])
                         homeScore = graphics.DrawText(canvas, middleFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
                         runningCount = runningCount + homeScore + 10
-                        finalDetail = graphics.DrawText(canvas, middleFont, 110, 20, yellow, item['finalDetail'])
+                        finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 3, 20, yellow, 'F')
+                        # finalDetail = graphics.DrawText(canvas, middleFont, 110, 20, yellow, item['finalDetail'])
                     elif item['inprogress'] == True:    
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 25, black, item['homeTeam']['teamName'])
