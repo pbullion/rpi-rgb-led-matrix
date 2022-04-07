@@ -128,7 +128,7 @@ class RunText(SampleBase):
                         runningCount = runningCount + homeErrorTotal + 10
                         finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
                         winningPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, green, "WP: {}".format(item['winningPitcher']))
-                        losingPitcher = graphics.DrawText(canvas, smallestFont, pos + 4 + winningPitcher, 32, red, "LP: {}".format(item['losingPitcher']))
+                        losingPitcher = graphics.DrawText(canvas, smallestFont, 4 + winningPitcher, 32, red, "LP: {}".format(item['losingPitcher']))
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
