@@ -109,35 +109,28 @@ class RunText(SampleBase):
                         startTime = graphics.DrawText(canvas, smallestFont, 80, 30, yellow, item['startTime'])
                     elif item['final'] == True:
                         gameFinalRunning = True
-                        while gameFinalRunning:
-                            awayTeamBlack = graphics.DrawText(offscreen_canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
-                            homeTeamBlack = graphics.DrawText(offscreen_canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
-                            oddsStartNum = awayTeamBlack + 8 if awayTeamBlack > homeTeamBlack else homeTeamBlack + 8
-                            for offset in range(13):
-                                graphics.DrawLine(offscreen_canvas, 0, offset, oddsStartNum - 8, offset, awayColorSecondary)
-                            for offset in range(13):
-                                graphics.DrawLine(offscreen_canvas, 0, offset + 13, oddsStartNum - 8, offset + 13, homeColorSecondary)
-                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, 1, 11, awayColorPrimary, item['awayTeam']['teamName'])
-                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, 1, 24, black, item['homeTeam']['teamName'])
-                            runningCount = oddsStartNum
-                            awayScore = graphics.DrawText(offscreen_canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['score'])
-                            homeScore = graphics.DrawText(offscreen_canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
-                            runningCount = runningCount + homeScore + 10
-                            homeHitTotal = graphics.DrawText(offscreen_canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['hits']['displayValue'])
-                            awayHitTotal = graphics.DrawText(offscreen_canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['hits']['displayValue'])
-                            runningCount = runningCount + homeHitTotal + 10
-                            homeErrorTotal = graphics.DrawText(offscreen_canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['errors']['displayValue'])
-                            awayErrorTotal = graphics.DrawText(offscreen_canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
-                            runningCount = runningCount + homeErrorTotal + 10
-                            finalDetail = graphics.DrawText(offscreen_canvas, middleFont, runningCount + 5, 20, yellow, 'F')
-                            # winningPitcher = graphics.DrawText(offscreen_canvas, alilbiggerFont, 0, 32, green, "WP: {}".format(item['winningPitcher']))
-                            pos -= 1
-                            winningPitcher = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos, 32, green, "WP: {}".format(item['winningPitcher']))
-                            losingPitcher = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + 4 + winningPitcher, 32, red, "LP: {}".format(item['losingPitcher']))
-                            if (pos + 2 + winningPitcher + losingPitcher < 0):
-                                gameFinalRunning = False
-                                pos = 120
-                            time.sleep(0.1)
+                        awayTeamBlack = graphics.DrawText(offscreen_canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
+                        homeTeamBlack = graphics.DrawText(offscreen_canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
+                        oddsStartNum = awayTeamBlack + 8 if awayTeamBlack > homeTeamBlack else homeTeamBlack + 8
+                        for offset in range(13):
+                            graphics.DrawLine(offscreen_canvas, 0, offset, oddsStartNum - 8, offset, awayColorSecondary)
+                        for offset in range(13):
+                            graphics.DrawLine(offscreen_canvas, 0, offset + 13, oddsStartNum - 8, offset + 13, homeColorSecondary)
+                        awayTeam = graphics.DrawText(offscreen_canvas, smallFont, 1, 11, awayColorPrimary, item['awayTeam']['teamName'])
+                        homeTeam = graphics.DrawText(offscreen_canvas, smallFont, 1, 24, black, item['homeTeam']['teamName'])
+                        runningCount = oddsStartNum
+                        awayScore = graphics.DrawText(offscreen_canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['score'])
+                        homeScore = graphics.DrawText(offscreen_canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
+                        runningCount = runningCount + homeScore + 10
+                        homeHitTotal = graphics.DrawText(offscreen_canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['hits']['displayValue'])
+                        awayHitTotal = graphics.DrawText(offscreen_canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['hits']['displayValue'])
+                        runningCount = runningCount + homeHitTotal + 10
+                        homeErrorTotal = graphics.DrawText(offscreen_canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['errors']['displayValue'])
+                        awayErrorTotal = graphics.DrawText(offscreen_canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
+                        runningCount = runningCount + homeErrorTotal + 10
+                        finalDetail = graphics.DrawText(offscreen_canvas, middleFont, runningCount + 5, 20, yellow, 'F')
+                        winningPitcher = graphics.DrawText(offscreen_canvas, smallestFont, 0, 32, green, "WP: {}".format(item['winningPitcher']))
+                        losingPitcher = graphics.DrawText(offscreen_canvas, smallestFont, pos + 4 + winningPitcher, 32, red, "LP: {}".format(item['losingPitcher']))
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
