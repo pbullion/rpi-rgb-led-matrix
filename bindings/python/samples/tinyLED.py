@@ -118,7 +118,7 @@ class RunText(SampleBase):
                             for offset in range(13):
                                 graphics.DrawLine(offscreen_canvas, 0, offset + 13, oddsStartNum - 8, offset + 13, homeColorSecondary)
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, 1, 11, awayColorPrimary, item['awayTeam']['teamName'])
-                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, 1, 24, homeColorPrimary, item['homeTeam']['teamName'])
+                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, 1, 24, black, item['homeTeam']['teamName'])
                             runningCount = oddsStartNum
                             awayScore = graphics.DrawText(offscreen_canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['score'])
                             homeScore = graphics.DrawText(offscreen_canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
@@ -138,7 +138,6 @@ class RunText(SampleBase):
                                 gameFinalRunning = False
                                 pos = 120
                             time.sleep(0.1)
-                        offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
@@ -231,9 +230,9 @@ class RunText(SampleBase):
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
                         oddsStartNum = awayTeamBlack + 3 if awayTeamBlack > homeTeamBlack else homeTeamBlack + 3
-                        for offset in range(12):
+                        for offset in range(13):
                             graphics.DrawLine(canvas, 0, offset, oddsStartNum - 3, offset, awayColorSecondary)
-                        for offset in range(12):
+                        for offset in range(13):
                             graphics.DrawLine(canvas, 0, offset + 13, oddsStartNum - 3, offset + 13, homeColorSecondary)
                         awayTeam = graphics.DrawText(canvas, smallFont, 1, 11, awayColorPrimary, item['awayTeam']['teamName'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 1, 24, homeColorPrimary, item['homeTeam']['teamName'])
@@ -242,17 +241,17 @@ class RunText(SampleBase):
                         runningCount = oddsStartNum
                         awayMLOdds = graphics.DrawText(canvas, smallestFont, runningCount, 11, green, str(awayMoneyLineString))
                         homeMLOdds = graphics.DrawText(canvas, smallestFont, runningCount, 22, green, str(homeMoneyLineString))
-                        runningCount = runningCount + homeMLOdds + 2
+                        runningCount = runningCount + homeMLOdds + 4
                         awaySpreadOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 11, green, str(awaySpreadPointsString))
                         # awaySpreadOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 4 + smallFont.height, green, str(awaySpreadPriceString))
                         homeSpreadOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 22, green, str(homeSpreadPointsString))
                         # homeSpreadOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 19 + smallFont.height, green, str(homeSpreadPriceString))
-                        runningCount = runningCount + awaySpreadOddsPoints + 2
-                        overOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 11, green, 'O/U')
-                        # overOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 9 + smallFont.height, green, str(overTotalPriceString))
-                        underOddsPoints = graphics.DrawText(canvas, smallFont, runningCount, 22, red, str(underTotalPointsString))
-                        # underOddsPrice = graphics.DrawText(canvas, smallFont, runningCount, 19 + smallFont.height, red, str(underTotalPriceString))
-                        runningCount = runningCount + underOddsPoints + 2
+                        runningCount = runningCount + awaySpreadOddsPoints + 4
+                        overOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 11, green, 'O/U')
+                        # overOddsPrice = graphics.DrawText(canvas, alilbiggerFont, runningCount, 9 + alilbiggerFont.height, green, str(overTotalPriceString))
+                        underOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 22, red, str(underTotalPointsString))
+                        # underOddsPrice = graphics.DrawText(canvas, alilbiggerFont, runningCount, 19 + alilbiggerFont.height, red, str(underTotalPriceString))
+                        runningCount = runningCount + underOddsPoints + 4
                         # if 'Rain' in item['weather']['text'] or 'rain' in item['weather']['text']:
                         #     canvas.SetImage(rainImage, runningCount, 2)
                         # elif 'Cloudy' in item['weather']['text'] or 'Overcast' in item['weather']['text'] or 'cloudy' in item['weather']['text'] or 'overcast' in item['weather']['text']:
@@ -414,6 +413,8 @@ class RunText(SampleBase):
                 else:
                     currentTIme = graphics.DrawText(canvas, font, 0, 23, blue, item)
                 time.sleep(10)
+                offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+                offscreen_canvas.Clear()
                 canvas.Clear()
 
 
