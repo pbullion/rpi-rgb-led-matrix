@@ -379,7 +379,7 @@ class RunText(SampleBase):
                     size = 4
                     for offset in range(size):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
-                    percentChange = graphics.DrawText(canvas, middleFont, stockLogo.width + 2 + stockSymbol + 15, 31, color, item['percentChange'])
+                    percentChange = graphics.DrawText(canvas, middleFont, stockLogo.width + 2 + stockSymbol + 8, 31, color, item['percentChange'])
                 elif type(item) is dict and 'standings' in item.keys():
                     runningBuffer = 1
                     # team = graphics.DrawText(canvas, smallestFont, 0, 2, green, item['divisionName'])
