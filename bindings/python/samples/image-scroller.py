@@ -1,5 +1,3 @@
-
-CLionRider    
 #!/usr/bin/env python
 import time
 from samplebase import SampleBase
