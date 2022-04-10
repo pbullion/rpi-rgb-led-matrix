@@ -373,7 +373,7 @@ class RunText(SampleBase):
                     stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     canvas.SetImage(stockLogo, 0, 0)
                     stockSymbol = graphics.DrawText(canvas, middleFont, stockLogo.width + 2, 20, color, item['stockSymbol'])
-                    currentPrice = graphics.DrawText(canvas, smallFont, stockLogo.width + 2 + stockSymbol + 10, 14, color, item['currentPrice'])
+                    currentPrice = graphics.DrawText(canvas, smallFont, stockLogo.width + 2 + stockSymbol + 10, 14, color, '$ {}'.format(item['currentPrice']))
                     x = stockLogo.width + 2 + stockSymbol
                     y = 25 if item['up'] else 28
                     size = 4
