@@ -374,7 +374,7 @@ class RunText(SampleBase):
                     canvas.SetImage(stockLogo, 0, 0)
                     stockSymbol = graphics.DrawText(canvas, middleFont, stockLogo.width + 2, 20, color, item['stockSymbol'])
                     currentPrice = graphics.DrawText(canvas, smallFont, stockLogo.width + 2 + stockSymbol + 10, 14, color, item['currentPrice'])
-                    x = stockLogo.width + 2 + stockSymbol + 8
+                    x = stockLogo.width + 2 + stockSymbol
                     y = 25 if item['up'] else 28
                     size = 4
                     for offset in range(size):
