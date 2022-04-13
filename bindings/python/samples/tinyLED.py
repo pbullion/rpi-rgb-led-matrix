@@ -33,6 +33,8 @@ class RunText(SampleBase):
             smallestFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/4x6.bdf")
             alilbiggerFont = graphics.Font()
             alilbiggerFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/5x7.bdf")
+            slightlyBiggerFont = graphics.Font()
+            slightlyBiggerFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/5x8.bdf")
             smallFont = graphics.Font()
             smallFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x13.bdf")
             middleFont = graphics.Font()
@@ -422,7 +424,7 @@ class RunText(SampleBase):
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
                     centered = 128 - currentTemp + 33 + (weatherConditionText / 2)
                     weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, 32, 8, color, item['condition'])
-                    highLow = graphics.DrawText(canvas, middleFont, 65, 22, color, item['highLow'])
+                    highLow = graphics.DrawText(canvas, slightlyBiggerFont, 65, 22, color, item['highLow'])
                     rainChance = graphics.DrawText(canvas, alilbiggerFont, 75, 30, color, 'Rain: {}'.format(item['rainPercent']))
                 elif type(item) is dict and 'condition' in item.keys():
                     # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
