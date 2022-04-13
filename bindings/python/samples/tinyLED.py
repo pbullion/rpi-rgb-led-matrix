@@ -419,9 +419,9 @@ class RunText(SampleBase):
                         canvas.SetImage(sunnyImage, 0, 0)
                         color = yellow
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
-                    centered = 32 + (weatherConditionText / 2)
+                    centered = 64 + (weatherConditionText / 2)
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, centered, 10, blue, item['condition'])
-                    currentTemp = graphics.DrawText(canvas, middleFont, 32, 13, blue, item['temp'])
+                    currentTemp = graphics.DrawText(canvas, font, 34, 19, blue, item['temp'])
                     highLow = graphics.DrawText(canvas, alilbiggerFont, 75, 22, blue, item['highLow'])
                     rainChance = graphics.DrawText(canvas, alilbiggerFont, 75, 30, blue, 'Rain: 80%')
                 elif type(item) is dict and 'condition' in item.keys():
