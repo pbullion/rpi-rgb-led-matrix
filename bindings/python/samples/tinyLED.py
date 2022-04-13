@@ -34,7 +34,7 @@ class RunText(SampleBase):
             alilbiggerFont = graphics.Font()
             alilbiggerFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/5x7.bdf")
             slightlyBiggerFont = graphics.Font()
-            slightlyBiggerFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x9.bdf")
+            slightlyBiggerFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/8x13.bdf")
             smallFont = graphics.Font()
             smallFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x13.bdf")
             middleFont = graphics.Font()
