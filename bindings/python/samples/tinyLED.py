@@ -423,7 +423,7 @@ class RunText(SampleBase):
                     centered = 128 - currentTemp + 33 + (weatherConditionText / 2)
                     weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, 32, 8, color, item['condition'])
                     highLow = graphics.DrawText(canvas, middleFont, 65, 22, color, item['highLow'])
-                    rainChance = graphics.DrawText(canvas, alilbiggerFont, 75, 30, color, item['rainPercent'])
+                    rainChance = graphics.DrawText(canvas, alilbiggerFont, 75, 30, color, 'Rain: {}'.format(item['rainPercent']))
                 elif type(item) is dict and 'condition' in item.keys():
                     # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
                     # weatherImage = Image.open(locationString).convert('RGB').resize((22, 22), Image.ANTIALIAS)
@@ -453,7 +453,7 @@ class RunText(SampleBase):
                     centered = 128 - currentTemp + 33 + (weatherConditionText / 2)
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, currentTemp + 33, 5, color, item['condition'])
                     highLow = graphics.DrawText(canvas, alilbiggerFont, 80, 22, color, item['highLow'])
-                    rainChance = graphics.DrawText(canvas, alilbiggerFont, 75, 30, color, item['rainPercent'])
+                    rainChance = graphics.DrawText(canvas, alilbiggerFont, 75, 30, color, 'Rain: {}'.format(item['rainPercent']))
                 elif isinstance(item, list) and 'condition' in item[0].keys():
                     runningX = 0
                     runningY = 10
