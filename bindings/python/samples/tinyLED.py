@@ -407,19 +407,19 @@ class RunText(SampleBase):
                     print(item['condition'])
                     color = blue
                     if 'Rain' in item['condition'] or 'rain' in item['condition']:
-                        canvas.SetImage(rainImage, 0, 3)
+                        canvas.SetImage(rainImage, 0, 0)
                         color = blue
                     elif 'Cloudy' in item['condition'] or 'Overcast' in item['condition'] or 'cloudy' in item['condition'] or 'overcast' in item['condition']:
-                        canvas.SetImage(partlyCloudyImage, 0, 3)
+                        canvas.SetImage(partlyCloudyImage, 0, 0)
                         color = lightblue
                     elif 'Thunder' in item['condition'] or 'thunder' in item['condition']:
-                        canvas.SetImage(thunderstormImage, 0, 3)
+                        canvas.SetImage(thunderstormImage, 0, 0)
                         color = blue
                     elif 'Sun' in item['condition'] or 'sun' in item['condition']:
-                        canvas.SetImage(sunnyImage, 0, 3)
+                        canvas.SetImage(sunnyImage, 0, 0)
                         color = yellow
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
-                    centered = 128 - (weatherConditionText / 2)
+                    centered = 32 + (weatherConditionText / 2)
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, centered, 10, blue, item['condition'])
                     currentTemp = graphics.DrawText(canvas, middleFont, 32, 13, blue, item['temp'])
                     highLow = graphics.DrawText(canvas, alilbiggerFont, 75, 22, blue, item['highLow'])
