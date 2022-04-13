@@ -422,7 +422,7 @@ class RunText(SampleBase):
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
                     centered = currentTemp + 33 + (weatherConditionText / 2)
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, centered, 10, blue, item['condition'])
-                    highLow = graphics.DrawText(canvas, middleFont, 80, 20, blue, item['highLow'])
+                    highLow = graphics.DrawText(canvas, alilbiggerFont, 80, 22, blue, item['highLow'])
                     rainChance = graphics.DrawText(canvas, alilbiggerFont, 75, 30, blue, 'Rain: 80%')
                 elif type(item) is dict and 'condition' in item.keys():
                     partlyCloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
