@@ -481,7 +481,7 @@ class RunText(SampleBase):
                             runningTotal = runningTotal + 8
                 else:
                     currentTIme = graphics.DrawText(canvas, font, 0, 23, blue, item)
-                time.sleep(5)
+                time.sleep(20)
                 canvas.Clear()
 
 
