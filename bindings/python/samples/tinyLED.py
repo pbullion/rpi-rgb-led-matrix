@@ -448,7 +448,7 @@ class RunText(SampleBase):
                     elif 'Sun' in item['condition'] or 'sun' in item['condition']:
                         canvas.SetImage(sunnyImage, 0, 0)
                         color = yellow
-                    day = graphics.DrawText(canvas, font, 34, 26, color, item['day'])
+                    day = graphics.DrawText(canvas, middleFont, 34, 26, color, item['day'])
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
                     centered = 128 - currentTemp + 33 + (weatherConditionText / 2)
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, currentTemp + 33, 5, color, item['condition'])
