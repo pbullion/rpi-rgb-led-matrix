@@ -419,12 +419,12 @@ class RunText(SampleBase):
                     elif 'Sun' in item['condition'] or 'sun' in item['condition']:
                         canvas.SetImage(sunnyImage, 0, 0)
                         color = yellow
-                    currentTemp = graphics.DrawText(canvas, font, 34, 26, blue, item['temp'])
+                    currentTemp = graphics.DrawText(canvas, font, 34, 26, color, item['temp'])
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
                     centered = 128 - currentTemp + 33 + (weatherConditionText / 2)
-                    weatherConditionText = graphics.DrawText(canvas, smallestFont, currentTemp + 33, 10, blue, item['condition'])
-                    highLow = graphics.DrawText(canvas, alilbiggerFont, 80, 22, blue, item['highLow'])
-                    rainChance = graphics.DrawText(canvas, alilbiggerFont, 75, 30, blue, 'Rain: 80%')
+                    weatherConditionText = graphics.DrawText(canvas, smallestFont, currentTemp + 33, 10, color, item['condition'])
+                    highLow = graphics.DrawText(canvas, alilbiggerFont, 80, 22, color, item['highLow'])
+                    rainChance = graphics.DrawText(canvas, alilbiggerFont, 75, 30, color, 'Rain: 80%')
                 elif type(item) is dict and 'condition' in item.keys():
                     partlyCloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     thunderstormImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
