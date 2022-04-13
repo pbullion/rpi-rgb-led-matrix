@@ -422,7 +422,7 @@ class RunText(SampleBase):
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
                     centered = 128 - currentTemp + 33 + (weatherConditionText / 2)
                     weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, currentTemp + 33, 5, color, item['condition'])
-                    highLow = graphics.DrawText(canvas, middleFont, 80, 22, color, item['highLow'])
+                    highLow = graphics.DrawText(canvas, middleFont, 75, 20, color, item['highLow'])
                     rainChance = graphics.DrawText(canvas, alilbiggerFont, 75, 30, color, 'Rain: 80%')
                 elif type(item) is dict and 'condition' in item.keys():
                     # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
