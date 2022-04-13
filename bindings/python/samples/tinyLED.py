@@ -410,7 +410,6 @@ class RunText(SampleBase):
                         canvas.SetImage(rainImage, 0, 0)
                         color = blue
                     elif 'Cloudy' in item['condition'] or 'Overcast' in item['condition'] or 'cloudy' in item['condition'] or 'overcast' in item['condition']:
-                        print('it was cloudy')
                         canvas.SetImage(partlyCloudyImage, 0, 0)
                         color = yellow
                     elif 'Thunder' in item['condition'] or 'thunder' in item['condition']:
@@ -422,37 +421,39 @@ class RunText(SampleBase):
                     currentTemp = graphics.DrawText(canvas, font, 34, 26, color, item['temp'])
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
                     centered = 128 - currentTemp + 33 + (weatherConditionText / 2)
-                    weatherConditionText = graphics.DrawText(canvas, smallestFont, currentTemp + 33, 10, color, item['condition'])
+                    weatherConditionText = graphics.DrawText(canvas, smallestFont, currentTemp + 33, 5, color, item['condition'])
                     highLow = graphics.DrawText(canvas, alilbiggerFont, 80, 22, color, item['highLow'])
                     rainChance = graphics.DrawText(canvas, alilbiggerFont, 75, 30, color, 'Rain: 80%')
                 elif type(item) is dict and 'condition' in item.keys():
-                    partlyCloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
-                    thunderstormImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
-                    cloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
-                    rainImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-heavy-rain-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
-                    stormyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
-                    sunnyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
-                    windyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                    # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
+                    # weatherImage = Image.open(locationString).convert('RGB').resize((22, 22), Image.ANTIALIAS)
+                    partlyCloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
+                    thunderstormImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
+                    cloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
+                    rainImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-heavy-rain-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
+                    stormyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
+                    sunnyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
+                    windyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
                     print(item['condition'])
                     color = blue
                     if 'Rain' in item['condition'] or 'rain' in item['condition']:
-                        canvas.SetImage(rainImage, 0, 2)
+                        canvas.SetImage(rainImage, 0, 0)
                         color = blue
                     elif 'Cloudy' in item['condition'] or 'Overcast' in item['condition'] or 'cloudy' in item['condition'] or 'overcast' in item['condition']:
-                        canvas.SetImage(partlyCloudyImage, 0, 2)
-                        color = lightblue
+                        canvas.SetImage(partlyCloudyImage, 0, 0)
+                        color = yellow
                     elif 'Thunder' in item['condition'] or 'thunder' in item['condition']:
-                        canvas.SetImage(thunderstormImage, 0, 2)
+                        canvas.SetImage(thunderstormImage, 0, 0)
                         color = blue
                     elif 'Sun' in item['condition'] or 'sun' in item['condition']:
-                        canvas.SetImage(sunnyImage, 0, 2)
+                        canvas.SetImage(sunnyImage, 0, 0)
                         color = yellow
-                    weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 31, black, item['condition'])
-                    centered = 32 - (weatherConditionText / 2)
-                    weatherConditionText = graphics.DrawText(canvas, smallestFont, centered, 31, blue, item['condition'])
-                    day = graphics.DrawText(canvas, alilbiggerFont, 32, 8, blue, item['day'])
-                    currentTemp = graphics.DrawText(canvas, alilbiggerFont, 32, 19, blue, item['rainPercent'])
-                    highLow = graphics.DrawText(canvas, alilbiggerFont, 26, 24, blue, item['highLow'])
+                    day = graphics.DrawText(canvas, font, 34, 26, color, item['day'])
+                    weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
+                    centered = 128 - currentTemp + 33 + (weatherConditionText / 2)
+                    weatherConditionText = graphics.DrawText(canvas, smallestFont, currentTemp + 33, 5, color, item['condition'])
+                    highLow = graphics.DrawText(canvas, alilbiggerFont, 80, 22, color, item['highLow'])
+                    rainChance = graphics.DrawText(canvas, alilbiggerFont, 75, 30, color, 'Rain: 80%')
                 elif isinstance(item, list) and 'condition' in item[0].keys():
                     runningX = 0
                     runningY = 10
@@ -482,7 +483,7 @@ class RunText(SampleBase):
                             runningTotal = runningTotal + 8
                 else:
                     currentTIme = graphics.DrawText(canvas, font, 0, 23, blue, item)
-                time.sleep(30)
+                time.sleep(5)
                 canvas.Clear()
 
 
