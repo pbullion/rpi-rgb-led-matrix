@@ -422,7 +422,7 @@ class RunText(SampleBase):
                         color = yellow
                     currentTemp = graphics.DrawText(canvas, font, 32, 31, color, item['temp'])
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
-                    centered = 128 - currentTemp + 33 + (weatherConditionText / 2)
+                    centered = currentTemp + 33 + (weatherConditionText / 2)
                     weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, centered, 8, color, item['condition'])
                     highLow = graphics.DrawText(canvas, slightlyBiggerFont, 73, 22, green, item['highLow'])
                     rainChance = graphics.DrawText(canvas, alilbiggerFont, 78, 30, blue, 'Rain: {}'.format(item['rainPercent']))
