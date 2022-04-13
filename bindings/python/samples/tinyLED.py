@@ -421,7 +421,7 @@ class RunText(SampleBase):
                     currentTemp = graphics.DrawText(canvas, middleFont, 34, 30, color, item['temp'])
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
                     centered = 128 - currentTemp + 33 + (weatherConditionText / 2)
-                    weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, currentTemp + 33, 5, color, item['condition'])
+                    weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, 32 + 33, 8, color, item['condition'])
                     highLow = graphics.DrawText(canvas, middleFont, 75, 20, color, item['highLow'])
                     rainChance = graphics.DrawText(canvas, alilbiggerFont, 75, 30, color, 'Rain: 80%')
                 elif type(item) is dict and 'condition' in item.keys():
