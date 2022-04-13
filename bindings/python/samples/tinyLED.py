@@ -411,7 +411,7 @@ class RunText(SampleBase):
                         color = blue
                     elif 'Cloudy' in item['condition'] or 'Overcast' in item['condition'] or 'cloudy' in item['condition'] or 'overcast' in item['condition']:
                         canvas.SetImage(partlyCloudyImage, 0, 0)
-                        color = lightblue
+                        color = yellow
                     elif 'Thunder' in item['condition'] or 'thunder' in item['condition']:
                         canvas.SetImage(thunderstormImage, 0, 0)
                         color = blue
