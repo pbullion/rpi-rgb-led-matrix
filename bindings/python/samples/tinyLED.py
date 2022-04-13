@@ -37,9 +37,9 @@ class RunText(SampleBase):
             smallFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x13.bdf")
             middleFont = graphics.Font()
             middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
-            url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
-            responseArr = json.loads(url.text)
-            # responseArr = 
+            # url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
+            # responseArr = json.loads(url.text)
+            responseArr = [{'day': 'CURRENT', 'condition': 'Partly cloudy', 'rainPercent': '0%', 'icon': 116, 'temp': '78°', 'highLow': '70°/84°'}, {'day': 'THU', 'rainPercent': '89%', 'condition': 'Patchy Rain', 'icon': 176, 'highLow': '64°/86°'}, {'day': 'FRI', 'rainPercent': '87%', 'condition': 'Patchy Rain', 'icon': 176, 'highLow': '69°/88°'}, {'stockSymbol': 'TSLA', 'url': 'https://logo.clearbit.com/tesla.com', 'currentPrice': '1022.37', 'up': True, 'percentChange': '3.59%'}, {'stockSymbol': 'OBNK', 'url': 'https://logo.clearbit.com/originbank.com', 'currentPrice': '41.01', 'up': True, 'percentChange': '1.28%'}, {'stockSymbol': 'STEM', 'url': 'https://logo.clearbit.com/stem.com', 'currentPrice': '10.12', 'up': True, 'percentChange': '3.16%'}, {'stockSymbol': 'AAPL', 'url': 'https://logo.clearbit.com/apple.com', 'currentPrice': '170.40', 'up': True, 'percentChange': '1.63%'}, {'stockSymbol': 'AMC', 'url': 'https://logo.clearbit.com/amctheatres.com', 'currentPrice': '18.53', 'up': True, 'percentChange': '6.37%'}, {'stockSymbol': 'AMD', 'url': 'https://logo.clearbit.com/amd.com', 'currentPrice': '97.74', 'up': True, 'percentChange': '2.78%'}, {'stockSymbol': 'HOOD', 'url': 'https://logo.clearbit.com/robinhood.com', 'currentPrice': '11.89', 'up': True, 'percentChange': '4.02%'}, {'stockSymbol': 'BTC', 'url': 'https://logo.clearbit.com/bitcoin.org', 'currentPrice': '41164', 'up': True, 'percentChange': '3.08%'}, {'stockSymbol': 'ETH', 'url': 'https://logo.clearbit.com/ethereum.org', 'currentPrice': '3115.57', 'up': True, 'percentChange': '3.25%'}, {'stockSymbol': 'DOGE', 'url': 'https://logo.clearbit.com/dogecoin.com', 'currentPrice': '0.1401', 'up': True, 'percentChange': '2.15%'}, {'league': 'nba', 'pregame': True, 'inprogress': False, 'final': False, 'awayTeam': {'teamName': 'Hornets', 'name': 'CHA', 'colors': {'main': [32, 23, 71], 'secondary': [0, 119, 139]}, 'record': '22-19'}, 'homeTeam': {'teamName': 'Hawks', 'name': 'ATL', 'colors': {'main': [200, 16, 46], 'secondary': [255, 255, 255]}, 'record': '43-39'}, 'startTime': '7:00 PM EDT', 'weather': {'indoors': True, 'temp': 'undefined°'}, 'fanDuel': {'moneyLine': {'home': {'price': ''}, 'away': {'price': ''}}, 'spread': {'home': {'price': ''}, 'away': {'price': ''}}, 'totals': {'over': {'price': ''}, 'under': {'price': ''}}}}, {'league': 'nba', 'pregame': True, 'inprogress': False, 'final': False, 'awayTeam': {'teamName': 'Spurs', 'name': 'SA', 'colors': {'main': [182, 191, 191], 'secondary': [0, 0, 0]}, 'record': '16-25'}, 'homeTeam': {'teamName': 'Pelicans', 'name': 'NO', 'colors': {'main': [0, 43, 92], 'secondary': [227, 25, 55]}, 'record': '34-48'}, 'startTime': '9:30 PM EDT', 'weather': {'indoors': True, 'temp': 'undefined°'}, 'fanDuel': {'moneyLine': {'home': {'name': 'New Orleans Pelicans', 'price': -225}, 'away': {'name': 'San Antonio Spurs', 'price': 188}}, 'spread': {'home': {'name': 'New Orleans Pelicans', 'price': -108, 'point': -5.5}, 'away': {'name': 'San Antonio Spurs', 'price': -112, 'point': 5.5}}, 'totals': {'over': {'name': 'Over', 'price': -112, 'point': 225}, 'under': {'name': 'Under', 'price': -108, 'point': 225}}}}]
             print(responseArr)
             canvas = self.matrix
             bases =  [[113,5],[108,0],[103,5]]
@@ -397,26 +397,26 @@ class RunText(SampleBase):
                 elif type(item) is dict and 'temp' in item.keys():
                     # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
                     # weatherImage = Image.open(locationString).convert('RGB').resize((22, 22), Image.ANTIALIAS)
-                    partlyCloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-                    thunderstormImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-                    cloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-                    rainImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-heavy-rain-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-                    stormyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-                    sunnyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-                    windyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+                    partlyCloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
+                    thunderstormImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
+                    cloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
+                    rainImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-heavy-rain-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
+                    stormyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
+                    sunnyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
+                    windyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
                     print(item['condition'])
                     color = blue
                     if 'Rain' in item['condition'] or 'rain' in item['condition']:
-                        canvas.SetImage(rainImage, 0, 2)
+                        canvas.SetImage(rainImage, 0, 3)
                         color = blue
                     elif 'Cloudy' in item['condition'] or 'Overcast' in item['condition'] or 'cloudy' in item['condition'] or 'overcast' in item['condition']:
-                        canvas.SetImage(partlyCloudyImage, 0, 2)
+                        canvas.SetImage(partlyCloudyImage, 0, 3)
                         color = lightblue
                     elif 'Thunder' in item['condition'] or 'thunder' in item['condition']:
-                        canvas.SetImage(thunderstormImage, 0, 2)
+                        canvas.SetImage(thunderstormImage, 0, 3)
                         color = blue
                     elif 'Sun' in item['condition'] or 'sun' in item['condition']:
-                        canvas.SetImage(sunnyImage, 0, 2)
+                        canvas.SetImage(sunnyImage, 0, 3)
                         color = yellow
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
                     centered = 35 - (weatherConditionText / 2)
