@@ -84,8 +84,8 @@ class RunText(SampleBase):
                         # awayTeamStandings = graphics.DrawText(canvas, smallestFont, 5, 12 + smallFont.height, awayColorSecondary, item['awayTeam']['record'])
                         # homeTeamStandings = graphics.DrawText(canvas, smallestFont, 5, 22 + smallFont.height, homeColorSecondary, item['homeTeam']['record'])
                         runningCount = oddsStartNum
-                        awayMLOdds = graphics.DrawText(canvas, alilbiggerFont, runningCount, 10, green, str(awayMoneyLineString))
-                        homeMLOdds = graphics.DrawText(canvas, alilbiggerFont, runningCount, 22, green, str(homeMoneyLineString))
+                        awayMLOdds = graphics.DrawText(canvas, slightlyBiggerFont, runningCount, 9, green, str(awayMoneyLineString))
+                        homeMLOdds = graphics.DrawText(canvas, slightlyBiggerFont, runningCount, 23, green, str(homeMoneyLineString))
                         runningCount = runningCount + homeMLOdds + 4
                         awaySpreadOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 10, green, str(awaySpreadPointsString))
                         # awaySpreadOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 4 + smallestFont.height, green, str(awaySpreadPriceString))
