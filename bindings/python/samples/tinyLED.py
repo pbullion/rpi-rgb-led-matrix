@@ -74,18 +74,18 @@ class RunText(SampleBase):
                         windyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
-                        oddsStartNum = awayTeamBlack + 8 if awayTeamBlack > homeTeamBlack else homeTeamBlack + 8
+                        oddsStartNum = awayTeamBlack + 3 if awayTeamBlack > homeTeamBlack else homeTeamBlack + 3
                         for offset in range(13):
-                            graphics.DrawLine(canvas, 0, offset, oddsStartNum - 8, offset, awayColorPrimary)
+                            graphics.DrawLine(canvas, 0, offset, oddsStartNum - 3, offset, awayColorPrimary)
                         for offset in range(13):
-                            graphics.DrawLine(canvas, 0, offset + 13, oddsStartNum - 8, offset + 13, homeColorPrimary)
+                            graphics.DrawLine(canvas, 0, offset + 13, oddsStartNum - 3, offset + 13, homeColorPrimary)
                         awayTeam = graphics.DrawText(canvas, smallFont, 1, 11, awayColorSecondary, item['awayTeam']['teamName'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 1, 24, homeColorSecondary, item['homeTeam']['teamName'])
                         # awayTeamStandings = graphics.DrawText(canvas, smallestFont, 5, 12 + smallFont.height, awayColorSecondary, item['awayTeam']['record'])
                         # homeTeamStandings = graphics.DrawText(canvas, smallestFont, 5, 22 + smallFont.height, homeColorSecondary, item['homeTeam']['record'])
                         runningCount = oddsStartNum
-                        awayMLOdds = graphics.DrawText(canvas, slightlyBiggerFont, runningCount, 9, green, str(awayMoneyLineString))
-                        homeMLOdds = graphics.DrawText(canvas, slightlyBiggerFont, runningCount, 23, green, str(homeMoneyLineString))
+                        awayMLOdds = graphics.DrawText(canvas, slightlyBiggerFont, runningCount, 10, green, str(awayMoneyLineString))
+                        homeMLOdds = graphics.DrawText(canvas, slightlyBiggerFont, runningCount, 22, green, str(homeMoneyLineString))
                         runningCount = runningCount + homeMLOdds + 4
                         awaySpreadOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 10, green, str(awaySpreadPointsString))
                         # awaySpreadOddsPrice = graphics.DrawText(canvas, smallestFont, runningCount, 4 + smallestFont.height, green, str(awaySpreadPriceString))
