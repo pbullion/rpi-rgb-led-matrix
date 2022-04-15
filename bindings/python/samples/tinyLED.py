@@ -296,10 +296,6 @@ class RunText(SampleBase):
                 elif type(item) is dict and 'standings' in item.keys():
                     runningBuffer = 10
                     for team in item['standings']:
-                        awayColorPrimary = graphics.Color(item['awayTeam']['colors']['main'][0],item['awayTeam']['colors']['main'][1],item['awayTeam']['colors']['main'][2])
-                        awayColorSecondary = graphics.Color(item['awayTeam']['colors']['secondary'][0],item['awayTeam']['colors']['secondary'][1],item['awayTeam']['colors']['secondary'][2])
-                        homeColorPrimary = graphics.Color(item['homeTeam']['colors']['main'][0],item['homeTeam']['colors']['main'][1],item['homeTeam']['colors']['main'][2])
-                        homeColorSecondary = graphics.Color(item['homeTeam']['colors']['secondary'][0],item['homeTeam']['colors']['secondary'][1],item['homeTeam']['colors']['secondary'][2])
                         print(team)
                         print(runningBuffer)
                         teamName = graphics.DrawText(canvas, slightlyBiggerFont, 0, runningBuffer, green, str(team['team']))
