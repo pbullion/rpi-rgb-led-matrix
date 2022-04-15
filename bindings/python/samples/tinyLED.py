@@ -303,10 +303,10 @@ class RunText(SampleBase):
                         print(team)
                         print(runningBuffer)
                         teamName = graphics.DrawText(canvas, alilbiggerFont, 0, runningBuffer, green, str(team['team']))
-                        win = graphics.DrawText(canvas, alilbiggerFont, 25, runningBuffer, green, str(team['win']))
-                        loss = graphics.DrawText(canvas, alilbiggerFont, 35, runningBuffer, green, str(team['loss']))
-                        gamesBack = graphics.DrawText(canvas, alilbiggerFont, 400, runningBuffer, green, str(team['gamesBack']))
-                        runningBuffer = runningBuffer + 8
+                        win = graphics.DrawText(canvas, alilbiggerFont, 65, runningBuffer, green, str(team['win']))
+                        loss = graphics.DrawText(canvas, alilbiggerFont, 75, runningBuffer, green, str(team['loss']))
+                        gamesBack = graphics.DrawText(canvas, alilbiggerFont, 90, runningBuffer, green, str(team['gamesBack']))
+                        runningBuffer = runningBuffer + 10
                 elif type(item) is dict and 'temp' in item.keys():
                     # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
                     # weatherImage = Image.open(locationString).convert('RGB').resize((22, 22), Image.ANTIALIAS)
