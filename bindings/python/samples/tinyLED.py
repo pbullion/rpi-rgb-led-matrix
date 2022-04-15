@@ -294,12 +294,12 @@ class RunText(SampleBase):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
                     percentChange = graphics.DrawText(canvas, middleFont, stockLogo.width + 2 + stockSymbol + 8, 31, color, item['percentChange'])
                 elif type(item) is dict and 'standings' in item.keys():
-                    runningBuffer = 9
-                    # team = graphics.DrawText(canvas, smallestFont, 0, 2, green, item['divisionName'])
-                    # win = graphics.DrawText(canvas, smallestFont, 30, 2, green, 'W')
-                    # loss = graphics.DrawText(canvas, smallestFont, 35, 2, green, 'L')
-                    # gamesBack = graphics.DrawText(canvas, smallestFont, 400, 2, green, 'GB')
+                    runningBuffer = 10
                     for team in item['standings']:
+                        awayColorPrimary = graphics.Color(item['awayTeam']['colors']['main'][0],item['awayTeam']['colors']['main'][1],item['awayTeam']['colors']['main'][2])
+                        awayColorSecondary = graphics.Color(item['awayTeam']['colors']['secondary'][0],item['awayTeam']['colors']['secondary'][1],item['awayTeam']['colors']['secondary'][2])
+                        homeColorPrimary = graphics.Color(item['homeTeam']['colors']['main'][0],item['homeTeam']['colors']['main'][1],item['homeTeam']['colors']['main'][2])
+                        homeColorSecondary = graphics.Color(item['homeTeam']['colors']['secondary'][0],item['homeTeam']['colors']['secondary'][1],item['homeTeam']['colors']['secondary'][2])
                         print(team)
                         print(runningBuffer)
                         teamName = graphics.DrawText(canvas, slightlyBiggerFont, 0, runningBuffer, green, str(team['team']))
