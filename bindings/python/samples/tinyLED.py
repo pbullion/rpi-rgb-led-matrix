@@ -294,7 +294,7 @@ class RunText(SampleBase):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
                     percentChange = graphics.DrawText(canvas, middleFont, stockLogo.width + 2 + stockSymbol + 8, 31, color, item['percentChange'])
                 elif type(item) is dict and 'standings' in item.keys():
-                    runningBuffer = 6
+                    runningBuffer = 7
                     # team = graphics.DrawText(canvas, smallestFont, 0, 2, green, item['divisionName'])
                     # win = graphics.DrawText(canvas, smallestFont, 30, 2, green, 'W')
                     # loss = graphics.DrawText(canvas, smallestFont, 35, 2, green, 'L')
@@ -306,7 +306,7 @@ class RunText(SampleBase):
                         win = graphics.DrawText(canvas, slightlyBiggerFont, 65, runningBuffer, green, str(team['win']))
                         loss = graphics.DrawText(canvas, slightlyBiggerFont, 90, runningBuffer, green, str(team['loss']))
                         gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 110, runningBuffer, green, str(team['gamesBack']))
-                        runningBuffer = runningBuffer + 10
+                        runningBuffer = runningBuffer + 11
                 elif type(item) is dict and 'temp' in item.keys():
                     # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
                     # weatherImage = Image.open(locationString).convert('RGB').resize((22, 22), Image.ANTIALIAS)
