@@ -39,9 +39,9 @@ class RunText(SampleBase):
             smallFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x13.bdf")
             middleFont = graphics.Font()
             middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
-            # url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
-            # responseArr = json.loads(url.text)
-            responseArr = [{'divisionName': 'AL West', 'standings': [{'team': 'Astros', 'win': 75, 'loss': 44, 'gamesBack': 0, 'color': [196, 206, 212]}, {'team': 'Angels', 'win': 70, 'loss': 34, 'gamesBack': 5, 'color': [196, 206, 212]}, {'team': 'Rangers', 'win': 65, 'loss': 24, 'gamesBack': 8, 'color': [196, 206, 212]}]}]
+            url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
+            responseArr = json.loads(url.text)
+            # responseArr = [{'divisionName': 'AL West', 'standings': [{'team': 'Astros', 'win': 75, 'loss': 44, 'gamesBack': 0, 'color': [196, 206, 212]}, {'team': 'Angels', 'win': 70, 'loss': 34, 'gamesBack': 5, 'color': [196, 206, 212]}, {'team': 'Rangers', 'win': 65, 'loss': 24, 'gamesBack': 8, 'color': [196, 206, 212]}]}]
             print(responseArr)
             canvas = self.matrix
             bases =  [[113,5],[108,0],[103,5]]
@@ -301,7 +301,7 @@ class RunText(SampleBase):
                         teamName = graphics.DrawText(canvas, slightlyBiggerFont, 0, runningBuffer, green, str(team['team']))
                         win = graphics.DrawText(canvas, slightlyBiggerFont, 65, runningBuffer, green, str(team['win']))
                         loss = graphics.DrawText(canvas, slightlyBiggerFont, 90, runningBuffer, green, str(team['loss']))
-                        gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 110, runningBuffer, green, str(team['gamesBack']))
+                        gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 112, runningBuffer, green, str(team['gamesBack']))
                         runningBuffer = runningBuffer + 10
                 elif type(item) is dict and 'temp' in item.keys():
                     # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
