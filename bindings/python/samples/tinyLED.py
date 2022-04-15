@@ -303,7 +303,7 @@ class RunText(SampleBase):
                         print(team)
                         print(runningBuffer)
                         teamName = graphics.DrawText(canvas, alilbiggerFont, 0, runningBuffer, green, str(team['team']))
-                        win = graphics.DrawText(canvas, alilbiggerFont, 65, runningBuffer, green, str(team['win']))
+                        win = graphics.DrawText(canvas, alilbiggerFont, 60, runningBuffer, green, str(team['win']))
                         loss = graphics.DrawText(canvas, alilbiggerFont, 75, runningBuffer, green, str(team['loss']))
                         gamesBack = graphics.DrawText(canvas, alilbiggerFont, 90, runningBuffer, green, str(team['gamesBack']))
                         runningBuffer = runningBuffer + 7
