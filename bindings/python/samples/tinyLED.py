@@ -45,7 +45,7 @@ class RunText(SampleBase):
             # print(responseArr)
             canvas = self.matrix
             offscreen_canvas = self.matrix.CreateFrameCanvas()
-            pos = offscreen_canvas.width
+            pos = 128
             bases =  [[113,5],[108,0],[103,5]]
             outs = [[107,20],[113,20]]
             for item in responseArr:
@@ -394,7 +394,7 @@ class RunText(SampleBase):
                         print(pos + topGolfers)
                         if (pos + topGolfers < 0):
                             running = False
-                            pos = offscreen_canvas.width
+                            pos = 128
                         time.sleep(0.005)
                 else:
                     currentTIme = graphics.DrawText(canvas, font, 0, 23, blue, item)
