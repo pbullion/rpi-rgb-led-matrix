@@ -391,6 +391,7 @@ class RunText(SampleBase):
                     while running:
                         pos -= 1
                         topGolfers = graphics.DrawText(canvas, middleFont, pos, 27, green, item['topGolfers'])
+                        print(pos)
                         if (pos + topGolfers < 0):
                             running = False
                             pos = offscreen_canvas.width
