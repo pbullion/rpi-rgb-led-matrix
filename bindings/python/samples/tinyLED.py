@@ -381,16 +381,14 @@ class RunText(SampleBase):
                         time.sleep(3)
                         canvas.Clear()
                 elif type(item) is dict and 'tourneyName' in item.keys():
-                    print(self.matrix)
                     offscreen_canvas = self.matrix.CreateFrameCanvas()
-                    print(offscreen_canvas)
                     pos = offscreen_canvas.width
                     print(item)
-                    tournamentName = graphics.DrawText(canvas, slightlyBiggerFont, 0, 10, green, item['tourneyName'])
-                    tourneyStatus = graphics.DrawText(canvas, smallestFont, 0, 16, blue, item['status'])
                     running = True
                     while running:
                         offscreen_canvas.Clear()
+                        tournamentName = graphics.DrawText(canvas, slightlyBiggerFont, 0, 10, green, item['tourneyName'])
+                        tourneyStatus = graphics.DrawText(canvas, smallestFont, 0, 16, blue, item['status'])
                         pos -= 1
                         topGolfers = graphics.DrawText(offscreen_canvas, middleFont, pos, 27, green, item['topGolfers'])
                         if (pos + topGolfers < 0):
