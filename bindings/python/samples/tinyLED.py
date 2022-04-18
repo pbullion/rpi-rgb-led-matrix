@@ -387,14 +387,18 @@ class RunText(SampleBase):
                     running = True
                     while running:
                         offscreen_canvas.Clear()
-                        tournamentName = graphics.DrawText(canvas, slightlyBiggerFont, 0, 10, green, item['tourneyName'])
-                        tourneyStatus = graphics.DrawText(canvas, smallestFont, 0, 16, blue, item['status'])
+                        tournamentNameBlack = graphics.DrawText(canvas, slightlyBiggerFont, 0, 10, black, item['tourneyName'])
+                        tourneyStatusBlack = graphics.DrawText(canvas, smallestFont, 0, 16, black, item['status'])
+                        nameCentered = 128 - (tournamentNameBlack / 2)
+                        statusCentered = 128 - (tourneyStatusBlack / 2)
+                        tournamentName = graphics.DrawText(canvas, slightlyBiggerFont, nameCentered, 10, green, item['tourneyName'])
+                        tourneyStatus = graphics.DrawText(canvas, smallestFont, statusCentered, 16, blue, item['status'])
                         pos -= 1
-                        topGolfers = graphics.DrawText(offscreen_canvas, middleFont, pos, 27, green, item['topGolfers'])
+                        topGolfers = graphics.DrawText(offscreen_canvas, middleFont, pos, 28, green, item['topGolfers'])
                         if (pos + topGolfers < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.005)
+                        time.sleep(0.09)
                         offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
                 else:
                     currentTIme = graphics.DrawText(canvas, font, 0, 23, blue, item)
