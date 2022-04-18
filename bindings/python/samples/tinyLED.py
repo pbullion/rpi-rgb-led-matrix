@@ -384,6 +384,7 @@ class RunText(SampleBase):
                     print(self.matrix)
                     canvas = self.matrix
                     offscreen_canvas = self.matrix.CreateFrameCanvas()
+                    print(offscreen_canvas)
                     pos = 128
                     print(item)
                     offscreen_canvas.Clear()
