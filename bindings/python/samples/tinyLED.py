@@ -382,7 +382,7 @@ class RunText(SampleBase):
                         canvas.Clear()
                 elif type(item) is dict and 'tourneyName' in item.keys():
                     print(self.matrix)
-                    canvas = self.matrix
+                    # canvas = self.matrix
                     offscreen_canvas = self.matrix.CreateFrameCanvas()
                     print(offscreen_canvas)
                     pos = 128
