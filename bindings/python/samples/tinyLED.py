@@ -51,6 +51,7 @@ class RunText(SampleBase):
             for item in responseArr:
                 print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
                 print(item)
+                canvas.Clear()
                 if type(item) is dict and 'league' in item.keys() and item['league'] == 'mlb':
                     awayColorPrimary = graphics.Color(item['awayTeam']['colors']['main'][0],item['awayTeam']['colors']['main'][1],item['awayTeam']['colors']['main'][2])
                     awayColorSecondary = graphics.Color(item['awayTeam']['colors']['secondary'][0],item['awayTeam']['colors']['secondary'][1],item['awayTeam']['colors']['secondary'][2])
@@ -384,7 +385,6 @@ class RunText(SampleBase):
                         canvas.Clear()
                 elif type(item) is dict and 'tourneyName' in item.keys():
                     print(item)
-                    canvas.Clear()
                     tournamentName = graphics.DrawText(canvas, slightlyBiggerFont, 0, 10, green, item['tourneyName'])
                     tourneyStatus = graphics.DrawText(canvas, smallestFont, 0, 16, blue, item['status'])
                     running = True
