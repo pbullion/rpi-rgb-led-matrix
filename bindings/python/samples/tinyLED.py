@@ -386,8 +386,8 @@ class RunText(SampleBase):
                     print(offscreen_canvas)
                     pos = offscreen_canvas.width
                     print(item)
-                    tournamentName = graphics.DrawText(offscreen_canvas, slightlyBiggerFont, 0, 10, green, item['tourneyName'])
-                    tourneyStatus = graphics.DrawText(offscreen_canvas, smallestFont, 0, 16, blue, item['status'])
+                    # tournamentName = graphics.DrawText(offscreen_canvas, slightlyBiggerFont, 0, 10, green, item['tourneyName'])
+                    # tourneyStatus = graphics.DrawText(offscreen_canvas, smallestFont, 0, 16, blue, item['status'])
                     running = True
                     while running:
                         pos -= 1
