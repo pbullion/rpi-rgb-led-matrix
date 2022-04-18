@@ -114,7 +114,19 @@ class RunText(SampleBase):
                         runningCount = runningCount + homeErrorTotal + 10
                         finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
                         winningPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, green, item['winningPitcher'])
-                        losingPitcher = graphics.DrawText(canvas, smallestFont, 4 + winningPitcher, 32, red, item['losingPitcher'])
+                        losingPitcher = graphics.DrawText(canvas, smallestFont, 4 + winningPitcher, 32, red, item['losingPitcher'])                    
+                        elif item['postponed'] == True:
+                            awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
+                            homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
+                            oddsStartNum = awayTeamBlack + 8 if awayTeamBlack > homeTeamBlack else homeTeamBlack + 8
+                            for offset in range(13):
+                                graphics.DrawLine(canvas, 0, offset, oddsStartNum - 8, offset, awayColorPrimary)
+                            for offset in range(13):
+                                graphics.DrawLine(canvas, 0, offset + 13, oddsStartNum - 8, offset + 13, homeColorPrimary)
+                            awayTeam = graphics.DrawText(canvas, smallFont, 1, 11, awayColorSecondary, item['awayTeam']['teamName'])
+                            homeTeam = graphics.DrawText(canvas, smallFont, 1, 24, homeColorSecondary, item['homeTeam']['teamName'])
+                            runningCount = oddsStartNum
+                            finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'Postponed')
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
@@ -217,11 +229,11 @@ class RunText(SampleBase):
                         awayMLOdds = graphics.DrawText(canvas, smallestFont, runningCount, 10, green, str(awayMoneyLineString))
                         homeMLOdds = graphics.DrawText(canvas, smallestFont, runningCount, 22, green, str(homeMoneyLineString))
                         runningCount = runningCount + homeMLOdds + 4
-                        awaySpreadOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 10, green, str(awaySpreadPointsString))
-                        homeSpreadOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 22, green, str(homeSpreadPointsString))
+                        awaySpreadOddsPoints = graphics.DrawText(canvas, slightlyBiggerFont, runningCount, 10, green, str(awaySpreadPointsString))
+                        homeSpreadOddsPoints = graphics.DrawText(canvas, slightlyBiggerFont, runningCount, 22, green, str(homeSpreadPointsString))
                         runningCount = runningCount + awaySpreadOddsPoints + 4
                         overOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 10, green, 'O/U')
-                        underOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 22, green, str(underTotalPointsString))
+                        underOddsPoints = graphics.DrawText(canvas, slightlyBiggerFont, runningCount, 22, green, str(underTotalPointsString))
                         runningCount = runningCount + underOddsPoints + 4
                         startTime = graphics.DrawText(canvas, smallestFont, 80, 30, yellow, item['startTime'])
                     if item['final'] == True:    
@@ -391,8 +403,8 @@ class RunText(SampleBase):
                         tourneyStatusBlack = graphics.DrawText(canvas, smallestFont, 0, 16, black, item['status'])
                         nameCentered = 64 - (tournamentNameBlack / 2)
                         statusCentered = 64 - (tourneyStatusBlack / 2)
-                        tournamentName = graphics.DrawText(canvas, slightlyBiggerFont, nameCentered, 10, green, item['tourneyName'])
-                        tourneyStatus = graphics.DrawText(canvas, smallestFont, statusCentered, 16, blue, item['status'])
+                        tournamentName = graphics.DrawText(canvas, slightlyBiggerFont, nameCentered, 10, blue, item['tourneyName'])
+                        tourneyStatus = graphics.DrawText(canvas, smallestFont, statusCentered, 16, lightblue, item['status'])
                         pos -= 1
                         topGolfers = graphics.DrawText(offscreen_canvas, middleFont, pos, 28, green, item['topGolfers'])
                         if (pos + topGolfers < 0):
