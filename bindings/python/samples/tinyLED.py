@@ -394,8 +394,8 @@ class RunText(SampleBase):
                         if (pos + topGolfers < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.008)
-                    offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+                        time.sleep(0.1)
+                offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
                 else:
