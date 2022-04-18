@@ -384,7 +384,7 @@ class RunText(SampleBase):
                         canvas.Clear()
                 elif type(item) is dict and 'tourneyName' in item.keys():
                     print(item)
-                    # offscreen_canvas.Clear()
+                    offscreen_canvas.Clear()
                     tournamentName = graphics.DrawText(canvas, slightlyBiggerFont, 0, 10, green, item['tourneyName'])
                     tourneyStatus = graphics.DrawText(canvas, smallestFont, 0, 16, blue, item['status'])
                     running = True
