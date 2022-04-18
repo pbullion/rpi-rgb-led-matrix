@@ -395,7 +395,7 @@ class RunText(SampleBase):
                         if (pos + topGolfers < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.1)
+                        time.sleep(0.005)
                 else:
                     currentTIme = graphics.DrawText(canvas, font, 0, 23, blue, item)
                 time.sleep(5)
