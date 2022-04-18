@@ -386,13 +386,13 @@ class RunText(SampleBase):
                     print(offscreen_canvas)
                     pos = offscreen_canvas.width
                     print(item)
-                    # tournamentName = graphics.DrawText(offscreen_canvas, slightlyBiggerFont, 0, 10, green, item['tourneyName'])
-                    # tourneyStatus = graphics.DrawText(offscreen_canvas, smallestFont, 0, 16, blue, item['status'])
+                    tournamentName = graphics.DrawText(offscreen_canvas, slightlyBiggerFont, 0, 10, green, item['tourneyName'])
+                    tourneyStatus = graphics.DrawText(offscreen_canvas, smallestFont, 0, 16, blue, item['status'])
                     running = True
                     while running:
                         offscreen_canvas.Clear()
                         pos -= 1
-                        topGolfers = graphics.DrawText(offscreen_canvas, font, pos, 27, green, item['topGolfers'])
+                        topGolfers = graphics.DrawText(offscreen_canvas, middleFont, pos, 27, green, item['topGolfers'])
                         if (pos + topGolfers < 0):
                             running = False
                             pos = offscreen_canvas.width
