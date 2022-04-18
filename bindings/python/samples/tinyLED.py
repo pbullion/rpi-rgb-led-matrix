@@ -389,8 +389,8 @@ class RunText(SampleBase):
                         offscreen_canvas.Clear()
                         tournamentNameBlack = graphics.DrawText(canvas, slightlyBiggerFont, 0, 10, black, item['tourneyName'])
                         tourneyStatusBlack = graphics.DrawText(canvas, smallestFont, 0, 16, black, item['status'])
-                        nameCentered = 107 - (tournamentNameBlack / 2)
-                        statusCentered = 107 - (tourneyStatusBlack / 2)
+                        nameCentered = 50 - (tournamentNameBlack / 2)
+                        statusCentered = 50 - (tourneyStatusBlack / 2)
                         tournamentName = graphics.DrawText(canvas, slightlyBiggerFont, nameCentered, 10, green, item['tourneyName'])
                         tourneyStatus = graphics.DrawText(canvas, smallestFont, statusCentered, 16, blue, item['status'])
                         pos -= 1
