@@ -390,6 +390,7 @@ class RunText(SampleBase):
                     # tourneyStatus = graphics.DrawText(offscreen_canvas, smallestFont, 0, 16, blue, item['status'])
                     running = True
                     while running:
+                        offscreen_canvas.Clear()
                         pos -= 1
                         topGolfers = graphics.DrawText(offscreen_canvas, font, pos, 27, green, item['topGolfers'])
                         if (pos + topGolfers < 0):
