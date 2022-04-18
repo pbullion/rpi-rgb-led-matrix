@@ -390,8 +390,8 @@ class RunText(SampleBase):
                         tournamentNameBlack = graphics.DrawText(canvas, slightlyBiggerFont, 0, 10, black, item['tourneyName'])
                         print(tournamentNameBlack)
                         tourneyStatusBlack = graphics.DrawText(canvas, smallestFont, 0, 16, black, item['status'])
-                        nameCentered = 128 - (tournamentNameBlack / 2)
-                        statusCentered = 128 - (tourneyStatusBlack / 2)
+                        nameCentered = (tournamentNameBlack / 2)
+                        statusCentered = (tourneyStatusBlack / 2)
                         tournamentName = graphics.DrawText(canvas, slightlyBiggerFont, nameCentered, 10, green, item['tourneyName'])
                         tourneyStatus = graphics.DrawText(canvas, smallestFont, statusCentered, 16, blue, item['status'])
                         pos -= 1
