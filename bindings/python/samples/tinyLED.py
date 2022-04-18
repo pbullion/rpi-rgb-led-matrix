@@ -384,7 +384,7 @@ class RunText(SampleBase):
                     print(item)
                     tournamentName = graphics.DrawText(canvas, smallestFont, 10, 5, blue, item['tourneyName'])
                     # tourneyStatus = graphics.DrawText(canvas, smallestFont, 10, 12, blue, item['tourneyStatus'])
-                    running = true
+                    running = True
                     while running:
                         pos -= 1
                         topGolfers = graphics.DrawText(canvas, smallestFont, 10, 5, blue, item['topGolfers'])
