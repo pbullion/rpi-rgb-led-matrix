@@ -423,7 +423,7 @@ class RunText(SampleBase):
                         nameCentered = 64 - (tournamentNameBlack / 2)
                         tournamentName = graphics.DrawText(canvas, slightlyBiggerFont, nameCentered, 10, blue, item['name'])
                         pos -= 1
-                        topGolfers = graphics.DrawText(offscreen_canvas, middleFont, pos, 28, green, item['feed'])
+                        topGolfers = graphics.DrawText(offscreen_canvas, middleFont, pos, 25, green, item['feed'])
                         if (pos + topGolfers < 0):
                             running = False
                             pos = offscreen_canvas.width
