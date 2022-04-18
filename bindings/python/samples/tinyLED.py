@@ -383,15 +383,15 @@ class RunText(SampleBase):
                         canvas.Clear()
                 elif type(item) is dict and 'tourneyName' in item.keys():
                     print(item)
-                    tournamentName = graphics.DrawText(canvas, smallestFont, 10, 5, blue, item['tourneyName'])
+                    tournamentName = graphics.DrawText(canvas, alilbiggerFont, 0, 0, green, item['tourneyName'])
                     # tourneyStatus = graphics.DrawText(canvas, smallestFont, 10, 12, blue, item['tourneyStatus'])
                     running = True
                     while running:
                         pos -= 1
-                        topGolfers = graphics.DrawText(canvas, smallestFont, 10, 5, blue, item['topGolfers'])
+                        topGolfers = graphics.DrawText(canvas, middleFont, 10, 15, purple, item['topGolfers'])
                         if (pos + topGolfers < 0):
                             running = False
-                            pos = offscreen_canvas.width
+                            pos = canvas.width
                         time.sleep(0.008)
 
 
