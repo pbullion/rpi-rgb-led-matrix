@@ -361,6 +361,7 @@ class RunText(SampleBase):
                         loss = graphics.DrawText(canvas, slightlyBiggerFont, 85, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['loss']))
                         gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 105, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['gamesBack']))
                         runningBuffer = runningBuffer + 10
+                        runningBlockBuffer = runningBlockBuffer + 10
                 elif type(item) is dict and 'temp' in item.keys():
                     # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
                     # weatherImage = Image.open(locationString).convert('RGB').resize((22, 22), Image.ANTIALIAS)
