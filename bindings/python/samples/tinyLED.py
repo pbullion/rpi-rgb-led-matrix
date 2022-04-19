@@ -354,7 +354,7 @@ class RunText(SampleBase):
                         teamBlack = graphics.DrawText(canvas, middleFont, 1, 11, black, team['team'])
                         oddsStartNum = 35
                         for offset in range(16):
-                            graphics.DrawLine(canvas, runningBuffer, offset, oddsStartNum, offset, teamColorPrimary)
+                            graphics.DrawLine(canvas, 0, offset, runningBuffer, offset, teamColorPrimary)
                         teamName = graphics.DrawText(canvas, slightlyBiggerFont, 0, runningBuffer, teamColorSecondary, str(team['team']))
                         win = graphics.DrawText(canvas, slightlyBiggerFont, 60, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['win']))
                         loss = graphics.DrawText(canvas, slightlyBiggerFont, 85, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['loss']))
