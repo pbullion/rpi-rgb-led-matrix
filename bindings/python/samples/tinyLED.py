@@ -100,6 +100,7 @@ class RunText(SampleBase):
                             pitchers = [awayPitcher, homePitcher]
                             currentPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, white, pitchers[count])
                             time.sleep(5)
+                            canvas.Clear()
                             count = count + 1
                             if count == 3:
                                 testing = False
