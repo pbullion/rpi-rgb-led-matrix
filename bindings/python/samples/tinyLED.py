@@ -349,14 +349,16 @@ class RunText(SampleBase):
                     for team in item['standings']:
                         print(team)
                         print(runningBuffer)
+                        teamColorPrimary = graphics.Color(item['team']['colors']['main'][0],item['team']['colors']['main'][1],item['team']['colors']['main'][2])
+                        teamColorSecondary = graphics.Color(item['team']['colors']['secondary'][0],item['team']['colors']['secondary'][1],item['team']['colors']['secondary'][2])
                         teamBlack = graphics.DrawText(canvas, middleFont, 1, 11, black, team['team'])
                         oddsStartNum = 35
                         for offset in range(16):
-                            graphics.DrawLine(canvas, 0, offset, oddsStartNum - 8, offset, awayColorPrimary)
-                        teamName = graphics.DrawText(canvas, slightlyBiggerFont, 0, runningBuffer, green, str(team['team']))
-                        win = graphics.DrawText(canvas, slightlyBiggerFont, 60, runningBuffer, green, str(team['win']))
-                        loss = graphics.DrawText(canvas, slightlyBiggerFont, 85, runningBuffer, green, str(team['loss']))
-                        gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 105, runningBuffer, green, str(team['gamesBack']))
+                            graphics.DrawLine(canvas, 0, offset, oddsStartNum - 8, offset, teamColorPrimary)
+                        teamName = graphics.DrawText(canvas, slightlyBiggerFont, 0, runningBuffer, teamColorSecondary, str(team['team']))
+                        win = graphics.DrawText(canvas, slightlyBiggerFont, 60, runningBuffer, green if str(team['gamesBack'] == 0 else red), str(team['win']))
+                        loss = graphics.DrawText(canvas, slightlyBiggerFont, 85, runningBuffer, green if str(team['gamesBack'] == 0 else red), str(team['loss']))
+                        gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 105, runningBuffer, green if str(team['gamesBack'] == 0 else red), str(team['gamesBack']))
                         runningBuffer = runningBuffer + 10
                 elif type(item) is dict and 'temp' in item.keys():
                     # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
