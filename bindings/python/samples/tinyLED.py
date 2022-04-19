@@ -349,6 +349,10 @@ class RunText(SampleBase):
                     for team in item['standings']:
                         print(team)
                         print(runningBuffer)
+                        teamBlack = graphics.DrawText(canvas, middleFont, 1, 11, black, team['team'])
+                        oddsStartNum = 35
+                        for offset in range(16):
+                            graphics.DrawLine(canvas, 0, offset, oddsStartNum - 8, offset, awayColorPrimary)
                         teamName = graphics.DrawText(canvas, slightlyBiggerFont, 0, runningBuffer, green, str(team['team']))
                         win = graphics.DrawText(canvas, slightlyBiggerFont, 60, runningBuffer, green, str(team['win']))
                         loss = graphics.DrawText(canvas, slightlyBiggerFont, 85, runningBuffer, green, str(team['loss']))
