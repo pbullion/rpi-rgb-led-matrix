@@ -92,7 +92,10 @@ class RunText(SampleBase):
                         underOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 22, green, str(underTotalPointsString))
                         runningCount = runningCount + underOddsPoints + 4
                         startTime = graphics.DrawText(canvas, smallestFont, 100, 32, yellow, item['startTime'])
-                        awayPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, white, 'J. Verlander 3-1 2.50')
+                        pitchers = ['J. Verlander 3-1 2.50', 'K. Something 3-1 5.50']
+                        for pitcher in pitchers:
+                            currentPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, white, pitcher)
+                            time.sleep(5)
                     elif item['final'] == True:
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
