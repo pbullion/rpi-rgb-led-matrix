@@ -360,7 +360,7 @@ class RunText(SampleBase):
                         win = graphics.DrawText(canvas, slightlyBiggerFont, 60, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['win']))
                         loss = graphics.DrawText(canvas, slightlyBiggerFont, 85, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['loss']))
                         gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 105, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['gamesBack']))
-                        runningBuffer = runningBuffer + 10
+                        runningBuffer = runningBuffer + 11
                         runningBlockBuffer = runningBlockBuffer + 11
                 elif type(item) is dict and 'temp' in item.keys():
                     # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
