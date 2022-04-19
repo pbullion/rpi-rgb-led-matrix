@@ -96,6 +96,7 @@ class RunText(SampleBase):
                         for pitcher in pitchers:
                             currentPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, white, pitcher)
                             time.sleep(5)
+                            currentPitcher = graphics.DrawText(canvas, smallestFont, 150, 32, white, pitcher)
                     elif item['final'] == True:
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
