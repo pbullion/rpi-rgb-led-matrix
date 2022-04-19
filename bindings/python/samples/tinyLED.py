@@ -354,14 +354,14 @@ class RunText(SampleBase):
                         teamColorSecondary = graphics.Color(team['colors']['secondary'][0],team['colors']['secondary'][1],team['colors']['secondary'][2])
                         teamBlack = graphics.DrawText(canvas, middleFont, 1, 11, black, team['team'])
                         oddsStartNum = 35
-                        for offset in range(16):
+                        for offset in range(17):
                             graphics.DrawLine(canvas, 0, offset + runningBlockBuffer, 45, offset + runningBlockBuffer, teamColorPrimary)
                         teamName = graphics.DrawText(canvas, slightlyBiggerFont, 0, runningBuffer, teamColorSecondary, str(team['team']))
                         win = graphics.DrawText(canvas, slightlyBiggerFont, 60, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['win']))
                         loss = graphics.DrawText(canvas, slightlyBiggerFont, 85, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['loss']))
                         gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 105, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['gamesBack']))
                         runningBuffer = runningBuffer + 10
-                        runningBlockBuffer = runningBlockBuffer + 10
+                        runningBlockBuffer = runningBlockBuffer + 11
                 elif type(item) is dict and 'temp' in item.keys():
                     # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
                     # weatherImage = Image.open(locationString).convert('RGB').resize((22, 22), Image.ANTIALIAS)
