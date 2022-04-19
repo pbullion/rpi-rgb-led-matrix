@@ -345,7 +345,8 @@ class RunText(SampleBase):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
                     percentChange = graphics.DrawText(canvas, middleFont, stockLogo.width + 2 + stockSymbol + 8, 31, color, item['percentChange'])
                 elif type(item) is dict and 'standings' in item.keys():
-                    runningBuffer = 0
+                    runningBuffer = 10
+                    runningBlockBuffer = 0
                     for team in item['standings']:
                         print(team)
                         print(runningBuffer)
@@ -354,7 +355,7 @@ class RunText(SampleBase):
                         teamBlack = graphics.DrawText(canvas, middleFont, 1, 11, black, team['team'])
                         oddsStartNum = 35
                         for offset in range(16):
-                            graphics.DrawLine(canvas, 0, offset + runningBuffer, 45, offset + runningBuffer, teamColorPrimary)
+                            graphics.DrawLine(canvas, 0, offset + runningBlockBuffer, 45, offset + runningBlockBuffer, teamColorPrimary)
                         teamName = graphics.DrawText(canvas, slightlyBiggerFont, 0, runningBuffer, teamColorSecondary, str(team['team']))
                         win = graphics.DrawText(canvas, slightlyBiggerFont, 60, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['win']))
                         loss = graphics.DrawText(canvas, slightlyBiggerFont, 85, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['loss']))
