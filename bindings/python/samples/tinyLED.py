@@ -80,9 +80,9 @@ class RunText(SampleBase):
                         for offset in range(13):
                             graphics.DrawLine(canvas, 0, offset + 16, oddsStartNum - 3, offset + 16, homeColorPrimary)
                         awayTeam = graphics.DrawText(canvas, smallFont, 1, 11, awayColorSecondary, item['awayTeam']['teamName'])
-                        awayPitcher = graphics.DrawText(canvas, smallestFont, 1, 11, awayColorSecondary, 'J. Verlander 3-1 1.50 ERA')
-                        homeTeam = graphics.DrawText(canvas, smallFont, 1, 24, homeColorSecondary, item['homeTeam']['teamName'])
-                        homePitcher = graphics.DrawText(canvas, smallestFont, 1, 28, awayColorSecondary, 'J. Verlander 3-1 1.50 ERA')
+                        awayPitcher = graphics.DrawText(canvas, smallestFont, 1, 18, awayColorSecondary, 'J. Verlander 3-1 1.50 ERA')
+                        homeTeam = graphics.DrawText(canvas, smallFont, 1, 28, homeColorSecondary, item['homeTeam']['teamName'])
+                        homePitcher = graphics.DrawText(canvas, smallestFont, 1, 30, awayColorSecondary, 'J. Verlander 3-1 1.50 ERA')
                         runningCount = oddsStartNum
                         awayMLOdds = graphics.DrawText(canvas, slightlyBiggerFont, runningCount, 10, green, str(awayMoneyLineString))
                         homeMLOdds = graphics.DrawText(canvas, slightlyBiggerFont, runningCount, 24, green, str(homeMoneyLineString))
