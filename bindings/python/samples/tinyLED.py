@@ -352,14 +352,14 @@ class RunText(SampleBase):
                         print(runningBuffer)
                         teamColorPrimary = graphics.Color(team['colors']['main'][0],team['colors']['main'][1],team['colors']['main'][2])
                         teamColorSecondary = graphics.Color(team['colors']['secondary'][0],team['colors']['secondary'][1],team['colors']['secondary'][2])
-                        teamBlack = graphics.DrawText(canvas, middleFont, 1, 11, black, team['team'])
+                        teamBlack = graphics.DrawText(canvas, middleFont, 1, 150, black, team['team'])
                         oddsStartNum = 35
                         for offset in range(17):
-                            graphics.DrawLine(canvas, 0, offset + runningBlockBuffer, 45, offset + runningBlockBuffer, teamColorPrimary)
+                            graphics.DrawLine(canvas, 0, offset + runningBlockBuffer, 50, offset + runningBlockBuffer, teamColorPrimary)
                         teamName = graphics.DrawText(canvas, slightlyBiggerFont, 0, runningBuffer, teamColorSecondary, str(team['team']))
-                        win = graphics.DrawText(canvas, slightlyBiggerFont, 60, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['win']))
-                        loss = graphics.DrawText(canvas, slightlyBiggerFont, 85, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['loss']))
-                        gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 105, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['gamesBack']))
+                        win = graphics.DrawText(canvas, slightlyBiggerFont, 55, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['win']))
+                        loss = graphics.DrawText(canvas, slightlyBiggerFont, 80, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['loss']))
+                        gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 100, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['gamesBack']))
                         runningBuffer = runningBuffer + 11
                         runningBlockBuffer = runningBlockBuffer + 11
                 elif type(item) is dict and 'temp' in item.keys():
