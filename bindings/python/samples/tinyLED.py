@@ -356,9 +356,9 @@ class RunText(SampleBase):
                         for offset in range(16):
                             graphics.DrawLine(canvas, 0, offset, oddsStartNum - 8, offset, teamColorPrimary)
                         teamName = graphics.DrawText(canvas, slightlyBiggerFont, 0, runningBuffer, teamColorSecondary, str(team['team']))
-                        win = graphics.DrawText(canvas, slightlyBiggerFont, 60, runningBuffer, green if str(team['gamesBack'] == 0 else red), str(team['win']))
-                        loss = graphics.DrawText(canvas, slightlyBiggerFont, 85, runningBuffer, green if str(team['gamesBack'] == 0 else red), str(team['loss']))
-                        gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 105, runningBuffer, green if str(team['gamesBack'] == 0 else red), str(team['gamesBack']))
+                        win = graphics.DrawText(canvas, slightlyBiggerFont, 60, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['win']))
+                        loss = graphics.DrawText(canvas, slightlyBiggerFont, 85, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['loss']))
+                        gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 105, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['gamesBack']))
                         runningBuffer = runningBuffer + 10
                 elif type(item) is dict and 'temp' in item.keys():
                     # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
