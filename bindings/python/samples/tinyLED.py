@@ -476,7 +476,7 @@ class RunText(SampleBase):
                         offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
                 else:
                     currentTIme = graphics.DrawText(canvas, font, 0, 23, blue, item)
-                time.sleep(5)
+                time.sleep(50)
                 canvas.Clear()
 
 
