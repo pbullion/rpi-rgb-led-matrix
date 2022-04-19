@@ -91,7 +91,19 @@ class RunText(SampleBase):
                         overOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 10, green, 'O/U')
                         underOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 22, green, str(underTotalPointsString))
                         runningCount = runningCount + underOddsPoints + 4
-                        startTime = graphics.DrawText(canvas, smallestFont, 80, 31, yellow, item['startTime'])
+                        offscreen_canvas = self.matrix.CreateFrameCanvas()
+                        pos = 85
+                        running = True
+                        while running:
+                            offscreen_canvas.Clear()
+                            pos -= 1
+                            pitchingMatchup = graphics.DrawText(offscreen_canvas, smallestFont, pos, 31, blue, 'lksjdflksjdlkfjsdlkjflksdjflksjdlfkjsdlkfjlskdjflksjdflkjlksdfkljsdlk')
+                            if (pos + pitchingMatchup < 0):
+                                running = False
+                                pos = 85
+                            time.sleep(0.02)
+                            offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+                        startTime = graphics.DrawText(canvas, smallestFont, 85, 31, yellow, item['startTime'])
                     elif item['final'] == True:
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
