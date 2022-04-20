@@ -69,13 +69,6 @@ class RunText(SampleBase):
                             underTotalPriceString = item['fanDuel']['totals']['under']['price']
                             overTotalPointsString = item['fanDuel']['totals']['over']['point']
                             underTotalPointsString = item['fanDuel']['totals']['under']['point']
-                            partlyCloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
-                            thunderstormImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
-                            cloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
-                            rainImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-heavy-rain-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
-                            stormyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
-                            sunnyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
-                            windyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((22, 22), Image.ANTIALIAS)
                             awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
                             homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
                             oddsStartNum = awayTeamBlack + 3 if awayTeamBlack > homeTeamBlack else homeTeamBlack + 3
@@ -466,6 +459,7 @@ class RunText(SampleBase):
                     currentMonthBlack = graphics.DrawText(canvas, slightlyBiggerFont, 150, 23, black, item['month'])
                     currentDateBlack = graphics.DrawText(canvas, slightlyBiggerFont, 150, 23, black, item['date'])
                     currentTime = graphics.DrawText(canvas, font, 0, 20, purple, item['time'])
+                    currentTimeAmPm = graphics.DrawText(canvas, middleFont, currentTime + 4, 20, purple, item['amPM'])
                     currentDay = graphics.DrawText(canvas, slightlyBiggerFont, 64 - (currentDayBlack / 2), 30, green, item['day'])
                     currentMonth = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentMonthBlack, 9, blue, item['month'])
                     currentDate = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentDateBlack, 21, blue, item['date'])
