@@ -205,7 +205,7 @@ class RunText(SampleBase):
                         awayTeam = graphics.DrawText(canvas, smallFont, 1, 11, awayColorSecondary, item['awayTeam']['teamName'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 1, 24, homeColorSecondary, item['homeTeam']['teamName'])
                         runningCount = oddsStartNum
-                        finalDetail = graphics.DrawText(canvas, slightlyBiggerFont, runningCount + 5, 20, yellow, 'Postponed')
+                        finalDetail = graphics.DrawText(canvas, alilbiggerFont, runningCount + 5, 20, yellow, 'Postponed')
                 elif type(item) is dict and 'league' in item.keys() and item['league'] == 'nba':
                     print('+++++++++++++')
                     print(item)
@@ -327,7 +327,7 @@ class RunText(SampleBase):
                         oddsStartNum = 35
                         for offset in range(17):
                             graphics.DrawLine(canvas, 0, offset + runningBlockBuffer, 50, offset + runningBlockBuffer, teamColorPrimary)
-                        teamName = graphics.DrawText(canvas, slightlyBiggerFont, 0, runningBuffer, teamColorSecondary, str(team['team']))
+                        teamName = graphics.DrawText(canvas, alilbiggerFont if team['team'] == 'Mariners' else  slightlyBiggerFont, 0, runningBuffer, teamColorSecondary, str(team['team']))
                         win = graphics.DrawText(canvas, slightlyBiggerFont, 55, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['win']))
                         loss = graphics.DrawText(canvas, slightlyBiggerFont, 80, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['loss']))
                         gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 100, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['gamesBack']))
@@ -449,7 +449,7 @@ class RunText(SampleBase):
                         offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
                 else:
                     currentTime = graphics.DrawText(canvas, font, 0, 23, blue, item)
-                time.sleep(20)
+                time.sleep(10)
                 canvas.Clear()
 
 
