@@ -348,8 +348,11 @@ class RunText(SampleBase):
                     if 'Rain' in item['condition'] or 'rain' in item['condition']:
                         canvas.SetImage(rainImage, 0, 0)
                         color = blue
-                    elif 'CLOUDY' in item['condition'] or 'Overcast' in item['condition'] or 'cloudy' in item['condition'] or 'overcast' in item['condition']:
+                    elif 'CLOUDY' in item['condition'] or 'cloudy' in item['condition']:
                         canvas.SetImage(partlyCloudyImage, 0, 0)
+                        color = yellow
+                    elif 'OVERCAST' in item['condition']:
+                        canvas.SetImage(cloudyImage, 0, 0)
                         color = yellow
                     elif 'THUNDER' in item['condition'] or 'thunder' in item['condition']:
                         canvas.SetImage(thunderstormImage, 0, 0)
@@ -379,8 +382,11 @@ class RunText(SampleBase):
                     if 'RAIN' in item['condition'] or 'rain' in item['condition']:
                         canvas.SetImage(rainImage, 0, 0)
                         color = blue
-                    elif 'CLOUDY' in item['condition'] or 'Overcast' in item['condition'] or 'cloudy' in item['condition'] or 'overcast' in item['condition']:
+                    elif 'CLOUDY' in item['condition']:
                         canvas.SetImage(partlyCloudyImage, 0, 0)
+                        color = yellow
+                    elif 'OVERCAST' in item['condition']:
+                        canvas.SetImage(cloudyImage, 0, 0)
                         color = yellow
                     elif 'Thunder' in item['condition'] or 'thunder' in item['condition']:
                         canvas.SetImage(thunderstormImage, 0, 0)
