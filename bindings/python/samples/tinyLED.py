@@ -45,7 +45,7 @@ class RunText(SampleBase):
             print(responseArr)
             canvas = self.matrix
             bases =  [[113,5],[108,0],[103,5]]
-            outs = [[107,20],[113,20]]
+            outs = [[106,20],[112,20]]
             for item in responseArr:
                 print('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
                 print(item)
@@ -125,6 +125,7 @@ class RunText(SampleBase):
                         finalDetail = graphics.DrawText(canvas, middleFont, runningCount + 5, 20, yellow, 'F')
                         winningPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, green, item['winningPitcher'])
                         losingPitcher = graphics.DrawText(canvas, smallestFont, 4 + winningPitcher, 32, red, item['losingPitcher'])                    
+                         time.sleep(5)
                     elif item['inprogress'] == True: 
                         situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                         baseSize = 6
@@ -194,6 +195,7 @@ class RunText(SampleBase):
                         runningCount = runningCount + homeErrorTotal + 5
                         count = graphics.DrawText(canvas, smallestFont, 106, 19, yellow, situationString)
                         inning = graphics.DrawText(canvas, smallestFont, 99, 31, yellow, item['inning'])
+                        time.sleep(5)
                     elif item['postponed'] == True:
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
@@ -206,6 +208,7 @@ class RunText(SampleBase):
                         homeTeam = graphics.DrawText(canvas, smallFont, 1, 24, homeColorSecondary, item['homeTeam']['teamName'])
                         runningCount = oddsStartNum
                         finalDetail = graphics.DrawText(canvas, alilbiggerFont, runningCount + 5, 20, yellow, 'Postponed')
+                        time.sleep(5)
                 elif type(item) is dict and 'league' in item.keys() and item['league'] == 'nba':
                     print('+++++++++++++')
                     print(item)
@@ -276,6 +279,7 @@ class RunText(SampleBase):
                         runningCount = runningCount + homeScore + 10
                         quarter = graphics.DrawText(canvas, middleFont, runningCount + 7, 5, yellow, item['quarter'])
                         timeRemaining = graphics.DrawText(canvas, middleFont, runningCount + 5, 18, yellow, item['time'])
+                    time.sleep(5)
                 elif type(item) is dict and 'league' in item.keys() and item['league'] == 'ncaaBasketball':
                     awayColorPrimary = graphics.Color(item['awayTeam']['colors']['main'][0],item['awayTeam']['colors']['main'][1],item['awayTeam']['colors']['main'][2])
                     awayColorSecondary = graphics.Color(item['awayTeam']['colors']['secondary'][0],item['awayTeam']['colors']['secondary'][1],item['awayTeam']['colors']['secondary'][2])
@@ -315,6 +319,7 @@ class RunText(SampleBase):
                     for offset in range(size):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
                     percentChange = graphics.DrawText(canvas, middleFont, 127 - percentChangeBlack, 31, color, item['percentChange'])
+                    time.sleep(5)
                 elif type(item) is dict and 'standings' in item.keys():
                     runningBuffer = 10
                     runningBlockBuffer = 0
@@ -333,6 +338,7 @@ class RunText(SampleBase):
                         gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 100, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['gamesBack']))
                         runningBuffer = runningBuffer + 11
                         runningBlockBuffer = runningBlockBuffer + 11
+                    time.sleep(5)
                 elif type(item) is dict and 'temp' in item.keys():
                     # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
                     # weatherImage = Image.open(locationString).convert('RGB').resize((22, 22), Image.ANTIALIAS)
@@ -367,6 +373,7 @@ class RunText(SampleBase):
                     weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, centered, 8, blue, item['condition'])
                     highLow = graphics.DrawText(canvas, slightlyBiggerFont, 73, 22, green, item['highLow'])
                     rainChance = graphics.DrawText(canvas, alilbiggerFont, 78, 30, blue, 'Rain: {}'.format(item['rainPercent']))
+                    time.sleep(5)
                 elif type(item) is dict and 'condition' in item.keys():
                     # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
                     # weatherImage = Image.open(locationString).convert('RGB').resize((22, 22), Image.ANTIALIAS)
@@ -401,21 +408,22 @@ class RunText(SampleBase):
                     weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, centered, 8, blue, item['condition'])
                     highLow = graphics.DrawText(canvas, slightlyBiggerFont, 73, 22, green, item['highLow'])
                     rainChance = graphics.DrawText(canvas, alilbiggerFont, 78, 30, blue, 'Rain: {}'.format(item['rainPercent']))
-                elif isinstance(item, list) and 'condition' in item[0].keys():
-                    runningX = 0
-                    runningY = 10
-                    for day in item:
-                        print(day)
-                        # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(day['icon'])
-                        # weatherImage = Image.open(locationString).convert('RGB').resize((8, 8), Image.ANTIALIAS)
-                        # canvas.SetImage(weatherImage, runningX, 15)
-                        dayText = graphics.DrawText(canvas, smallFont, 5, 10, green, day['day'])
-                        weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 17, blue, day['condition'])
-                        highLow = graphics.DrawText(canvas, alilbiggerFont, 0, 25, blue, day['highLow'])
-                        currentTemp = graphics.DrawText(canvas, alilbiggerFont, 0, 32, blue, 'Rain: {}'.format(day['rainPercent']))
-                        runningX = runningX + 20
-                        time.sleep(3)
-                        canvas.Clear()
+                    time.sleep(5)
+                # elif isinstance(item, list) and 'condition' in item[0].keys():
+                #     runningX = 0
+                #     runningY = 10
+                #     for day in item:
+                #         print(day)
+                #         # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(day['icon'])
+                #         # weatherImage = Image.open(locationString).convert('RGB').resize((8, 8), Image.ANTIALIAS)
+                #         # canvas.SetImage(weatherImage, runningX, 15)
+                #         dayText = graphics.DrawText(canvas, smallFont, 5, 10, green, day['day'])
+                #         weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 17, blue, day['condition'])
+                #         highLow = graphics.DrawText(canvas, alilbiggerFont, 0, 25, blue, day['highLow'])
+                #         currentTemp = graphics.DrawText(canvas, alilbiggerFont, 0, 32, blue, 'Rain: {}'.format(day['rainPercent']))
+                #         runningX = runningX + 20
+                #         time.sleep(3)
+                #         canvas.Clear()
                 elif type(item) is dict and 'tourneyName' in item.keys():
                     offscreen_canvas = self.matrix.CreateFrameCanvas()
                     pos = offscreen_canvas.width
@@ -455,7 +463,7 @@ class RunText(SampleBase):
                         offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
                 else:
                     currentTime = graphics.DrawText(canvas, font, 0, 23, blue, item)
-                time.sleep(10)
+                    time.sleep(10)
                 canvas.Clear()
 
 
