@@ -58,8 +58,6 @@ class RunText(SampleBase):
                         count = 0
                         pregameCycle = True
                         pitchers = [item['awayTeam']['starter'], item['homeTeam']['starter']]
-                        if count == 2:
-                            pregameCycle = False
                         while pregameCycle:
                             awayMoneyLineString = '+{}'.format(item['fanDuel']['moneyLine']['away']['price']) if int(item['fanDuel']['moneyLine']['away']['price']) > 0 else item['fanDuel']['moneyLine']['away']['price']
                             homeMoneyLineString = '+{}'.format(item['fanDuel']['moneyLine']['home']['price']) if int(item['fanDuel']['moneyLine']['home']['price']) > 0 else item['fanDuel']['moneyLine']['home']['price']
@@ -97,11 +95,13 @@ class RunText(SampleBase):
                             overOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 10, green, 'O/U')
                             underOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 22, green, str(underTotalPointsString))
                             runningCount = runningCount + underOddsPoints + 4
-                            startTime = graphics.DrawText(canvas, smallestFont, 100, 32, yellow, item['startTime'])
+                            startTime = graphics.DrawText(canvas, smallestFont, 110, 32, yellow, item['startTime'])
                             currentPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, white, pitchers[count])
                             time.sleep(5)
-                            canvas.Clear()
                             count = count + 1
+                            if count == 2:
+                                pregameCycle = False
+                            canvas.Clear()
                     elif item['final'] == True:
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
