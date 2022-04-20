@@ -56,8 +56,11 @@ class RunText(SampleBase):
                     homeColorSecondary = graphics.Color(item['homeTeam']['colors']['secondary'][0],item['homeTeam']['colors']['secondary'][1],item['homeTeam']['colors']['secondary'][2])
                     if item['pregame'] == True:
                         count = 0
-                        testing = True
-                        while testing:
+                        pregameCycle = True
+                        pitchers = [item['awayTeam']['starter'], item['homeTeam']['starter']]
+                        while pregameCycle:
+                            if count == 3:
+                                pregameCycle = False
                             awayMoneyLineString = '+{}'.format(item['fanDuel']['moneyLine']['away']['price']) if int(item['fanDuel']['moneyLine']['away']['price']) > 0 else item['fanDuel']['moneyLine']['away']['price']
                             homeMoneyLineString = '+{}'.format(item['fanDuel']['moneyLine']['home']['price']) if int(item['fanDuel']['moneyLine']['home']['price']) > 0 else item['fanDuel']['moneyLine']['home']['price']
                             awaySpreadPriceString = item['fanDuel']['spread']['away']['price']
@@ -95,15 +98,10 @@ class RunText(SampleBase):
                             underOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 22, green, str(underTotalPointsString))
                             runningCount = runningCount + underOddsPoints + 4
                             startTime = graphics.DrawText(canvas, smallestFont, 100, 32, yellow, item['startTime'])
-                            homePitcher = 'J. Verlander 3-1 2.50'
-                            awayPitcher = 'K. Something 3-1 5.50'
-                            pitchers = [awayPitcher, homePitcher]
                             currentPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, white, pitchers[count])
                             time.sleep(5)
                             canvas.Clear()
                             count = count + 1
-                            if count == 3:
-                                testing = False
                     elif item['final'] == True:
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 22, black, item['homeTeam']['teamName'])
