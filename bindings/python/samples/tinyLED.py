@@ -326,10 +326,10 @@ class RunText(SampleBase):
                         for offset in range(17):
                             graphics.DrawLine(canvas, 0, offset + runningBlockBuffer, 30, offset + runningBlockBuffer, teamColorPrimary)
                         teamName = graphics.DrawText(canvas, alilbiggerFont if team['team'] == 'Mariners' else  slightlyBiggerFont, 0, runningBuffer, teamColorSecondary, str(team['team']))
-                        win = graphics.DrawText(canvas, slightlyBiggerFont, 45, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['win']))
-                        loss = graphics.DrawText(canvas, slightlyBiggerFont, 70, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['loss']))
-                        gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 90, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['gamesBack']))
-                        last10 = graphics.DrawText(canvas, smallestFont, 105, runningBuffer - 2, green if team['gamesBack'] == 0 else red, str(team['last10']))
+                        win = graphics.DrawText(canvas, slightlyBiggerFont, 35, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['win']))
+                        loss = graphics.DrawText(canvas, slightlyBiggerFont, 60, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['loss']))
+                        gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 80, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['gamesBack']))
+                        last10 = graphics.DrawText(canvas, smallestFont, 110, runningBuffer - 2, green if team['gamesBack'] == 0 else red, str(team['last10']))
                         runningBuffer = runningBuffer + 11
                         runningBlockBuffer = runningBlockBuffer + 11
                     time.sleep(5)
