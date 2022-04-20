@@ -59,7 +59,7 @@ class RunText(SampleBase):
                         pregameCycle = True
                         pitchers = [item['awayTeam']['starter'], item['homeTeam']['starter']]
                         while pregameCycle:
-                            if count == 3:
+                            if count == 2:
                                 pregameCycle = False
                             awayMoneyLineString = '+{}'.format(item['fanDuel']['moneyLine']['away']['price']) if int(item['fanDuel']['moneyLine']['away']['price']) > 0 else item['fanDuel']['moneyLine']['away']['price']
                             homeMoneyLineString = '+{}'.format(item['fanDuel']['moneyLine']['home']['price']) if int(item['fanDuel']['moneyLine']['home']['price']) > 0 else item['fanDuel']['moneyLine']['home']['price']
