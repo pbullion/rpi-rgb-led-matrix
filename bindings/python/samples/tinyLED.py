@@ -95,7 +95,7 @@ class RunText(SampleBase):
                             overOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 10, green, 'O/U')
                             underOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 22, green, str(underTotalPointsString))
                             runningCount = runningCount + underOddsPoints + 4
-                            startTime = graphics.DrawText(canvas, smallestFont, 110, 32, yellow, item['startTime'])
+                            startTime = graphics.DrawText(canvas, slightlyBiggerFont, 105, 32, yellow, item['startTime'])
                             currentPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, white, pitchers[count])
                             time.sleep(5)
                             count = count + 1
@@ -246,7 +246,7 @@ class RunText(SampleBase):
                         overOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 10, green, 'O/U')
                         underOddsPoints = graphics.DrawText(canvas, slightlyBiggerFont, runningCount, 22, green, str(underTotalPointsString))
                         runningCount = runningCount + underOddsPoints + 4
-                        startTime = graphics.DrawText(canvas, smallestFont, 80, 30, yellow, item['startTime'])
+                        startTime = graphics.DrawText(canvas, slightlyBiggerFont, 80, 30, yellow, item['startTime'])
                     if item['final'] == True:    
                         awayTeamBlack = graphics.DrawText(canvas, middleFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, middleFont, 1, 23, black, item['homeTeam']['teamName'])
