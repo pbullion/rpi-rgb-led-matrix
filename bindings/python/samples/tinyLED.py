@@ -95,7 +95,7 @@ class RunText(SampleBase):
                             overOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 10, green, 'O/U')
                             underOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 22, green, str(underTotalPointsString))
                             runningCount = runningCount + underOddsPoints + 4
-                            startTime = graphics.DrawText(canvas, alilbiggerFont, 100, 32, yellow, item['startTime'])
+                            startTime = graphics.DrawText(canvas, alilbiggerFont, 102, 32, yellow, item['startTime'])
                             currentPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, white, pitchers[count])
                             time.sleep(5)
                             count = count + 1
@@ -246,7 +246,7 @@ class RunText(SampleBase):
                         overOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 10, green, 'O/U')
                         underOddsPoints = graphics.DrawText(canvas, slightlyBiggerFont, runningCount, 22, green, str(underTotalPointsString))
                         runningCount = runningCount + underOddsPoints + 4
-                        startTime = graphics.DrawText(canvas, slightlyBiggerFont, 80, 30, yellow, item['startTime'])
+                        startTime = graphics.DrawText(canvas, smallestFont, 80, 30, yellow, item['startTime'])
                     if item['final'] == True:    
                         awayTeamBlack = graphics.DrawText(canvas, middleFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, middleFont, 1, 23, black, item['homeTeam']['teamName'])
@@ -461,9 +461,16 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         time.sleep(0.02)
                         offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+                elif type(item) is dict and 'day' in item.keys() and 'date' in item.keys():
+                    currentTime = graphics.DrawText(canvas, font, 0, 23, blue, item['time'])
+                    currentDayBlack = graphics.DrawText(canvas, alilbiggerFont, 150, 5, black, item['day'])
+                    currentDay = graphics.DrawText(canvas, alilbiggerFont, 127 - currentDayBlack, 5, blue, item['day'])
+                    currentDateBlack = graphics.DrawText(canvas, middleFont, 150, 23, black, item['date'])
+                    currentDate = graphics.DrawText(canvas, middleFont, 127 - currentDateBlack, 23, blue, item['date'])
+                    time.sleep(10)
                 else:
                     currentTime = graphics.DrawText(canvas, font, 0, 23, blue, item)
-                    time.sleep(10)
+                    time.sleep(0)
                 canvas.Clear()
 
 
