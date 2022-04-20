@@ -468,7 +468,7 @@ class RunText(SampleBase):
                     currentTime = graphics.DrawText(canvas, font, 0, 21, purple, item['time'])
                     currentDay = graphics.DrawText(canvas, slightlyBiggerFont, 64 - (currentDayBlack / 2), 30, green, item['day'])
                     currentMonth = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentMonthBlack, 10, blue, item['month'])
-                    currentDate = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentDatelack, 20, blue, item['date'])
+                    currentDate = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentDateBlack, 20, blue, item['date'])
                     time.sleep(15)
                 else:
                     currentTime = graphics.DrawText(canvas, font, 0, 23, blue, item)
