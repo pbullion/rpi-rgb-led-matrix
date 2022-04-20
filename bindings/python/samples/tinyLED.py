@@ -461,7 +461,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         time.sleep(0.02)
                         offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
-                elif type(item) is dict and 'day' in item.keys() and 'date' in item.keys():
+                elif type(item) is dict and item['type'] == 'time':
                     currentTime = graphics.DrawText(canvas, font, 0, 23, blue, item['time'])
                     currentDayBlack = graphics.DrawText(canvas, alilbiggerFont, 150, 5, black, item['day'])
                     currentDay = graphics.DrawText(canvas, alilbiggerFont, 127 - currentDayBlack, 5, blue, item['day'])
