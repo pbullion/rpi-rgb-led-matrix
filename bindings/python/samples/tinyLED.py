@@ -465,10 +465,10 @@ class RunText(SampleBase):
                     currentDayBlack = graphics.DrawText(canvas, slightlyBiggerFont, 150, 5, black, item['day'])
                     currentMonthBlack = graphics.DrawText(canvas, slightlyBiggerFont, 150, 23, black, item['month'])
                     currentDateBlack = graphics.DrawText(canvas, slightlyBiggerFont, 150, 23, black, item['date'])
-                    currentTime = graphics.DrawText(canvas, font, 0, 21, purple, item['time'])
+                    currentTime = graphics.DrawText(canvas, font, 0, 20, purple, item['time'])
                     currentDay = graphics.DrawText(canvas, slightlyBiggerFont, 64 - (currentDayBlack / 2), 30, green, item['day'])
-                    currentMonth = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentMonthBlack, 10, blue, item['month'])
-                    currentDate = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentDateBlack, 20, blue, item['date'])
+                    currentMonth = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentMonthBlack, 9, blue, item['month'])
+                    currentDate = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentDateBlack, 21, blue, item['date'])
                     time.sleep(15)
                 else:
                     currentTime = graphics.DrawText(canvas, font, 0, 23, blue, item)
