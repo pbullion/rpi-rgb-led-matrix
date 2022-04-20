@@ -463,10 +463,12 @@ class RunText(SampleBase):
                         offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
                 elif type(item) is dict and item['type'] == 'time':
                     currentDayBlack = graphics.DrawText(canvas, alilbiggerFont, 150, 5, black, item['day'])
+                    currentMonthBlack = graphics.DrawText(canvas, slightlyBiggerFont, 150, 23, black, item['month'])
                     currentDateBlack = graphics.DrawText(canvas, slightlyBiggerFont, 150, 23, black, item['date'])
-                    currentTime = graphics.DrawText(canvas, font, 0, 21, blue, item['time'])
-                    currentDay = graphics.DrawText(canvas, slightlyBiggerFont, 75 - (currentDayBlack / 2), 32, green, item['day'])
-                    currentDate = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentDateBlack, 10, blue, item['date'])
+                    currentTime = graphics.DrawText(canvas, font, 0, 21, purple, item['time'])
+                    currentDay = graphics.DrawText(canvas, slightlyBiggerFont, 64 - (currentDayBlack / 2), 32, green, item['day'])
+                    currentMonth = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentDateBlack, 5, blue, item['month'])
+                    currentDate = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentMonthBlack, 15, blue, item['date'])
                     time.sleep(15)
                 else:
                     currentTime = graphics.DrawText(canvas, font, 0, 23, blue, item)
