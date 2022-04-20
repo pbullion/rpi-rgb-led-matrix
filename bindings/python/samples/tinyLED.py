@@ -39,9 +39,9 @@ class RunText(SampleBase):
             smallFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x13.bdf")
             middleFont = graphics.Font()
             middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
-            url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
-            responseArr = json.loads(url.text)
-            # responseArr = 
+            # url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/tiny-led/all-data/pbullion@gmail.com")
+            # responseArr = json.loads(url.text)
+            responseArr = [{'stockSymbol': 'TSLA', 'url': 'https://logo.clearbit.com/tesla.com', 'currentPrice': '999.58', 'up': False, 'percentChange': '2.78%'}, {'stockSymbol': 'OBNK', 'url': 'https://logo.clearbit.com/originbank.com', 'currentPrice': '42.40', 'up': True, 'percentChange': '1.56%'}, {'stockSymbol': 'AAPL', 'url': 'https://logo.clearbit.com/apple.com', 'currentPrice': '167.95', 'up': True, 'percentChange': '0.33%'}, {'stockSymbol': 'TWTR', 'url': 'https://logo.clearbit.com/twitter.com', 'currentPrice': '45.70', 'up': False, 'percentChange': '0.99%'}, {'stockSymbol': 'BTC', 'url': 'https://logo.clearbit.com/bitcoin.org', 'currentPrice': '41637', 'up': True, 'percentChange': '0.19%'}, {'stockSymbol': 'ETH', 'url': 'https://logo.clearbit.com/ethereum.org', 'currentPrice': '3103.48', 'up': False, 'percentChange': '0.32%'}, {'stockSymbol': 'DOGE', 'url': 'https://logo.clearbit.com/dogecoin.com', 'currentPrice': '0.1426', 'up': True, 'percentChange': '0.55%'}, {'league': 'nba', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'teamName': 'Hawks', 'name': 'ATL', 'score': '105', 'colors': {'main': [200, 16, 46], 'secondary': [255, 255, 255]}, 'record': '27-14'}, 'homeTeam': {'teamName': 'Heat', 'name': 'MIA', 'score': '115', 'colors': {'main': [134, 38, 51], 'secondary': [0, 0, 0]}, 'record': '43-39'}, 'winningPitcher': '', 'losingPitcher': '', 'finalDetail': 'Final'}, {'league': 'nba', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'teamName': 'Timberwolves', 'name': 'MIN', 'score': '96', 'colors': {'main': [0, 43, 92], 'secondary': [122, 193, 67]}, 'record': '26-15'}, 'homeTeam': {'teamName': 'Grizzlies', 'name': 'MEM', 'score': '124', 'colors': {'main': [35, 55, 91], 'secondary': [97, 137, 185]}, 'record': '46-36'}, 'winningPitcher': '', 'losingPitcher': '', 'finalDetail': 'Final'}, {'league': 'nba', 'pregame': False, 'inprogress': False, 'final': True, 'awayTeam': {'teamName': 'Pelicans', 'name': 'NO', 'score': '125', 'colors': {'main': [0, 43, 92], 'secondary': [227, 25, 55]}, 'record': '19-22'}, 'homeTeam': {'teamName': 'Suns', 'name': 'PHX', 'score': '114', 'colors': {'main': [229, 96, 32], 'secondary': [29, 17, 96]}, 'record': '36-46'}, 'winningPitcher': '', 'losingPitcher': '', 'finalDetail': 'Final'}, '']
             print(responseArr)
             canvas = self.matrix
             bases =  [[113,5],[108,0],[103,5]]
@@ -113,8 +113,8 @@ class RunText(SampleBase):
                         awayTeam = graphics.DrawText(canvas, smallFont, 1, 11, awayColorSecondary, item['awayTeam']['teamName'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 1, 24, homeColorSecondary, item['homeTeam']['teamName'])
                         runningCount = oddsStartNum
-                        awayScore = graphics.DrawText(canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['score'])
-                        homeScore = graphics.DrawText(canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
+                        awayScore = graphics.DrawText(canvas, smallFont, runningCount, 11, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['score'])
+                        homeScore = graphics.DrawText(canvas, smallFont, runningCount, 24, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
                         runningCount = runningCount + homeScore + 10
                         homeHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['hits']['displayValue'])
                         awayHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['hits']['displayValue'])
@@ -183,14 +183,14 @@ class RunText(SampleBase):
                         awayTeam = graphics.DrawText(canvas, smallFont, 1, 11, awayColorSecondary, item['awayTeam']['teamName'])
                         homeTeam = graphics.DrawText(canvas, smallFont, 1, 24, homeColorSecondary, item['homeTeam']['teamName'])
                         runningCount = oddsStartNum
-                        awayScore = graphics.DrawText(canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['score'])
-                        homeScore = graphics.DrawText(canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
+                        awayScore = graphics.DrawText(canvas, smallFont, runningCount, 11, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['score'])
+                        homeScore = graphics.DrawText(canvas, smallFont, runningCount, 24, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
                         runningCount = runningCount + homeScore + 10
-                        homeHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['hits']['displayValue'])
-                        awayHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['hits']['displayValue'])
+                        homeHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 11, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['hits']['displayValue'])
+                        awayHitTotal = graphics.DrawText(canvas, smallFont, runningCount, 24, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['hits']['displayValue'])
                         runningCount = runningCount + homeHitTotal + 10
-                        homeErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 12, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['errors']['displayValue'])
-                        awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 23, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
+                        homeErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 11, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['errors']['displayValue'])
+                        awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 24, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
                         runningCount = runningCount + homeErrorTotal + 5
                         count = graphics.DrawText(canvas, smallestFont, 106, 19, yellow, situationString)
                         inning = graphics.DrawText(canvas, smallestFont, 99, 31, yellow, item['inning'])
@@ -306,13 +306,15 @@ class RunText(SampleBase):
                     stockLogo = Image.open(requests.get(item['url'], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                     canvas.SetImage(stockLogo, 0, 0)
                     stockSymbol = graphics.DrawText(canvas, middleFont, stockLogo.width + 2, 20, color, item['stockSymbol'])
-                    currentPrice = graphics.DrawText(canvas, smallFont, stockLogo.width + 2 + stockSymbol + 10, 14, color, '${}'.format(item['currentPrice']))
-                    x = stockLogo.width + 2 + stockSymbol
+                    currentPriceBlack = graphics.DrawText(canvas, smallFont, 150, 14, black, '${}'.format(item['currentPrice']))
+                    currentPrice = graphics.DrawText(canvas, smallFont, 127 - currentPriceBlack, 14, color, '${}'.format(item['currentPrice']))
+                    percentChangeBlack = graphics.DrawText(canvas, middleFont,150, 31, black, item['percentChange'])
+                    x = 127 - percentChangeBlack - 8
                     y = 25 if item['up'] else 28
                     size = 4
                     for offset in range(size):
                         graphics.DrawLine(canvas, x - offset, y + (offset * direction), x + offset, y + (offset * direction), color)
-                    percentChange = graphics.DrawText(canvas, middleFont, stockLogo.width + 2 + stockSymbol + 8, 31, color, item['percentChange'])
+                    percentChange = graphics.DrawText(canvas, middleFont, 127 - percentChangeBlack, 31, color, item['percentChange'])
                 elif type(item) is dict and 'standings' in item.keys():
                     runningBuffer = 10
                     runningBlockBuffer = 0
@@ -447,7 +449,7 @@ class RunText(SampleBase):
                         offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
                 else:
                     currentTime = graphics.DrawText(canvas, font, 0, 23, blue, item)
-                time.sleep(10)
+                time.sleep(20)
                 canvas.Clear()
 
 
