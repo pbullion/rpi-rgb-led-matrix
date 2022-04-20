@@ -95,7 +95,7 @@ class RunText(SampleBase):
                             overOddsPoints = graphics.DrawText(canvas, smallestFont, runningCount, 10, green, 'O/U')
                             underOddsPoints = graphics.DrawText(canvas, alilbiggerFont, runningCount, 22, green, str(underTotalPointsString))
                             runningCount = runningCount + underOddsPoints + 4
-                            startTime = graphics.DrawText(canvas, alilbiggerFont, 109, 32, yellow, item['startTime'])
+                            startTime = graphics.DrawText(canvas, alilbiggerFont, 106, 32, yellow, item['startTime'])
                             currentPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, white, pitchers[count])
                             time.sleep(5)
                             count = count + 1
