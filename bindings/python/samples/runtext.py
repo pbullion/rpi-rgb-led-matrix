@@ -29,13 +29,13 @@ class RunText(SampleBase):
             # END COLORS
             # FONTS
             font = graphics.Font()
-            font.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/texgyre-27.bdf")
+            font.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/texgyre-27.bdf")
             smallFont = graphics.Font()
-            smallFont.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/6x13.bdf")
+            smallFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x13.bdf")
             alilbiggerFont = graphics.Font()
-            alilbiggerFont.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/5x7.bdf")
+            alilbiggerFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/5x7.bdf")
             middleFont = graphics.Font()
-            middleFont.LoadFont("/home/pi/new/rpi-rgb-led-matrix/fonts/9x18B.bdf")
+            middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
             # END FONTS
             # url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data/pbullion@gmail.com")
             # strings = json.loads(url.text)
@@ -44,13 +44,13 @@ class RunText(SampleBase):
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
             # IMAGES FOR WEATHER
-            partlyCloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-            thunderstormImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-            cloudyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-            rainImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-heavy-rain-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-            stormyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-            sunnyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-            windyImage = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            partlyCloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            thunderstormImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            cloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            rainImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-heavy-rain-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            stormyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            sunnyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            windyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             # END IMAGES FOR WEATHER
             print(strings)
             for string in strings:
@@ -85,8 +85,8 @@ class RunText(SampleBase):
                     elif '+' in string[3]:
                         color = green
                     stockLogo = Image.open(requests.get(string[0], stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                    stockDown = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/stocks/icons8-down-48.png').convert('RGB').resize((16,16), Image.ANTIALIAS)
-                    stockUp = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/stocks/icons8-up-48.png').convert('RGB').resize((16,16), Image.ANTIALIAS)
+                    stockDown = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/stocks/icons8-down-48.png').convert('RGB').resize((16,16), Image.ANTIALIAS)
+                    stockUp = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/stocks/icons8-up-48.png').convert('RGB').resize((16,16), Image.ANTIALIAS)
                 len = 1
                 while running:
                     offscreen_canvas.Clear()
@@ -384,7 +384,7 @@ class RunText(SampleBase):
                             time.sleep(0.008)
                     elif 'AP Poll' in string:
                         color = green
-                        basketballLogo = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bball.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        basketballLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bball.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
                         pos -= 1
                         if (pos + basketballLogo.width + len < 0):
                             running = False
@@ -394,7 +394,7 @@ class RunText(SampleBase):
                         time.sleep(0.008)
                     elif 'ESPN' in string:
                         color = blue
-                        espnLogo = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bball.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        espnLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bball.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
                         pos -= 1
                         if (pos + espnLogo.width + len < 0):
                             running = False
@@ -404,7 +404,7 @@ class RunText(SampleBase):
                         time.sleep(0.008)
                     elif 'FOXNEWS' in string:
                         color = blue
-                        foxNewsLogo = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/logos/foxnews.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
+                        foxNewsLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/foxnews.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
                         pos -= 1
                         if (pos + foxNewsLogo.width + len < 0):
                             running = False
@@ -414,7 +414,7 @@ class RunText(SampleBase):
                         time.sleep(0.008)
                     elif 'CNN' in string:
                         color = blue
-                        cnnLogo = Image.open('/home/pi/new/rpi-rgb-led-matrix/bindings/python/samples/images/logos/cnn.png').convert('RGB').resize((69,32), Image.ANTIALIAS)
+                        cnnLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/cnn.png').convert('RGB').resize((69,32), Image.ANTIALIAS)
                         pos -= 1
                         if (pos + cnnLogo.width + len < 0):
                             running = False
