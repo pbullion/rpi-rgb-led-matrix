@@ -255,7 +255,6 @@ class RunText(SampleBase):
                         homeScore = graphics.DrawText(canvas, middleFont, runningCount, 29, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['score'])
                         runningCount = runningCount + homeScore + 10
                         finalDetail = graphics.DrawText(canvas, middleFont, 119, 20, yellow, 'F')
-                        # finalDetail = graphics.DrawText(canvas, middleFont, 110, 20, yellow, item['finalDetail'])
                     elif item['inprogress'] == True:    
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
                         homeTeamBlack = graphics.DrawText(canvas, smallFont, 1, 25, black, item['homeTeam']['teamName'])
@@ -334,8 +333,6 @@ class RunText(SampleBase):
                         runningBlockBuffer = runningBlockBuffer + 11
                     time.sleep(5)
                 elif type(item) is dict and 'temp' in item.keys():
-                    # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
-                    # weatherImage = Image.open(locationString).convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     partlyCloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
                     thunderstormImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
                     cloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
@@ -369,8 +366,6 @@ class RunText(SampleBase):
                     rainChance = graphics.DrawText(canvas, alilbiggerFont, 78, 30, blue, 'Rain: {}'.format(item['rainPercent']))
                     time.sleep(5)
                 elif type(item) is dict and 'condition' in item.keys():
-                    # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(item['icon'])
-                    # weatherImage = Image.open(locationString).convert('RGB').resize((22, 22), Image.ANTIALIAS)
                     partlyCloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
                     thunderstormImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
                     cloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
@@ -403,21 +398,6 @@ class RunText(SampleBase):
                     highLow = graphics.DrawText(canvas, slightlyBiggerFont, 73, 22, green, item['highLow'])
                     rainChance = graphics.DrawText(canvas, alilbiggerFont, 78, 30, blue, 'Rain: {}'.format(item['rainPercent']))
                     time.sleep(5)
-                # elif isinstance(item, list) and 'condition' in item[0].keys():
-                #     runningX = 0
-                #     runningY = 10
-                #     for day in item:
-                #         print(day)
-                #         # locationString = '/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/day/{}.png'.format(day['icon'])
-                #         # weatherImage = Image.open(locationString).convert('RGB').resize((8, 8), Image.ANTIALIAS)
-                #         # canvas.SetImage(weatherImage, runningX, 15)
-                #         dayText = graphics.DrawText(canvas, smallFont, 5, 10, green, day['day'])
-                #         weatherConditionText = graphics.DrawText(canvas, smallestFont, 0, 17, blue, day['condition'])
-                #         highLow = graphics.DrawText(canvas, alilbiggerFont, 0, 25, blue, day['highLow'])
-                #         currentTemp = graphics.DrawText(canvas, alilbiggerFont, 0, 32, blue, 'Rain: {}'.format(day['rainPercent']))
-                #         runningX = runningX + 20
-                #         time.sleep(3)
-                #         canvas.Clear()
                 elif type(item) is dict and 'tourneyName' in item.keys():
                     offscreen_canvas = self.matrix.CreateFrameCanvas()
                     pos = offscreen_canvas.width
@@ -445,11 +425,11 @@ class RunText(SampleBase):
                     running = True
                     while running:
                         offscreen_canvas.Clear()
-                        tournamentNameBlack = graphics.DrawText(canvas, slightlyBiggerFont, 0, 10, black, item['name'])
+                        tournamentNameBlack = graphics.DrawText(canvas, middleFont, 0, 10, black, item['name'])
                         nameCentered = 64 - (tournamentNameBlack / 2)
-                        tournamentName = graphics.DrawText(canvas, slightlyBiggerFont, nameCentered, 10, red, item['name'])
+                        tournamentName = graphics.DrawText(canvas, middleFont, nameCentered, 10, red, item['name'])
                         pos -= 1
-                        topGolfers = graphics.DrawText(offscreen_canvas, middleFont, pos, 25, blue, item['feed'])
+                        topGolfers = graphics.DrawText(offscreen_canvas, slightlyBiggerFont, pos, 25, blue, item['feed'])
                         if (pos + topGolfers < 0):
                             running = False
                             pos = offscreen_canvas.width
