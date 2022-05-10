@@ -354,7 +354,7 @@ class RunText(SampleBase):
                     elif 'THUNDER' in item['condition'] or 'thunder' in item['condition']:
                         canvas.SetImage(thunderstormImage, 0, 0)
                         color = blue
-                    elif 'Sun' in item['condition'] or 'SUN' in item['condition']:
+                    elif 'Sun' in item['condition'] or 'SUN' in item['condition'] or 'SUNNY' in item['condition']:
                         canvas.SetImage(sunnyImage, 0, 0)
                         color = yellow
                     currentTemp = graphics.DrawText(canvas, font, 32, 31, color, item['temp'])
@@ -387,7 +387,7 @@ class RunText(SampleBase):
                     elif 'Thunder' in item['condition'] or 'thunder' in item['condition']:
                         canvas.SetImage(thunderstormImage, 0, 0)
                         color = blue
-                    elif 'Sun' in item['condition'] or 'sun' in item['condition']:
+                    elif 'Sun' in item['condition'] or 'sun' in item['condition'] or 'SUNNY' in item['condition']:
                         canvas.SetImage(sunnyImage, 0, 0)
                         color = yellow
                     dayOfWeek = graphics.DrawText(canvas, middleFont, 36, 24, color, item['day'])
@@ -442,8 +442,8 @@ class RunText(SampleBase):
                     currentTime = graphics.DrawText(canvas, font, 0, 20, purple, item['time'])
                     currentTimeAmPm = graphics.DrawText(canvas, middleFont, currentTime + 4, 20, purple, item['amPM'])
                     currentDay = graphics.DrawText(canvas, slightlyBiggerFont, 64 - (currentDayBlack / 2), 30, green, item['day'])
-                    currentMonth = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentMonthBlack, 9, blue, item['month'])
-                    currentDate = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentDateBlack, 21, blue, item['date'])
+                    currentMonth = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentMonthBlack, 9, yellow, item['month'])
+                    currentDate = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentDateBlack, 21, yellow, item['date'])
                     time.sleep(15)
                 else:
                     currentTime = graphics.DrawText(canvas, font, 0, 23, blue, item)
