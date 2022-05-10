@@ -342,7 +342,7 @@ class RunText(SampleBase):
                     windyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
                     print(item['condition'])
                     color = blue
-                    if 'Rain' in item['condition'] or 'rain' in item['condition']:
+                    if 'RAIN' in item['condition'] or 'rain' in item['condition']:
                         canvas.SetImage(rainImage, 0, 0)
                         color = blue
                     elif 'CLOUDY' in item['condition'] or 'cloudy' in item['condition']:
@@ -354,7 +354,7 @@ class RunText(SampleBase):
                     elif 'THUNDER' in item['condition'] or 'thunder' in item['condition']:
                         canvas.SetImage(thunderstormImage, 0, 0)
                         color = blue
-                    elif 'Sun' in item['condition'] or 'SUN' in item['condition'] or 'SUNNY' in item['condition']:
+                    elif 'SUN' in item['condition'] or 'sun' in item['condition'] or 'SUNNY' in item['condition']:
                         canvas.SetImage(sunnyImage, 0, 0)
                         color = yellow
                     currentTemp = graphics.DrawText(canvas, font, 32, 31, color, item['temp'])
@@ -384,10 +384,10 @@ class RunText(SampleBase):
                     elif 'OVERCAST' in item['condition']:
                         canvas.SetImage(cloudyImage, 0, 0)
                         color = yellow
-                    elif 'Thunder' in item['condition'] or 'thunder' in item['condition']:
+                    elif 'THUNDER' in item['condition'] or 'thunder' in item['condition']:
                         canvas.SetImage(thunderstormImage, 0, 0)
                         color = blue
-                    elif 'Sun' in item['condition'] or 'sun' in item['condition'] or 'SUNNY' in item['condition']:
+                    elif 'SUN' in item['condition'] or 'sun' in item['condition'] or 'SUNNY' in item['condition']:
                         canvas.SetImage(sunnyImage, 0, 0)
                         color = yellow
                     dayOfWeek = graphics.DrawText(canvas, middleFont, 36, 24, color, item['day'])
