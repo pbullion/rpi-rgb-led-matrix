@@ -387,7 +387,7 @@ class RunText(SampleBase):
                     elif 'THUNDER' in item['condition'] or 'thunder' in item['condition']:
                         canvas.SetImage(thunderstormImage, 0, 0)
                         color = blue
-                    elif 'SUNNY' in item['condition']:
+                    elif 'SUNNY' in item['condition'] or item['condition'] == 'SUNNY':
                         canvas.SetImage(sunnyImage, 0, 0)
                         color = yellow
                     dayOfWeek = graphics.DrawText(canvas, middleFont, 36, 24, color, item['day'])
