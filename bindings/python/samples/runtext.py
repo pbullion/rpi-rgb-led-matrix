@@ -61,7 +61,7 @@ class RunText(SampleBase):
                 print(string)
                 if string == None:
                     print('it was NONE')
-                elif isinstance(string, list) and 'inprogress mlb' in string[0]:
+                elif isinstance(string, list) and 'inProgress mlb' in string[0]:
                     awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((58,58), Image.ANTIALIAS)
                     homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((58,58), Image.ANTIALIAS)
                     pitcherHeadshot = string[16]
@@ -159,7 +159,7 @@ class RunText(SampleBase):
                             if (pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + status < 0):
                                 running = False
                                 pos = offscreen_canvas.width
-                        elif 'inprogress mlb' in string[0]:
+                        elif 'inProgress mlb' in string[0]:
                             runnerSituationString = string[15]
                             pitcherNameString = string[17]
                             batterNameString = string[19]
