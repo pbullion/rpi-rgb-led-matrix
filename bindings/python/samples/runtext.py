@@ -100,7 +100,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(rainImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + rainImage.width, 24, color, string)
-                        time.sleep(0.01)
+                        time.sleep(0.005)
                     elif 'CLOUDY' in string or 'OVERCAST' in string:
                         color = blue
                         img_width, img_height = partlyCloudyImage.size
@@ -110,7 +110,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(partlyCloudyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
-                        time.sleep(0.01)
+                        time.sleep(0.005)
                     elif 'THUNDER' in string:
                         color = purple
                         img_width, img_height = thunderstormImage.size
@@ -120,7 +120,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(thunderstormImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + thunderstormImage.width, 24, color, string)
-                        time.sleep(0.01)
+                        time.sleep(0.005)
                     elif 'SUN' in string:
                         color = yellow
                         img_width, img_height = sunnyImage.size
@@ -130,7 +130,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(sunnyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.width, 24, color, string)
-                        time.sleep(0.01)
+                        time.sleep(0.005)
                     elif isinstance(string, list) and 'game' in string[0]:
                         # awayColor = graphics.Color(string[2], string[3], string[4])
                         # homeColor = graphics.Color(string[7], string[8], string[9])
@@ -297,7 +297,7 @@ class RunText(SampleBase):
                             if ( pos + 45 + first + second + 65 + third < 0):
                                 running = False
                                 pos = offscreen_canvas.width
-                            time.sleep(0.01)
+                            time.sleep(0.005)
                         elif '+' in string[4]:
                             pos -= 1
                             offscreen_canvas.SetImage(stockLogo, pos)
@@ -308,7 +308,7 @@ class RunText(SampleBase):
                             if ( pos + 45 + first + second + 65 + third < 0):
                                 running = False
                                 pos = offscreen_canvas.width
-                            time.sleep(0.01)
+                            time.sleep(0.005)
                     elif 'AP Poll' in string:
                         color = green
                         basketballLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bball.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
