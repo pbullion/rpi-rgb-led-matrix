@@ -145,7 +145,8 @@ class RunText(SampleBase):
                         buffer = 6
                         bases =  [[2,5],[6,0],[10,5]]
                         outs = [[3,20],[9,20],[15,20]]
-                        if 'pregame' in string[0]:                            
+                        if 'pregame' in string[0]:     
+                            print('it is pregame')                       
                             offscreen_canvas.SetImage(awayLogo, pos, -14)
                             versus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer, 24, green, versusString)
                             offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + versus + buffer, -14)
