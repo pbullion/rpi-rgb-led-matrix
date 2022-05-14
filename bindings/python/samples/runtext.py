@@ -318,7 +318,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(basketballLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + basketballLogo.width + 4, 24, color, string)
-                        time.sleep(0.01)
+                        time.sleep(0.005)
                     elif 'ESPN' in string:
                         color = blue
                         espnLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bball.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
@@ -328,7 +328,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(espnLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + espnLogo.width + 4, 24, color, string)
-                        time.sleep(0.01)
+                        time.sleep(0.005)
                     elif 'FOXNEWS' in string:
                         color = blue
                         foxNewsLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/foxnews.png').convert('RGB').resize((32,32), Image.ANTIALIAS)
@@ -338,7 +338,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(foxNewsLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + foxNewsLogo.width + 4, 24, color, string)
-                        time.sleep(0.01)
+                        time.sleep(0.005)
                     elif 'CNN' in string:
                         color = blue
                         cnnLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/cnn.png').convert('RGB').resize((69,32), Image.ANTIALIAS)
@@ -348,14 +348,14 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         offscreen_canvas.SetImage(cnnLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + cnnLogo.width + 4, 24, color, string)
-                        time.sleep(0.01)
+                        time.sleep(0.005)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                         pos -= 1
                         if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.01)
+                        time.sleep(0.005)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
