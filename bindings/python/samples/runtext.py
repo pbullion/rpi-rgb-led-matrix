@@ -71,10 +71,6 @@ class RunText(SampleBase):
                 elif isinstance(string, list) and 'nba' in string[0]:
                     awayLogo = Image.open(requests.get(string[1], stream=True).raw).convert('RGB').resize((58,58), Image.ANTIALIAS)
                     homeLogo = Image.open(requests.get(string[6], stream=True).raw).convert('RGB').resize((58,58), Image.ANTIALIAS)
-                    pitcherHeadshot = string[16]
-                    batterHeadshot = string[18]
-                    pitcherImage = Image.open(requests.get(pitcherHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
-                    batterImage = Image.open(requests.get(batterHeadshot, stream=True).raw).convert('RGB').resize((32,32), Image.ANTIALIAS)
                 elif isinstance(string, list) and 'game' in string[0]:
                     print(string[1])
                     print(string[6])
@@ -285,7 +281,6 @@ class RunText(SampleBase):
                                 running = False
                                 pos = offscreen_canvas.width
                         time.sleep(0.01)
-                    
                     elif isinstance(string, list):
                         if '-' in string[4]:
                             pos -= 1
