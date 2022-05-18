@@ -446,7 +446,6 @@ class RunText(SampleBase):
                     currentDate = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentDateBlack, 21, yellow, item['date'])
                     time.sleep(15)
                 else:
-                    currentTime = graphics.DrawText(canvas, font, 0, 23, blue, item)
                     time.sleep(0)
                 canvas.Clear()
 
