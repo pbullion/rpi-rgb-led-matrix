@@ -244,10 +244,6 @@ class RunText(SampleBase):
                                     graphics.DrawLine(offscreen_canvas, pos + runningTotal + outs[2][0], pos + runningTotal + outs[2][1] + y_offset, pos + runningTotal + outs[2][0] + outsSize, pos + runningTotal + outs[2][1] + y_offset, red)
                             situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + runningTotal + 3, 19, yellow, countString)
                             inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + runningTotal - 5, 31, yellow, inningString)
-                            runningTotal = runningTotal + inning + 5 + buffer        
-                            pitcherTitle = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 12, white, 'Pitcher: {}'.format(pitcherNameString))
-                            batterTitle = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal, 26, white, 'Batter: {}'.format(batterNameString))
-                            runningTotal = runningTotal + pitcherTitle
                             if (pos + runningTotal < 0):
                                 running = False
                                 pos = offscreen_canvas.width
@@ -285,7 +281,6 @@ class RunText(SampleBase):
                                 running = False
                                 pos = offscreen_canvas.width
                         time.sleep(0.01)
-                    
                     elif isinstance(string, list):
                         if '-' in string[4]:
                             pos -= 1
