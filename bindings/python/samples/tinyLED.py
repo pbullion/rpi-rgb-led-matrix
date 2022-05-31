@@ -191,7 +191,7 @@ class RunText(SampleBase):
                             awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 24, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
                             runningCount = runningCount + homeErrorTotal + 5
                             count = graphics.DrawText(canvas, smallestFont, 108, 19, yellow, situationString)
-                            inning = graphics.DrawText(canvas, smallestFont, 100, 31, yellow, item['inning'])
+                            inning = graphics.DrawText(canvas, smallestFont, 101, 31, yellow, item['inning'])
                             currentPlayers = graphics.DrawText(canvas, smallestFont, 0, 31, white, players[cycleCount])
                             time.sleep(6)
                             cycleCount = cycleCount + 1
