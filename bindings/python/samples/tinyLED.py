@@ -123,6 +123,7 @@ class RunText(SampleBase):
                         count = 0
                         pregameCycle = True
                         players = [item['players']['currentPitcher'], item['players']['currentBatter']]
+                        print(players)
                         while pregameCycle:
                             situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                             baseSize = 6
