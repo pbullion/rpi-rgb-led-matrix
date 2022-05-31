@@ -192,7 +192,7 @@ class RunText(SampleBase):
                             runningCount = runningCount + homeErrorTotal + 5
                             count = graphics.DrawText(canvas, smallestFont, 108, 19, yellow, situationString)
                             inning = graphics.DrawText(canvas, smallestFont, 100, 31, yellow, item['inning'])
-                            currentPlayers = graphics.DrawText(canvas, smallestFont, 0, 32, white, players[cycleCount])
+                            currentPlayers = graphics.DrawText(canvas, smallestFont, 0, 31, white, players[cycleCount])
                             time.sleep(6)
                             cycleCount = cycleCount + 1
                             if cycleCount == 3:
