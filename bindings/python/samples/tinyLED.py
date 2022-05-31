@@ -120,7 +120,7 @@ class RunText(SampleBase):
                         losingPitcher = graphics.DrawText(canvas, smallestFont, 4 + winningPitcher, 32, red, item['losingPitcher'])                    
                         time.sleep(5)
                     elif item['inProgress'] == True: 
-                        runningCount = 0
+                        cycleCount = 0
                         pregameCycle = True
                         players = [item['players']['currentPitcher'], item['players']['currentBatter']]
                         while pregameCycle:
@@ -189,13 +189,13 @@ class RunText(SampleBase):
                             runningCount = runningCount + homeHitTotal + 10
                             homeErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 11, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['errors']['displayValue'])
                             awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 24, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
-                            count = count + homeErrorTotal + 5
+                            runningCount = runningCount + homeErrorTotal + 5
                             count = graphics.DrawText(canvas, smallestFont, 108, 19, yellow, situationString)
                             inning = graphics.DrawText(canvas, smallestFont, 100, 31, yellow, item['inning'])
-                            currentPlayers = graphics.DrawText(canvas, smallestFont, 0, 32, white, players[runningCount])
+                            currentPlayers = graphics.DrawText(canvas, smallestFont, 0, 32, white, players[cycleCount])
                             time.sleep(10)
-                            runningCount = runningCount + 1
-                            if runningCount == 2:
+                            cycleCount = cycleCount + 1
+                            if cycleCount == 2:
                                 pregameCycle = False
                             canvas.Clear()
                     elif item['postponed'] == True:
