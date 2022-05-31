@@ -120,7 +120,7 @@ class RunText(SampleBase):
                         losingPitcher = graphics.DrawText(canvas, smallestFont, 4 + winningPitcher, 32, red, item['losingPitcher'])                    
                         time.sleep(5)
                     elif item['inProgress'] == True: 
-                        count = 0
+                        runningCount = 0
                         pregameCycle = True
                         players = [item['players']['currentPitcher'], item['players']['currentBatter']]
                         print(players)
@@ -193,11 +193,11 @@ class RunText(SampleBase):
                             runningCount = runningCount + homeErrorTotal + 5
                             count = graphics.DrawText(canvas, smallestFont, 108, 19, yellow, situationString)
                             inning = graphics.DrawText(canvas, smallestFont, 100, 31, yellow, item['inning'])
-                            print(count)
-                            currentPlayers = graphics.DrawText(canvas, smallestFont, 0, 32, white, players[count])
+                            print(runningCount)
+                            currentPlayers = graphics.DrawText(canvas, smallestFont, 0, 32, white, players[runningCount])
                             time.sleep(10)
-                            count = count + 1
-                            if count == 2:
+                            runningCount = runningCount + 1
+                            if runningCount == 2:
                                 pregameCycle = False
                             canvas.Clear()
                     elif item['postponed'] == True:
