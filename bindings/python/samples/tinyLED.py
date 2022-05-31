@@ -123,7 +123,6 @@ class RunText(SampleBase):
                         runningCount = 0
                         pregameCycle = True
                         players = [item['players']['currentPitcher'], item['players']['currentBatter']]
-                        print(players)
                         while pregameCycle:
                             situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                             baseSize = 6
@@ -190,10 +189,9 @@ class RunText(SampleBase):
                             runningCount = runningCount + homeHitTotal + 10
                             homeErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 11, green if int(item['awayTeam']['score']) > int(item['homeTeam']['score']) else red, item['awayTeam']['errors']['displayValue'])
                             awayErrorTotal = graphics.DrawText(canvas, smallFont, runningCount, 24, green if int(item['homeTeam']['score']) > int(item['awayTeam']['score']) else red, item['homeTeam']['errors']['displayValue'])
-                            runningCount = runningCount + homeErrorTotal + 5
+                            count = count + homeErrorTotal + 5
                             count = graphics.DrawText(canvas, smallestFont, 108, 19, yellow, situationString)
                             inning = graphics.DrawText(canvas, smallestFont, 100, 31, yellow, item['inning'])
-                            print(runningCount)
                             currentPlayers = graphics.DrawText(canvas, smallestFont, 0, 32, white, players[runningCount])
                             time.sleep(10)
                             runningCount = runningCount + 1
