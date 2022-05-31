@@ -188,6 +188,8 @@ class RunText(SampleBase):
                         runningCount = runningCount + homeErrorTotal + 5
                         count = graphics.DrawText(canvas, smallestFont, 108, 19, yellow, situationString)
                         inning = graphics.DrawText(canvas, smallestFont, 100, 31, yellow, item['inning'])
+                        batter = graphics.DrawText(canvas, smallestFont, 1, 31, blue, item['players']['currentBatter'])
+                        # pitcher = graphics.DrawText(canvas, smallestFont, 1, 31, blue, item['currentPitcher'])
                         time.sleep(15)
                     elif item['postponed'] == True:
                         awayTeamBlack = graphics.DrawText(canvas, smallFont, 1, 11, black, item['awayTeam']['teamName'])
