@@ -192,7 +192,7 @@ class RunText(SampleBase):
                             runningCount = runningCount + homeErrorTotal + 5
                             count = graphics.DrawText(canvas, smallestFont, 108, 19, yellow, situationString)
                             inning = graphics.DrawText(canvas, smallestFont, 100, 31, yellow, item['inning'])
-                            currentPitcher = graphics.DrawText(canvas, smallestFont, 0, 32, white, pitchers[count])
+                            currentPlayers = graphics.DrawText(canvas, smallestFont, 0, 32, white, players[count])
                             time.sleep(10)
                             count = count + 1
                             if count == 2:
