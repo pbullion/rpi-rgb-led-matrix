@@ -271,7 +271,7 @@ class RunText(SampleBase):
                         runningCount = runningCount + homeScore + 10
                         quarter = graphics.DrawText(canvas, middleFont, runningCount + 7, 5, yellow, item['quarter'])
                         timeRemaining = graphics.DrawText(canvas, middleFont, runningCount + 5, 18, yellow, item['time'])
-                    time.sleep(5)
+                    time.sleep(10)
                 elif type(item) is dict and 'league' in item.keys() and item['league'] == 'ncaaBasketball':
                     awayColorPrimary = graphics.Color(item['awayTeam']['colors']['main'][0],item['awayTeam']['colors']['main'][1],item['awayTeam']['colors']['main'][2])
                     awayColorSecondary = graphics.Color(item['awayTeam']['colors']['secondary'][0],item['awayTeam']['colors']['secondary'][1],item['awayTeam']['colors']['secondary'][2])
@@ -444,7 +444,7 @@ class RunText(SampleBase):
                     currentDay = graphics.DrawText(canvas, slightlyBiggerFont, 64 - (currentDayBlack / 2), 30, green, item['day'])
                     currentMonth = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentMonthBlack, 9, yellow, item['month'])
                     currentDate = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentDateBlack, 21, yellow, item['date'])
-                    time.sleep(15)
+                    time.sleep(5)
                 else:
                     time.sleep(0)
                 canvas.Clear()
