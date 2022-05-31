@@ -122,7 +122,7 @@ class RunText(SampleBase):
                     elif item['inProgress'] == True: 
                         cycleCount = 0
                         pregameCycle = True
-                        players = [item['players']['currentPitcher'], item['players']['currentBatter']]
+                        players = [item['players']['currentPitcher'], item['players']['currentBatter'], item['players']['lastPlay']]
                         while pregameCycle:
                             situationString = '{}-{}'.format(item['situation']['balls'], item['situation']['strikes'])
                             baseSize = 6
@@ -193,9 +193,9 @@ class RunText(SampleBase):
                             count = graphics.DrawText(canvas, smallestFont, 108, 19, yellow, situationString)
                             inning = graphics.DrawText(canvas, smallestFont, 100, 31, yellow, item['inning'])
                             currentPlayers = graphics.DrawText(canvas, smallestFont, 0, 32, white, players[cycleCount])
-                            time.sleep(10)
+                            time.sleep(6)
                             cycleCount = cycleCount + 1
-                            if cycleCount == 2:
+                            if cycleCount == 3:
                                 pregameCycle = False
                             canvas.Clear()
                     elif item['postponed'] == True:
