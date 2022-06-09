@@ -147,7 +147,7 @@ class RunText(SampleBase):
                         outs = [[3,20],[9,20],[15,20]]
                         if 'pregame' in string[0]:     
                             offscreen_canvas.SetImage(awayLogo, pos, -10)
-                            versus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer, 24, green, versusString)
+                            versus = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer, 24, green, versusString)
                             offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + versus + buffer, -10)
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + versus + buffer + homeLogo.width + buffer, 10, white, awayTeamString)
                             awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + versus + buffer + homeLogo.width+ buffer + awayTeam, 10, white, awayTeamStatusString)
@@ -180,7 +180,7 @@ class RunText(SampleBase):
                                 runnersColor = yellow
                             runningTotal = 0
                             offscreen_canvas.SetImage(awayLogo, pos, -10)
-                            versus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + buffer, 24, yellow, 'VS')
+                            versus = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer, 24, yellow, 'VS')
                             offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + buffer + versus, -10)
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer, 12, awayColor, awayTeamString)
                             homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer, 26, homeColor, homeTeamString)
@@ -261,7 +261,7 @@ class RunText(SampleBase):
                                 homeColor = red
                                 awayColor = green
                             offscreen_canvas.SetImage(awayLogo, pos, -10)
-                            versus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + buffer, 24, yellow, 'VS')
+                            versus = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer, 24, yellow, 'VS')
                             offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + buffer + versus, -10)
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer, 12, awayColor, awayTeamString)
                             homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + versus + buffer + homeLogo.width + buffer, 26, homeColor, homeTeamString)
@@ -385,7 +385,7 @@ if __name__ == "__main__":
                     #         awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer, 10, awayColor, awayTeamString)
                     #         awayCentered = awayTeam / 2 - 5
                     #         awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + awayCentered, 26, awayColor, awayTeamStatusString)
-                    #         versus = graphics.DrawText(offscreen_canvas, font, pos + awayLogo.width + buffer + buffer + awayTeam, 24, green, versusString)
+                    #         versus = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + awayTeam, 24, green, versusString)
                     #         offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer + awayTeam + versus)
                     #         homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + buffer + awayTeam + versus + buffer + homeLogo.width, 10, homeColor, homeTeamString)
                     #         homeCentered = homeTeam / 2 - 5
@@ -426,7 +426,7 @@ if __name__ == "__main__":
                     #     # away team string
                     #     awayTeam = graphics.DrawText(offscreen_canvas, font, 15 + pos + 35, 24, awayColor, awayTeamString)
                     #     # versus
-                    #     versus = graphics.DrawText(offscreen_canvas, font, 25 + pos + 35 + awayTeam, 24, green, versusString)
+                    #     versus = graphics.DrawText(offscreen_canvas, middleFont, 25 + pos + 35 + awayTeam, 24, green, versusString)
                     #     # home team logo
                     #     offscreen_canvas.SetImage(homeLogo, 30 + pos + 35 + awayTeam + versus)
                     #     # home team string
