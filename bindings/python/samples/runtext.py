@@ -336,13 +336,11 @@ class RunText(SampleBase):
                         time.sleep(0.005)
                     elif 'CNN' in string:
                         color = blue
-                        cnnLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/cnn.png').convert('RGB').resize((69,32), Image.ANTIALIAS)
                         pos -= 1
-                        if (pos + cnnLogo.width + len < 0):
+                        if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        offscreen_canvas.SetImage(cnnLogo, pos)
-                        len = graphics.DrawText(offscreen_canvas, font, pos + cnnLogo.width + 4, 24, color, string)
+                        len = graphics.DrawText(offscreen_canvas, font, pos + 4, 24, color, string)
                         time.sleep(0.005)
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
