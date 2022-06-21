@@ -88,7 +88,7 @@ class RunText(SampleBase):
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + homeTeam, 26, white, homeTeamStatusString)
                                 # odds = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + awayTeam, 10, green, oddsString)
                                 # status = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + homeTeam, 26, green, statusString)
-                                runningTotal = runningTotal + pos + buffer + buffer + awayTeam + status + buffer + homeTeam + buffer
+                                runningTotal = runningTotal + pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer
                         time.sleep(0.001)
                     # if (runningTotal < 0):
                     #     running = False
