@@ -67,12 +67,11 @@ class RunText(SampleBase):
                         runningTotal = 0
                         runningTotal2 = 0
                         versusString = ' at '
-                        pos -= 1
-                        buffer = 6
-                        bases =  [[2,5],[6,0],[10,5]]
-                        outs = [[3,20],[9,20],[15,20]]
                         for game in string:
-                            print('game', game)
+                            pos -= 1
+                            buffer = 6
+                            bases =  [[2,5],[6,0],[10,5]]
+                            outs = [[3,20],[9,20],[15,20]]
                             awayTeamString = game[5]
                             homeTeamString = game[10]
                             awayTeamStatusString = game[12]
