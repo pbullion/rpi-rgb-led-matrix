@@ -89,10 +89,10 @@ class RunText(SampleBase):
                                 status = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + homeTeam, 26, green, statusString)
                                 runningTotal = runningTotal + pos + buffer + buffer + awayTeam + status + buffer + homeTeam + buffer + status
                             time.sleep(0.001)
-                        if (runningTotal < 0):
-                            running = False
-                            pos = offscreen_canvas.width
-                            runningTotal = 0
+                    if (runningTotal < 0):
+                        running = False
+                        pos = offscreen_canvas.width
+                        runningTotal = 0
                     else:
                         return
                     # else:
