@@ -72,7 +72,7 @@ class RunText(SampleBase):
                         bases =  [[2,5],[6,0],[10,5]]
                         outs = [[3,20],[9,20],[15,20]]
                         for game in string:
-                            # print('game', game)
+                            print('game', game)
                             awayTeamString = game[5]
                             homeTeamString = game[10]
                             awayTeamStatusString = game[12]
@@ -80,16 +80,16 @@ class RunText(SampleBase):
                             statusString = game[11]
                             oddsString = game[14]
                             if 'pregame' in game[0]:     
-                                offscreen_canvas.SetImage(Image.open(requests.get(string[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS), pos, -10)
-                                versus = graphics.DrawText(offscreen_canvas, middleFont, pos + buffer + Image.open(requests.get(string[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width, 24, green, versusString)
-                                offscreen_canvas.SetImage(Image.open(requests.get(string[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS), pos + Image.open(requests.get(string[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width + buffer + buffer, -10)
-                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + Image.open(requests.get(string[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width + buffer + versus + buffer + Image.open(requests.get(string[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width + buffer, 10, white, awayTeamString)
-                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + Image.open(requests.get(string[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width + buffer + versus + buffer + Image.open(requests.get(string[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width+ buffer + awayTeam, 10, white, awayTeamStatusString)
-                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + Image.open(requests.get(string[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width + buffer + versus + buffer + Image.open(requests.get(string[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width + buffer, 26, white, homeTeamString)
-                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + Image.open(requests.get(string[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width + buffer + versus + buffer + Image.open(requests.get(string[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width+ buffer + homeTeam, 26, white, homeTeamStatusString)
-                                odds = graphics.DrawText(offscreen_canvas, smallFont, pos + Image.open(requests.get(string[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width + buffer + versus + buffer + Image.open(requests.get(string[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width+ buffer + awayTeam, 10, green, oddsString)
-                                status = graphics.DrawText(offscreen_canvas, smallFont, pos + Image.open(requests.get(string[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width + buffer + versus + buffer + Image.open(requests.get(string[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width+ buffer + homeTeam, 26, green, statusString)
-                                runningTotal2 = pos + Image.open(requests.get(string[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width + buffer + buffer + awayTeam + status + buffer + Image.open(requests.get(string[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS).width + homeTeam + buffer + status
+                                # offscreen_canvas.SetImage(awayLogo, pos, -10)
+                                versus = graphics.DrawText(offscreen_canvas, middleFont, pos + buffer, 24, green, versusString)
+                                # offscreen_canvas.SetImage(homeLogo, pos + buffer + buffer, -10)
+                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + versus + buffer + buffer, 10, white, awayTeamString)
+                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + versus + buffer+ buffer + awayTeam, 10, white, awayTeamStatusString)
+                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + versus + buffer + buffer, 26, white, homeTeamString)
+                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + versus + buffer+ buffer + homeTeam, 26, white, homeTeamStatusString)
+                                odds = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + versus + buffer+ buffer + awayTeam, 10, green, oddsString)
+                                status = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + versus + buffer+ buffer + homeTeam, 26, green, statusString)
+                                runningTotal2 = pos + buffer + buffer + awayTeam + status + buffer + homeTeam + buffer + status
                             time.sleep(0.01)
                         if (runningTotal < 0):
                             running = False
