@@ -62,6 +62,7 @@ class RunText(SampleBase):
                 while running:
                     offscreen_canvas.Clear()
                     if isinstance(string, list):
+                        runningTotal = 0
                         runningTotal2 = 0
                         versusString = ' at '
                         pos -= 1
