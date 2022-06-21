@@ -64,9 +64,8 @@ class RunText(SampleBase):
                     offscreen_canvas.Clear()
                     if isinstance(string, list):
                         print('heeeeeeeere')
-                        runningTotal = 0
-                        runningTotal = 0
                         versusString = ' at '
+                        runningTotal = 0
                         for game in string:
                             pos -= 1
                             buffer = 6
@@ -80,7 +79,7 @@ class RunText(SampleBase):
                             oddsString = game[14]
                             if 'pregame' in game[0]:     
                                 # offscreen_canvas.SetImage(awayLogo, pos, -10)
-                                versus = graphics.DrawText(offscreen_canvas, middleFont, pos + runningTotal + buffer, 24, green, versusString)
+                                # versus = graphics.DrawText(offscreen_canvas, middleFont, pos + runningTotal + buffer, 24, green, versusString)
                                 # offscreen_canvas.SetImage(homeLogo, pos + runningTotal + buffer + buffer, -10)
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + versus + buffer + buffer, 10, white, awayTeamString)
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + versus + buffer+ buffer + awayTeam, 10, white, awayTeamStatusString)
