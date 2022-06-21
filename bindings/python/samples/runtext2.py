@@ -81,12 +81,12 @@ class RunText(SampleBase):
                                 # offscreen_canvas.SetImage(awayLogo, pos, -10)
                                 # versus = graphics.DrawText(offscreen_canvas, middleFont, pos + runningTotal + buffer, 24, green, versusString)
                                 # offscreen_canvas.SetImage(homeLogo, pos + runningTotal + buffer + buffer, -10)
-                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + versus + buffer + buffer, 10, white, awayTeamString)
-                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + versus + buffer+ buffer + awayTeam, 10, white, awayTeamStatusString)
-                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + versus + buffer + buffer, 26, white, homeTeamString)
-                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + versus + buffer+ buffer + homeTeam, 26, white, homeTeamStatusString)
-                                odds = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + versus + buffer+ buffer + awayTeam, 10, green, oddsString)
-                                status = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + versus + buffer+ buffer + homeTeam, 26, green, statusString)
+                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 10, white, awayTeamString)
+                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + awayTeam, 10, white, awayTeamStatusString)
+                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 26, white, homeTeamString)
+                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + homeTeam, 26, white, homeTeamStatusString)
+                                odds = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + awayTeam, 10, green, oddsString)
+                                status = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + homeTeam, 26, green, statusString)
                                 runningTotal = runningTotal + pos + buffer + buffer + awayTeam + status + buffer + homeTeam + buffer + status
                             time.sleep(0.01)
                         if (runningTotal < 0):
