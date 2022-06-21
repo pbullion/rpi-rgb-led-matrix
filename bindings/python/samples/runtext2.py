@@ -72,13 +72,14 @@ class RunText(SampleBase):
                         bases =  [[2,5],[6,0],[10,5]]
                         outs = [[3,20],[9,20],[15,20]]
                         for game in string:
-                            awayTeamString = string[5]
-                            homeTeamString = string[10]
-                            awayTeamStatusString = string[12]
-                            homeTeamStatusString = string[13]
-                            statusString = string[11]
-                            oddsString = string[14]
-                            if 'pregame' in string[0]:     
+                            # print('game', game)
+                            awayTeamString = game[5]
+                            homeTeamString = game[10]
+                            awayTeamStatusString = game[12]
+                            homeTeamStatusString = game[13]
+                            statusString = game[11]
+                            oddsString = game[14]
+                            if 'pregame' in game[0]:     
                                 offscreen_canvas.SetImage(awayLogo, pos, -10)
                                 versus = graphics.DrawText(offscreen_canvas, middleFont, pos + buffer + awayLogo.width, 24, green, versusString)
                                 offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer, -10)
