@@ -58,7 +58,6 @@ class RunText(SampleBase):
                 elif isinstance(string, list) and 'game' in string[0]:
                     awayLogo = Image.open(requests.get(string[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                     homeLogo = Image.open(requests.get(string[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
-                len = 1
                 print('********************************')
                 while running:
                     offscreen_canvas.Clear()
@@ -88,20 +87,11 @@ class RunText(SampleBase):
                                 odds = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + awayTeam, 10, green, oddsString)
                                 status = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + homeTeam, 26, green, statusString)
                                 runningTotal = runningTotal + pos + buffer + buffer + awayTeam + status + buffer + homeTeam + buffer + status
-                    #         time.sleep(0.001)
+                            time.sleep(0.001)
                     # if (runningTotal < 0):
                     #     running = False
                     #     pos = offscreen_canvas.width
                     #     runningTotal = 0
-                    else:
-                        return
-                    # else:
-                    #     len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
-                    #     pos -= 1
-                    #     if (pos + len < 0):
-                    #         running = False
-                    #         pos = offscreen_canvas.width
-                    #     time.sleep(0.005)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
