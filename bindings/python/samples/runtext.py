@@ -343,7 +343,6 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos + 4, 24, color, string)
                         time.sleep(0.005)
                     else:
-                        return
                     # else:
                     #     len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
                     #     pos -= 1
