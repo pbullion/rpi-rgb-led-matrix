@@ -75,7 +75,9 @@ class RunText(SampleBase):
                             awayTeamStatusString = game[12]
                             homeTeamStatusString = game[13]
                             statusString = game[11]
+                            print(statusString)
                             oddsString = game[14]
+                            print(oddsString)
                             if 'pregame' in game[0]:     
                                 # offscreen_canvas.SetImage(awayLogo, pos, -10)
                                 # versus = graphics.DrawText(offscreen_canvas, middleFont, pos + runningTotal + buffer, 24, green, versusString)
