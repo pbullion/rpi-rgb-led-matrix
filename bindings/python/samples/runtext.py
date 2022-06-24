@@ -152,6 +152,7 @@ class RunText(SampleBase):
                             if (pos + awayLogo.width + buffer + buffer + awayTeam + status + buffer + homeLogo.width + homeTeam + buffer + status < 0):
                                 running = False
                                 pos = offscreen_canvas.width
+                            time.sleep(0.01)
                         elif 'inProgress mlb' in string[0]:
                             runnerSituationString = string[15]
                             pitcherNameString = string[17]
@@ -241,6 +242,8 @@ class RunText(SampleBase):
                             if (pos + runningTotal < 0):
                                 running = False
                                 pos = offscreen_canvas.width
+                            time.sleep(0.01)
+
                         else:
                             if awayTeamStatusString == '':
                                 homeColor = yellow
@@ -275,7 +278,7 @@ class RunText(SampleBase):
                             if (pos + awayLogo.width + buffer + buffer + versus + status + buffer + homeLogo.width + scoreLocation + buffer + quarter < 0):
                                 running = False
                                 pos = offscreen_canvas.width
-                        time.sleep(0.01)
+                            time.sleep(0.01)
                     elif isinstance(string, list):
                         if '-' in string[4]:
                             pos -= 1
