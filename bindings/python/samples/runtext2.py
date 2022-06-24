@@ -42,6 +42,8 @@ class RunText(SampleBase):
             pos = offscreen_canvas.width
             color = green
             print(responseArr)
+            awayLogo = Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-san-francisco-giants-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
+            homeLogo = Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-san-francisco-giants-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
             for arr in responseArr:
                 running = True
                 while running:
@@ -50,8 +52,6 @@ class RunText(SampleBase):
                     pos -= 1
                     offset = 0
                     if isinstance(arr, list):
-                        awayLogo = Image.open(requests.get(arr[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
-                        homeLogo = Image.open(requests.get(arr[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                         for game in arr:
                             awayTeamString = game[5]
                             homeTeamString = game[10]
