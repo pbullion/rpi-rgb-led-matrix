@@ -96,8 +96,8 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(awayLogo, pos + offset, -10)
                                 versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + awayLogo.width, 24, green, 'vs')
                                 offscreen_canvas.SetImage(homeLogo, pos + offset + awayLogo.width + buffer + buffer, -10)
-                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset+ awayLogo.width + versus + homeLogo.width  + buffer + buffer + buffer, 12, awayColor, awayTeamString)
-                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset+ awayLogo.width + versus + homeLogo.width  + buffer + buffer + buffer, 26, homeColor, homeTeamString)
+                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + awayLogo.width + versus + homeLogo.width + buffer + buffer + buffer, 12, awayColor, awayTeamString)
+                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + awayLogo.width + versus + homeLogo.width + buffer + buffer + buffer, 26, homeColor, homeTeamString)
                                 scoreLocation = 0
                                 if (homeTeam > awayTeam):
                                     scoreLocation = homeTeam + buffer
@@ -105,7 +105,7 @@ class RunText(SampleBase):
                                     scoreLocation = awayTeam + buffer
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
-                                runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer
+                                runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer + awayLogo.width + versus + homeLogo.width + awayLogo.width + versus + homeLogo.width
                                 baseSize = 6
                                 outsSize = 4
                                 baseHalf = abs(baseSize/2)
