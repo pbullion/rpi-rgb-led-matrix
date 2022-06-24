@@ -53,8 +53,8 @@ class RunText(SampleBase):
                         for game in arr:
                             awayTeamString = game[5]
                             homeTeamString = game[10]
-                            awayTeamStatusString = string[12]
-                            homeTeamStatusString = string[13]
+                            awayTeamStatusString = game[12]
+                            homeTeamStatusString = game[13]
                             if 'pregame' in game[0]: 
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 10, white, awayTeamString)
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + awayTeam, 10, white, awayTeamStatusString)
