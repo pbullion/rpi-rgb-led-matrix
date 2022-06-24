@@ -52,11 +52,12 @@ class RunText(SampleBase):
                     awayLogo = Image.open(requests.get(arr[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                     homeLogo = Image.open(requests.get(arr[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                 print('********************************')
-                runningTotal = 0
                 while running:
                     offscreen_canvas.Clear()
-                    pos -= 1
                     if isinstance(arr, list):
+                        runningTotal = 0
+                        pos -= 1
+                        print('heeeeeeeere')
                         versusString = ' at '
                         buffer = 6
                         for game in arr:
@@ -67,7 +68,9 @@ class RunText(SampleBase):
                             awayTeamStatusString = game[12]
                             homeTeamStatusString = game[13]
                             statusString = game[11]
+                            print(statusString)
                             oddsString = game[14]
+                            print(oddsString)
                             if 'pregame' in game[0]:     
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 10, white, awayTeamString)
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + awayTeam + buffer, 10, white, awayTeamStatusString)
