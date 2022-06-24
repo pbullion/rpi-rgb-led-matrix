@@ -73,12 +73,12 @@ class RunText(SampleBase):
                                     gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 26, white, statusString)
                                     oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 12, white, oddsString)
                             if 'inProgress' in game[0]: 
-                                runnerSituationString = string[15]
-                                pitcherNameString = string[17]
-                                batterNameString = string[19]
-                                inningString = string[20]
-                                countString = string[21]
-                                outsString = string[22]
+                                runnerSituationString = game[15]
+                                pitcherNameString = game[17]
+                                batterNameString = game[19]
+                                inningString = game[20]
+                                countString = game[21]
+                                outsString = game[22]
                                 if int(awayTeamStatusString) < int(homeTeamStatusString):
                                     homeColor = green
                                     awayColor = red
