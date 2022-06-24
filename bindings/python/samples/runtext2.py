@@ -76,7 +76,7 @@ class RunText(SampleBase):
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
                                 runningTotal = runningTotal + pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer
                         time.sleep(0.05)
-                offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+                        offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
 
