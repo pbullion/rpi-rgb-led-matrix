@@ -54,7 +54,6 @@ class RunText(SampleBase):
                         buffer = 6
                         pos -= 1
                         for game in arr:
-                            runningTotal = 0
                             bases =  [[2,5],[6,0],[10,5]]
                             outs = [[3,20],[9,20],[15,20]]
                             awayTeamString = game[5]
@@ -64,12 +63,14 @@ class RunText(SampleBase):
                             statusString = game[11]
                             oddsString = game[14]
                             if 'pregame' in game[0]:     
+                                runningTotal = 0
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 10, white, awayTeamString)
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + awayTeam + buffer, 10, white, awayTeamStatusString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 26, white, homeTeamString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
                                 runningTotal = runningTotal + pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer
                             else:     
+                                runningTotal = 0
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 10, white, awayTeamString)
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + awayTeam + buffer, 10, white, awayTeamStatusString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 26, white, homeTeamString)
