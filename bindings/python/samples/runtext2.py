@@ -53,8 +53,8 @@ class RunText(SampleBase):
                         versusString = ' at '
                         buffer = 6
                         offset = 0
-                        pos -= 1
                         for game in arr:
+                            pos -= 1
                             bases =  [[2,5],[6,0],[10,5]]
                             outs = [[3,20],[9,20],[15,20]]
                             awayTeamString = game[5]
@@ -75,7 +75,7 @@ class RunText(SampleBase):
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
                             offset = pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer
                             time.sleep(0.005)
-                    offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+                offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
 
