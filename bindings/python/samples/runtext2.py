@@ -46,31 +46,30 @@ class RunText(SampleBase):
                 running = True
                 print('=======================')
                 print(arr)
-                while running:
-                    offscreen_canvas.Clear()
-                    if isinstance(arr, list):
-                        print('heeeeeeeere')
-                        buffer = 6
-                        offset2 = 0
-                        for game in arr:
-                            offset = 0
-                            pos -= 1
-                            bases =  [[2,5],[6,0],[10,5]]
-                            outs = [[3,20],[9,20],[15,20]]
-                            awayTeamString = game[5]
-                            homeTeamString = game[10]
-                            awayTeamStatusString = game[12]
-                            homeTeamStatusString = game[13]
-                            statusString = game[11]
-                            oddsString = game[14]
-                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset2 + buffer + buffer + buffer, 10, white, awayTeamString)
-                            awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset2 + buffer + buffer + buffer + awayTeam + buffer, 10, white, awayTeamStatusString)
-                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset2 + buffer + buffer + buffer, 26, white, homeTeamString)
-                            homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset2 + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
-                            offset = pos + offset + buffer + buffer + awayTeam + buffer + homeTeam + buffer + homeTeamStatus + awayTeamStatus
-                        offset2 = offset + 10
-                    time.sleep(0.1)
-                    offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+                offscreen_canvas.Clear()
+                if isinstance(arr, list):
+                    print('heeeeeeeere')
+                    buffer = 6
+                    offset2 = 0
+                    for game in arr:
+                        offset = 0
+                        pos -= 1
+                        bases =  [[2,5],[6,0],[10,5]]
+                        outs = [[3,20],[9,20],[15,20]]
+                        awayTeamString = game[5]
+                        homeTeamString = game[10]
+                        awayTeamStatusString = game[12]
+                        homeTeamStatusString = game[13]
+                        statusString = game[11]
+                        oddsString = game[14]
+                        awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset2 + buffer + buffer + buffer, 10, white, awayTeamString)
+                        awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset2 + buffer + buffer + buffer + awayTeam + buffer, 10, white, awayTeamStatusString)
+                        homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset2 + buffer + buffer + buffer, 26, white, homeTeamString)
+                        homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset2 + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
+                        offset = pos + offset + buffer + buffer + awayTeam + buffer + homeTeam + buffer + homeTeamStatus + awayTeamStatus
+                    offset2 = offset + 10
+                time.sleep(0.1)
+                offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
 
