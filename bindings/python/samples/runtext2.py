@@ -62,11 +62,11 @@ class RunText(SampleBase):
                             homeTeamStatusString = game[13]
                             statusString = game[11]
                             oddsString = game[14]
-                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer + buffer, 10, white, awayTeamString)
-                            awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer + buffer + awayTeam + buffer, 10, white, awayTeamStatusString)
-                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer + buffer, 26, white, homeTeamString)
-                            homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
-                            offset = pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer + homeTeamStatus + awayTeamStatus
+                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 10, white, awayTeamString)
+                            awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + awayTeam + buffer, 10, white, awayTeamStatusString)
+                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 26, white, homeTeamString)
+                            homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
+                            offset = pos + offset + buffer + buffer + awayTeam + buffer + homeTeam + buffer + homeTeamStatus + awayTeamStatus
                             time.sleep(0.1)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
