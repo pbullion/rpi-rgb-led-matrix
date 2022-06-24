@@ -46,7 +46,7 @@ class RunText(SampleBase):
                 running = True
                 while running:
                     offscreen_canvas.Clear()
-                        pos -= 1
+                    pos -= 1
                     if isinstance(arr, list):
                         buffer = 6
                         offset = 0
