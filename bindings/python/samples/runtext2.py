@@ -50,6 +50,8 @@ class RunText(SampleBase):
                     pos -= 1
                     offset = 0
                     if isinstance(arr, list):
+                        awayLogo = Image.open(requests.get(arr[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
+                        homeLogo = Image.open(requests.get(arr[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                         for game in arr:
                             awayTeamString = game[5]
                             homeTeamString = game[10]
@@ -57,8 +59,6 @@ class RunText(SampleBase):
                             homeTeamStatusString = game[13]
                             statusString = game[11]
                             oddsString = game[14]
-                            awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
-                            homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                             if 'pregame' in game[0]:     
                                 offscreen_canvas.SetImage(awayLogo, pos, -10)
                                 versus = graphics.DrawText(offscreen_canvas, middleFont, pos + buffer + awayLogo.width, 24, green, 'vs')
