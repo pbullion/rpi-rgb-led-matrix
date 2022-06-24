@@ -51,19 +51,11 @@ class RunText(SampleBase):
                         offset = 0
                         for game in arr:
                             pos -= 1
-                            bases =  [[2,5],[6,0],[10,5]]
-                            outs = [[3,20],[9,20],[15,20]]
                             awayTeamString = game[5]
                             homeTeamString = game[10]
-                            awayTeamStatusString = game[12]
-                            homeTeamStatusString = game[13]
-                            statusString = game[11]
-                            oddsString = game[14]
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 10, white, awayTeamString)
-                            awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + awayTeam + buffer, 10, white, awayTeamStatusString)
                             homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 26, white, homeTeamString)
-                            homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
-                            offset -= pos + offset + buffer + buffer + awayTeam + buffer + homeTeam + buffer + homeTeamStatus + awayTeamStatus
+                            offset = pos + offset + buffer + buffer + awayTeam + buffer + homeTeam
                     time.sleep(0.05)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
