@@ -59,7 +59,7 @@ class RunText(SampleBase):
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 10, white, awayTeamString)
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + awayTeam, 10, white, awayTeamStatusString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 26, white, homeTeamString)
-                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + homeTeam, 10, white, homeTeamStatusString)
+                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + homeTeam, 26, white, homeTeamStatusString)
                             if awayTeam > homeTeam:
                                 offset = offset + awayTeam + awayTeamStatus + 30
                             else:
