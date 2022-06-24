@@ -40,13 +40,6 @@ class RunText(SampleBase):
             print(responseArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
-            partlyCloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-            thunderstormImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-cloud-lightning-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-            cloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-clouds-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-            rainImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-heavy-rain-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-            stormyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-            sunnyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-            windyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             color = green
             print(responseArr)
             for arr in responseArr:
@@ -79,21 +72,18 @@ class RunText(SampleBase):
                             oddsString = game[14]
                             print(oddsString)
                             if 'pregame' in game[0]:     
-                                # offscreen_canvas.SetImage(awayLogo, pos, -10)
-                                # versus = graphics.DrawText(offscreen_canvas, middleFont, pos + runningTotal + buffer, 24, green, versusString)
-                                # offscreen_canvas.SetImage(homeLogo, pos + runningTotal + buffer + buffer, -10)
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 10, white, awayTeamString)
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + awayTeam + buffer, 10, white, awayTeamStatusString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 26, white, homeTeamString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
-                                # odds = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + awayTeam, 10, green, oddsString)
-                                # status = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + homeTeam, 26, green, statusString)
+                                runningTotal = runningTotal + pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer
+                            else:     
+                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 10, white, awayTeamString)
+                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + awayTeam + buffer, 10, white, awayTeamStatusString)
+                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 26, white, homeTeamString)
+                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
                                 runningTotal = runningTotal + pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer
                         time.sleep(0.001)
-                    # if (runningTotal < 0):
-                    #     running = False
-                    #     pos = offscreen_canvas.width
-                    #     runningTotal = 0
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 

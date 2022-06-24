@@ -47,7 +47,6 @@ class RunText(SampleBase):
             stormyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             sunnyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
             windyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-            print(strings)
             for string in strings:
                 running = True
                 color = green
@@ -273,7 +272,7 @@ class RunText(SampleBase):
                             else:
                                 quarter = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + versus + homeLogo.width + scoreLocation + homeTeamStatus + buffer + buffer + buffer + buffer + buffer, 12, yellow, oddsString)
                             status = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + versus + homeLogo.width + scoreLocation + homeTeamStatus + buffer + buffer + buffer + buffer + buffer, 26, yellow, statusString)
-                            if (pos + awayLogo.width + buffer + buffer + versus + status + buffer + homeLogo.width + scoreLocation + buffer + quarter < 0):
+                            if (pos + awayLogo.width + buffer + buffer + versus + status + buffer + homeLogo.width + scoreLocation + buffer + buffer + quarter < 0):
                                 running = False
                                 pos = offscreen_canvas.width
                                 offscreen_canvas.Clear()
@@ -340,14 +339,12 @@ class RunText(SampleBase):
                         len = graphics.DrawText(offscreen_canvas, font, pos + 4, 24, color, string)
                         time.sleep(0.005)
                     else:
-                        return
-                    # else:
-                    #     len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
-                    #     pos -= 1
-                    #     if (pos + len < 0):
-                    #         running = False
-                    #         pos = offscreen_canvas.width
-                    #     time.sleep(0.005)
+                        len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, string)
+                        pos -= 1
+                        if (pos + len < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        time.sleep(0.005)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
