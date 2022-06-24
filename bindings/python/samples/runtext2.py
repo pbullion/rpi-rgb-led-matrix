@@ -44,8 +44,8 @@ class RunText(SampleBase):
             pos = offscreen_canvas.width
             color = green
             print(responseArr)
-            awayLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
-            homeLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((32, 32), Image.ANTIALIAS)
+            awayLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((50, 50), Image.ANTIALIAS)
+            homeLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((50, 50), Image.ANTIALIAS)
             for arr in responseArr:
                 running = True
                 while running:
@@ -100,12 +100,12 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + awayLogo.width + versus + homeLogo.width + buffer + buffer + buffer, 26, homeColor, homeTeamString)
                                 scoreLocation = 0
                                 if (homeTeam > awayTeam):
-                                    scoreLocation = homeTeam + buffer
+                                    scoreLocation = homeTeam + buffer + awayLogo.width + versus + homeLogo.width
                                 else:
-                                    scoreLocation = awayTeam + buffer
+                                    scoreLocation = awayTeam + buffer + awayLogo.width + versus + homeLogo.width
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
-                                runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer + awayLogo.width + versus + homeLogo.width + awayLogo.width + versus + homeLogo.width
+                                runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer 
                                 baseSize = 6
                                 outsSize = 4
                                 baseHalf = abs(baseSize/2)
