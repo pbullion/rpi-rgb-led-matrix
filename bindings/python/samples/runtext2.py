@@ -62,9 +62,9 @@ class RunText(SampleBase):
                             statusString = game[11]
                             oddsString = game[14]
                             if 'pregame' in game[0]: 
-                                offscreen_canvas.SetImage(Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS), pos, -10)
+                                offscreen_canvas.SetImage(awayLogo, pos, -10)
                                 versus = graphics.DrawText(offscreen_canvas, middleFont, pos + buffer + awayLogo.width, 24, green, 'vs')
-                                offscreen_canvas.SetImage(Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS), pos + awayLogo.width + buffer + buffer, -10)
+                                offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer, -10)
                                 test = awayLogo.width + homeLogo.width + versus + buffer
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + test + buffer + buffer + buffer, 12, white, awayTeamString)
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + test + buffer + buffer + buffer + buffer + awayTeam, 12, white, awayTeamStatusString)
@@ -77,9 +77,9 @@ class RunText(SampleBase):
                                     gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + test + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 26, white, statusString)
                                     oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + test + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 12, white, oddsString)
                             if 'inProgress' in game[0]: 
-                                offscreen_canvas.SetImage(Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS), pos, -10)
+                                offscreen_canvas.SetImage(awayLogo, pos, -10)
                                 versus = graphics.DrawText(offscreen_canvas, middleFont, pos + buffer + awayLogo.width, 24, green, 'vs')
-                                offscreen_canvas.SetImage(Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS), pos + awayLogo.width + buffer + buffer, -10)
+                                offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer, -10)
                                 test = awayLogo.width + homeLogo.width + versus + buffer
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + test + buffer + buffer + buffer, 12, white, awayTeamString)
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + test + buffer + buffer + buffer + buffer + awayTeam, 12, white, awayTeamStatusString)
@@ -95,7 +95,7 @@ class RunText(SampleBase):
                                 offset = offset + awayTeam + awayTeamStatus + gameStatus + oddsStatus + test + 60
                             else:
                                 offset = offset + homeTeam + homeTeamStatus + gameStatus + oddsStatus + test + 60
-                    time.sleep(0.005)
+                    time.sleep(0.001)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
