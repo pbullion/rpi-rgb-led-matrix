@@ -54,9 +54,9 @@ class RunText(SampleBase):
                 print('********************************')
                 while running:
                     offscreen_canvas.Clear()
+                    runningTotal = 0
+                    pos -= 1
                     if isinstance(arr, list):
-                        runningTotal = 0
-                        pos -= 1
                         print('heeeeeeeere')
                         versusString = ' at '
                         buffer = 6
