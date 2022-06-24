@@ -50,11 +50,11 @@ class RunText(SampleBase):
                     offscreen_canvas.Clear()
                     runningTotal = 0
                     if isinstance(arr, list):
-                        pos -= 1
                         print('heeeeeeeere')
                         versusString = ' at '
                         buffer = 6
                         for game in arr:
+                            pos -= 1
                             bases =  [[2,5],[6,0],[10,5]]
                             outs = [[3,20],[9,20],[15,20]]
                             awayTeamString = game[5]
