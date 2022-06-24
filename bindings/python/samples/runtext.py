@@ -92,7 +92,6 @@ class RunText(SampleBase):
                         if (pos + partlyCloudyImage.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                                offscreen_canvas.Clear()
                         offscreen_canvas.SetImage(rainImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + rainImage.width, 24, color, string)
                         time.sleep(0.005)
@@ -103,7 +102,6 @@ class RunText(SampleBase):
                         if (pos + partlyCloudyImage.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                                offscreen_canvas.Clear()
                         offscreen_canvas.SetImage(partlyCloudyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + partlyCloudyImage.width, 24, color, string)
                         time.sleep(0.005)
@@ -114,7 +112,6 @@ class RunText(SampleBase):
                         if (pos + thunderstormImage.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                                offscreen_canvas.Clear()
                         offscreen_canvas.SetImage(thunderstormImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + thunderstormImage.width, 24, color, string)
                         time.sleep(0.005)
@@ -125,7 +122,6 @@ class RunText(SampleBase):
                         if (pos + sunnyImage.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                                offscreen_canvas.Clear()
                         offscreen_canvas.SetImage(sunnyImage, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + sunnyImage.width, 24, color, string)
                         time.sleep(0.005)
@@ -247,7 +243,6 @@ class RunText(SampleBase):
                                 running = False
                                 pos = offscreen_canvas.width
                                 offscreen_canvas.Clear()
-                                offscreen_canvas.Clear()
                         else:
                             if awayTeamStatusString == '':
                                 homeColor = yellow
@@ -294,7 +289,6 @@ class RunText(SampleBase):
                             if ( pos + 45 + first + second + 65 + third < 0):
                                 running = False
                                 pos = offscreen_canvas.width
-                                offscreen_canvas.Clear()
                             time.sleep(0.005)
                         elif '+' in string[4]:
                             pos -= 1
@@ -306,7 +300,6 @@ class RunText(SampleBase):
                             if ( pos + 45 + first + second + 65 + third < 0):
                                 running = False
                                 pos = offscreen_canvas.width
-                                offscreen_canvas.Clear()
                             time.sleep(0.005)
                     elif 'AP Poll' in string:
                         color = green
@@ -315,7 +308,6 @@ class RunText(SampleBase):
                         if (pos + basketballLogo.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                                offscreen_canvas.Clear()
                         offscreen_canvas.SetImage(basketballLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + basketballLogo.width + 4, 24, color, string)
                         time.sleep(0.005)
@@ -326,7 +318,6 @@ class RunText(SampleBase):
                         if (pos + espnLogo.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                                offscreen_canvas.Clear()
                         offscreen_canvas.SetImage(espnLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + espnLogo.width + 4, 24, color, string)
                         time.sleep(0.005)
@@ -337,7 +328,6 @@ class RunText(SampleBase):
                         if (pos + foxNewsLogo.width + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                                offscreen_canvas.Clear()
                         offscreen_canvas.SetImage(foxNewsLogo, pos)
                         len = graphics.DrawText(offscreen_canvas, font, pos + foxNewsLogo.width + 4, 24, color, string)
                         time.sleep(0.005)
@@ -347,7 +337,6 @@ class RunText(SampleBase):
                         if (pos + len < 0):
                             running = False
                             pos = offscreen_canvas.width
-                                offscreen_canvas.Clear()
                         len = graphics.DrawText(offscreen_canvas, font, pos + 4, 24, color, string)
                         time.sleep(0.005)
                     else:
@@ -358,7 +347,6 @@ class RunText(SampleBase):
                     #     if (pos + len < 0):
                     #         running = False
                     #         pos = offscreen_canvas.width
-                                offscreen_canvas.Clear()
                     #     time.sleep(0.005)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
