@@ -51,12 +51,12 @@ class RunText(SampleBase):
                     offset = 0
                     if isinstance(arr, list):
                         for game in arr:
-                            awayTeamString = string[5]
-                            homeTeamString = string[10]
-                            awayTeamStatusString = string[12]
-                            homeTeamStatusString = string[13]
-                            statusString = string[11]
-                            oddsString = string[14]
+                            awayTeamString = game[5]
+                            homeTeamString = game[10]
+                            awayTeamStatusString = game[12]
+                            homeTeamStatusString = game[13]
+                            statusString = game[11]
+                            oddsString = game[14]
                             if 'pregame' in game[0]:
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + versus + buffer + homeLogo.width + buffer, 10, white, awayTeamString)
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + versus + buffer + homeLogo.width+ buffer + awayTeam, 10, white, awayTeamStatusString)
