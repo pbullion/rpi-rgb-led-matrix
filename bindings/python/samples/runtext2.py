@@ -43,18 +43,12 @@ class RunText(SampleBase):
             color = green
             print(responseArr)
             for arr in responseArr:
+                running = True
                 print('=======================')
                 print(arr)
-                running = True
-                if arr == None:
-                    print('it was NONE')
-                elif isinstance(arr, list) and 'game' in arr[0]:
-                    awayLogo = Image.open(requests.get(arr[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
-                    homeLogo = Image.open(requests.get(arr[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
-                print('********************************')
-                runningTotal = 0
                 while running:
                     offscreen_canvas.Clear()
+                    runningTotal = 0
                     if isinstance(arr, list):
                         pos -= 1
                         print('heeeeeeeere')
@@ -68,8 +62,8 @@ class RunText(SampleBase):
                             awayTeamStatusString = game[12]
                             homeTeamStatusString = game[13]
                             statusString = game[11]
-                            print(statusString)
                             oddsString = game[14]
+                            print(statusString)
                             print(oddsString)
                             if 'pregame' in game[0]:     
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 10, white, awayTeamString)
@@ -83,7 +77,7 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 26, white, homeTeamString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
                                 runningTotal = runningTotal + pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer
-                        time.sleep(0.001)
+                            time.sleep(0.001)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
