@@ -46,14 +46,14 @@ class RunText(SampleBase):
             print(responseArr)
             for arr in responseArr:
                 running = True
+                awayLogo = Image.open(requests.get(arr[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
+                homeLogo = Image.open(requests.get(arr[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                 while running:
                     offscreen_canvas.Clear()
                     buffer = 6
                     pos -= 1
                     offset = 0
                     if isinstance(arr, list):
-                        awayLogo = Image.open(requests.get(arr[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
-                        homeLogo = Image.open(requests.get(arr[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                         for game in arr:
                             awayTeamString = game[5]
                             homeTeamString = game[10]
