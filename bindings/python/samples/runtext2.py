@@ -59,7 +59,7 @@ class RunText(SampleBase):
                             homeTeamStatusString = game[13]
                             if 'pregame' in game[0]: 
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 10, white, awayTeamString)
-                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont}, pos + offset + buffer + buffer + buffer + buffer + awayTeam, 10, white, awayTeamStatusString)
+                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + buffer + buffer + buffer + buffer + awayTeam, 10, white, awayTeamStatusString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 26, white, homeTeamString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + buffer + buffer + buffer + buffer + homeTeam, 26, white, homeTeamStatusString)
                             if awayTeam > homeTeam:
