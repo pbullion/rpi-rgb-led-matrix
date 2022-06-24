@@ -53,13 +53,17 @@ class RunText(SampleBase):
                         for game in arr:
                             awayTeamString = game[5]
                             homeTeamString = game[10]
+                            awayTeamStatusString = string[12]
+                            homeTeamStatusString = string[13]
                             if 'pregame' in game[0]: 
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 10, white, awayTeamString)
+                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + awayTeam, 10, white, awayTeamStatusString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 26, white, homeTeamString)
+                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + homeTeam, 10, white, homeTeamStatusString)
                             if awayTeam > homeTeam:
-                                offset = offset + awayTeam + 30
+                                offset = offset + awayTeam + awayTeamStatus + 30
                             else:
-                                offset = offset + homeTeam + 30
+                                offset = offset + homeTeam + homeTeamStatus + 30
 
                     time.sleep(0.001)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
