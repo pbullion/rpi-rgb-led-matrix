@@ -67,9 +67,9 @@ class RunText(SampleBase):
                                 gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + homeTeam + homeTeamStatus, 10, white, statusString)
                                 oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + homeTeam + homeTeamStatus, 26, white, oddsString)
                             if awayTeam > homeTeam:
-                                offset = offset + awayTeam + awayTeamStatus + 45
+                                offset = offset + awayTeam + awayTeamStatus + gameStatus + oddsStatus + 45
                             else:
-                                offset = offset + homeTeam + homeTeamStatus + 45
+                                offset = offset + homeTeam + homeTeamStatus + gameStatus + oddsStatus + 45
 
                     time.sleep(0.001)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
