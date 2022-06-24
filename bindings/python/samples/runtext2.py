@@ -54,7 +54,7 @@ class RunText(SampleBase):
                         versusString = ' at '
                         buffer = 6
                         for game in arr:
-                            pos -= 1 + runningTotal
+                            pos -= runningTotal
                             bases =  [[2,5],[6,0],[10,5]]
                             outs = [[3,20],[9,20],[15,20]]
                             awayTeamString = game[5]
