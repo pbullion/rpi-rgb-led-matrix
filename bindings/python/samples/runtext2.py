@@ -48,13 +48,13 @@ class RunText(SampleBase):
                 print(arr)
                 while running:
                     offscreen_canvas.Clear()
+                    runningTotal = 0
                     if isinstance(arr, list):
-                        runningTotal = 0
                         print('heeeeeeeere')
                         versusString = ' at '
                         buffer = 6
                         for game in arr:
-                            pos -= runningTotal
+                            pos -= 1
                             bases =  [[2,5],[6,0],[10,5]]
                             outs = [[3,20],[9,20],[15,20]]
                             awayTeamString = game[5]
@@ -68,14 +68,13 @@ class RunText(SampleBase):
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + awayTeam + buffer, 10, white, awayTeamStatusString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 26, white, homeTeamString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
-                                runningTotal = runningTotal + pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer
                             else:     
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 10, white, awayTeamString)
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + awayTeam + buffer, 10, white, awayTeamStatusString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 26, white, homeTeamString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
-                                runningTotal = runningTotal + pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer
                     time.sleep(0.001)
+                    runningTotal = runningTotal + pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
