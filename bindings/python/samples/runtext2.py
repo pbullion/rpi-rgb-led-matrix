@@ -159,9 +159,9 @@ class RunText(SampleBase):
                                 situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal + 3, 19, yellow, countString)
                                 inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal - 5, 31, yellow, inningString)
                             if awayTeam > homeTeam:
-                                offset = offset + awayTeam + awayTeamStatus + 220
+                                offset = offset + awayTeam + awayTeamStatus + 240
                             else:
-                                offset = offset + homeTeam + homeTeamStatus + 220
+                                offset = offset + homeTeam + homeTeamStatus + 240
                     time.sleep(0.008)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
