@@ -80,8 +80,7 @@ class RunText(SampleBase):
                                 offset = offset + awayTeam + awayTeamStatus + gameStatus + oddsStatus + test + 60
                             else:
                                 offset = offset + homeTeam + homeTeamStatus + gameStatus + oddsStatus + test + 60
-
-                    time.sleep(0.001)
+                    time.sleep(0.05)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
