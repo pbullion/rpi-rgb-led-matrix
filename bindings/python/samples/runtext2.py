@@ -51,11 +51,22 @@ class RunText(SampleBase):
                     offset = 0
                     if isinstance(arr, list):
                         for game in arr:
-                            awayTeamString = game[5]
-                            homeTeamString = game[10]
-                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 10, white, awayTeamString)
-                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 26, white, homeTeamString)
-                            offset = offset + awayTeam + homeTeam
+                            if 'pregame' in string[0]:     
+                                offscreen_canvas.SetImage(awayLogo, pos, -10)
+                                versus = graphics.DrawText(offscreen_canvas, middleFont, pos + buffer + awayLogo.width, 24, green, versusString)
+                                offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer, -10)
+                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + versus + buffer + homeLogo.width + buffer, 10, white, awayTeamString)
+                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + versus + buffer + homeLogo.width+ buffer + awayTeam, 10, white, awayTeamStatusString)
+                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + versus + buffer + homeLogo.width + buffer, 26, white, homeTeamString)
+                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + versus + buffer + homeLogo.width+ buffer + homeTeam, 26, white, homeTeamStatusString)
+                                odds = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + versus + buffer + homeLogo.width+ buffer + awayTeam, 10, green, oddsString)
+                                status = graphics.DrawText(offscreen_canvas, smallFont, pos + awayLogo.width + buffer + versus + buffer + homeLogo.width+ buffer + homeTeam, 26, green, statusString)
+                                offset = offset + awayTeam + awayTeamStatus + odds + status
+                            # awayTeamString = game[5]
+                            # homeTeamString = game[10]
+                            # awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 10, white, awayTeamString)
+                            # homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 26, white, homeTeamString)
+                            # offset = offset + awayTeam + homeTeam
                     time.sleep(0.001)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
