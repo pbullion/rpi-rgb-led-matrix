@@ -57,9 +57,9 @@ class RunText(SampleBase):
                             homeTeamStatusString = game[13]
                             statusString = game[11]
                             oddsString = game[14]
+                            print('========================================')
+                            print(game)
                             if 'pregame' in game[0]:
-                                print('========================================')
-                                print(game)
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer + buffer, 10, white, awayTeamString)
                                 # awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer+ buffer + awayTeam, 10, white, awayTeamStatusString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer + buffer, 26, white, homeTeamString)
@@ -71,7 +71,7 @@ class RunText(SampleBase):
                             else:
                                 offset = offset + homeTeam + 30
 
-                    time.sleep(0.001)
+                    time.sleep(0.05)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
