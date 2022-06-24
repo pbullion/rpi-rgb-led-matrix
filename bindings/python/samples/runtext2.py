@@ -49,9 +49,9 @@ class RunText(SampleBase):
                     offset = 0
                     if isinstance(arr, list):
                         buffer = 6
+                        offset -= 10
                         for game in arr:
                             pos -= 1
-                            offset -= 10
                             bases =  [[2,5],[6,0],[10,5]]
                             outs = [[3,20],[9,20],[15,20]]
                             awayTeamString = game[5]
