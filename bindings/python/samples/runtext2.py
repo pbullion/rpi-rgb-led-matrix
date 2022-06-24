@@ -42,8 +42,6 @@ class RunText(SampleBase):
             pos = offscreen_canvas.width
             color = green
             print(responseArr)
-            awayLogo = Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-san-francisco-giants-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
-            homeLogo = Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-san-francisco-giants-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
             for arr in responseArr:
                 running = True
                 while running:
@@ -55,20 +53,9 @@ class RunText(SampleBase):
                         for game in arr:
                             awayTeamString = game[5]
                             homeTeamString = game[10]
-                            awayTeamStatusString = game[12]
-                            homeTeamStatusString = game[13]
-                            statusString = game[11]
-                            oddsString = game[14]
-                            print(game[0])
-                            # if 'pregame' in game[0]:     
-                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer + buffer, 10, white, awayTeamString)
-                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer + buffer, 26, white, homeTeamString)
-                            offset = offset + awayTeam + homeTeam
-                            # awayTeamString = game[5]
-                            # homeTeamString = game[10]
-                            # awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 10, white, awayTeamString)
-                            # homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 26, white, homeTeamString)
-                            # offset = offset + awayTeam + homeTeam
+                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 10, white, awayTeamString)
+                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 26, white, homeTeamString)
+                            offset = offset + awayTeam
                     time.sleep(0.001)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
