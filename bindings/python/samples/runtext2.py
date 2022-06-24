@@ -48,11 +48,11 @@ class RunText(SampleBase):
                 print(arr)
                 while running:
                     offscreen_canvas.Clear()
-                    runningTotal = 0
                     if isinstance(arr, list):
                         print('heeeeeeeere')
                         versusString = ' at '
                         buffer = 6
+                        runningTotal = 0
                         for game in arr:
                             pos -= 1
                             bases =  [[2,5],[6,0],[10,5]]
@@ -73,8 +73,8 @@ class RunText(SampleBase):
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + awayTeam + buffer, 10, white, awayTeamStatusString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 26, white, homeTeamString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
-                        time.sleep(0.05)
-                        runningTotal = runningTotal + pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer
+                            time.sleep(0.05)
+                            runningTotal = runningTotal + pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
