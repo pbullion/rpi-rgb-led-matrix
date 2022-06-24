@@ -49,8 +49,8 @@ class RunText(SampleBase):
                     if isinstance(arr, list):
                         buffer = 6
                         offset = 0
+                        pos -= 1
                         for game in arr:
-                            pos -= 1
                             awayTeamString = game[5]
                             homeTeamString = game[10]
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 10, white, awayTeamString)
