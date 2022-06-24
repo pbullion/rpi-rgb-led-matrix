@@ -97,7 +97,7 @@ class RunText(SampleBase):
                                     scoreLocation = awayTeam + buffer
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
-                                runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer
+                                runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer 
                                 baseSize = 6
                                 outsSize = 4
                                 baseHalf = abs(baseSize/2)
@@ -151,9 +151,9 @@ class RunText(SampleBase):
                                 situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal + 3, 19, yellow, countString)
                                 inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal - 5, 31, yellow, inningString)
                             if awayTeam > homeTeam:
-                                offset = offset + awayTeam + awayTeamStatus + 225
+                                offset = offset + awayTeam + awayTeamStatus + 150
                             else:
-                                offset = offset + homeTeam + homeTeamStatus + 225
+                                offset = offset + homeTeam + homeTeamStatus + 150
                     time.sleep(0.001)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
