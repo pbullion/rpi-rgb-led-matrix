@@ -52,9 +52,9 @@ class RunText(SampleBase):
                     pos -= 1
                     offset = 0
                     if isinstance(arr, list):
+                        awayLogo = Image.open(requests.get(arr[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
+                        homeLogo = Image.open(requests.get(arr[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                         for game in arr:
-                            awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
-                            homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                             awayTeamString = game[5]
                             homeTeamString = game[10]
                             awayTeamStatusString = game[12]
