@@ -60,9 +60,9 @@ class RunText(SampleBase):
                             statusString = game[11]
                             oddsString = game[14]
                             print(game[0])
-                            if 'pregame' in game[0]:     
-                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer + buffer, 10, white, awayTeamString)
-                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer + buffer, 26, white, homeTeamString)
+                            # if 'pregame' in game[0]:     
+                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer + buffer, 10, white, awayTeamString)
+                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer + buffer, 26, white, homeTeamString)
                             offset = offset + awayTeam + homeTeam
                             # awayTeamString = game[5]
                             # homeTeamString = game[10]
