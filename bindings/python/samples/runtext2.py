@@ -95,9 +95,9 @@ class RunText(SampleBase):
                                     awayColor = green
                                 offscreen_canvas.SetImage(awayLogo, pos + offset, -10)
                                 versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + awayLogo.width, 24, green, 'vs')
-                                offscreen_canvas.SetImage(homeLogo, pos + offset + awayLogo.width + buffer + buffer, -10)
-                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + awayLogo.width + versus + homeLogo.width + buffer + buffer + buffer, 12, awayColor, awayTeamString)
-                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + awayLogo.width + versus + homeLogo.width + buffer + buffer + buffer, 26, homeColor, homeTeamString)
+                                offscreen_canvas.SetImage(homeLogo, pos + offset + awayLogo.width + buffer + buffer + buffer, -10)
+                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + awayLogo.width + versus + homeLogo.width + buffer + buffer, 12, awayColor, awayTeamString)
+                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + awayLogo.width + versus + homeLogo.width + buffer + buffer, 26, homeColor, homeTeamString)
                                 scoreLocation = 0
                                 if (homeTeam > awayTeam):
                                     scoreLocation = homeTeam + buffer + awayLogo.width + versus + homeLogo.width
@@ -159,10 +159,10 @@ class RunText(SampleBase):
                                 situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal + 3, 19, yellow, countString)
                                 inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal - 5, 31, yellow, inningString)
                             if awayTeam > homeTeam:
-                                offset = offset + awayTeam + awayTeamStatus + 190
+                                offset = offset + awayTeam + awayTeamStatus + 210
                             else:
-                                offset = offset + homeTeam + homeTeamStatus + 190
-                    time.sleep(0.001)
+                                offset = offset + homeTeam + homeTeamStatus + 210
+                    time.sleep(0.05)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
