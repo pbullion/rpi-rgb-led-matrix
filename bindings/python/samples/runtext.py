@@ -238,7 +238,6 @@ class RunText(SampleBase):
                                     graphics.DrawLine(offscreen_canvas, pos + runningTotal + outs[2][0], pos + runningTotal + outs[2][1] + y_offset, pos + runningTotal + outs[2][0] + outsSize, pos + runningTotal + outs[2][1] + y_offset, red)
                             situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + runningTotal + 3, 19, yellow, countString)
                             inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + runningTotal - 5, 31, yellow, inningString)
-                            print(pos + runningTotal)
                             if (pos + runningTotal < 0):
                                 running = False
                                 pos = offscreen_canvas.width
@@ -272,6 +271,7 @@ class RunText(SampleBase):
                             else:
                                 quarter = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + versus + homeLogo.width + scoreLocation + homeTeamStatus + buffer + buffer + buffer + buffer + buffer, 12, yellow, oddsString)
                             status = graphics.DrawText(offscreen_canvas, middleFont, pos + awayLogo.width + buffer + buffer + versus + homeLogo.width + scoreLocation + homeTeamStatus + buffer + buffer + buffer + buffer + buffer, 26, yellow, statusString)
+                            print(pos + awayLogo.width + buffer + buffer + versus + status + buffer + homeLogo.width + scoreLocation + buffer + quarter)
                             if (pos + awayLogo.width + buffer + buffer + versus + status + buffer + homeLogo.width + scoreLocation + buffer + quarter < 0):
                                 running = False
                                 pos = offscreen_canvas.width
