@@ -52,9 +52,9 @@ class RunText(SampleBase):
                     awayLogo = Image.open(requests.get(arr[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                     homeLogo = Image.open(requests.get(arr[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                 print('********************************')
+                runningTotal = 0
                 while running:
                     offscreen_canvas.Clear()
-                    runningTotal = 0
                     pos -= 1
                     if isinstance(arr, list):
                         versusString = ' at '
@@ -81,7 +81,7 @@ class RunText(SampleBase):
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
                                 runningTotal = runningTotal + pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer
                     time.sleep(0.001)
-                offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+                    offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
 
