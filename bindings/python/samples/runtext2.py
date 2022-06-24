@@ -52,10 +52,10 @@ class RunText(SampleBase):
                     awayLogo = Image.open(requests.get(arr[0][1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                     homeLogo = Image.open(requests.get(arr[0][6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                 print('********************************')
+                runningTotal = 0
                 while running:
                     offscreen_canvas.Clear()
                     if isinstance(arr, list):
-                        runningTotal = 0
                         pos -= 1
                         print('heeeeeeeere')
                         versusString = ' at '
