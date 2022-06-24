@@ -58,16 +58,18 @@ class RunText(SampleBase):
                             statusString = game[11]
                             oddsString = game[14]
                             if 'pregame' in game[0]:
+                                print('========================================')
+                                print(game)
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer + buffer, 10, white, awayTeamString)
-                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer+ buffer + awayTeam, 10, white, awayTeamStatusString)
+                                # awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer+ buffer + awayTeam, 10, white, awayTeamStatusString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer + buffer, 26, white, homeTeamString)
-                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer+ buffer + homeTeam, 26, white, homeTeamStatusString)
+                                # homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer+ buffer + homeTeam, 26, white, homeTeamStatusString)
                                 # odds = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer+ buffer + awayTeam, 10, green, oddsString)
                                 # status = graphics.DrawText(offscreen_canvas, smallFont, pos + buffer + buffer+ buffer + homeTeam, 26, green, statusString)
                             if awayTeam > homeTeam:
-                                offset = offset + awayTeam + awayTeamStatus + 30
+                                offset = offset + awayTeam + 30
                             else:
-                                offset = offset + homeTeam + homeTeamStatus + 30
+                                offset = offset + homeTeam + 30
 
                     time.sleep(0.001)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
