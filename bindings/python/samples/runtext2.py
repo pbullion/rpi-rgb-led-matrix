@@ -57,15 +57,19 @@ class RunText(SampleBase):
                             homeTeamString = game[10]
                             awayTeamStatusString = game[12]
                             homeTeamStatusString = game[13]
+                            statusString = game[11]
+                            oddsString = game[14]
                             if 'pregame' in game[0]: 
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 10, white, awayTeamString)
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + buffer + buffer + buffer + buffer + awayTeam, 10, white, awayTeamStatusString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 26, white, homeTeamString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + buffer + buffer + buffer + buffer + homeTeam, 26, white, homeTeamStatusString)
+                                gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + homeTeam + homeTeamStatus, 10, white, statusString)
+                                oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + homeTeam + homeTeamStatus, 26, white, oddsString)
                             if awayTeam > homeTeam:
-                                offset = offset + awayTeam + awayTeamStatus + 30
+                                offset = offset + awayTeam + awayTeamStatus + 45
                             else:
-                                offset = offset + homeTeam + homeTeamStatus + 30
+                                offset = offset + homeTeam + homeTeamStatus + 45
 
                     time.sleep(0.001)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
