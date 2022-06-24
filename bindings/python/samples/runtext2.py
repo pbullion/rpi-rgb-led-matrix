@@ -51,12 +51,12 @@ class RunText(SampleBase):
                     offset = 0
                     if isinstance(arr, list):
                         for game in arr:
-                            awayTeamString = string[5]
-                            homeTeamString = string[10]
-                            awayTeamStatusString = string[12]
-                            homeTeamStatusString = string[13]
-                            statusString = string[11]
-                            oddsString = string[14]
+                            awayTeamString = game[5]
+                            homeTeamString = game[10]
+                            awayTeamStatusString = game[12]
+                            homeTeamStatusString = game[13]
+                            statusString = game[11]
+                            oddsString = game[14]
                             awayLogo = Image.open(requests.get(game[1], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                             homeLogo = Image.open(requests.get(game[6], stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS)
                             if 'pregame' in game[0]:     
