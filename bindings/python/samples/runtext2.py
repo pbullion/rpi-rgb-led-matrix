@@ -83,9 +83,9 @@ class RunText(SampleBase):
                                 # versus = graphics.DrawText(offscreen_canvas, middleFont, pos + runningTotal + buffer, 24, green, versusString)
                                 # offscreen_canvas.SetImage(homeLogo, pos + runningTotal + buffer + buffer, -10)
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 10, white, awayTeamString)
-                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + awayTeam, 10, white, awayTeamStatusString)
+                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + awayTeam + buffer, 10, white, awayTeamStatusString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 26, white, homeTeamString)
-                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + homeTeam, 26, white, homeTeamStatusString)
+                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
                                 # odds = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + awayTeam, 10, green, oddsString)
                                 # status = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer+ buffer + homeTeam, 26, green, statusString)
                                 runningTotal = runningTotal + pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer
