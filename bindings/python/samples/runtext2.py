@@ -76,7 +76,7 @@ class RunText(SampleBase):
                                 else:
                                     gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + test + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 26, white, statusString)
                                     oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + test + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 10, white, oddsString)
-                            if 'inprogress' in game[0]: 
+                            if 'inProgress' in game[0]: 
                                 offscreen_canvas.SetImage(awayLogo, pos, -10)
                                 versus = graphics.DrawText(offscreen_canvas, middleFont, pos + buffer + awayLogo.width, 24, green, 'vs')
                                 offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer, -10)
