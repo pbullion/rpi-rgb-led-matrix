@@ -95,8 +95,8 @@ class RunText(SampleBase):
                                     scoreLocation = homeTeam + buffer
                                 else:
                                     scoreLocation = awayTeam + buffer
-                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + versus + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
-                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + versus + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
+                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
+                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
                             if awayTeam > homeTeam:
                                 offset = offset + awayTeam + awayTeamStatus + 150
                             else:
