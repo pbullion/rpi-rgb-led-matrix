@@ -44,8 +44,8 @@ class RunText(SampleBase):
             pos = offscreen_canvas.width
             color = green
             print(responseArr)
-            awayLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((50, 50), Image.ANTIALIAS)
-            homeLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((50, 50), Image.ANTIALIAS)
+            awayLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bball.png').convert('RGB').resize((50, 50), Image.ANTIALIAS)
+            homeLogo = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bball.png').convert('RGB').resize((50, 50), Image.ANTIALIAS)
             for arr in responseArr:
                 running = True
                 while running:
