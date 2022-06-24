@@ -46,17 +46,17 @@ class RunText(SampleBase):
                 running = True
                 while running:
                     offscreen_canvas.Clear()
+                        pos -= 1
                     if isinstance(arr, list):
                         buffer = 6
                         offset = 0
-                        pos -= 1
                         for game in arr:
                             awayTeamString = game[5]
                             homeTeamString = game[10]
                             awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 10, white, awayTeamString)
                             homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 26, white, homeTeamString)
                             offset = pos + offset + buffer + buffer + awayTeam + buffer + homeTeam
-                    time.sleep(0.05)
+                        time.sleep(0.05)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
