@@ -117,25 +117,25 @@ class RunText(SampleBase):
                                     y = bases[0][1]
                                     size = 6
                                     half = round(abs(size/2))
-                                    for offset in range(1, half + 1):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - offset, y + size - offset, pos + offset + runningTotal + x + half + offset, y + size - offset, yellow)
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - offset, y + offset, pos + offset + runningTotal + x + half + offset, y + offset, yellow)
+                                    for otherOffset in range(1, half + 1):
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - otherOffset, y + size - otherOffset, pos + offset + runningTotal + x + half + offset, y + size - otherOffset, yellow)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - otherOffset, y + offset, pos + offset + runningTotal + x + half + offset, y + offset, yellow)
                                 if '2nd' in runnerSituationString or 'Bases Loaded' in runnerSituationString:
                                     x = bases[1][0]
                                     y = bases[1][1]
                                     size = 6
                                     half = round(abs(size/2))
-                                    for offset in range(1, half + 1):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - offset, y + size - offset, pos + offset + runningTotal + x + half + offset, y + size - offset, yellow)
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - offset, y + offset, pos + offset + runningTotal + x + half + offset, y + offset, yellow)
+                                    for otherOffset in range(1, half + 1):
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - otherOffset, y + size - otherOffset, pos + offset + runningTotal + x + half + offset, y + size - otherOffset, yellow)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - otherOffset, y + offset, pos + offset + runningTotal + x + half + offset, y + offset, yellow)
                                 if '3rd' in runnerSituationString or 'Bases Loaded' in runnerSituationString:
                                     x = bases[2][0]
                                     y = bases[2][1]
                                     size = 6
                                     half = round(abs(size/2))
-                                    for offset in range(1, half + 1):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - offset, y + size - offset, pos + offset + runningTotal + x + half + offset, y + size - offset, yellow)
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - offset, y + offset, pos + offset + runningTotal + x + half + offset, y + offset, yellow)
+                                    for otherOffset in range(1, half + 1):
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - otherOffset, y + size - otherOffset, pos + offset + runningTotal + x + half + offset, y + size - otherOffset, yellow)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - otherOffset, y + offset, pos + offset + runningTotal + x + half + offset, y + offset, yellow)
                                 if outsString == 1:
                                     for y_offset in range(outsSize):
                                         graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[0][0], pos + offset + runningTotal + outs[0][1] + y_offset, pos + offset + runningTotal + outs[0][0] + outsSize, pos + offset + runningTotal + outs[0][1] + y_offset, red)
@@ -151,9 +151,9 @@ class RunText(SampleBase):
                                 situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal + 3, 19, yellow, countString)
                                 inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal - 5, 31, yellow, inningString)
                             if awayTeam > homeTeam:
-                                offset = offset + awayTeam + awayTeamStatus + 150
+                                offset = offset + awayTeam + awayTeamStatus + 175
                             else:
-                                offset = offset + homeTeam + homeTeamStatus + 150
+                                offset = offset + homeTeam + homeTeamStatus + 175
                     time.sleep(0.001)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
