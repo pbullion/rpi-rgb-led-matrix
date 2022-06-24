@@ -49,7 +49,7 @@ class RunText(SampleBase):
                 while running:
                     offscreen_canvas.Clear()
                     if isinstance(arr, list):
-                        print('heeeeeeeere')
+                        print('===========================================================================')
                         print(arr)
                         buffer = 6
                         for game in arr:
