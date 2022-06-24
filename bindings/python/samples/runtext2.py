@@ -57,7 +57,6 @@ class RunText(SampleBase):
                     runningTotal = 0
                     pos -= 1
                     if isinstance(arr, list):
-                        print('heeeeeeeere')
                         versusString = ' at '
                         buffer = 6
                         for game in arr:
@@ -68,9 +67,7 @@ class RunText(SampleBase):
                             awayTeamStatusString = game[12]
                             homeTeamStatusString = game[13]
                             statusString = game[11]
-                            print(statusString)
                             oddsString = game[14]
-                            print(oddsString)
                             if 'pregame' in game[0]:     
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer, 10, white, awayTeamString)
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + awayTeam + buffer, 10, white, awayTeamStatusString)
@@ -84,7 +81,7 @@ class RunText(SampleBase):
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + runningTotal + buffer + buffer + buffer + homeTeam + buffer, 26, white, homeTeamStatusString)
                                 runningTotal = runningTotal + pos + buffer + buffer + awayTeam + buffer + homeTeam + buffer
                     time.sleep(0.001)
-                    offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+                offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
 
