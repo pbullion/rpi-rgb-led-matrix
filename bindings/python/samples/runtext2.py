@@ -51,7 +51,7 @@ class RunText(SampleBase):
                     offset = 0
                     if isinstance(arr, list):
                         for game in arr:
-                            if 'pregame' in string[0]:     
+                            if 'pregame' in game[0]:     
                                 offscreen_canvas.SetImage(awayLogo, pos, -10)
                                 versus = graphics.DrawText(offscreen_canvas, middleFont, pos + buffer + awayLogo.width, 24, green, versusString)
                                 offscreen_canvas.SetImage(homeLogo, pos + awayLogo.width + buffer + buffer, -10)
