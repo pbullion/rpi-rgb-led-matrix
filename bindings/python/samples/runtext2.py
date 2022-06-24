@@ -53,7 +53,7 @@ class RunText(SampleBase):
                         for game in arr:
                             awayTeamString = game[5]
                             homeTeamString = game[10]
-                            if 'pregame' in string[0]: 
+                            if 'pregame' in game[0]: 
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 10, white, awayTeamString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 26, white, homeTeamString)
                             if awayTeam > homeTeam:
