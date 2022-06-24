@@ -65,15 +65,15 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer, 26, white, homeTeamString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + buffer + buffer + buffer + buffer + homeTeam, 26, white, homeTeamStatusString)
                                 if awayTeam > homeTeam:
-                                    gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + buffer + buffer+ awayTeam + awayTeamStatus, 10, white, statusString)
-                                    oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + buffer + buffer+ awayTeam + awayTeamStatus, 26, white, oddsString)
+                                    gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + buffer + awayTeam + awayTeamStatus, 26, white, statusString)
+                                    oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + buffer+ awayTeam + awayTeamStatus, 10, white, oddsString)
                                 else:
-                                    gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 10, white, statusString)
-                                    oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 26, white, oddsString)
+                                    gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 26, white, statusString)
+                                    oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 10, white, oddsString)
                             if awayTeam > homeTeam:
-                                offset = offset + awayTeam + awayTeamStatus + gameStatus + oddsStatus + 50
+                                offset = offset + awayTeam + awayTeamStatus + gameStatus + oddsStatus + 60
                             else:
-                                offset = offset + homeTeam + homeTeamStatus + gameStatus + oddsStatus + 50
+                                offset = offset + homeTeam + homeTeamStatus + gameStatus + oddsStatus + 60
 
                     time.sleep(0.001)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
