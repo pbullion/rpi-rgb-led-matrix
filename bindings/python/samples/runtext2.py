@@ -48,10 +48,10 @@ class RunText(SampleBase):
                 print(arr)
                 while running:
                     offscreen_canvas.Clear()
+                    offset = 0
                     if isinstance(arr, list):
                         print('heeeeeeeere')
                         buffer = 6
-                        offset = 0
                         for game in arr:
                             pos -= 1
                             bases =  [[2,5],[6,0],[10,5]]
