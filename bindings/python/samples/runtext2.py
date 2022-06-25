@@ -188,10 +188,6 @@ class RunText(SampleBase):
                                         graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[2][0], pos + offset + runningTotal + outs[2][1] + y_offset, pos + offset + runningTotal + outs[2][0] + outsSize, pos + offset + runningTotal + outs[2][1] + y_offset, red)
                                 situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal + 3, 19, yellow, countString)
                                 inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal - 5, 31, yellow, inningString)
-                            if awayTeam > homeTeam:
-                                offset = offset + awayTeam + awayTeamStatus + 240
-                            else:
-                                offset = offset + homeTeam + homeTeamStatus + 240
                             if 'final' in game[0]: 
                                 runnerSituationString = game[15]
                                 pitcherNameString = game[17]
