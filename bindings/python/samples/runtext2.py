@@ -94,19 +94,19 @@ class RunText(SampleBase):
                             statusString = game[11]
                             oddsString = game[14]
                             if 'pregame' in game[0]: 
-                                offscreen_canvas.SetImage(mlbLogos[game[1]], pos + offset, -10)
-                                versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + mlbLogos[game[1]].width, 24, green, 'vs')
-                                offscreen_canvas.SetImage(mlbLogos[game[6]], pos + offset + mlbLogos[game[1]].width + buffer + buffer, -10)
-                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width + buffer + buffer + buffer, 12, white, awayTeamString)
-                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width + buffer + buffer + buffer + buffer + awayTeam, 12, white, awayTeamStatusString)
-                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width + buffer + buffer + buffer, 26, white, homeTeamString)
-                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width + buffer + buffer + buffer + buffer + homeTeam, 26, white, homeTeamStatusString)
+                                offscreen_canvas.SetImage(mlbLogos[game[5]], pos + offset, -10)
+                                versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + mlbLogos[game[5]].width, 24, green, 'vs')
+                                offscreen_canvas.SetImage(mlbLogos[game[10]], pos + offset + mlbLogos[game[5]].width + buffer + buffer, -10)
+                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer, 12, white, awayTeamString)
+                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer + buffer + awayTeam, 12, white, awayTeamStatusString)
+                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer, 26, white, homeTeamString)
+                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer + buffer + homeTeam, 26, white, homeTeamStatusString)
                                 if awayTeam > homeTeam:
-                                    gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width + buffer + buffer + buffer + buffer + buffer + awayTeam + awayTeamStatus, 26, green, statusString)
-                                    oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width + buffer + buffer + buffer + buffer + buffer+ awayTeam + awayTeamStatus, 12, green, oddsString)
+                                    gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer + awayTeam + awayTeamStatus, 26, green, statusString)
+                                    oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ awayTeam + awayTeamStatus, 12, green, oddsString)
                                 else:
-                                    gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 26, green, statusString)
-                                    oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 12, green, oddsString)
+                                    gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 26, green, statusString)
+                                    oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 12, green, oddsString)
                             if 'inProgress' in game[0]: 
                                 runnerSituationString = game[15]
                                 pitcherNameString = game[17]
@@ -123,16 +123,16 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
-                                offscreen_canvas.SetImage(mlbLogos[game[1]], pos + offset, -10)
-                                versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + mlbLogos[game[1]].width, 24, green, 'vs')
-                                offscreen_canvas.SetImage(mlbLogos[game[6]], pos + offset + mlbLogos[game[1]].width + buffer + buffer + buffer + buffer + buffer, -10)
-                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width + buffer + buffer + buffer, 12, awayColor, awayTeamString)
-                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width + buffer + buffer + buffer, 26, homeColor, homeTeamString)
+                                offscreen_canvas.SetImage(mlbLogos[game[5]], pos + offset, -10)
+                                versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + mlbLogos[game[5]].width, 24, green, 'vs')
+                                offscreen_canvas.SetImage(mlbLogos[game[10]], pos + offset + mlbLogos[game[5]].width + buffer + buffer + buffer + buffer + buffer, -10)
+                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer, 12, awayColor, awayTeamString)
+                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer, 26, homeColor, homeTeamString)
                                 scoreLocation = 0
                                 if (homeTeam > awayTeam):
-                                    scoreLocation = homeTeam + buffer + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width
+                                    scoreLocation = homeTeam + buffer + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width
                                 else:
-                                    scoreLocation = awayTeam + buffer + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width
+                                    scoreLocation = awayTeam + buffer + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
                                 runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer 
@@ -204,17 +204,17 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
-                                print(mlbLogos[game[1]])
-                                offscreen_canvas.SetImage(mlbLogos[game[1]], pos + offset, -10)
-                                versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + mlbLogos[game[1]].width, 24, green, 'vs')
-                                offscreen_canvas.SetImage(mlbLogos[game[6]], pos + offset + mlbLogos[game[1]].width + buffer + buffer + buffer + buffer + buffer, -10)
-                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width + buffer + buffer + buffer, 12, awayColor, awayTeamString)
-                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width + buffer + buffer + buffer, 26, homeColor, homeTeamString)
+                                print(mlbLogos[game[5]])
+                                offscreen_canvas.SetImage(mlbLogos[game[5]], pos + offset, -10)
+                                versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + mlbLogos[game[5]].width, 24, green, 'vs')
+                                offscreen_canvas.SetImage(mlbLogos[game[10]], pos + offset + mlbLogos[game[5]].width + buffer + buffer + buffer + buffer + buffer, -10)
+                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer, 12, awayColor, awayTeamString)
+                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer, 26, homeColor, homeTeamString)
                                 scoreLocation = 0
                                 if (homeTeam > awayTeam):
-                                    scoreLocation = homeTeam + buffer + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width
+                                    scoreLocation = homeTeam + buffer + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width
                                 else:
-                                    scoreLocation = awayTeam + buffer + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width
+                                    scoreLocation = awayTeam + buffer + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
                                 runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer 
