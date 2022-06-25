@@ -192,6 +192,39 @@ class RunText(SampleBase):
                                 offset = offset + awayTeam + awayTeamStatus + 240
                             else:
                                 offset = offset + homeTeam + homeTeamStatus + 240
+                            if 'inProgress' in game[0]: 
+                            runnerSituationString = game[15]
+                            pitcherNameString = game[17]
+                            batterNameString = game[19]
+                            inningString = game[20]
+                            countString = game[21]
+                            outsString = game[22]
+                            if int(awayTeamStatusString) < int(homeTeamStatusString):
+                                homeColor = green
+                                awayColor = red
+                            elif int(awayTeamStatusString) == int(homeTeamStatusString):
+                                homeColor = yellow
+                                awayColor = yellow
+                            else:
+                                homeColor = red
+                                awayColor = green
+                            offscreen_canvas.SetImage(mlbLogos[game[1]], pos + offset, -10)
+                            versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + mlbLogos[game[1]].width, 24, green, 'vs')
+                            offscreen_canvas.SetImage(mlbLogos[game[6]], pos + offset + mlbLogos[game[1]].width + buffer + buffer + buffer + buffer + buffer, -10)
+                            awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width + buffer + buffer + buffer, 12, awayColor, awayTeamString)
+                            homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width + buffer + buffer + buffer, 26, homeColor, homeTeamString)
+                            scoreLocation = 0
+                            if (homeTeam > awayTeam):
+                                scoreLocation = homeTeam + buffer + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width
+                            else:
+                                scoreLocation = awayTeam + buffer + mlbLogos[game[1]].width + versus + mlbLogos[game[6]].width
+                            awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
+                            homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
+                            runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer 
+                        if awayTeam > homeTeam:
+                            offset = offset + awayTeam + awayTeamStatus + 240
+                        else:
+                            offset = offset + homeTeam + homeTeamStatus + 240
                     time.sleep(0.008)
                     # else:
                     #     len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, arr)
