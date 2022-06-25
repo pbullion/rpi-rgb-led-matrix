@@ -66,7 +66,7 @@ class RunText(SampleBase):
                 'Chicago White Sox': Image.open('https://loodibee.com/wp-content/uploads/mlb-chicago-white-sox-logo.png').convert('RGB').resize((50, 50), Image.ANTIALIAS),
                 'St. Louis Cardinals': Image.open('https://loodibee.com/wp-content/uploads/mlb-st-louis-cardinals-logo.png').convert('RGB').resize((50, 50), Image.ANTIALIAS),
                 'Chicago Cubs': Image.open('https://loodibee.com/wp-content/uploads/mlb-chicago-cubs-logo.png').convert('RGB').resize((50, 50), Image.ANTIALIAS),
-                'Houston Astros': Image.open('https://loodibee.com/wp-content/uploads/mlb-houston-astros-logo.png).convert('RGB').resize((50, 50), Image.ANTIALIAS)'
+                'Houston Astros': Image.open('https://loodibee.com/wp-content/uploads/mlb-houston-astros-logo.png').convert('RGB').resize((50, 50), Image.ANTIALIAS),
             }
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data-2/pbullion@gmail.com")
             responseArr = json.loads(url.text)
