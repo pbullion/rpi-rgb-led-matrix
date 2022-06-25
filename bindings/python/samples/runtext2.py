@@ -222,9 +222,9 @@ class RunText(SampleBase):
                             else:
                                 offset = offset + homeTeam + homeTeamStatus + 240
                     time.sleep(0.001)
-                    if (pos + offset < 0):
-                        running = False
-                        pos = offscreen_canvas.width
+                        if (pos + offset < 0):
+                            running = False
+                            pos = offscreen_canvas.width
                     else:
                         len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, arr)
                         pos -= 1
