@@ -221,7 +221,7 @@ class RunText(SampleBase):
                                 offset = offset + awayTeam + awayTeamStatus + 240
                             else:
                                 offset = offset + homeTeam + homeTeamStatus + 240
-                    time.sleep(0.001)
+                        time.sleep(0.001)
                         if (pos + offset < 0):
                             running = False
                             pos = offscreen_canvas.width
