@@ -96,14 +96,14 @@ class RunText(SampleBase):
                             if 'pregame' in game[0]: 
                                 offscreen_canvas.SetImage(mlbLogos[game[5]], pos + offset, -10)
                                 versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + mlbLogos[game[5]].width, 24, green, 'vs')
-                                offscreen_canvas.SetImage(mlbLogos[game[10]], pos + offset + mlbLogos[game[5]].width + buffer + buffer, -10)
+                                offscreen_canvas.SetImage(mlbLogos[game[10]], pos + offset + mlbLogos[game[5]].width + buffer + buffer + buffer, -10)
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer, 12, white, awayTeamString)
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer + buffer + awayTeam, 12, white, awayTeamStatusString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer, 26, white, homeTeamString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer + buffer + homeTeam, 26, white, homeTeamStatusString)
                                 if awayTeam > homeTeam:
-                                    gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer + awayTeam + awayTeamStatus, 26, green, statusString)
-                                    oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ awayTeam + awayTeamStatus, 12, green, oddsString)
+                                    gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer + buffer + awayTeam + awayTeamStatus, 26, green, statusString)
+                                    oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ buffer + awayTeam + awayTeamStatus, 12, green, oddsString)
                                 else:
                                     gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 26, green, statusString)
                                     oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + mlbLogos[game[5]].width + versus + mlbLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 12, green, oddsString)
@@ -222,13 +222,13 @@ class RunText(SampleBase):
                             else:
                                 offset = offset + homeTeam + homeTeamStatus + 240
                     time.sleep(0.008)
-                    # else:
-                    #     len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, arr)
-                    #     pos -= 1
-                    #     if (pos + len < 0):
-                    #         running = False
-                    #         pos = offscreen_canvas.width
-                    #     time.sleep(0.005)
+                    else:
+                        len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, arr)
+                        pos -= 1
+                        if (pos + len < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        time.sleep(0.005)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
