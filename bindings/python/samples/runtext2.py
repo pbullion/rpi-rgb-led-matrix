@@ -204,7 +204,6 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
-                                print(mlbLogos[game[5]])
                                 offscreen_canvas.SetImage(mlbLogos[game[5]], pos + offset, -10)
                                 versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + mlbLogos[game[5]].width, 24, green, 'vs')
                                 offscreen_canvas.SetImage(mlbLogos[game[10]], pos + offset + mlbLogos[game[5]].width + buffer + buffer + buffer + buffer + buffer, -10)
@@ -218,10 +217,10 @@ class RunText(SampleBase):
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
                                 runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer 
-                        if awayTeam > homeTeam:
-                            offset = offset + awayTeam + awayTeamStatus + 240
-                        else:
-                            offset = offset + homeTeam + homeTeamStatus + 240
+                            if awayTeam > homeTeam:
+                                offset = offset + awayTeam + awayTeamStatus + 240
+                            else:
+                                offset = offset + homeTeam + homeTeamStatus + 240
                     time.sleep(0.008)
                     # else:
                     #     len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, arr)
