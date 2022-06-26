@@ -223,9 +223,11 @@ class RunText(SampleBase):
                                 runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer 
                                 headlineString = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + runningTotal, 26, homeColor, headline)
                             if awayTeam > homeTeam:
-                                offset = offset + awayTeam + awayTeamStatus + headlineString + 245
+                                offset = offset + awayTeam + awayTeamStatus + headlineString + 240
                             else:
-                                offset = offset + homeTeam + homeTeamStatus + headlineString + 245
+                                offset = offset + homeTeam + homeTeamStatus + headlineString + 240
+                            if 'pregame' in game[0]:
+                                offset = offset + 50
                         time.sleep(0.01)
                         if (pos + offset < 0):
                             running = False
