@@ -239,7 +239,7 @@ class RunText(SampleBase):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.01)
-                offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
+                    offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
 
