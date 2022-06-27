@@ -246,9 +246,9 @@ class RunText(SampleBase):
                             running = False
                             pos = offscreen_canvas.width
                     else:
-                        len = graphics.DrawText(offscreen_canvas, font, pos, 24, color, arr)
+                        length = graphics.DrawText(offscreen_canvas, font, pos, 24, color, arr)
                         pos -= 1
-                        if (pos + len < 0):
+                        if (pos + length < 0):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.01)
