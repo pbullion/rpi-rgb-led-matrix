@@ -102,6 +102,8 @@ class RunText(SampleBase):
                                 homeTeamStatusString = game[13]
                                 statusString = game[11]
                                 oddsString = game[14]
+                                awayOddsString = game[15]
+                                homeOddsString = game[16]
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
@@ -115,12 +117,14 @@ class RunText(SampleBase):
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + awayTeam, 12, white, awayTeamStatusString)
                                 homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer, 26, white, homeTeamString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + homeTeam, 26, white, homeTeamStatusString)
+                                awayOdds = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 12, green, awayOddsString)
+                                homeOdds = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 26, green, homeOddsString)
                                 if awayTeam > homeTeam:
-                                    gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer + buffer + awayTeam + awayTeamStatus, 26, green, statusString)
-                                    oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ buffer + awayTeam + awayTeamStatus, 12, green, oddsString)
+                                    gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + homeOdds + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer + buffer + awayTeam + awayTeamStatus, 26, green, statusString)
+                                    oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + homeOdds + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ buffer + awayTeam + awayTeamStatus, 12, green, oddsString)
                                 else:
-                                    gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 26, green, statusString)
-                                    oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 12, green, oddsString)
+                                    gameStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + homeOdds + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 26, green, statusString)
+                                    oddsStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + homeOdds + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 12, green, oddsString)
                             if 'inProgress' in game[0]: 
                                 runnerSituationString = game[15]
                                 pitcherNameString = game[17]
