@@ -210,6 +210,8 @@ class RunText(SampleBase):
                                 countString = game[21]
                                 outsString = game[22]
                                 headline = game[25]
+                                print(game[24])
+                                print(game[25])
                                 if int(awayTeamStatusString) < int(homeTeamStatusString):
                                     homeColor = green
                                     awayColor = red
