@@ -211,6 +211,7 @@ class RunText(SampleBase):
                                 outsString = game[22]
                                 headline = game[25]
                                 print('-------------------')
+                                print(game)
                                 print(game[10])
                                 print(game[11])
                                 print(game[12])
