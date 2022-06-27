@@ -37,6 +37,9 @@ class RunText(SampleBase):
             middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
             print('getting responseArr')
             teamLogos = {
+                'NFL':
+                'MLB': Image.open(requests.get('https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'NFL': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-league-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Tampa Bay Lightning': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nhl-tampa-bay-lightning-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Colorado Avalanche': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nhl-colorado-avalanche-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'New York Yankees': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
@@ -89,6 +92,8 @@ class RunText(SampleBase):
                     offset = 0
                     if isinstance(arr, list):
                         for game in arr:
+                            if 'mlb logo' in game[0]:
+                                offscreen_canvas.SetImage(teamLogos['MLB'], pos + offset, -10)
                             bases =  [[2,5],[6,0],[10,5]]
                             outs = [[3,20],[9,20],[15,20]]
                             awayTeamString = game[5]
@@ -97,7 +102,11 @@ class RunText(SampleBase):
                             homeTeamStatusString = game[13]
                             statusString = game[11]
                             oddsString = game[14]
+                            awayTeam = 0
+                            homeTeam = 0
                             headlineString = 0
+                            awayTeamStatus = 0
+                            homeTeamStatus = 0
                             if 'pregame' in game[0]: 
                                 offscreen_canvas.SetImage(teamLogos[game[5]], pos + offset, -10)
                                 versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + teamLogos[game[5]].width, 24, green, 'vs')
