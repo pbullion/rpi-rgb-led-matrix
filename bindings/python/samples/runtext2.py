@@ -209,17 +209,7 @@ class RunText(SampleBase):
                                 inningString = game[20]
                                 countString = game[21]
                                 outsString = game[22]
-                                headline = game[25]
-                                print('-------------------')
-                                print(game)
-                                print(game[10])
-                                print(game[11])
-                                print(game[12])
-                                print(game[21])
-                                print(game[22])
-                                print(game[23])
-                                print(game[24])
-                                print(game[25])
+                                headline = game[30]
                                 if int(awayTeamStatusString) < int(homeTeamStatusString):
                                     homeColor = green
                                     awayColor = red
@@ -242,7 +232,8 @@ class RunText(SampleBase):
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
                                 runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer 
-                                headlineString = graphics.DrawText(offscreen_canvas, font, pos + offset + buffer + runningTotal, 1, green, headline)
+                                finalString = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + runningTotal, 12, green, oddsString)
+                                headlineString = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + runningTotal, 26, green, headline)
                             if awayTeam > homeTeam:
                                 offset = offset + awayTeam + awayTeamStatus + headlineString + 240
                             else:
