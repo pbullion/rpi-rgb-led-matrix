@@ -93,14 +93,15 @@ class RunText(SampleBase):
                         for game in arr:
                             if 'mlb logo' in game[0]:
                                 offscreen_canvas.SetImage(teamLogos['MLB'], pos + offset, -10)
-                            bases =  [[2,5],[6,0],[10,5]]
-                            outs = [[3,20],[9,20],[15,20]]
-                            awayTeamString = game[5]
-                            homeTeamString = game[10]
-                            awayTeamStatusString = game[12]
-                            homeTeamStatusString = game[13]
-                            statusString = game[11]
-                            oddsString = game[14]
+                            else:
+                                bases =  [[2,5],[6,0],[10,5]]
+                                outs = [[3,20],[9,20],[15,20]]
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                statusString = game[11]
+                                oddsString = game[14]
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
