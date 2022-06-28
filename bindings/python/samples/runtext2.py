@@ -105,10 +105,8 @@ class RunText(SampleBase):
                                 homeTeamStatusString = game[13]
                                 statusString = game[11]
                                 oddsString = game[14]
-                                print(game[18])
-                                print(game[19])
-                                awayPitcherString = game[16]
-                                homePitcherString = game[17]
+                                awayPitcherString = game[18]
+                                homePitcherString = game[19]
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
