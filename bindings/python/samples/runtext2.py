@@ -94,7 +94,7 @@ class RunText(SampleBase):
                         for game in arr:
                             if 'mlb logo' in game[0]:
                                 offscreen_canvas.SetImage(teamLogos['MLB'], pos + offset, -10)
-                            else if 'nhl logo' in game[0]:
+                            elif 'nhl logo' in game[0]:
                                 offscreen_canvas.SetImage(teamLogos['NHL'], pos + offset, -10)
                             else:
                                 bases =  [[2,5],[6,0],[10,5]]
