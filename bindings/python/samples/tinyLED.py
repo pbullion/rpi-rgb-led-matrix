@@ -146,14 +146,14 @@ class RunText(SampleBase):
                                 for offset in range(1, half + 1):
                                     graphics.DrawLine(canvas, x + half - offset, y + baseSize - offset, x + half + offset, y + baseSize - offset, yellow)
                                     graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
-                            elif item['runners']['onSecond'] == True:
+                            if item['runners']['onSecond'] == True:
                                 x = bases[1][0]
                                 y = bases[1][1]
                                 half = round(abs(baseSize/2))
                                 for offset in range(1, half + 1):
                                     graphics.DrawLine(canvas, x + half - offset, y + baseSize - offset, x + half + offset, y + baseSize - offset, yellow)
                                     graphics.DrawLine(canvas, x + half - offset, y + offset, x + half + offset, y + offset, yellow)
-                            elif item['runners']['onThird'] == True:
+                            if item['runners']['onThird'] == True:
                                 x = bases[2][0]
                                 y = bases[2][1]
                                 half = round(abs(baseSize/2))
