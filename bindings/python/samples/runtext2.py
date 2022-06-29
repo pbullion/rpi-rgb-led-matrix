@@ -254,8 +254,25 @@ class RunText(SampleBase):
                         if (pos + offset < 0):
                             running = False
                             pos = offscreen_canvas.width
+                    elif isinstance(arr, list) and 'rssFeed' in arr[0]:
+                        versus = graphics.DrawText(offscreen_canvas, smallFont, 100, 12, red, arr[1])
+                        length = graphics.DrawText(offscreen_canvas, smallFont, pos, 26, red, arr[2])
+                        pos -= 1
+                        if (pos + length < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        time.sleep(0.01)
+                    elif isinstance(arr, list) and 'golf' in arr[0]:
+                        versus = graphics.DrawText(offscreen_canvas, smallFont, 100, 12, red, arr[1])
+                        length = graphics.DrawText(offscreen_canvas, smallFont, pos, 26, red, arr[3])
+                        pos -= 1
+                        if (pos + length < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        time.sleep(0.01)
                     else:
-                        length = graphics.DrawText(offscreen_canvas, font, pos, 24, color, arr)
+                        versus = graphics.DrawText(offscreen_canvas, smallFont, 100, 12, red, 'John Deere Classic')
+                        length = graphics.DrawText(offscreen_canvas, smallFont, pos, 26, red, arr)
                         pos -= 1
                         if (pos + length < 0):
                             running = False
