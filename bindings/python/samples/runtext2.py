@@ -97,9 +97,6 @@ class RunText(SampleBase):
                         for game in arr:
                             if 'mlb logo' in game[0]:
                                 offscreen_canvas.SetImage(teamLogos['MLB'], pos + offset, -10)
-                            elif 'nhl logo' in game[0]:
-                                offscreen_canvas.SetImage(teamLogos['NHL'], pos + offset, -10)
-                            else:
                                 bases =  [[2,5],[6,0],[10,5]]
                                 outs = [[3,20],[9,20],[15,20]]
                                 awayTeamString = game[5]
@@ -110,6 +107,9 @@ class RunText(SampleBase):
                                 oddsString = game[14]
                                 awayPitcherString = game[18]
                                 homePitcherString = game[19]
+                            elif 'nhl logo' in game[0]:
+                                offscreen_canvas.SetImage(teamLogos['NHL'], pos + offset, -10)
+                            else:
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
@@ -251,7 +251,7 @@ class RunText(SampleBase):
                             else:
                                 offset = offset + homeTeam + homeTeamStatus + headlineString + 240
                             if 'pregame' in game[0]:
-                                offset = offset + 75
+                                offset = offset + 140
                         time.sleep(0.01)
                         if (pos + offset < 0):
                             running = False
