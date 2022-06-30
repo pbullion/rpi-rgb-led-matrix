@@ -286,7 +286,7 @@ class RunText(SampleBase):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.01)
-                    elif 'golf' === arr[0]:
+                    elif 'golf' == arr[0]:
                         print(arr[0])
                         versus = graphics.DrawText(offscreen_canvas, smallFont, 100, 12, red, arr[1])
                         length = graphics.DrawText(offscreen_canvas, smallFont, pos, 26, red, arr[3])
