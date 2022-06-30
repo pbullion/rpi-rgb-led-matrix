@@ -107,7 +107,6 @@ class RunText(SampleBase):
                             awayTeamStatus = 0
                             homeTeamStatus = 0
                             if 'pregame' in game[0]:
-                                
                                 bases =  [[2,5],[6,0],[10,5]]
                                 outs = [[3,20],[9,20],[15,20]]
                                 awayTeamString = game[5]
@@ -136,7 +135,6 @@ class RunText(SampleBase):
                                     awayPitcher = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + homeOdds + teamLogos[game[10]].width + buffer + buffer + buffer + buffer+ buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 12, yellow, awayPitcherString)
                                     homePitcher = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + homeOdds + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + + buffer + buffer + bufferbuffer+ homeTeam + homeTeamStatus, 26, yellow, homePitcherString)
                             if 'inProgress' in game[0]:
-                                
                                 bases =  [[2,5],[6,0],[10,5]]
                                 outs = [[3,20],[9,20],[15,20]]
                                 awayTeamString = game[5]
@@ -228,7 +226,6 @@ class RunText(SampleBase):
                                 situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal + 3, 19, yellow, countString)
                                 inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal - 5, 31, yellow, inningString)
                             if 'final' in game[0]:
-                                
                                 bases =  [[2,5],[6,0],[10,5]]
                                 outs = [[3,20],[9,20],[15,20]]
                                 awayTeamString = game[5]
@@ -289,7 +286,8 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         time.sleep(0.01)
                     elif isinstance(arr, list) and 'golf' in arr[0]:
-                        versus = graphics.DrawText(offscreen_canvas, smallFont, 100, 12, red, arr[1])
+                        print(arr[0])
+                        # versus = graphics.DrawText(offscreen_canvas, smallFont, 100, 12, red, arr[1])
                         length = graphics.DrawText(offscreen_canvas, smallFont, pos, 26, red, arr[3])
                         pos -= 1
                         if (pos + length < 0):
