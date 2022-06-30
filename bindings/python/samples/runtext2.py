@@ -274,7 +274,7 @@ class RunText(SampleBase):
                             else:
                                 offset = offset + homeTeam + homeTeamStatus + headlineString + 240
                             if 'pregame' in game[0]:
-                                offset = offset + 1
+                                offset = offset + 200
                         time.sleep(0.01)
                         if (pos + offset < 0):
                             running = False
