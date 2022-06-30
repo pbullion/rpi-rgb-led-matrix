@@ -97,6 +97,16 @@ class RunText(SampleBase):
                         for game in arr:
                             if 'mlb logo' in game[0]:
                                 offscreen_canvas.SetImage(teamLogos['MLB'], pos + offset, -10)
+                            elif 'nhl logo' in game[0]:
+                                offscreen_canvas.SetImage(teamLogos['NHL'], pos + offset, -10)
+                            
+                            awayTeam = 0
+                            homeTeam = 0
+                            headlineString = 0
+                            awayTeamStatus = 0
+                            homeTeamStatus = 0
+                            if 'pregame' in game[0]:
+                                
                                 bases =  [[2,5],[6,0],[10,5]]
                                 outs = [[3,20],[9,20],[15,20]]
                                 awayTeamString = game[5]
@@ -106,15 +116,7 @@ class RunText(SampleBase):
                                 statusString = game[11]
                                 oddsString = game[14]
                                 awayPitcherString = game[18]
-                                homePitcherString = game[19]
-                            if 'nhl logo' in game[0]:
-                                offscreen_canvas.SetImage(teamLogos['NHL'], pos + offset, -10)
-                            awayTeam = 0
-                            homeTeam = 0
-                            headlineString = 0
-                            awayTeamStatus = 0
-                            homeTeamStatus = 0
-                            if 'pregame' in game[0]: 
+                                homePitcherString = game[19] 
                                 awayOddsString = game[15]
                                 homeOddsString = game[16]
                                 offscreen_canvas.SetImage(teamLogos[game[5]], pos + offset, -10)
@@ -132,7 +134,18 @@ class RunText(SampleBase):
                                 else:
                                     awayPitcher = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + homeOdds + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 12, yellow, awayPitcherString)
                                     homePitcher = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + homeOdds + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 26, yellow, homePitcherString)
-                            if 'inProgress' in game[0]: 
+                            if 'inProgress' in game[0]:
+                                
+                                bases =  [[2,5],[6,0],[10,5]]
+                                outs = [[3,20],[9,20],[15,20]]
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                statusString = game[11]
+                                oddsString = game[14]
+                                awayPitcherString = game[18]
+                                homePitcherString = game[19] 
                                 runnerSituationString = game[15]
                                 pitcherNameString = game[17]
                                 batterNameString = game[19]
@@ -213,7 +226,18 @@ class RunText(SampleBase):
                                         graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[2][0], pos + offset + runningTotal + outs[2][1] + y_offset, pos + offset + runningTotal + outs[2][0] + outsSize, pos + offset + runningTotal + outs[2][1] + y_offset, red)
                                 situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal + 3, 19, yellow, countString)
                                 inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal - 5, 31, yellow, inningString)
-                            if 'final' in game[0]: 
+                            if 'final' in game[0]:
+                                
+                                bases =  [[2,5],[6,0],[10,5]]
+                                outs = [[3,20],[9,20],[15,20]]
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                statusString = game[11]
+                                oddsString = game[14]
+                                awayPitcherString = game[18]
+                                homePitcherString = game[19] 
                                 runnerSituationString = game[15]
                                 pitcherNameString = game[17]
                                 batterNameString = game[19]
@@ -250,7 +274,7 @@ class RunText(SampleBase):
                             else:
                                 offset = offset + homeTeam + homeTeamStatus + headlineString + 240
                             if 'pregame' in game[0]:
-                                offset = offset + 140
+                                offset = offset + 1
                         time.sleep(0.01)
                         if (pos + offset < 0):
                             running = False
