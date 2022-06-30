@@ -107,9 +107,8 @@ class RunText(SampleBase):
                                 oddsString = game[14]
                                 awayPitcherString = game[18]
                                 homePitcherString = game[19]
-                            elif 'nhl logo' in game[0]:
+                            if 'nhl logo' in game[0]:
                                 offscreen_canvas.SetImage(teamLogos['NHL'], pos + offset, -10)
-                            else:
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
