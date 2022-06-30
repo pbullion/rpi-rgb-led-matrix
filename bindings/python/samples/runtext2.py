@@ -135,7 +135,7 @@ class RunText(SampleBase):
                                     homePitcher = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + homeOdds + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer + buffer+ buffer + buffer + buffer + awayTeam + awayTeamStatus, 26, yellow, homePitcherString)
                                 else:
                                     awayPitcher = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + homeOdds + teamLogos[game[10]].width + buffer + buffer + buffer + buffer+ buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 12, yellow, awayPitcherString)
-                                    homePitcher = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + homeOdds + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + + buffer + buffer + bufferbuffer+ homeTeam + homeTeamStatus, 26, yellow, homePitcherString)
+                                    homePitcher = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + homeOdds + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + + buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 26, yellow, homePitcherString)
                             if 'inProgress' in game[0]:
                                 bases =  [[2,5],[6,0],[10,5]]
                                 outs = [[3,20],[9,20],[15,20]]
