@@ -122,7 +122,7 @@ class RunText(SampleBase):
                                 awayOddsString = game[15]
                                 homeOddsverUnderString = String = game[16]
                                 overUnderString = verUnderString = game[17]
-                                overUnderString.SetImage(teamLogos[game[5]], pos + offset, -10)
+                                offscreen_canvas.SetImage(teamLogos[game[5]], pos + offset, -10)
                                 versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + teamLogos[game[5]].width, 24, green, statusString)
                                 offscreen_canvas.SetImage(teamLogos[game[10]], pos + offset + teamLogos[game[5]].width + buffer + buffer + versus, -10)
                                 awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer, 12, white, awayTeamString)
