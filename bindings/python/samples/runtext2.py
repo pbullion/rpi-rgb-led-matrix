@@ -218,16 +218,16 @@ class RunText(SampleBase):
                                         graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + testing, pos + offset + runningTotal + x + half + testing, y + testing, yellow)
                                 if outsString == 1:
                                     for y_offset in range(outsSize):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[0][1], pos + runningTotal + offset + outs[0][0] + y_offset, pos + runningTotal + offset + outs[0][0] + outsSize, pos + runningTotal + offset + outs[0][0] + y_offset, red)
+                                        graphics.DrawLine(offscreen_canvas, pos  + runningTotal + outs[0][0], pos + runningTotal + offset + outs[0][1] + y_offset, pos + runningTotal + offset + outs[0][0] + outsSize, pos + runningTotal + offset + outs[0][1] + y_offset, red)
                                 elif outsString == 2:
                                     for y_offset in range(outsSize):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[0][1], pos + runningTotal + offset + outs[0][0] + y_offset, pos + runningTotal + offset + outs[0][1] + outsSize, pos + runningTotal + offset + outs[0][0] + y_offset, red)
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[1][1], pos + runningTotal + offset + outs[1][0] + y_offset, pos + runningTotal + offset + outs[1][1] + outsSize, pos + runningTotal + offset + outs[1][0] + y_offset, red)
+                                        graphics.DrawLine(offscreen_canvas, pos  + runningTotal + outs[0][0], pos + runningTotal + offset + outs[0][1] + y_offset, pos + runningTotal + offset + outs[0][0] + outsSize, pos + runningTotal + offset + outs[0][1] + y_offset, red)
+                                        graphics.DrawLine(offscreen_canvas, pos + runningTotal + outs[1][0], pos + runningTotal + offset + outs[1][1] + y_offset, pos + runningTotal + offset + outs[1][0] + outsSize, pos + runningTotal + offset + outs[1][1] + y_offset, red)
                                 elif outsString == 3:
                                     for y_offset in range(outsSize):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[0][1], pos + runningTotal + offset + outs[0][0] + y_offset, pos + runningTotal + offset + outs[0][1] + outsSize, pos + runningTotal + offset + outs[0][0] + y_offset, red)
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[1][1], pos + runningTotal + offset + outs[1][0] + y_offset, pos + runningTotal + offset + outs[1][1] + outsSize, pos + runningTotal + offset + outs[1][0] + y_offset, red)
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[2][1], pos + runningTotal + offset + outs[2][0] + y_offset, pos + runningTotal + offset + outs[2][1] + outsSize, pos + runningTotal + offset + outs[2][0] + y_offset, red)
+                                        graphics.DrawLine(offscreen_canvas, pos + runningTotal + outs[0][0], pos + runningTotal + offset + outs[0][1] + y_offset, pos + runningTotal + offset + outs[0][0] + outsSize, pos + runningTotal + offset + outs[0][1] + y_offset, red)
+                                        graphics.DrawLine(offscreen_canvas, pos + runningTotal + outs[1][0], pos + runningTotal + offset + outs[1][1] + y_offset, pos + runningTotal + offset + outs[1][0] + outsSize, pos + runningTotal + offset + outs[1][1] + y_offset, red)
+                                        graphics.DrawLine(offscreen_canvas, pos + runningTotal + outs[2][0], pos + runningTotal + offset + outs[2][1] + y_offset, pos + runningTotal + offset + outs[2][0] + outsSize, pos + runningTotal + offset + outs[2][1] + y_offset, red)
                                 situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal + 3, 19, yellow, countString)
                                 inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal - 5, 31, yellow, inningString)
                             if 'final' in game[0]:
