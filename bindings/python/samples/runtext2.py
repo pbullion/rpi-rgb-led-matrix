@@ -188,10 +188,10 @@ class RunText(SampleBase):
                                     graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + base[0] + baseHalf, base[1]+ baseSize, pos + offset + runningTotal + base[0], base[1]+ baseHalf, yellow)
                                     graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + base[0] + baseHalf, base[1]+ baseSize, pos + offset + runningTotal + base[0] + baseSize, base[1]+ baseHalf, yellow)
                                 for out in outs:
-                                graphics.DrawLine(offscreen_canvas, pos + runningTotal + out[0], out[1], pos + runningTotal + out[0] + outsSize, out[1], red)
-                                graphics.DrawLine(offscreen_canvas, pos + runningTotal + out[0], out[1], pos + runningTotal + out[0], out[1] + outsSize, red)
-                                graphics.DrawLine(offscreen_canvas, pos + runningTotal + out[0] + outsSize, out[1] + outsSize, pos + runningTotal + out[0], out[1] + outsSize, red)
-                                graphics.DrawLine(offscreen_canvas, pos + runningTotal + out[0] + outsSize, out[1] + outsSize, pos + runningTotal + out[0] + outsSize, out[1], red)
+                                    graphics.DrawLine(offscreen_canvas, pos + runningTotal + out[0], out[1], pos + runningTotal + out[0] + outsSize, out[1], red)
+                                    graphics.DrawLine(offscreen_canvas, pos + runningTotal + out[0], out[1], pos + runningTotal + out[0], out[1] + outsSize, red)
+                                    graphics.DrawLine(offscreen_canvas, pos + runningTotal + out[0] + outsSize, out[1] + outsSize, pos + runningTotal + out[0], out[1] + outsSize, red)
+                                    graphics.DrawLine(offscreen_canvas, pos + runningTotal + out[0] + outsSize, out[1] + outsSize, pos + runningTotal + out[0] + outsSize, out[1], red)
                                 if '1st' in runnerSituationString or 'Bases Loaded' in runnerSituationString:
                                     x = bases[0][0]
                                     y = bases[0][1]
