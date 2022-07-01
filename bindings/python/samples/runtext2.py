@@ -300,7 +300,12 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         time.sleep(0.025)
                     else:
-                        time.sleep(0.01)
+                        length = graphics.DrawText(offscreen_canvas, smallFont, pos, 26, green, arr)
+                        pos -= 1
+                        if (pos + length < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        time.sleep(0.025)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
