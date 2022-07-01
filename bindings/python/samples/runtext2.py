@@ -289,7 +289,7 @@ class RunText(SampleBase):
                         if (pos + length < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.025)
+                        time.sleep(0.035)
                     elif arr[0] == 'golf':
                         versus = graphics.DrawText(offscreen_canvas, smallFont, 115, 12, green, arr[1])
                         roundStatus = graphics.DrawText(offscreen_canvas, smallFont, 115 + versus + 20, 12, green, arr[2])
@@ -298,14 +298,14 @@ class RunText(SampleBase):
                         if (pos + length < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.025)
+                        time.sleep(0.035)
                     else:
-                        length = graphics.DrawText(offscreen_canvas, smallFont, pos, 26, green, arr)
+                        length = graphics.DrawText(offscreen_canvas, font, pos, 26, green, arr)
                         pos -= 1
                         if (pos + length < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.025)
+                        time.sleep(0.035)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
