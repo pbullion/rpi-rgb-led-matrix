@@ -181,17 +181,17 @@ class RunText(SampleBase):
                                 baseSize = 6
                                 outsSize = 4
                                 baseHalf = abs(baseSize/2)
-                                outsHalf = outsSize
+                                outsHalf = abs(outsSize/2)
                                 for base in bases:
                                     graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + base[0] + baseHalf, base[1], pos + offset + runningTotal + base[0], base[1]+ baseHalf, yellow)
                                     graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + base[0] + baseHalf, base[1], pos + offset + runningTotal + base[0] + baseSize, base[1]+ baseHalf, yellow)
                                     graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + base[0] + baseHalf, base[1]+ baseSize, pos + offset + runningTotal + base[0], base[1]+ baseHalf, yellow)
                                     graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + base[0] + baseHalf, base[1]+ baseSize, pos + offset + runningTotal + base[0] + baseSize, base[1]+ baseHalf, yellow)
                                 for out in outs:
-                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0], out[1], pos + offset + runningTotal + out[0], out[1], red)
-                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0], out[1], pos + offset + runningTotal + out[0] + outsSize, out[1], red)
-                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0], out[1]+ outsSize, pos + offset + runningTotal + out[0], out[1], red)
-                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0], out[1]+ outsSize, pos + offset + runningTotal + out[0] + outsSize, out[1], red)
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0] , out[1], pos + offset + runningTotal + out[0] + outsSize, out[1], red)
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0] , out[1], pos + offset + runningTotal + out[0] + outsSize, out[1], red)
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0] + outsSize, out[1]+ outsSize, pos + offset + runningTotal + out[0], out[1]+ outsSize, red)
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0] + outsSize, out[1]+ outsSize, pos + offset + runningTotal + out[0] + outsSize, out[1]+ outsSize, red)
                                 if '1st' in runnerSituationString or 'Bases Loaded' in runnerSituationString:
                                     x = bases[0][0]
                                     y = bases[0][1]
@@ -222,24 +222,24 @@ class RunText(SampleBase):
                                     size = 6
                                     half = round(abs(size/2))
                                     for testing in range(1, half + 1):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + size - testing, pos + offset + runningTotal + x + half + testing, y + size - testing, red)
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + testing, pos + offset + runningTotal + x + half + testing, y + testing, red)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + size - testing, pos + offset + runningTotal + x + half + testing, y + size - testing, yellow)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + testing, pos + offset + runningTotal + x + half + testing, y + testing, yellow)
                                 if outsString == 2:
                                     x = outs[1][0]
                                     y = outs[1][1]
                                     size = 6
                                     half = round(abs(size/2))
                                     for testing in range(1, half + 1):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + size - testing, pos + offset + runningTotal + x + half + testing, y + size - testing, red)
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + testing, pos + offset + runningTotal + x + half + testing, y + testing, red)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + size - testing, pos + offset + runningTotal + x + half + testing, y + size - testing, yellow)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + testing, pos + offset + runningTotal + x + half + testing, y + testing, yellow)
                                 if outsString == 3:
                                     x = outs[2][0]
                                     y = outs[2][1]
                                     size = 6
                                     half = round(abs(size/2))
                                     for testing in range(1, half + 1):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + size - testing, pos + offset + runningTotal + x + half + testing, y + size - testing, red)
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + testing, pos + offset + runningTotal + x + half + testing, y + testing, red)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + size - testing, pos + offset + runningTotal + x + half + testing, y + size - testing, yellow)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + testing, pos + offset + runningTotal + x + half + testing, y + testing, yellow)
                                 # if outsString == 1:
                                 #     for y_offset in range(outsSize):
                                 #         graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[0][0] - y_offset, pos + runningTotal + offset + outs[0][1] - y_offset, pos + runningTotal + offset + outs[0][0] + outsSize, pos + runningTotal + offset + outs[0][1] - y_offset, red)
