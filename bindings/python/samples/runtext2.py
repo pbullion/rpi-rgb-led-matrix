@@ -219,7 +219,7 @@ class RunText(SampleBase):
                                 if outsString == 1:
                                     print('it was ONE')
                                     for y_offset in range(outsSize):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[0][1], pos + runningTotal + offset + outs[0][0] + y_offset, pos + runningTotal + offset + outs[0][0] + outsSize, pos + runningTotal + offset + outs[0][1] + y_offset, red)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[0][1], pos + runningTotal + offset + outs[0][0] + y_offset, pos + runningTotal + offset + outs[0][0] + outsSize, pos + runningTotal + offset + outs[0][0] + y_offset, red)
                                 elif outsString == 2:
                                     for y_offset in range(outsSize):
                                         graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[0][0], pos + runningTotal + offset + outs[0][1] + y_offset, pos + runningTotal + offset + outs[0][0] + outsSize, pos + runningTotal + offset + outs[0][1] + y_offset, red)
