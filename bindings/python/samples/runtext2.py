@@ -188,10 +188,10 @@ class RunText(SampleBase):
                                     graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + base[0] + baseHalf, base[1]+ baseSize, pos + offset + runningTotal + base[0], base[1]+ baseHalf, yellow)
                                     graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + base[0] + baseHalf, base[1]+ baseSize, pos + offset + runningTotal + base[0] + baseSize, base[1]+ baseHalf, yellow)
                                 for out in outs:
-                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[0] + outsHalf, outs[1], pos + offset + runningTotal + outs[0], outs[1]+ outsHalf, red)
-                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[0] + outsHalf, outs[1], pos + offset + runningTotal + outs[0] + outsSize, outs[1]+ outsHalf, red)
-                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[0] + outsHalf, outs[1]+ outsSize, pos + offset + runningTotal + outs[0], outs[1]+ outsHalf, red)
-                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + outs[0] + outsHalf, outs[1]+ outsSize, pos + offset + runningTotal + outs[0] + outsSize, outs[1]+ outsHalf, red)
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0] + outsHalf, out[1], pos + offset + runningTotal + out[0], out[1]+ outsHalf, red)
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0] + outsHalf, out[1], pos + offset + runningTotal + out[0] + outsSize, out[1]+ outsHalf, red)
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0] + outsHalf, out[1]+ outsSize, pos + offset + runningTotal + out[0], out[1]+ outsHalf, red)
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0] + outsHalf, out[1]+ outsSize, pos + offset + runningTotal + out[0] + outsSize, out[1]+ outsHalf, red)
                                 if '1st' in runnerSituationString or 'Bases Loaded' in runnerSituationString:
                                     x = bases[0][0]
                                     y = bases[0][1]
