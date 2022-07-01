@@ -192,6 +192,7 @@ class RunText(SampleBase):
                                     graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0], out[1], pos + offset + runningTotal + out[0], out[1] + outsSize, red)
                                     graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0] + outsSize, out[1] + outsSize, pos + offset + runningTotal + out[0], out[1] + outsSize, red)
                                     graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0] + outsSize, out[1] + outsSize, pos + offset + runningTotal + out[0] + outsSize, out[1], red)
+                                print(runnerSituationString)
                                 if '1st' in runnerSituationString or 'Bases Loaded' in runnerSituationString:
                                     x = bases[0][0]
                                     y = bases[0][1]
