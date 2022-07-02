@@ -222,8 +222,8 @@ class RunText(SampleBase):
                                     size = 4
                                     half = round(abs(6/2))
                                     for testing in range(size):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + 1, y + size - testing, pos + offset + runningTotal + x + testing, y + size - testing, red)
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + 1, y + testing, pos + offset + runningTotal + x + testing, y + testing, red)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - 1, y + size - testing, pos + offset + runningTotal + x + testing, y + size - testing, red)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - 1, y + testing, pos + offset + runningTotal + x + testing, y + testing, red)
                                 if outsString == 2:
                                     x = outs[1][0]
                                     y = outs[1][1]
