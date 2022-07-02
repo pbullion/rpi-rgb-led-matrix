@@ -222,15 +222,15 @@ class RunText(SampleBase):
                                     size = 4
                                     half = round(abs(6/2))
                                     for testing in range(1, half):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - testing, y + size - testing, pos + offset + runningTotal + x + testing, y + size - testing, green)
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - testing, y + testing, pos + offset + runningTotal + x + testing, y + testing, green)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - testing, y + size - testing, pos + offset + runningTotal + x - testing, y + size - testing, green)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - testing, y - testing, pos + offset + runningTotal + x - testing, y - testing, green)
                                 if outsString == 2:
                                     x = outs[1][0]
                                     y = outs[1][1]
                                     size = 4
                                     half = round(abs(size/2))
                                     for testing in range(half):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - testing, y + size - testing, pos + offset + runningTotal + x + testing, y + size - testing, red)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - testing, y + size - testing, pos + offset + runningTotal + x - testing, y + size - testing, red)
                                         graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - testing, y + testing, pos + offset + runningTotal + x + testing, y + testing, red)
                                 if outsString == 3:
                                     x = outs[2][0]
