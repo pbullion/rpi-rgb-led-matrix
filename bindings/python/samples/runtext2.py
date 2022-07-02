@@ -108,8 +108,6 @@ class RunText(SampleBase):
                             awayTeamStatus = 0
                             homeTeamStatus = 0
                             if 'pregame' in game[0]:
-                                bases =  [[2,5],[6,0],[10,5]]
-                                outs = [[3,20],[9,20],[15,20]]
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
                                 awayTeamStatusString = game[12]
@@ -180,7 +178,6 @@ class RunText(SampleBase):
                                 baseSize = 6
                                 outsSize = 4
                                 baseHalf = abs(baseSize/2)
-                                outsHalf = abs(outsSize/2)
                                 for base in bases:
                                     graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + base[0] + baseHalf, base[1], pos + offset + runningTotal + base[0], base[1]+ baseHalf, yellow)
                                     graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + base[0] + baseHalf, base[1], pos + offset + runningTotal + base[0] + baseSize, base[1]+ baseHalf, yellow)
