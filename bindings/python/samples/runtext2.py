@@ -220,7 +220,7 @@ class RunText(SampleBase):
                                     x = outs[0][0]
                                     y = outs[0][1]
                                     size = 4
-                                    half = round(abs(6/2))
+                                    half = round(abs(4/2))
                                     for testing in range(1, half + 1):
                                         graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - testing, y + size - testing, pos + offset + runningTotal + x + testing, y + size - testing, green)
                                         graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - testing, y + testing, pos + offset + runningTotal + x + testing, y - testing, green)
