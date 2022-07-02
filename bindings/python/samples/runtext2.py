@@ -221,19 +221,19 @@ class RunText(SampleBase):
                                     y = outs[0][1]
                                     size = 4
                                     for y_offset in range(size):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x, y + y_offset, pos + runningTotal + offset + x + outsSize, y + y_offset, green)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x, y + y_offset, pos + runningTotal + offset + x + outsSize, y + y_offset, red)
                                 if outsString == 2 or outsString == 3:
                                     x = outs[1][0]
                                     y = outs[1][1]
                                     size = 4
                                     for y_offset in range(size):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x, y + y_offset, pos + runningTotal + offset + x + outsSize, y + y_offset, green)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x, y + y_offset, pos + runningTotal + offset + x + outsSize, y + y_offset, red)
                                 if outsString == 3:
                                     x = outs[2][0]
                                     y = outs[2][1]
                                     size = 4
                                     for y_offset in range(size):
-                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x, y + y_offset, pos + runningTotal + offset + x + outsSize, y + y_offset, green)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x, y + y_offset, pos + runningTotal + offset + x + outsSize, y + y_offset, red)
                                 situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal + 3, 19, yellow, countString)
                                 inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal - 5, 31, yellow, inningString)
                             if 'final' in game[0]:
