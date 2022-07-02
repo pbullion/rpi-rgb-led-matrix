@@ -220,7 +220,7 @@ class RunText(SampleBase):
                                     x = outs[0][0]
                                     y = outs[0][1]
                                     size = 4
-                                    half = 6
+                                    half = round(abs(size/2))
                                     for testing in range(half):
                                         graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - testing, y + size - testing, pos + offset + runningTotal + x + testing, y + size - testing, red)
                                         graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - testing, y + testing, pos + offset + runningTotal + x + testing, y + testing, red)
@@ -228,7 +228,7 @@ class RunText(SampleBase):
                                     x = outs[1][0]
                                     y = outs[1][1]
                                     size = 4
-                                    half = 6
+                                    half = round(abs(size/2))
                                     for testing in range(half):
                                         graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - testing, y + size - testing, pos + offset + runningTotal + x + testing, y + size - testing, red)
                                         graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - testing, y + testing, pos + offset + runningTotal + x + testing, y + testing, red)
@@ -236,7 +236,7 @@ class RunText(SampleBase):
                                     x = outs[2][0]
                                     y = outs[2][1]
                                     size = 4
-                                    half = 6
+                                    half = round(abs(size/2))
                                     for testing in range(half):
                                         graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - testing, y + size - testing, pos + offset + runningTotal + x + testing, y + size - testing, red)
                                         graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x - testing, y + testing, pos + offset + runningTotal + x + testing, y + testing, red)
