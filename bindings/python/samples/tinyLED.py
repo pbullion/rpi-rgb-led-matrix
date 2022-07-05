@@ -337,7 +337,7 @@ class RunText(SampleBase):
                         win = graphics.DrawText(canvas, slightlyBiggerFont, 35, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['win']))
                         loss = graphics.DrawText(canvas, slightlyBiggerFont, 60, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['loss']))
                         gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 80, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['gamesBack']))
-                        last10 = graphics.DrawText(canvas, smallestFont, 110, runningBuffer - 2, green if team['gamesBack'] == 0 else red, str(team['last10']))
+                        last10 = graphics.DrawText(canvas, smallestFont, 110, runningBuffer + 2, green if team['gamesBack'] == 0 else red, str(team['last10']))
                         runningBuffer = runningBuffer + 11
                         runningBlockBuffer = runningBlockBuffer + 11
                     time.sleep(5)
