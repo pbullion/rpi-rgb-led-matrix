@@ -337,7 +337,7 @@ class RunText(SampleBase):
                         win = graphics.DrawText(canvas, slightlyBiggerFont, 35, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['win']))
                         loss = graphics.DrawText(canvas, slightlyBiggerFont, 60, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['loss']))
                         gamesBack = graphics.DrawText(canvas, slightlyBiggerFont, 80, runningBuffer, green if team['gamesBack'] == 0 else red, str(team['gamesBack']))
-                        last10 = graphics.DrawText(canvas, smallestFont, 110, runningBuffer + 6, green if team['gamesBack'] == 0 else red, str(team['last10']))
+                        last10 = graphics.DrawText(canvas, smallestFont, 115, runningBuffer - 2, green if team['gamesBack'] == 0 else red, str(team['last10']))
                         runningBuffer = runningBuffer + 11
                         runningBlockBuffer = runningBlockBuffer + 11
                     time.sleep(5)
@@ -448,11 +448,11 @@ class RunText(SampleBase):
                     currentDayBlack = graphics.DrawText(canvas, slightlyBiggerFont, 150, 5, black, item['day'])
                     currentMonthBlack = graphics.DrawText(canvas, slightlyBiggerFont, 150, 23, black, item['month'])
                     currentDateBlack = graphics.DrawText(canvas, slightlyBiggerFont, 150, 23, black, item['date'])
-                    currentTime = graphics.DrawText(canvas, font, 0, 20, yellow, item['time'])
-                    currentTimeAmPm = graphics.DrawText(canvas, middleFont, currentTime + 4, 20, yellow, item['amPM'])
+                    currentTime = graphics.DrawText(canvas, font, 0, 20, purple, item['time'])
+                    currentTimeAmPm = graphics.DrawText(canvas, middleFont, currentTime + 4, 20, purple, item['amPM'])
                     currentDay = graphics.DrawText(canvas, slightlyBiggerFont, 64 - (currentDayBlack / 2), 30, green, item['day'])
-                    currentMonth = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentMonthBlack, 9, blue, item['month'])
-                    currentDate = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentDateBlack, 21, blue, item['date'])
+                    currentMonth = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentMonthBlack, 9, yellow, item['month'])
+                    currentDate = graphics.DrawText(canvas, slightlyBiggerFont, 127 - currentDateBlack, 21, yellow, item['date'])
                     time.sleep(5)
                 else:
                     time.sleep(0)
