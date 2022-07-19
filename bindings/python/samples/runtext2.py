@@ -308,7 +308,7 @@ class RunText(SampleBase):
                             running = False
                             pos = offscreen_canvas.width
                     elif isinstance(arr, list) and 'rssFeed' in arr[0]:
-                        versus = graphics.DrawText(offscreen_canvas, bFont, 175, 12, green, arr[1])
+                        versus = graphics.DrawText(offscreen_canvas, bFont, 175, 12, blue, arr[1])
                         length = graphics.DrawText(offscreen_canvas, bFont, pos, 26, green, arr[2])
                         pos -= 1
                         if (pos + length < 0):
@@ -319,7 +319,7 @@ class RunText(SampleBase):
                         running = False
                         pos = offscreen_canvas.width
                     elif arr[0] == 'golf':
-                        versus = graphics.DrawText(offscreen_canvas, smallFont, 115, 12, blue, arr[1])
+                        versus = graphics.DrawText(offscreen_canvas, smallFont, 115, 12, green, arr[1])
                         roundStatus = graphics.DrawText(offscreen_canvas, smallFont, 115 + versus + 20, 12, green, arr[2])
                         length = graphics.DrawText(offscreen_canvas, smallFont, pos, 26, green, arr[3])
                         pos -= 1
