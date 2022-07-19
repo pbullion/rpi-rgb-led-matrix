@@ -292,7 +292,7 @@ class RunText(SampleBase):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.035)
-                    elif arr === false:
+                    elif arr == false:
                         running = False
                         pos = offscreen_canvas.width
                     elif arr[0] == 'golf':
