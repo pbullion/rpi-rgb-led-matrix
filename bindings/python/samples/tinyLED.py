@@ -401,7 +401,6 @@ class RunText(SampleBase):
                         color = yellow
                     dayOfWeek = graphics.DrawText(canvas, middleFont, 36, 24, color, item['day'])
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
-                    print(weatherConditionText)
                     centered = 75 - (weatherConditionText / 2)
                     weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, centered, 8, blue, item['condition'])
                     highLow = graphics.DrawText(canvas, slightlyBiggerFont, 73, 22, green, item['highLow'])
