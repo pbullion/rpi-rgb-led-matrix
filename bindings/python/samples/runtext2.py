@@ -89,7 +89,6 @@ class RunText(SampleBase):
                 running = True
                 print('-------------------------------')
                 print(arr)
-                print(arr[0])
                 print('-------------------------------')
                 while running:
                     offscreen_canvas.Clear()
