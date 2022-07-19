@@ -298,9 +298,8 @@ class RunText(SampleBase):
                             logo = game[0]
                             stockStr = game[4]
                             # offscreen_canvas.SetImage(logo, pos + offset, -10)
-                            versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer, 24, color, stockStr)
-                            if 'pregame' in game[0]:
-                                offset = offset + 190
+                            string = graphics.DrawText(offscreen_canvas, font, pos + offset + buffer, 24, color, stockStr)
+                            offset = offset + string + 100
                         time.sleep(0.01)
                         if (pos + offset < 0):
                             running = False
