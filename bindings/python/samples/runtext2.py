@@ -65,7 +65,7 @@ class RunText(SampleBase):
             yellow = graphics.Color(255, 255, 0)
             white = graphics.Color(255, 255, 255)
             bFont = graphics.Font()
-            bFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/8x13O.bdf")
+            bFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/8x13.bdf")
             font = graphics.Font()
             font.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/texgyre-27.bdf")
             smallFont = graphics.Font()
