@@ -307,21 +307,14 @@ class RunText(SampleBase):
                         if (pos + offset < 0):
                             running = False
                             pos = offscreen_canvas.width
-                    # elif isinstance(arr, list) and 'rssFeed' in arr[0]:
-                    #     versus = graphics.DrawText(offscreen_canvas, smallFont, 200, 12, green, arr[1])
-                    #     length = graphics.DrawText(offscreen_canvas, smallFont, pos, 26, green, arr[2])
-                    #     pos -= 1
-                    #     if (pos + length < 0):
-                    #         running = False
-                    #         pos = offscreen_canvas.width
-                    #     time.sleep(0.025)
                     elif isinstance(arr, list) and 'rssFeed' in arr[0]:
+                        versus = graphics.DrawText(offscreen_canvas, bFont, 200, 12, green, arr[1])
                         length = graphics.DrawText(offscreen_canvas, bFont, pos, 26, green, arr[2])
                         pos -= 1
                         if (pos + length < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.02)
+                        time.sleep(0.025)
                     elif arr == False:
                         running = False
                         pos = offscreen_canvas.width
