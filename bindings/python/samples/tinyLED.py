@@ -367,11 +367,11 @@ class RunText(SampleBase):
                         canvas.SetImage(sunnyImage, 0, 0)
                         color = yellow
                     currentTemp = graphics.DrawText(canvas, font, 32, 31, color, item['temp'])
-                    weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
+                    weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['city'] + item['condition'])
                     print(weatherConditionText)
                     centered = 75 - (weatherConditionText / 2)
-                    weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, centered, 8, blue, item['condition'])
-                    highLow = graphics.DrawText(canvas, slightlyBiggerFont, 73, 22, green, item['highLow'])
+                    weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, centered, 8, blue, item['city'] + item['condition'])
+                    highLow = graphics.DrawText(canvas, alilbiggerFont, 73, 22, green, item['highLow'])
                     rainChance = graphics.DrawText(canvas, alilbiggerFont, 78, 30, blue, 'Rain: {}'.format(item['rainPercent']))
                     time.sleep(5)
                 elif type(item) is dict and 'condition' in item.keys():
@@ -382,7 +382,6 @@ class RunText(SampleBase):
                     stormyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-stormy-weather-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
                     sunnyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-summer-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
                     windyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-wind-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
-                    print(item['condition'])
                     color = blue
                     if 'RAIN' in item['condition'] or 'rain' in item['condition']:
                         canvas.SetImage(rainImage, 0, 0)
@@ -400,9 +399,9 @@ class RunText(SampleBase):
                         canvas.SetImage(sunnyImage, 0, 0)
                         color = yellow
                     dayOfWeek = graphics.DrawText(canvas, middleFont, 36, 24, color, item['day'])
-                    weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
+                    weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['city'] + item['condition'])
                     centered = 75 - (weatherConditionText / 2)
-                    weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, centered, 8, blue, item['condition'])
+                    weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, centered, 8, blue, item['city'] + item['condition'])
                     highLow = graphics.DrawText(canvas, alilbiggerFont, 73, 22, green, item['highLow'])
                     rainChance = graphics.DrawText(canvas, alilbiggerFont, 78, 30, blue, 'Rain: {}'.format(item['rainPercent']))
                     time.sleep(5)
