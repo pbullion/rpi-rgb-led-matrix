@@ -311,7 +311,7 @@ class RunText(SampleBase):
                         print(offscreen_canvas.width)
                         blackVs = graphics.DrawText(offscreen_canvas, bFont, 0, 12, green, arr[1])
                         print(blackVs)
-                        versus = graphics.DrawText(offscreen_canvas, bFont, offscreen_canvas.width / 2 + blackVs, 12, blue, arr[1])
+                        versus = graphics.DrawText(offscreen_canvas, bFont, offscreen_canvas.width / 2 - blackVs, 12, blue, arr[1])
                         length = graphics.DrawText(offscreen_canvas, bFont, pos, 26, green, arr[2])
                         pos -= 1
                         if (pos + length < 0):
