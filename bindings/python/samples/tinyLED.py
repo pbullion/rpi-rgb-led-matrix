@@ -403,7 +403,7 @@ class RunText(SampleBase):
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['condition'])
                     centered = 75 - (weatherConditionText / 2)
                     weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, centered, 8, blue, item['condition'])
-                    highLow = graphics.DrawText(canvas, slightlyBiggerFont, 73, 22, green, item['highLow'])
+                    highLow = graphics.DrawText(canvas, alilbiggerFont, 73, 22, green, item['highLow'])
                     rainChance = graphics.DrawText(canvas, alilbiggerFont, 78, 30, blue, 'Rain: {}'.format(item['rainPercent']))
                     time.sleep(5)
                 elif type(item) is dict and 'tourneyName' in item.keys():
