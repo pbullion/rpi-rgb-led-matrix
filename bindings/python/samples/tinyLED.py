@@ -372,7 +372,7 @@ class RunText(SampleBase):
                     centered = 75 - (weatherConditionText / 2)
                     weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, centered, 8, blue, item['city'] + item['condition'])
                     highLow = graphics.DrawText(canvas, alilbiggerFont, 78, 22, green, item['highLow'])
-                    rainChance = graphics.DrawText(canvas, alilbiggerFont, 78, 30, blue, 'Rain: {}'.format(item['rainPercent']))
+                    rainChance = graphics.DrawText(canvas, alilbiggerFont, 78, 30, blue, 'RAIN: {}'.format(item['rainPercent']))
                     time.sleep(8)
                 elif type(item) is dict and 'condition' in item.keys():
                     partlyCloudyImage = Image.open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/weather/icons8-partly-cloudy-day-48.png').convert('RGB').resize((36, 36), Image.ANTIALIAS)
@@ -403,7 +403,7 @@ class RunText(SampleBase):
                     centered = 75 - (weatherConditionText / 2)
                     weatherConditionText = graphics.DrawText(canvas, alilbiggerFont, centered, 8, blue, item['city'] + item['condition'])
                     highLow = graphics.DrawText(canvas, alilbiggerFont, 78, 22, green, item['highLow'])
-                    rainChance = graphics.DrawText(canvas, alilbiggerFont, 78, 30, blue, 'Rain: {}'.format(item['rainPercent']))
+                    rainChance = graphics.DrawText(canvas, alilbiggerFont, 78, 30, blue, 'RAIN: {}'.format(item['rainPercent']))
                     time.sleep(8)
                 elif type(item) is dict and 'tourneyName' in item.keys():
                     offscreen_canvas = self.matrix.CreateFrameCanvas()
