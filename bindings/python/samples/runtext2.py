@@ -64,6 +64,8 @@ class RunText(SampleBase):
             purple = graphics.Color(102, 0, 204)
             yellow = graphics.Color(255, 255, 0)
             white = graphics.Color(255, 255, 255)
+            bFont = graphics.Font()
+            font.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/7x14B.bdf")
             font = graphics.Font()
             font.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/texgyre-27.bdf")
             smallFont = graphics.Font()
@@ -314,7 +316,7 @@ class RunText(SampleBase):
                     #         pos = offscreen_canvas.width
                     #     time.sleep(0.025)
                     elif isinstance(arr, list) and 'rssFeed' in arr[0]:
-                        length = graphics.DrawText(offscreen_canvas, middleFont, pos, 26, green, arr[2])
+                        length = graphics.DrawText(offscreen_canvas, bFont, pos, 26, green, arr[2])
                         pos -= 1
                         if (pos + length < 0):
                             running = False
