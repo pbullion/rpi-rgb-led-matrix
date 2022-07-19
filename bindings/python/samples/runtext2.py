@@ -291,7 +291,7 @@ class RunText(SampleBase):
                         if (pos + length < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.04)
+                        time.sleep(0.02)
                     elif arr == False:
                         running = False
                         pos = offscreen_canvas.width
