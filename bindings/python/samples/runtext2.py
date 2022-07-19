@@ -285,7 +285,7 @@ class RunText(SampleBase):
                             running = False
                             pos = offscreen_canvas.width
                     if isinstance(arr, list) and 'stocks' in arr[0]:
-                        for game in arr:
+                        for game in arr[1]:
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
