@@ -95,12 +95,10 @@ class RunText(SampleBase):
                     pos -= 1
                     offset = 0
                     if isinstance(arr, list) and 'mlb logo' in arr[0][0]:
-                        print('heerrrrreeeeeeeee')
                         for game in arr:
                             if 'mlb logo' in game[0]:
+                                print('heerrrrreeeeeeeee')
                                 offscreen_canvas.SetImage(teamLogos['MLB'], pos + offset, -10)
-                            elif 'nhl logo' in game[0]:
-                                offscreen_canvas.SetImage(teamLogos['NHL'], pos + offset, -10)
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
