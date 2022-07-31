@@ -283,7 +283,7 @@ class RunText(SampleBase):
                                 offset = offset + homeTeam + homeTeamStatus + headlineString + 240
                             if 'pregame' in game[0]:
                                 offset = offset + 190
-                            time.sleep(0.05)
+                            time.sleep(0.5)
                         if (pos + offset < 0):
                             running = False
                             pos = offscreen_canvas.width
