@@ -319,8 +319,11 @@ class RunText(SampleBase):
                         www = graphics.DrawText(offscreen_canvas, smallestFont, pos, 26, green, 'www.')
                         mancavedisplays = graphics.DrawText(offscreen_canvas, font, pos + www, 26, green, arr)
                         com = graphics.DrawText(offscreen_canvas, smallestFont, pos + www + mancavedisplays, 26, green, '.com')
-                        running = False
-                        pos = offscreen_canvas.width
+                        pos -= 1
+                        if (pos + length < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                        time.sleep(0.020)
                     elif isinstance(arr, list) and arr[0] == 'golf':
                         print(offscreen_canvas.width)
                         blackVs = graphics.DrawText(offscreen_canvas, bFont, -1000, 12, green, arr[1])
