@@ -94,7 +94,7 @@ class RunText(SampleBase):
                     buffer = 6
                     pos -= 1
                     offset = 0
-                    if isinstance(arr, list) and 'mlb' in arr[0][0]:
+                    if isinstance(arr, list) and 'mlb' in arr[0]:
                         for game in arr:
                             if 'mlb logo' in game[0]:
                                 offscreen_canvas.SetImage(teamLogos['MLB'], pos + offset, -10)
@@ -329,7 +329,7 @@ class RunText(SampleBase):
                         if (pos + length < 0):
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.035)
+                        time.sleep(0.1)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
