@@ -97,7 +97,7 @@ class RunText(SampleBase):
                     if isinstance(arr, list) and 'mlb logo' in arr[0][0]:
                         for game in arr:
                             if 'mlb logo' in game[0]:
-                                offscreen_canvas.SetImage(teamLogos['MLB'], pos + offset, -8)
+                                offscreen_canvas.SetImage(teamLogos['MLB'], pos + offset, -9)
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
@@ -295,8 +295,8 @@ class RunText(SampleBase):
                             stockStr = game[4]
                             # offscreen_canvas.SetImage(logo, pos + offset, -10)
                             string = graphics.DrawText(offscreen_canvas, font, pos + offset + buffer, 24, color, stockStr)
-                            offset = offset + string + 100
-                        time.sleep(0.02)
+                            offset = offset + string + 80
+                        time.sleep(0.015)
                         if (pos + offset < 0):
                             running = False
                             pos = offscreen_canvas.width
