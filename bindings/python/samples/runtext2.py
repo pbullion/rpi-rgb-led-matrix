@@ -102,7 +102,7 @@ class RunText(SampleBase):
                             print('-------------------------------')
                             if 'mlb logo' in game[0]:
                                 print('heerrrrreeeeeeeee')
-                                # offscreen_canvas.SetImage(teamLogos['MLB'], pos + offset, -10)
+                                offscreen_canvas.SetImage(teamLogos['MLB'], pos + offset, -10)
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
