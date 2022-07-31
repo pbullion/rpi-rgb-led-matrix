@@ -278,6 +278,7 @@ class RunText(SampleBase):
                                 offset = offset + homeTeam + homeTeamStatus + headlineString + 240
                             if 'pregame' in game[0]:
                                 offset = offset + 190
+                        print('heerrrrreeeeeeeee')
                         time.sleep(0.01)
                         if (pos + offset < 0):
                             running = False
@@ -324,6 +325,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         time.sleep(0.035)
                     else:
+                        print('in the else')
                         length = graphics.DrawText(offscreen_canvas, middleFont, pos, 26, green, arr)
                         pos -= 1
                         if (pos + length < 0):
