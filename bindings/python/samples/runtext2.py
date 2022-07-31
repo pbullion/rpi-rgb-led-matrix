@@ -94,7 +94,7 @@ class RunText(SampleBase):
                     buffer = 6
                     pos -= 1
                     offset = 0
-                    if isinstance(arr, list)
+                    if isinstance(arr, list):
                         print(arr[0])
                     if isinstance(arr, list) and 'mlb' in arr[0]:
                         for game in arr:
