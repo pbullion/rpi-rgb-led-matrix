@@ -312,7 +312,11 @@ class RunText(SampleBase):
                     elif arr == False:
                         running = False
                         pos = offscreen_canvas.width
+                    elif arr == '':
+                        running = False
+                        pos = offscreen_canvas.width
                     elif isinstance(arr, list) and arr[0] == 'golf':
+                        print('in the golf')
                         versus = graphics.DrawText(offscreen_canvas, smallFont, 115, 12, green, arr[1])
                         roundStatus = graphics.DrawText(offscreen_canvas, smallFont, 115 + versus + 20, 12, green, arr[2])
                         length = graphics.DrawText(offscreen_canvas, smallFont, pos, 26, green, arr[3])
