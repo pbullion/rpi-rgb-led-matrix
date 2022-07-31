@@ -98,7 +98,7 @@ class RunText(SampleBase):
                     if isinstance(arr, list) and 'mlb logo' in arr[0][0]:
                         for game in arr:
                             print('-------------------------------')
-                            print(game)
+                            print(game[0])
                             print('-------------------------------')
                             if 'mlb logo' in game[0]:
                                 print('heerrrrreeeeeeeee')
