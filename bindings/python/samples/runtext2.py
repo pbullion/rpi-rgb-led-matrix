@@ -76,7 +76,7 @@ class RunText(SampleBase):
             alilbiggerFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/5x7.bdf")
             middleFont = graphics.Font()
             middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
-            print('getting responseArr')
+            print('getting responseArrrrrrrrr')
             url = requests.get("https://sheline-art-website-api.herokuapp.com/patrick/all-data-2/spectatorsBarAndGrill")
             print('got url responseArr')
             responseArr = json.loads(url.text)
