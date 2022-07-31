@@ -324,8 +324,8 @@ class RunText(SampleBase):
                     elif isinstance(arr, list) and arr[0] == 'golf':
                         print(offscreen_canvas.width)
                         blackVs = graphics.DrawText(offscreen_canvas, bFont, -1000, 12, green, arr[1])
-                        versus = graphics.DrawText(offscreen_canvas, bFont, 250, 12, blue, arr[1])
-                        length = graphics.DrawText(offscreen_canvas, bFont, pos, 26, green, arr[2])
+                        versus = graphics.DrawText(offscreen_canvas, bFont, (offscreen_canvas.width / 2), 12, blue, arr[1])
+                        length = graphics.DrawText(offscreen_canvas, bFont, pos, 26, green, arr[3])
                         pos -= 1
                         if (pos + length < 0):
                             running = False
