@@ -81,6 +81,7 @@ class RunText(SampleBase):
             responseArr = json.loads(url.text)
             print(responseArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
+            print(offscreen_canvas)
             pos = offscreen_canvas.width
             color = green
             print(responseArr)
