@@ -97,6 +97,9 @@ class RunText(SampleBase):
                     offset = 0
                     if isinstance(arr, list) and 'mlb logo' in arr[0][0]:
                         for game in arr:
+                            print('-------------------------------')
+                            print(game)
+                            print('-------------------------------')
                             if 'mlb logo' in game[0]:
                                 print('heerrrrreeeeeeeee')
                                 # offscreen_canvas.SetImage(teamLogos['MLB'], pos + offset, -10)
