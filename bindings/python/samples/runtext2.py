@@ -39,7 +39,7 @@ class RunText(SampleBase):
                 'San Francisco Giants': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-san-francisco-giants-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Colorado Rockies': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-colorado-rockies-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Minnesota Twins': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-minnesota-twins-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                'Los Angeles Dodgers': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-los-angeles-dodgers-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Los Angeles Dodgers': Image.open(requests.get('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/LA_Dodgers_cap_logo.svg/1200px-LA_Dodgers_cap_logo.svg.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Atlanta Braves': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-atlanta-braves-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Seattle Mariners': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-seattle-mariners-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Los Angeles Angels': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-los-angeles-angels-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
