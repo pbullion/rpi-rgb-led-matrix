@@ -9,11 +9,9 @@ import json
 import random
 from PIL import Image
 import requests
-from dotenv import load_dotenv
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
-        load_dotenv()
         print(self)
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
