@@ -53,7 +53,7 @@ class RunText(SampleBase):
                 'Chicago White Sox': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-chicago-white-sox-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'St. Louis Cardinals': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-st-louis-cardinals-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Chicago Cubs': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-chicago-cubs-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                'Houston Astros': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-houston-astros-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Houston Astros': Image.open(requests.get('https://www.pngitem.com/pimgs/m/139-1395325_houston-astros-png-old-school-astros-logo-transparent.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
             }
         while True:
             green = graphics.Color(0, 255, 0)
