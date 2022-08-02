@@ -54,16 +54,16 @@ class RunText(SampleBase):
                 'St. Louis Cardinals': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-st-louis-cardinals-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Chicago Cubs': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-chicago-cubs-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Houston Astros': Image.open(requests.get('https://images.ctfassets.net/iiozhi00a8lc/t117_favicon117_qgouernt_ehw9pj78_png/700d0ebafa92b5499f3dc09bf465fc98/t117_favicon.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona Cardinals': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-arizona-cardinals-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Atlanta Falcons': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-atlanta-falcons-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Baltimore Ravens': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-baltimore-ravens-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Buffalo Bills': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-buffalo-bills-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Carolina Panthers': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-carolina-panthers-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Chicago Bears': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-chicago-bears-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Cincinnati Bengals': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-cincinnati-bengals-team-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Cleveland Browns': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-cleveland-browns-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Arizona Cardinals': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-arizona-cardinals-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Atlanta Falcons': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-atlanta-falcons-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Baltimore Ravens': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-baltimore-ravens-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Buffalo Bills': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-buffalo-bills-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Carolina Panthers': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-carolina-panthers-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Chicago Bears': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-chicago-bears-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Cincinnati Bengals': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-cincinnati-bengals-team-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Cleveland Browns': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-cleveland-browns-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Jacksonville Jaguars': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-jacksonville-jaguars-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Las Vegas Raiders': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-oakland-raiders-team-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
@@ -170,6 +170,184 @@ class RunText(SampleBase):
                                 else:
                                     awayPitcher = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + homeOdds + overUnderStr + teamLogos[game[10]].width + buffer + buffer+ buffer + buffer+ buffer + buffer + buffer + buffer+ buffer + buffer + buffer + buffer+ homeTeam + homeTeamStatus, 12, yellow, awayPitcherString)
                                     homePitcher = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + homeOdds + overUnderStr + teamLogos[game[10]].width + buffer + buffer+ buffer + buffer+ buffer + buffer + buffer + buffer + buffer + buffer + buffer + buffer + homeTeam + homeTeamStatus, 26, yellow, homePitcherString)
+                            if 'inProgress' in game[0]:
+                                bases =  [[10,5],[6,0],[2,5]]
+                                outs = [[2,20],[8,20],[14,20]]
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                statusString = game[11]
+                                oddsString = game[14]
+                                awayPitcherString = game[18]
+                                homePitcherString = game[19] 
+                                runnerSituationString = game[15]
+                                pitcherNameString = game[17]
+                                batterNameString = game[19]
+                                inningString = game[20]
+                                countString = game[21]
+                                outsString = game[22]
+                                if int(awayTeamStatusString) < int(homeTeamStatusString):
+                                    homeColor = green
+                                    awayColor = red
+                                elif int(awayTeamStatusString) == int(homeTeamStatusString):
+                                    homeColor = yellow
+                                    awayColor = yellow
+                                else:
+                                    homeColor = red
+                                    awayColor = green
+                                offscreen_canvas.SetImage(teamLogos[game[5]], pos + offset, -10)
+                                versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + teamLogos[game[5]].width, 24, green, 'vs')
+                                offscreen_canvas.SetImage(teamLogos[game[10]], pos + offset + teamLogos[game[5]].width + buffer + buffer + buffer + buffer + buffer, -10)
+                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer, 12, awayColor, awayTeamString)
+                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer, 26, homeColor, homeTeamString)
+                                scoreLocation = 0
+                                if (homeTeam > awayTeam):
+                                    scoreLocation = homeTeam + buffer + teamLogos[game[5]].width + versus + teamLogos[game[10]].width
+                                else:
+                                    scoreLocation = awayTeam + buffer + teamLogos[game[5]].width + versus + teamLogos[game[10]].width
+                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
+                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
+                                runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer 
+                                baseSize = 6
+                                outsSize = 4
+                                baseHalf = abs(baseSize/2)
+                                for base in bases:
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + base[0] + baseHalf, base[1], pos + offset + runningTotal + base[0], base[1]+ baseHalf, yellow)
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + base[0] + baseHalf, base[1], pos + offset + runningTotal + base[0] + baseSize, base[1]+ baseHalf, yellow)
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + base[0] + baseHalf, base[1]+ baseSize, pos + offset + runningTotal + base[0], base[1]+ baseHalf, yellow)
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + base[0] + baseHalf, base[1]+ baseSize, pos + offset + runningTotal + base[0] + baseSize, base[1]+ baseHalf, yellow)
+                                for out in outs:
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0], out[1], pos + offset + runningTotal + out[0] + outsSize, out[1], red)
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0], out[1], pos + offset + runningTotal + out[0], out[1] + outsSize, red)
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0] + outsSize, out[1] + outsSize, pos + offset + runningTotal + out[0], out[1] + outsSize, red)
+                                    graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + out[0] + outsSize, out[1] + outsSize, pos + offset + runningTotal + out[0] + outsSize, out[1], red)
+                                if '1st' in runnerSituationString or 'Bases Loaded' in runnerSituationString:
+                                    x = bases[0][0]
+                                    y = bases[0][1]
+                                    size = 6
+                                    half = round(abs(size/2))
+                                    for testing in range(1, half + 1):
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + size - testing, pos + offset + runningTotal + x + half + testing, y + size - testing, yellow)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + testing, pos + offset + runningTotal + x + half + testing, y + testing, yellow)
+                                if '2nd' in runnerSituationString or 'Bases Loaded' in runnerSituationString:
+                                    x = bases[1][0]
+                                    y = bases[1][1]
+                                    size = 6
+                                    half = round(abs(size/2))
+                                    for testing in range(1, half + 1):
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + size - testing, pos + offset + runningTotal + x + half + testing, y + size - testing, yellow)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + testing, pos + offset + runningTotal + x + half + testing, y + testing, yellow)
+                                if '3rd' in runnerSituationString or 'Bases Loaded' in runnerSituationString:
+                                    x = bases[2][0]
+                                    y = bases[2][1]
+                                    size = 6
+                                    half = round(abs(size/2))
+                                    for testing in range(1, half + 1):
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + size - testing, pos + offset + runningTotal + x + half + testing, y + size - testing, yellow)
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x + half - testing, y + testing, pos + offset + runningTotal + x + half + testing, y + testing, yellow)
+                                if outsString == 1 or outsString == 2 or outsString == 3:
+                                    x = outs[0][0]
+                                    y = outs[0][1]
+                                    size = 4
+                                    for y_offset in range(size):
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x, y + y_offset, pos + runningTotal + offset + x + outsSize, y + y_offset, red)
+                                if outsString == 2 or outsString == 3:
+                                    x = outs[1][0]
+                                    y = outs[1][1]
+                                    size = 4
+                                    for y_offset in range(size):
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x, y + y_offset, pos + runningTotal + offset + x + outsSize, y + y_offset, red)
+                                if outsString == 3:
+                                    x = outs[2][0]
+                                    y = outs[2][1]
+                                    size = 4
+                                    for y_offset in range(size):
+                                        graphics.DrawLine(offscreen_canvas, pos + offset + runningTotal + x, y + y_offset, pos + runningTotal + offset + x + outsSize, y + y_offset, red)
+                                situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal + 3, 19, yellow, countString)
+                                inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal - 5, 31, yellow, inningString)
+                            if 'final' in game[0]:
+                                bases =  [[2,5],[6,0],[10,5]]
+                                outs = [[3,20],[9,20],[15,20]]
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                statusString = game[11]
+                                oddsString = game[14]
+                                awayPitcherString = game[18]
+                                homePitcherString = game[19] 
+                                runnerSituationString = game[15]
+                                pitcherNameString = game[17]
+                                batterNameString = game[19]
+                                inningString = game[20]
+                                countString = game[21]
+                                outsString = game[22]
+                                headline = game[29]
+                                if int(awayTeamStatusString) < int(homeTeamStatusString):
+                                    homeColor = green
+                                    awayColor = red
+                                elif int(awayTeamStatusString) == int(homeTeamStatusString):
+                                    homeColor = yellow
+                                    awayColor = yellow
+                                else:
+                                    homeColor = red
+                                    awayColor = green
+                                offscreen_canvas.SetImage(teamLogos[game[5]], pos + offset, -10)
+                                versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + teamLogos[game[5]].width, 24, green, 'vs')
+                                offscreen_canvas.SetImage(teamLogos[game[10]], pos + offset + teamLogos[game[5]].width + buffer + buffer + buffer + buffer + buffer, -10)
+                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer, 12, awayColor, awayTeamString)
+                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer, 26, homeColor, homeTeamString)
+                                scoreLocation = 0
+                                if (homeTeam > awayTeam):
+                                    scoreLocation = homeTeam + buffer + teamLogos[game[5]].width + versus + teamLogos[game[10]].width
+                                else:
+                                    scoreLocation = awayTeam + buffer + teamLogos[game[5]].width + versus + teamLogos[game[10]].width
+                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
+                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
+                                runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer 
+                                finalString = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + runningTotal, 12, yellow, oddsString)
+                                headlineString = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + runningTotal, 26, green, headline)
+                            if awayTeam > homeTeam:
+                                offset = offset + awayTeam + awayTeamStatus + headlineString + 240
+                            else:
+                                offset = offset + homeTeam + homeTeamStatus + headlineString + 240
+                            if 'pregame' in game[0]:
+                                offset = offset + 190
+                        time.sleep(0.01)
+                        if (pos + offset < 0):
+                            running = False
+                            pos = offscreen_canvas.width
+                    if isinstance(arr, list) and 'nfl logo' in arr[0][0]:
+                        for game in arr:
+                            if 'nfl logo' in game[0]:
+                                offscreen_canvas.SetImage(teamLogos['NFL'], pos + offset, -9)
+                            awayTeam = 0
+                            homeTeam = 0
+                            headlineString = 0
+                            awayTeamStatus = 0
+                            homeTeamStatus = 0
+                            if 'pregame' in game[0]:
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                statusString = game[11]
+                                oddsString = game[14]
+                                awayOddsString = game[15]
+                                homeOddsString = String = game[16]
+                                overUnderString = verUnderString = game[17]
+                                offscreen_canvas.SetImage(teamLogos[game[5]], pos + offset, -10)
+                                versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + teamLogos[game[5]].width, 24, green, statusString)
+                                offscreen_canvas.SetImage(teamLogos[game[10]], pos + offset + teamLogos[game[5]].width + buffer + buffer + versus, -10)
+                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer, 12, white, awayTeamString)
+                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer+ buffer + buffer + awayTeam, 12, white, awayTeamStatusString)
+                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer, 26, white, homeTeamString)
+                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallestFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer+ buffer + buffer + homeTeam, 26, white, homeTeamStatusString)
+                                awayOdds = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer+ buffer + buffer + buffer + homeTeam + homeTeamStatus + buffer, 12, green, awayOddsString)
+                                homeOdds = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer+ buffer + buffer + buffer + homeTeam + homeTeamStatus + buffer, 26, green, homeOddsString)
+                                overUnderStr = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ buffer + buffer+ buffer + buffer+ buffer + buffer + buffer+ buffer + buffer + homeTeam + homeTeamStatus, 12, green, 'O/U')
+                                overUnderAmount = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ buffer + buffer + buffer+ buffer + buffer + buffer + buffer+ buffer + buffer+ homeTeam + homeTeamStatus, 26, green, overUnderString)
                             if 'inProgress' in game[0]:
                                 bases =  [[10,5],[6,0],[2,5]]
                                 outs = [[2,20],[8,20],[14,20]]
