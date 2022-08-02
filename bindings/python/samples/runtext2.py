@@ -19,7 +19,7 @@ class RunText(SampleBase):
     def run(self):
         teamLogos = {
                 'MLB': Image.open(requests.get('https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                'NFL': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-league-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'NFL': Image.open(requests.get('https://assets.stickpng.com/images/5895deb9cba9841eabab6099.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 # 'NHL': Image.open(requests.get('https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 # 'NHL': Image.open(requests.get('https://upload.wikimedia.org/wikipedia/en/3/3a/05_NHL_Shield.svg', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 # 'Tampa Bay Lightning': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nhl-tampa-bay-lightning-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
@@ -63,8 +63,8 @@ class RunText(SampleBase):
                 'Chicago Bears': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-chicago-bears-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Cincinnati Bengals': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-cincinnati-bengals-team-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Cleveland Browns': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-cleveland-browns-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                'Jacksonville Jaguars': Image.open(requests.get('https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                'Las Vegas Raiders': Image.open(requests.get('https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Jacksonville Jaguars': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-jacksonville-jaguars-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Las Vegas Raiders': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-oakland-raiders-team-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
