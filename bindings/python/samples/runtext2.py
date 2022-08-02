@@ -28,7 +28,7 @@ class RunText(SampleBase):
                 'Washington Nationals': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-washington-nationals-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Texas Rangers': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-texas-rangers-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'New York Mets': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-new-york-mets-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                'Miami Marlins': Image.open(requests.get('https://images.ctfassets.net/iiozhi00a8lc/t117_favicon117_qgouernt_ehw9pj78_png/700d0ebafa92b5499f3dc09bf465fc98/t117_favicon.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Miami Marlins': Image.open(requests.get('https://i.pinimg.com/originals/de/28/5a/de285a2a2a4656fc4c0be916c068df03.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Oakland Athletics': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-oakland-athletics-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Kansas City Royals': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-kansas-city-royals-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Toronto Blue Jays': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-toronto-blue-jays-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
