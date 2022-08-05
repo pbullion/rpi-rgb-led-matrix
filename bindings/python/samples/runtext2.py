@@ -348,7 +348,8 @@ class RunText(SampleBase):
                                 homeTeamString = game[10]
                                 awayTeamStatusString = game[12]
                                 homeTeamStatusString = game[13]
-                                statusString = game[11]
+                                situationString = game[15]
+                                statusString = game[16]
                                 oddsString = game[14]
                                 if int(awayTeamStatusString) < int(homeTeamStatusString):
                                     homeColor = green
@@ -372,6 +373,8 @@ class RunText(SampleBase):
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
                                 runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer 
+                                statusStr = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer + runningTotal, 12, awayColor, statusString)
+                                situationStr = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer + runningTotal, 26, homeColor, situationString)
                             if awayTeam > homeTeam:
                                 offset = offset + awayTeam + 240
                             else:
