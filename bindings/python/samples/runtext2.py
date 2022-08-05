@@ -431,7 +431,7 @@ class RunText(SampleBase):
                         mancavedisplays = graphics.DrawText(offscreen_canvas, font, pos + www, 26, green, arr)
                         com = graphics.DrawText(offscreen_canvas, middleFont, pos + www + mancavedisplays, 26, green, '.com')
                         pos -= 1
-                        if (pos + length < 0):
+                        if (pos + com < 0):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.020)
