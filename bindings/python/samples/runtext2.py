@@ -350,7 +350,7 @@ class RunText(SampleBase):
                                 homeTeamStatusString = game[13]
                                 situationString = game[15]
                                 statusString = game[16]
-                                oddsString = game[14]
+                                possession = game[17]
                                 if int(awayTeamStatusString) < int(homeTeamStatusString):
                                     homeColor = green
                                     awayColor = red
