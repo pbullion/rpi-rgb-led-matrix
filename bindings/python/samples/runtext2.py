@@ -374,6 +374,8 @@ class RunText(SampleBase):
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
                                 if possession == 'away':
                                     possessionPop = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer+ buffer+ buffer + 3, 12, green, '•')
+                                elif statusString == 'Halftime':
+                                    possessionPop = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer+ buffer+ buffer + 3, 12, green, '')
                                 else:
                                     possessionPop = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer+ buffer+ buffer + 3, 26, green, '•')
                                 statusStr = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer + buffer + buffer + buffer + buffer + possessionPop, 12, yellow, statusString)
