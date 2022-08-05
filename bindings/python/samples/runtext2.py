@@ -343,6 +343,37 @@ class RunText(SampleBase):
                                 # homeOdds = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer+ buffer + buffer + buffer + homeTeam + buffer, 26, green, homeOddsString)
                                 # overUnderStr = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ buffer + buffer+ buffer + buffer+ buffer + buffer + buffer+ buffer + buffer + homeTeam, 12, green, 'O/U')
                                 # overUnderAmount = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ buffer + buffer + buffer+ buffer + buffer + buffer + buffer+ buffer + buffer+ homeTeam, 26, green, overUnderString)
+                            if 'inProgress' in game[0]:
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                statusString = game[11]
+                                oddsString = game[14]
+                                if int(awayTeamStatusString) < int(homeTeamStatusString):
+                                    homeColor = green
+                                    awayColor = red
+                                elif int(awayTeamStatusString) == int(homeTeamStatusString):
+                                    homeColor = yellow
+                                    awayColor = yellow
+                                else:
+                                    homeColor = red
+                                    awayColor = green
+                                offscreen_canvas.SetImage(teamLogos[game[5]], pos + offset, -10)
+                                versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + teamLogos[game[5]].width, 24, green, 'vs')
+                                offscreen_canvas.SetImage(teamLogos[game[10]], pos + offset + teamLogos[game[5]].width + buffer + buffer + buffer + buffer + buffer, -10)
+                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer, 12, awayColor, awayTeamString)
+                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer, 26, homeColor, homeTeamString)
+                                scoreLocation = 0
+                                if (homeTeam > awayTeam):
+                                    scoreLocation = homeTeam + buffer + teamLogos[game[5]].width + versus + teamLogos[game[10]].width
+                                else:
+                                    scoreLocation = awayTeam + buffer + teamLogos[game[5]].width + versus + teamLogos[game[10]].width
+                                awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
+                                homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
+                                runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer 
+                                situation = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal + 3, 19, yellow, countString)
+                                inning = graphics.DrawText(offscreen_canvas, alilbiggerFont, pos + offset + runningTotal - 5, 31, yellow, inningString)
                             if awayTeam > homeTeam:
                                 offset = offset + awayTeam + 240
                             else:
