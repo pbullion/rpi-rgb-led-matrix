@@ -351,6 +351,8 @@ class RunText(SampleBase):
                                 situationString = game[15]
                                 statusString = game[16]
                                 oddsString = game[14]
+                                print(situationString)
+                                print(statusString)
                                 if int(awayTeamStatusString) < int(homeTeamStatusString):
                                     homeColor = green
                                     awayColor = red
@@ -373,8 +375,8 @@ class RunText(SampleBase):
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
                                 runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer 
-                                statusStr = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer + runningTotal, 12, awayColor, statusString)
-                                situationStr = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer + runningTotal, 26, homeColor, situationString)
+                                statusStr = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer + runningTotal, 12, yellow, statusString)
+                                situationStr = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer + runningTotal, 26, yellow, situationString)
                             if awayTeam > homeTeam:
                                 offset = offset + awayTeam + 240
                             else:
