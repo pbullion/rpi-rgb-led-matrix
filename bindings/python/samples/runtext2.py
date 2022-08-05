@@ -373,9 +373,9 @@ class RunText(SampleBase):
                                 awayTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 12, awayColor, awayTeamStatusString)
                                 homeTeamStatus = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer, 26, homeColor, homeTeamStatusString)
                                 if possession == 'away':
-                                    possessionPop = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer+ buffer+ buffer+ buffer, 12, green, '•')
+                                    possessionPop = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer+ buffer+ buffer + 3, 12, green, '•')
                                 else:
-                                    possessionPop = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer+ buffer+ buffer+ buffer, 26, green, '•')
+                                    possessionPop = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer+ buffer+ buffer + 3, 26, green, '•')
                                 statusStr = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer + buffer + buffer + buffer + buffer + possessionPop, 12, yellow, statusString)
                                 situationStr = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer + buffer + buffer + buffer + buffer + possessionPop, 26, yellow, situationString)
                             if awayTeam > homeTeam:
