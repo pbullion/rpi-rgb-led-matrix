@@ -380,10 +380,6 @@ class RunText(SampleBase):
                                     possessionPop = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer+ buffer+ buffer + 3, 26, green, '•')
                                 statusStr = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer + buffer + buffer + buffer + buffer + possessionPop, 12, yellow, statusString)
                                 situationStr = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + buffer + buffer + buffer + scoreLocation + buffer + buffer + buffer + buffer + buffer + possessionPop, 26, yellow, situationString)
-                            if awayTeam > homeTeam:
-                                offset = offset + awayTeam + 240
-                            else:
-                                offset = offset + homeTeam + 240
                             if 'pregame' in game[0]:
                                 offset = offset + 190
                             if 'inProgress' in game[0]:
@@ -423,6 +419,10 @@ class RunText(SampleBase):
                                 runningTotal = scoreLocation + buffer + buffer + awayTeamStatus + buffer + buffer + buffer + buffer + buffer 
                                 finalString = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + runningTotal, 12, yellow, oddsString)
                                 headlineString = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + buffer + runningTotal, 26, green, headline)
+                            if awayTeam > homeTeam:
+                                offset = offset + awayTeam + 240
+                            else:
+                                offset = offset + homeTeam + 240
                         time.sleep(0.01)
                         if (pos + offset < 0):
                             running = False
