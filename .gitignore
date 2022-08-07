@@ -3,4 +3,3 @@
 *~
 *.so
 .env
-./bindings/python/samples/user.json

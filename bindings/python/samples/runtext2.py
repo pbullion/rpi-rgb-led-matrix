@@ -9,7 +9,7 @@ import json
 import random
 from PIL import Image
 import requests
-userFile = open('/home/pi/rpi-rgb-led-matrix/bindings/python/samples/user.json')
+userFile = open('/home/pi/rpi-rgb-led-matrix/user.json')
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
@@ -19,8 +19,6 @@ class RunText(SampleBase):
 
     def run(self):
         userJSON = json.load(userFile)
-        print(userJSON)
-        print(userJSON['user'])
         teamLogos = {
                 'MLB': Image.open(requests.get('https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'NFL': Image.open(requests.get('https://pixy.org/src/147/thumbs350/1471745.jpg', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
@@ -69,33 +67,27 @@ class RunText(SampleBase):
                 'Cleveland Browns': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-cleveland-browns-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Jacksonville Jaguars': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-jacksonville-jaguars-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Las Vegas Raiders': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-oakland-raiders-team-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Dallas Cowboys': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-dallas-cowboys-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Denver Broncos': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-denver-broncos-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Detroit Lions': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-detroit-lions-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Green Bay Packers': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-green-bay-packers-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Houston Texans': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-houston-texans-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Indianapolis Colts': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-indianapolis-colts-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Los Angeles Chargers': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-los-angeles-chargers-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Los Angeles Rams': Image.open(requests.get('https://loodibee.com/wp-content/uploads/los-angeles-rams-2020-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Miami Dolphins': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-miami-dolphins-logo-2018.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Minnesota Vikings': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-minnesota-vikings-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'New England Patriots': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-new-england-patriots-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'New Orleans Saints': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-new-orleans-saints-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'New York Giants': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-new-york-giants-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'New York Jets': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-new-york-jets-team-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Philadelphia Eagles': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-philadelphia-eagles-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Pittsburgh Steelers': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-pittsburgh-steelers-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'San Francisco 49ers': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-san-francisco-49ers-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Seattle Seahawks': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-seattle-seahawks-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Tampa Bay Buccaneers': Image.open(requests.get('https://loodibee.com/wp-content/uploads/tampa-bay-buccaneers-2020-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Tennessee Titans': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-tennessee-titans-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Washington Commanders': Image.open(requests.get('https://loodibee.com/wp-content/uploads/washington-commanders-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
             }
         while True:
