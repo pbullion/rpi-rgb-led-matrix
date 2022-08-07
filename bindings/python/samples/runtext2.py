@@ -446,11 +446,11 @@ class RunText(SampleBase):
                                 awayOddsString = game[15]
                                 homeOddsString = String = game[16]
                                 overUnderString = verUnderString = game[17]
-                                offscreen_canvas.SetImage(teamLogos[game[5]], pos + offset, -10)
-                                versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + teamLogos[game[5]].width, 24, green, statusString)
-                                offscreen_canvas.SetImage(teamLogos[game[10]], pos + offset + teamLogos[game[5]].width + buffer + buffer + versus, -10)
-                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer, 12, white, awayTeamString)
-                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer, 26, white, homeTeamString)
+                                # offscreen_canvas.SetImage(teamLogos[game[5]], pos + offset, -10)
+                                # versus = graphics.DrawText(offscreen_canvas, middleFont, pos + offset + buffer + teamLogos[game[5]].width, 24, green, statusString)
+                                # offscreen_canvas.SetImage(teamLogos[game[10]], pos + offset + teamLogos[game[5]].width + buffer + buffer + versus, -10)
+                                awayTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + versus + buffer + buffer + buffer, 12, white, awayTeamString)
+                                homeTeam = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + versus + buffer + buffer + buffer, 26, white, homeTeamString)
                                 # awayOdds = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer+ buffer + buffer + buffer + homeTeam + buffer, 12, green, awayOddsString)
                                 # homeOdds = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer+ buffer + buffer + buffer + homeTeam + buffer, 26, green, homeOddsString)
                                 # overUnderStr = graphics.DrawText(offscreen_canvas, smallFont, pos + offset + teamLogos[game[5]].width + versus + teamLogos[game[10]].width + buffer + buffer + buffer + buffer + buffer+ buffer + buffer+ buffer + buffer+ buffer + buffer + buffer+ buffer + buffer + homeTeam, 12, green, 'O/U')
