@@ -9,7 +9,7 @@ import json
 import random
 from PIL import Image
 import requests
-userFile = open('data.json')
+userFile = open('user.json')
 
 class RunText(SampleBase):
     def __init__(self, *args, **kwargs):
