@@ -18,8 +18,8 @@ class RunText(SampleBase):
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
 
     def run(self):
-        user = json.load(userFile)
-        print(user)
+        userJSON = json.load(userFile)
+        print(userJSON.user)
         teamLogos = {
                 'MLB': Image.open(requests.get('https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'NFL': Image.open(requests.get('https://pixy.org/src/147/thumbs350/1471745.jpg', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
