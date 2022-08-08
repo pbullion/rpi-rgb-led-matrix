@@ -398,6 +398,21 @@ class RunText(SampleBase):
                     elif 'SUNNY' in item['condition'] or item['condition'] == 'SUNNY':
                         canvas.SetImage(sunnyImage, 0, 0)
                         color = yellow
+                    elif 'RAIN' in item['condition'] or 'rain' in item['condition'] or 'DRIZZLE' in item['condition'] or item['condition'] == 'DRIZZLE':
+                        canvas.SetImage(rainImage, 0, 0)
+                        color = blue
+                    elif 'CLOUDY' in item['condition'] or 'cloudy' in item['condition']:
+                        canvas.SetImage(partlyCloudyImage, 0, 0)
+                        color = yellow
+                    elif 'OVERCAST' in item['condition']:
+                        canvas.SetImage(cloudyImage, 0, 0)
+                        color = yellow
+                    elif 'THUNDER' in item['condition'] or 'thunder' in item['condition']:
+                        canvas.SetImage(thunderstormImage, 0, 0)
+                        color = blue
+                    elif 'SUNNY' in item['condition'] or 'CLEAR' in item['condition'] or item['condition'] == 'MOSTLYCLEAR':
+                        canvas.SetImage(sunnyImage, 0, 0)
+                        color = yellow
                     dayOfWeek = graphics.DrawText(canvas, middleFont, 36, 24, color, item['day'])
                     weatherConditionText = graphics.DrawText(canvas, smallestFont, 40, 2, black, item['city'] + item['condition'])
                     centered = 75 - (weatherConditionText / 2)
