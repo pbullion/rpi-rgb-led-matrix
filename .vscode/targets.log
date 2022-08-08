@@ -18,10 +18,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Sat Aug  6 14:33:44 2022
+# Make data base, printed on Mon Aug  8 13:04:21 2022
 
 # Variables
 
+ 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
@@ -45,7 +46,6 @@ NVM_INC = /Users/patrickbullion/.nvm/versions/node/v16.13.1/include/node
 # makefile
 CURDIR := /Users/patrickbullion/Code/led/rpi-rgb-led-matrix/lib
 # makefile
- 
 SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
@@ -69,8 +69,6 @@ PATH = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin:/Users/patrickbulli
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 NVM_BIN = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin
-# environment
-LaunchInstanceID = F0C35ECC-5274-45C2-B9C0-5847BA6CDA63
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
@@ -160,7 +158,7 @@ TERM_PROGRAM_VERSION = 3.4.16
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.36628820.36628827.8692E70C-E11E-4536-BACA-5C827A1B2C81
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.36628820.36628827.C3A0AD96-12BF-43B9-8292-77796772257A
 # environment
 LC_TERMINAL_VERSION = 3.4.16
 # environment
@@ -189,8 +187,6 @@ ITERM_PROFILE = Default
 PAGER = less
 # environment
 LC_ALL = C
-# environment
-SECURITYSESSIONID = 186b2
 # automatic
 ^F = $(notdir $^)
 # default
@@ -206,7 +202,7 @@ TERM = xterm-256color
 # environment
 VSCODE_PID = 9231
 # variable set hash-table stats:
-# Load=91/1024=9%, Rehash=0, Collisions=2/142=1%
+# Load=89/1024=9%, Rehash=0, Collisions=2/140=1%
 
 # Pattern-specific Variable Values
 
@@ -214,6 +210,7 @@ VSCODE_PID = 9231
 
 # Directories
 
+ 
 # . (device 16777230, inode 10097197): 22 files, no impossibilities.
 
 # 22 files, no impossibilities in 1 directories.
@@ -336,7 +333,6 @@ pixel-mapper.o:
 # Not a target:
 bdf-font.o:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -475,18 +471,19 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sat Aug  6 14:33:44 2022
+# Finished Make data base on Mon Aug  8 13:04:21 2022
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Sat Aug  6 14:33:44 2022
+# Make data base, printed on Mon Aug  8 13:04:21 2022
 
 # Variables
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
+ 
 # automatic
 ?F = $(notdir $?)
 # environment
@@ -509,8 +506,6 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 _ = /usr/bin/make
 # makefile (from `Makefile', line 5)
 RGB_LIBRARY_NAME = rgbmatrix
-# makefile (from `Makefile', line 10)
-CSHARP_LIB_DIR = bindings/c#
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
@@ -528,8 +523,6 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 NVM_BIN = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin
 # environment
-LaunchInstanceID = F0C35ECC-5274-45C2-B9C0-5847BA6CDA63
-# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
@@ -540,7 +533,6 @@ SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.jQWfyNT6FK/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
- 
 PWD = /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
 # environment
 HOMEBREW_CELLAR = /opt/homebrew/Cellar
@@ -623,7 +615,7 @@ TERM_PROGRAM_VERSION = 3.4.16
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.36628820.36628827.8692E70C-E11E-4536-BACA-5C827A1B2C81
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.36628820.36628827.C3A0AD96-12BF-43B9-8292-77796772257A
 # environment
 LC_TERMINAL_VERSION = 3.4.16
 # environment
@@ -652,8 +644,8 @@ ITERM_PROFILE = Default
 PAGER = less
 # environment
 LC_ALL = C
-# environment
-SECURITYSESSIONID = 186b2
+# makefile (from `Makefile', line 10)
+CSHARP_LIB_DIR = bindings/c#
 # automatic
 ^F = $(notdir $^)
 # default
@@ -661,14 +653,13 @@ SUFFIXES :=
 # environment
 MAKELEVEL := 0
 # environment
- 
 LANG = C
 # environment
 TERM = xterm-256color
 # environment
 VSCODE_PID = 9231
 # variable set hash-table stats:
-# Load=90/1024=9%, Rehash=0, Collisions=5/129=4%
+# Load=88/1024=9%, Rehash=0, Collisions=4/127=3%
 
 # Pattern-specific Variable Values
 
@@ -797,6 +788,7 @@ build-csharp:
 
 # No `vpath' search paths.
 
+ 
 # No general (`VPATH' variable) search path.
 
 # # of strings in strcache: 1
@@ -804,6 +796,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sat Aug  6 14:33:44 2022
+# Finished Make data base on Mon Aug  8 13:04:21 2022
 
  
