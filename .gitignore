@@ -3,4 +3,4 @@
 *~
 *.so
 .env
-./user.json
+user.json
