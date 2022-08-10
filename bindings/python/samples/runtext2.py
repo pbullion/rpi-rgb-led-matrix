@@ -22,10 +22,6 @@ class RunText(SampleBase):
         teamLogos = {
                 'MLB': Image.open(requests.get('https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'NFL': Image.open(requests.get('https://pixy.org/src/147/thumbs350/1471745.jpg', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'NHL': Image.open(requests.get('https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'NHL': Image.open(requests.get('https://upload.wikimedia.org/wikipedia/en/3/3a/05_NHL_Shield.svg', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Tampa Bay Lightning': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nhl-tampa-bay-lightning-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Colorado Avalanche': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nhl-colorado-avalanche-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'New York Yankees': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Washington Nationals': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-washington-nationals-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Texas Rangers': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-texas-rangers-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
@@ -41,7 +37,6 @@ class RunText(SampleBase):
                 'San Francisco Giants': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-san-francisco-giants-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Colorado Rockies': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-colorado-rockies-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Minnesota Twins': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-minnesota-twins-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Los Angeles Dodgers': Image.open(requests.get('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/LA_Dodgers_cap_logo.svg/1200px-LA_Dodgers_cap_logo.svg.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Los Angeles Dodgers': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-los-angeles-dodgers-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Atlanta Braves': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-atlanta-braves-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Seattle Mariners': Image.open(requests.get('https://loodibee.com/wp-content/uploads/mlb-seattle-mariners-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
@@ -88,7 +83,6 @@ class RunText(SampleBase):
                 'Tampa Bay Buccaneers': Image.open(requests.get('https://loodibee.com/wp-content/uploads/tampa-bay-buccaneers-2020-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Tennessee Titans': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-tennessee-titans-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Washington Commanders': Image.open(requests.get('https://loodibee.com/wp-content/uploads/washington-commanders-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
-                # 'Arizona': Image.open(requests.get('', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
             }
         while True:
             green = graphics.Color(0, 255, 0)
