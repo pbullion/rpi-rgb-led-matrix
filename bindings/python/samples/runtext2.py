@@ -72,6 +72,7 @@ class RunText(SampleBase):
                 'Los Angeles Rams': Image.open(requests.get('https://loodibee.com/wp-content/uploads/los-angeles-rams-2020-logo.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Miami Dolphins': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-miami-dolphins-logo-2018.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'Minnesota Vikings': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-minnesota-vikings-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
+                'Kansas City Chiefs': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-kansas-city-chiefs-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'New England Patriots': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-new-england-patriots-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'New Orleans Saints': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-new-orleans-saints-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
                 'New York Giants': Image.open(requests.get('https://loodibee.com/wp-content/uploads/nfl-new-york-giants-team-logo-2.png', stream=True).raw).convert('RGB').resize((50,50), Image.ANTIALIAS),
