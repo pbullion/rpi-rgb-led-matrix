@@ -18,11 +18,12 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Wed Aug 10 10:44:21 2022
+# Make data base, printed on Wed Aug 10 21:14:48 2022
 
 # Variables
 
 # automatic
+ 
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
@@ -65,7 +66,6 @@ VSCODE_CWD = /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
 # environment
 PATH = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin:/Users/patrickbullion/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 # environment
- 
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 NVM_BIN = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin
@@ -134,6 +134,7 @@ LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
+ 
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # environment
 TERM_PROGRAM = iTerm.app
@@ -158,7 +159,7 @@ TERM_PROGRAM_VERSION = 3.4.16
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.38412798.38412804.5DB1ACA7-2325-4FA6-B34F-C5DCE1E406C4
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.38412798.38412804.7E5752C2-8FA8-46E6-A669-6DA223AFAF29
 # environment
 LC_TERMINAL_VERSION = 3.4.16
 # environment
@@ -338,6 +339,7 @@ bdf-font.o:
 graphics.o: graphics.cc utf8-internal.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 
 led-matrix.o: led-matrix.cc ../include/led-matrix.h
@@ -371,7 +373,6 @@ utf8-internal.h:
 
 # Not a target:
 ../include/led-matrix.h:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -471,18 +472,19 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Aug 10 10:44:21 2022
+# Finished Make data base on Wed Aug 10 21:14:48 2022
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Wed Aug 10 10:44:21 2022
+# Make data base, printed on Wed Aug 10 21:14:48 2022
 
 # Variables
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
+ 
 # automatic
 ?F = $(notdir $?)
 # environment
@@ -558,11 +560,11 @@ NVM_CD_FLAGS = -q
 # environment
 ZSH = /Users/patrickbullion/.oh-my-zsh
 # makefile (from `Makefile', line 9)
- 
 PYTHON_LIB_DIR = bindings/python
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
+ 
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 XPC_FLAGS = 0x0
@@ -615,7 +617,7 @@ TERM_PROGRAM_VERSION = 3.4.16
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.38412798.38412804.5DB1ACA7-2325-4FA6-B34F-C5DCE1E406C4
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.38412798.38412804.7E5752C2-8FA8-46E6-A669-6DA223AFAF29
 # environment
 LC_TERMINAL_VERSION = 3.4.16
 # environment
@@ -647,6 +649,7 @@ LC_ALL = C
 # makefile (from `Makefile', line 10)
 CSHARP_LIB_DIR = bindings/c#
 # automatic
+ 
 ^F = $(notdir $^)
 # default
 SUFFIXES := 
@@ -795,6 +798,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Aug 10 10:44:21 2022
+# Finished Make data base on Wed Aug 10 21:14:48 2022
 
  
