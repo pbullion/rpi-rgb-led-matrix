@@ -18,18 +18,18 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Wed Aug 10 21:14:48 2022
+# Make data base, printed on Mon Aug 15 12:54:26 2022
 
 # Variables
 
 # automatic
- 
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # makefile (from `Makefile', line 167)
+ 
 INCDIR = ../include
 # makefile (from `Makefile', line 37)
 HARDWARE_DESC = adafruit-hat
@@ -98,7 +98,7 @@ VSCODE_CLI = 1
 # makefile (from `Makefile', line 166)
 DEFINES = $(USER_DEFINES) -DDEFAULT_HARDWARE='"$(HARDWARE_DESC)"'
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
+VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/6d9b74a70ca9c7733b29f0456fd8195364076dda
 # environment
 LOGNAME = patrickbullion
 # environment
@@ -118,6 +118,7 @@ COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
+ 
 LC_TERMINAL = iTerm2
 # environment
 SHLVL = 3
@@ -134,7 +135,6 @@ LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
- 
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # environment
 TERM_PROGRAM = iTerm.app
@@ -145,7 +145,7 @@ TMPDIR = /var/folders/w9/1zr47vg90ss5sbzpm40bn78r0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.70.0-main.sock
+VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.70.1-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -159,7 +159,7 @@ TERM_PROGRAM_VERSION = 3.4.16
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.38412798.38412804.7E5752C2-8FA8-46E6-A669-6DA223AFAF29
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.38739845.38739851.96D81F8F-3041-4554-B074-E4B413061D11
 # environment
 LC_TERMINAL_VERSION = 3.4.16
 # environment
@@ -201,7 +201,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 39682
+VSCODE_PID = 81953
 # variable set hash-table stats:
 # Load=89/1024=9%, Rehash=0, Collisions=2/140=1%
 
@@ -209,6 +209,7 @@ VSCODE_PID = 39682
 
 # No pattern-specific variable values.
 
+ 
 # Directories
 
 # . (device 16777230, inode 10097197): 22 files, no impossibilities.
@@ -325,6 +326,7 @@ librgbmatrix.so.1: gpio.o led-matrix.o options-initialize.o framebuffer.o thread
 	
 
 # Not a target:
+ 
 pixel-mapper.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -339,7 +341,6 @@ bdf-font.o:
 graphics.o: graphics.cc utf8-internal.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 
 led-matrix.o: led-matrix.cc ../include/led-matrix.h
@@ -472,22 +473,22 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Aug 10 21:14:48 2022
+# Finished Make data base on Mon Aug 15 12:54:26 2022
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Wed Aug 10 21:14:48 2022
+# Make data base, printed on Mon Aug 15 12:54:26 2022
 
 # Variables
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
- 
 # automatic
 ?F = $(notdir $?)
 # environment
+ 
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 NVM_INC = /Users/patrickbullion/.nvm/versions/node/v16.13.1/include/node
@@ -550,7 +551,7 @@ MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
+VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/6d9b74a70ca9c7733b29f0456fd8195364076dda
 # environment
 LOGNAME = patrickbullion
 # environment
@@ -564,7 +565,6 @@ PYTHON_LIB_DIR = bindings/python
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
- 
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 XPC_FLAGS = 0x0
@@ -603,7 +603,7 @@ TMPDIR = /var/folders/w9/1zr47vg90ss5sbzpm40bn78r0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.70.0-main.sock
+VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.70.1-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -617,7 +617,7 @@ TERM_PROGRAM_VERSION = 3.4.16
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.38412798.38412804.7E5752C2-8FA8-46E6-A669-6DA223AFAF29
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.38739845.38739851.96D81F8F-3041-4554-B074-E4B413061D11
 # environment
 LC_TERMINAL_VERSION = 3.4.16
 # environment
@@ -647,9 +647,9 @@ PAGER = less
 # environment
 LC_ALL = C
 # makefile (from `Makefile', line 10)
+ 
 CSHARP_LIB_DIR = bindings/c#
 # automatic
- 
 ^F = $(notdir $^)
 # default
 SUFFIXES := 
@@ -660,7 +660,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 39682
+VSCODE_PID = 81953
 # variable set hash-table stats:
 # Load=88/1024=9%, Rehash=0, Collisions=4/127=3%
 
@@ -798,6 +798,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Aug 10 21:14:48 2022
+# Finished Make data base on Mon Aug 15 12:54:26 2022
 
  
