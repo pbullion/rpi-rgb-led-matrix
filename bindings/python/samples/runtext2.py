@@ -337,7 +337,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Browns": Image.open(
                 requests.get(
-                    "https://logosmarcas.net/wp-content/uploads/2020/07/Cleveland-Browns-Logotipo-2006-2014.jpg",
+                    "https://loodibee.com/wp-content/uploads/cleveland-browns-logo-1970-1985-300x300.png",
                     stream=True,
                 ).raw
             )
@@ -385,7 +385,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Green Bay Packers": Image.open(
                 requests.get(
-                    "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Green_Bay_Packers_logo.svg/1280px-Green_Bay_Packers_logo.svg.png",
                     stream=True,
                 ).raw
             )
