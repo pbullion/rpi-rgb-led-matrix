@@ -73,7 +73,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Marlins": Image.open(
                 requests.get(
-                    "https://vm-storage.nyc3.digitaloceanspaces.com/2021/11/miami-marlins-06.png",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgLvfw0fwbJoD01YsU124hsHEx7yjgD6sKBk4-cTdhQg&s",
                     stream=True,
                 ).raw
             )
@@ -752,8 +752,8 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + awayTeam
-                                        + awayTeamStatus,
+                                        + homeTeam
+                                        + homeTeamStatus,
                                         12,
                                         green,
                                         "O/U",
@@ -780,8 +780,8 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + awayTeam
-                                        + awayTeamStatus,
+                                        + homeTeam
+                                        + homeTeamStatus,
                                         26,
                                         green,
                                         overUnderString,
