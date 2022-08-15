@@ -298,7 +298,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Baltimore Ravens": Image.open(
                 requests.get(
-                    "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+                    "https://assets.stickpng.com/images/580b585b2edbce24c47b2b09.png",
                     stream=True,
                 ).raw
             )
