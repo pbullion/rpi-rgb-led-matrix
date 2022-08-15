@@ -329,7 +329,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cincinnati Bengals": Image.open(
                 requests.get(
-                    "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
+                    "https://cdn.freebiesupply.com/images/thumbs/1x/cincinnati-bengals-logo.png",
                     stream=True,
                 ).raw
             )
@@ -337,7 +337,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Browns": Image.open(
                 requests.get(
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Cleveland_Browns_wordmark.svg/2560px-Cleveland_Browns_wordmark.svg.png",
+                    "https://logos-download.com/wp-content/uploads/2018/03/Cleveland_Browns_logo_b-700x432.png",
                     stream=True,
                 ).raw
             )
@@ -425,7 +425,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Dolphins": Image.open(
                 requests.get(
-                    "https://flyclipart.com/thumb2/miami-dolphins-american-football-712570.png",
+                    "https://www.seekpng.com/png/detail/849-8496936_miami-dolphins-circle-logo-vinyl-decal-sticker-5.png",
                     stream=True,
                 ).raw
             )
