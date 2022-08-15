@@ -337,7 +337,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Browns": Image.open(
                 requests.get(
-                    "https://www.pvamu.edu/wp-content/uploads/2020/06/cleveland-browns-logo-e1592589550280.png",
+                    "https://www.kindpng.com/picc/m/149-1499967_cleveland-browns-logo-hd-png-download.png",
                     stream=True,
                 ).raw
             )
@@ -425,7 +425,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Dolphins": Image.open(
                 requests.get(
-                    "https://www.pngitem.com/pimgs/m/223-2234698_miami-dolphins-logo-2019-hd-png-download.png",
+                    "https://www.pngitem.com/pimgs/m/152-1527604_miami-dolphins-communicating-with-nfl-headquarters-miami-dolphins.png",
                     stream=True,
                 ).raw
             )
