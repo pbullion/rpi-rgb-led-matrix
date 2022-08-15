@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # Display a runtext with double-buffering.
+from types import NoneType
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
@@ -752,8 +753,8 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + homeTeam
-                                        + homeTeamStatus,
+                                        + awayTeam
+                                        + awayTeamStatus,
                                         12,
                                         green,
                                         "O/U",
@@ -780,8 +781,8 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + homeTeam
-                                        + homeTeamStatus,
+                                        + awayTeam
+                                        + awayTeamStatus,
                                         26,
                                         green,
                                         overUnderString,
@@ -2565,6 +2566,9 @@ class RunText(SampleBase):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.020)
+                    elif arr == NoneType:
+                        running = False
+                        pos = offscreen_canvas.width
                     elif arr == False:
                         running = False
                         pos = offscreen_canvas.width
