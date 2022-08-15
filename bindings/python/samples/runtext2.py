@@ -313,7 +313,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Carolina Panthers": Image.open(
                 requests.get(
-                    "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+                    "https://logos-download.com/wp-content/uploads/2018/02/Carolina_Panthers_logo_blue-700x380.png",
                     stream=True,
                 ).raw
             )
@@ -425,7 +425,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Dolphins": Image.open(
                 requests.get(
-                    "https://logos-download.com/wp-content/uploads/2018/02/Miami_Dolphins_logo-700x700.png",
+                    "https://logos-download.com/wp-content/uploads/2018/02/Miami_Dolphins_logo_bright-609x700.png",
                     stream=True,
                 ).raw
             )
@@ -1613,7 +1613,7 @@ class RunText(SampleBase):
                         for game in arr:
                             if "nfl logo" in game[0]:
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Cleveland Browns"], pos + offset, -9
+                                    teamLogos["Houston Texans"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["Carolina Panthers"],
