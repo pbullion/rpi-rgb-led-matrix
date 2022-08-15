@@ -305,7 +305,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Buffalo Bills": Image.open(
                 requests.get(
-                    "https://cdn.freebiesupply.com/images/large/2x/buffalo-bills-logo-transparent.png",
+                    "https://www.seekpng.com/png/detail/61-615399_buffalo-bills-logo-buffalo-bills-logo-transparent.png",
                     stream=True,
                 ).raw
             )
