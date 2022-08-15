@@ -2126,7 +2126,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset
                                     # + teamLogos[game[5]].width
-                                    + versus
+                                    # + versus
                                     # + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
@@ -2145,7 +2145,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset
                                     # + teamLogos[game[5]].width
-                                    + versus
+                                    # + versus
                                     # + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
@@ -2164,7 +2164,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset
                                     # + teamLogos[game[5]].width
-                                    + versus
+                                    # + versus
                                     # + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
@@ -2190,7 +2190,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset
                                     # + teamLogos[game[5]].width
-                                    + versus
+                                    # + versus
                                     # + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
