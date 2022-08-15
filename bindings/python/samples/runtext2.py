@@ -1613,16 +1613,8 @@ class RunText(SampleBase):
                         for game in arr:
                             if "nfl logo" in game[0]:
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Houston Texans"], pos + offset, -9
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos["Cincinnati Bengals"],
-                                    pos + offset + 75,
-                                    -9,
-                                )
-                                offscreen_canvas.SetImage(
                                     teamLogos["Buffalo Bills"],
-                                    pos + offset + 75 + 75,
+                                    pos + offset,
                                     -9,
                                 )
                             awayTeam = 0
