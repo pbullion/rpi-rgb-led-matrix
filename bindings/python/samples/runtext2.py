@@ -32,7 +32,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "NFL": Image.open(
                 requests.get(
@@ -40,7 +39,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "New York Yankees": Image.open(
                 requests.get(
@@ -49,7 +47,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Washington Nationals": Image.open(
                 requests.get(
@@ -58,7 +55,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Texas Rangers": Image.open(
                 requests.get(
@@ -67,7 +63,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "New York Mets": Image.open(
                 requests.get(
@@ -76,7 +71,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Marlins": Image.open(
                 requests.get(
@@ -85,7 +79,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Oakland Athletics": Image.open(
                 requests.get(
@@ -94,7 +87,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
@@ -103,7 +95,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Toronto Blue Jays": Image.open(
                 requests.get(
@@ -112,7 +103,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Milwaukee Brewers": Image.open(
                 requests.get(
@@ -121,7 +111,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Boston Red Sox": Image.open(
                 requests.get(
@@ -130,7 +119,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Guardians": Image.open(
                 requests.get(
@@ -139,7 +127,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Cincinnati Reds": Image.open(
                 requests.get(
@@ -148,7 +135,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "San Francisco Giants": Image.open(
                 requests.get(
@@ -157,7 +143,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Colorado Rockies": Image.open(
                 requests.get(
@@ -166,7 +151,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Minnesota Twins": Image.open(
                 requests.get(
@@ -175,7 +159,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Dodgers": Image.open(
                 requests.get(
@@ -184,7 +167,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Atlanta Braves": Image.open(
                 requests.get(
@@ -193,7 +175,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Seattle Mariners": Image.open(
                 requests.get(
@@ -202,7 +183,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Angels": Image.open(
                 requests.get(
@@ -211,7 +191,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Detroit Tigers": Image.open(
                 requests.get(
@@ -220,7 +199,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Arizona Diamondbacks": Image.open(
                 requests.get(
@@ -229,7 +207,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Philadelphia Phillies": Image.open(
                 requests.get(
@@ -238,7 +215,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "San Diego Padres": Image.open(
                 requests.get(
@@ -247,7 +223,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Pittsburgh Pirates": Image.open(
                 requests.get(
@@ -256,7 +231,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Tampa Bay Rays": Image.open(
                 requests.get(
@@ -265,7 +239,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Baltimore Orioles": Image.open(
                 requests.get(
@@ -274,7 +247,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago White Sox": Image.open(
                 requests.get(
@@ -283,7 +255,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "St. Louis Cardinals": Image.open(
                 requests.get(
@@ -292,7 +263,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago Cubs": Image.open(
                 requests.get(
@@ -301,7 +271,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Houston Astros": Image.open(
                 requests.get(
@@ -310,7 +279,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "New England Patriots": Image.open(
                 requests.get(
@@ -319,7 +287,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "New York Giants": Image.open(
                 requests.get(
@@ -328,7 +295,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Baltimore Ravens": Image.open(
                 requests.get(
@@ -337,7 +303,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Tennessee Titans": Image.open(
                 requests.get(
@@ -346,7 +311,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Detroit Lions": Image.open(
                 requests.get(
@@ -355,7 +319,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Atlanta Falcons": Image.open(
                 requests.get(
@@ -364,7 +327,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Jacksonville Jaguars": Image.open(
                 requests.get(
@@ -373,7 +335,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Browns": Image.open(
                 requests.get(
@@ -382,7 +343,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Cincinnati Bengals": Image.open(
                 requests.get(
@@ -391,7 +351,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Arizona Cardinals": Image.open(
                 requests.get(
@@ -400,7 +359,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Philadelphia Eagles": Image.open(
                 requests.get(
@@ -409,7 +367,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "New York Jets": Image.open(
                 requests.get(
@@ -418,7 +375,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "San Francisco 49ers": Image.open(
                 requests.get(
@@ -427,7 +383,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Green Bay Packers": Image.open(
                 requests.get(
@@ -436,7 +391,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago Bears": Image.open(
                 requests.get(
@@ -445,7 +399,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Chiefs": Image.open(
                 requests.get(
@@ -454,7 +407,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Washington Commanders": Image.open(
                 requests.get(
@@ -463,7 +415,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Carolina Panthers": Image.open(
                 requests.get(
@@ -472,7 +423,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Buffalo Bills": Image.open(
                 requests.get(
@@ -481,7 +431,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Indianapolis Colts": Image.open(
                 requests.get(
@@ -490,7 +439,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Pittsburgh Steelers": Image.open(
                 requests.get(
@@ -499,7 +447,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Seattle Seahawks": Image.open(
                 requests.get(
@@ -508,7 +455,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Tampa Bay Buccaneers": Image.open(
                 requests.get(
@@ -517,7 +463,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Dolphins": Image.open(
                 requests.get(
@@ -526,7 +471,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Houston Texans": Image.open(
                 requests.get(
@@ -535,7 +479,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "New Orleans Saints": Image.open(
                 requests.get(
@@ -544,7 +487,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Denver Broncos": Image.open(
                 requests.get(
@@ -553,7 +495,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Dallas Cowboys": Image.open(
                 requests.get(
@@ -562,7 +503,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Chargers": Image.open(
                 requests.get(
@@ -571,7 +511,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Rams": Image.open(
                 requests.get(
@@ -580,7 +519,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Las Vegas Raiders": Image.open(
                 requests.get(
@@ -589,7 +527,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
             "Minnesota Vikings": Image.open(
                 requests.get(
@@ -598,7 +535,6 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .convert("RGBA")
             .resize((50, 50), Image.ANTIALIAS),
         }
         while True:
