@@ -361,7 +361,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Dallas Cowboys": Image.open(
                 requests.get(
-                    "https://logos-download.com/wp-content/uploads/2018/04/Dallas_Cowboys_logo_star.png",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dallas_Cowboys.svg/1076px-Dallas_Cowboys.svg.png",
                     stream=True,
                 ).raw
             )
@@ -393,7 +393,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Houston Texans": Image.open(
                 requests.get(
-                    "https://logos-download.com/wp-content/uploads/2018/02/Houston_Texans_logo-700x700.png",
+                    "https://cdn.freebiesupply.com/images/large/2x/houston-texans-logo-transparent.png",
                     stream=True,
                 ).raw
             )
