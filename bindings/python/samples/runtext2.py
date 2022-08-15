@@ -2124,11 +2124,10 @@ class RunText(SampleBase):
                                 awayOdds = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    + teamLogos[game[5]].width
+                                    pos + offset
+                                    # + teamLogos[game[5]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    # + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -2144,11 +2143,10 @@ class RunText(SampleBase):
                                 homeOdds = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    + teamLogos[game[5]].width
+                                    pos + offset
+                                    # + teamLogos[game[5]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    # + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -2164,11 +2162,10 @@ class RunText(SampleBase):
                                 overUnderStr = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    + teamLogos[game[5]].width
+                                    pos + offset
+                                    # + teamLogos[game[5]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    # + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -2191,11 +2188,10 @@ class RunText(SampleBase):
                                 overUnderAmount = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    + teamLogos[game[5]].width
+                                    pos + offset
+                                    # + teamLogos[game[5]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    # + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
