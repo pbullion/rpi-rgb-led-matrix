@@ -369,7 +369,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Denver Broncos": Image.open(
                 requests.get(
-                    "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
+                    "https://assets.stickpng.com/images/580b585b2edbce24c47b2b21.png",
                     stream=True,
                 ).raw
             )
@@ -393,7 +393,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Houston Texans": Image.open(
                 requests.get(
-                    "http://clipart-library.com/images/kcMK57oAi.png",
+                    "https://assets.stickpng.com/images/580b585b2edbce24c47b2b29.png",
                     stream=True,
                 ).raw
             )
@@ -1616,13 +1616,8 @@ class RunText(SampleBase):
                                     teamLogos["Houston Texans"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Dallas Cowboys"],
+                                    teamLogos["Denver Broncos"],
                                     pos + offset + 75,
-                                    -9,
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos["Indianapolis Colts"],
-                                    pos + offset + 75 + 75,
                                     -9,
                                 )
                             awayTeam = 0
