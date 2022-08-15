@@ -305,7 +305,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Buffalo Bills": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-buffalo-bills-team-logo-2.png",
+                    "https://cdn.freebiesupply.com/images/large/2x/buffalo-bills-logo-transparent.png",
                     stream=True,
                 ).raw
             )
