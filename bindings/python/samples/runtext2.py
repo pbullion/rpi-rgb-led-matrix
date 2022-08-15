@@ -393,7 +393,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Houston Texans": Image.open(
                 requests.get(
-                    "https://cdn.freebiesupply.com/images/large/2x/houston-texans-logo-transparent.png",
+                    "http://clipart-library.com/images/kcMK57oAi.png",
                     stream=True,
                 ).raw
             )
@@ -401,7 +401,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Indianapolis Colts": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-indianapolis-colts-team-logo-2.png",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Indianapolis_Colts_logo.svg/800px-Indianapolis_Colts_logo.svg.png",
                     stream=True,
                 ).raw
             )
