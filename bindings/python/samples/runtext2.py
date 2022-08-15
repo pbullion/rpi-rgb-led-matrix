@@ -26,7 +26,7 @@ class RunText(SampleBase):
         teamLogos = {
             "MLB": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png",
+                    "https://www.nuvonium.com/_image_lib/blog/mlb-logo.gif",
                     stream=True,
                 ).raw
             )
