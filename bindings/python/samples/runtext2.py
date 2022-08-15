@@ -337,7 +337,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Browns": Image.open(
                 requests.get(
-                    "https://www.cleveland.com/resizer/molB036ZeXraVbyCF-3rb6u5yrc=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/6YKCO7WWKJAIRBOPGUXGJIO76I.jpg",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Cleveland_Browns_wordmark.svg/2560px-Cleveland_Browns_wordmark.svg.png",
                     stream=True,
                 ).raw
             )
@@ -425,7 +425,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Dolphins": Image.open(
                 requests.get(
-                    "https://www.pngitem.com/pimgs/m/152-1527604_miami-dolphins-communicating-with-nfl-headquarters-miami-dolphins.png",
+                    "https://flyclipart.com/thumb2/miami-dolphins-american-football-712570.png",
                     stream=True,
                 ).raw
             )
