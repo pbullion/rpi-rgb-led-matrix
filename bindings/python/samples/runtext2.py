@@ -337,7 +337,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Browns": Image.open(
                 requests.get(
-                    "https://www.kindpng.com/picc/m/149-1499967_cleveland-browns-logo-hd-png-download.png",
+                    "https://www.cleveland.com/resizer/molB036ZeXraVbyCF-3rb6u5yrc=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/6YKCO7WWKJAIRBOPGUXGJIO76I.jpg",
                     stream=True,
                 ).raw
             )
