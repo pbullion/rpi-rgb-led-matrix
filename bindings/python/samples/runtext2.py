@@ -73,7 +73,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Marlins": Image.open(
                 requests.get(
-                    "https://www.liblogo.com/img-logo/mi820m60e-miami-marlins-logo-miami-marlins-baseball-marlins-news-scores-stats-rumors.png",
+                    "https://cdn.shopify.com/s/files/1/1949/1233/products/miami-marlins-circle.png?v=1575428338",
                     stream=True,
                 ).raw
             )
