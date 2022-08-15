@@ -281,7 +281,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Arizona Cardinals": Image.open(
                 requests.get(
-                    "https://static.www.nfl.com/t_q-best/league/api/clubs/logos/ARI",
+                    "https://1000logos.net/wp-content/uploads/2016/10/Arizona-Cardinals-Logo.png",
                     stream=True,
                 ).raw
             )
