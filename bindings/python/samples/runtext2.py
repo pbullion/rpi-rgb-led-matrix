@@ -3131,15 +3131,15 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "ncaa" in arr[0][0]:
                         for game in arr:
-                            if "ncaa" in game[0]:
-                                conferenceName = graphics.DrawText(
-                                    offscreen_canvas,
-                                    font,
-                                    pos + offset,
-                                    12,
-                                    green,
-                                    game[1],
-                                )
+                            # if "ncaa" in game[0]:
+                            #     conferenceName = graphics.DrawText(
+                            #         offscreen_canvas,
+                            #         font,
+                            #         pos + offset,
+                            #         12,
+                            #         green,
+                            #         game[1],
+                            #     )
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
