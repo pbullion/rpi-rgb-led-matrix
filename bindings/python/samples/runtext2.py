@@ -73,7 +73,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Marlins": Image.open(
                 requests.get(
-                    "https://cdn.shopify.com/s/files/1/1949/1233/products/miami-marlins-circle.png?v=1575428338",
+                    "https://www.pngitem.com/pimgs/m/497-4971454_miami-marlins-baseball-circle-hd-png-download.png",
                     stream=True,
                 ).raw
             )
