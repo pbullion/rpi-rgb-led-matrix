@@ -536,1056 +536,1056 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "Pittsburgh Panthers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "West Virginia Mountaineers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Oklahoma State Cowboys": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Central Michigan Chippewas": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2117.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Kansas Jayhawks": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Tennessee Tech Golden Eagles": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2635.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Colorado Buffaloes": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "TCU Horned Frogs": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Iowa State Cyclones": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Southeast Missouri State Redhawks": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2546.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Oklahoma Sooners": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "UTEP Miners": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2638.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Kansas State Wildcats": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2306.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "South Dakota Coyotes": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/233.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Baylor Bears": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Albany Great Danes": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/399.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Texas Tech Red Raiders": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Murray State Racers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/93.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Texas Longhorns": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "UL Monroe Warhawks": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2433.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Hawai'i Rainbow Warriors": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/62.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Vanderbilt Commodores": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Tennessee Volunteers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Ball State Cardinals": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2050.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Missouri Tigers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Louisiana Tech Bulldogs": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2348.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Texas A&M Aggies": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/245.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Sam Houston Bearkats": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2534.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Arkansas Razorbacks": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Cincinnati Bearcats": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Georgia Bulldogs": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Oregon Ducks": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Ole Miss Rebels": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Troy Trojans": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2653.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Auburn Tigers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Mercer Bears": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2382.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Florida Gators": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Utah Utes": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Kentucky Wildcats": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Miami (OH) RedHawks": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Vanderbilt Commodores": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Elon Phoenix": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2210.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Alabama Crimson Tide": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Utah State Aggies": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/328.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Mississippi State Bulldogs": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Memphis Tigers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "South Carolina Gamecocks": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Georgia State Panthers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2247.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "LSU Tigers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Florida State Seminoles": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Arizona State Sun Devils": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/9.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Northern Arizona Lumberjacks": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2464.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Colorado Buffaloes": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "TCU Horned Frogs": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "UCLA Bruins": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Bowling Green Falcons": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/189.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Georgia Bulldogs": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Oregon Ducks": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "San Diego State Aztecs": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/21.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Arizona Wildcats": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "California Golden Bears": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/25.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "UC Davis Aggies": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/302.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "USC Trojans": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Rice Owls": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/242.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Florida Gators": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Utah Utes": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Stanford Cardinal": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/24.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Colgate Raiders": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2142.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Washington State Cougars": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/265.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Idaho Vandals": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/70.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Oregon State Beavers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/204.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Boise State Broncos": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Washington Huskies": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Kent State Golden Flashes": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2309.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Florida State Seminoles": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Duquesne Dukes": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2184.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "North Carolina Tar Heels": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Florida A&M Rattlers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/50.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Pittsburgh Panthers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "West Virginia Mountaineers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Wake Forest Demon Deacons": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "VMI Keydets": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2678.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Old Dominion Monarchs": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/295.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Virginia Tech Hokies": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/259.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Duke Blue Devils": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Temple Owls": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/218.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Boston College Eagles": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Rutgers Scarlet Knights": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/164.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Appalachian State Mountaineers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2026.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "North Carolina Tar Heels": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "East Carolina Pirates": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/151.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "NC State Wolfpack": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/152.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Virginia Cavaliers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/258.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Richmond Spiders": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/257.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Miami Hurricanes": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Bethune-Cookman Wildcats": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2065.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Syracuse Orange": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/183.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Louisville Cardinals": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "LSU Tigers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Florida State Seminoles": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Georgia Tech Yellow Jackets": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/59.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Clemson Tigers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "UCF Knights": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "South Carolina State Bulldogs": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2569.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Duke Blue Devils": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Temple Owls": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/218.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "East Carolina Pirates": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/151.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "NC State Wolfpack": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/152.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Navy Midshipmen": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2426.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Delaware Blue Hens": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/48.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Arkansas Razorbacks": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Cincinnati Bearcats": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Wyoming Cowboys": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2751.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Tulsa Golden Hurricane": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/202.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "UTSA Roadrunners": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2636.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Houston Cougars": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "South Florida Bulls": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "BYU Cougars": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Tulane Green Wave": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2655.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "UMass Minutemen": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/113.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Mississippi State Bulldogs": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Memphis Tigers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "North Texas Mean Green": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/249.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "SMU Mustangs": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Northwestern Wildcats": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Nebraska Cornhuskers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Illinois Fighting Illini": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Wyoming Cowboys": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2751.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Purdue Boilermakers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Penn State Nittany Lions": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Minnesota Golden Gophers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "New Mexico State Aggies": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/166.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Michigan State Spartans": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Western Michigan Broncos": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Indiana Hoosiers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Illinois Fighting Illini": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Iowa Hawkeyes": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "South Dakota State Jackrabbits": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2571.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Maryland Terrapins": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/120.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Buffalo Bulls": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Michigan Wolverines": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Colorado State Rams": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/36.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Boston College Eagles": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Rutgers Scarlet Knights": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/164.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Nebraska Cornhuskers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "North Dakota Fighting Hawks": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/155.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Wisconsin Badgers": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Illinois State Redbirds": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/2287.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Ohio State Buckeyes": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Notre Dame Fighting Irish": Image.open(
-                requests.get(
-                    "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png", stream=True
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            # "Pittsburgh Panthers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "West Virginia Mountaineers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Oklahoma State Cowboys": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Central Michigan Chippewas": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2117.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Kansas Jayhawks": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Tennessee Tech Golden Eagles": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2635.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Colorado Buffaloes": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "TCU Horned Frogs": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Iowa State Cyclones": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Southeast Missouri State Redhawks": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2546.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Oklahoma Sooners": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "UTEP Miners": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2638.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Kansas State Wildcats": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2306.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "South Dakota Coyotes": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/233.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Baylor Bears": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Albany Great Danes": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/399.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Texas Tech Red Raiders": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Murray State Racers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/93.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Texas Longhorns": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "UL Monroe Warhawks": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2433.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Hawai'i Rainbow Warriors": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/62.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Vanderbilt Commodores": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Tennessee Volunteers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Ball State Cardinals": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2050.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Missouri Tigers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Louisiana Tech Bulldogs": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2348.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Texas A&M Aggies": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/245.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Sam Houston Bearkats": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2534.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Arkansas Razorbacks": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Cincinnati Bearcats": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Georgia Bulldogs": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Oregon Ducks": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Ole Miss Rebels": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Troy Trojans": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2653.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Auburn Tigers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Mercer Bears": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2382.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Florida Gators": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Utah Utes": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Kentucky Wildcats": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Miami (OH) RedHawks": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/193.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Vanderbilt Commodores": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Elon Phoenix": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2210.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Alabama Crimson Tide": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Utah State Aggies": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/328.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Mississippi State Bulldogs": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Memphis Tigers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "South Carolina Gamecocks": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Georgia State Panthers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2247.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "LSU Tigers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Florida State Seminoles": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Arizona State Sun Devils": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/9.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Northern Arizona Lumberjacks": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2464.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Colorado Buffaloes": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "TCU Horned Frogs": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "UCLA Bruins": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Bowling Green Falcons": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/189.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Georgia Bulldogs": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Oregon Ducks": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "San Diego State Aztecs": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/21.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Arizona Wildcats": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "California Golden Bears": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/25.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "UC Davis Aggies": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/302.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "USC Trojans": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Rice Owls": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/242.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Florida Gators": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Utah Utes": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Stanford Cardinal": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/24.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Colgate Raiders": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2142.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Washington State Cougars": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/265.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Idaho Vandals": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/70.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Oregon State Beavers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/204.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Boise State Broncos": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Washington Huskies": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Kent State Golden Flashes": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2309.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Florida State Seminoles": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Duquesne Dukes": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2184.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "North Carolina Tar Heels": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Florida A&M Rattlers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/50.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Pittsburgh Panthers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "West Virginia Mountaineers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Wake Forest Demon Deacons": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "VMI Keydets": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2678.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Old Dominion Monarchs": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/295.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Virginia Tech Hokies": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/259.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Duke Blue Devils": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Temple Owls": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/218.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Boston College Eagles": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Rutgers Scarlet Knights": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/164.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Appalachian State Mountaineers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2026.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "North Carolina Tar Heels": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "East Carolina Pirates": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/151.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "NC State Wolfpack": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/152.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Virginia Cavaliers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/258.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Richmond Spiders": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/257.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Miami Hurricanes": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Bethune-Cookman Wildcats": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2065.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Syracuse Orange": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/183.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Louisville Cardinals": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "LSU Tigers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Florida State Seminoles": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Georgia Tech Yellow Jackets": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/59.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Clemson Tigers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "UCF Knights": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "South Carolina State Bulldogs": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2569.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Duke Blue Devils": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Temple Owls": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/218.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "East Carolina Pirates": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/151.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "NC State Wolfpack": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/152.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Navy Midshipmen": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2426.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Delaware Blue Hens": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/48.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Arkansas Razorbacks": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Cincinnati Bearcats": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Wyoming Cowboys": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2751.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Tulsa Golden Hurricane": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/202.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "UTSA Roadrunners": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2636.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Houston Cougars": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "South Florida Bulls": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "BYU Cougars": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Tulane Green Wave": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2655.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "UMass Minutemen": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/113.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Mississippi State Bulldogs": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Memphis Tigers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "North Texas Mean Green": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/249.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "SMU Mustangs": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Northwestern Wildcats": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Nebraska Cornhuskers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Illinois Fighting Illini": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Wyoming Cowboys": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2751.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Purdue Boilermakers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Penn State Nittany Lions": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Minnesota Golden Gophers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "New Mexico State Aggies": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/166.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Michigan State Spartans": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Western Michigan Broncos": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2711.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Indiana Hoosiers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Illinois Fighting Illini": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Iowa Hawkeyes": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "South Dakota State Jackrabbits": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2571.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Maryland Terrapins": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/120.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Buffalo Bulls": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Michigan Wolverines": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Colorado State Rams": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/36.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Boston College Eagles": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Rutgers Scarlet Knights": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/164.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Nebraska Cornhuskers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "North Dakota Fighting Hawks": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/155.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Wisconsin Badgers": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Illinois State Redbirds": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/2287.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Ohio State Buckeyes": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Notre Dame Fighting Irish": Image.open(
+            #     requests.get(
+            #         "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png", stream=True
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
         }
         while True:
             green = graphics.Color(0, 255, 0)
@@ -3136,7 +3136,7 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     font,
                                     pos + offset,
-                                    20,
+                                    24,
                                     green,
                                     game[1],
                                 )
