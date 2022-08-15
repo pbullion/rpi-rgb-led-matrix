@@ -402,7 +402,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Indianapolis Colts": Image.open(
                 requests.get(
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Indianapolis_Colts_logo.svg/800px-Indianapolis_Colts_logo.svg.png",
+                    "https://cdn.freebiesupply.com/images/large/2x/indianapolis-colts-logo-transparent.png",
                     stream=True,
                 ).raw
             )
