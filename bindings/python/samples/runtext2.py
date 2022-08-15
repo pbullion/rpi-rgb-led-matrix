@@ -425,7 +425,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Dolphins": Image.open(
                 requests.get(
-                    "https://www.seekpng.com/png/detail/849-8496936_miami-dolphins-circle-logo-vinyl-decal-sticker-5.png",
+                    "https://logos-download.com/wp-content/uploads/2018/02/Miami_Dolphins_logo-700x700.png",
                     stream=True,
                 ).raw
             )
