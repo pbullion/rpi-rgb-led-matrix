@@ -321,7 +321,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago Bears": Image.open(
                 requests.get(
-                    "https://cdn.freebiesupply.com/images/large/2x/chicago-bears-logo-transparent.png",
+                    "https://pngset.com/images/chicago-bears-background-chicago-bears-logo-symbol-trademark-label-transparent-png-1473600.png",
                     stream=True,
                 ).raw
             )
@@ -337,7 +337,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Browns": Image.open(
                 requests.get(
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCj1_ISywnJqeR1HBXg6J6pHX6lpV0SHSmp7cTbFahDTJzzeygbtWVMgxpArmsMrY9JsQ&usqp=CAU",
+                    "https://1000logos.net/wp-content/uploads/2016/10/Cleveland-Browns-Logo-1986.png",
                     stream=True,
                 ).raw
             )
@@ -1616,12 +1616,17 @@ class RunText(SampleBase):
                                     teamLogos["Cleveland Browns"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Green Bay Packers"],
+                                    teamLogos["Carolina Panthers"],
                                     pos + offset + 75,
                                     -9,
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["Chicago Bears"],
+                                    pos + offset + 75 + 75,
+                                    -9,
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos["Miami Dolphins"],
                                     pos + offset + 75 + 75,
                                     -9,
                                 )
