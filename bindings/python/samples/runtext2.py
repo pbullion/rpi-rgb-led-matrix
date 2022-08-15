@@ -1616,8 +1616,13 @@ class RunText(SampleBase):
                                     teamLogos["Houston Texans"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Denver Broncos"],
+                                    teamLogos["Cincinnati Bengals"],
                                     pos + offset + 75,
+                                    -9,
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos["Buffalo Bills"],
+                                    pos + offset + 75 + 75,
                                     -9,
                                 )
                             awayTeam = 0
