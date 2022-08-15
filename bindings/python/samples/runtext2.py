@@ -281,7 +281,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Arizona Cardinals": Image.open(
                 requests.get(
-                    "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
+                    "https://static.www.nfl.com/t_q-best/league/api/clubs/logos/ARI",
                     stream=True,
                 ).raw
             )
@@ -337,7 +337,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Browns": Image.open(
                 requests.get(
-                    "https://logos-world.net/wp-content/uploads/2020/05/Cleveland-Browns-emblem.jpg",
+                    "https://1000logos.net/wp-content/uploads/2016/10/Cleveland-Browns-Logo-2006.png",
                     stream=True,
                 ).raw
             )
