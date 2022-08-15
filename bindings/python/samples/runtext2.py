@@ -289,7 +289,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Atlanta Falcons": Image.open(
                 requests.get(
-                    "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+                    "https://cdn.freebiesupply.com/images/large/2x/atlanta-falcons-logo-transparent.png",
                     stream=True,
                 ).raw
             )
