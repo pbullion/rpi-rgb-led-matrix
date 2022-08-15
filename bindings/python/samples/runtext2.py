@@ -305,7 +305,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Buffalo Bills": Image.open(
                 requests.get(
-                    "https://tl.vhv.rs/dpng/s/449-4495372_buffalo-bills-logo-png-transparent-png.png",
+                    "https://logos-download.com/wp-content/uploads/2018/03/Buffalo_Bills_logo_blue-700x502.png",
                     stream=True,
                 ).raw
             )
