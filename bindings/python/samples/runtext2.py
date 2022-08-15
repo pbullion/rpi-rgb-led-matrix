@@ -3138,7 +3138,7 @@ class RunText(SampleBase):
                                     pos + offset,
                                     12,
                                     green,
-                                    game[0][1],
+                                    game[1],
                                 )
                             awayTeam = 0
                             homeTeam = 0
