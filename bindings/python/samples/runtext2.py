@@ -73,7 +73,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Marlins": Image.open(
                 requests.get(
-                    "https://www.pngmart.com/files/22/Miami-Marlins-PNG-File.png",
+                    "https://mpng.subpng.com/20190512/ztc/kisspng-new-york-mets-vs-miami-marlins-new-york-mets-vs-5cd8bd95eaf5a3.4656384415577081819624.jpg",
                     stream=True,
                 ).raw
             )
