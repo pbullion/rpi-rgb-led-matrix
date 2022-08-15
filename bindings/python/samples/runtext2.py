@@ -3145,17 +3145,17 @@ class RunText(SampleBase):
                             headlineString = 0
                             awayTeamStatus = 0
                             homeTeamStatus = 0
-                            displayNameAway = game[5]
-                            displayNameHome = game[10]
-                            if "#" in game[5]:
-                                x = game[5].split("#", 1)
-                                y = x[1].split(" ", 1)
-                                displayNameAway = y[1]
-                            if "#" in game[10]:
-                                x = game[10].split("#", 1)
-                                y = x[1].split(" ", 1)
-                                displayNameHome = y[1]
                             if "pregame" in game[0]:
+                                displayNameAway = game[5]
+                                displayNameHome = game[10]
+                                if "#" in game[5]:
+                                    x = game[5].split("#", 1)
+                                    y = x[1].split(" ", 1)
+                                    displayNameAway = y[1]
+                                if "#" in game[10]:
+                                    x = game[10].split("#", 1)
+                                    y = x[1].split(" ", 1)
+                                    displayNameHome = y[1]
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
                                 statusString = game[11]
