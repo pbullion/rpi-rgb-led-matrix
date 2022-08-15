@@ -393,7 +393,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Houston Texans": Image.open(
                 requests.get(
-                    "https://logos-download.com/wp-content/uploads/2018/02/Houston_Texans_logo_bull-700x700.png",
+                    "https://logos-download.com/wp-content/uploads/2018/02/Houston_Texans_logo-700x700.png",
                     stream=True,
                 ).raw
             )
@@ -1616,35 +1616,20 @@ class RunText(SampleBase):
                                     teamLogos["Houston Texans"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Carolina Panthers"],
+                                    teamLogos["Miami Dolphins"],
                                     pos + offset + 75,
                                     -9,
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Chicago Bears"],
+                                    teamLogos["Indianapolis Colts"],
                                     pos + offset + 75 + 75,
                                     -9,
                                 )
-                                offscreen_canvas.SetImage(
-                                    teamLogos["Miami Dolphins"],
-                                    pos + offset + 75 + 75 + 75,
-                                    -9,
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos["Indianapolis Colts"],
-                                    pos + offset + 75 + 75 + 75 + 75,
-                                    -9,
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos["Miami Dolphins"],
-                                    pos + offset + 75 + 75 + 75 + 75 + 75,
-                                    -9,
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos["Dallas Cowboys"],
-                                    pos + offset + 75 + 75 + 75 + 75 + 75 + 75,
-                                    -9,
-                                )
+                                # offscreen_canvas.SetImage(
+                                #     teamLogos["Dallas Cowboys"],
+                                #     pos + offset + 75 + 75 + 75 + 75 + 75 + 75,
+                                #     -9,
+                                # )
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
