@@ -337,7 +337,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Browns": Image.open(
                 requests.get(
-                    "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
+                    "https://logos-world.net/wp-content/uploads/2020/05/Cleveland-Browns-emblem.jpg",
                     stream=True,
                 ).raw
             )
@@ -345,7 +345,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Jacksonville Jaguars": Image.open(
                 requests.get(
-                    "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/jax.png",
+                    "https://assets.stickpng.com/images/580b585b2edbce24c47b2b2f.png",
                     stream=True,
                 ).raw
             )
