@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # Display a runtext with double-buffering.
-from types import NoneType
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
