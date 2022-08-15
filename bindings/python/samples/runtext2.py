@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # Display a runtext with double-buffering.
+from ast import If
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
@@ -3130,7 +3131,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "ncaa" in arr[0][0]:
                         for game in arr:
-                            if "ncaa" in game[0][0]:
+                            if "ncaa" in game[0]:
                                 conferenceName = graphics.DrawText(
                                     offscreen_canvas,
                                     font,
@@ -3144,6 +3145,16 @@ class RunText(SampleBase):
                             headlineString = 0
                             awayTeamStatus = 0
                             homeTeamStatus = 0
+                            displayNameAway = game[5]
+                            displayNameHome = game[10]
+                            if "#" in game[5]:
+                                x = game[5].split("#", 1)
+                                y = x[1].split(" ", 1)
+                                displayNameAway = y[1]
+                            if "#" in game[10]:
+                                x = game[10].split("#", 1)
+                                y = x[1].split(" ", 1)
+                                displayNameHome = y[1]
                             if "pregame" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -3153,21 +3164,24 @@ class RunText(SampleBase):
                                 homeOddsString = game[16]
                                 overUnderString = game[17]
                                 offscreen_canvas.SetImage(
-                                    teamLogos[game[5]], pos + offset, -10
+                                    teamLogos[displayNameAway], pos + offset, -10
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + buffer + teamLogos[game[5]].width,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogos[displayNameAway].width,
                                     24,
                                     green,
                                     statusString,
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos[game[10]],
+                                    teamLogos[displayNameHome],
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogos[displayNameAway].width
                                     + buffer
                                     + buffer
                                     + versus,
@@ -3194,9 +3208,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogos[displayNameAway].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogos[displayNameHome].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3214,9 +3228,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogos[displayNameAway].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogos[displayNameHome].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3234,9 +3248,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogos[displayNameAway].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogos[displayNameHome].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3261,9 +3275,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogos[displayNameAway].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogos[displayNameHome].width
                                     + buffer
                                     + buffer
                                     + buffer
