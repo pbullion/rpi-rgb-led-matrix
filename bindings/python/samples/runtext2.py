@@ -289,7 +289,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Atlanta Falcons": Image.open(
                 requests.get(
-                    "https://cdn.freebiesupply.com/images/large/2x/atlanta-falcons-logo-transparent.png",
+                    "https://www.clipartmax.com/png/middle/66-667785_falcons-logo-clipart-atlanta-falcons-3d-logo.png",
                     stream=True,
                 ).raw
             )
