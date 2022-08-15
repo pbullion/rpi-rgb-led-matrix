@@ -26,7 +26,7 @@ class RunText(SampleBase):
         teamLogos = {
             "MLB": Image.open(
                 requests.get(
-                    "https://brandslogos.com/wp-content/uploads/thumbs/major-league-baseball-logo-vector.svg",
+                    "https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png",
                     stream=True,
                 ).raw
             )
