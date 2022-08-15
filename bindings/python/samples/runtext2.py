@@ -73,7 +73,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Marlins": Image.open(
                 requests.get(
-                    "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mia.png",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgLvfw0fwbJoD01YsU124hsHEx7yjgD6sKBk4-cTdhQg&s",
                     stream=True,
                 ).raw
             )
@@ -752,8 +752,8 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + homeTeam
-                                        + homeTeamStatus,
+                                        + awayTeam
+                                        + awayTeamStatus,
                                         12,
                                         green,
                                         "O/U",
@@ -780,8 +780,8 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + homeTeam
-                                        + homeTeamStatus,
+                                        + awayTeam
+                                        + awayTeamStatus,
                                         26,
                                         green,
                                         overUnderString,
@@ -1613,7 +1613,7 @@ class RunText(SampleBase):
                         for game in arr:
                             if "nfl logo" in game[0]:
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Buffalo Bills"],
+                                    teamLogos["Miami Marlins"],
                                     pos + offset,
                                     -9,
                                 )
