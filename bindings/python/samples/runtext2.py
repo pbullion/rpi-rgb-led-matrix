@@ -2686,11 +2686,7 @@ class RunText(SampleBase):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.020)
-                    elif (
-                        isinstance(arr, list)
-                        and arr[0] == "golf"
-                        or "rankings" in arr[0]
-                    ):
+                    elif isinstance(arr, list) and (arr[0] == "golf" or "rankings" in arr[0]):
                         blackVs = graphics.DrawText(
                             offscreen_canvas, bFont, -1000, 12, green, arr[1]
                         )
