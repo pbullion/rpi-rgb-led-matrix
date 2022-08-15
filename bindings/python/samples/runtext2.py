@@ -361,7 +361,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Dallas Cowboys": Image.open(
                 requests.get(
-                    "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
+                    "https://logos-download.com/wp-content/uploads/2018/04/Dallas_Cowboys_logo_star.png",
                     stream=True,
                 ).raw
             )
@@ -393,7 +393,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Houston Texans": Image.open(
                 requests.get(
-                    "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
+                    "https://logos-download.com/wp-content/uploads/2018/02/Houston_Texans_logo_bull-700x700.png",
                     stream=True,
                 ).raw
             )
@@ -1612,6 +1612,9 @@ class RunText(SampleBase):
                     elif isinstance(arr, list) and "nfl logo" in arr[0][0]:
                         for game in arr:
                             if "nfl logo" in game[0]:
+                                offscreen_canvas.SetImage(
+                                    teamLogos["Dallas Cowboys"], pos + offset, -9
+                                )
                                 offscreen_canvas.SetImage(
                                     teamLogos["Houston Texans"], pos + offset, -9
                                 )
