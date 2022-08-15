@@ -321,7 +321,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago Bears": Image.open(
                 requests.get(
-                    "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
+                    "https://cdn.freebiesupply.com/images/large/2x/chicago-bears-logo-transparent.png",
                     stream=True,
                 ).raw
             )
@@ -337,7 +337,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Browns": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/cleveland-browns-logo-1970-1985-300x300.png",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCj1_ISywnJqeR1HBXg6J6pHX6lpV0SHSmp7cTbFahDTJzzeygbtWVMgxpArmsMrY9JsQ&usqp=CAU",
                     stream=True,
                 ).raw
             )
