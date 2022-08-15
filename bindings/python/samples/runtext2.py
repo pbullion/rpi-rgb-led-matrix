@@ -386,7 +386,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Green Bay Packers": Image.open(
                 requests.get(
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Green_Bay_Packers_logo.svg/1280px-Green_Bay_Packers_logo.svg.png",
+                    "https://toppng.com/uploads/preview/green-bay-packers-logo-11548796924nroqb28k1l.png",
                     stream=True,
                 ).raw
             )
