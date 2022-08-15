@@ -321,7 +321,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago Bears": Image.open(
                 requests.get(
-                    "https://pngset.com/images/chicago-bears-background-chicago-bears-logo-symbol-trademark-label-transparent-png-1473600.png",
+                    "https://assets.stickpng.com/images/580b585b2edbce24c47b2b16.png",
                     stream=True,
                 ).raw
             )
@@ -425,7 +425,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Dolphins": Image.open(
                 requests.get(
-                    "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+                    "https://www.kindpng.com/picc/m/58-589037_miami-dolphin-png-miami-dolphins-logo-transparent-png.png",
                     stream=True,
                 ).raw
             )
