@@ -338,7 +338,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Browns": Image.open(
                 requests.get(
-                    "https://w7.pngwing.com/pngs/891/102/png-transparent-2003-cleveland-browns-season-nfl-dawg-pound-logo-nfl-brown-mammal-carnivoran.png",
+                    "https://athlonsports.com/.image/t_share/MTgyMDEyODU1ODM0NjQ5NzMx/dawgpound_332jpg.jpg",
                     stream=True,
                 ).raw
             )
@@ -376,6 +376,14 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
+            "spectatorss": Image.open(
+                requests.get(
+                    "https://spectatorsbargrill.com/wp-content/uploads/2022/06/cropped-spectators-bar-grill-logo-final-outlined.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
             "Detroit Lions": Image.open(
                 requests.get(
                     "https://loodibee.com/wp-content/uploads/nfl-detroit-lions-team-logo-2.png",
@@ -386,7 +394,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Green Bay Packers": Image.open(
                 requests.get(
-                    "https://i.bleacherreport.net/images/team_logos/328x328/green_bay_packers.png?canvas=492,328",
+                    "https://vm-storage.nyc3.digitaloceanspaces.com/2021/10/green-bay-packers-14.png",
                     stream=True,
                 ).raw
             )
