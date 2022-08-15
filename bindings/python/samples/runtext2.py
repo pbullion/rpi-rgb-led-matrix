@@ -1630,7 +1630,17 @@ class RunText(SampleBase):
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["Miami Dolphins"],
-                                    pos + offset + 75 + 75,
+                                    pos + offset + 75 + 75 + 75,
+                                    -9,
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos["Indianapolis Colts"],
+                                    pos + offset + 75 + 75 + 75 + 75,
+                                    -9,
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos["Miami Dolphins"],
+                                    pos + offset + 75 + 75 + 75 + 75 + 75,
                                     -9,
                                 )
                             awayTeam = 0
