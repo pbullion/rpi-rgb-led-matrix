@@ -73,7 +73,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Marlins": Image.open(
                 requests.get(
-                    "https://www.seekpng.com/png/detail/43-437807_wxtr5d3-miami-marlins-black-and-white-logo.png",
+                    "https://www.kindpng.com/picc/m/245-2458898_miami-marlins-logo-png-transparent-png.png",
                     stream=True,
                 ).raw
             )
