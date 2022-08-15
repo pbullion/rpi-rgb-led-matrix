@@ -3190,7 +3190,14 @@ class RunText(SampleBase):
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos
+                                    + offset
+                                    + teamLogos[displayNameAway].width
+                                    + versus
+                                    + teamLogos[displayNameHome].width
+                                    + buffer
+                                    + buffer
+                                    + buffer,
                                     12,
                                     white,
                                     awayTeamString,
@@ -3198,7 +3205,14 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos
+                                    + offset
+                                    + teamLogos[displayNameAway].width
+                                    + versus
+                                    + teamLogos[displayNameHome].width
+                                    + buffer
+                                    + buffer
+                                    + buffer,
                                     26,
                                     white,
                                     homeTeamString,
