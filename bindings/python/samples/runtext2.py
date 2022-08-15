@@ -26,7 +26,7 @@ class RunText(SampleBase):
         teamLogos = {
             "MLB": Image.open(
                 requests.get(
-                    "https://w7.pngwing.com/pngs/337/778/png-transparent-mlb-cleveland-indians-major-league-baseball-logo-american-league-baseball-blue-text-team.png",
+                    "https://brandslogos.com/wp-content/uploads/thumbs/major-league-baseball-logo-vector.svg",
                     stream=True,
                 ).raw
             )
