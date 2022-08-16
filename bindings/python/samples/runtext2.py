@@ -474,7 +474,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "New York Jets": Image.open(
                 requests.get(
-                    "https://www.nicepng.com/png/detail/233-2338494_new-york-jets-new-york-jets-helmet-logo.png",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDolwfkbcppn1vC4_AGUGQp7xAxKRABcO4Dw&usqp=CAU",
                     stream=True,
                 ).raw
             )
