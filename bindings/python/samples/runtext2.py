@@ -75,7 +75,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Marlins": Image.open(
                 requests.get(
-                    "http://clipart-library.com/img/1062945.jpg",
+                    "http://clipart-library.com/img/1062987.png",
                     stream=True,
                 ).raw
             )
