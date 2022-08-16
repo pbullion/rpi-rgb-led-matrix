@@ -394,7 +394,7 @@ class RunText(SampleBase):
             # .resize((50, 50), Image.ANTIALIAS),
             "Green Bay Packers": Image.open(
                 requests.get(
-                    "https://spng.pinpng.com/pngs/s/164-1644969_green-bay-packers-smoking-weed-logo-decals-stickers.png",
+                    "https://spng.pngfind.com/pngs/s/61-611663_green-bay-packers-logo-png-transparent-png.png",
                     stream=True,
                 ).raw
             )
