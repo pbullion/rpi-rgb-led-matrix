@@ -360,7 +360,7 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((40, 40), Image.ANTIALIAS),
             "Dallas Cowboys": Image.open(
                 requests.get(
                     "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dallas_Cowboys.svg/1076px-Dallas_Cowboys.svg.png",
@@ -1617,6 +1617,11 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos["NFL"],
                                     pos + offset,
+                                    -9,
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos["Las Vegas Raiders"],
+                                    pos + offset + 75,
                                     -9,
                                 )
                             awayTeam = 0
