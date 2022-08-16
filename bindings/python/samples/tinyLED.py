@@ -1762,7 +1762,7 @@ class RunText(SampleBase):
                     )
                     meetingBlack = graphics.DrawText(
                         canvas,
-                        slightlyBiggerFont,
+                        alilbiggerFont,
                         0,
                         25,
                         black,
@@ -1771,7 +1771,7 @@ class RunText(SampleBase):
                     meetingCentered = 64 - (meetingBlack / 2)
                     meetingText = graphics.DrawText(
                         canvas,
-                        slightlyBiggerFont,
+                        alilbiggerFont,
                         meetingCentered,
                         27,
                         yellow,
