@@ -1749,6 +1749,7 @@ class RunText(SampleBase):
                     )
                     time.sleep(5)
                 elif type(item) is dict and item["type"] == "meeting":
+                    print('in the meeting')
                     tournamentNameBlack = graphics.DrawText(
                         canvas, middleFont, 0, 10, black, "IN A MEETING"
                     )
@@ -1762,7 +1763,7 @@ class RunText(SampleBase):
                         0,
                         25,
                         black,
-                        "TILL" + item["eventEndTime"],
+                        item["eventEndTime"],
                     )
                     meetingCentered = 64 - (meetingBlack / 2)
                     meetingText = graphics.DrawText(
@@ -1771,7 +1772,7 @@ class RunText(SampleBase):
                         meetingCentered,
                         25,
                         yellow,
-                        "TILL" + item["eventEndTime"],
+                        item["eventEndTime"],
                     )
                     time.sleep(120)
                 else:
