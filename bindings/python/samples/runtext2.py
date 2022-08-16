@@ -384,14 +384,14 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            # "Spectators": Image.open(
-            #     requests.get(
-            #         "https://spectatorsbargrill.com/wp-content/uploads/2022/06/cropped-spectators-bar-grill-logo-final-outlined.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
+            "Spectators": Image.open(
+                requests.get(
+                    "https://spectatorsbargrill.com/wp-content/uploads/2022/06/cropped-spectators-bar-grill-logo-final-outlined.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
             "Green Bay Packers": Image.open(
                 requests.get(
                     "https://seeklogo.com/images/G/green-bay-packers-logo-2A5FB2D033-seeklogo.com.png",
@@ -410,7 +410,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Indianapolis Colts": Image.open(
                 requests.get(
-                    "https://cdn.freebiesupply.com/images/large/2x/indianapolis-colts-logo-transparent.png",
+                    "https://w7.pngwing.com/pngs/281/691/png-transparent-indianapolis-colts-nfl-jacksonville-jaguars-tennessee-titans-super-bowl-nfl-blue-angle-text.png",
                     stream=True,
                 ).raw
             )
@@ -482,7 +482,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "New York Jets": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-new-york-jets-team-logo.png",
+                    "https://1000logos.net/wp-content/uploads/2017/03/New-York-Jets-Logo-1963.png",
                     stream=True,
                 ).raw
             )
@@ -1622,20 +1622,20 @@ class RunText(SampleBase):
                         for game in arr:
                             if "nfl logo" in game[0]:
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Green Bay Packers"],
+                                    teamLogos["New York Jets"],
                                     pos + offset,
                                     -9,
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Cleveland Browns"],
+                                    teamLogos["Indianapolis Colts"],
                                     pos + offset + 75,
                                     -9,
                                 )
-                                # offscreen_canvas.SetImage(
-                                #     teamLogos["Spectators"],
-                                #     pos + offset + 75 + 75,
-                                #     -9,
-                                # )
+                                offscreen_canvas.SetImage(
+                                    teamLogos["Spectators"],
+                                    pos + offset + 75 + 75,
+                                    -9,
+                                )
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
