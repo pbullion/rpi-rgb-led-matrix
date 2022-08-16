@@ -2647,6 +2647,7 @@ class RunText(SampleBase):
                                 green,
                                 arr[1]["gainers"],
                             )
+                            pos -= 1
                             time.sleep(0.010)
                         while scrollingDecliners:
                             decliners = graphics.DrawText(
@@ -2657,8 +2658,8 @@ class RunText(SampleBase):
                                 red,
                                 arr[1]["decliners"],
                             )
+                            pos -= 1
                             time.sleep(0.005)
-                        pos -= 1
                         if pos + gainers < 0:
                             running = False
                             pos = offscreen_canvas.width
