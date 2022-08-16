@@ -402,7 +402,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Indianapolis Colts": Image.open(
                 requests.get(
-                    "https://flyclipart.com/thumb2/indianapolis-colts-logo-clip-art-77404.png",
+                    "https://s.yimg.com/it/api/res/1.2/1U2AxCGOmhypKITxE2PNMw--~A/YXBwaWQ9eW5ld3M7dz0xMjAwO2g9NjMwO3E9MTAw/https://s.yimg.com/cv/apiv2/default/nfl/20190724/500x500/2019_IND_wbg.png",
                     stream=True,
                 ).raw
             )
@@ -1613,14 +1613,14 @@ class RunText(SampleBase):
                     elif isinstance(arr, list) and "nfl logo" in arr[0][0]:
                         for game in arr:
                             if "nfl logo" in game[0]:
-                                offscreen_canvas.SetImage(
-                                    teamLogos["New York Jets"],
-                                    pos + offset,
-                                    -9,
-                                )
+                                # offscreen_canvas.SetImage(
+                                #     teamLogos["New York Jets"],
+                                #     pos + offset,
+                                #     -9,
+                                # )
                                 offscreen_canvas.SetImage(
                                     teamLogos["Indianapolis Colts"],
-                                    pos + offset + 75,
+                                    pos + offset,
                                     -9,
                                 )
                             awayTeam = 0
