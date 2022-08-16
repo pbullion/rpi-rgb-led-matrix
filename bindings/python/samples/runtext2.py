@@ -75,7 +75,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Marlins": Image.open(
                 requests.get(
-                    "https://cdn.shopify.com/s/files/1/0279/0234/5304/products/iz5gfaj9qwvptbrp36mh.jpg?v=1649421547&width=533",
+                    "https://content.sportslogos.net/news/2017/03/Miami-Marlins-Change-Logo-for-2017-Season.png",
                     stream=True,
                 ).raw
             )
