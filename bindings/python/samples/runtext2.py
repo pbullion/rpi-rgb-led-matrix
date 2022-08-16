@@ -1631,11 +1631,11 @@ class RunText(SampleBase):
                                     pos + offset + 75,
                                     -9,
                                 )
-                                offscreen_canvas.SetImage(
-                                    teamLogos["Spectators"],
-                                    pos + offset + 75 + 75,
-                                    -9,
-                                )
+                                # offscreen_canvas.SetImage(
+                                #     teamLogos["Spectators"],
+                                #     pos + offset + 75 + 75,
+                                #     -9,
+                                # )
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
