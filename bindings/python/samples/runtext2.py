@@ -402,7 +402,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Indianapolis Colts": Image.open(
                 requests.get(
-                    "https://cdn.freebiesupply.com/images/thumbs/2x/indianapolis-colts-logo.png",
+                    "https://p.kindpng.com/picc/s/144-1440442_colts-logo-hd-png-download.png",
                     stream=True,
                 ).raw
             )
@@ -474,7 +474,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "New York Jets": Image.open(
                 requests.get(
-                    "http://sportslogohistory.com/wp-content/uploads/2019/04/new_york_jets_2019-pres_a.png",
+                    "https://www.nicepng.com/png/detail/233-2338494_new-york-jets-new-york-jets-helmet-logo.png",
                     stream=True,
                 ).raw
             )
