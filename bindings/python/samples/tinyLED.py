@@ -1773,7 +1773,7 @@ class RunText(SampleBase):
                         canvas,
                         alilbiggerFont,
                         meetingCentered,
-                        27,
+                        24,
                         yellow,
                         "ENDS " + item["remainingTime"],
                     )
