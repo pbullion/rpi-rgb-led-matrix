@@ -390,7 +390,7 @@ class RunText(SampleBase):
             #         stream=True,
             #     ).raw
             # )
-            .convert("RGB")
+            # .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Green Bay Packers": Image.open(
                 requests.get(
