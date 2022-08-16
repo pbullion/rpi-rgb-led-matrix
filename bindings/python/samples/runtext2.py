@@ -394,7 +394,7 @@ class RunText(SampleBase):
             # .resize((50, 50), Image.ANTIALIAS),
             "Green Bay Packers": Image.open(
                 requests.get(
-                    "https://spng.pngfind.com/pngs/s/61-611663_green-bay-packers-logo-png-transparent-png.png",
+                    "https://seeklogo.com/images/G/green-bay-packers-logo-2A5FB2D033-seeklogo.com.png",
                     stream=True,
                 ).raw
             )
