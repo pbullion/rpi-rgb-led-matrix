@@ -2637,7 +2637,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "gainersDecliners" in arr[0]:
                         gainers = graphics.DrawText(
-                            offscreen_canvas, bFont, pos, 12, green, arr[1]["gainers"]
+                            offscreen_canvas, bFont, pos, 14, green, arr[1]["gainers"]
                         )
                         time.sleep(0.010)
                         decliners = graphics.DrawText(
