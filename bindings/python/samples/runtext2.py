@@ -32,7 +32,7 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((40, 40), Image.ANTIALIAS),
             "NFL": Image.open(
                 requests.get(
                     "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png",
@@ -360,7 +360,7 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .resize((40, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "Dallas Cowboys": Image.open(
                 requests.get(
                     "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dallas_Cowboys.svg/1076px-Dallas_Cowboys.svg.png",
