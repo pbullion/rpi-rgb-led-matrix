@@ -338,7 +338,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Browns": Image.open(
                 requests.get(
-                    "https://w7.pngwing.com/pngs/891/102/png-transparent-2003-cleveland-browns-season-nfl-dawg-pound-logo-nfl-brown-mammal-carnivoran.png",
+                    "https://i.redd.it/1rsnuls0llu71.jpg",
                     stream=True,
                 ).raw
             )
