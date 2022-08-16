@@ -1617,7 +1617,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos["NFL"],
                                     pos + offset,
-                                    -9,
+                                    -6,
                                 )
                             awayTeam = 0
                             homeTeam = 0
