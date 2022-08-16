@@ -75,7 +75,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Marlins": Image.open(
                 requests.get(
-                    "http://clipart-library.com/img/1062987.png",
+                    "http://sportslogohistory.com/wp-content/uploads/2017/12/miami_marlins_2017-pres.png",
                     stream=True,
                 ).raw
             )
