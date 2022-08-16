@@ -1766,7 +1766,7 @@ class RunText(SampleBase):
                         0,
                         25,
                         black,
-                        "UNTIL " + item["eventEndTime"],
+                        "ENDS " + item["remainingTime"],
                     )
                     meetingCentered = 64 - (meetingBlack / 2)
                     meetingText = graphics.DrawText(
@@ -1775,7 +1775,7 @@ class RunText(SampleBase):
                         meetingCentered,
                         27,
                         yellow,
-                        "UNTIL " + item["eventEndTime"],
+                        "ENDS " + item["remainingTime"],
                     )
                     currentTime = graphics.DrawText(
                         canvas,
