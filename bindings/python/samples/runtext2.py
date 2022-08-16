@@ -75,7 +75,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Marlins": Image.open(
                 requests.get(
-                    "http://sportslogohistory.com/wp-content/uploads/2017/12/miami_marlins_2017-pres.png",
+                    "https://listimg.pinclipart.com/picdir/s/378-3780201_louisiana-clipart-baseball-lsu-miami-marlins-logo-png.png",
                     stream=True,
                 ).raw
             )
