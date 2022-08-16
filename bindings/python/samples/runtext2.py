@@ -474,7 +474,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "New York Jets": Image.open(
                 requests.get(
-                    "https://logos-world.net/wp-content/uploads/2020/05/New-York-Jets-Logo-700x394.png",
+                    "https://flyclipart.com/thumb2/new-york-jets-logo-vector-free-download-895532.png",
                     stream=True,
                 ).raw
             )
