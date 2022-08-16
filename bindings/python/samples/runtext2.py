@@ -402,7 +402,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Indianapolis Colts": Image.open(
                 requests.get(
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv3cGO8Rgb7gHSIMezTeOfOFftZ20dmRAi_A&usqp=CAU",
+                    "https://flyclipart.com/thumb2/indianapolis-colts-logo-clip-art-77404.png",
                     stream=True,
                 ).raw
             )
