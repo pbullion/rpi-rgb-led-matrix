@@ -338,7 +338,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Browns": Image.open(
                 requests.get(
-                    "https://athlonsports.com/.image/t_share/MTgyMDEyODU1ODM0NjQ5NzMx/dawgpound_332jpg.jpg",
+                    "https://logos-download.com/wp-content/uploads/2018/03/Cleveland_Browns_logo_b-700x432.png",
                     stream=True,
                 ).raw
             )
@@ -376,14 +376,6 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "spectatorss": Image.open(
-                requests.get(
-                    "https://spectatorsbargrill.com/wp-content/uploads/2022/06/cropped-spectators-bar-grill-logo-final-outlined.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
             "Detroit Lions": Image.open(
                 requests.get(
                     "https://loodibee.com/wp-content/uploads/nfl-detroit-lions-team-logo-2.png",
@@ -394,7 +386,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Green Bay Packers": Image.open(
                 requests.get(
-                    "https://vm-storage.nyc3.digitaloceanspaces.com/2021/10/green-bay-packers-14.png",
+                    "https://i.bleacherreport.net/images/team_logos/328x328/green_bay_packers.png?canvas=492,328",
                     stream=True,
                 ).raw
             )
@@ -1631,11 +1623,11 @@ class RunText(SampleBase):
                                     pos + offset + 75,
                                     -9,
                                 )
-                                offscreen_canvas.SetImage(
-                                    teamLogos["spectators"],
-                                    pos + offset + 75 + 75,
-                                    -9,
-                                )
+                                # offscreen_canvas.SetImage(
+                                #     teamLogos["Cleveland Browns"],
+                                #     pos + offset + 75 + 75,
+                                #     -9,
+                                # )
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
