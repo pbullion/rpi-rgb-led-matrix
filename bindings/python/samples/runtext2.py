@@ -35,7 +35,8 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "NFL": Image.open(
                 requests.get(
-                    "https://pixy.org/src/147/thumbs350/1471745.jpg", stream=True
+                    "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png",
+                    stream=True,
                 ).raw
             )
             .convert("RGB")
@@ -354,7 +355,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Las Vegas Raiders": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-oakland-raiders-team-logo.png",
+                    "https://content.sportslogos.net/logos/7/6708/full/8521_las_vegas_raiders-primary-20201.png",
                     stream=True,
                 ).raw
             )
@@ -1613,13 +1614,8 @@ class RunText(SampleBase):
                     elif isinstance(arr, list) and "nfl logo" in arr[0][0]:
                         for game in arr:
                             if "nfl logo" in game[0]:
-                                # offscreen_canvas.SetImage(
-                                #     teamLogos["New York Jets"],
-                                #     pos + offset,
-                                #     -9,
-                                # )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Indianapolis Colts"],
+                                    teamLogos["NFL"],
                                     pos + offset,
                                     -9,
                                 )
