@@ -384,6 +384,14 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
+            "Spectators": Image.open(
+                requests.get(
+                    "https://spectatorsbargrill.com/wp-content/uploads/2022/06/cropped-spectators-bar-grill-logo-final-outlined.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
             "Green Bay Packers": Image.open(
                 requests.get(
                     "https://flyclipart.com/thumb2/green-bay-packers-caps-831626.png",
