@@ -479,7 +479,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "New York Jets": Image.open(
                 requests.get(
-                    "https://1000logos.net/wp-content/uploads/2017/03/New-York-Jets-Logo-1963.png",
+                    "https://1000logos.net/wp-content/uploads/2017/03/New-York-Jets-Logo-1978.png",
                     stream=True,
                 ).raw
             )
