@@ -75,7 +75,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Marlins": Image.open(
                 requests.get(
-                    "https://flyclipart.com/thumb2/miami-marlins-logo-mlb-logos-miami-marlins-43271.png",
+                    "https://cdn.shopify.com/s/files/1/0279/0234/5304/products/iz5gfaj9qwvptbrp36mh.jpg?v=1649421547&width=533",
                     stream=True,
                 ).raw
             )
