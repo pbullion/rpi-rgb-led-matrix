@@ -2636,14 +2636,28 @@ class RunText(SampleBase):
                             running = False
                             pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "gainersDecliners" in arr[0]:
-                        gainers = graphics.DrawText(
-                            offscreen_canvas, bFont, pos, 5, green, arr[1]["gainers"]
-                        )
-                        time.sleep(0.010)
-                        decliners = graphics.DrawText(
-                            offscreen_canvas, bFont, pos, 26, red, arr[1]["decliners"]
-                        )
-                        time.sleep(0.005)
+                        scrollingGainers = True
+                        scrollingDecliners = True
+                        while scrollingGainers:
+                            gainers = graphics.DrawText(
+                                offscreen_canvas,
+                                bFont,
+                                pos,
+                                11,
+                                green,
+                                arr[1]["gainers"],
+                            )
+                            time.sleep(0.010)
+                        while scrollingDecliners:
+                            decliners = graphics.DrawText(
+                                offscreen_canvas,
+                                bFont,
+                                pos,
+                                27,
+                                red,
+                                arr[1]["decliners"],
+                            )
+                            time.sleep(0.005)
                         pos -= 1
                         if pos + gainers < 0:
                             running = False
