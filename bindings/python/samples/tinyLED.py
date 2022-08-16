@@ -1755,7 +1755,7 @@ class RunText(SampleBase):
                     )
                     nameCentered = 64 - (tournamentNameBlack / 2)
                     tournamentName = graphics.DrawText(
-                        canvas, middleFont, nameCentered, 10, red, "IN A MEETING"
+                        canvas, middleFont, nameCentered, 14, red, "IN A MEETING"
                     )
                     meetingBlack = graphics.DrawText(
                         canvas,
@@ -1770,7 +1770,7 @@ class RunText(SampleBase):
                         canvas,
                         slightlyBiggerFont,
                         meetingCentered,
-                        25,
+                        27,
                         yellow,
                         "UNTIL " + item["eventEndTime"],
                     )
