@@ -75,7 +75,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Marlins": Image.open(
                 requests.get(
-                    "https://listimg.pinclipart.com/picdir/s/378-3780201_louisiana-clipart-baseball-lsu-miami-marlins-logo-png.png",
+                    "https://flyclipart.com/thumb2/miami-marlins-logo-mlb-logos-miami-marlins-43271.png",
                     stream=True,
                 ).raw
             )
