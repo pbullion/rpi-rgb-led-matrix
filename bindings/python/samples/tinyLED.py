@@ -1763,7 +1763,7 @@ class RunText(SampleBase):
                         0,
                         25,
                         black,
-                        item["eventEndTime"],
+                        "UNTIL " + item["eventEndTime"],
                     )
                     meetingCentered = 64 - (meetingBlack / 2)
                     meetingText = graphics.DrawText(
@@ -1772,7 +1772,7 @@ class RunText(SampleBase):
                         meetingCentered,
                         25,
                         yellow,
-                        "UNTIL" + item["eventEndTime"],
+                        "UNTIL " + item["eventEndTime"],
                     )
                     time.sleep(120)
                 else:
