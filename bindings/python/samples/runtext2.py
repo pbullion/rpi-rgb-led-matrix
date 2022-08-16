@@ -394,7 +394,7 @@ class RunText(SampleBase):
             # .resize((50, 50), Image.ANTIALIAS),
             "Green Bay Packers": Image.open(
                 requests.get(
-                    "https://external-preview.redd.it/zsjwfDWYL8jiJJZdJDbknh1VvEXjU9oESDmnhkFRJ0w.jpg?auto=webp&s=4527a281b0b95920e8517dc5b3bdd6dbf973b30c",
+                    "https://spng.pinpng.com/pngs/s/164-1644969_green-bay-packers-smoking-weed-logo-decals-stickers.png",
                     stream=True,
                 ).raw
             )
