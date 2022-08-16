@@ -391,7 +391,7 @@ class RunText(SampleBase):
             #     ).raw
             # )
             # .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            # .resize((50, 50), Image.ANTIALIAS),
             "Green Bay Packers": Image.open(
                 requests.get(
                     "https://flyclipart.com/thumb2/green-bay-packers-caps-831626.png",
