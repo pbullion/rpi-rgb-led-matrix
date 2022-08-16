@@ -474,7 +474,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "New York Jets": Image.open(
                 requests.get(
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDolwfkbcppn1vC4_AGUGQp7xAxKRABcO4Dw&usqp=CAU",
+                    "https://www.liblogo.com/img-logo/max/ne809n810-new-york-jets-logo-new-york-jets-logos-history-amp-images-logos-lists-brands.png",
                     stream=True,
                 ).raw
             )
