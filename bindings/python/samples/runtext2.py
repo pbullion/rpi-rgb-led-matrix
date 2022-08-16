@@ -1619,11 +1619,6 @@ class RunText(SampleBase):
                                     pos + offset,
                                     -9,
                                 )
-                                offscreen_canvas.SetImage(
-                                    teamLogos["Las Vegas Raiders"],
-                                    pos + offset + 75,
-                                    -9,
-                                )
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
