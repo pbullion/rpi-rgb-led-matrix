@@ -32,7 +32,7 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .resize((40, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "NFL": Image.open(
                 requests.get(
                     "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png",
@@ -40,7 +40,7 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((40, 40), Image.ANTIALIAS),
             "New York Yankees": Image.open(
                 requests.get(
                     "https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png",
