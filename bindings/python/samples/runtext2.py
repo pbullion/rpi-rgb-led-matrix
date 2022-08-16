@@ -338,7 +338,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Browns": Image.open(
                 requests.get(
-                    "https://logos-download.com/wp-content/uploads/2018/03/Cleveland_Browns_logo_b-700x432.png",
+                    "https://w7.pngwing.com/pngs/891/102/png-transparent-2003-cleveland-browns-season-nfl-dawg-pound-logo-nfl-brown-mammal-carnivoran.png",
                     stream=True,
                 ).raw
             )
@@ -386,7 +386,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Green Bay Packers": Image.open(
                 requests.get(
-                    "https://i.bleacherreport.net/images/team_logos/328x328/green_bay_packers.png?canvas=492,328",
+                    "https://flyclipart.com/thumb2/green-bay-packers-caps-831626.png",
                     stream=True,
                 ).raw
             )
