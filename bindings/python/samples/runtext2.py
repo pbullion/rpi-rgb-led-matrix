@@ -402,7 +402,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Indianapolis Colts": Image.open(
                 requests.get(
-                    "https://p.kindpng.com/picc/s/144-1440442_colts-logo-hd-png-download.png",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv3cGO8Rgb7gHSIMezTeOfOFftZ20dmRAi_A&usqp=CAU",
                     stream=True,
                 ).raw
             )
