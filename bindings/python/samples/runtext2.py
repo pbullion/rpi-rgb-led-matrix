@@ -75,7 +75,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Miami Marlins": Image.open(
                 requests.get(
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgLvfw0fwbJoD01YsU124hsHEx7yjgD6sKBk4-cTdhQg&s",
+                    "http://clipart-library.com/img/1062945.jpg",
                     stream=True,
                 ).raw
             )
@@ -1615,7 +1615,7 @@ class RunText(SampleBase):
                         for game in arr:
                             if "nfl logo" in game[0]:
                                 offscreen_canvas.SetImage(
-                                    teamLogos["NFL"],
+                                    teamLogos["Miami Marlins"],
                                     pos + offset,
                                     -6,
                                 )
