@@ -1646,7 +1646,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + 4
                                     + teamLogos[game[5]].width,
-                                    12,
+                                    14,
                                     green,
                                     dayString.split(",")[0].upper(),
                                 )
@@ -1654,7 +1654,7 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     middleFont,
                                     pos + offset + buffer + teamLogos[game[5]].width,
-                                    24,
+                                    26,
                                     green,
                                     statusString,
                                 )
@@ -1710,7 +1710,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
                                     + homeTeam
                                     + buffer,
                                     12,
@@ -1725,7 +1724,6 @@ class RunText(SampleBase):
                                     + teamLogos[game[5]].width
                                     + versus
                                     + teamLogos[game[10]].width
-                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
