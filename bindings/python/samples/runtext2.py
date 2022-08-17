@@ -1644,7 +1644,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + 4
+                                    + 5
                                     + teamLogos[game[5]].width,
                                     14,
                                     green,
@@ -1698,6 +1698,11 @@ class RunText(SampleBase):
                                     white,
                                     homeTeamString,
                                 )
+                                if homeTeam > awayTeam:
+                                    scoreLocation = homeTeam
+                                else:
+                                    scoreLocation = awayTeam
+
                                 awaySpread = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
@@ -1710,7 +1715,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + homeTeam
+                                    + scoreLocation
                                     + buffer,
                                     12,
                                     green,
@@ -1728,7 +1733,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + homeTeam
+                                    + scoreLocation
                                     + buffer,
                                     26,
                                     green,
@@ -1751,7 +1756,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + homeTeam
+                                    + scoreLocation
                                     + buffer,
                                     12,
                                     green,
@@ -1774,7 +1779,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + homeTeam
+                                    + scoreLocation
                                     + buffer,
                                     26,
                                     green,
@@ -1803,7 +1808,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + homeTeam,
+                                    + scoreLocation,
                                     12,
                                     green,
                                     "O/U",
