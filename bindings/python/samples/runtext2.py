@@ -2521,7 +2521,7 @@ class RunText(SampleBase):
                                     + homeTeam,
                                     26,
                                     green,
-                                    timeString,
+                                    statusString,
                                 )
                             if "inProgress" in game[0]:
                                 awayTeamString = game[5]
