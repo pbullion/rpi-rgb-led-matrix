@@ -574,8 +574,7 @@ class RunText(SampleBase):
             #         },
             #     ]
             # ]
-            responseArr = (
-                [
+            responseArr = [
                     [
                         ["ncaa conference", "BIG 12"],
                         [
@@ -820,7 +819,7 @@ class RunText(SampleBase):
                         ],
                     ],
                 ],
-            )
+            
             print(responseArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             print(offscreen_canvas)
