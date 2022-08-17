@@ -599,7 +599,7 @@ class RunText(SampleBase):
                         "",
                         "",
                         "Thu, September 1st",
-                        "7:00 PM EDT",
+                        "6:00 PM",
                     ],
                     [
                         "game pregame ncaaFootball",
@@ -623,7 +623,7 @@ class RunText(SampleBase):
                         "",
                         "",
                         "Thu, September 1st",
-                        "7:00 PM EDT",
+                        "6:00 PM",
                     ],
                     [
                         "game pregame ncaaFootball",
@@ -647,7 +647,7 @@ class RunText(SampleBase):
                         "",
                         "",
                         "Fri, September 2nd",
-                        "8:00 PM EDT",
+                        "7:00 PM",
                     ],
                     [
                         "game pregame ncaaFootball",
@@ -671,7 +671,7 @@ class RunText(SampleBase):
                         "",
                         "",
                         "Fri, September 2nd",
-                        "10:00 PM EDT",
+                        "9:00 PM",
                     ],
                     [
                         "game pregame ncaaFootball",
@@ -695,7 +695,7 @@ class RunText(SampleBase):
                         "",
                         "",
                         "Sat, September 3rd",
-                        "2:00 PM EDT",
+                        "1:00 PM",
                     ],
                     [
                         "game pregame ncaaFootball",
@@ -719,7 +719,7 @@ class RunText(SampleBase):
                         "",
                         "",
                         "Sat, September 3rd",
-                        "3:30 PM EDT",
+                        "2:30 PM",
                     ],
                     [
                         "game pregame ncaaFootball",
@@ -743,7 +743,7 @@ class RunText(SampleBase):
                         "",
                         "",
                         "Sat, September 3rd",
-                        "7:00 PM EDT",
+                        "6:00 PM",
                     ],
                     [
                         "game pregame ncaaFootball",
@@ -767,7 +767,7 @@ class RunText(SampleBase):
                         "",
                         "",
                         "Sat, September 3rd",
-                        "7:00 PM EDT",
+                        "6:00 PM",
                     ],
                     [
                         "game pregame ncaaFootball",
@@ -791,7 +791,7 @@ class RunText(SampleBase):
                         "",
                         "",
                         "Sat, September 3rd",
-                        "8:00 PM EDT",
+                        "7:00 PM",
                     ],
                     [
                         "game pregame ncaaFootball",
@@ -815,7 +815,7 @@ class RunText(SampleBase):
                         "",
                         "",
                         "Sat, September 3rd",
-                        "8:00 PM EDT",
+                        "7:00 PM",
                     ],
                 ],
             ]
