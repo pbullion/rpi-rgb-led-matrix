@@ -2639,11 +2639,11 @@ class RunText(SampleBase):
                         gainers = graphics.DrawText(
                             offscreen_canvas, bFont, pos, 14, green, arr[1]["gainers"]
                         )
-                        time.sleep(0.010)
                         decliners = graphics.DrawText(
                             offscreen_canvas, bFont, pos, 29, red, arr[1]["decliners"]
                         )
                         pos -= 1
+                        time.sleep(0.015)
                         if pos + gainers < 0:
                             running = False
                             pos = offscreen_canvas.width
