@@ -2343,7 +2343,7 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     font,
                                     pos + offset,
-                                    24,
+                                    26,
                                     green,
                                     game[1],
                                 )
@@ -2498,6 +2498,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
+                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
