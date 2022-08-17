@@ -561,7 +561,7 @@ class RunText(SampleBase):
             print("getting responseArrrrrrrrr")
             user = userJSON["user"]
             url = requests.get(
-                "https://sheline-art-website-api.herokuapp.com/patrick/all-data-2/{user}"
+                f"https://sheline-art-website-api.herokuapp.com/patrick/all-data-2/{user}"
             )
             responseArr = json.loads(url.text)
             # responseArr = [
