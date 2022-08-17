@@ -2484,6 +2484,10 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
                                     + homeTeam,
                                     12,
                                     green,
@@ -2494,6 +2498,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
