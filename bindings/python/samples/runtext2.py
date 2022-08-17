@@ -1836,7 +1836,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + homeTeam,
+                                    + scoreLocation,
                                     26,
                                     green,
                                     overUnderString,
@@ -2928,7 +2928,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                     else:
                         length = graphics.DrawText(
-                            offscreen_canvas, font, pos, 20, green, arr
+                            offscreen_canvas, font, pos, 24, green, arr
                         )
                         pos -= 1
                         if pos + length < 0:
