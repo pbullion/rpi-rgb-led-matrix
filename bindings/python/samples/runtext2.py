@@ -560,10 +560,10 @@ class RunText(SampleBase):
             middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
             print("getting responseArrrrrrrrr")
             user = userJSON["user"]
-            url = requests.get(
-                f"https://sheline-art-website-api.herokuapp.com/patrick/all-data-2/{user}"
-            )
-            responseArr = json.loads(url.text)
+            # url = requests.get(
+            #     f"https://sheline-art-website-api.herokuapp.com/patrick/all-data-2/{user}"
+            # )
+            # responseArr = json.loads(url.text)
             # responseArr = [
             #     [
             #         "gainersDecliners",
@@ -574,6 +574,318 @@ class RunText(SampleBase):
             #         },
             #     ]
             # ]
+            responseArr = [
+                "",
+                "",
+                "SPECTATORS BAR AND GRILL",
+                "",
+                [
+                    ["ncaa conference", "BIG 12"],
+                    [
+                        "game pregame ncaaFootball",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-central-michigan-chippewas-logo.png",
+                        106,
+                        0,
+                        50,
+                        "Central Michigan Chippewas",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-oklahoma-state-cowboys-logo.png",
+                        255,
+                        101,
+                        0,
+                        "#12 Oklahoma State Cowboys",
+                        "6:00",
+                        "0-0",
+                        "0-0",
+                        "",
+                        "+850",
+                        "-1667",
+                        "58.5",
+                        "",
+                        "",
+                        "Thu, September 1st",
+                        "7:00 PM EDT",
+                    ],
+                    [
+                        "game pregame ncaaFootball",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-west-virginia-mountaineers-logo.png",
+                        255,
+                        198,
+                        0,
+                        "West Virginia Mountaineers",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-pittsburgh-panthers-logo.png",
+                        250,
+                        250,
+                        250,
+                        "#17 Pittsburgh Panthers",
+                        "6:00",
+                        "0-0",
+                        "0-0",
+                        "",
+                        "+205",
+                        "-265",
+                        "52",
+                        "",
+                        "",
+                        "Thu, September 1st",
+                        "7:00 PM EDT",
+                    ],
+                    [
+                        "game pregame ncaaFootball",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-tennessee-tech-golden-eagles-logo.png",
+                        90,
+                        64,
+                        153,
+                        "Tennessee Tech Golden Eagles",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-kansas-jayhawks-logo.png",
+                        250,
+                        250,
+                        250,
+                        "Kansas Jayhawks",
+                        "7:00",
+                        "0-0",
+                        "0-0",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "Fri, September 2nd",
+                        "8:00 PM EDT",
+                    ],
+                    [
+                        "game pregame ncaaFootball",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-tcu-horned-frogs-logo.png",
+                        60,
+                        55,
+                        125,
+                        "TCU Horned Frogs",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-colorado-buffaloes-logo.png",
+                        209,
+                        197,
+                        126,
+                        "Colorado Buffaloes",
+                        "9:00",
+                        "0-0",
+                        "0-0",
+                        "",
+                        "-400",
+                        "+310",
+                        "55",
+                        "",
+                        "",
+                        "Fri, September 2nd",
+                        "10:00 PM EDT",
+                    ],
+                    [
+                        "game pregame ncaaFootball",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-southeast-missouri-state-redhawks-logo.png",
+                        204,
+                        0,
+                        0,
+                        "Southeast Missouri State Redhawks",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-iowa-state-cyclones-logo.png",
+                        102,
+                        0,
+                        21,
+                        "Iowa State Cyclones",
+                        "1:00",
+                        "0-0",
+                        "0-0",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "Sat, September 3rd",
+                        "2:00 PM EDT",
+                    ],
+                    [
+                        "game pregame ncaaFootball",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-utep-miners-logo.png",
+                        255,
+                        130,
+                        0,
+                        "UTEP Miners",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-oklahoma-sooners-logo.png",
+                        123,
+                        0,
+                        0,
+                        "#9 Oklahoma Sooners",
+                        "2:30",
+                        "0-0",
+                        "0-0",
+                        "",
+                        "",
+                        "",
+                        "56.5",
+                        "",
+                        "",
+                        "Sat, September 3rd",
+                        "3:30 PM EDT",
+                    ],
+                    [
+                        "game pregame ncaaFootball",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-albany-great-danes-logo.png",
+                        61,
+                        39,
+                        119,
+                        "Albany Great Danes",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-baylor-bears-logo.png",
+                        250,
+                        250,
+                        250,
+                        "#10 Baylor Bears",
+                        "6:00",
+                        "0-0",
+                        "0-0",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "Sat, September 3rd",
+                        "7:00 PM EDT",
+                    ],
+                    [
+                        "game pregame ncaaFootball",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-south-dakota-coyotes-logo.png",
+                        205,
+                        18,
+                        65,
+                        "South Dakota Coyotes",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-kansas-state-wildcats-logo.png",
+                        99,
+                        49,
+                        148,
+                        "Kansas State Wildcats",
+                        "6:00",
+                        "0-0",
+                        "0-0",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "Sat, September 3rd",
+                        "7:00 PM EDT",
+                    ],
+                    [
+                        "game pregame ncaaFootball",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-murray-state-racers-logo.png",
+                        250,
+                        250,
+                        250,
+                        "Murray State Racers",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-texas-tech-red-raiders-logo.png",
+                        200,
+                        0,
+                        37,
+                        "Texas Tech Red Raiders",
+                        "7:00",
+                        "0-0",
+                        "0-0",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "Sat, September 3rd",
+                        "8:00 PM EDT",
+                    ],
+                    [
+                        "game pregame ncaaFootball",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-ul-monroe-warhawks-logo.png",
+                        35,
+                        31,
+                        32,
+                        "UL Monroe Warhawks",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-texas-longhorns-logo.png",
+                        238,
+                        117,
+                        36,
+                        "Texas Longhorns",
+                        "7:00",
+                        "0-0",
+                        "0-0",
+                        "",
+                        "",
+                        "",
+                        "66.5",
+                        "",
+                        "",
+                        "Sat, September 3rd",
+                        "8:00 PM EDT",
+                    ],
+                ],
+                "",
+                "",
+                "",
+                "",
+                "",
+                false,
+                "EAT. DRINK. BE A SPECTATOR.",
+                false,
+                "",
+                "MANCAVEDISPLAYS",
+                [
+                    "stocks",
+                    [
+                        [
+                            "https://logo.clearbit.com/originbank.com",
+                            "OBNK",
+                            "45.71",
+                            "-2.47%",
+                            "OBNK 45.71 -2.47%",
+                            "down",
+                        ],
+                        [
+                            "https://logo.clearbit.com/twitter.com",
+                            "TWTR",
+                            "44.40",
+                            "-0.22%",
+                            "TWTR 44.40 -0.22%",
+                            "down",
+                        ],
+                        [
+                            "https://logo.clearbit.com/tesla.com",
+                            "TSLA",
+                            "919.69",
+                            "-0.89%",
+                            "TSLA 919.69 -0.89%",
+                            "down",
+                        ],
+                        [
+                            "https://logo.clearbit.com/stem.com",
+                            "STEM",
+                            "15.76",
+                            "-4.83%",
+                            "STEM 15.76 -4.83%",
+                            "down",
+                        ],
+                        [
+                            "https://logo.clearbit.com/dowjones.com",
+                            "DOW",
+                            "34,152.01",
+                            "239.57",
+                            "Dow 34,152.01 +239.57",
+                            "up",
+                        ],
+                        [
+                            "https://logo.clearbit.com/nasdaq.com",
+                            "NASDAQ",
+                            "13,102.55",
+                            "-25.50",
+                            "NASDAQ 13,102.55 -25.50",
+                            "down",
+                        ],
+                    ],
+                ],
+            ]
             print(responseArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             print(offscreen_canvas)
@@ -2114,6 +2426,8 @@ class RunText(SampleBase):
                                 awayOddsString = game[15]
                                 homeOddsString = game[16]
                                 overUnderString = game[17]
+                                dayString = game[20]
+                                timeString = game[21]
                                 overUnderText = ""
                                 if overUnderString != "":
                                     overUnderText = "O/U"
@@ -2214,6 +2528,58 @@ class RunText(SampleBase):
                                     26,
                                     green,
                                     overUnderString,
+                                )
+                                dayStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + homeTeam,
+                                    12,
+                                    green,
+                                    dayString,
+                                )
+                                timeStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + homeTeam,
+                                    26,
+                                    green,
+                                    timeString,
                                 )
                             if "inProgress" in game[0]:
                                 awayTeamString = game[5]
@@ -2693,7 +3059,7 @@ class RunText(SampleBase):
                             ".com",
                         )
                         pos -= 1
-                        if pos + com < 0:
+                        if (pos + com + mancavedisplays + www) < 0:
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.020)
