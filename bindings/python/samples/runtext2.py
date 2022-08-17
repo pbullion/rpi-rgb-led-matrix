@@ -2994,7 +2994,7 @@ class RunText(SampleBase):
                             ".com",
                         )
                         pos -= 1
-                        if (pos + com + mancavedisplays + www) < 0:
+                        if pos + com < 0:
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.020)
