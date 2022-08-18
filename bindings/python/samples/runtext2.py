@@ -2329,7 +2329,6 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + buffer
                                         + awayOdds
                                         + homeTeam,
                                         12,
@@ -2341,7 +2340,6 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -2379,7 +2377,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
                                     + overUnderAmount
                                     + homeTeam,
                                     12,
@@ -2391,7 +2388,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
