@@ -2279,6 +2279,11 @@ class RunText(SampleBase):
                                     white,
                                     homeTeamString,
                                 )
+                                if homeTeam > awayTeam:
+                                    scoreLocation = homeTeam
+                                else:
+                                    scoreLocation = awayTeam
+
                                 awayOdds = 0
                                 if awayOddsString != "":
                                     awayOdds = graphics.DrawText(
@@ -2291,7 +2296,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + homeTeam
+                                        + scoreLocation
                                         + buffer,
                                         12,
                                         green,
@@ -2307,7 +2312,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + homeTeam
+                                        + scoreLocation
                                         + buffer,
                                         26,
                                         green,
@@ -2330,7 +2335,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + awayOdds
-                                        + homeTeam,
+                                        + scoreLocation,
                                         12,
                                         green,
                                         overUnderText,
@@ -2350,7 +2355,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + awayOdds
-                                        + homeTeam,
+                                        + scoreLocation,
                                         26,
                                         green,
                                         overUnderString,
@@ -2378,7 +2383,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + overUnderAmount
-                                    + homeTeam,
+                                    + scoreLocation,
                                     12,
                                     green,
                                     dayString,
@@ -2406,7 +2411,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + overUnderAmount
-                                    + homeTeam,
+                                    + scoreLocation,
                                     26,
                                     green,
                                     timeString,
