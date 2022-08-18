@@ -2369,6 +2369,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + awayOdds
                                     + buffer
                                     + overUnderAmount
                                     + scoreLocation,
@@ -2389,6 +2390,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + awayOdds
                                     + buffer
                                     + overUnderAmount
                                     + scoreLocation,
