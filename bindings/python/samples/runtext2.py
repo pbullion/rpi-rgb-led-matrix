@@ -2372,9 +2372,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
                                     + overUnderAmount
                                     + scoreLocation,
                                     12,
@@ -2386,9 +2383,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
