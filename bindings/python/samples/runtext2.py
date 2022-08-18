@@ -2372,7 +2372,7 @@ class RunText(SampleBase):
                                     + overUnderAmount
                                     + scoreLocation,
                                     12,
-                                    green,
+                                    yellow,
                                     dayString,
                                 )
                                 timeStr = graphics.DrawText(
@@ -2393,7 +2393,7 @@ class RunText(SampleBase):
                                     + overUnderAmount
                                     + scoreLocation,
                                     26,
-                                    green,
+                                    yellow,
                                     timeString,
                                 )
                             if "inProgress" in game[0]:
