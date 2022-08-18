@@ -2330,7 +2330,6 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + buffer
                                         + awayOdds
                                         + scoreLocation,
                                         12,
@@ -2342,7 +2341,6 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + buffer
                                         + buffer
                                         + buffer
                                         + buffer
