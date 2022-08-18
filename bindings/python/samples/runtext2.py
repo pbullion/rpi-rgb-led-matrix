@@ -2291,7 +2291,6 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + buffer
                                         + homeTeam
                                         + buffer,
                                         12,
@@ -2303,7 +2302,6 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -2895,7 +2893,7 @@ class RunText(SampleBase):
                             ".com",
                         )
                         pos -= 1
-                        if pos + com < 0:
+                        if pos + www + mancavedisplays + com < 0:
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.020)
