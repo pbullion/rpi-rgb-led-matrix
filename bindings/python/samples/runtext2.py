@@ -2847,7 +2847,7 @@ class RunText(SampleBase):
                         if pos + length < 0:
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.020)
+                        time.sleep(0.019)
                     elif arr == None:
                         running = False
                         pos = offscreen_canvas.width
@@ -2877,7 +2877,7 @@ class RunText(SampleBase):
                         if pos + www + mancavedisplays + com < 0:
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.020)
+                        time.sleep(0.019)
                     elif isinstance(arr, list) and (
                         arr[0] == "golf" or "rankings" in arr[0]
                     ):
@@ -2909,7 +2909,7 @@ class RunText(SampleBase):
                         if pos + length < 0:
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.02)
+                        time.sleep(0.018)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
