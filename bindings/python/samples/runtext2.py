@@ -1438,7 +1438,7 @@ class RunText(SampleBase):
                                 awayOdds = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + runningTotal + 15,
+                                    pos + offset + runningTotal + 20,
                                     12,
                                     green,
                                     awayOddsString,
@@ -1446,7 +1446,7 @@ class RunText(SampleBase):
                                 homeOdds = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + runningTotal + 15,
+                                    pos + offset + runningTotal + 20,
                                     26,
                                     green,
                                     homeOddsString,
@@ -1454,7 +1454,7 @@ class RunText(SampleBase):
                                 overUnderStr = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + runningTotal + homeOdds + 15,
+                                    pos + offset + runningTotal + homeOdds + 30,
                                     12,
                                     green,
                                     "O/U",
@@ -1462,7 +1462,7 @@ class RunText(SampleBase):
                                 overUnderAmount = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + runningTotal + homeOdds + 15,
+                                    pos + offset + runningTotal + homeOdds + 30,
                                     26,
                                     green,
                                     overUnderString,
