@@ -563,7 +563,7 @@ class RunText(SampleBase):
             # url = requests.get(
             #     f"https://sheline-art-website-api.herokuapp.com/patrick/all-data-2/{user}"
             # )
-            url = requests.get(f"http://localhost:3001/patrick/all-data-2/{user}")
+            url = requests.get(f"http://10.145.11.63:3001/patrick/all-data-2/{user}")
             responseArr = json.loads(url.text)
             print(responseArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
