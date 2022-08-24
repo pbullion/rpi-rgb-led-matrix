@@ -1438,7 +1438,7 @@ class RunText(SampleBase):
                                 awayOdds = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + runningTotal + 20,
+                                    pos + offset + runningTotal + 30,
                                     12,
                                     blue,
                                     awayOddsString,
@@ -1446,7 +1446,7 @@ class RunText(SampleBase):
                                 homeOdds = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + runningTotal + 20,
+                                    pos + offset + runningTotal + 30,
                                     26,
                                     blue,
                                     homeOddsString,
@@ -1454,7 +1454,7 @@ class RunText(SampleBase):
                                 overUnderStr = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + runningTotal + homeOdds + 30,
+                                    pos + offset + runningTotal + homeOdds + 45,
                                     12,
                                     blue,
                                     "O/U",
@@ -1462,7 +1462,7 @@ class RunText(SampleBase):
                                 overUnderAmount = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + runningTotal + homeOdds + 30,
+                                    pos + offset + runningTotal + homeOdds + 45,
                                     26,
                                     blue,
                                     overUnderString,
@@ -1643,6 +1643,8 @@ class RunText(SampleBase):
                                 )
                             if "pregame" in game[0]:
                                 offset = offset + 190
+                            if "inProgress" in game[0]:
+                                offset = offset + 250
                         time.sleep(0.01)
                         if pos + offset < 0:
                             running = False
