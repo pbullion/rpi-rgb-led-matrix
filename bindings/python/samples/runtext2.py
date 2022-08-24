@@ -1446,7 +1446,6 @@ class RunText(SampleBase):
                                 homeOdds = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    smallFont,
                                     pos + offset + runningTotal + 15,
                                     26,
                                     green,
@@ -1454,7 +1453,6 @@ class RunText(SampleBase):
                                 )
                                 overUnderStr = graphics.DrawText(
                                     offscreen_canvas,
-                                    smallFont,
                                     smallFont,
                                     pos + offset + runningTotal + homeOdds + 15,
                                     12,
