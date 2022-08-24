@@ -1440,7 +1440,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + runningTotal + 20,
                                     12,
-                                    green,
+                                    blue,
                                     awayOddsString,
                                 )
                                 homeOdds = graphics.DrawText(
@@ -1448,7 +1448,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + runningTotal + 20,
                                     26,
-                                    green,
+                                    blue,
                                     homeOddsString,
                                 )
                                 overUnderStr = graphics.DrawText(
@@ -1456,7 +1456,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + runningTotal + homeOdds + 30,
                                     12,
-                                    green,
+                                    blue,
                                     "O/U",
                                 )
                                 overUnderAmount = graphics.DrawText(
@@ -1464,7 +1464,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + runningTotal + homeOdds + 30,
                                     26,
-                                    green,
+                                    blue,
                                     overUnderString,
                                 )
                             if "final" in game[0]:
