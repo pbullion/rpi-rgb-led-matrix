@@ -1020,6 +1020,9 @@ class RunText(SampleBase):
                                 inningString = game[20]
                                 countString = game[21]
                                 outsString = game[22]
+                                awayOddsString = game[26]
+                                homeOddsString = game[27]
+                                overUnderString = game[28]
                                 if int(awayTeamStatusString) < int(
                                     homeTeamStatusString
                                 ):
@@ -1430,6 +1433,40 @@ class RunText(SampleBase):
                                     31,
                                     yellow,
                                     inningString,
+                                )
+                                awayOdds = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + runningTotal + 15,
+                                    12,
+                                    green,
+                                    awayOddsString,
+                                )
+                                homeOdds = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    smallFont,
+                                    pos + offset + runningTotal + 15,
+                                    26,
+                                    green,
+                                    homeOddsString,
+                                )
+                                overUnderStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    smallFont,
+                                    pos + offset + runningTotal + homeOdds + 15,
+                                    12,
+                                    green,
+                                    "O/U",
+                                )
+                                overUnderAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + runningTotal + homeOdds + 15,
+                                    26,
+                                    green,
+                                    overUnderString,
                                 )
                             if "final" in game[0]:
                                 bases = [[2, 5], [6, 0], [10, 5]]
