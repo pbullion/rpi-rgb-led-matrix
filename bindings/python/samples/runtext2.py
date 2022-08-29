@@ -560,10 +560,10 @@ class RunText(SampleBase):
             middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
             print("getting responseArrrrrrrrr")
             user = userJSON["user"]
-            # url = requests.get(
-            #     f"https://sheline-art-website-api.herokuapp.com/patrick/all-data-2/{user}"
-            # )
-            url = requests.get(f"http://10.145.11.63:3001/patrick/all-data-2/{user}")
+            url = requests.get(
+                f"https://sheline-art-website-api.herokuapp.com/patrick/all-data-2/{user}"
+            )
+            # url = requests.get(f"http://10.145.11.63:3001/patrick/all-data-2/{user}")
             responseArr = json.loads(url.text)
             print(responseArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
