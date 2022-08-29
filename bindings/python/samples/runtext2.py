@@ -1887,6 +1887,9 @@ class RunText(SampleBase):
                                 situationString = game[15]
                                 statusString = game[16]
                                 possession = game[17]
+                                awayOddsString = game[26]
+                                homeOddsString = game[27]
+                                overUnderString = game[28]
                                 if int(awayTeamStatusString) < int(
                                     homeTeamStatusString
                                 ):
@@ -2096,6 +2099,92 @@ class RunText(SampleBase):
                                     26,
                                     yellow,
                                     situationString,
+                                )
+                                awayOdds = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + possessionPop
+                                    + 35,
+                                    12,
+                                    blue,
+                                    awayOddsString,
+                                )
+                                homeOdds = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + possessionPop
+                                    + 35,
+                                    26,
+                                    blue,
+                                    homeOddsString,
+                                )
+                                overUnderStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + possessionPop
+                                    + homeOdds
+                                    + 50,
+                                    12,
+                                    blue,
+                                    "O/U",
+                                )
+                                overUnderAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + possessionPop
+                                    + homeOdds
+                                    + 50,
+                                    26,
+                                    blue,
+                                    overUnderString,
                                 )
                             if "pregame" in game[0]:
                                 offset = offset + 190
