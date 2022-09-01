@@ -2584,13 +2584,7 @@ class RunText(SampleBase):
                                         + teamLogos[game[10]].width
                                     )
                                 else:
-                                    scoreLocation = (
-                                        awayTeam
-                                        + buffer
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                    )
+                                    scoreLocation = awayTeam + buffer
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
@@ -2746,29 +2740,6 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
-                                offscreen_canvas.SetImage(
-                                    teamLogos[game[5]], pos + offset, -10
-                                )
-                                versus = graphics.DrawText(
-                                    offscreen_canvas,
-                                    middleFont,
-                                    pos + offset + buffer + teamLogos[game[5]].width,
-                                    24,
-                                    green,
-                                    "vs",
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos[game[10]],
-                                    pos
-                                    + offset
-                                    + teamLogos[game[5]].width
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer,
-                                    -10,
-                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
@@ -2801,13 +2772,7 @@ class RunText(SampleBase):
                                 )
                                 scoreLocation = 0
                                 if homeTeam > awayTeam:
-                                    scoreLocation = (
-                                        homeTeam
-                                        + buffer
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                    )
+                                    scoreLocation = homeTeam + buffer
                                 else:
                                     scoreLocation = (
                                         awayTeam
