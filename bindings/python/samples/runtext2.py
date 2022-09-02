@@ -2804,7 +2804,7 @@ class RunText(SampleBase):
                                     + newOffset
                                     + 35,
                                     12,
-                                    teal,
+                                    blue,
                                     awayOddsString,
                                 )
                                 homeOdds = graphics.DrawText(
