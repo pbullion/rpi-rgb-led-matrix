@@ -566,10 +566,6 @@ class RunText(SampleBase):
             # url = requests.get(f"http://10.0.0.14:3001/patrick/all-data-2/{user}")
             # responseArr = json.loads(url.text)
             responseArr = [
-                "",
-                "",
-                "",
-                "",
                 [
                     ["ncaa conference", "TOP 25"],
                     [
@@ -651,18 +647,6 @@ class RunText(SampleBase):
                         "",
                     ],
                 ],
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                false,
-                "",
-                false,
-                "",
-                "MANCAVEDISPLAYS",
-                ["stocks", []],
             ]
             print(responseArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
