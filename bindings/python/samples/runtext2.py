@@ -2872,10 +2872,19 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
                                     + situationStr
                                     + homeOdds
-                                    + 75
-                                    + overUnderAmount,
+                                    +  overUnderAmount
                                     12,
                                     blue,
                                     awaySpreadString,
@@ -2885,10 +2894,19 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
                                     + situationStr
                                     + homeOdds
-                                    + 75
-                                    + overUnderAmount,
+                                    + overUnderAmount
                                     26,
                                     blue,
                                     homeSpreadString,
