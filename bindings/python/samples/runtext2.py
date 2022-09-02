@@ -2622,7 +2622,7 @@ class RunText(SampleBase):
                                 OUString = ""
                                 awayBetsColor = green
                                 homeBetsColor = green
-                                if int(awayOddsString) > int(0):
+                                if '+' in awayOddsString:
                                     awayBetsColor = green
                                 else:
                                     homeBetsColor = red
