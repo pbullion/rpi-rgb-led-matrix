@@ -2884,7 +2884,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + situationStr
                                     + homeOdds
-                                    +  overUnderAmount
+                                    +  overUnderAmount,
                                     12,
                                     blue,
                                     awaySpreadString,
@@ -2906,7 +2906,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + situationStr
                                     + homeOdds
-                                    + overUnderAmount
+                                    + overUnderAmount,
                                     26,
                                     blue,
                                     homeSpreadString,
