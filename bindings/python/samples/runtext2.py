@@ -2804,7 +2804,7 @@ class RunText(SampleBase):
                                     + newOffset
                                     + 35,
                                     12,
-                                    blue,
+                                    purple,
                                     awayOddsString,
                                 )
                                 homeOdds = graphics.DrawText(
@@ -2825,7 +2825,7 @@ class RunText(SampleBase):
                                     + newOffset
                                     + 35,
                                     26,
-                                    blue,
+                                    white,
                                     homeOddsString,
                                 )
                                 overUnderStr = graphics.DrawText(
