@@ -2824,7 +2824,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + runningTotal
+                                    + situationStr
                                     + homeOdds
                                     + 75
                                     + overUnderAmount,
@@ -2837,7 +2837,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + runningTotal
+                                    + situationStr
                                     + homeOdds
                                     + 75
                                     + overUnderAmount,
