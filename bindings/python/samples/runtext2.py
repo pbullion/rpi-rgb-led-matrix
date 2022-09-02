@@ -2619,11 +2619,6 @@ class RunText(SampleBase):
                                 overUnderString = game[20]
                                 awaySpreadString = game[21]
                                 homeSpreadString = game[22]
-                                print(awayOddsString)
-                                print(homeOddsString)
-                                print(overUnderString)
-                                print(awaySpreadString)
-                                print(homeSpreadString)
                                 # figure out betting colors here
                                 if int(awayTeamStatusString) < int(
                                     homeTeamStatusString
@@ -2833,104 +2828,104 @@ class RunText(SampleBase):
                                     white,
                                     homeOddsString,
                                 )
-                                overUnderStr = graphics.DrawText(
-                                    offscreen_canvas,
-                                    smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + scoreLocation
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + newOffset
-                                    + homeOdds
-                                    + 35,
-                                    12,
-                                    green,
-                                    "O/U",
-                                )
-                                overUnderAmount = graphics.DrawText(
-                                    offscreen_canvas,
-                                    smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + scoreLocation
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + newOffset
-                                    + homeOdds
-                                    + 35,
-                                    26,
-                                    blue,
-                                    overUnderString,
-                                )
-                                awaySpreadAmount = graphics.DrawText(
-                                    offscreen_canvas,
-                                    smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + scoreLocation
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + newOffset
-                                    + homeOdds
-                                    + overUnderAmount
-                                    + 35,
-                                    12,
-                                    blue,
-                                    awaySpreadString,
-                                )
-                                homeSpreadAmount = graphics.DrawText(
-                                    offscreen_canvas,
-                                    smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + scoreLocation
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + newOffset
-                                    + homeOdds
-                                    + overUnderAmount
-                                    + 35,
-                                    26,
-                                    blue,
-                                    homeSpreadString,
-                                )
+                                # overUnderStr = graphics.DrawText(
+                                #     offscreen_canvas,
+                                #     smallFont,
+                                #     pos
+                                #     + offset
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + scoreLocation
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + newOffset
+                                #     + homeOdds
+                                #     + 35,
+                                #     12,
+                                #     green,
+                                #     "O/U",
+                                # )
+                                # overUnderAmount = graphics.DrawText(
+                                #     offscreen_canvas,
+                                #     smallFont,
+                                #     pos
+                                #     + offset
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + scoreLocation
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + newOffset
+                                #     + homeOdds
+                                #     + 35,
+                                #     26,
+                                #     blue,
+                                #     overUnderString,
+                                # )
+                                # awaySpreadAmount = graphics.DrawText(
+                                #     offscreen_canvas,
+                                #     smallFont,
+                                #     pos
+                                #     + offset
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + scoreLocation
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + newOffset
+                                #     + homeOdds
+                                #     + overUnderAmount
+                                #     + 35,
+                                #     12,
+                                #     blue,
+                                #     awaySpreadString,
+                                # )
+                                # homeSpreadAmount = graphics.DrawText(
+                                #     offscreen_canvas,
+                                #     smallFont,
+                                #     pos
+                                #     + offset
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + scoreLocation
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + buffer
+                                #     + newOffset
+                                #     + homeOdds
+                                #     + overUnderAmount
+                                #     + 35,
+                                #     26,
+                                #     blue,
+                                #     homeSpreadString,
+                                # )
                             if "pregame" in game[0]:
                                 offset = offset + 140
                             if "inProgress" in game[0]:
