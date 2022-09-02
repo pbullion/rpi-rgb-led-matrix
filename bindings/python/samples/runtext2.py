@@ -588,8 +588,8 @@ class RunText(SampleBase):
                         "Halftime",
                         "home",
                         "",
-                        "",
-                        "",
+                        "+155",
+                        "-200",
                         "93",
                         "+42.5",
                         "-42.5",
@@ -2889,7 +2889,8 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + situationStr
-                                    + homeOdds + overUnderAmount
+                                    + homeOdds
+                                    + overUnderAmount
                                     + 35,
                                     12,
                                     blue,
@@ -2913,7 +2914,8 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + situationStr
-                                    + homeOdds + overUnderAmount
+                                    + homeOdds
+                                    + overUnderAmount
                                     + 35,
                                     26,
                                     blue,
