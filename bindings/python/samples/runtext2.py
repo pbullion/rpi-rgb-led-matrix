@@ -2620,13 +2620,15 @@ class RunText(SampleBase):
                                 awaySpreadString = game[22]
                                 homeSpreadString = game[23]
                                 OUString = ""
-                                awayBetsColor = green
-                                homeBetsColor = green
-                                if '+' in awayOddsString:
+                                awayBetsColor = blue
+                                homeBetsColor = blue
+                                if "+" in awayOddsString:
                                     awayBetsColor = green
-                                else:
                                     homeBetsColor = red
-                                if overUnderString != '':
+                                else:
+                                    awayBetsColor = red
+                                    homeBetsColor = green
+                                if overUnderString != "":
                                     OUString = "O/U"
                                     awayColor = red
                                 if int(awayTeamStatusString) < int(
