@@ -2805,7 +2805,7 @@ class RunText(SampleBase):
                                     + 35,
                                     12,
                                     blue,
-                                    awayOddsString,
+                                    'awayOddsString',
                                 )
                                 homeOdds = graphics.DrawText(
                                     offscreen_canvas,
@@ -2826,7 +2826,7 @@ class RunText(SampleBase):
                                     + 35,
                                     26,
                                     white,
-                                    homeOddsString,
+                                    'homeOddsString',
                                 )
                                 # overUnderStr = graphics.DrawText(
                                 #     offscreen_canvas,
