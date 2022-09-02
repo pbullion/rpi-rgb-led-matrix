@@ -2781,6 +2781,11 @@ class RunText(SampleBase):
                                     yellow,
                                     situationString,
                                 )
+                                newOffset = 0
+                                if statusStr > situationStr:
+                                    newOffset = statusStr
+                                else:
+                                    newOffset = situationStr
                                 awayOdds = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
@@ -2796,7 +2801,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + situationStr
+                                    + newOffset
                                     + 35,
                                     12,
                                     blue,
@@ -2817,7 +2822,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + situationStr
+                                    + newOffset
                                     + 35,
                                     26,
                                     blue,
@@ -2840,7 +2845,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + situationStr
+                                    + newOffset
                                     + homeOdds
                                     + 35,
                                     12,
@@ -2864,7 +2869,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + situationStr
+                                    + newOffset
                                     + homeOdds
                                     + 35,
                                     26,
@@ -2888,7 +2893,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + situationStr
+                                    + newOffset
                                     + homeOdds
                                     + overUnderAmount
                                     + 35,
@@ -2913,7 +2918,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + situationStr
+                                    + newOffset
                                     + homeOdds
                                     + overUnderAmount
                                     + 35,
