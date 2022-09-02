@@ -2968,9 +2968,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -2983,9 +2980,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -3000,9 +2994,6 @@ class RunText(SampleBase):
                                     scoreLocation = (
                                         awayTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
                                     )
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,

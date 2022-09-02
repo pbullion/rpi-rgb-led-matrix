@@ -18,12 +18,13 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Thu Sep  1 19:45:46 2022
+# Make data base, printed on Fri Sep  2 11:22:50 2022
 
 # Variables
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
+ 
 # automatic
 ?F = $(notdir $?)
 # makefile (from `Makefile', line 167)
@@ -50,7 +51,6 @@ _ = /usr/bin/make
 CFLAGS = -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC $(DEFINES)
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
- 
 # makefile (from `Makefile', line 169)
 CXXFLAGS = $(CFLAGS) -fno-exceptions -std=c++11
 # environment
@@ -60,13 +60,13 @@ VSCODE_CWD = /
 # environment
 PATH = /usr/bin:/bin:/usr/sbin:/sbin
 # environment
-LaunchInstanceID = 50345B90-9453-4DD8-94B3-2ABF45983041
+LaunchInstanceID = E3337F3E-F966-4D3E-BD06-4001F954670C
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.DuYIUfAP6P/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.uAzMG3CxQE/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -140,7 +140,7 @@ MAKEFILES :=
 # environment
 LC_ALL = C
 # environment
-SECURITYSESSIONID = 186b2
+SECURITYSESSIONID = 186b3
 # automatic
 ^F = $(notdir $^)
 # default
@@ -152,8 +152,9 @@ OBJECTS = gpio.o led-matrix.o options-initialize.o framebuffer.o thread.o bdf-fo
 # environment
 LANG = C
 # environment
-VSCODE_PID = 598
+VSCODE_PID = 569
 # variable set hash-table stats:
+ 
 # Load=65/1024=6%, Rehash=0, Collisions=1/116=1%
 
 # Pattern-specific Variable Values
@@ -162,7 +163,7 @@ VSCODE_PID = 598
 
 # Directories
 
-# . (device 16777232, inode 10097197): 22 files, no impossibilities.
+# . (device 16777230, inode 10097197): 22 files, no impossibilities.
 
 # 22 files, no impossibilities in 1 directories.
 
@@ -354,7 +355,6 @@ framebuffer-internal.h:
 
 # Not a target:
 led-matrix-c.o:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -423,13 +423,13 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Sep  1 19:45:46 2022
+# Finished Make data base on Fri Sep  2 11:22:50 2022
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Thu Sep  1 19:45:46 2022
+# Make data base, printed on Fri Sep  2 11:22:50 2022
 
 # Variables
 
@@ -444,6 +444,7 @@ make: *** [lib/librgbmatrix.a] Error 1
 # automatic
 @F = $(notdir $@)
 # makefile
+ 
 CURDIR := /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
 # makefile
 SHELL = /bin/sh
@@ -455,7 +456,6 @@ _ = /usr/bin/make
 RGB_LIBRARY_NAME = rgbmatrix
 # makefile (from `Makefile', line 10)
 CSHARP_LIB_DIR = bindings/c#
- 
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
@@ -467,13 +467,13 @@ VSCODE_CWD = /
 # environment
 PATH = /usr/bin:/bin:/usr/sbin:/sbin
 # environment
-LaunchInstanceID = 50345B90-9453-4DD8-94B3-2ABF45983041
+LaunchInstanceID = E3337F3E-F966-4D3E-BD06-4001F954670C
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.DuYIUfAP6P/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.uAzMG3CxQE/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -529,6 +529,7 @@ VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.70.2-
 # environment
 MallocNanoZone = 0
 # makefile
+ 
 MAKEFLAGS = Rrqp
 # environment
 MFLAGS = -Rrqp
@@ -544,7 +545,6 @@ XPC_SERVICE_NAME = application.com.microsoft.VSCode.39990865.39990871
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
 # environment
 COMMAND_MODE = unix2003
- 
 # default
 MAKEFILES := 
 # automatic
@@ -552,7 +552,7 @@ MAKEFILES :=
 # environment
 LC_ALL = C
 # environment
-SECURITYSESSIONID = 186b2
+SECURITYSESSIONID = 186b3
 # automatic
 ^F = $(notdir $^)
 # default
@@ -562,7 +562,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 598
+VSCODE_PID = 569
 # variable set hash-table stats:
 # Load=64/1024=6%, Rehash=0, Collisions=2/103=2%
 
@@ -572,7 +572,7 @@ VSCODE_PID = 598
 
 # Directories
 
-# . (device 16777232, inode 10096968): 21 files, no impossibilities.
+# . (device 16777230, inode 10096968): 21 files, no impossibilities.
 
 # 21 files, no impossibilities in 1 directories.
 
@@ -611,7 +611,6 @@ FORCE:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-02-16 17:19:47
 #  File has been updated.
 #  Successfully updated.
@@ -701,6 +700,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Sep  1 19:45:46 2022
+# Finished Make data base on Fri Sep  2 11:22:50 2022
 
  
