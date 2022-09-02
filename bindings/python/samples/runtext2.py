@@ -560,11 +560,110 @@ class RunText(SampleBase):
             middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
             print("getting responseArrrrrrrrr")
             user = userJSON["user"]
-            url = requests.get(
-                f"https://sheline-art-website-api.herokuapp.com/patrick/all-data-2/{user}"
-            )
+            # url = requests.get(
+            #     f"https://sheline-art-website-api.herokuapp.com/patrick/all-data-2/{user}"
+            # )
             # url = requests.get(f"http://10.0.0.14:3001/patrick/all-data-2/{user}")
-            responseArr = json.loads(url.text)
+            # responseArr = json.loads(url.text)
+            responseArr = [
+                "",
+                "",
+                "",
+                "",
+                [
+                    ["ncaa conference", "TOP 25"],
+                    [
+                        "game inProgress ncaaFootball",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-central-michigan-chippewas-logo.png",
+                        106,
+                        0,
+                        50,
+                        "Central Michigan Chippewas",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-oklahoma-state-cowboys-logo.png",
+                        255,
+                        101,
+                        0,
+                        "#12 Oklahoma State Cowboys",
+                        "TIME",
+                        "15",
+                        "44",
+                        "HALF",
+                        "",
+                        "Halftime",
+                        "home",
+                        "",
+                        "",
+                        "",
+                        "93",
+                        "+42.5",
+                        "-42.5",
+                    ],
+                    [
+                        "game inProgress ncaaFootball",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-west-virginia-mountaineers-logo.png",
+                        255,
+                        198,
+                        0,
+                        "West Virginia Mountaineers",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-pittsburgh-panthers-logo.png",
+                        250,
+                        250,
+                        250,
+                        "#17 Pittsburgh Panthers",
+                        "TIME",
+                        "10",
+                        "10",
+                        "HALF",
+                        "",
+                        "Halftime",
+                        "home",
+                        "",
+                        "+155",
+                        "-200",
+                        "43.5",
+                        "+3.5",
+                        "-3.5",
+                    ],
+                    [
+                        "game inProgress ncaaFootball",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-vmi-keydets-logo.png",
+                        229,
+                        45,
+                        55,
+                        "VMI Keydets",
+                        "https://loodibee.com/wp-content/uploads/ncaaFootball-wake-forest-demon-deacons-logo.png",
+                        158,
+                        126,
+                        56,
+                        "#22 Wake Forest Demon Deacons",
+                        "0:40 ",
+                        "0",
+                        "20",
+                        "2nd",
+                        "4th & 4 at VMI 15",
+                        "0:40 - 2nd Quarter",
+                        "home",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                    ],
+                ],
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                false,
+                "",
+                false,
+                "",
+                "MANCAVEDISPLAYS",
+                ["stocks", []],
+            ]
             print(responseArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             print(offscreen_canvas)
@@ -2531,6 +2630,12 @@ class RunText(SampleBase):
                                 situationString = game[15]
                                 statusString = game[16]
                                 possession = game[17]
+                                awayOddsString = game[18]
+                                homeOddsString = game[19]
+                                overUnderString = game[20]
+                                awaySpreadString = game[21]
+                                homeSpreadString = game[22]
+                                # figure out betting colors here
                                 if int(awayTeamStatusString) < int(
                                     homeTeamStatusString
                                 ):
@@ -2698,10 +2803,69 @@ class RunText(SampleBase):
                                     yellow,
                                     situationString,
                                 )
+                                awayOdds = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + runningTotal + 35,
+                                    12,
+                                    blue,
+                                    awayOddsString,
+                                )
+                                homeOdds = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + runningTotal + 35,
+                                    26,
+                                    blue,
+                                    homeOddsString,
+                                )
+                                overUnderStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + runningTotal + homeOdds + 50,
+                                    12,
+                                    blue,
+                                    "O/U",
+                                )
+                                overUnderAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + runningTotal + homeOdds + 50,
+                                    26,
+                                    blue,
+                                    overUnderString,
+                                )
+                                awaySpreadAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + runningTotal
+                                    + homeOdds
+                                    + 75
+                                    + overUnderAmount,
+                                    12,
+                                    blue,
+                                    awaySpreadString,
+                                )
+                                homeSpreadAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + runningTotal
+                                    + homeOdds
+                                    + 75
+                                    + overUnderAmount,
+                                    26,
+                                    blue,
+                                    homeSpreadString,
+                                )
+
                             if "pregame" in game[0]:
                                 offset = offset + 140
                             if "inProgress" in game[0]:
-                                offset = offset + 190
+                                offset = offset + 220
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]

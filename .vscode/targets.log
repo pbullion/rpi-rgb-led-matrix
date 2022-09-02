@@ -18,7 +18,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Thu Sep  1 11:41:03 2022
+# Make data base, printed on Thu Sep  1 19:45:46 2022
 
 # Variables
 
@@ -26,17 +26,12 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
-# environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
 # makefile (from `Makefile', line 167)
 INCDIR = ../include
 # makefile (from `Makefile', line 37)
 HARDWARE_DESC = adafruit-hat
 # makefile (from `Makefile', line 11)
 TARGET = librgbmatrix
- 
-# environment
-NVM_INC = /Users/patrickbullion/.nvm/versions/node/v16.13.1/include/node
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -55,48 +50,35 @@ _ = /usr/bin/make
 CFLAGS = -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC $(DEFINES)
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
+ 
 # makefile (from `Makefile', line 169)
 CXXFLAGS = $(CFLAGS) -fno-exceptions -std=c++11
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-INFOPATH = /opt/homebrew/share/info:
+VSCODE_CWD = /
 # environment
-VSCODE_CWD = /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
+PATH = /usr/bin:/bin:/usr/sbin:/sbin
 # environment
-PATH = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin:/Users/patrickbullion/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
-# environment
-LSCOLORS = Gxfxcxdxbxegedabagacad
-# environment
-NVM_BIN = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin
-# environment
-LaunchInstanceID = 8CB9EEE5-532D-4F60-B988-6C488ECDA47D
+LaunchInstanceID = 50345B90-9453-4DD8-94B3-2ABF45983041
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-DEFAULT_USER = patrickbullion
-# environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.DamLaFtUm0/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.DuYIUfAP6P/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
 PWD = /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
 # environment
-HOMEBREW_CELLAR = /opt/homebrew/Cellar
-# environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
-# environment
-MANPATH = /Users/patrickbullion/.nvm/versions/node/v16.13.1/share/man:/opt/homebrew/share/man::
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /Users/patrickbullion
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
-# environment
-VSCODE_CLI = 1
 # makefile (from `Makefile', line 166)
 DEFINES = $(USER_DEFINES) -DDEFAULT_HARDWARE='"$(HARDWARE_DESC)"'
 # environment
@@ -106,39 +88,25 @@ LOGNAME = patrickbullion
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-NVM_CD_FLAGS = -q
-# environment
-ZSH = /Users/patrickbullion/.oh-my-zsh
-# environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 XPC_FLAGS = 0x0
-# environment
-COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-LC_TERMINAL = iTerm2
-# environment
-SHLVL = 3
+SHLVL = 1
 # default
 MAKE_VERSION := 3.81
 # environment
 USER = patrickbullion
 # makefile
 .DEFAULT_GOAL := all
-# environment
-TERM_SESSION_ID = w0t2p0:CAEF40A8-F4A1-4DC5-BA0E-4A0D6D1D997B
-# environment
-LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
-# environment
-TERM_PROGRAM = iTerm.app
 # default
 .VARIABLES := 
 # environment
@@ -156,25 +124,11 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-TERM_PROGRAM_VERSION = 3.4.16
-# environment
-NVM_DIR = /Users/patrickbullion/.nvm
-# environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.39990865.39990871.2BC334CA-CA67-4FD9-8F14-F0CDE3692838
-# environment
-LC_TERMINAL_VERSION = 3.4.16
-# environment
-HOMEBREW_PREFIX = /opt/homebrew
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.39990865.39990871
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
-# environment
-ITERM_SESSION_ID = w0t2p0:CAEF40A8-F4A1-4DC5-BA0E-4A0D6D1D997B
-# environment
-HOMEBREW_REPOSITORY = /opt/homebrew
-# environment
-COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
 # environment
@@ -184,13 +138,9 @@ MAKEFILES :=
 # automatic
 <F = $(notdir $<)
 # environment
-ITERM_PROFILE = Default
-# environment
-PAGER = less
-# environment
 LC_ALL = C
 # environment
-SECURITYSESSIONID = 186b1
+SECURITYSESSIONID = 186b2
 # automatic
 ^F = $(notdir $^)
 # default
@@ -202,11 +152,9 @@ OBJECTS = gpio.o led-matrix.o options-initialize.o framebuffer.o thread.o bdf-fo
 # environment
 LANG = C
 # environment
-TERM = xterm-256color
-# environment
-VSCODE_PID = 635
+VSCODE_PID = 598
 # variable set hash-table stats:
-# Load=91/1024=9%, Rehash=0, Collisions=2/142=1%
+# Load=65/1024=6%, Rehash=0, Collisions=1/116=1%
 
 # Pattern-specific Variable Values
 
@@ -214,7 +162,7 @@ VSCODE_PID = 635
 
 # Directories
 
-# . (device 16777230, inode 10097197): 22 files, no impossibilities.
+# . (device 16777232, inode 10097197): 22 files, no impossibilities.
 
 # 22 files, no impossibilities in 1 directories.
 
@@ -320,7 +268,6 @@ content-streamer.o:
 #  File has not been updated.
 
 librgbmatrix.so.1: gpio.o led-matrix.o options-initialize.o framebuffer.o thread.o bdf-font.o graphics.o led-matrix-c.o hardware-mapping.o pixel-mapper.o multiplex-mappers.o content-streamer.o
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -407,6 +354,7 @@ framebuffer-internal.h:
 
 # Not a target:
 led-matrix-c.o:
+ 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -475,13 +423,13 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Sep  1 11:41:03 2022
+# Finished Make data base on Thu Sep  1 19:45:46 2022
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Thu Sep  1 11:41:03 2022
+# Make data base, printed on Thu Sep  1 19:45:46 2022
 
 # Variables
 
@@ -489,10 +437,6 @@ make: *** [lib/librgbmatrix.a] Error 1
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
-# environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-NVM_INC = /Users/patrickbullion/.nvm/versions/node/v16.13.1/include/node
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -511,42 +455,31 @@ _ = /usr/bin/make
 RGB_LIBRARY_NAME = rgbmatrix
 # makefile (from `Makefile', line 10)
 CSHARP_LIB_DIR = bindings/c#
+ 
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
-# environment
-INFOPATH = /opt/homebrew/share/info:
 # makefile (from `Makefile', line 4)
 RGB_LIBDIR = ./lib
 # environment
-VSCODE_CWD = /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
+VSCODE_CWD = /
 # environment
-PATH = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin:/Users/patrickbullion/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+PATH = /usr/bin:/bin:/usr/sbin:/sbin
 # environment
-LSCOLORS = Gxfxcxdxbxegedabagacad
-# environment
-NVM_BIN = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin
-# environment
-LaunchInstanceID = 8CB9EEE5-532D-4F60-B988-6C488ECDA47D
+LaunchInstanceID = 50345B90-9453-4DD8-94B3-2ABF45983041
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-DEFAULT_USER = patrickbullion
-# environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.DamLaFtUm0/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.DuYIUfAP6P/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
 PWD = /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
 # environment
-HOMEBREW_CELLAR = /opt/homebrew/Cellar
-# environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
-# environment
-MANPATH = /Users/patrickbullion/.nvm/versions/node/v16.13.1/share/man:/opt/homebrew/share/man::
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -554,54 +487,37 @@ HOME = /Users/patrickbullion
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CLI = 1
-# environment
 VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
 # environment
 LOGNAME = patrickbullion
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
-# environment
-NVM_CD_FLAGS = -q
-# environment
-ZSH = /Users/patrickbullion/.oh-my-zsh
 # makefile (from `Makefile', line 9)
 PYTHON_LIB_DIR = bindings/python
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
- 
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 XPC_FLAGS = 0x0
-# environment
-COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
-# environment
-LC_TERMINAL = iTerm2
+# default
+MAKECMDGOALS := all
 # makefile (from `Makefile', line 6)
 RGB_LIBRARY = $(RGB_LIBDIR)/lib$(RGB_LIBRARY_NAME).a
 # environment
-SHLVL = 3
+SHLVL = 1
 # default
 MAKE_VERSION := 3.81
 # environment
 USER = patrickbullion
 # makefile
 .DEFAULT_GOAL := all
-# default
-MAKECMDGOALS := all
-# environment
-TERM_SESSION_ID = w0t2p0:CAEF40A8-F4A1-4DC5-BA0E-4A0D6D1D997B
-# environment
-LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
-# environment
-TERM_PROGRAM = iTerm.app
 # default
 .VARIABLES := 
 # environment
@@ -619,41 +535,24 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-TERM_PROGRAM_VERSION = 3.4.16
-# environment
-NVM_DIR = /Users/patrickbullion/.nvm
-# environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.39990865.39990871.2BC334CA-CA67-4FD9-8F14-F0CDE3692838
-# environment
-LC_TERMINAL_VERSION = 3.4.16
-# environment
-HOMEBREW_PREFIX = /opt/homebrew
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.39990865.39990871
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t2p0:CAEF40A8-F4A1-4DC5-BA0E-4A0D6D1D997B
-# environment
-HOMEBREW_REPOSITORY = /opt/homebrew
-# environment
-COLORFGBG = 15;0
-# environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
 # environment
 COMMAND_MODE = unix2003
+ 
 # default
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
 # environment
-ITERM_PROFILE = Default
-# environment
-PAGER = less
-# environment
 LC_ALL = C
 # environment
-SECURITYSESSIONID = 186b1
+SECURITYSESSIONID = 186b2
 # automatic
 ^F = $(notdir $^)
 # default
@@ -663,11 +562,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-TERM = xterm-256color
-# environment
-VSCODE_PID = 635
+VSCODE_PID = 598
 # variable set hash-table stats:
-# Load=90/1024=9%, Rehash=0, Collisions=5/129=4%
+# Load=64/1024=6%, Rehash=0, Collisions=2/103=2%
 
 # Pattern-specific Variable Values
 
@@ -675,7 +572,7 @@ VSCODE_PID = 635
 
 # Directories
 
-# . (device 16777230, inode 10096968): 21 files, no impossibilities.
+# . (device 16777232, inode 10096968): 21 files, no impossibilities.
 
 # 21 files, no impossibilities in 1 directories.
 
@@ -714,6 +611,7 @@ FORCE:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-02-16 17:19:47
 #  File has been updated.
 #  Successfully updated.
@@ -803,6 +701,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Sep  1 11:41:03 2022
+# Finished Make data base on Thu Sep  1 19:45:46 2022
 
  
