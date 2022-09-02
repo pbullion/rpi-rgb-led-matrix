@@ -2619,11 +2619,11 @@ class RunText(SampleBase):
                                 overUnderString = game[20]
                                 awaySpreadString = game[21]
                                 homeSpreadString = game[22]
-                                # print(awayOddsString)
-                                # print(homeOddsString)
-                                # print(overUnderString)
-                                # print(awaySpreadString)
-                                # print(homeSpreadString)
+                                print(awayOddsString)
+                                print(homeOddsString)
+                                print(overUnderString)
+                                print(awaySpreadString)
+                                print(homeSpreadString)
                                 # figure out betting colors here
                                 if int(awayTeamStatusString) < int(
                                     homeTeamStatusString
