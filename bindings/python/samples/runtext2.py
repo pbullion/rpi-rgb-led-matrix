@@ -2651,13 +2651,7 @@ class RunText(SampleBase):
                                 )
                                 scoreLocation = 0
                                 if homeTeam > awayTeam:
-                                    scoreLocation = (
-                                        homeTeam
-                                        + buffer
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                    )
+                                    scoreLocation = homeTeam + buffer
                                 else:
                                     scoreLocation = awayTeam + buffer
                                 awayTeamStatus = graphics.DrawText(
