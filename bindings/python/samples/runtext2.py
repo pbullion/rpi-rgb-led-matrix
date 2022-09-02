@@ -2619,8 +2619,8 @@ class RunText(SampleBase):
                                 overUnderString = game[20]
                                 awaySpreadString = game[21]
                                 homeSpreadString = game[22]
-                                print(awayOddsString)
-                                print(homeOddsString)
+                                # print(awayOddsString)
+                                # print(homeOddsString)
                                 # print(overUnderString)
                                 # print(awaySpreadString)
                                 # print(homeSpreadString)
