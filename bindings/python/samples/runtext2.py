@@ -559,95 +559,43 @@ class RunText(SampleBase):
             middleFont = graphics.Font()
             middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
             print("getting responseArrrrrrrrr")
-            user = userJSON["user"]
+            # user = userJSON["user"]
             # url = requests.get(
             #     f"https://sheline-art-website-api.herokuapp.com/patrick/all-data-2/{user}"
             # )
-            url = requests.get(f"http://10.0.0.22:3001/patrick/all-data-2/{user}")
-            responseArr = json.loads(url.text)
-            # responseArr = [
-            #     [
-            #         ["ncaa conference", "TOP 25"],
-            #         [
-            #             "game inProgress ncaaFootball",
-            #             "https://loodibee.com/wp-content/uploads/ncaaFootball-central-michigan-chippewas-logo.png",
-            #             106,
-            #             0,
-            #             50,
-            #             "Central Michigan Chippewas",
-            #             "https://loodibee.com/wp-content/uploads/ncaaFootball-oklahoma-state-cowboys-logo.png",
-            #             255,
-            #             101,
-            #             0,
-            #             "#12 Oklahoma State Cowboys",
-            #             "TIME",
-            #             "15",
-            #             "44",
-            #             "HALF",
-            #             "",
-            #             "Halftime",
-            #             "home",
-            #             "",
-            #             "",
-            #             "",
-            #             "93",
-            #             "+42.5",
-            #             "-42.5",
-            #         ],
-            #         [
-            #             "game inProgress ncaaFootball",
-            #             "https://loodibee.com/wp-content/uploads/ncaaFootball-west-virginia-mountaineers-logo.png",
-            #             255,
-            #             198,
-            #             0,
-            #             "West Virginia Mountaineers",
-            #             "https://loodibee.com/wp-content/uploads/ncaaFootball-pittsburgh-panthers-logo.png",
-            #             250,
-            #             250,
-            #             250,
-            #             "#17 Pittsburgh Panthers",
-            #             "TIME",
-            #             "10",
-            #             "10",
-            #             "HALF",
-            #             "",
-            #             "Halftime",
-            #             "home",
-            #             "",
-            #             "+155",
-            #             "-200",
-            #             "43.5",
-            #             "+3.5",
-            #             "-3.5",
-            #         ],
-            #         [
-            #             "game inProgress ncaaFootball",
-            #             "https://loodibee.com/wp-content/uploads/ncaaFootball-vmi-keydets-logo.png",
-            #             229,
-            #             45,
-            #             55,
-            #             "VMI Keydets",
-            #             "https://loodibee.com/wp-content/uploads/ncaaFootball-wake-forest-demon-deacons-logo.png",
-            #             158,
-            #             126,
-            #             56,
-            #             "#22 Wake Forest Demon Deacons",
-            #             "0:40 ",
-            #             "0",
-            #             "20",
-            #             "2nd",
-            #             "4th & 4 at VMI 15",
-            #             "0:40 - 2nd Quarter",
-            #             "home",
-            #             "",
-            #             "+155",
-            #             "-200",
-            #             "43.5",
-            #             "+3.5",
-            #             "-3.5",
-            #         ],
-            #     ],
-            # ]
+            # url = requests.get(f"http://10.0.0.22:3001/patrick/all-data-2/{user}")
+            # responseArr = json.loads(url.text)
+            responseArr = [
+                [
+                    ["nfl logo"],
+                    [
+                        "game inProgress nfl",
+                        "https://loodibee.com/wp-content/uploads/nfl-buffalo-bills-logo.png",
+                        4,
+                        64,
+                        127,
+                        "Buffalo Bills",
+                        "https://loodibee.com/wp-content/uploads/nfl-los-angeles-rams-logo.png",
+                        250,
+                        250,
+                        250,
+                        "Los Angeles Rams",
+                        "2:00 ",
+                        "10",
+                        "7",
+                        "2nd",
+                        "1st & 10 at BUF 38",
+                        "2:00 - 2nd Quarter",
+                        "away",
+                        "",
+                        "-225",
+                        "+172",
+                        "45.5",
+                        "-3.5",
+                        "+3.5",
+                    ],
+                ]
+            ]
             print(responseArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             print(offscreen_canvas)
