@@ -2201,6 +2201,7 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     smallFont,
                                     pos
+                                    + offset
                                     + teamLogos[game[5]].width
                                     + versus
                                     + teamLogos[game[10]].width
@@ -2223,6 +2224,7 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     smallFont,
                                     pos
+                                    + offset
                                     + teamLogos[game[5]].width
                                     + versus
                                     + teamLogos[game[10]].width
@@ -2248,6 +2250,7 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     smallFont,
                                     pos
+                                    + offset
                                     + teamLogos[game[5]].width
                                     + versus
                                     + teamLogos[game[10]].width
@@ -2273,6 +2276,7 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     smallFont,
                                     pos
+                                    + offset
                                     + teamLogos[game[5]].width
                                     + versus
                                     + teamLogos[game[10]].width
@@ -2301,6 +2305,7 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     smallFont,
                                     pos
+                                    + offset
                                     + teamLogos[game[5]].width
                                     + versus
                                     + teamLogos[game[10]].width
