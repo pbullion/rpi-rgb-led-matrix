@@ -2183,8 +2183,6 @@ class RunText(SampleBase):
                                     + versus
                                     + teamLogos[game[10]].width
                                     + buffer
-                                    + buffer
-                                    + buffer
                                     + scoreLocation
                                     + buffer
                                     + newOffset
@@ -2202,8 +2200,6 @@ class RunText(SampleBase):
                                     + versus
                                     + teamLogos[game[10]].width
                                     + buffer
-                                    + buffer
-                                    + buffer
                                     + scoreLocation
                                     + buffer
                                     + newOffset
@@ -2220,8 +2216,6 @@ class RunText(SampleBase):
                                     + teamLogos[game[5]].width
                                     + versus
                                     + teamLogos[game[10]].width
-                                    + buffer
-                                    + buffer
                                     + buffer
                                     + scoreLocation
                                     + buffer
@@ -2242,8 +2236,6 @@ class RunText(SampleBase):
                                     + teamLogos[game[5]].width
                                     + versus
                                     + teamLogos[game[10]].width
-                                    + buffer
-                                    + buffer
                                     + buffer
                                     + scoreLocation
                                     + buffer
@@ -2271,8 +2263,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
-                                    + buffer
                                     + newOffset
                                     + homeOdds
                                     + overUnderAmount
@@ -2293,8 +2283,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + scoreLocation
-                                    + buffer
-                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
