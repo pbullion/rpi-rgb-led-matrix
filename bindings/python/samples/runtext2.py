@@ -2187,10 +2187,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + scoreLocation
                                     + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
                                     + newOffset
                                     + 35,
                                     12,
@@ -2209,10 +2205,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + scoreLocation
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
                                     + buffer
                                     + newOffset
                                     + 35,
@@ -2235,10 +2227,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
                                     + newOffset
                                     + homeOdds
                                     + 35,
@@ -2258,10 +2246,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + scoreLocation
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -2289,10 +2273,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
                                     + newOffset
                                     + homeOdds
                                     + overUnderAmount
@@ -2313,10 +2293,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + scoreLocation
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
