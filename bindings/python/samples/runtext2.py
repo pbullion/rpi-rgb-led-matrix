@@ -2179,12 +2179,10 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + scoreLocation
                                     + buffer
                                     + newOffset,
                                     12,
@@ -2196,12 +2194,10 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + scoreLocation
                                     + buffer
                                     + newOffset,
                                     26,
@@ -2213,12 +2209,10 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + scoreLocation
                                     + buffer
                                     + buffer
                                     + buffer
@@ -2236,12 +2230,10 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + scoreLocation
                                     + buffer
                                     + buffer
                                     + buffer
@@ -2259,12 +2251,10 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + scoreLocation
                                     + buffer
                                     + buffer
                                     + buffer
@@ -2279,12 +2269,10 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + scoreLocation
                                     + buffer
                                     + buffer
                                     + buffer
