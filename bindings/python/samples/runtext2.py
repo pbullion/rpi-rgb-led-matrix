@@ -2185,8 +2185,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + scoreLocation
                                     + buffer
-                                    + newOffset
-                                    + 35,
+                                    + newOffset,
                                     12,
                                     awayBetsColor,
                                     awayOddsString,
@@ -2202,8 +2201,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + scoreLocation
                                     + buffer
-                                    + newOffset
-                                    + 35,
+                                    + newOffset,
                                     26,
                                     homeBetsColor,
                                     homeOddsString,
@@ -2836,8 +2834,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + newOffset
-                                    + 35,
+                                    + newOffset,
                                     12,
                                     awayBetsColor,
                                     awayOddsString,
@@ -2856,8 +2853,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + newOffset
-                                    + 35,
+                                    + newOffset,
                                     26,
                                     homeBetsColor,
                                     homeOddsString,
