@@ -559,43 +559,43 @@ class RunText(SampleBase):
             middleFont = graphics.Font()
             middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
             print("getting responseArrrrrrrrr")
-            # user = userJSON["user"]
+            user = userJSON["user"]
             # url = requests.get(
             #     f"https://sheline-art-website-api.herokuapp.com/patrick/all-data-2/{user}"
             # )
-            # url = requests.get(f"http://10.0.0.22:3001/patrick/all-data-2/{user}")
-            # responseArr = json.loads(url.text)
-            responseArr = [
-                [
-                    ["nfl logo"],
-                    [
-                        "game inProgress nfl",
-                        "https://loodibee.com/wp-content/uploads/nfl-buffalo-bills-logo.png",
-                        4,
-                        64,
-                        127,
-                        "Buffalo Bills",
-                        "https://loodibee.com/wp-content/uploads/nfl-los-angeles-rams-logo.png",
-                        250,
-                        250,
-                        250,
-                        "Los Angeles Rams",
-                        "2:00 ",
-                        "10",
-                        "7",
-                        "2nd",
-                        "1st & 10 at BUF 38",
-                        "2:00 - 2nd Quarter",
-                        "away",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                    ],
-                ]
-            ]
+            url = requests.get(f"http://10.0.0.22:3001/patrick/all-data-2/{user}")
+            responseArr = json.loads(url.text)
+            # responseArr = [
+            #     [
+            #         ["nfl logo"],
+            #         [
+            #             "game inProgress nfl",
+            #             "https://loodibee.com/wp-content/uploads/nfl-buffalo-bills-logo.png",
+            #             4,
+            #             64,
+            #             127,
+            #             "Buffalo Bills",
+            #             "https://loodibee.com/wp-content/uploads/nfl-los-angeles-rams-logo.png",
+            #             250,
+            #             250,
+            #             250,
+            #             "Los Angeles Rams",
+            #             "2:00 ",
+            #             "10",
+            #             "7",
+            #             "2nd",
+            #             "1st & 10 at BUF 38",
+            #             "2:00 - 2nd Quarter",
+            #             "away",
+            #             "",
+            #             "",
+            #             "",
+            #             "",
+            #             "",
+            #             "",
+            #         ],
+            #     ]
+            # ]
             print(responseArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             print(offscreen_canvas)
