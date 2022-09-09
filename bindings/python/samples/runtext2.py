@@ -2233,12 +2233,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
                                     + scoreLocation
                                     + buffer
                                     + buffer
@@ -2257,12 +2251,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -2296,6 +2284,10 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
                                     + scoreLocation
                                     + buffer
                                     + buffer
@@ -2311,6 +2303,10 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
