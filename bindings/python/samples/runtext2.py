@@ -2185,7 +2185,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + scoreLocation
                                     + buffer
                                     + newOffset,
                                     12,
@@ -2203,7 +2202,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + scoreLocation
                                     + buffer
                                     + newOffset,
                                     26,
@@ -2221,7 +2219,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + scoreLocation
                                     + buffer
                                     + buffer
                                     + buffer
@@ -2245,7 +2242,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + scoreLocation
                                     + buffer
                                     + buffer
                                     + buffer
@@ -2269,7 +2265,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + scoreLocation
                                     + buffer
                                     + buffer
                                     + buffer
@@ -2290,7 +2285,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + scoreLocation
                                     + buffer
                                     + buffer
                                     + buffer
