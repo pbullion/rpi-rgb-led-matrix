@@ -3574,6 +3574,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "sleeper" in arr[0]:
                         for idx, game in enumerate(arr):
+                            print(idx)
                             if idx == 0:
                                 conferenceName = graphics.DrawText(
                                     offscreen_canvas,
