@@ -3576,6 +3576,11 @@ class RunText(SampleBase):
                         for idx, game in enumerate(arr):
                             print(idx)
                             print(game)
+                            awayTeam = 0
+                            homeTeam = 0
+                            headlineString = 0
+                            awayTeamStatus = 0
+                            homeTeamStatus = 0
                             if idx == 0:
                                 conferenceName = graphics.DrawText(
                                     offscreen_canvas,
@@ -3585,11 +3590,6 @@ class RunText(SampleBase):
                                     green,
                                     "Fantasy Football",
                                 )
-                            awayTeam = 0
-                            homeTeam = 0
-                            headlineString = 0
-                            awayTeamStatus = 0
-                            homeTeamStatus = 0
                             if idx != 0:
                                 awayTeamString = game["oppTeamInfo"]
                                 homeTeamString = game["myTeamInfo"]
@@ -3620,7 +3620,7 @@ class RunText(SampleBase):
                                     font,
                                     pos + offset + buffer + buffer + buffer,
                                     26,
-                                    awayColor,
+                                    homeColor,
                                     leagueName,
                                 )
                                 awayTeam = graphics.DrawText(
@@ -3738,9 +3738,9 @@ class RunText(SampleBase):
                                     + homeTeamProj
                                     + buffer
                                     + buffer,
-                                    3,
+                                    5,
                                     awayColor,
-                                    "INP: {}".format(myTeamInPlayCount),
+                                    "INP: {}".format(oppTeamInPlayCount),
                                 )
                                 awayTeamYetToPlay = graphics.DrawText(
                                     offscreen_canvas,
@@ -3758,9 +3758,9 @@ class RunText(SampleBase):
                                     + homeTeamProj
                                     + buffer
                                     + buffer,
-                                    10,
+                                    12,
                                     awayColor,
-                                    "YTP: {}".format(myTeamYetToPlayCount),
+                                    "YTP: {}".format(oppTeamYetToPlayCount),
                                 )
                                 homeTeamInPlay = graphics.DrawText(
                                     offscreen_canvas,
@@ -3778,7 +3778,7 @@ class RunText(SampleBase):
                                     + homeTeamProj
                                     + buffer
                                     + buffer,
-                                    18,
+                                    20,
                                     homeColor,
                                     "INP: {}".format(myTeamInPlayCount),
                                 )
@@ -3798,7 +3798,7 @@ class RunText(SampleBase):
                                     + homeTeamProj
                                     + buffer
                                     + buffer,
-                                    26,
+                                    28,
                                     homeColor,
                                     "YTP: {}".format(myTeamYetToPlayCount),
                                 )
@@ -3812,7 +3812,7 @@ class RunText(SampleBase):
                                     + awayTeam
                                     + awayTeamStatus
                                     + headlineString
-                                    + 240
+                                    + 260
                                 )
                             else:
                                 offset = (
@@ -3820,7 +3820,7 @@ class RunText(SampleBase):
                                     + homeTeam
                                     + homeTeamStatus
                                     + headlineString
-                                    + 240
+                                    + 260
                                 )
                         time.sleep(0.01)
                         if pos + offset < 0:
