@@ -3578,6 +3578,7 @@ class RunText(SampleBase):
                             print(game)
                             awayTeam = 0
                             homeTeam = 0
+                            leagueNameStr = 0
                             headlineString = 0
                             awayTeamStatus = 0
                             homeTeamStatus = 0
