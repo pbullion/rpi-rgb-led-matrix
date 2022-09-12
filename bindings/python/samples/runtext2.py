@@ -3588,7 +3588,7 @@ class RunText(SampleBase):
                                     pos + offset,
                                     26,
                                     green,
-                                    "Fantasy Football",
+                                    "Fantasy Scores",
                                 )
                             if idx != 0:
                                 awayTeamString = game["oppTeamInfo"]
@@ -3632,6 +3632,8 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
+                                    +buffer,
+                                    +buffer,
                                     12,
                                     awayColor,
                                     awayTeamString,
@@ -3645,6 +3647,8 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
+                                    +buffer,
+                                    +buffer,
                                     26,
                                     homeColor,
                                     homeTeamString,
