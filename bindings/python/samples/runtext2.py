@@ -3813,18 +3813,20 @@ class RunText(SampleBase):
                             if awayTeam > homeTeam:
                                 offset = (
                                     offset
+                                    + leagueNameStr
                                     + awayTeam
                                     + awayTeamStatus
                                     + headlineString
-                                    + 260
+                                    + 240
                                 )
                             else:
                                 offset = (
                                     offset
+                                    + leagueNameStr
                                     + homeTeam
                                     + homeTeamStatus
                                     + headlineString
-                                    + 260
+                                    + 240
                                 )
                         time.sleep(0.01)
                         if pos + offset < 0:
