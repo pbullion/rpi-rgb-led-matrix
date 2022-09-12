@@ -3602,10 +3602,10 @@ class RunText(SampleBase):
                                 leagueName = game["leagueName"]
                                 awayBetsColor = blue
                                 homeBetsColor = blue
-                                if int(oppTeamPoints) < int(myTeamPoints):
+                                if int(float(oppTeamPoints)) < int(float(myTeamPoints)):
                                     homeColor = green
                                     awayColor = red
-                                elif int(oppTeamPoints) == int(myTeamPoints):
+                                elif int(float(oppTeamPoints)) == int(float(myTeamPoints)):
                                     homeColor = yellow
                                     awayColor = yellow
                                 else:
