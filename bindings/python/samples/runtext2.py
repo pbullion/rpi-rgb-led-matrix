@@ -3605,7 +3605,9 @@ class RunText(SampleBase):
                                 if int(float(oppTeamPoints)) < int(float(myTeamPoints)):
                                     homeColor = green
                                     awayColor = red
-                                elif int(float(oppTeamPoints)) == int(float(myTeamPoints)):
+                                elif int(float(oppTeamPoints)) == int(
+                                    float(myTeamPoints)
+                                ):
                                     homeColor = yellow
                                     awayColor = yellow
                                 else:
@@ -3731,9 +3733,9 @@ class RunText(SampleBase):
                                     + scoreLocation
                                     + buffer
                                     + homeTeamStatus
-                                    + homeTeamProj,
-                                    +buffer,
-                                    +buffer,
+                                    + homeTeamProj
+                                    + buffer
+                                    + buffer,
                                     3,
                                     awayColor,
                                     "INP: {}".format(myTeamInPlayCount),
@@ -3751,9 +3753,9 @@ class RunText(SampleBase):
                                     + scoreLocation
                                     + buffer
                                     + homeTeamStatus
-                                    + homeTeamProj,
-                                    +buffer,
-                                    +buffer,
+                                    + homeTeamProj
+                                    + buffer
+                                    + buffer,
                                     10,
                                     awayColor,
                                     "YTP: {}".format(myTeamYetToPlayCount),
@@ -3771,9 +3773,9 @@ class RunText(SampleBase):
                                     + scoreLocation
                                     + buffer
                                     + homeTeamStatus
-                                    + homeTeamProj,
-                                    +buffer,
-                                    +buffer,
+                                    + homeTeamProj
+                                    + buffer
+                                    + buffer,
                                     18,
                                     homeColor,
                                     "INP: {}".format(myTeamInPlayCount),
@@ -3791,9 +3793,9 @@ class RunText(SampleBase):
                                     + scoreLocation
                                     + buffer
                                     + homeTeamStatus
-                                    + homeTeamProj,
-                                    +buffer,
-                                    +buffer,
+                                    + homeTeamProj
+                                    + buffer
+                                    + buffer,
                                     26,
                                     homeColor,
                                     "YTP: {}".format(myTeamYetToPlayCount),
