@@ -3631,9 +3631,9 @@ class RunText(SampleBase):
                                     + leagueNameStr
                                     + buffer
                                     + buffer
+                                    + buffer
+                                    + buffer
                                     + buffer,
-                                    +buffer,
-                                    +buffer,
                                     12,
                                     awayColor,
                                     awayTeamString,
@@ -3646,9 +3646,9 @@ class RunText(SampleBase):
                                     + leagueNameStr
                                     + buffer
                                     + buffer
+                                    + buffer
+                                    + buffer
                                     + buffer,
-                                    +buffer,
-                                    +buffer,
                                     26,
                                     homeColor,
                                     homeTeamString,
