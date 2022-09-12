@@ -1,7 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix'
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./lib
- 
 make[1]: Entering directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/lib'
 echo 'c++ -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11' | cmp -s - compiler-flags || echo 'c++ -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11' > compiler-flags
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o gpio.o gpio.cc
@@ -23,6 +22,7 @@ make[1]: Leaving directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/li
  
 make[1]: Entering directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/examples-api-use'
 c++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o demo-main.o demo-main.cc
+ 
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C ../lib
  
 make[2]: Entering directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/lib'
@@ -42,20 +42,17 @@ c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_
 ar rcs librgbmatrix.a gpio.o led-matrix.o options-initialize.o framebuffer.o thread.o bdf-font.o graphics.o led-matrix-c.o hardware-mapping.o pixel-mapper.o multiplex-mappers.o content-streamer.o
 c++ -shared -Wl,-soname,librgbmatrix.so.1 -o librgbmatrix.so.1 gpio.o led-matrix.o options-initialize.o framebuffer.o thread.o bdf-font.o graphics.o led-matrix-c.o hardware-mapping.o pixel-mapper.o multiplex-mappers.o content-streamer.o -lpthread  -lrt -lm -lpthread
 make[2]: Leaving directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/lib'
- 
 c++ demo-main.o -o demo -L../lib -lrgbmatrix -lrt -lm -lpthread
 c++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o minimal-example.o minimal-example.cc
 c++ minimal-example.o -o minimal-example -L../lib -lrgbmatrix -lrt -lm -lpthread
 cc -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o c-example.o c-example.c
 cc c-example.o -o c-example -L../lib -lrgbmatrix -lrt -lm -lpthread -lstdc++
- 
 c++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o text-example.o text-example.cc
 c++ text-example.o -o text-example -L../lib -lrgbmatrix -lrt -lm -lpthread
 c++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o scrolling-text-example.o scrolling-text-example.cc
 c++ scrolling-text-example.o -o scrolling-text-example -L../lib -lrgbmatrix -lrt -lm -lpthread
 c++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o clock.o clock.cc
 c++ clock.o -o clock -L../lib -lrgbmatrix -lrt -lm -lpthread
- 
 c++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o ledcat.o ledcat.cc
 c++ ledcat.o -o ledcat -L../lib -lrgbmatrix -lrt -lm -lpthread
 c++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o input-example.o input-example.cc
