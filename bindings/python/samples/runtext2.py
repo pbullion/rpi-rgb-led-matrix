@@ -109,12 +109,7 @@ class RunText(SampleBase):
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    
-                                    + buffer
-                                    + buffer
-                                    + buffer,
+                                    pos + offset + buffer + buffer + buffer,
                                     12,
                                     white,
                                     awayTeamString,
@@ -124,7 +119,6 @@ class RunText(SampleBase):
                                     smallestFont,
                                     pos
                                     + offset
-                                    
                                     + buffer
                                     + buffer
                                     + buffer
@@ -137,12 +131,7 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    
-                                    + buffer
-                                    + buffer
-                                    + buffer,
+                                    pos + offset + buffer + buffer + buffer,
                                     26,
                                     white,
                                     homeTeamString,
@@ -152,7 +141,6 @@ class RunText(SampleBase):
                                     smallestFont,
                                     pos
                                     + offset
-                                    
                                     + buffer
                                     + buffer
                                     + buffer
@@ -169,8 +157,7 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        
-                                            + buffer
+                                        + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -188,8 +175,7 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        
-                                            + buffer
+                                        + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -207,8 +193,7 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        
-                                            + buffer
+                                        + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -233,8 +218,7 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        
-                                                + buffer
+                                        + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -260,8 +244,7 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        
-                                                + buffer
+                                        + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -279,8 +262,7 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        
-                                                + buffer
+                                        + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -298,7 +280,7 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                            + buffer
+                                        + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -323,8 +305,7 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        
-                                                + buffer
+                                        + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -350,10 +331,9 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        
-                                            + homeOdds
+                                        + homeOdds
                                         + overUnderStr
-                                            + buffer
+                                        + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -377,10 +357,9 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        
-                                            + homeOdds
+                                        + homeOdds
                                         + overUnderStr
-                                            + buffer
+                                        + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -405,10 +384,9 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        
-                                            + homeOdds
+                                        + homeOdds
                                         + overUnderStr
-                                            + buffer
+                                        + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -431,10 +409,9 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        
-                                            + homeOdds
+                                        + homeOdds
                                         + overUnderStr
-                                            + buffer
+                                        + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -500,11 +477,7 @@ class RunText(SampleBase):
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer,
+                                    pos + offset + buffer + buffer + buffer,
                                     12,
                                     awayColor,
                                     awayTeamString,
@@ -512,26 +485,16 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer,
+                                    pos + offset + buffer + buffer + buffer,
                                     26,
                                     homeColor,
                                     homeTeamString,
                                 )
                                 scoreLocation = 0
                                 if homeTeam > awayTeam:
-                                    scoreLocation = (
-                                        homeTeam
-                                        + buffer
-                                            )
+                                    scoreLocation = homeTeam + buffer
                                 else:
-                                    scoreLocation = (
-                                        awayTeam
-                                        + buffer
-                                            )
+                                    scoreLocation = awayTeam + buffer
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
@@ -926,11 +889,7 @@ class RunText(SampleBase):
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer,
+                                    pos + offset + buffer + buffer + buffer,
                                     12,
                                     awayColor,
                                     awayTeamString,
@@ -938,26 +897,16 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer,
+                                    pos + offset + buffer + buffer + buffer,
                                     26,
                                     homeColor,
                                     homeTeamString,
                                 )
                                 scoreLocation = 0
                                 if homeTeam > awayTeam:
-                                    scoreLocation = (
-                                        homeTeam
-                                        + buffer
-                                            )
+                                    scoreLocation = homeTeam + buffer
                                 else:
-                                    scoreLocation = (
-                                        awayTeam
-                                        + buffer
-                                            )
+                                    scoreLocation = awayTeam + buffer
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
@@ -1069,11 +1018,7 @@ class RunText(SampleBase):
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer,
+                                    pos + offset + buffer + buffer + buffer,
                                     12,
                                     white,
                                     awayTeamString,
@@ -1081,11 +1026,7 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer,
+                                    pos + offset + buffer + buffer + buffer,
                                     26,
                                     white,
                                     homeTeamString,
@@ -1256,11 +1197,7 @@ class RunText(SampleBase):
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer,
+                                    pos + offset + buffer + buffer + buffer,
                                     12,
                                     awayColor,
                                     awayTeamString,
@@ -1268,26 +1205,16 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer,
+                                    pos + offset + buffer + buffer + buffer,
                                     26,
                                     homeColor,
                                     homeTeamString,
                                 )
                                 scoreLocation = 0
                                 if homeTeam > awayTeam:
-                                    scoreLocation = (
-                                        homeTeam
-                                        + buffer
-                                            )
+                                    scoreLocation = homeTeam + buffer
                                 else:
-                                    scoreLocation = (
-                                        awayTeam
-                                        + buffer
-                                            )
+                                    scoreLocation = awayTeam + buffer
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
@@ -1539,6 +1466,8 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + buffer
+                                    + buffer
                                     + scoreLocation
                                     + buffer
                                     + buffer
@@ -1554,6 +1483,8 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
+                                    + buffer
+                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -1613,11 +1544,7 @@ class RunText(SampleBase):
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer,
+                                    pos + offset + buffer + buffer + buffer,
                                     12,
                                     awayColor,
                                     awayTeamString,
@@ -1625,27 +1552,16 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer,
+                                    pos + offset + buffer + buffer + buffer,
                                     26,
                                     homeColor,
                                     homeTeamString,
                                 )
                                 scoreLocation = 0
                                 if homeTeam > awayTeam:
-                                    scoreLocation = (
-                                        homeTeam
-                                        + buffer
-                                            )
+                                    scoreLocation = homeTeam + buffer
                                 else:
-                                    scoreLocation = (
-                                        awayTeam
-                                        + buffer
-                                        
-                                            )
+                                    scoreLocation = awayTeam + buffer
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
