@@ -24,520 +24,6 @@ class RunText(SampleBase):
 
     def run(self):
         userJSON = json.load(userFile)
-        teamLogos = {
-            "MLB": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "NFL": Image.open(
-                requests.get(
-                    "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((40, 40), Image.ANTIALIAS),
-            "New York Yankees": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Washington Nationals": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-washington-nationals-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Texas Rangers": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-texas-rangers-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "New York Mets": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-new-york-mets-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Miami Marlins": Image.open(
-                requests.get(
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_zP8e4N4bDCCuMrkp1eGA7rIc8akKKqFmg&usqp=CAU",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Oakland Athletics": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-oakland-athletics-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Kansas City Royals": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-kansas-city-royals-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Toronto Blue Jays": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-toronto-blue-jays-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Milwaukee Brewers": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-milwaukee-brewers-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Boston Red Sox": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-boston-red-sox-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Cleveland Guardians": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-cleveland-guardians-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Cincinnati Reds": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-cincinnati-reds-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "San Francisco Giants": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-san-francisco-giants-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Colorado Rockies": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-colorado-rockies-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Minnesota Twins": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-minnesota-twins-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Los Angeles Dodgers": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-los-angeles-dodgers-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Atlanta Braves": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-atlanta-braves-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Seattle Mariners": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-seattle-mariners-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Los Angeles Angels": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-los-angeles-angels-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Detroit Tigers": Image.open(
-                requests.get(
-                    "https://logos-download.com/wp-content/uploads/2016/04/Detroit_Tigers_Insignia_logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Arizona Diamondbacks": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-arizona-diamondbacks-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Philadelphia Phillies": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-philadelphia-phillies-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "San Diego Padres": Image.open(
-                requests.get(
-                    "https://s.yimg.com/cv/apiv2/default/mlb/20200508/500x500/padres_wbgs.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Pittsburgh Pirates": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-pittsburgh-pirates-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Tampa Bay Rays": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-tampa-bay-rays-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Baltimore Orioles": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-baltimore-orioles-logo-bird.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Chicago White Sox": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-chicago-white-sox-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "St. Louis Cardinals": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-st-louis-cardinals-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Chicago Cubs": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-chicago-cubs-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Houston Astros": Image.open(
-                requests.get(
-                    "https://images.ctfassets.net/iiozhi00a8lc/t117_favicon117_qgouernt_ehw9pj78_png/700d0ebafa92b5499f3dc09bf465fc98/t117_favicon.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Arizona Cardinals": Image.open(
-                requests.get(
-                    "https://seeklogo.com/images/A/arizona-cardinals-logo-60AFACA5B9-seeklogo.com.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Atlanta Falcons": Image.open(
-                requests.get(
-                    "https://cdn.freebiesupply.com/images/large/2x/atlanta-falcons-logo-on-black.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Baltimore Ravens": Image.open(
-                requests.get(
-                    "https://assets.stickpng.com/images/580b585b2edbce24c47b2b09.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Buffalo Bills": Image.open(
-                requests.get(
-                    "https://logos-download.com/wp-content/uploads/2018/03/Buffalo_Bills_logo_blue-700x502.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Carolina Panthers": Image.open(
-                requests.get(
-                    "https://logos-download.com/wp-content/uploads/2018/02/Carolina_Panthers_logo_blue-700x380.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Chicago Bears": Image.open(
-                requests.get(
-                    "https://assets.stickpng.com/images/580b585b2edbce24c47b2b16.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Cincinnati Bengals": Image.open(
-                requests.get(
-                    "https://cdn.freebiesupply.com/images/thumbs/1x/cincinnati-bengals-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Cleveland Browns": Image.open(
-                requests.get(
-                    "https://i.redd.it/1rsnuls0llu71.jpg",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Jacksonville Jaguars": Image.open(
-                requests.get(
-                    "https://assets.stickpng.com/images/580b585b2edbce24c47b2b2f.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Las Vegas Raiders": Image.open(
-                requests.get(
-                    "https://content.sportslogos.net/logos/7/6708/full/8521_las_vegas_raiders-primary-20201.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Dallas Cowboys": Image.open(
-                requests.get(
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dallas_Cowboys.svg/1076px-Dallas_Cowboys.svg.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Denver Broncos": Image.open(
-                requests.get(
-                    "https://assets.stickpng.com/images/580b585b2edbce24c47b2b21.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Detroit Lions": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-detroit-lions-team-logo-2.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Green Bay Packers": Image.open(
-                requests.get(
-                    "https://seeklogo.com/images/G/green-bay-packers-logo-2A5FB2D033-seeklogo.com.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Houston Texans": Image.open(
-                requests.get(
-                    "https://assets.stickpng.com/images/580b585b2edbce24c47b2b29.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Indianapolis Colts": Image.open(
-                requests.get(
-                    "https://s.yimg.com/it/api/res/1.2/1U2AxCGOmhypKITxE2PNMw--~A/YXBwaWQ9eW5ld3M7dz0xMjAwO2g9NjMwO3E9MTAw/https://s.yimg.com/cv/apiv2/default/nfl/20190724/500x500/2019_IND_wbg.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Los Angeles Chargers": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-los-angeles-chargers-team-logo-2.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Los Angeles Rams": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/los-angeles-rams-2020-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Miami Dolphins": Image.open(
-                requests.get(
-                    "https://logos-download.com/wp-content/uploads/2018/02/Miami_Dolphins_logo_bright-609x700.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Minnesota Vikings": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-minnesota-vikings-team-logo-2.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Kansas City Chiefs": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-kansas-city-chiefs-team-logo-2.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "New England Patriots": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-new-england-patriots-team-logo-2.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "New Orleans Saints": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-new-orleans-saints-team-logo-2.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "New York Giants": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-new-york-giants-team-logo-2.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "New York Jets": Image.open(
-                requests.get(
-                    "https://www.liblogo.com/img-logo/max/ne809n810-new-york-jets-logo-new-york-jets-logos-history-amp-images-logos-lists-brands.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Philadelphia Eagles": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-philadelphia-eagles-team-logo-2.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Pittsburgh Steelers": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-pittsburgh-steelers-team-logo-2.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "San Francisco 49ers": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-san-francisco-49ers-team-logo-2.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Seattle Seahawks": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-seattle-seahawks-team-logo-2.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Tampa Bay Buccaneers": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/tampa-bay-buccaneers-2020-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Tennessee Titans": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-tennessee-titans-team-logo-2.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Washington Commanders": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/washington-commanders-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-        }
         while True:
             green = graphics.Color(0, 255, 0)
             red = graphics.Color(255, 0, 0)
@@ -563,39 +49,7 @@ class RunText(SampleBase):
             url = requests.get(
                 f"https://sheline-art-website-api.herokuapp.com/patrick/all-data-2/{user}"
             )
-            # url = requests.get(f"http://10.0.0.22:3001/patrick/all-data-2/{user}")
             responseArr = json.loads(url.text)
-            # responseArr = [
-            #     [
-            #         ["nfl logo"],
-            #         [
-            #             "game inProgress nfl",
-            #             "https://loodibee.com/wp-content/uploads/nfl-buffalo-bills-logo.png",
-            #             4,
-            #             64,
-            #             127,
-            #             "Buffalo Bills",
-            #             "https://loodibee.com/wp-content/uploads/nfl-los-angeles-rams-logo.png",
-            #             250,
-            #             250,
-            #             250,
-            #             "Los Angeles Rams",
-            #             "2:00 ",
-            #             "10",
-            #             "7",
-            #             "2nd",
-            #             "1st & 10 at BUF 38",
-            #             "2:00 - 2nd Quarter",
-            #             "away",
-            #             "",
-            #             "-225",
-            #             "+172",
-            #             "45.5",
-            #             "-3.5",
-            #             "+3.5",
-            #         ],
-            #     ]
-            # ]
             print(responseArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             print(offscreen_canvas)
@@ -615,8 +69,13 @@ class RunText(SampleBase):
                     if isinstance(arr, list) and "mlb logo" in arr[0][0]:
                         for game in arr:
                             if "mlb logo" in game[0]:
-                                offscreen_canvas.SetImage(
-                                    teamLogos["MLB"], pos + offset, -9
+                                graphics.DrawText(
+                                    offscreen_canvas,
+                                    font,
+                                    pos + offset,
+                                    26,
+                                    green,
+                                    "MLB",
                                 )
                             awayTeam = 0
                             homeTeam = 0
@@ -647,35 +106,12 @@ class RunText(SampleBase):
                                 if overUnderString != "":
                                     OUString = "O/U"
                                     awayColor = red
-                                offscreen_canvas.SetImage(
-                                    teamLogos[game[5]], pos + offset, -10
-                                )
-                                versus = graphics.DrawText(
-                                    offscreen_canvas,
-                                    middleFont,
-                                    pos + offset + buffer + teamLogos[game[5]].width,
-                                    24,
-                                    green,
-                                    statusString,
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos[game[10]],
-                                    pos
-                                    + offset
-                                    + teamLogos[game[5]].width
-                                    + buffer
-                                    + buffer
-                                    + versus,
-                                    -10,
-                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
+                                    
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -688,9 +124,7 @@ class RunText(SampleBase):
                                     smallestFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
+                                    
                                     + buffer
                                     + buffer
                                     + buffer
@@ -705,9 +139,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
+                                    
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -720,9 +152,7 @@ class RunText(SampleBase):
                                     smallestFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
+                                    
                                     + buffer
                                     + buffer
                                     + buffer
@@ -739,10 +169,8 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                        + buffer
+                                        
+                                            + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -760,10 +188,8 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                        + buffer
+                                        
+                                            + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -781,10 +207,8 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                        + buffer
+                                        
+                                            + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -809,10 +233,8 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                        + buffer
+                                        
+                                                + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -838,10 +260,8 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                        + buffer
+                                        
+                                                + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -859,10 +279,8 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                        + buffer
+                                        
+                                                + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -880,10 +298,7 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                        + buffer
+                                            + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -908,10 +323,8 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                        + buffer
+                                        
+                                                + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -937,12 +350,10 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + homeOdds
+                                        
+                                            + homeOdds
                                         + overUnderStr
-                                        + teamLogos[game[10]].width
-                                        + buffer
+                                            + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -966,12 +377,10 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + homeOdds
+                                        
+                                            + homeOdds
                                         + overUnderStr
-                                        + teamLogos[game[10]].width
-                                        + buffer
+                                            + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -996,12 +405,10 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + homeOdds
+                                        
+                                            + homeOdds
                                         + overUnderStr
-                                        + teamLogos[game[10]].width
-                                        + buffer
+                                            + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -1024,12 +431,10 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + homeOdds
+                                        
+                                            + homeOdds
                                         + overUnderStr
-                                        + teamLogos[game[10]].width
-                                        + buffer
+                                            + buffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -1092,37 +497,11 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
-                                offscreen_canvas.SetImage(
-                                    teamLogos[game[5]], pos + offset, -10
-                                )
-                                versus = graphics.DrawText(
-                                    offscreen_canvas,
-                                    middleFont,
-                                    pos + offset + buffer + teamLogos[game[5]].width,
-                                    24,
-                                    green,
-                                    "vs",
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos[game[10]],
-                                    pos
-                                    + offset
-                                    + teamLogos[game[5]].width
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer,
-                                    -10,
-                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -1135,9 +514,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -1150,18 +526,12 @@ class RunText(SampleBase):
                                     scoreLocation = (
                                         homeTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                    )
+                                            )
                                 else:
                                     scoreLocation = (
                                         awayTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                    )
+                                            )
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
@@ -1553,37 +923,11 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
-                                offscreen_canvas.SetImage(
-                                    teamLogos[game[5]], pos + offset, -10
-                                )
-                                versus = graphics.DrawText(
-                                    offscreen_canvas,
-                                    middleFont,
-                                    pos + offset + buffer + teamLogos[game[5]].width,
-                                    24,
-                                    green,
-                                    "vs",
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos[game[10]],
-                                    pos
-                                    + offset
-                                    + teamLogos[game[5]].width
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer,
-                                    -10,
-                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -1596,9 +940,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -1611,18 +952,12 @@ class RunText(SampleBase):
                                     scoreLocation = (
                                         homeTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                    )
+                                            )
                                 else:
                                     scoreLocation = (
                                         awayTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                    )
+                                            )
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
@@ -1707,10 +1042,13 @@ class RunText(SampleBase):
                     elif isinstance(arr, list) and "nfl logo" in arr[0][0]:
                         for game in arr:
                             if "nfl logo" in game[0]:
-                                offscreen_canvas.SetImage(
-                                    teamLogos["NFL"],
+                                graphics.DrawText(
+                                    offscreen_canvas,
+                                    font,
                                     pos + offset,
-                                    -6,
+                                    26,
+                                    green,
+                                    "NFL",
                                 )
                             awayTeam = 0
                             homeTeam = 0
@@ -1728,47 +1066,11 @@ class RunText(SampleBase):
                                 dayString = game[20]
                                 awaySpreadString = game[22]
                                 homeSpreadString = game[23]
-                                offscreen_canvas.SetImage(
-                                    teamLogos[game[5]], pos + offset, -10
-                                )
-                                versus = graphics.DrawText(
-                                    offscreen_canvas,
-                                    middleFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + 5
-                                    + teamLogos[game[5]].width,
-                                    14,
-                                    green,
-                                    dayString.split(",")[0].upper(),
-                                )
-                                versus = graphics.DrawText(
-                                    offscreen_canvas,
-                                    middleFont,
-                                    pos + offset + buffer + teamLogos[game[5]].width,
-                                    26,
-                                    green,
-                                    statusString,
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos[game[10]],
-                                    pos
-                                    + offset
-                                    + teamLogos[game[5]].width
-                                    + buffer
-                                    + buffer
-                                    + versus,
-                                    -10,
-                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -1781,9 +1083,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -1801,9 +1100,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -1819,9 +1115,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -1837,9 +1130,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -1860,9 +1150,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -1883,9 +1170,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -1911,9 +1195,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -1972,37 +1253,11 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
-                                offscreen_canvas.SetImage(
-                                    teamLogos[game[5]], pos + offset, -10
-                                )
-                                versus = graphics.DrawText(
-                                    offscreen_canvas,
-                                    middleFont,
-                                    pos + offset + buffer + teamLogos[game[5]].width,
-                                    24,
-                                    green,
-                                    "vs",
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos[game[10]],
-                                    pos
-                                    + offset
-                                    + teamLogos[game[5]].width
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer,
-                                    -10,
-                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -2015,9 +1270,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -2030,18 +1282,12 @@ class RunText(SampleBase):
                                     scoreLocation = (
                                         homeTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                    )
+                                            )
                                 else:
                                     scoreLocation = (
                                         awayTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                    )
+                                            )
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
@@ -2364,37 +1610,11 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
-                                offscreen_canvas.SetImage(
-                                    teamLogos[game[5]], pos + offset, -10
-                                )
-                                versus = graphics.DrawText(
-                                    offscreen_canvas,
-                                    middleFont,
-                                    pos + offset + buffer + teamLogos[game[5]].width,
-                                    24,
-                                    green,
-                                    "vs",
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos[game[10]],
-                                    pos
-                                    + offset
-                                    + teamLogos[game[5]].width
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer,
-                                    -10,
-                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -2407,9 +1627,6 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
-                                    + versus
-                                    + teamLogos[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -2422,18 +1639,13 @@ class RunText(SampleBase):
                                     scoreLocation = (
                                         homeTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                    )
+                                            )
                                 else:
                                     scoreLocation = (
                                         awayTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
-                                        + versus
-                                        + teamLogos[game[10]].width
-                                    )
+                                        
+                                            )
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
