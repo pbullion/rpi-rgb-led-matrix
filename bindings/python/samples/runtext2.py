@@ -545,7 +545,7 @@ class RunText(SampleBase):
             teal = graphics.Color(0, 255, 255)
             purple = graphics.Color(102, 0, 204)
             yellow = graphics.Color(255, 255, 0)
-            white = graphics.Color(255, 255, 255)
+            white = graphics.Color(255, 255, 0)
             bFont = graphics.Font()
             bFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/8x13.bdf")
             font = graphics.Font()
@@ -2545,7 +2545,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + buffer + buffer + buffer,
                                     12,
-                                    white,
+                                    yellow,
                                     awayTeamString,
                                 )
                                 homeTeam = graphics.DrawText(
@@ -2553,7 +2553,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + buffer + buffer + buffer,
                                     26,
-                                    white,
+                                    yellow,
                                     homeTeamString,
                                 )
                                 if homeTeam > awayTeam:
