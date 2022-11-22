@@ -3925,30 +3925,7 @@ class RunText(SampleBase):
                                     yellow,
                                     statusString,
                                 )
-                                situationStr = graphics.DrawText(
-                                    offscreen_canvas,
-                                    smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + scoreLocation
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer,
-                                    26,
-                                    yellow,
-                                    situationString,
-                                )
-                                newOffset = 0
-                                if statusStr > situationStr:
-                                    newOffset = statusStr
-                                else:
-                                    newOffset = situationStr
+                                newOffset = statusStr
                                 awayOdds = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
@@ -4474,30 +4451,7 @@ class RunText(SampleBase):
                                     yellow,
                                     statusString,
                                 )
-                                situationStr = graphics.DrawText(
-                                    offscreen_canvas,
-                                    smallFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + scoreLocation
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer,
-                                    26,
-                                    yellow,
-                                    situationString,
-                                )
-                                newOffset = 0
-                                if statusStr > situationStr:
-                                    newOffset = statusStr
-                                else:
-                                    newOffset = situationStr
+                                newOffset = statusStr
                                 awayOdds = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
