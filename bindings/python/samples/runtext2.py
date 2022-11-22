@@ -25,14 +25,14 @@ class RunText(SampleBase):
     def run(self):
         userJSON = json.load(userFile)
         teamLogos = {
-            "MLB": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            # "MLB": Image.open(
+            #     requests.get(
+            #         "https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
             "NFL": Image.open(
                 requests.get(
                     "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png",
@@ -209,14 +209,14 @@ class RunText(SampleBase):
             # )
             # .convert("RGB")
             # .resize((50, 50), Image.ANTIALIAS),
-            "Philadelphia Phillies": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-Philadelphia-Phillies-Logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            # "Philadelphia Phillies": Image.open(
+            #     requests.get(
+            #         "https://loodibee.com/wp-content/uploads/mlb-Philadelphia-Phillies-Logo.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
             # "San Diego Padres": Image.open(
             #     requests.get(
             #         "https://s.yimg.com/cv/apiv2/default/mlb/20200508/500x500/padres_wbgs.png",
@@ -273,14 +273,14 @@ class RunText(SampleBase):
             # )
             # .convert("RGB")
             # .resize((50, 50), Image.ANTIALIAS),
-            "Houston Astros": Image.open(
-                requests.get(
-                    "https://images.ctfassets.net/iiozhi00a8lc/t117_favicon117_qgouernt_ehw9pj78_png/700d0ebafa92b5499f3dc09bf465fc98/t117_favicon.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            # "Houston Astros": Image.open(
+            #     requests.get(
+            #         "https://images.ctfassets.net/iiozhi00a8lc/t117_favicon117_qgouernt_ehw9pj78_png/700d0ebafa92b5499f3dc09bf465fc98/t117_favicon.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
             "Arizona Cardinals": Image.open(
                 requests.get(
                     "https://seeklogo.com/images/A/arizona-cardinals-logo-60AFACA5B9-seeklogo.com.png",
@@ -565,37 +565,6 @@ class RunText(SampleBase):
             )
             # url = requests.get(f"http://10.0.0.22:3001/patrick/all-data-2/{user}")
             responseArr = json.loads(url.text)
-            # responseArr = [
-            #     [
-            #         ["nfl logo"],
-            #         [
-            #             "game inProgress nfl",
-            #             "https://loodibee.com/wp-content/uploads/nfl-buffalo-bills-logo.png",
-            #             4,
-            #             64,
-            #             127,
-            #             "Buffalo Bills",
-            #             "https://loodibee.com/wp-content/uploads/nfl-los-angeles-rams-logo.png",
-            #             250,
-            #             250,
-            #             250,
-            #             "Los Angeles Rams",
-            #             "2:00 ",
-            #             "10",
-            #             "7",
-            #             "2nd",
-            #             "1st & 10 at BUF 38",
-            #             "2:00 - 2nd Quarter",
-            #             "away",
-            #             "",
-            #             "-225",
-            #             "+172",
-            #             "45.5",
-            #             "-3.5",
-            #             "+3.5",
-            #         ],
-            #     ]
-            # ]
             print(responseArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             print(offscreen_canvas)
@@ -2522,6 +2491,15 @@ class RunText(SampleBase):
                                     green,
                                     game[1],
                                 )
+                            if "conference" in game[0]:
+                                conferenceName = graphics.DrawText(
+                                    offscreen_canvas,
+                                    font,
+                                    pos + offset,
+                                    26,
+                                    green,
+                                    game[1],
+                                )
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
@@ -2855,6 +2833,1662 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + possessionPop,
+                                    26,
+                                    yellow,
+                                    situationString,
+                                )
+                                newOffset = 0
+                                if statusStr > situationStr:
+                                    newOffset = statusStr
+                                else:
+                                    newOffset = situationStr
+                                awayOdds = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + 35,
+                                    12,
+                                    awayBetsColor,
+                                    awayOddsString,
+                                )
+                                homeOdds = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + 35,
+                                    26,
+                                    homeBetsColor,
+                                    homeOddsString,
+                                )
+                                overUnderStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + 35,
+                                    12,
+                                    yellow,
+                                    OUString,
+                                )
+                                overUnderAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + 35,
+                                    26,
+                                    yellow,
+                                    overUnderString,
+                                )
+                                awaySpreadAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + overUnderAmount
+                                    + 35,
+                                    12,
+                                    awayBetsColor,
+                                    awaySpreadString,
+                                )
+                                homeSpreadAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + overUnderAmount
+                                    + 35,
+                                    26,
+                                    homeBetsColor,
+                                    homeSpreadString,
+                                )
+                            if "pregame" in game[0]:
+                                offset = offset + 140
+                            if "inProgress" in game[0]:
+                                offset = offset + 220
+                            if "final" in game[0]:
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                statusString = game[11]
+                                oddsString = game[14]
+                                awayPitcherString = game[18]
+                                homePitcherString = game[19]
+                                runnerSituationString = game[15]
+                                headline = game[29]
+                                if int(awayTeamStatusString) < int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = green
+                                    awayColor = red
+                                elif int(awayTeamStatusString) == int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = yellow
+                                    awayColor = yellow
+                                else:
+                                    homeColor = red
+                                    awayColor = green
+                                awayTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamString,
+                                )
+                                homeTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamString,
+                                )
+                                scoreLocation = 0
+                                if homeTeam > awayTeam:
+                                    scoreLocation = homeTeam + buffer
+                                else:
+                                    scoreLocation = awayTeam + buffer
+                                awayTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamStatusString,
+                                )
+                                homeTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamStatusString,
+                                )
+                                runningTotal = (
+                                    scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + awayTeamStatus
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                )
+                                finalString = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + runningTotal,
+                                    12,
+                                    yellow,
+                                    oddsString,
+                                )
+                                headlineString = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + runningTotal,
+                                    26,
+                                    green,
+                                    headline,
+                                )
+                            if awayTeam > homeTeam:
+                                offset = (
+                                    offset
+                                    + awayTeam
+                                    + awayTeamStatus
+                                    + headlineString
+                                    + 240
+                                )
+                            else:
+                                offset = (
+                                    offset
+                                    + homeTeam
+                                    + homeTeamStatus
+                                    + headlineString
+                                    + 240
+                                )
+                        time.sleep(0.01)
+                        if pos + offset < 0:
+                            running = False
+                            pos = offscreen_canvas.width
+                    elif isinstance(arr, list) and "worldCup" in arr[0][0]:
+                        for game in arr:
+                            if "worldCup" in game[0]:
+                                conferenceName = graphics.DrawText(
+                                    offscreen_canvas,
+                                    font,
+                                    pos + offset,
+                                    26,
+                                    green,
+                                    "FIFA WORLD CUP",
+                                )
+                            awayTeam = 0
+                            homeTeam = 0
+                            headlineString = 0
+                            awayTeamStatus = 0
+                            homeTeamStatus = 0
+                            if "pregame" in game[0]:
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                statusString = game[11]
+                                oddsString = game[14]
+                                awayOddsString = game[15]
+                                homeOddsString = game[16]
+                                overUnderString = game[17]
+                                dayString = game[20]
+                                timeString = game[21]
+                                overUnderText = ""
+                                if overUnderString != "":
+                                    overUnderText = "O/U"
+                                awayTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    12,
+                                    yellow,
+                                    awayTeamString,
+                                )
+                                homeTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    26,
+                                    yellow,
+                                    homeTeamString,
+                                )
+                                if homeTeam > awayTeam:
+                                    scoreLocation = homeTeam
+                                else:
+                                    scoreLocation = awayTeam
+
+                                awayOdds = 0
+                                if awayOddsString != "":
+                                    awayOdds = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer,
+                                        12,
+                                        green,
+                                        awayOddsString,
+                                    )
+                                    homeOdds = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer,
+                                        26,
+                                        green,
+                                        homeOddsString,
+                                    )
+                                overUnderAmount = 0
+                                if overUnderString != "":
+                                    overUnderStr = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + awayOdds
+                                        + scoreLocation,
+                                        12,
+                                        green,
+                                        overUnderText,
+                                    )
+                                    overUnderAmount = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + awayOdds
+                                        + scoreLocation,
+                                        26,
+                                        green,
+                                        overUnderString,
+                                    )
+                                dayStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + awayOdds
+                                    + buffer
+                                    + overUnderAmount
+                                    + scoreLocation,
+                                    12,
+                                    yellow,
+                                    dayString,
+                                )
+                                timeStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + awayOdds
+                                    + buffer
+                                    + overUnderAmount
+                                    + scoreLocation,
+                                    26,
+                                    yellow,
+                                    timeString,
+                                )
+                            if "inProgress" in game[0]:
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                situationString = game[15]
+                                statusString = game[16]
+                                possession = game[17]
+                                awayOddsString = game[19]
+                                homeOddsString = game[20]
+                                overUnderString = game[21]
+                                awaySpreadString = game[22]
+                                homeSpreadString = game[23]
+                                OUString = ""
+                                awayBetsColor = blue
+                                homeBetsColor = blue
+                                if "+" in awayOddsString:
+                                    awayBetsColor = green
+                                    homeBetsColor = red
+                                else:
+                                    awayBetsColor = red
+                                    homeBetsColor = green
+                                if overUnderString != "":
+                                    OUString = "O/U"
+                                    awayColor = red
+                                if int(awayTeamStatusString) < int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = green
+                                    awayColor = red
+                                elif int(awayTeamStatusString) == int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = yellow
+                                    awayColor = yellow
+                                else:
+                                    homeColor = red
+                                    awayColor = green
+                                awayTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamString,
+                                )
+                                homeTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamString,
+                                )
+                                scoreLocation = 0
+                                if homeTeam > awayTeam:
+                                    scoreLocation = homeTeam + buffer
+                                else:
+                                    scoreLocation = awayTeam + buffer
+                                awayTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamStatusString,
+                                )
+                                homeTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamStatusString,
+                                )
+                                statusStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    12,
+                                    yellow,
+                                    statusString,
+                                )
+                                situationStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    26,
+                                    yellow,
+                                    situationString,
+                                )
+                                newOffset = 0
+                                if statusStr > situationStr:
+                                    newOffset = statusStr
+                                else:
+                                    newOffset = situationStr
+                                awayOdds = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + 35,
+                                    12,
+                                    awayBetsColor,
+                                    awayOddsString,
+                                )
+                                homeOdds = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + 35,
+                                    26,
+                                    homeBetsColor,
+                                    homeOddsString,
+                                )
+                                overUnderStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + 35,
+                                    12,
+                                    yellow,
+                                    OUString,
+                                )
+                                overUnderAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + 35,
+                                    26,
+                                    yellow,
+                                    overUnderString,
+                                )
+                                awaySpreadAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + overUnderAmount
+                                    + 35,
+                                    12,
+                                    awayBetsColor,
+                                    awaySpreadString,
+                                )
+                                homeSpreadAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + overUnderAmount
+                                    + 35,
+                                    26,
+                                    homeBetsColor,
+                                    homeSpreadString,
+                                )
+                            if "pregame" in game[0]:
+                                offset = offset + 140
+                            if "inProgress" in game[0]:
+                                offset = offset + 220
+                            if "final" in game[0]:
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                statusString = game[11]
+                                oddsString = game[14]
+                                awayPitcherString = game[18]
+                                homePitcherString = game[19]
+                                runnerSituationString = game[15]
+                                headline = game[29]
+                                if int(awayTeamStatusString) < int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = green
+                                    awayColor = red
+                                elif int(awayTeamStatusString) == int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = yellow
+                                    awayColor = yellow
+                                else:
+                                    homeColor = red
+                                    awayColor = green
+                                awayTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamString,
+                                )
+                                homeTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamString,
+                                )
+                                scoreLocation = 0
+                                if homeTeam > awayTeam:
+                                    scoreLocation = homeTeam + buffer
+                                else:
+                                    scoreLocation = awayTeam + buffer
+                                awayTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamStatusString,
+                                )
+                                homeTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamStatusString,
+                                )
+                                runningTotal = (
+                                    scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + awayTeamStatus
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                )
+                                finalString = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + runningTotal,
+                                    12,
+                                    yellow,
+                                    oddsString,
+                                )
+                                headlineString = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + runningTotal,
+                                    26,
+                                    green,
+                                    headline,
+                                )
+                            if awayTeam > homeTeam:
+                                offset = (
+                                    offset
+                                    + awayTeam
+                                    + awayTeamStatus
+                                    + headlineString
+                                    + 240
+                                )
+                            else:
+                                offset = (
+                                    offset
+                                    + homeTeam
+                                    + homeTeamStatus
+                                    + headlineString
+                                    + 240
+                                )
+                        time.sleep(0.01)
+                        if pos + offset < 0:
+                            running = False
+                            pos = offscreen_canvas.width
+                    elif isinstance(arr, list) and "nba" in arr[0][0]:
+                        for game in arr:
+                            awayTeam = 0
+                            homeTeam = 0
+                            headlineString = 0
+                            awayTeamStatus = 0
+                            homeTeamStatus = 0
+                            if "pregame" in game[0]:
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                statusString = game[11]
+                                oddsString = game[14]
+                                awayOddsString = game[15]
+                                homeOddsString = game[16]
+                                overUnderString = game[17]
+                                dayString = game[20]
+                                timeString = game[21]
+                                overUnderText = ""
+                                if overUnderString != "":
+                                    overUnderText = "O/U"
+                                awayTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    12,
+                                    yellow,
+                                    awayTeamString,
+                                )
+                                homeTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    26,
+                                    yellow,
+                                    homeTeamString,
+                                )
+                                if homeTeam > awayTeam:
+                                    scoreLocation = homeTeam
+                                else:
+                                    scoreLocation = awayTeam
+
+                                awayOdds = 0
+                                if awayOddsString != "":
+                                    awayOdds = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer,
+                                        12,
+                                        green,
+                                        awayOddsString,
+                                    )
+                                    homeOdds = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer,
+                                        26,
+                                        green,
+                                        homeOddsString,
+                                    )
+                                overUnderAmount = 0
+                                if overUnderString != "":
+                                    overUnderStr = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + awayOdds
+                                        + scoreLocation,
+                                        12,
+                                        green,
+                                        overUnderText,
+                                    )
+                                    overUnderAmount = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + awayOdds
+                                        + scoreLocation,
+                                        26,
+                                        green,
+                                        overUnderString,
+                                    )
+                                dayStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + awayOdds
+                                    + buffer
+                                    + overUnderAmount
+                                    + scoreLocation,
+                                    12,
+                                    yellow,
+                                    dayString,
+                                )
+                                timeStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + awayOdds
+                                    + buffer
+                                    + overUnderAmount
+                                    + scoreLocation,
+                                    26,
+                                    yellow,
+                                    timeString,
+                                )
+                            if "inProgress" in game[0]:
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                situationString = game[15]
+                                statusString = game[16]
+                                possession = game[17]
+                                awayOddsString = game[19]
+                                homeOddsString = game[20]
+                                overUnderString = game[21]
+                                awaySpreadString = game[22]
+                                homeSpreadString = game[23]
+                                OUString = ""
+                                awayBetsColor = blue
+                                homeBetsColor = blue
+                                if "+" in awayOddsString:
+                                    awayBetsColor = green
+                                    homeBetsColor = red
+                                else:
+                                    awayBetsColor = red
+                                    homeBetsColor = green
+                                if overUnderString != "":
+                                    OUString = "O/U"
+                                    awayColor = red
+                                if int(awayTeamStatusString) < int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = green
+                                    awayColor = red
+                                elif int(awayTeamStatusString) == int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = yellow
+                                    awayColor = yellow
+                                else:
+                                    homeColor = red
+                                    awayColor = green
+                                awayTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamString,
+                                )
+                                homeTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamString,
+                                )
+                                scoreLocation = 0
+                                if homeTeam > awayTeam:
+                                    scoreLocation = homeTeam + buffer
+                                else:
+                                    scoreLocation = awayTeam + buffer
+                                awayTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamStatusString,
+                                )
+                                homeTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamStatusString,
+                                )
+                                statusStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    12,
+                                    yellow,
+                                    statusString,
+                                )
+                                situationStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    26,
+                                    yellow,
+                                    situationString,
+                                )
+                                newOffset = 0
+                                if statusStr > situationStr:
+                                    newOffset = statusStr
+                                else:
+                                    newOffset = situationStr
+                                awayOdds = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + 35,
+                                    12,
+                                    awayBetsColor,
+                                    awayOddsString,
+                                )
+                                homeOdds = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + 35,
+                                    26,
+                                    homeBetsColor,
+                                    homeOddsString,
+                                )
+                                overUnderStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + 35,
+                                    12,
+                                    yellow,
+                                    OUString,
+                                )
+                                overUnderAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + 35,
+                                    26,
+                                    yellow,
+                                    overUnderString,
+                                )
+                                awaySpreadAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + overUnderAmount
+                                    + 35,
+                                    12,
+                                    awayBetsColor,
+                                    awaySpreadString,
+                                )
+                                homeSpreadAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + overUnderAmount
+                                    + 35,
+                                    26,
+                                    homeBetsColor,
+                                    homeSpreadString,
+                                )
+                            if "pregame" in game[0]:
+                                offset = offset + 140
+                            if "inProgress" in game[0]:
+                                offset = offset + 220
+                            if "final" in game[0]:
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                statusString = game[11]
+                                oddsString = game[14]
+                                awayPitcherString = game[18]
+                                homePitcherString = game[19]
+                                runnerSituationString = game[15]
+                                headline = game[29]
+                                if int(awayTeamStatusString) < int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = green
+                                    awayColor = red
+                                elif int(awayTeamStatusString) == int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = yellow
+                                    awayColor = yellow
+                                else:
+                                    homeColor = red
+                                    awayColor = green
+                                awayTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamString,
+                                )
+                                homeTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamString,
+                                )
+                                scoreLocation = 0
+                                if homeTeam > awayTeam:
+                                    scoreLocation = homeTeam + buffer
+                                else:
+                                    scoreLocation = awayTeam + buffer
+                                awayTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamStatusString,
+                                )
+                                homeTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamStatusString,
+                                )
+                                runningTotal = (
+                                    scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + awayTeamStatus
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                )
+                                finalString = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + runningTotal,
+                                    12,
+                                    yellow,
+                                    oddsString,
+                                )
+                                headlineString = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + runningTotal,
+                                    26,
+                                    green,
+                                    headline,
+                                )
+                            if awayTeam > homeTeam:
+                                offset = (
+                                    offset
+                                    + awayTeam
+                                    + awayTeamStatus
+                                    + headlineString
+                                    + 240
+                                )
+                            else:
+                                offset = (
+                                    offset
+                                    + homeTeam
+                                    + homeTeamStatus
+                                    + headlineString
+                                    + 240
+                                )
+                        time.sleep(0.01)
+                        if pos + offset < 0:
+                            running = False
+                            pos = offscreen_canvas.width
+                    elif isinstance(arr, list) and "nhl" in arr[0][0]:
+                        for game in arr:
+                            awayTeam = 0
+                            homeTeam = 0
+                            headlineString = 0
+                            awayTeamStatus = 0
+                            homeTeamStatus = 0
+                            if "pregame" in game[0]:
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                statusString = game[11]
+                                oddsString = game[14]
+                                awayOddsString = game[15]
+                                homeOddsString = game[16]
+                                overUnderString = game[17]
+                                dayString = game[20]
+                                timeString = game[21]
+                                overUnderText = ""
+                                if overUnderString != "":
+                                    overUnderText = "O/U"
+                                awayTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    12,
+                                    yellow,
+                                    awayTeamString,
+                                )
+                                homeTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    26,
+                                    yellow,
+                                    homeTeamString,
+                                )
+                                if homeTeam > awayTeam:
+                                    scoreLocation = homeTeam
+                                else:
+                                    scoreLocation = awayTeam
+
+                                awayOdds = 0
+                                if awayOddsString != "":
+                                    awayOdds = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer,
+                                        12,
+                                        green,
+                                        awayOddsString,
+                                    )
+                                    homeOdds = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer,
+                                        26,
+                                        green,
+                                        homeOddsString,
+                                    )
+                                overUnderAmount = 0
+                                if overUnderString != "":
+                                    overUnderStr = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + awayOdds
+                                        + scoreLocation,
+                                        12,
+                                        green,
+                                        overUnderText,
+                                    )
+                                    overUnderAmount = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + awayOdds
+                                        + scoreLocation,
+                                        26,
+                                        green,
+                                        overUnderString,
+                                    )
+                                dayStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + awayOdds
+                                    + buffer
+                                    + overUnderAmount
+                                    + scoreLocation,
+                                    12,
+                                    yellow,
+                                    dayString,
+                                )
+                                timeStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + awayOdds
+                                    + buffer
+                                    + overUnderAmount
+                                    + scoreLocation,
+                                    26,
+                                    yellow,
+                                    timeString,
+                                )
+                            if "inProgress" in game[0]:
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                situationString = game[15]
+                                statusString = game[16]
+                                possession = game[17]
+                                awayOddsString = game[19]
+                                homeOddsString = game[20]
+                                overUnderString = game[21]
+                                awaySpreadString = game[22]
+                                homeSpreadString = game[23]
+                                OUString = ""
+                                awayBetsColor = blue
+                                homeBetsColor = blue
+                                if "+" in awayOddsString:
+                                    awayBetsColor = green
+                                    homeBetsColor = red
+                                else:
+                                    awayBetsColor = red
+                                    homeBetsColor = green
+                                if overUnderString != "":
+                                    OUString = "O/U"
+                                    awayColor = red
+                                if int(awayTeamStatusString) < int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = green
+                                    awayColor = red
+                                elif int(awayTeamStatusString) == int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = yellow
+                                    awayColor = yellow
+                                else:
+                                    homeColor = red
+                                    awayColor = green
+                                awayTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamString,
+                                )
+                                homeTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamString,
+                                )
+                                scoreLocation = 0
+                                if homeTeam > awayTeam:
+                                    scoreLocation = homeTeam + buffer
+                                else:
+                                    scoreLocation = awayTeam + buffer
+                                awayTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamStatusString,
+                                )
+                                homeTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamStatusString,
+                                )
+                                statusStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    12,
+                                    yellow,
+                                    statusString,
+                                )
+                                situationStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
                                     26,
                                     yellow,
                                     situationString,
