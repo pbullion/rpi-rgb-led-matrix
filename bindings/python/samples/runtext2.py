@@ -3371,7 +3371,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
+                                    + buffer,
                                     12,
                                     yellow,
                                     statusString,
@@ -3390,7 +3390,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
+                                    + buffer,
                                     26,
                                     yellow,
                                     situationString,
@@ -3920,7 +3920,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
+                                    + buffer,
                                     12,
                                     yellow,
                                     statusString,
@@ -3939,7 +3939,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
+                                    + buffer,
                                     26,
                                     yellow,
                                     situationString,
@@ -4469,7 +4469,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
+                                    + buffer,
                                     12,
                                     yellow,
                                     statusString,
@@ -4488,7 +4488,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
+                                    + buffer,
                                     26,
                                     yellow,
                                     situationString,

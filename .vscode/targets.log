@@ -6,6 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./lib
  
 # GNU Make 3.81
@@ -17,7 +18,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Mon Nov 21 10:49:22 2022
+# Make data base, printed on Mon Nov 21 19:31:31 2022
 
 # Variables
 
@@ -28,6 +29,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # makefile (from `Makefile', line 167)
+ 
 INCDIR = ../include
 # makefile (from `Makefile', line 37)
 HARDWARE_DESC = adafruit-hat
@@ -67,8 +69,6 @@ PATH = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin:/Users/patrickbulli
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 NVM_BIN = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin
-# environment
-LaunchInstanceID = 1A60C440-7C61-4919-BEC2-BCD80398DDCC
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
@@ -134,6 +134,7 @@ LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
+ 
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # environment
 TERM_PROGRAM = iTerm.app
@@ -158,7 +159,7 @@ TERM_PROGRAM_VERSION = 3.4.18
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.55683488.55683494.18A84E4D-C894-4059-9630-73949ACC6DE3
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.55683488.55683494.DEC8FF82-4FC4-487B-9EF7-9CF11E08CB96
 # environment
 LC_TERMINAL_VERSION = 3.4.18
 # environment
@@ -187,8 +188,6 @@ ITERM_PROFILE = Default
 PAGER = less
 # environment
 LC_ALL = C
-# environment
-SECURITYSESSIONID = 186ae
 # automatic
 ^F = $(notdir $^)
 # default
@@ -202,15 +201,14 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 1272
+VSCODE_PID = 20166
 # variable set hash-table stats:
-# Load=91/1024=9%, Rehash=0, Collisions=2/142=1%
+# Load=89/1024=9%, Rehash=0, Collisions=2/140=1%
 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
 
- 
 # Directories
 
 # . (device 16777230, inode 10097197): 22 files, no impossibilities.
@@ -451,6 +449,7 @@ compiler-flags: FORCE
 # Not a target:
 framebuffer.cc:
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -473,13 +472,13 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Nov 21 10:49:22 2022
+# Finished Make data base on Mon Nov 21 19:31:31 2022
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Mon Nov 21 10:49:22 2022
+# Make data base, printed on Mon Nov 21 19:31:31 2022
 
 # Variables
 
@@ -489,6 +488,7 @@ make: *** [lib/librgbmatrix.a] Error 1
 ?F = $(notdir $?)
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
+ 
 # environment
 NVM_INC = /Users/patrickbullion/.nvm/versions/node/v16.13.1/include/node
 # automatic
@@ -507,8 +507,6 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 _ = /usr/bin/make
 # makefile (from `Makefile', line 5)
 RGB_LIBRARY_NAME = rgbmatrix
-# makefile (from `Makefile', line 10)
-CSHARP_LIB_DIR = bindings/c#
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
@@ -526,8 +524,6 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 NVM_BIN = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin
 # environment
-LaunchInstanceID = 1A60C440-7C61-4919-BEC2-BCD80398DDCC
-# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
@@ -544,7 +540,6 @@ HOMEBREW_CELLAR = /opt/homebrew/Cellar
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
- 
 MANPATH = /Users/patrickbullion/.nvm/versions/node/v16.13.1/share/man:/opt/homebrew/share/man::
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
@@ -621,7 +616,7 @@ TERM_PROGRAM_VERSION = 3.4.18
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.55683488.55683494.18A84E4D-C894-4059-9630-73949ACC6DE3
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.55683488.55683494.DEC8FF82-4FC4-487B-9EF7-9CF11E08CB96
 # environment
 LC_TERMINAL_VERSION = 3.4.18
 # environment
@@ -650,8 +645,8 @@ ITERM_PROFILE = Default
 PAGER = less
 # environment
 LC_ALL = C
-# environment
-SECURITYSESSIONID = 186ae
+# makefile (from `Makefile', line 10)
+CSHARP_LIB_DIR = bindings/c#
 # automatic
 ^F = $(notdir $^)
 # default
@@ -663,9 +658,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 1272
+VSCODE_PID = 20166
 # variable set hash-table stats:
-# Load=90/1024=9%, Rehash=0, Collisions=5/129=4%
+# Load=88/1024=9%, Rehash=0, Collisions=4/127=3%
 
 # Pattern-specific Variable Values
 
@@ -705,6 +700,7 @@ FORCE:
 
 # Not a target:
 .SUFFIXES:
+ 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -721,7 +717,6 @@ Makefile:
 build-python: lib/librgbmatrix.a
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 28):
 	$(MAKE) -C $(PYTHON_LIB_DIR) build
@@ -790,7 +785,6 @@ build-csharp:
 	
 
 # files hash-table stats:
- 
 # Load=11/1024=1%, Rehash=0, Collisions=0/31=0%
 # VPATH Search Paths
 
@@ -801,9 +795,8 @@ build-csharp:
 # # of strings in strcache: 1
 # # of strcache buffers: 1
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
- 
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Nov 21 10:49:22 2022
+# Finished Make data base on Mon Nov 21 19:31:31 2022
 
  
