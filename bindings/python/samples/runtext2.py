@@ -3788,6 +3788,8 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + buffer
+                                    + buffer
                                     + awayOdds
                                     + buffer
                                     + overUnderAmount
@@ -3801,6 +3803,8 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
+                                    + buffer
+                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -4314,6 +4318,8 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + buffer
+                                    + buffer
                                     + awayOdds
                                     + buffer
                                     + overUnderAmount
@@ -4327,6 +4333,8 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
+                                    + buffer
+                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
