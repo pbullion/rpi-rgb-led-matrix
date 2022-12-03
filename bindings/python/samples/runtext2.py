@@ -2491,15 +2491,6 @@ class RunText(SampleBase):
                                     green,
                                     game[1],
                                 )
-                            if "conference" in game[0]:
-                                conferenceName = graphics.DrawText(
-                                    offscreen_canvas,
-                                    font,
-                                    pos + offset,
-                                    26,
-                                    green,
-                                    game[1],
-                                )
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
@@ -2515,6 +2506,8 @@ class RunText(SampleBase):
                                 overUnderString = game[17]
                                 dayString = game[20]
                                 timeString = game[21]
+                                awaySpreadString = game[22]
+                                homeSpreadString = game[23]
                                 overUnderText = ""
                                 if overUnderString != "":
                                     overUnderText = "O/U"
@@ -2538,8 +2531,38 @@ class RunText(SampleBase):
                                     scoreLocation = homeTeam
                                 else:
                                     scoreLocation = awayTeam
-
                                 awayOdds = 0
+                                if awaySpreadString != "":
+                                    awaySpread = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer,
+                                        12,
+                                        green,
+                                        awaySpreadString,
+                                    )
+                                    homeSpread = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer,
+                                        26,
+                                        green,
+                                        homeSpreadString,
+                                    )
                                 if awayOddsString != "":
                                     awayOdds = graphics.DrawText(
                                         offscreen_canvas,
@@ -2551,7 +2574,8 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + scoreLocation
-                                        + buffer,
+                                        + buffer
+                                        + homeSpread,
                                         12,
                                         green,
                                         awayOddsString,
@@ -2566,7 +2590,8 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + scoreLocation
-                                        + buffer,
+                                        + buffer
+                                        + homeSpread,
                                         26,
                                         green,
                                         homeOddsString,
@@ -2586,6 +2611,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + awayOdds
+                                        + homeSpread
                                         + scoreLocation,
                                         12,
                                         green,
@@ -2604,6 +2630,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + awayOdds
+                                        + homeSpread
                                         + scoreLocation,
                                         26,
                                         green,
@@ -2623,6 +2650,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + awayOdds
+                                    + homeSpread
                                     + buffer
                                     + overUnderAmount
                                     + scoreLocation,
@@ -2644,6 +2672,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + awayOdds
+                                    + homeSpread
                                     + buffer
                                     + overUnderAmount
                                     + scoreLocation,
