@@ -3141,16 +3141,16 @@ class RunText(SampleBase):
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
-                    elif isinstance(arr, list) and "worldCup" in arr[0][0]:
+                    elif isinstance(arr, list) and "soccer" in arr[0][0]:
                         for game in arr:
-                            if "worldCup" in game[0]:
+                            if "soccer" in game[0]:
                                 conferenceName = graphics.DrawText(
                                     offscreen_canvas,
                                     font,
                                     pos + offset,
                                     26,
                                     green,
-                                    "FIFA WORLD CUP",
+                                    game[1],
                                 )
                             awayTeam = 0
                             homeTeam = 0
@@ -4794,7 +4794,7 @@ class RunText(SampleBase):
                             offscreen_canvas, bFont, pos, 29, red, arr[1]["decliners"]
                         )
                         pos -= 1
-                        time.sleep(0.015)
+                        time.sleep(0.018)
                         if pos + gainers < 0:
                             running = False
                             pos = offscreen_canvas.width
