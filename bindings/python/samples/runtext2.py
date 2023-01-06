@@ -2478,7 +2478,7 @@ class RunText(SampleBase):
                                     + headlineString
                                     + 240
                                 )
-                        time.sleep(0.009)
+                        time.sleep(0.01)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
