@@ -8,6 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./lib
+ 
 # GNU Make 3.81
 # Copyright (C) 2006  Free Software Foundation, Inc.
 # This is free software; see the source for copying conditions.
@@ -15,8 +16,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
 
-# Make data base, printed on Thu Jan  5 12:31:21 2023
+# Make data base, printed on Thu Jan  5 16:44:03 2023
 
 # Variables
 
@@ -101,7 +103,7 @@ VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/
 # environment
 LOGNAME = patrickbullion
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 NVM_CD_FLAGS = -q
 # environment
@@ -157,7 +159,7 @@ TERM_PROGRAM_VERSION = 3.4.19
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.72312768.72312774.90935062-6DD8-49B6-8324-F5846AC92096
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.72312768.72312774.B6AC6545-2C6B-4D45-93B7-AB6D510113F3
 # environment
 LC_TERMINAL_VERSION = 3.4.19
 # environment
@@ -172,6 +174,7 @@ ITERM_SESSION_ID = w0t2p0:CAEF40A8-F4A1-4DC5-BA0E-4A0D6D1D997B
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
 COLORFGBG = 15;0
+ 
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
 # environment
@@ -299,7 +302,6 @@ Makefile:
 hardware-mapping.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 
 # Not a target:
@@ -472,18 +474,19 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Jan  5 12:31:21 2023
+# Finished Make data base on Thu Jan  5 16:44:03 2023
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Thu Jan  5 12:31:21 2023
+# Make data base, printed on Thu Jan  5 16:44:03 2023
 
 # Variables
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
+ 
 # automatic
 ?F = $(notdir $?)
 # environment
@@ -557,7 +560,7 @@ VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/
 # environment
 LOGNAME = patrickbullion
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 NVM_CD_FLAGS = -q
 # environment
@@ -617,9 +620,10 @@ MFLAGS = -Rrqp
 # environment
 TERM_PROGRAM_VERSION = 3.4.19
 # environment
+ 
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.72312768.72312774.90935062-6DD8-49B6-8324-F5846AC92096
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.72312768.72312774.B6AC6545-2C6B-4D45-93B7-AB6D510113F3
 # environment
 LC_TERMINAL_VERSION = 3.4.19
 # environment
@@ -640,7 +644,6 @@ __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
 COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
- 
 # automatic
 <F = $(notdir $<)
 # environment
@@ -800,6 +803,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Jan  5 12:31:21 2023
+# Finished Make data base on Thu Jan  5 16:44:03 2023
 
  
