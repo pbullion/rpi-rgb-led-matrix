@@ -4835,7 +4835,7 @@ class RunText(SampleBase):
                             offscreen_canvas, middleFont, pos, 26, green, "www."
                         )
                         mancavedisplays = graphics.DrawText(
-                            offscreen_canvas, font, pos + www, 26, green, arr
+                            offscreen_canvas, bFont, pos + www, 26, green, arr
                         )
                         com = graphics.DrawText(
                             offscreen_canvas,
