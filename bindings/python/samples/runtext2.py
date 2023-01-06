@@ -2306,9 +2306,11 @@ class RunText(SampleBase):
                                     overUnderString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 150
+                                offset = offset + 125
                             if "inProgress" in game[0]:
-                                offset = offset + 150
+                                offset = offset + 125
+                            if "nfl logo" in game[0]:
+                                offset = offset + 25
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
