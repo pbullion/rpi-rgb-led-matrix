@@ -4108,7 +4108,7 @@ class RunText(SampleBase):
                             if "pregame" in game[0]:
                                 offset = offset + 140
                             if "inProgress" in game[0]:
-                                offset = offset + 220
+                                offset = offset + 190
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -4747,7 +4747,7 @@ class RunText(SampleBase):
                                     + awayTeam
                                     + awayTeamStatus
                                     + headlineString
-                                    + 240
+                                    + 200
                                 )
                             else:
                                 offset = (
@@ -4755,7 +4755,7 @@ class RunText(SampleBase):
                                     + homeTeam
                                     + homeTeamStatus
                                     + headlineString
-                                    + 240
+                                    + 200
                                 )
                         time.sleep(0.01)
                         if pos + offset < 0:
