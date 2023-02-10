@@ -4863,7 +4863,7 @@ class RunText(SampleBase):
                         www = graphics.DrawText(
                             offscreen_canvas, bFont, pos + 55 , 26, green, "It ain't gonna suck iteself..."
                         )
-                        crawfish2 = offscreen_canvas.SetImage(
+                        offscreen_canvas.SetImage(
                             crawfishLogo, pos + www + 55, -9
                         )
                         pos -= 1
