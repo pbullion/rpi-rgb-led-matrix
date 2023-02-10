@@ -24,6 +24,14 @@ class RunText(SampleBase):
 
     def run(self):
         userJSON = json.load(userFile)
+        crawfishLogo = Image.open(
+                requests.get(
+                    "https://illustoon.com/photo/dl/3335.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
         teamLogos = {
             # "MLB": Image.open(
             #     requests.get(
@@ -4847,6 +4855,21 @@ class RunText(SampleBase):
                         )
                         pos -= 1
                         if pos + www + mancavedisplays + com < 0:
+                            running = False
+                            pos = offscreen_canvas.width
+                        time.sleep(0.018)
+                    elif arr == "crawfish":
+                        crawfish = offscreen_canvas.SetImage(
+                            crawfishLogo, pos, -9
+                        )
+                        www = graphics.DrawText(
+                            offscreen_canvas, bFont, pos + crawfish + offset, 26, green, "It ain't gonna suck iteself..."
+                        )
+                        crawfish2 = offscreen_canvas.SetImage(
+                            crawfishLogo, pos + www + offset, -9
+                        )
+                        pos -= 1
+                        if pos + crawfish + crawfish2 + www < 0:
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.018)
