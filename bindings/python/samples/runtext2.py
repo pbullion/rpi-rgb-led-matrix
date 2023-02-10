@@ -24,14 +24,13 @@ class RunText(SampleBase):
 
     def run(self):
         userJSON = json.load(userFile)
-        crawfishLogo = Image.open(
+        crawfish = Image.open(
                 requests.get(
                     "https://illustoon.com/photo/dl/3335.png",
                     stream=True,
                 ).raw
             )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+        .convert("RGB").resize((40, 40), Image.ANTIALIAS)
         teamLogos = {
             # "MLB": Image.open(
             #     requests.get(
