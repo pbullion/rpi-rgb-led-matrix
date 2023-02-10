@@ -24,7 +24,7 @@ class RunText(SampleBase):
 
     def run(self):
         userJSON = json.load(userFile)
-        crawfish = Image.open(
+        crawfishLogo = Image.open(
                 requests.get(
                     "https://illustoon.com/photo/dl/3335.png",
                     stream=True,
