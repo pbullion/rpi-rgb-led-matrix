@@ -26,7 +26,7 @@ class RunText(SampleBase):
         userJSON = json.load(userFile)
         crawfishLogo = Image.open(
                 requests.get(
-                    "http://clipart-library.com/data_images/146327.jpg",
+                    "https://www.pngfind.com/pngs/m/187-1877384_crawfish-png-clip-art-lobster-transparent-png.png",
                     stream=True,
                 ).raw
             ).convert("RGB").resize((50, 50), Image.ANTIALIAS)
