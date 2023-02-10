@@ -26,7 +26,7 @@ class RunText(SampleBase):
         userJSON = json.load(userFile)
         crawfishLogo = Image.open(
                 requests.get(
-                    "https://illustoon.com/photo/3335.png",
+                    "https://thumbs.dreamstime.com/b/shrimp-crayfish-black-background-beautiful-colour-nature-under-water-shrimp-crayfish-black-background-111681193.jpg",
                     stream=True,
                 ).raw
             ).convert("RGB").resize((50, 50), Image.ANTIALIAS)
