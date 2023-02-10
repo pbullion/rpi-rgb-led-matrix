@@ -29,8 +29,7 @@ class RunText(SampleBase):
                     "https://illustoon.com/photo/dl/3335.png",
                     stream=True,
                 ).raw
-            )
-        .convert("RGB").resize((40, 40), Image.ANTIALIAS)
+            ).convert("RGB").resize((40, 40), Image.ANTIALIAS)
         teamLogos = {
             # "MLB": Image.open(
             #     requests.get(
