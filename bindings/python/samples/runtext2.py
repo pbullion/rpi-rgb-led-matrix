@@ -26,10 +26,10 @@ class RunText(SampleBase):
         userJSON = json.load(userFile)
         crawfishLogo = Image.open(
                 requests.get(
-                    "https://www.pngmart.com/files/21/Crawfish-PNG-Transparent-Picture.png",
+                    "https://www.seekpng.com/png/full/28-282528_crayfish-clipart-crustaceans-crayfish-clipart.png",
                     stream=True,
                 ).raw
-            ).convert("RGB").resize((40, 40), Image.ANTIALIAS)
+            ).convert("RGB").resize((50, 50), Image.ANTIALIAS)
         teamLogos = {
             # "MLB": Image.open(
             #     requests.get(
