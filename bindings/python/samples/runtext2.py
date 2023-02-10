@@ -4867,7 +4867,7 @@ class RunText(SampleBase):
                         #     crawfishLogo, pos + www + 10, -9
                         # )
                         pos -= 1
-                        if pos + crawfish + crawfish2 + www < 0:
+                        if pos + crawfish < 0:
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.018)
