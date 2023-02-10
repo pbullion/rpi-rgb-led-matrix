@@ -4857,17 +4857,17 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         time.sleep(0.018)
                     elif arr == "crawfish":
-                        crawfish = offscreen_canvas.SetImage(
+                        offscreen_canvas.SetImage(
                             crawfishLogo, pos, -9
                         )
-                        # www = graphics.DrawText(
-                        #     offscreen_canvas, bFont, pos + crawfish + 10, 26, green, "It ain't gonna suck iteself..."
-                        # )
-                        # crawfish2 = offscreen_canvas.SetImage(
-                        #     crawfishLogo, pos + www + 10, -9
-                        # )
+                        www = graphics.DrawText(
+                            offscreen_canvas, bFont, pos + 55 , 26, green, "It ain't gonna suck iteself..."
+                        )
+                        crawfish2 = offscreen_canvas.SetImage(
+                            crawfishLogo, pos + www + 55, -9
+                        )
                         pos -= 1
-                        if pos + crawfish < 0:
+                        if pos + www + 55 + 55 < 0:
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.018)
