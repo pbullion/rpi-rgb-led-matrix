@@ -30,6 +30,12 @@ class RunText(SampleBase):
                     stream=True,
                 ).raw
             ).convert("RGB").resize((50, 50), Image.ANTIALIAS)
+        venmoLogo = Image.open(
+                requests.get(
+                    "https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/40/43/e8/4043e84a-182c-c361-5bf8-b14b472d41a6/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+                    stream=True,
+                ).raw
+            ).convert("RGB").resize((50, 50), Image.ANTIALIAS)
         crawfishLogo2 = Image.open(
                 requests.get(
                     "https://i.pinimg.com/564x/bb/c2/95/bbc295ff2f2fd6e579d5c02c562bc230.jpg",
@@ -4871,6 +4877,21 @@ class RunText(SampleBase):
                         )
                         offscreen_canvas.SetImage(
                             crawfishLogo, pos + www + 55, -9
+                        )
+                        pos -= 1
+                        if pos + www + 55 + 55 < 0:
+                            running = False
+                            pos = offscreen_canvas.width
+                        time.sleep(0.018)
+                    elif arr == "venmo":
+                        offscreen_canvas.SetImage(
+                            venmoLogo, pos, -9
+                        )
+                        www = graphics.DrawText(
+                            offscreen_canvas, bFont, pos + 55 , 26, green, "Venmo $30 to @Ashley-Angelle"
+                        )
+                        offscreen_canvas.SetImage(
+                            venmoLogo, pos + www + 55, -9
                         )
                         pos -= 1
                         if pos + www + 55 + 55 < 0:
