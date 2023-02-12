@@ -20,6 +20,7 @@ ar rcs librgbmatrix.a gpio.o led-matrix.o options-initialize.o framebuffer.o thr
 c++ -shared -Wl,-soname,librgbmatrix.so.1 -o librgbmatrix.so.1 gpio.o led-matrix.o options-initialize.o framebuffer.o thread.o bdf-font.o graphics.o led-matrix-c.o hardware-mapping.o pixel-mapper.o multiplex-mappers.o content-streamer.o -lpthread  -lrt -lm -lpthread
 make[1]: Leaving directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/lib'
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C examples-api-use
+ 
 make[1]: Entering directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/examples-api-use'
 c++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o demo-main.o demo-main.cc
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C ../lib
@@ -59,5 +60,6 @@ c++ input-example.o -o input-example -L../lib -lrgbmatrix -lrt -lm -lpthread
 c++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o pixel-mover.o pixel-mover.cc
 c++ pixel-mover.o -o pixel-mover -L../lib -lrgbmatrix -lrt -lm -lpthread
 make[1]: Leaving directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/examples-api-use'
+ 
 make: Leaving directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix'
  
