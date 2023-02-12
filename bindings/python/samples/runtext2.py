@@ -4891,10 +4891,10 @@ class RunText(SampleBase):
                             offscreen_canvas, bFont, pos + 65 , 26, green, "Venmo $30 to @Ashley-Angelle"
                         )
                         offscreen_canvas.SetImage(
-                            venmoLogo, pos + www + 65, -9
+                            venmoLogo, pos + www + 70, -9
                         )
                         pos -= 1
-                        if pos + www + 55 + 55 < 0:
+                        if pos + www + 65 + 70 < 0:
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.018)
