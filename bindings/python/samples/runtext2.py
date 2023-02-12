@@ -4888,10 +4888,10 @@ class RunText(SampleBase):
                             venmoLogo, pos, -9
                         )
                         www = graphics.DrawText(
-                            offscreen_canvas, bFont, pos + 55 , 26, green, "Venmo $30 to @Ashley-Angelle"
+                            offscreen_canvas, bFont, pos + 65 , 26, green, "Venmo $30 to @Ashley-Angelle"
                         )
                         offscreen_canvas.SetImage(
-                            venmoLogo, pos + www + 55, -9
+                            venmoLogo, pos + www + 65, -9
                         )
                         pos -= 1
                         if pos + www + 55 + 55 < 0:
