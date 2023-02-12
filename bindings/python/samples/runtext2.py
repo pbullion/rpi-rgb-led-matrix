@@ -2328,7 +2328,7 @@ class RunText(SampleBase):
                             if "inProgress" in game[0]:
                                 offset = offset + 100
                             if "nfl logo" in game[0]:
-                                offset = offset + 25
+                                offset = offset + 15
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
