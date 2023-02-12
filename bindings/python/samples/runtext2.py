@@ -24,12 +24,6 @@ class RunText(SampleBase):
 
     def run(self):
         userJSON = json.load(userFile)
-        crawfishLogo = Image.open(
-                requests.get(
-                    "https://thumbs.dreamstime.com/b/shrimp-crayfish-black-background-beautiful-colour-nature-under-water-shrimp-crayfish-black-background-111681193.jpg",
-                    stream=True,
-                ).raw
-            ).convert("RGB").resize((50, 50), Image.ANTIALIAS)
         teamLogos = {
             # "MLB": Image.open(
             #     requests.get(
@@ -544,26 +538,26 @@ class RunText(SampleBase):
             # .convert("RGB")
             # .resize((50, 50), Image.ANTIALIAS),
         }
-        green = graphics.Color(0, 255, 0)
-        red = graphics.Color(255, 0, 0)
-        blue = graphics.Color(0, 0, 255)
-        teal = graphics.Color(0, 255, 255)
-        purple = graphics.Color(102, 0, 204)
-        yellow = graphics.Color(255, 255, 0)
-        white = graphics.Color(255, 255, 0)
-        bFont = graphics.Font()
-        bFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/8x13.bdf")
-        font = graphics.Font()
-        font.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/texgyre-27.bdf")
-        smallFont = graphics.Font()
-        smallFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x13.bdf")
-        smallestFont = graphics.Font()
-        smallestFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/4x6.bdf")
-        alilbiggerFont = graphics.Font()
-        alilbiggerFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/5x7.bdf")
-        middleFont = graphics.Font()
-        middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
         while True:
+            green = graphics.Color(0, 255, 0)
+            red = graphics.Color(255, 0, 0)
+            blue = graphics.Color(0, 0, 255)
+            teal = graphics.Color(0, 255, 255)
+            purple = graphics.Color(102, 0, 204)
+            yellow = graphics.Color(255, 255, 0)
+            white = graphics.Color(255, 255, 0)
+            bFont = graphics.Font()
+            bFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/8x13.bdf")
+            font = graphics.Font()
+            font.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/texgyre-27.bdf")
+            smallFont = graphics.Font()
+            smallFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x13.bdf")
+            smallestFont = graphics.Font()
+            smallestFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/4x6.bdf")
+            alilbiggerFont = graphics.Font()
+            alilbiggerFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/5x7.bdf")
+            middleFont = graphics.Font()
+            middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
             print("getting responseArrrrrrrrr")
             user = userJSON["user"]
             url = requests.get(
@@ -1748,7 +1742,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer,
                                     12,
-                                    white,
+                                    yellow,
                                     awayTeamString,
                                 )
                                 homeTeam = graphics.DrawText(
@@ -1763,7 +1757,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer,
                                     26,
-                                    white,
+                                    yellow,
                                     homeTeamString,
                                 )
                                 if homeTeam > awayTeam:
@@ -2312,11 +2306,9 @@ class RunText(SampleBase):
                                     overUnderString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 100
+                                offset = offset + 190
                             if "inProgress" in game[0]:
-                                offset = offset + 100
-                            if "nfl logo" in game[0]:
-                                offset = offset + 25
+                                offset = offset + 190
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -4114,7 +4106,7 @@ class RunText(SampleBase):
                             if "pregame" in game[0]:
                                 offset = offset + 140
                             if "inProgress" in game[0]:
-                                offset = offset + 190
+                                offset = offset + 220
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -4753,7 +4745,7 @@ class RunText(SampleBase):
                                     + awayTeam
                                     + awayTeamStatus
                                     + headlineString
-                                    + 200
+                                    + 240
                                 )
                             else:
                                 offset = (
@@ -4761,7 +4753,7 @@ class RunText(SampleBase):
                                     + homeTeam
                                     + homeTeamStatus
                                     + headlineString
-                                    + 200
+                                    + 240
                                 )
                         time.sleep(0.01)
                         if pos + offset < 0:
@@ -4841,7 +4833,7 @@ class RunText(SampleBase):
                             offscreen_canvas, middleFont, pos, 26, green, "www."
                         )
                         mancavedisplays = graphics.DrawText(
-                            offscreen_canvas, bFont, pos + www, 26, green, arr
+                            offscreen_canvas, font, pos + www, 26, green, arr
                         )
                         com = graphics.DrawText(
                             offscreen_canvas,
@@ -4853,21 +4845,6 @@ class RunText(SampleBase):
                         )
                         pos -= 1
                         if pos + www + mancavedisplays + com < 0:
-                            running = False
-                            pos = offscreen_canvas.width
-                        time.sleep(0.018)
-                    elif arr == "crawfish":
-                        offscreen_canvas.SetImage(
-                            crawfishLogo, pos, -9
-                        )
-                        www = graphics.DrawText(
-                            offscreen_canvas, bFont, pos + 55 , 26, green, "It ain't gonna suck iteself..."
-                        )
-                        offscreen_canvas.SetImage(
-                            crawfishLogo, pos + www + 55, -9
-                        )
-                        pos -= 1
-                        if pos + www + 55 + 55 < 0:
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.018)
