@@ -5475,7 +5475,7 @@ class RunText(SampleBase):
                             offscreen_canvas, bFont, pos, 29, red, arr[1]["decliners"]
                         )
                         pos -= 1
-                        time.sleep(0.01)
+                        time.sleep(0.028)
                         if pos + gainers < 0:
                             running = False
                             pos = offscreen_canvas.width
