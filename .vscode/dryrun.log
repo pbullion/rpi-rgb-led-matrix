@@ -42,6 +42,7 @@ c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_
 ar rcs librgbmatrix.a gpio.o led-matrix.o options-initialize.o framebuffer.o thread.o bdf-font.o graphics.o led-matrix-c.o hardware-mapping.o pixel-mapper.o multiplex-mappers.o content-streamer.o
 c++ -shared -Wl,-soname,librgbmatrix.so.1 -o librgbmatrix.so.1 gpio.o led-matrix.o options-initialize.o framebuffer.o thread.o bdf-font.o graphics.o led-matrix-c.o hardware-mapping.o pixel-mapper.o multiplex-mappers.o content-streamer.o -lpthread  -lrt -lm -lpthread
 make[2]: Leaving directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/lib'
+ 
 c++ demo-main.o -o demo -L../lib -lrgbmatrix -lrt -lm -lpthread
 c++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o minimal-example.o minimal-example.cc
 c++ minimal-example.o -o minimal-example -L../lib -lrgbmatrix -lrt -lm -lpthread
