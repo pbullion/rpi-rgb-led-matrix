@@ -3155,7 +3155,7 @@ class RunText(SampleBase):
                                     + homeTeam
                                     + homeTeamStatus
                                     + headlineString
-                                    + 240
+                                    + 190
                                 )
                         time.sleep(0.01)
                         if pos + offset < 0:
