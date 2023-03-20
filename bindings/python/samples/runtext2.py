@@ -2506,7 +2506,7 @@ class RunText(SampleBase):
                                 conferenceName = graphics.DrawText(
                                     offscreen_canvas,
                                     font,
-                                    pos + offset + buffer + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + buffer + buffer + buffer + buffer + buffer,
                                     26,
                                     green,
                                     game[1],
@@ -3038,7 +3038,7 @@ class RunText(SampleBase):
                             if "pregame" in game[0]:
                                 offset = offset + 140
                             if "inProgress" in game[0]:
-                                offset = offset + 190
+                                offset = offset + 220
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -3147,7 +3147,7 @@ class RunText(SampleBase):
                                     + awayTeam
                                     + awayTeamStatus
                                     + headlineString
-                                    + 190
+                                    + 180
                                 )
                             else:
                                 offset = (
@@ -3155,7 +3155,7 @@ class RunText(SampleBase):
                                     + homeTeam
                                     + homeTeamStatus
                                     + headlineString
-                                    + 190
+                                    + 180
                                 )
                         time.sleep(0.018)
                         if pos + offset < 0:
