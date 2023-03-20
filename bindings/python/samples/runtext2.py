@@ -2506,7 +2506,7 @@ class RunText(SampleBase):
                                 conferenceName = graphics.DrawText(
                                     offscreen_canvas,
                                     font,
-                                    pos + offset + buffer + buffer + buffer + buffer + buffer + buffer + buffer + buffer,
+                                    pos + offset,
                                     26,
                                     green,
                                     game[1],
