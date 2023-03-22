@@ -69,7 +69,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Washington Nationals": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-washington-nationals-logo.png",
+                    "https://loodibee.com/wp-content/uploads/mlb-Washington-Nationals-Logo.png",
                     stream=True,
                 ).raw
             )
