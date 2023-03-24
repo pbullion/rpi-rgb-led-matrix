@@ -5463,7 +5463,7 @@ class RunText(SampleBase):
                                 stockStr,
                             )
                             offset = offset + string + 80
-                        time.sleep(0.019)
+                        time.sleep(0.022)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
