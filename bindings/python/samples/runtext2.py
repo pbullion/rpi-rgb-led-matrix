@@ -2812,7 +2812,7 @@ class RunText(SampleBase):
                                         + 3,
                                         12,
                                         green,
-                                        "•",
+                                        "",
                                     )
                                 elif statusString == "Halftime":
                                     possessionPop = graphics.DrawText(
@@ -2850,7 +2850,7 @@ class RunText(SampleBase):
                                         + 3,
                                         26,
                                         green,
-                                        "•",
+                                        "",
                                     )
                                 statusStr = graphics.DrawText(
                                     offscreen_canvas,
@@ -4787,7 +4787,7 @@ class RunText(SampleBase):
                             if "pregame" in game[0]:
                                 offset = offset + 125
                             if "inProgress" in game[0]:
-                                offset = offset + 120
+                                offset = offset + 165
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
