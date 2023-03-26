@@ -596,11 +596,9 @@ class RunText(SampleBase):
                 print("-------------------------------")
                 while running:
                     offscreen_canvas.Clear()
-                    print("-------------here1----------------")
                     buffer = 6
                     pos -= 1
                     offset = 0
-                    print("-------------here1----------------")
                     if isinstance(arr, list) and "mlb logo" in arr[0][0]:
                         for game in arr:
                             if "mlb logo" in game[0]:
