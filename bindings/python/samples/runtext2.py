@@ -5462,7 +5462,7 @@ class RunText(SampleBase):
                                 color,
                                 stockStr,
                             )
-                            offset = offset + string + 80
+                            offset = offset + string + 50
                         time.sleep(0.022)
                         if pos + offset < 0:
                             running = False
