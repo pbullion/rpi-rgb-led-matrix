@@ -18,7 +18,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Mon Mar 27 18:54:35 2023
+# Make data base, printed on Mon Mar 27 18:57:00 2023
 
 # Variables
 
@@ -31,6 +31,7 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 # makefile (from `Makefile', line 167)
 INCDIR = ../include
 # makefile (from `Makefile', line 37)
+ 
 HARDWARE_DESC = adafruit-hat
 # environment
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
@@ -150,6 +151,7 @@ TMPDIR = /var/folders/w9/1zr47vg90ss5sbzpm40bn78r0000gn/T/
 *F = $(notdir $*)
 # environment
 VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.76-main.sock
+ 
 # environment
 MallocNanoZone = 0
 # makefile
@@ -163,7 +165,7 @@ TERM_PROGRAM_VERSION = 3.4.19
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.115996322.115996328.9B3E255E-F6EE-45B0-BD18-4D33D2BED756
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.115996322.115996328.9376C6B7-C289-4655-8CF8-46C37804EDB1
 # environment
 LC_TERMINAL_VERSION = 3.4.19
 # environment
@@ -315,7 +317,6 @@ gpio.cc:
 #  Last modified 2022-02-16 17:19:47
 #  File has been updated.
 #  Successfully updated.
- 
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
@@ -388,6 +389,7 @@ utf8-internal.h:
 clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 191):
 	rm -f $(OBJECTS) $(TARGET).a $(TARGET).so.1
@@ -480,13 +482,13 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Mar 27 18:54:35 2023
+# Finished Make data base on Mon Mar 27 18:57:00 2023
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Mon Mar 27 18:54:35 2023
+# Make data base, printed on Mon Mar 27 18:57:00 2023
 
 # Variables
 
@@ -539,6 +541,7 @@ LaunchInstanceID = A8F40464-59B7-4D6C-88ED-7E9290C6B2C3
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
+ 
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
 DEFAULT_USER = patrickbullion
@@ -631,7 +634,7 @@ TERM_PROGRAM_VERSION = 3.4.19
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.115996322.115996328.9B3E255E-F6EE-45B0-BD18-4D33D2BED756
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.115996322.115996328.9376C6B7-C289-4655-8CF8-46C37804EDB1
 # environment
 LC_TERMINAL_VERSION = 3.4.19
 # environment
@@ -677,7 +680,6 @@ TERM = xterm-256color
 # environment
 VSCODE_PID = 622
 # variable set hash-table stats:
- 
 # Load=93/1024=9%, Rehash=0, Collisions=5/132=4%
 
 # Pattern-specific Variable Values
@@ -778,6 +780,7 @@ clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 #  commands to execute (from `Makefile', line 19):
 	$(MAKE) -C lib clean
 	$(MAKE) -C utils clean
@@ -814,6 +817,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Mar 27 18:54:35 2023
+# Finished Make data base on Mon Mar 27 18:57:00 2023
 
  
