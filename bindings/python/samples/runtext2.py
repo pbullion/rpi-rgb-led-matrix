@@ -2497,7 +2497,7 @@ class RunText(SampleBase):
                                     + headlineString
                                     + 240
                                 )
-                        time.sleep(0.019
+                        time.sleep(0.019)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
@@ -3819,7 +3819,7 @@ class RunText(SampleBase):
                                     + headlineString
                                     + 240
                                 )
-                        time.sleep(0.019
+                        time.sleep(0.019)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
@@ -4377,7 +4377,7 @@ class RunText(SampleBase):
                                     + headlineString
                                     + 240
                                 )
-                        time.sleep(0.019
+                        time.sleep(0.019)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
@@ -5437,7 +5437,7 @@ class RunText(SampleBase):
                                     + headlineString
                                     + 200
                                 )
-                        time.sleep(0.019
+                        time.sleep(0.019)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
@@ -5464,7 +5464,7 @@ class RunText(SampleBase):
                                 stockStr,
                             )
                             offset = offset + string + 50
-                        time.sleep(0.020)
+                        time.sleep(0.02)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
@@ -5529,7 +5529,7 @@ class RunText(SampleBase):
                         if pos + www + mancavedisplays + com < 0:
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.020)
+                        time.sleep(0.019)
                     elif arr == "crawfish":
                         offscreen_canvas.SetImage(
                             crawfishLogo, pos, -9
@@ -5591,7 +5591,7 @@ class RunText(SampleBase):
                         if pos + length < 0:
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.020)
+                        time.sleep(0.019)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
