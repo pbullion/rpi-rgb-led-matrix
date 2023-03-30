@@ -1688,7 +1688,7 @@ class RunText(SampleBase):
                                 offset = offset + 190
                             if "inProgress" in game[0]:
                                 offset = offset + 190
-                        time.sleep(0.017)
+                        time.sleep(0.016)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
@@ -5499,7 +5499,7 @@ class RunText(SampleBase):
                         if pos + length < 0:
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.019)
+                        time.sleep(0.021)
                     elif arr == None:
                         running = False
                         pos = offscreen_canvas.width
@@ -5591,7 +5591,7 @@ class RunText(SampleBase):
                         if pos + length < 0:
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.019)
+                        time.sleep(0.021)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
