@@ -85,7 +85,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "New York Mets": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-new-york-mets-logo.png",
+                    "https://cdn.freebiesupply.com/images/large/2x/new-york-mets-logo-transparent.png",
                     stream=True,
                 ).raw
             )
