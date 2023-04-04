@@ -6,9 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./lib
- 
 # GNU Make 3.81
 # Copyright (C) 2006  Free Software Foundation, Inc.
 # This is free software; see the source for copying conditions.
@@ -18,7 +16,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Wed Mar 29 19:50:02 2023
+# Make data base, printed on Mon Apr  3 19:32:04 2023
 
 # Variables
 
@@ -33,7 +31,6 @@ INCDIR = ../include
 # makefile (from `Makefile', line 37)
 HARDWARE_DESC = adafruit-hat
 # environment
- 
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # makefile (from `Makefile', line 11)
 TARGET = librgbmatrix
@@ -50,7 +47,7 @@ CURDIR := /Users/patrickbullion/Code/led/rpi-rgb-led-matrix/lib
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 168)
@@ -72,7 +69,7 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 NVM_BIN = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin
 # environment
-LaunchInstanceID = D5F2356D-DEE6-474E-B2FB-91FF05434AC5
+LaunchInstanceID = 0CD086BA-02CC-4B6A-9E0C-91B1F3912672
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
@@ -80,7 +77,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 DEFAULT_USER = patrickbullion
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.4XE0C8FGnD/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ObRQuSkmB0/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -90,7 +87,7 @@ HOMEBREW_CELLAR = /opt/homebrew/Cellar
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-MANPATH = /Users/patrickbullion/.nvm/versions/node/v16.13.1/share/man:/opt/homebrew/share/man::
+MANPATH = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/share/man:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man:/Users/patrickbullion/.nvm/versions/node/v16.13.1/share/man:/opt/homebrew/share/man::
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -102,7 +99,7 @@ VSCODE_CLI = 1
 # makefile (from `Makefile', line 166)
 DEFINES = $(USER_DEFINES) -DDEFAULT_HARDWARE='"$(HARDWARE_DESC)"'
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884
+VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/7f329fe6c66b0f86ae1574c2911b681ad5a45d63
 # environment
 LOGNAME = patrickbullion
 # environment
@@ -134,7 +131,7 @@ USER = patrickbullion
 # makefile
 .DEFAULT_GOAL := all
 # environment
-TERM_SESSION_ID = w0t2p0:2D6E5910-4142-4B83-989C-93E5D6B7E771
+TERM_SESSION_ID = w1t2p0:4A3BDAC6-1E08-424B-B638-C0FF473A08FC
 # environment
 LESS = -R
 # automatic
@@ -150,7 +147,7 @@ TMPDIR = /var/folders/w9/1zr47vg90ss5sbzpm40bn78r0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.76-main.sock
+VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.77-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -164,10 +161,9 @@ TERM_PROGRAM_VERSION = 3.4.19
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.115996322.115996328.12436515-72DA-4FD6-BF2D-028FC2B7AE87
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.122925868.122925874.3F0287C0-3D2E-4A5D-9369-99335157CA7D
 # environment
 LC_TERMINAL_VERSION = 3.4.19
- 
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -177,7 +173,7 @@ VSCODE_L10N_BUNDLE_LOCATION =
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t2p0:2D6E5910-4142-4B83-989C-93E5D6B7E771
+ITERM_SESSION_ID = w1t2p0:4A3BDAC6-1E08-424B-B638-C0FF473A08FC
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
@@ -197,7 +193,7 @@ PAGER = less
 # environment
 LC_ALL = C
 # environment
-SECURITYSESSIONID = 186b4
+SECURITYSESSIONID = 186b3
 # automatic
 ^F = $(notdir $^)
 # default
@@ -211,7 +207,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 41666
+VSCODE_PID = 8532
 # variable set hash-table stats:
 # Load=94/1024=9%, Rehash=0, Collisions=2/145=1%
 
@@ -221,7 +217,7 @@ VSCODE_PID = 41666
 
 # Directories
 
-# . (device 16777231, inode 10097197): 22 files, no impossibilities.
+# . (device 16777233, inode 10097197): 22 files, no impossibilities.
 
 # 22 files, no impossibilities in 1 directories.
 
@@ -293,6 +289,7 @@ gpio.o: gpio.cc compiler-flags
 # Not a target:
 .SUFFIXES:
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -376,7 +373,6 @@ led-matrix.cc:
 
 # Not a target:
 utf8-internal.h:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -482,13 +478,14 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Mar 29 19:50:02 2023
+# Finished Make data base on Mon Apr  3 19:32:04 2023
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Wed Mar 29 19:50:02 2023
+
+# Make data base, printed on Mon Apr  3 19:32:04 2023
 
 # Variables
 
@@ -513,7 +510,7 @@ CURDIR := /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 5)
@@ -531,13 +528,14 @@ RGB_LIBDIR = ./lib
 # environment
 VSCODE_CWD = /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
 # environment
+ 
 PATH = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin:/Users/patrickbullion/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 NVM_BIN = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin
 # environment
-LaunchInstanceID = D5F2356D-DEE6-474E-B2FB-91FF05434AC5
+LaunchInstanceID = 0CD086BA-02CC-4B6A-9E0C-91B1F3912672
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
@@ -545,18 +543,17 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 DEFAULT_USER = patrickbullion
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.4XE0C8FGnD/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ObRQuSkmB0/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
 PWD = /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
- 
 # environment
 HOMEBREW_CELLAR = /opt/homebrew/Cellar
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-MANPATH = /Users/patrickbullion/.nvm/versions/node/v16.13.1/share/man:/opt/homebrew/share/man::
+MANPATH = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/share/man:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man:/Users/patrickbullion/.nvm/versions/node/v16.13.1/share/man:/opt/homebrew/share/man::
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -566,7 +563,7 @@ MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884
+VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/7f329fe6c66b0f86ae1574c2911b681ad5a45d63
 # environment
 LOGNAME = patrickbullion
 # environment
@@ -604,7 +601,7 @@ USER = patrickbullion
 # default
 MAKECMDGOALS := all
 # environment
-TERM_SESSION_ID = w0t2p0:2D6E5910-4142-4B83-989C-93E5D6B7E771
+TERM_SESSION_ID = w1t2p0:4A3BDAC6-1E08-424B-B638-C0FF473A08FC
 # environment
 LESS = -R
 # automatic
@@ -620,7 +617,7 @@ TMPDIR = /var/folders/w9/1zr47vg90ss5sbzpm40bn78r0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.76-main.sock
+VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.77-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -634,7 +631,7 @@ TERM_PROGRAM_VERSION = 3.4.19
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.115996322.115996328.12436515-72DA-4FD6-BF2D-028FC2B7AE87
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.122925868.122925874.3F0287C0-3D2E-4A5D-9369-99335157CA7D
 # environment
 LC_TERMINAL_VERSION = 3.4.19
 # environment
@@ -646,7 +643,8 @@ VSCODE_L10N_BUNDLE_LOCATION =
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t2p0:2D6E5910-4142-4B83-989C-93E5D6B7E771
+ 
+ITERM_SESSION_ID = w1t2p0:4A3BDAC6-1E08-424B-B638-C0FF473A08FC
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
@@ -666,7 +664,7 @@ PAGER = less
 # environment
 LC_ALL = C
 # environment
-SECURITYSESSIONID = 186b4
+SECURITYSESSIONID = 186b3
 # automatic
 ^F = $(notdir $^)
 # default
@@ -678,7 +676,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 41666
+VSCODE_PID = 8532
 # variable set hash-table stats:
 # Load=93/1024=9%, Rehash=0, Collisions=5/132=4%
 
@@ -688,7 +686,7 @@ VSCODE_PID = 41666
 
 # Directories
 
-# . (device 16777231, inode 10096968): 21 files, no impossibilities.
+# . (device 16777233, inode 10096968): 21 files, no impossibilities.
 
 # 21 files, no impossibilities in 1 directories.
 
@@ -816,6 +814,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Mar 29 19:50:02 2023
+# Finished Make data base on Mon Apr  3 19:32:04 2023
 
  
