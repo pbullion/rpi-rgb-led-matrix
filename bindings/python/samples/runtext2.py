@@ -165,7 +165,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Colorado Rockies": Image.open(
                 requests.get(
-                    "https://i.pinimg.com/originals/c4/4f/a1/c44fa1a7ece0785956a822d10b94c52e.png",
+                    "https://cdn.cdnlogo.com/logos/c/19/colorado-rockies.png",
                     stream=True,
                 ).raw
             )
@@ -197,7 +197,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Seattle Mariners": Image.open(
                 requests.get(
-                    "https://i.pinimg.com/200x150/b5/5a/4b/b55a4b417c32a8f700d177105c6f9e26.jpg",
+                    "https://www.pngmart.com/files/22/Seattle-Mariners-PNG-HD-Isolated.png",
                     stream=True,
                 ).raw
             )
@@ -277,7 +277,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "St. Louis Cardinals": Image.open(
                 requests.get(
-                    "https://vectorency.com/wp-content/uploads/2021/12/st-louis-cardinals-07.png",
+                    "https://sportslogohistory.com/wp-content/uploads/2018/04/st_louis_cardinals_1957-1997_w.png",
                     stream=True,
                 ).raw
             )
