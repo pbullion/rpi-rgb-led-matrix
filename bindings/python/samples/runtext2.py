@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://seeklogo.com/images/K/kansas-city-royals-logo-9C2A642D13-seeklogo.com.png?v=637884002640000000",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo3yxscXjFnin2qYWknmCo2YeQ0y8UTAwXGZi-36SP_9itkayeJIdmsbU1Qor6P6D9IGM&usqp=CAU",
                     stream=True,
                 ).raw
             )
@@ -157,7 +157,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Francisco Giants": Image.open(
                 requests.get(
-                    "https://i.bleacherreport.net/images/team_logos/328x328/san_francisco_giants.png?canvas=492,328",
+                    "https://seeklogo.com/images/G/giants-san-francisco-logo-1540E8BF29-seeklogo.com.png",
                     stream=True,
                 ).raw
             )
@@ -181,7 +181,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Dodgers": Image.open(
                 requests.get(
-                    "https://banner2.cleanpng.com/20180517/yjw/kisspng-los-angeles-dodgers-dodger-stadium-miami-marlins-m-5afd7a6d312128.5552318415265613892012.jpg",
+                    "https://image.pngaaa.com/445/3685445-middle.png",
                     stream=True,
                 ).raw
             )
