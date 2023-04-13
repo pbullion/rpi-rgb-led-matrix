@@ -206,7 +206,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Angels": Image.open(
                 requests.get(
-                    "https://www.pngplay.com/wp-content/uploads/13/Los-Angeles-Angels-PNG-HD-Quality.png",
+                    "https://media-s3-us-east-1.ceros.com/mlb/images/2022/05/31/20ba2e8b96bd79f5c4c3fe0367fed23f/patch.png",
                     stream=True,
                 ).raw
             )
