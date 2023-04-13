@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://www.pinclipart.com/picdir/middle/143-1438453_royals-kansas-city-royals-logo-clipart.png",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6wELSfWBXI7Q5hNRWggJdA-8Raxd0v96fbGF3XRBchx_tfnfx8KQTg46_-ltvV4bUHT8&usqp=CAU",
                     stream=True,
                 ).raw
             )
