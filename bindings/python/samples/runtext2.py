@@ -269,7 +269,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago White Sox": Image.open(
                 requests.get(
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chicago_White_Sox.svg/1483px-Chicago_White_Sox.svg.png",
+                    "https://img.favpng.com/0/20/11/chicago-white-sox-logo-emblem-brand-png-favpng-HxyafFnHUerHxLykHkUAFSmYN.jpg",
                     stream=True,
                 ).raw
             )
