@@ -101,7 +101,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Oakland Athletics": Image.open(
                 requests.get(
-                    "https://logos-world.net/wp-content/uploads/2020/05/Oakland-Athletics-Logo-1982-1992.png",
+                    "https://w7.pngwing.com/pngs/108/162/png-transparent-oakland-athletics-hd-logo.png",
                     stream=True,
                 ).raw
             )
@@ -206,7 +206,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Angels": Image.open(
                 requests.get(
-                    "https://logos-world.net/wp-content/uploads/2020/05/Los-Angeles-Angels-Emblem.png",
+                    "https://i.pinimg.com/originals/91/4c/9c/914c9ca24b03bbe2e1b91344f016234a.gif",
                     stream=True,
                 ).raw
             )
@@ -262,7 +262,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Baltimore Orioles": Image.open(
                 requests.get(
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzcM33EBm8khPTRjbi_AOumbLom7_tZsH_pbXZ3iePD57jMQ-oC4E-rKccuk1V5LRsBF4&usqp=CAU",
+                    "https://content.sportslogos.net/logos/53/52/full/baltimore_orioles_logo_primary_19895183.png",
                     stream=True,
                 ).raw
             )
