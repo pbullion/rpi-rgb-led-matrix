@@ -157,7 +157,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Francisco Giants": Image.open(
                 requests.get(
-                    "https://www.pngfind.com/pngs/m/72-725295_sf-giants-logo-png-san-francisco-giants-logo.png",
+                    "https://cutewallpaper.org/24/sf-giants-logo-png/sandoval-heading-back-to-san-francisco-san-francisco-giants-old-logo-clipart-1431307-pinclipart.png",
                     stream=True,
                 ).raw
             )
