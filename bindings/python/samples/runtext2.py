@@ -77,7 +77,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Texas Rangers": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-texas-rangers-logo.png",
+                    "https://sportslogohistory.com/wp-content/uploads/2016/SLH/mlb_alternate/texas_rangers_2003-2004_a.png",
                     stream=True,
                 ).raw
             )
@@ -262,7 +262,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Baltimore Orioles": Image.open(
                 requests.get(
-                    "https://vm-storage.nyc3.digitaloceanspaces.com/2021/10/baltimore-orioles-22.png",
+                    "https://vectorency.com/wp-content/uploads/2021/12/baltimore-orioles-07.png",
                     stream=True,
                 ).raw
             )
@@ -599,7 +599,7 @@ class RunText(SampleBase):
                         for game in arr:
                             if "mlb logo" in game[0]:
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Atlanta Braves"], pos + offset, -9
+                                    teamLogos["Texas Rangers"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["Kansas City Royals"], pos + offset + 75, -9
