@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://assets.stickpng.com/images/584d44ed0a44bd1070d5d446.png",
+                    "https://seeklogo.com/images/K/kansas-city-royals-logo-9C2A642D13-seeklogo.com.png?v=637884002640000000",
                     stream=True,
                 ).raw
             )
@@ -181,7 +181,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Dodgers": Image.open(
                 requests.get(
-                    "https://assets.stickpng.com/thumbs/584d3e7c0a44bd1070d5d3d5.png",
+                    "https://banner2.cleanpng.com/20180517/yjw/kisspng-los-angeles-dodgers-dodger-stadium-miami-marlins-m-5afd7a6d312128.5552318415265613892012.jpg",
                     stream=True,
                 ).raw
             )
