@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo3yxscXjFnin2qYWknmCo2YeQ0y8UTAwXGZi-36SP_9itkayeJIdmsbU1Qor6P6D9IGM&usqp=CAU",
+                    "https://loodibee.com/wp-content/uploads/Kansas-City-Royals-Logo-1979-1985.png",
                     stream=True,
                 ).raw
             )
@@ -157,7 +157,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Francisco Giants": Image.open(
                 requests.get(
-                    "https://seeklogo.com/images/G/giants-san-francisco-logo-1540E8BF29-seeklogo.com.png",
+                    "https://logos-world.net/wp-content/uploads/2020/05/San-Francisco-Giants-Logo-1983-1993.png",
                     stream=True,
                 ).raw
             )
@@ -181,7 +181,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Dodgers": Image.open(
                 requests.get(
-                    "https://img.favpng.com/0/9/0/dodger-stadium-los-angeles-dodgers-los-angeles-angels-mlb-world-series-png-favpng-xXdVneTLUfXjHKGP1KXqd8QUC.jpg",
+                    "https://image.pngaaa.com/610/4174610-middle.png",
                     stream=True,
                 ).raw
             )
