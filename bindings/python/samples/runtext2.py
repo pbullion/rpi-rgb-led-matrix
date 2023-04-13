@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://logos-world.net/wp-content/uploads/2020/05/Kansas-City-Royals-Emblem.png",
+                    "https://w7.pngwing.com/pngs/310/647/png-transparent-kansas-city-royals-kansas-city-chiefs-philadelphia-eagles-nfl-philadelphia-eagles-text-city-logo.png",
                     stream=True,
                 ).raw
             )
@@ -157,7 +157,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Francisco Giants": Image.open(
                 requests.get(
-                    "https://seeklogo.com/images/S/san-francisco-giants-circle-logo-A0D11D22D1-seeklogo.com.png",
+                    "https://i1.wp.com/www.retroseasons.com/retroimages/0-logo-BSFGI-1983.gif",
                     stream=True,
                 ).raw
             )
