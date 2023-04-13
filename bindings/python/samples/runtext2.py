@@ -101,7 +101,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Oakland Athletics": Image.open(
                 requests.get(
-                    "https://vectorency.com/wp-content/uploads/2021/07/oakland_athletics_13.png",
+                    "https://vectorency.com/wp-content/uploads/2021/07/oakland_athletics_11.png",
                     stream=True,
                 ).raw
             )
@@ -206,7 +206,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Angels": Image.open(
                 requests.get(
-                    "https://logos-world.net/wp-content/uploads/2020/05/Los-Angeles-Angels-Emblem.png",
+                    "https://www.pngplay.com/wp-content/uploads/13/Los-Angeles-Angels-PNG-HD-Quality.png",
                     stream=True,
                 ).raw
             )
@@ -262,7 +262,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Baltimore Orioles": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/Baltimore-Orioles-Logo-1999-2008.png",
+                    "https://assets.stickpng.com/thumbs/584d48100a44bd1070d5d462.png",
                     stream=True,
                 ).raw
             )
