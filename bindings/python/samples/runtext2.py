@@ -85,7 +85,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "New York Mets": Image.open(
                 requests.get(
-                    "https://banner2.cleanpng.com/20180610/akc/kisspng-1987-new-york-mets-season-logos-and-uniforms-of-th-brooklyn-dodgers-5b1d87702c5b43.6784301115286618721817.jpg",
+                    "https://w7.pngwing.com/pngs/612/770/png-transparent-new-york-mets-mlb-citi-field-baltimore-orioles-new-york-yankees-others-text-logo-new-york-thumbnail.png",
                     stream=True,
                 ).raw
             )
@@ -197,7 +197,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Seattle Mariners": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-seattle-mariners-logo.png",
+                    "https://vectorency.com/wp-content/uploads/2021/12/seattle-mariners-01.png",
                     stream=True,
                 ).raw
             )
@@ -598,7 +598,7 @@ class RunText(SampleBase):
                         for game in arr:
                             if "mlb logo" in game[0]:
                                 offscreen_canvas.SetImage(
-                                    teamLogos["San Diego Padres"], pos + offset, -9
+                                    teamLogos["Seattle Mariners"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["New York Mets"], pos + offset + 75, -9
