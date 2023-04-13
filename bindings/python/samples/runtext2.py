@@ -262,7 +262,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Baltimore Orioles": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-baltimore-orioles-logo.png",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzcM33EBm8khPTRjbi_AOumbLom7_tZsH_pbXZ3iePD57jMQ-oC4E-rKccuk1V5LRsBF4&usqp=CAU",
                     stream=True,
                 ).raw
             )
@@ -599,13 +599,13 @@ class RunText(SampleBase):
                         for game in arr:
                             if "mlb logo" in game[0]:
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Seattle Mariners"], pos + offset, -9
+                                    teamLogos["Oakland Athletics"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["Los Angeles Angels"], pos + offset + 75, -9
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Milwaukee Brewers"], pos + offset + 175, -9
+                                    teamLogos["Baltimore Orioles"], pos + offset + 175, -9
                                 )
                             awayTeam = 0
                             homeTeam = 0
