@@ -101,7 +101,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Oakland Athletics": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-oakland-athletics-logo.png",
+                    "https://logos-world.net/wp-content/uploads/2020/05/Oakland-Athletics-Logo-1982-1992.png",
                     stream=True,
                 ).raw
             )
@@ -197,7 +197,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Seattle Mariners": Image.open(
                 requests.get(
-                    "https://1000logos.net/wp-content/uploads/2018/05/Seattle-Mariners-Logo-Cap.png",
+                    "https://scontent-atl3-2.xx.fbcdn.net/v/t1.6435-9/38846434_10156643895093979_1896096248637685760_n.png?_nc_cat=104&ccb=1-7&_nc_sid=174925&_nc_ohc=99nv5NeHIBQAX_kiO-7&_nc_ht=scontent-atl3-2.xx&oh=00_AfAlezUQP7EU6dAVtFsXmAwHEOWcJLHTMVNkTEq_YSTuVw&oe=645ECEDF",
                     stream=True,
                 ).raw
             )
