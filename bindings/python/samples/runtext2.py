@@ -269,7 +269,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago White Sox": Image.open(
                 requests.get(
-                    "https://png.pngitem.com/pimgs/s/127-1276597_chicago-white-sox-free-png-image-chicago-white.png",
+                    "https://vectorency.com/wp-content/uploads/2021/12/chicago-white-sox-11.png",
                     stream=True,
                 ).raw
             )
