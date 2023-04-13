@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://w7.pngwing.com/pngs/310/647/png-transparent-kansas-city-royals-kansas-city-chiefs-philadelphia-eagles-nfl-philadelphia-eagles-text-city-logo.png",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgFVZBnbnsCboaQ4KQHtGqOvdJwfWWv2BPBQ&usqp=CAU",
                     stream=True,
                 ).raw
             )
@@ -157,7 +157,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Francisco Giants": Image.open(
                 requests.get(
-                    "https://i1.wp.com/www.retroseasons.com/retroimages/0-logo-BSFGI-1983.gif",
+                    "https://i.ebayimg.com/images/g/bI0AAOSwqo1gMvNf/s-l500.png",
                     stream=True,
                 ).raw
             )
