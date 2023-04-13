@@ -197,7 +197,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Seattle Mariners": Image.open(
                 requests.get(
-                    "https://w7.pngwing.com/pngs/189/215/png-transparent-seattle-mariners-hd-logo.png",
+                    "https://p7.hiclipart.com/preview/887/349/197/seattle-mariners-mlb-cleveland-indians-los-angeles-angels-chicago-cubs-seattle-seahawks-thumbnail.jpg",
                     stream=True,
                 ).raw
             )
@@ -285,7 +285,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago Cubs": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-chicago-cubs-logo.png",
+                    "https://e7.pngegg.com/pngimages/15/383/png-clipart-chicago-cubs-wrigley-field-detroit-tigers-chicago-bears-chicago-bears-blue-logo.png",
                     stream=True,
                 ).raw
             )
@@ -601,7 +601,7 @@ class RunText(SampleBase):
                                     teamLogos["Seattle Mariners"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["New York Mets"], pos + offset + 75, -9
+                                    teamLogos["Chicago Cubs"], pos + offset + 75, -9
                                 )
                             awayTeam = 0
                             homeTeam = 0
