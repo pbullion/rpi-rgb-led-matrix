@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://seeklogo.com/images/K/kc-royals-logo-E03C0EDE47-seeklogo.com.png",
+                    "https://www.vhv.rs/dpng/d/526-5268774_transparent-kc-royals-clipart-kc-royals-crown-logo.png",
                     stream=True,
                 ).raw
             )
@@ -181,7 +181,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Dodgers": Image.open(
                 requests.get(
-                    "https://assets.stickpng.com/thumbs/584d3e7c0a44bd1070d5d3d5.png",
+                    "https://www.pngplay.com/wp-content/uploads/13/Los-Angeles-Dodgers-Transparent-Image.png",
                     stream=True,
                 ).raw
             )
@@ -262,7 +262,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Baltimore Orioles": Image.open(
                 requests.get(
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvGJgZxJKzem2-kC_LmD_9pTAT840A-juyfRjj_1jCVOHZUwJL98KKAMWYo12tWNyduf0&usqp=CAU",
+                    "https://loodibee.com/wp-content/uploads/Baltimore-Orioles-Logo-1989-1991-300x300.png",
                     stream=True,
                 ).raw
             )
