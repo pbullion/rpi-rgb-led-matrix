@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://i.pinimg.com/originals/79/07/99/79079901bed70e81bd2654a48fe7c132.png",
+                    "https://assets.stickpng.com/images/584d44ed0a44bd1070d5d446.png",
                     stream=True,
                 ).raw
             )
@@ -157,7 +157,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Francisco Giants": Image.open(
                 requests.get(
-                    "https://w7.pngwing.com/pngs/107/234/png-transparent-san-francisco-giants-arizona-diamondbacks-kansas-city-royals-new-york-yankees-los-angeles-dodgers-baseball-text-orange-logo.png",
+                    "https://i.bleacherreport.net/images/team_logos/328x328/san_francisco_giants.png?canvas=492,328",
                     stream=True,
                 ).raw
             )
@@ -181,7 +181,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Dodgers": Image.open(
                 requests.get(
-                    "https://icon2.cleanpng.com/20180402/okq/kisspng-dodger-stadium-2017-los-angeles-dodgers-season-los-la-ccedil-o-5ac29a31816e65.5150058715227028975302.jpg",
+                    "https://assets.stickpng.com/thumbs/584d3e7c0a44bd1070d5d3d5.png",
                     stream=True,
                 ).raw
             )
