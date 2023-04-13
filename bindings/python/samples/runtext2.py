@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://vectorency.com/wp-content/uploads/2021/12/kansas-city-royals-12.png",
+                    "https://www.pinclipart.com/picdir/middle/143-1438453_royals-kansas-city-royals-logo-clipart.png",
                     stream=True,
                 ).raw
             )
@@ -157,7 +157,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Francisco Giants": Image.open(
                 requests.get(
-                    "https://cdn.freebiesupply.com/images/large/2x/san-francisco-giants-logo-transparent.png",
+                    "https://www.pngfind.com/pngs/m/72-725295_sf-giants-logo-png-san-francisco-giants-logo.png",
                     stream=True,
                 ).raw
             )
