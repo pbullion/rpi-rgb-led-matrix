@@ -85,7 +85,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "New York Mets": Image.open(
                 requests.get(
-                    "https://cdn.freebiesupply.com/images/large/2x/new-york-mets-logo-transparent.png",
+                    "http://clipart-library.com/image_gallery/38463.jpg",
                     stream=True,
                 ).raw
             )
@@ -133,7 +133,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Boston Red Sox": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-boston-red-sox-logo.png",
+                    "https://www.freepnglogos.com/uploads/boston-red-sox-logo-png/boston-red-sox-circle-hd-picture-download-11.png",
                     stream=True,
                 ).raw
             )
