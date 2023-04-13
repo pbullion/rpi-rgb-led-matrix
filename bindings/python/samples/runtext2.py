@@ -85,7 +85,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "New York Mets": Image.open(
                 requests.get(
-                    "https://vectorency.com/wp-content/uploads/2021/07/new_york_mets_04.png",
+                    "https://vectorency.com/wp-content/uploads/2021/07/new_york_mets_11-600x598.png",
                     stream=True,
                 ).raw
             )
@@ -197,7 +197,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Seattle Mariners": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/Seattle-Mariners-Logo-1987-1992.png",
+                    "https://w7.pngwing.com/pngs/189/215/png-transparent-seattle-mariners-hd-logo.png",
                     stream=True,
                 ).raw
             )
