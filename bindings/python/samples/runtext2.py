@@ -237,7 +237,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Diego Padres": Image.open(
                 requests.get(
-                    "https://upload.wikimedia.org/wikipedia/commons/a/aa/San_Diego_Padres_logo_1986_to_1989.png",
+                    "https://image.pngaaa.com/10/3931010-middle.png",
                     stream=True,
                 ).raw
             )
