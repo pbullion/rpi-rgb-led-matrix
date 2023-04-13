@@ -197,7 +197,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Seattle Mariners": Image.open(
                 requests.get(
-                    "https://upload.wikimedia.org/wikipedia/commons/0/0a/Seattle_Mariners_logo_1980_to_1986.png",
+                    "https://i.pinimg.com/200x150/b5/5a/4b/b55a4b417c32a8f700d177105c6f9e26.jpg",
                     stream=True,
                 ).raw
             )
@@ -277,7 +277,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "St. Louis Cardinals": Image.open(
                 requests.get(
-                    "https://logodix.com/logo/1023404.png",
+                    "https://vectorency.com/wp-content/uploads/2021/12/st-louis-cardinals-07.png",
                     stream=True,
                 ).raw
             )
