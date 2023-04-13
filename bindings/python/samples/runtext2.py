@@ -181,7 +181,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Dodgers": Image.open(
                 requests.get(
-                    "https://image.pngaaa.com/445/3685445-middle.png",
+                    "https://img.favpng.com/0/9/0/dodger-stadium-los-angeles-dodgers-los-angeles-angels-mlb-world-series-png-favpng-xXdVneTLUfXjHKGP1KXqd8QUC.jpg",
                     stream=True,
                 ).raw
             )
