@@ -165,7 +165,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Colorado Rockies": Image.open(
                 requests.get(
-                    "https://cdn.freebiesupply.com/images/large/2x/colorado-rockies-logo-transparent.png",
+                    "https://i.pinimg.com/originals/c4/4f/a1/c44fa1a7ece0785956a822d10b94c52e.png",
                     stream=True,
                 ).raw
             )
@@ -197,7 +197,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Seattle Mariners": Image.open(
                 requests.get(
-                    "https://cdn.freebiesupply.com/images/large/2x/seattle-mariners-logo-black-and-white.png",
+                    "https://upload.wikimedia.org/wikipedia/commons/0/0a/Seattle_Mariners_logo_1980_to_1986.png",
                     stream=True,
                 ).raw
             )
@@ -277,7 +277,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "St. Louis Cardinals": Image.open(
                 requests.get(
-                    "https://content.sportslogos.net/logos/54/72/full/2281.png",
+                    "https://logodix.com/logo/1023404.png",
                     stream=True,
                 ).raw
             )
