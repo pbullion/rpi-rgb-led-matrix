@@ -206,7 +206,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Angels": Image.open(
                 requests.get(
-                    "https://image.pngaaa.com/325/3907325-middle.png",
+                    "https://logos-world.net/wp-content/uploads/2020/05/Los-Angeles-Angels-Emblem.png",
                     stream=True,
                 ).raw
             )
