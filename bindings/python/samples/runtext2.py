@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://www.vhv.rs/dpng/d/82-826819_kansas-city-royals-logo-transparent-hd-png-download.png",
+                    "https://mktg.mlbstatic.com/royals/images/promotions/y2023/300x300-royals-generic-img.png",
                     stream=True,
                 ).raw
             )
