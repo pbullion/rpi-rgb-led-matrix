@@ -157,7 +157,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Francisco Giants": Image.open(
                 requests.get(
-                    "https://www.pngmart.com/files/22/San-Francisco-Giants-PNG.png",
+                    "https://vectorency.com/wp-content/uploads/2021/07/san_francisco_giants_08.png",
                     stream=True,
                 ).raw
             )
