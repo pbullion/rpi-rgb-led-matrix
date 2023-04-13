@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://logos-world.net/wp-content/uploads/2020/05/Kansas-City-Royals-Emblem.png",
+                    "https://seeklogo.com/images/K/kc-royals-logo-E03C0EDE47-seeklogo.com.png",
                     stream=True,
                 ).raw
             )
@@ -181,7 +181,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Dodgers": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-los-angeles-dodgers-logo.png",
+                    "https://assets.stickpng.com/thumbs/584d3e7c0a44bd1070d5d3d5.png",
                     stream=True,
                 ).raw
             )
@@ -262,7 +262,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Baltimore Orioles": Image.open(
                 requests.get(
-                    "https://vectorency.com/wp-content/uploads/2021/12/baltimore-orioles-07.png",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvGJgZxJKzem2-kC_LmD_9pTAT840A-juyfRjj_1jCVOHZUwJL98KKAMWYo12tWNyduf0&usqp=CAU",
                     stream=True,
                 ).raw
             )
@@ -599,7 +599,7 @@ class RunText(SampleBase):
                         for game in arr:
                             if "mlb logo" in game[0]:
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Texas Rangers"], pos + offset, -9
+                                    teamLogos["Los Angeles Dodgers"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["Kansas City Royals"], pos + offset + 75, -9
