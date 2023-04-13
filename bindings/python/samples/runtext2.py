@@ -277,7 +277,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "St. Louis Cardinals": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-st-louis-cardinals-logo.png",
+                    "https://p1.hiclipart.com/preview/944/973/192/bird-line-art-st-louis-cardinals-palm-beach-cardinals-logo-logos-and-uniforms-of-the-st-louis-cardinals-mlb-sports-in-missouri-wikipedia-logo-png-clipart-thumbnail.jpg",
                     stream=True,
                 ).raw
             )
@@ -602,6 +602,9 @@ class RunText(SampleBase):
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["Chicago Cubs"], pos + offset + 75, -9
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos["St. Louis Cardinals"], pos + offset + 175, -9
                                 )
                             awayTeam = 0
                             homeTeam = 0
