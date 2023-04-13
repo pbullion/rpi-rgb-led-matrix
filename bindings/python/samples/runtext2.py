@@ -149,7 +149,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cincinnati Reds": Image.open(
                 requests.get(
-                    "https://logos-world.net/wp-content/uploads/2020/05/Cincinnati-Reds-Emblem.png",
+                    "https://sportslogohistory.com/wp-content/uploads/2018/01/cincinnati_reds_2007-present_a.png",
                     stream=True,
                 ).raw
             )
@@ -189,7 +189,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Atlanta Braves": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-atlanta-braves-logo.png",
+                    "https://e7.pngegg.com/pngimages/674/57/png-clipart-atlanta-braves-minnesota-twins-san-francisco-giants-mlb-major-league-baseball-logo-baseball-logo-jersey.png",
                     stream=True,
                 ).raw
             )
@@ -599,7 +599,7 @@ class RunText(SampleBase):
                         for game in arr:
                             if "mlb logo" in game[0]:
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Tampa Bay Rays"], pos + offset, -9
+                                    teamLogos["Atlanta Braves"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["Cincinnati Reds"], pos + offset + 75, -9
