@@ -101,7 +101,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Oakland Athletics": Image.open(
                 requests.get(
-                    "https://w7.pngwing.com/pngs/108/162/png-transparent-oakland-athletics-hd-logo.png",
+                    "https://www.pinclipart.com/picdir/middle/139-1398896_oakland-athletics-clipart.png",
                     stream=True,
                 ).raw
             )
@@ -206,7 +206,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Angels": Image.open(
                 requests.get(
-                    "https://i.pinimg.com/originals/91/4c/9c/914c9ca24b03bbe2e1b91344f016234a.gif",
+                    "https://image.pngaaa.com/325/3907325-middle.png",
                     stream=True,
                 ).raw
             )
@@ -262,7 +262,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Baltimore Orioles": Image.open(
                 requests.get(
-                    "https://content.sportslogos.net/logos/53/52/full/baltimore_orioles_logo_primary_19895183.png",
+                    "https://loodibee.com/wp-content/uploads/Baltimore-Orioles-Logo-1999-2008.png",
                     stream=True,
                 ).raw
             )
