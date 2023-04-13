@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://www.pngfind.com/pngs/m/123-1238846_kansas-city-royals-kansas-city-royals-kc-hd.png",
+                    "https://logodix.com/logo/415835.jpg",
                     stream=True,
                 ).raw
             )
