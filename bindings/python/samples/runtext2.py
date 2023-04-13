@@ -197,7 +197,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Seattle Mariners": Image.open(
                 requests.get(
-                    "https://www.pngmart.com/files/22/Seattle-Mariners-PNG-HD-Isolated.png",
+                    "https://seeklogo.com/images/S/seattle-mariners-logo-A77721C281-seeklogo.com.png",
                     stream=True,
                 ).raw
             )
