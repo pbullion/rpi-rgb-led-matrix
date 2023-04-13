@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://logodix.com/logo/415835.jpg",
+                    "https://i.ebayimg.com/images/g/vHEAAOSwkitb5wm1/s-l1600.jpg",
                     stream=True,
                 ).raw
             )
@@ -157,7 +157,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Francisco Giants": Image.open(
                 requests.get(
-                    "https://1000logos.net/wp-content/uploads/2018/05/Color-San-Francisco-Giants-logo.jpg",
+                    "https://www.pngmart.com/files/22/San-Francisco-Giants-PNG.png",
                     stream=True,
                 ).raw
             )
