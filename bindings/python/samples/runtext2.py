@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-kansas-city-royals-logo.png",
+                    "https://logos-world.net/wp-content/uploads/2020/05/Kansas-City-Royals-Emblem.png",
                     stream=True,
                 ).raw
             )
@@ -189,7 +189,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Atlanta Braves": Image.open(
                 requests.get(
-                    "https://assets.stickpng.com/images/584d43ef0a44bd1070d5d433.png",
+                    "https://images.fineartamerica.com/images/artworkimages/medium/1/atlanta-braves-logo-jeromi-cesk-transparent.png",
                     stream=True,
                 ).raw
             )
@@ -262,7 +262,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Baltimore Orioles": Image.open(
                 requests.get(
-                    "https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w2208/mlb/sfva8lgv8hw6qv73dtfr.jpg",
+                    "https://vm-storage.nyc3.digitaloceanspaces.com/2021/10/baltimore-orioles-22.png",
                     stream=True,
                 ).raw
             )
@@ -602,7 +602,7 @@ class RunText(SampleBase):
                                     teamLogos["Atlanta Braves"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Cincinnati Reds"], pos + offset + 75, -9
+                                    teamLogos["Kansas City Royals"], pos + offset + 75, -9
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["Baltimore Orioles"], pos + offset + 175, -9
