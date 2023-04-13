@@ -157,7 +157,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Francisco Giants": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-san-francisco-giants-logo.png",
+                    "https://w7.pngwing.com/pngs/107/234/png-transparent-san-francisco-giants-arizona-diamondbacks-kansas-city-royals-new-york-yankees-los-angeles-dodgers-baseball-text-orange-logo.png",
                     stream=True,
                 ).raw
             )
@@ -181,7 +181,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Dodgers": Image.open(
                 requests.get(
-                    "https://img.favpng.com/0/9/0/dodger-stadium-los-angeles-dodgers-los-angeles-angels-mlb-world-series-png-favpng-xXdVneTLUfXjHKGP1KXqd8QUC.jpg",
+                    "https://icon2.cleanpng.com/20180402/okq/kisspng-dodger-stadium-2017-los-angeles-dodgers-season-los-la-ccedil-o-5ac29a31816e65.5150058715227028975302.jpg",
                     stream=True,
                 ).raw
             )
@@ -605,7 +605,7 @@ class RunText(SampleBase):
                                     teamLogos["Kansas City Royals"], pos + offset + 75, -9
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Baltimore Orioles"], pos + offset + 175, -9
+                                    teamLogos["San Francisco Giants"], pos + offset + 175, -9
                                 )
                             awayTeam = 0
                             homeTeam = 0
