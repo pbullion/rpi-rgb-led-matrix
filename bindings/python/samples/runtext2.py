@@ -173,7 +173,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Minnesota Twins": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-minnesota-twins-logo.png",
+                    "https://seeklogo.com/images/M/minnesota-twins-logo-645594FD90-seeklogo.com.png",
                     stream=True,
                 ).raw
             )
@@ -269,7 +269,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago White Sox": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-chicago-white-sox-logo.png",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Chicago_White_Sox.svg/1483px-Chicago_White_Sox.svg.png",
                     stream=True,
                 ).raw
             )
