@@ -237,7 +237,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Diego Padres": Image.open(
                 requests.get(
-                    "https://s.yimg.com/cv/apiv2/default/mlb/20200508/500x500/padres_wbgs.png",
+                    "https://i.pinimg.com/originals/fd/6e/5f/fd6e5fe46d69650565c1552e10cf1d13.png",
                     stream=True,
                 ).raw
             )
@@ -269,7 +269,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago White Sox": Image.open(
                 requests.get(
-                    "https://logodix.com/logo/255903.gif",
+                    "https://www.kindpng.com/picc/m/173-1732833_chicago-white-sox-crossed-bats-white-sox-mlb.png",
                     stream=True,
                 ).raw
             )
