@@ -197,7 +197,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Seattle Mariners": Image.open(
                 requests.get(
-                    "https://p7.hiclipart.com/preview/887/349/197/seattle-mariners-mlb-cleveland-indians-los-angeles-angels-chicago-cubs-seattle-seahawks-thumbnail.jpg",
+                    "https://w1.pngwing.com/pngs/545/697/png-transparent-mlb-logo-seattle-emblem-seattle-mariners-clock-wall-clock-area-circle-thumbnail.png",
                     stream=True,
                 ).raw
             )
@@ -285,7 +285,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago Cubs": Image.open(
                 requests.get(
-                    "https://e7.pngegg.com/pngimages/15/383/png-clipart-chicago-cubs-wrigley-field-detroit-tigers-chicago-bears-chicago-bears-blue-logo.png",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Chicago_Cubs_logo.svg/762px-Chicago_Cubs_logo.svg.png",
                     stream=True,
                 ).raw
             )
