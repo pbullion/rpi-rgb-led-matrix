@@ -165,7 +165,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Colorado Rockies": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-colorado-rockies-logo.png",
+                    "https://cdn.freebiesupply.com/images/large/2x/colorado-rockies-logo-transparent.png",
                     stream=True,
                 ).raw
             )
@@ -197,7 +197,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Seattle Mariners": Image.open(
                 requests.get(
-                    "https://w1.pngwing.com/pngs/545/697/png-transparent-mlb-logo-seattle-emblem-seattle-mariners-clock-wall-clock-area-circle-thumbnail.png",
+                    "https://cdn.freebiesupply.com/images/large/2x/seattle-mariners-logo-black-and-white.png",
                     stream=True,
                 ).raw
             )
@@ -277,7 +277,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "St. Louis Cardinals": Image.open(
                 requests.get(
-                    "https://p1.hiclipart.com/preview/944/973/192/bird-line-art-st-louis-cardinals-palm-beach-cardinals-logo-logos-and-uniforms-of-the-st-louis-cardinals-mlb-sports-in-missouri-wikipedia-logo-png-clipart-thumbnail.jpg",
+                    "https://content.sportslogos.net/logos/54/72/full/2281.png",
                     stream=True,
                 ).raw
             )
@@ -601,7 +601,7 @@ class RunText(SampleBase):
                                     teamLogos["Seattle Mariners"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Chicago Cubs"], pos + offset + 75, -9
+                                    teamLogos["Colorado Rockies"], pos + offset + 75, -9
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["St. Louis Cardinals"], pos + offset + 175, -9
