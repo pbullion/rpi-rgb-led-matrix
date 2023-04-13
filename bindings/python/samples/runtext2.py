@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgFVZBnbnsCboaQ4KQHtGqOvdJwfWWv2BPBQ&usqp=CAU",
+                    "https://www.vhv.rs/dpng/d/82-826819_kansas-city-royals-logo-transparent-hd-png-download.png",
                     stream=True,
                 ).raw
             )
@@ -599,13 +599,7 @@ class RunText(SampleBase):
                         for game in arr:
                             if "mlb logo" in game[0]:
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Los Angeles Dodgers"], pos + offset, -9
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos["Kansas City Royals"], pos + offset + 75, -9
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos["San Francisco Giants"], pos + offset + 175, -9
+                                    teamLogos["Kansas City Royals"], pos + offset, -9
                                 )
                             awayTeam = 0
                             homeTeam = 0
