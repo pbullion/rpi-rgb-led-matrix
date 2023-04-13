@@ -599,7 +599,7 @@ class RunText(SampleBase):
                         for game in arr:
                             if "mlb logo" in game[0]:
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Kansas City Royals"], pos + offset, -9
+                                    teamLogos["MLB"], pos + offset, -9
                                 )
                             awayTeam = 0
                             homeTeam = 0
@@ -1683,7 +1683,7 @@ class RunText(SampleBase):
                                 offset = offset + 190
                             if "inProgress" in game[0]:
                                 offset = offset + 190
-                        time.sleep(0.016)
+                        time.sleep(0.017)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
