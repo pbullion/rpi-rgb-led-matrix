@@ -149,7 +149,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cincinnati Reds": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-cincinnati-reds-logo.png",
+                    "https://logos-world.net/wp-content/uploads/2020/05/Cincinnati-Reds-Emblem.png",
                     stream=True,
                 ).raw
             )
@@ -254,7 +254,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Tampa Bay Rays": Image.open(
                 requests.get(
-                    "https://preview.redd.it/qfnuxos863j61.png?width=500&format=png&auto=webp&s=263214d3c55263e637e226cd7f7a643306e3c7a3",
+                    "https://i.ebayimg.com/images/g/ctwAAOSwYshgyTRa/s-l500.png",
                     stream=True,
                 ).raw
             )
@@ -602,7 +602,7 @@ class RunText(SampleBase):
                                     teamLogos["Tampa Bay Rays"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Detroit Tigers"], pos + offset + 75, -9
+                                    teamLogos["Cincinnati Reds"], pos + offset + 75, -9
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["Baltimore Orioles"], pos + offset + 175, -9
