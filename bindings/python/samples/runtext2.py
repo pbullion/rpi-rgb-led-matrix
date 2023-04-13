@@ -189,7 +189,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Atlanta Braves": Image.open(
                 requests.get(
-                    "https://w7.pngwing.com/pngs/620/436/png-transparent-atlanta-braves-mlb-chicago-cubs-rome-braves-baseball-baseball-team-logo-jersey-thumbnail.png",
+                    "https://assets.stickpng.com/images/584d43ef0a44bd1070d5d433.png",
                     stream=True,
                 ).raw
             )
@@ -262,7 +262,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Baltimore Orioles": Image.open(
                 requests.get(
-                    "https://i.pinimg.com/originals/dc/0c/eb/dc0ceb7cfd41a6a9b8cd927ecf1d2313.png",
+                    "https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w2208/mlb/sfva8lgv8hw6qv73dtfr.jpg",
                     stream=True,
                 ).raw
             )
