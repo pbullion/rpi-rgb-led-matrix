@@ -197,7 +197,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Seattle Mariners": Image.open(
                 requests.get(
-                    "https://seeklogo.com/images/S/seattle-mariners-logo-A77721C281-seeklogo.com.png",
+                    "https://w7.pngwing.com/pngs/189/215/png-transparent-seattle-mariners-hd-logo.png",
                     stream=True,
                 ).raw
             )
@@ -205,7 +205,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Angels": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-los-angeles-angels-logo.png",
+                    "https://1000logos.net/wp-content/uploads/2018/06/Los-Angeles-Angels-of-Anaheim-Logo-1986.png",
                     stream=True,
                 ).raw
             )
@@ -277,7 +277,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "St. Louis Cardinals": Image.open(
                 requests.get(
-                    "https://sportslogohistory.com/wp-content/uploads/2018/04/st_louis_cardinals_1957-1997_w.png",
+                    "https://i.pinimg.com/originals/34/2c/0b/342c0baa25c6344e9cb9e3dddaec3f25.png",
                     stream=True,
                 ).raw
             )
@@ -601,7 +601,7 @@ class RunText(SampleBase):
                                     teamLogos["Seattle Mariners"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Colorado Rockies"], pos + offset + 75, -9
+                                    teamLogos["Los Angeles Angels"], pos + offset + 75, -9
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["St. Louis Cardinals"], pos + offset + 175, -9
