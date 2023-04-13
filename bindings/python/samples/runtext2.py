@@ -101,7 +101,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Oakland Athletics": Image.open(
                 requests.get(
-                    "https://www.pinclipart.com/picdir/middle/139-1398896_oakland-athletics-clipart.png",
+                    "https://vectorency.com/wp-content/uploads/2021/07/oakland_athletics_13.png",
                     stream=True,
                 ).raw
             )
