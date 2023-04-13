@@ -214,7 +214,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Detroit Tigers": Image.open(
                 requests.get(
-                    "https://logos-download.com/wp-content/uploads/2016/04/Detroit_Tigers_Insignia_logo.png",
+                    "https://vectorency.com/wp-content/uploads/2021/07/detroit_tigers_15.png",
                     stream=True,
                 ).raw
             )
@@ -254,7 +254,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Tampa Bay Rays": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-tampa-bay-rays-logo.png",
+                    "https://preview.redd.it/qfnuxos863j61.png?width=500&format=png&auto=webp&s=263214d3c55263e637e226cd7f7a643306e3c7a3",
                     stream=True,
                 ).raw
             )
@@ -262,7 +262,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Baltimore Orioles": Image.open(
                 requests.get(
-                    "https://assets.stickpng.com/thumbs/584d48100a44bd1070d5d462.png",
+                    "https://image.pngaaa.com/60/3620060-middle.png",
                     stream=True,
                 ).raw
             )
@@ -599,10 +599,10 @@ class RunText(SampleBase):
                         for game in arr:
                             if "mlb logo" in game[0]:
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Oakland Athletics"], pos + offset, -9
+                                    teamLogos["Tampa Bay Rays"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Los Angeles Angels"], pos + offset + 75, -9
+                                    teamLogos["Detroit Tigers"], pos + offset + 75, -9
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["Baltimore Orioles"], pos + offset + 175, -9
