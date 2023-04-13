@@ -125,7 +125,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Milwaukee Brewers": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-milwaukee-brewers-logo.png",
+                    "https://purepng.com/public/uploads/large/milwaukee-brewers-logo-9xg.png",
                     stream=True,
                 ).raw
             )
@@ -197,15 +197,16 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Seattle Mariners": Image.open(
                 requests.get(
-                    "https://w7.pngwing.com/pngs/189/215/png-transparent-seattle-mariners-hd-logo.png",
+                    "https://1000logos.net/wp-content/uploads/2018/05/Seattle-Mariners-Logo-Cap.png",
                     stream=True,
                 ).raw
             )
+            # https://loodibee.com/wp-content/uploads/Seattle-Mariners-Logo-1977-1980-300x300.png
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Angels": Image.open(
                 requests.get(
-                    "https://1000logos.net/wp-content/uploads/2018/06/Los-Angeles-Angels-of-Anaheim-Logo-1986.png",
+                    "https://logos-world.net/wp-content/uploads/2020/05/Los-Angeles-Angels-Emblem.png",
                     stream=True,
                 ).raw
             )
@@ -604,7 +605,7 @@ class RunText(SampleBase):
                                     teamLogos["Los Angeles Angels"], pos + offset + 75, -9
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["St. Louis Cardinals"], pos + offset + 175, -9
+                                    teamLogos["Milwaukee Brewers"], pos + offset + 175, -9
                                 )
                             awayTeam = 0
                             homeTeam = 0
