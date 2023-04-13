@@ -173,7 +173,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Minnesota Twins": Image.open(
                 requests.get(
-                    "https://seeklogo.com/images/M/minnesota-twins-logo-645594FD90-seeklogo.com.png",
+                    "https://logos-world.net/wp-content/uploads/2020/05/Minnesota-Twins-Symbol.png",
                     stream=True,
                 ).raw
             )
@@ -269,7 +269,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago White Sox": Image.open(
                 requests.get(
-                    "https://img.favpng.com/0/20/11/chicago-white-sox-logo-emblem-brand-png-favpng-HxyafFnHUerHxLykHkUAFSmYN.jpg",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/White_Sox_Alt_Logo.svg/1456px-White_Sox_Alt_Logo.svg.png",
                     stream=True,
                 ).raw
             )
