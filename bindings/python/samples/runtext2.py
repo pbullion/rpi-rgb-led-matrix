@@ -85,7 +85,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "New York Mets": Image.open(
                 requests.get(
-                    "http://clipart-library.com/image_gallery/38463.jpg",
+                    "http://clipart-library.com/image_gallery/38458.gif",
                     stream=True,
                 ).raw
             )
@@ -237,7 +237,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Diego Padres": Image.open(
                 requests.get(
-                    "https://i.pinimg.com/originals/fd/6e/5f/fd6e5fe46d69650565c1552e10cf1d13.png",
+                    "https://sdcityconference.com/wp-content/uploads/sites/48/2022/05/Padres-logo-1969.jpg",
                     stream=True,
                 ).raw
             )
@@ -598,7 +598,10 @@ class RunText(SampleBase):
                         for game in arr:
                             if "mlb logo" in game[0]:
                                 offscreen_canvas.SetImage(
-                                    teamLogos["MLB"], pos + offset, -9
+                                    teamLogos["San Diego Padres"], pos + offset, -9
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos["New York Mets"], pos + offset+ offset+offset, -9
                                 )
                             awayTeam = 0
                             homeTeam = 0
