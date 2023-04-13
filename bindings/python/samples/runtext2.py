@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://content.sportslogos.net/logos/53/62/full/kansas_city_royals_logo_cap_2010_sportslogosnet-4806.png",
+                    "https://www.pngfind.com/pngs/m/123-1238846_kansas-city-royals-kansas-city-royals-kc-hd.png",
                     stream=True,
                 ).raw
             )
@@ -157,7 +157,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Francisco Giants": Image.open(
                 requests.get(
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG4k10qkY-nvlMpuK9XBppxh_AYQFc43M8OQ&usqp=CAU",
+                    "https://1000logos.net/wp-content/uploads/2018/05/Color-San-Francisco-Giants-logo.jpg",
                     stream=True,
                 ).raw
             )
