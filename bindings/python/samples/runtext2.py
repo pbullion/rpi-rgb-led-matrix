@@ -262,7 +262,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Baltimore Orioles": Image.open(
                 requests.get(
-                    "https://image.pngaaa.com/60/3620060-middle.png",
+                    "https://seeklogo.com/images/B/baltimore-orioles-logo-663D50B63B-seeklogo.com.png",
                     stream=True,
                 ).raw
             )
