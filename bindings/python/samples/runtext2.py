@@ -85,7 +85,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "New York Mets": Image.open(
                 requests.get(
-                    "http://clipart-library.com/image_gallery/38458.gif",
+                    "https://banner2.cleanpng.com/20180610/akc/kisspng-1987-new-york-mets-season-logos-and-uniforms-of-th-brooklyn-dodgers-5b1d87702c5b43.6784301115286618721817.jpg",
                     stream=True,
                 ).raw
             )
@@ -601,7 +601,7 @@ class RunText(SampleBase):
                                     teamLogos["San Diego Padres"], pos + offset, -9
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["New York Mets"], pos + offset+ offset+offset, -9
+                                    teamLogos["New York Mets"], pos + offset + 75, -9
                                 )
                             awayTeam = 0
                             homeTeam = 0
