@@ -269,7 +269,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago White Sox": Image.open(
                 requests.get(
-                    "https://www.kindpng.com/picc/m/173-1732833_chicago-white-sox-crossed-bats-white-sox-mlb.png",
+                    "https://i.ebayimg.com/images/g/ducAAOSwXGxgQuJM/s-l500.png",
                     stream=True,
                 ).raw
             )
