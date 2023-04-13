@@ -181,7 +181,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Dodgers": Image.open(
                 requests.get(
-                    "https://image.pngaaa.com/610/4174610-middle.png",
+                    "https://www.pngitem.com/pimgs/m/167-1675660_los-angeles-dodgers-png-high-quality-image-la.png",
                     stream=True,
                 ).raw
             )
