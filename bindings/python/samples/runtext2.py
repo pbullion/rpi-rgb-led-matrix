@@ -109,7 +109,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Royals": Image.open(
                 requests.get(
-                    "https://fanatics.frgimages.com/kansas-city-royals/wincraft-kansas-city-royals-home-plate-collector-pin_pi4873000_ff_4873223-f3942195bca806e630ee_full.jpg?_hv=2&w=340",
+                    "https://content.sportslogos.net/logos/53/62/full/kansas_city_royals_logo_cap_2010_sportslogosnet-4806.png",
                     stream=True,
                 ).raw
             )
@@ -157,7 +157,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Francisco Giants": Image.open(
                 requests.get(
-                    "https://w7.pngwing.com/pngs/860/966/png-transparent-san-francisco-giants-san-francisco-49ers-giants-baseball-2010-world-series-mlb-new-york-giants-angle-white-child-thumbnail.png",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG4k10qkY-nvlMpuK9XBppxh_AYQFc43M8OQ&usqp=CAU",
                     stream=True,
                 ).raw
             )
