@@ -24,15 +24,36 @@ class RunText(SampleBase):
 
     def run(self):
         userJSON = json.load(userFile)
+<<<<<<< HEAD
+=======
+        # crawfishLogo = Image.open(
+        #         requests.get(
+        #             "https://thumbs.dreamstime.com/b/shrimp-crayfish-black-background-beautiful-colour-nature-under-water-shrimp-crayfish-black-background-111681193.jpg",
+        #             stream=True,
+        #         ).raw
+        #     ).convert("RGB").resize((50, 50), Image.ANTIALIAS)
+        # venmoLogo = Image.open(
+        #         requests.get(
+        #             "https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/40/43/e8/4043e84a-182c-c361-5bf8-b14b472d41a6/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+        #             stream=True,
+        #         ).raw
+        #     ).convert("RGB").resize((50, 50), Image.ANTIALIAS)
+        # crawfishLogo2 = Image.open(
+        #         requests.get(
+        #             "https://i.pinimg.com/564x/bb/c2/95/bbc295ff2f2fd6e579d5c02c562bc230.jpg",
+        #             stream=True,
+        #         ).raw
+        #     ).convert("RGB").resize((50, 50), Image.ANTIALIAS)
+>>>>>>> 06a5de4c4984ad374be8cd4177e0c997a2828b3b
         teamLogos = {
-            # "MLB": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
+            "MLB": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
             "NFL": Image.open(
                 requests.get(
                     "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png",
@@ -41,246 +62,247 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((40, 40), Image.ANTIALIAS),
-            # "New York Yankees": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Washington Nationals": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-washington-nationals-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Texas Rangers": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-texas-rangers-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "New York Mets": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-new-york-mets-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Miami Marlins": Image.open(
-            #     requests.get(
-            #         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_zP8e4N4bDCCuMrkp1eGA7rIc8akKKqFmg&usqp=CAU",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Oakland Athletics": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-oakland-athletics-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Kansas City Royals": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-kansas-city-royals-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Toronto Blue Jays": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-toronto-blue-jays-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Milwaukee Brewers": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-milwaukee-brewers-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Boston Red Sox": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-boston-red-sox-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Cleveland Guardians": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-cleveland-guardians-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Cincinnati Reds": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-cincinnati-reds-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "San Francisco Giants": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-san-francisco-giants-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Colorado Rockies": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-colorado-rockies-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Minnesota Twins": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-minnesota-twins-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Los Angeles Dodgers": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-los-angeles-dodgers-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Atlanta Braves": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-atlanta-braves-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Seattle Mariners": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-seattle-mariners-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Los Angeles Angels": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-los-angeles-angels-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Detroit Tigers": Image.open(
-            #     requests.get(
-            #         "https://logos-download.com/wp-content/uploads/2016/04/Detroit_Tigers_Insignia_logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Arizona Diamondbacks": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-arizona-diamondbacks-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Philadelphia Phillies": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-Philadelphia-Phillies-Logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "San Diego Padres": Image.open(
-            #     requests.get(
-            #         "https://s.yimg.com/cv/apiv2/default/mlb/20200508/500x500/padres_wbgs.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Pittsburgh Pirates": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-pittsburgh-pirates-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Tampa Bay Rays": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-tampa-bay-rays-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Baltimore Orioles": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-baltimore-orioles-logo-bird.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Chicago White Sox": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-chicago-white-sox-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "St. Louis Cardinals": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-st-louis-cardinals-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Chicago Cubs": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-chicago-cubs-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Houston Astros": Image.open(
-            #     requests.get(
-            #         "https://images.ctfassets.net/iiozhi00a8lc/t117_favicon117_qgouernt_ehw9pj78_png/700d0ebafa92b5499f3dc09bf465fc98/t117_favicon.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
+            "New York Yankees": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Washington Nationals": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/mlb-Washington-Nationals-Logo.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Texas Rangers": Image.open(
+                requests.get(
+                    "https://sportslogohistory.com/wp-content/uploads/2016/SLH/mlb_alternate/texas_rangers_2003-2004_a.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "New York Mets": Image.open(
+                requests.get(
+                    "https://vectorency.com/wp-content/uploads/2021/07/new_york_mets_11-600x598.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Miami Marlins": Image.open(
+                requests.get(
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_zP8e4N4bDCCuMrkp1eGA7rIc8akKKqFmg&usqp=CAU",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Oakland Athletics": Image.open(
+                requests.get(
+                    "https://vectorency.com/wp-content/uploads/2021/07/oakland_athletics_11.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Kansas City Royals": Image.open(
+                requests.get(
+                    "https://img.mlbstatic.com/mlb-images/image/private/t_1x1/t_w1024/mlb/y4j3k0mxap2tx6ozuac6.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Toronto Blue Jays": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/mlb-toronto-blue-jays-logo.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Milwaukee Brewers": Image.open(
+                requests.get(
+                    "https://purepng.com/public/uploads/large/milwaukee-brewers-logo-9xg.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Boston Red Sox": Image.open(
+                requests.get(
+                    "https://www.freepnglogos.com/uploads/boston-red-sox-logo-png/boston-red-sox-circle-hd-picture-download-11.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Cleveland Guardians": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/mlb-cleveland-guardians-logo.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Cincinnati Reds": Image.open(
+                requests.get(
+                    "https://sportslogohistory.com/wp-content/uploads/2018/01/cincinnati_reds_2007-present_a.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "San Francisco Giants": Image.open(
+                requests.get(
+                    "https://i.ebayimg.com/images/g/bI0AAOSwqo1gMvNf/s-l500.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Colorado Rockies": Image.open(
+                requests.get(
+                    "https://cdn.cdnlogo.com/logos/c/19/colorado-rockies.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Minnesota Twins": Image.open(
+                requests.get(
+                    "https://sportslogohistory.com/wp-content/uploads/2018/01/minnesota_twins_2010-pres_a.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Los Angeles Dodgers": Image.open(
+                requests.get(
+                    "https://cdn.shopify.com/s/files/1/1949/1233/products/183165943449-0.jpg?v=1575428281",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Atlanta Braves": Image.open(
+                requests.get(
+                    "https://images.fineartamerica.com/images/artworkimages/medium/1/atlanta-braves-logo-jeromi-cesk-transparent.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Seattle Mariners": Image.open(
+                requests.get(
+                    "https://scontent-atl3-2.xx.fbcdn.net/v/t1.6435-9/38846434_10156643895093979_1896096248637685760_n.png?_nc_cat=104&ccb=1-7&_nc_sid=174925&_nc_ohc=99nv5NeHIBQAX_kiO-7&_nc_ht=scontent-atl3-2.xx&oh=00_AfAlezUQP7EU6dAVtFsXmAwHEOWcJLHTMVNkTEq_YSTuVw&oe=645ECEDF",
+                    stream=True,
+                ).raw
+            )
+            # https://loodibee.com/wp-content/uploads/Seattle-Mariners-Logo-1977-1980-300x300.png
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Los Angeles Angels": Image.open(
+                requests.get(
+                    "https://media-s3-us-east-1.ceros.com/mlb/images/2022/05/31/20ba2e8b96bd79f5c4c3fe0367fed23f/patch.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Detroit Tigers": Image.open(
+                requests.get(
+                    "https://vectorency.com/wp-content/uploads/2021/07/detroit_tigers_15.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Arizona Diamondbacks": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/mlb-arizona-diamondbacks-logo.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Philadelphia Phillies": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/mlb-Philadelphia-Phillies-Logo.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "San Diego Padres": Image.open(
+                requests.get(
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/San_Diego_Padres_%282020%29_cap_logo.svg/1200px-San_Diego_Padres_%282020%29_cap_logo.svg.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Pittsburgh Pirates": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/mlb-pittsburgh-pirates-logo.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Tampa Bay Rays": Image.open(
+                requests.get(
+                    "https://i.ebayimg.com/images/g/ctwAAOSwYshgyTRa/s-l500.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Baltimore Orioles": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/Baltimore-Orioles-Logo-1989-1991-300x300.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Chicago White Sox": Image.open(
+                requests.get(
+                    "https://i.ebayimg.com/images/g/ducAAOSwXGxgQuJM/s-l500.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "St. Louis Cardinals": Image.open(
+                requests.get(
+                    "https://i.pinimg.com/originals/34/2c/0b/342c0baa25c6344e9cb9e3dddaec3f25.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Chicago Cubs": Image.open(
+                requests.get(
+                    "https://i.etsystatic.com/16901505/r/il/638115/1932889911/il_fullxfull.1932889911_4max.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Houston Astros": Image.open(
+                requests.get(
+                    "https://images.ctfassets.net/iiozhi00a8lc/t117_favicon117_qgouernt_ehw9pj78_png/700d0ebafa92b5499f3dc09bf465fc98/t117_favicon.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
             # "Arizona Cardinals": Image.open(
             #     requests.get(
             #         "https://seeklogo.com/images/A/arizona-cardinals-logo-60AFACA5B9-seeklogo.com.png",
@@ -567,15 +589,10 @@ class RunText(SampleBase):
             responseArr = json.loads(url.text)
             print(responseArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
-            print(offscreen_canvas)
             pos = offscreen_canvas.width
             color = green
-            print(responseArr)
             for arr in responseArr:
                 running = True
-                print("-------------------------------")
-                print(arr)
-                print("-------------------------------")
                 while running:
                     offscreen_canvas.Clear()
                     buffer = 6
@@ -1669,7 +1686,7 @@ class RunText(SampleBase):
                                 offset = offset + 190
                             if "inProgress" in game[0]:
                                 offset = offset + 190
-                        time.sleep(0.01)
+                        time.sleep(0.017)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
@@ -2308,7 +2325,13 @@ class RunText(SampleBase):
                             if "pregame" in game[0]:
                                 offset = offset + 190
                             if "inProgress" in game[0]:
+<<<<<<< HEAD
                                 offset = offset + 190
+=======
+                                offset = offset + 100
+                            if "nfl logo" in game[0]:
+                                offset = offset + 15
+>>>>>>> 06a5de4c4984ad374be8cd4177e0c997a2828b3b
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -2476,7 +2499,7 @@ class RunText(SampleBase):
                                     + headlineString
                                     + 240
                                 )
-                        time.sleep(0.01)
+                        time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
@@ -2490,6 +2513,667 @@ class RunText(SampleBase):
                                     26,
                                     green,
                                     game[1],
+                                )
+                            awayTeam = 0
+                            homeTeam = 0
+                            headlineString = 0
+                            awayTeamStatus = 0
+                            homeTeamStatus = 0
+                            if "pregame" in game[0]:
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                statusString = game[11]
+                                oddsString = game[14]
+                                awayOddsString = game[15]
+                                homeOddsString = game[16]
+                                overUnderString = game[17]
+                                dayString = game[20]
+                                timeString = game[21]
+                                awaySpreadString = game[22]
+                                homeSpreadString = game[23]
+                                overUnderText = ""
+                                if overUnderString != "":
+                                    overUnderText = "O/U"
+                                awayTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    12,
+                                    yellow,
+                                    awayTeamString,
+                                )
+                                homeTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    26,
+                                    yellow,
+                                    homeTeamString,
+                                )
+                                if homeTeam > awayTeam:
+                                    scoreLocation = homeTeam
+                                else:
+                                    scoreLocation = awayTeam
+                                awayOdds = 0
+                                if awaySpreadString != "":
+                                    awaySpread = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer,
+                                        12,
+                                        green,
+                                        awaySpreadString,
+                                    )
+                                    homeSpread = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer,
+                                        26,
+                                        green,
+                                        homeSpreadString,
+                                    )
+                                if awayOddsString != "":
+                                    awayOdds = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer
+                                        + homeSpread,
+                                        12,
+                                        green,
+                                        awayOddsString,
+                                    )
+                                    homeOdds = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer
+                                        + homeSpread,
+                                        26,
+                                        green,
+                                        homeOddsString,
+                                    )
+                                overUnderAmount = 0
+                                if overUnderString != "":
+                                    overUnderStr = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + awayOdds
+                                        + homeSpread
+                                        + scoreLocation,
+                                        12,
+                                        green,
+                                        overUnderText,
+                                    )
+                                    overUnderAmount = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + awayOdds
+                                        + homeSpread
+                                        + scoreLocation,
+                                        26,
+                                        green,
+                                        overUnderString,
+                                    )
+                                dayStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + awayOdds
+                                    + homeSpread
+                                    + buffer
+                                    + overUnderAmount
+                                    + scoreLocation,
+                                    12,
+                                    yellow,
+                                    dayString,
+                                )
+                                timeStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + awayOdds
+                                    + homeSpread
+                                    + buffer
+                                    + overUnderAmount
+                                    + scoreLocation,
+                                    26,
+                                    yellow,
+                                    timeString,
+                                )
+                            if "inProgress" in game[0]:
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                situationString = game[15]
+                                statusString = game[16]
+                                possession = game[17]
+                                awayOddsString = game[19]
+                                homeOddsString = game[20]
+                                overUnderString = game[21]
+                                awaySpreadString = game[22]
+                                homeSpreadString = game[23]
+                                OUString = ""
+                                awayBetsColor = blue
+                                homeBetsColor = blue
+                                if "+" in awayOddsString:
+                                    awayBetsColor = green
+                                    homeBetsColor = red
+                                else:
+                                    awayBetsColor = red
+                                    homeBetsColor = green
+                                if overUnderString != "":
+                                    OUString = "O/U"
+                                    awayColor = red
+                                if int(awayTeamStatusString) < int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = green
+                                    awayColor = red
+                                elif int(awayTeamStatusString) == int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = yellow
+                                    awayColor = yellow
+                                else:
+                                    homeColor = red
+                                    awayColor = green
+                                awayTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamString,
+                                )
+                                homeTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamString,
+                                )
+                                scoreLocation = 0
+                                if homeTeam > awayTeam:
+                                    scoreLocation = homeTeam + buffer
+                                else:
+                                    scoreLocation = awayTeam + buffer
+                                awayTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamStatusString,
+                                )
+                                homeTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamStatusString,
+                                )
+                                if possession == "away":
+                                    possessionPop = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + 3,
+                                        12,
+                                        green,
+                                        "",
+                                    )
+                                elif statusString == "Halftime":
+                                    possessionPop = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + 3,
+                                        12,
+                                        green,
+                                        "",
+                                    )
+                                else:
+                                    possessionPop = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + 3,
+                                        26,
+                                        green,
+                                        "",
+                                    )
+                                statusStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + possessionPop,
+                                    12,
+                                    yellow,
+                                    statusString,
+                                )
+                                situationStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + possessionPop,
+                                    26,
+                                    yellow,
+                                    situationString,
+                                )
+                                newOffset = 0
+                                if statusStr > situationStr:
+                                    newOffset = statusStr
+                                else:
+                                    newOffset = situationStr
+                                awayOdds = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + 35,
+                                    12,
+                                    awayBetsColor,
+                                    awayOddsString,
+                                )
+                                homeOdds = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + 35,
+                                    26,
+                                    homeBetsColor,
+                                    homeOddsString,
+                                )
+                                overUnderStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + 35,
+                                    12,
+                                    yellow,
+                                    OUString,
+                                )
+                                overUnderAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + 35,
+                                    26,
+                                    yellow,
+                                    overUnderString,
+                                )
+                                awaySpreadAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + overUnderAmount
+                                    + 35,
+                                    12,
+                                    awayBetsColor,
+                                    awaySpreadString,
+                                )
+                                homeSpreadAmount = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newOffset
+                                    + homeOdds
+                                    + overUnderAmount
+                                    + 35,
+                                    26,
+                                    homeBetsColor,
+                                    homeSpreadString,
+                                )
+                            if "pregame" in game[0]:
+                                offset = offset + 140
+                            if "inProgress" in game[0]:
+                                offset = offset + 140
+                            if "final" in game[0]:
+                                awayTeamString = game[5]
+                                homeTeamString = game[10]
+                                awayTeamStatusString = game[12]
+                                homeTeamStatusString = game[13]
+                                statusString = game[11]
+                                oddsString = game[14]
+                                awayPitcherString = game[18]
+                                homePitcherString = game[19]
+                                runnerSituationString = game[15]
+                                headline = game[29]
+                                if int(awayTeamStatusString) < int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = green
+                                    awayColor = red
+                                elif int(awayTeamStatusString) == int(
+                                    homeTeamStatusString
+                                ):
+                                    homeColor = yellow
+                                    awayColor = yellow
+                                else:
+                                    homeColor = red
+                                    awayColor = green
+                                awayTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamString,
+                                )
+                                homeTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamString,
+                                )
+                                scoreLocation = 0
+                                if homeTeam > awayTeam:
+                                    scoreLocation = homeTeam + buffer
+                                else:
+                                    scoreLocation = awayTeam + buffer
+                                awayTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    12,
+                                    awayColor,
+                                    awayTeamStatusString,
+                                )
+                                homeTeamStatus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer,
+                                    26,
+                                    homeColor,
+                                    homeTeamStatusString,
+                                )
+                                runningTotal = (
+                                    scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + awayTeamStatus
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                )
+                                finalString = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + runningTotal,
+                                    12,
+                                    yellow,
+                                    oddsString,
+                                )
+                                headlineString = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + runningTotal,
+                                    26,
+                                    green,
+                                    headline,
+                                )
+                            if awayTeam > homeTeam:
+                                offset = (
+                                    offset
+                                    + awayTeam
+                                    + awayTeamStatus
+                                    + headlineString
+                                    + 200
+                                )
+                            else:
+                                offset = (
+                                    offset
+                                    + homeTeam
+                                    + homeTeamStatus
+                                    + headlineString
+                                    + 200
+                                )
+                        time.sleep(0.018)
+                        if pos + offset < 0:
+                            running = False
+                            pos = offscreen_canvas.width
+                    elif isinstance(arr, list) and "xfl" in arr[0][0]:
+                        for game in arr:
+                            if "xfl" in game[0]:
+                                conferenceName = graphics.DrawText(
+                                    offscreen_canvas,
+                                    font,
+                                    pos + offset,
+                                    26,
+                                    green,
+                                    "XFL",
                                 )
                             awayTeam = 0
                             homeTeam = 0
@@ -3137,7 +3821,7 @@ class RunText(SampleBase):
                                     + headlineString
                                     + 240
                                 )
-                        time.sleep(0.01)
+                        time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
@@ -3695,7 +4379,7 @@ class RunText(SampleBase):
                                     + headlineString
                                     + 240
                                 )
-                        time.sleep(0.01)
+                        time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
@@ -4104,9 +4788,13 @@ class RunText(SampleBase):
                                     homeSpreadString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 140
+                                offset = offset + 125
                             if "inProgress" in game[0]:
+<<<<<<< HEAD
                                 offset = offset + 220
+=======
+                                offset = offset + 165
+>>>>>>> 06a5de4c4984ad374be8cd4177e0c997a2828b3b
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -4215,7 +4903,7 @@ class RunText(SampleBase):
                                     + awayTeam
                                     + awayTeamStatus
                                     + headlineString
-                                    + 240
+                                    + 130
                                 )
                             else:
                                 offset = (
@@ -4223,9 +4911,9 @@ class RunText(SampleBase):
                                     + homeTeam
                                     + homeTeamStatus
                                     + headlineString
-                                    + 240
+                                    + 130
                                 )
-                        time.sleep(0.01)
+                        time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
@@ -4755,7 +5443,7 @@ class RunText(SampleBase):
                                     + headlineString
                                     + 240
                                 )
-                        time.sleep(0.01)
+                        time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
@@ -4781,8 +5469,8 @@ class RunText(SampleBase):
                                 color,
                                 stockStr,
                             )
-                            offset = offset + string + 80
-                        time.sleep(0.015)
+                            offset = offset + string + 50
+                        time.sleep(0.02)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
@@ -4794,7 +5482,7 @@ class RunText(SampleBase):
                             offscreen_canvas, bFont, pos, 29, red, arr[1]["decliners"]
                         )
                         pos -= 1
-                        time.sleep(0.018)
+                        time.sleep(0.022)
                         if pos + gainers < 0:
                             running = False
                             pos = offscreen_canvas.width
@@ -4817,7 +5505,7 @@ class RunText(SampleBase):
                         if pos + length < 0:
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.018)
+                        time.sleep(0.021)
                     elif arr == None:
                         running = False
                         pos = offscreen_canvas.width
@@ -4848,6 +5536,39 @@ class RunText(SampleBase):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.018)
+<<<<<<< HEAD
+=======
+                    elif arr == "crawfish":
+                        offscreen_canvas.SetImage(
+                            crawfishLogo, pos, -9
+                        )
+                        www = graphics.DrawText(
+                            offscreen_canvas, bFont, pos + 55 , 26, green, "It ain't gonna suck iteself..."
+                        )
+                        offscreen_canvas.SetImage(
+                            crawfishLogo, pos + www + 55, -9
+                        )
+                        pos -= 1
+                        if pos + www + 55 + 55 < 0:
+                            running = False
+                            pos = offscreen_canvas.width
+                        time.sleep(0.018)
+                    elif arr == "venmo":
+                        offscreen_canvas.SetImage(
+                            venmoLogo, pos, -9
+                        )
+                        www = graphics.DrawText(
+                            offscreen_canvas, bFont, pos + 65 , 26, green, "Venmo $30 to @Ashley-Angelle"
+                        )
+                        offscreen_canvas.SetImage(
+                            venmoLogo, pos + www + 70, -9
+                        )
+                        pos -= 1
+                        if pos + www + 65 + 70 < 0:
+                            running = False
+                            pos = offscreen_canvas.width
+                        time.sleep(0.018)
+>>>>>>> 06a5de4c4984ad374be8cd4177e0c997a2828b3b
                     elif isinstance(arr, list) and (
                         arr[0] == "golf" or "rankings" in arr[0]
                     ):
@@ -4879,7 +5600,7 @@ class RunText(SampleBase):
                         if pos + length < 0:
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.018)
+                        time.sleep(0.021)
                     offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
