@@ -286,7 +286,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago Cubs": Image.open(
                 requests.get(
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Chicago_Cubs_logo.svg/762px-Chicago_Cubs_logo.svg.png",
+                    "https://i.etsystatic.com/16901505/r/il/638115/1932889911/il_fullxfull.1932889911_4max.jpg",
                     stream=True,
                 ).raw
             )
