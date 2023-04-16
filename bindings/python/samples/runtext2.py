@@ -1683,7 +1683,7 @@ class RunText(SampleBase):
                                 offset = offset + 190
                             if "inProgress" in game[0]:
                                 offset = offset + 190
-                        time.sleep(0.017)
+                        time.sleep(0.015)
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
