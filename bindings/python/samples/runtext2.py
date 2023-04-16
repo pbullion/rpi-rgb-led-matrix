@@ -24,8 +24,6 @@ class RunText(SampleBase):
 
     def run(self):
         userJSON = json.load(userFile)
-<<<<<<< HEAD
-=======
         # crawfishLogo = Image.open(
         #         requests.get(
         #             "https://thumbs.dreamstime.com/b/shrimp-crayfish-black-background-beautiful-colour-nature-under-water-shrimp-crayfish-black-background-111681193.jpg",
@@ -44,7 +42,6 @@ class RunText(SampleBase):
         #             stream=True,
         #         ).raw
         #     ).convert("RGB").resize((50, 50), Image.ANTIALIAS)
->>>>>>> 06a5de4c4984ad374be8cd4177e0c997a2828b3b
         teamLogos = {
             "MLB": Image.open(
                 requests.get(
@@ -4784,11 +4781,7 @@ class RunText(SampleBase):
                             if "pregame" in game[0]:
                                 offset = offset + 125
                             if "inProgress" in game[0]:
-<<<<<<< HEAD
                                 offset = offset + 220
-=======
-                                offset = offset + 165
->>>>>>> 06a5de4c4984ad374be8cd4177e0c997a2828b3b
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -5530,8 +5523,6 @@ class RunText(SampleBase):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.018)
-<<<<<<< HEAD
-=======
                     elif arr == "crawfish":
                         offscreen_canvas.SetImage(
                             crawfishLogo, pos, -9
@@ -5562,7 +5553,6 @@ class RunText(SampleBase):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.018)
->>>>>>> 06a5de4c4984ad374be8cd4177e0c997a2828b3b
                     elif isinstance(arr, list) and (
                         arr[0] == "golf" or "rankings" in arr[0]
                     ):
