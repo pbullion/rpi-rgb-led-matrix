@@ -1,7 +1,10 @@
-#!/bin/bash
-################
+
+# Simple Endless Loop
+# Don't forget to use:
+# $ chmod +x bash_example.sh
+while :
 do
-    git pull
-    echo "Done at `date`"
-    echo
-sleep 120
+echo "git pull";
+git pull
+sleep 15;
+done
