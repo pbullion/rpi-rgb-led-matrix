@@ -5,7 +5,6 @@
 while :
 do
 echo "git pull";
-cd rpi-rgb-led-matrix
-git pull
+cd /home/pi/rpi-rgb-led-matrix && git pull
 sleep 15;
 done
