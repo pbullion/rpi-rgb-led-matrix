@@ -5,6 +5,7 @@
 while :
 do
 echo "git pull";
+cd rpi-rgb-led-matrix
 git pull
 sleep 15;
 done
