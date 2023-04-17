@@ -601,9 +601,6 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos["MLB"], pos + offset, -9
                                 )
-                                offscreen_canvas.SetImage(
-                                    teamLogos["Houston Astros"], pos + offset, -9
-                                )
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
