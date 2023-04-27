@@ -7,6 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./lib
+ 
 # GNU Make 3.81
 # Copyright (C) 2006  Free Software Foundation, Inc.
 # This is free software; see the source for copying conditions.
@@ -14,8 +15,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
 
-# Make data base, printed on Mon Apr 17 14:07:41 2023
+# Make data base, printed on Thu Apr 27 10:36:52 2023
 
 # Variables
 
@@ -128,7 +130,7 @@ USER = patrickbullion
 # makefile
 .DEFAULT_GOAL := all
 # environment
-TERM_SESSION_ID = w0t2p0:CAEF40A8-F4A1-4DC5-BA0E-4A0D6D1D997B
+TERM_SESSION_ID = w1t2p0:26BD6135-2D5E-43B3-BE1E-797D0A967D1B
 # environment
 LESS = -R
 # automatic
@@ -158,7 +160,7 @@ TERM_PROGRAM_VERSION = 3.4.19
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.125937881.125937887.E063F577-790B-4680-8C10-C83B0A2CD762
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.125937881.125937887.B3483882-5741-4499-80D6-8F01749503A9
 # environment
 LC_TERMINAL_VERSION = 3.4.19
 # environment
@@ -170,7 +172,7 @@ VSCODE_L10N_BUNDLE_LOCATION =
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t2p0:CAEF40A8-F4A1-4DC5-BA0E-4A0D6D1D997B
+ITERM_SESSION_ID = w1t2p0:26BD6135-2D5E-43B3-BE1E-797D0A967D1B
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
@@ -204,7 +206,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 66554
+VSCODE_PID = 59433
 # variable set hash-table stats:
 # Load=93/1024=9%, Rehash=0, Collisions=2/144=1%
 
@@ -216,6 +218,7 @@ VSCODE_PID = 66554
 
 # . (device 16777233, inode 10097197): 22 files, no impossibilities.
 
+ 
 # 22 files, no impossibilities in 1 directories.
 
 # Implicit Rules
@@ -267,7 +270,6 @@ FORCE:
 #  Successfully updated.
 
 .PHONY: FORCE
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -475,11 +477,13 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Apr 17 14:07:41 2023
+# Finished Make data base on Thu Apr 27 10:36:52 2023
 
  
+make: *** [lib/librgbmatrix.a] Error 1
 
-# Make data base, printed on Mon Apr 17 14:07:41 2023
+
+# Make data base, printed on Thu Apr 27 10:36:52 2023
 
 # Variables
 
@@ -592,7 +596,7 @@ USER = patrickbullion
 # default
 MAKECMDGOALS := all
 # environment
-TERM_SESSION_ID = w0t2p0:CAEF40A8-F4A1-4DC5-BA0E-4A0D6D1D997B
+TERM_SESSION_ID = w1t2p0:26BD6135-2D5E-43B3-BE1E-797D0A967D1B
 # environment
 LESS = -R
 # automatic
@@ -622,7 +626,7 @@ TERM_PROGRAM_VERSION = 3.4.19
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.125937881.125937887.E063F577-790B-4680-8C10-C83B0A2CD762
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.125937881.125937887.B3483882-5741-4499-80D6-8F01749503A9
 # environment
 LC_TERMINAL_VERSION = 3.4.19
 # environment
@@ -634,7 +638,7 @@ VSCODE_L10N_BUNDLE_LOCATION =
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t2p0:CAEF40A8-F4A1-4DC5-BA0E-4A0D6D1D997B
+ITERM_SESSION_ID = w1t2p0:26BD6135-2D5E-43B3-BE1E-797D0A967D1B
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
@@ -666,7 +670,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 66554
+VSCODE_PID = 59433
 # variable set hash-table stats:
 # Load=92/1024=9%, Rehash=0, Collisions=5/131=4%
 
@@ -676,9 +680,9 @@ VSCODE_PID = 66554
 
 # Directories
 
-# . (device 16777233, inode 10096968): 21 files, no impossibilities.
+# . (device 16777233, inode 10096968): 22 files, no impossibilities.
 
-# 21 files, no impossibilities in 1 directories.
+# 22 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -780,8 +784,6 @@ install-python: build-python
 #  Modification time never checked.
 #  File has not been updated.
  
-make: *** [lib/librgbmatrix.a] Error 1
-
 #  commands to execute (from `Makefile', line 31):
 	$(MAKE) -C $(PYTHON_LIB_DIR) install
 	
@@ -807,6 +809,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Apr 17 14:07:41 2023
+# Finished Make data base on Thu Apr 27 10:36:52 2023
 
  

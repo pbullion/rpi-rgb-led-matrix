@@ -238,7 +238,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "San Diego Padres": Image.open(
                 requests.get(
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/San_Diego_Padres_%282020%29_cap_logo.svg/1200px-San_Diego_Padres_%282020%29_cap_logo.svg.png",
+                    "https://s.yimg.com/it/api/res/1.2/3.wJ5Gj6m_PwuYk8zbM0.g--~A/YXBwaWQ9eW5ld3M7dz0xMjAwO2g9NjMwO3E9MTAw/https://s.yimg.com/cv/apiv2/default/mlb/20200508/500x500/padres_wbgs.png",
                     stream=True,
                 ).raw
             )
