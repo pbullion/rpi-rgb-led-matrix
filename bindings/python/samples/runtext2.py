@@ -5479,7 +5479,7 @@ class RunText(SampleBase):
                         versus = graphics.DrawText(
                             offscreen_canvas,
                             bFont,
-                            ( (offscreen_canvas.width)-(blackVs / 2)),
+                            ((offscreen_canvas.width / 2) - (blackVs)),
                             12,
                             blue,
                             arr[1],
