@@ -5476,6 +5476,8 @@ class RunText(SampleBase):
                         blackVs = graphics.DrawText(
                             offscreen_canvas, bFont, -1000, 12, green, arr[1]
                         )
+                        print(blackVs)
+                        print(offscreen_canvas.width)
                         versus = graphics.DrawText(
                             offscreen_canvas,
                             bFont,
