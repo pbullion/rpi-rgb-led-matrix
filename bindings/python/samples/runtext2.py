@@ -202,8 +202,7 @@ class RunText(SampleBase):
                 ).raw
             )
             # https://loodibee.com/wp-content/uploads/Seattle-Mariners-Logo-1977-1980-300x300.png
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .convert("RGB").resize((50, 50), Image.ANTIALIAS),
             "Los Angeles Angels": Image.open(
                 requests.get(
                     "https://media-s3-us-east-1.ceros.com/mlb/images/2022/05/31/20ba2e8b96bd79f5c4c3fe0367fed23f/patch.png",
@@ -5480,7 +5479,7 @@ class RunText(SampleBase):
                         versus = graphics.DrawText(
                             offscreen_canvas,
                             bFont,
-                            ((offscreen_canvas.width / 2) - (blackVs / 2)),
+                            ((blackVs / 2) - (offscreen_canvas.width / 2)),
                             12,
                             blue,
                             arr[1],
@@ -5524,30 +5523,32 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         time.sleep(0.018)
                     elif arr == "crawfish":
-                        offscreen_canvas.SetImage(
-                            crawfishLogo, pos, -9
-                        )
+                        offscreen_canvas.SetImage(crawfishLogo, pos, -9)
                         www = graphics.DrawText(
-                            offscreen_canvas, bFont, pos + 55 , 26, green, "It ain't gonna suck iteself..."
+                            offscreen_canvas,
+                            bFont,
+                            pos + 55,
+                            26,
+                            green,
+                            "It ain't gonna suck iteself...",
                         )
-                        offscreen_canvas.SetImage(
-                            crawfishLogo, pos + www + 55, -9
-                        )
+                        offscreen_canvas.SetImage(crawfishLogo, pos + www + 55, -9)
                         pos -= 1
                         if pos + www + 55 + 55 < 0:
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.018)
                     elif arr == "venmo":
-                        offscreen_canvas.SetImage(
-                            venmoLogo, pos, -9
-                        )
+                        offscreen_canvas.SetImage(venmoLogo, pos, -9)
                         www = graphics.DrawText(
-                            offscreen_canvas, bFont, pos + 65 , 26, green, "Venmo $30 to @Ashley-Angelle"
+                            offscreen_canvas,
+                            bFont,
+                            pos + 65,
+                            26,
+                            green,
+                            "Venmo $30 to @Ashley-Angelle",
                         )
-                        offscreen_canvas.SetImage(
-                            venmoLogo, pos + www + 70, -9
-                        )
+                        offscreen_canvas.SetImage(venmoLogo, pos + www + 70, -9)
                         pos -= 1
                         if pos + www + 65 + 70 < 0:
                             running = False
