@@ -18,7 +18,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Mon Jul 10 12:20:55 2023
+# Make data base, printed on Mon Jul 10 14:37:05 2023
 
 # Variables
 
@@ -31,8 +31,8 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 # makefile (from `Makefile', line 167)
 INCDIR = ../include
 # makefile (from `Makefile', line 37)
- 
 HARDWARE_DESC = adafruit-hat
+ 
 # environment
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # makefile (from `Makefile', line 11)
@@ -160,8 +160,7 @@ TERM_PROGRAM_VERSION = 3.4.19
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.163226979.163226985.2204AF91-57B7-4B15-B496-3ABF0C380C61
- 
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.163226979.163226985.2188459D-486A-4D4A-8865-9A8105721F3E
 # environment
 LC_TERMINAL_VERSION = 3.4.19
 # environment
@@ -177,6 +176,7 @@ ITERM_SESSION_ID = w0t3p0:A3D1E845-DECB-4B62-8E95-F46F7F9779F5
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
+ 
 COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
@@ -377,7 +377,6 @@ utf8-internal.h:
 # Not a target:
 ../include/led-matrix.h:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -408,6 +407,7 @@ framebuffer-internal.h:
 
 # Not a target:
 led-matrix-c.o:
+ 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -476,13 +476,13 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Jul 10 12:20:55 2023
+# Finished Make data base on Mon Jul 10 14:37:05 2023
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Mon Jul 10 12:20:55 2023
+# Make data base, printed on Mon Jul 10 14:37:05 2023
 
 # Variables
 
@@ -493,6 +493,7 @@ make: *** [lib/librgbmatrix.a] Error 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
+ 
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # environment
 NVM_INC = /Users/patrickbullion/.nvm/versions/node/v16.13.1/include/node
@@ -607,6 +608,7 @@ TMPDIR = /var/folders/w9/1zr47vg90ss5sbzpm40bn78r0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
+ 
 VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.79-main.sock
 # environment
 MallocNanoZone = 0
@@ -621,7 +623,7 @@ TERM_PROGRAM_VERSION = 3.4.19
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.163226979.163226985.2204AF91-57B7-4B15-B496-3ABF0C380C61
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.163226979.163226985.2188459D-486A-4D4A-8865-9A8105721F3E
 # environment
 LC_TERMINAL_VERSION = 3.4.19
 # environment
@@ -783,7 +785,6 @@ install-python: build-python
 	
 
 build-csharp:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -804,6 +805,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Jul 10 12:20:55 2023
+# Finished Make data base on Mon Jul 10 14:37:05 2023
 
  
