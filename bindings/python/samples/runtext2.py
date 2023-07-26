@@ -5493,7 +5493,7 @@ class RunText(SampleBase):
                                 + buffer
                                 + symbol
                                 + price
-                                + priceChange
+                                + percentChange
                                 + buffer
                                 + buffer
                                 + buffer,
@@ -5509,7 +5509,7 @@ class RunText(SampleBase):
                                 + buffer
                                 + symbol
                                 + price
-                                + priceChange
+                                + percentChange
                                 + buffer
                                 + buffer
                                 + buffer,
@@ -5518,7 +5518,7 @@ class RunText(SampleBase):
                                 stock["regularMarketDayLow"],
                             )
                             offset = (
-                                offset + symbol + price + priceChange + highPrice + 50
+                                offset + symbol + price + percentChange + highPrice + 50
                             )
                         time.sleep(0.02)
                         if pos + offset < 0:
