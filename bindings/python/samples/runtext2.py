@@ -5435,11 +5435,9 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "stocks" in arr[0]:
                         for stock in arr[1]:
-                            print(stock["stockSymbol"])
-                            print(stock["up"])
                             if stock["up"] == True:
                                 color = green
-                            else:
+                            if stock["up"] == False:
                                 color = red
                             symbol = graphics.DrawText(
                                 offscreen_canvas,
@@ -5466,6 +5464,7 @@ class RunText(SampleBase):
                                 + symbol
                                 + price
                                 + buffer
+                                + buffer
                                 + buffer,
                                 12,
                                 color,
@@ -5479,6 +5478,7 @@ class RunText(SampleBase):
                                 + buffer
                                 + symbol
                                 + price
+                                + buffer
                                 + buffer
                                 + buffer,
                                 26,
@@ -5494,6 +5494,8 @@ class RunText(SampleBase):
                                 + symbol
                                 + price
                                 + priceChange
+                                + buffer
+                                + buffer
                                 + buffer,
                                 12,
                                 color,
@@ -5508,6 +5510,8 @@ class RunText(SampleBase):
                                 + symbol
                                 + price
                                 + priceChange
+                                + buffer
+                                + buffer
                                 + buffer,
                                 26,
                                 color,
