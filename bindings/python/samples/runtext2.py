@@ -5439,7 +5439,7 @@ class RunText(SampleBase):
                             print(stock["up"])
                             if stock["up"] == True:
                                 color = green
-                            if stock["up"] == False:
+                            else:
                                 color = red
                             symbol = graphics.DrawText(
                                 offscreen_canvas,
