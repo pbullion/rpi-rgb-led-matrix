@@ -5435,11 +5435,12 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "stocks" in arr[0]:
                         for stock in arr[1]:
+                            print(stock["stockSymbol"])
+                            print(stock["up"])
                             if stock["up"] == True:
                                 color = green
                             if stock["up"] == False:
                                 color = red
-                            print(stock["regularMarketPrice"])
                             symbol = graphics.DrawText(
                                 offscreen_canvas,
                                 font,
@@ -5451,7 +5452,7 @@ class RunText(SampleBase):
                             price = graphics.DrawText(
                                 offscreen_canvas,
                                 font,
-                                pos + offset + buffer + symbol,
+                                pos + offset + buffer + symbol + buffer + buffer,
                                 24,
                                 color,
                                 stock["regularMarketPrice"],
@@ -5459,7 +5460,13 @@ class RunText(SampleBase):
                             priceChange = graphics.DrawText(
                                 offscreen_canvas,
                                 smallFont,
-                                pos + offset + buffer + symbol + price,
+                                pos
+                                + offset
+                                + buffer
+                                + symbol
+                                + price
+                                + buffer
+                                + buffer,
                                 12,
                                 color,
                                 stock["regularMarketChange"],
@@ -5467,7 +5474,13 @@ class RunText(SampleBase):
                             percentChange = graphics.DrawText(
                                 offscreen_canvas,
                                 smallFont,
-                                pos + offset + buffer + symbol + price,
+                                pos
+                                + offset
+                                + buffer
+                                + symbol
+                                + price
+                                + buffer
+                                + buffer,
                                 26,
                                 color,
                                 stock["percentChange"],
@@ -5475,7 +5488,13 @@ class RunText(SampleBase):
                             highPrice = graphics.DrawText(
                                 offscreen_canvas,
                                 smallFont,
-                                pos + offset + buffer + symbol + price + priceChange,
+                                pos
+                                + offset
+                                + buffer
+                                + symbol
+                                + price
+                                + priceChange
+                                + buffer,
                                 12,
                                 color,
                                 stock["regularMarketDayHigh"],
@@ -5483,7 +5502,13 @@ class RunText(SampleBase):
                             lowPrice = graphics.DrawText(
                                 offscreen_canvas,
                                 smallFont,
-                                pos + offset + buffer + symbol + price + priceChange,
+                                pos
+                                + offset
+                                + buffer
+                                + symbol
+                                + price
+                                + priceChange
+                                + buffer,
                                 26,
                                 color,
                                 stock["regularMarketDayLow"],
