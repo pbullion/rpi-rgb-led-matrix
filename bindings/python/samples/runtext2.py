@@ -5496,6 +5496,8 @@ class RunText(SampleBase):
                                 + percentChange
                                 + buffer
                                 + buffer
+                                + buffer
+                                + buffer
                                 + buffer,
                                 12,
                                 color,
@@ -5510,6 +5512,8 @@ class RunText(SampleBase):
                                 + symbol
                                 + price
                                 + percentChange
+                                + buffer
+                                + buffer
                                 + buffer
                                 + buffer
                                 + buffer,
