@@ -5439,6 +5439,7 @@ class RunText(SampleBase):
                                 color = green
                             if stock["up"] == False:
                                 color = red
+                            print(stock["stockSymbol"])
                             symbol = graphics.DrawText(
                                 offscreen_canvas,
                                 font,
@@ -5573,38 +5574,6 @@ class RunText(SampleBase):
                         )
                         pos -= 1
                         if pos + www + mancavedisplays + com < 0:
-                            running = False
-                            pos = offscreen_canvas.width
-                        time.sleep(0.018)
-                    elif arr == "crawfish":
-                        offscreen_canvas.SetImage(crawfishLogo, pos, -9)
-                        www = graphics.DrawText(
-                            offscreen_canvas,
-                            bFont,
-                            pos + 55,
-                            26,
-                            green,
-                            "It ain't gonna suck iteself...",
-                        )
-                        offscreen_canvas.SetImage(crawfishLogo, pos + www + 55, -9)
-                        pos -= 1
-                        if pos + www + 55 + 55 < 0:
-                            running = False
-                            pos = offscreen_canvas.width
-                        time.sleep(0.018)
-                    elif arr == "venmo":
-                        offscreen_canvas.SetImage(venmoLogo, pos, -9)
-                        www = graphics.DrawText(
-                            offscreen_canvas,
-                            bFont,
-                            pos + 65,
-                            26,
-                            green,
-                            "Venmo $30 to @Ashley-Angelle",
-                        )
-                        offscreen_canvas.SetImage(venmoLogo, pos + www + 70, -9)
-                        pos -= 1
-                        if pos + www + 65 + 70 < 0:
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.018)
