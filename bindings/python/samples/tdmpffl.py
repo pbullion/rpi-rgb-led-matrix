@@ -32,7 +32,8 @@ class RunText(SampleBase):
             "Josh",
             "Jeff",
         ]
-        while True:
+        seconds = 120
+        while seconds > 0:
             offscreen_canvas.Clear()
             text_string = (
                 str(currentRound)
@@ -41,25 +42,19 @@ class RunText(SampleBase):
                 + " "
                 + leagueMembers[currentPick - 1]
             )
-            seconds = 120
-            while seconds > 0:
-                print(seconds)
-                time.sleep(1)
-                seconds -= 1
-                len = graphics.DrawText(
-                    offscreen_canvas, font, 1, 26, textColor, text_string
-                )
-                remainingTime = graphics.DrawText(
-                    offscreen_canvas,
-                    font,
-                    len + 25,
-                    26,
-                    textColor,
-                    "seconds",
-                )
-            if pos + len < 0:
-                pos = offscreen_canvas.width
-            time.sleep(0.01)
+            time.sleep(1)
+            seconds -= 1
+            len = graphics.DrawText(
+                offscreen_canvas, font, 1, 26, textColor, text_string
+            )
+            remainingTime = graphics.DrawText(
+                offscreen_canvas,
+                font,
+                len + 25,
+                26,
+                textColor,
+                "seconds",
+            )
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
