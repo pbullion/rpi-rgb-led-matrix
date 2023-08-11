@@ -58,7 +58,7 @@ class RunText(SampleBase):
             if seconds == 0:
                 currentPick += 1
                 seconds = 10
-                if currentPick > len(leagueMembers):
+                if currentPick > 6:
                     currentRound += 1
                     currentPick = 1
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
