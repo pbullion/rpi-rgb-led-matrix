@@ -53,7 +53,7 @@ class RunText(SampleBase):
                 len + 25,
                 26,
                 textColor,
-                seconds,
+                str(seconds),
             )
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
