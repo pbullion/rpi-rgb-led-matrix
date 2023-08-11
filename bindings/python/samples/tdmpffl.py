@@ -18,6 +18,13 @@ class RunText(SampleBase):
     def run(self):
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
+        green = graphics.Color(0, 255, 0)
+        red = graphics.Color(255, 0, 0)
+        blue = graphics.Color(0, 0, 255)
+        teal = graphics.Color(0, 255, 255)
+        purple = graphics.Color(102, 0, 204)
+        yellow = graphics.Color(255, 255, 0)
+        white = graphics.Color(255, 255, 0)
         font.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/texgyre-27.bdf")
         textColor = graphics.Color(255, 255, 0)
         pos = offscreen_canvas.width
@@ -41,25 +48,26 @@ class RunText(SampleBase):
         seconds = 10
         while True:
             offscreen_canvas.Clear()
-            text_string = (
-                "Round "
-                + str(currentRound)
-                + " Pick "
-                + str(currentPick)
-                + " "
-                + leagueMembers[currentPick - 1]
-            )
+            round_text = "Rd " + str(currentRound) + " Pick " + str(currentPick)
             time.sleep(1)
             seconds -= 1
-            len = graphics.DrawText(
-                offscreen_canvas, font, 1, 26, textColor, text_string
+            roundStr = graphics.DrawText(
+                offscreen_canvas, font, 1, 26, blue, round_text
             )
+            nameStr = graphics.DrawText(
+                offscreen_canvas, font, 1, 26, green, leagueMembers[currentPick - 1]
+            )
+            timeColor = green
+            if seconds < 60:
+                timeColor = yellow
+            if seconds < 20:
+                timeColor = red
             remainingTime = graphics.DrawText(
                 offscreen_canvas,
                 font,
                 len + 25,
                 26,
-                textColor,
+                timeColor,
                 str(seconds),
             )
             if seconds == 0:
