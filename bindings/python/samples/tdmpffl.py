@@ -35,19 +35,19 @@ class RunText(SampleBase):
         currentPick = 1
         leagueMembers = [
             "Bill",
+            "Teddie",
+            "Caleb",
+            "Brain",
             "Dug",
             "Japan",
             "Duddy",
             "Donny",
             "Oscar",
             "Denny",
-            "Teddie",
             "Snake",
             "Zane",
-            "Brain",
-            "Caleb",
         ]
-        seconds = 10
+        seconds = 120
         while True:
             offscreen_canvas.Clear()
             round_text = "Rd " + str(currentRound) + " Pk " + str(currentPick)
@@ -103,7 +103,7 @@ class RunText(SampleBase):
             )
             if seconds == 0:
                 currentPick += 1
-                seconds = 10
+                seconds = 120
                 if currentPick > 12:
                     currentRound += 1
                     currentPick = 1
