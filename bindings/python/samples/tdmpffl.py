@@ -55,7 +55,7 @@ class RunText(SampleBase):
                 len + 25,
                 26,
                 textColor,
-                seconds,
+                "seconds",
             )
             if pos + len < 0:
                 pos = offscreen_canvas.width
