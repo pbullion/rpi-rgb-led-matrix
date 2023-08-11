@@ -55,7 +55,12 @@ class RunText(SampleBase):
                 offscreen_canvas, font, 1, 26, blue, round_text
             )
             nameStr = graphics.DrawText(
-                offscreen_canvas, font, 1, 26, green, leagueMembers[currentPick - 1]
+                offscreen_canvas,
+                font,
+                roundStr + 10,
+                26,
+                green,
+                leagueMembers[currentPick - 1],
             )
             timeColor = green
             if seconds < 60:
@@ -65,7 +70,7 @@ class RunText(SampleBase):
             remainingTime = graphics.DrawText(
                 offscreen_canvas,
                 font,
-                len + 25,
+                roundStr + nameStr + 25,
                 26,
                 timeColor,
                 str(seconds),
