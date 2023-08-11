@@ -34,9 +34,9 @@ class RunText(SampleBase):
         currentRound = 1
         currentPick = 1
         leagueMembers = [
-            "Bill",
             "Teddie",
             "Caleb",
+            "Bill",
             "Brain",
             "Dug",
             "Japan",
