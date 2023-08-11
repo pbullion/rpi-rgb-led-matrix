@@ -29,6 +29,8 @@ class RunText(SampleBase):
         textColor = graphics.Color(255, 255, 0)
         pos = offscreen_canvas.width
         my_text = self.args.text
+        smallestFont = graphics.Font()
+        smallestFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/4x6.bdf")
         currentRound = 1
         currentPick = 1
         leagueMembers = [
@@ -48,9 +50,14 @@ class RunText(SampleBase):
         seconds = 10
         while True:
             offscreen_canvas.Clear()
-            round_text = "Rd " + str(currentRound) + " Pick " + str(currentPick)
+            round_text = "Rd " + str(currentRound) + " Pk " + str(currentPick)
             time.sleep(1)
             seconds -= 1
+            timeColor = green
+            if seconds < 60:
+                timeColor = yellow
+            if seconds < 20:
+                timeColor = red
             roundStr = graphics.DrawText(
                 offscreen_canvas, font, 1, 26, blue, round_text
             )
@@ -62,11 +69,6 @@ class RunText(SampleBase):
                 green,
                 leagueMembers[currentPick - 1],
             )
-            timeColor = green
-            if seconds < 60:
-                timeColor = yellow
-            if seconds < 20:
-                timeColor = red
             remainingTime = graphics.DrawText(
                 offscreen_canvas,
                 font,
@@ -74,6 +76,28 @@ class RunText(SampleBase):
                 26,
                 timeColor,
                 str(seconds),
+            )
+            onDeck = graphics.DrawText(
+                offscreen_canvas,
+                smallestFont,
+                roundStr + nameStr + remainingTime + 10,
+                26,
+                yellow,
+                str(currentRound)
+                + "."
+                + str(currentPick + 1)
+                + leagueMembers[currentPick],
+            )
+            inHole = graphics.DrawText(
+                offscreen_canvas,
+                smallestFont,
+                roundStr + nameStr + remainingTime + 10,
+                26,
+                yellow,
+                str(currentRound)
+                + "."
+                + str(currentPick + 2)
+                + leagueMembers[currentPick],
             )
             if seconds == 0:
                 currentPick += 1
