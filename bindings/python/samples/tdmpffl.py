@@ -47,7 +47,7 @@ class RunText(SampleBase):
             "Snake",
             "Zane",
         ]
-        seconds = 120
+        seconds = 80
         randomSayings = [
             "HURRY THE FUCK UP!",
             "YOU'RE A CHICKEN BITCH",
@@ -68,7 +68,7 @@ class RunText(SampleBase):
                     font,
                     -1000,
                     26,
-                    red,
+                    green,
                     leagueMembers[currentPick] + " UP NEXT",
                 )
                 hurryUpText = graphics.DrawText(
@@ -76,9 +76,8 @@ class RunText(SampleBase):
                     font,
                     ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
                     26,
-                    red,
-                    leagueMembers[currentPick],
-                    +" UP NEXT",
+                    green,
+                    leagueMembers[currentPick] + " UP NEXT",
                 )
             elif seconds == 59:
                 blackHurryUpText = graphics.DrawText(
@@ -86,7 +85,7 @@ class RunText(SampleBase):
                     font,
                     -1000,
                     26,
-                    red,
+                    green,
                     leagueMembers[currentPick] + " UP NEXT",
                 )
                 hurryUpText = graphics.DrawText(
@@ -94,7 +93,7 @@ class RunText(SampleBase):
                     font,
                     ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
                     26,
-                    red,
+                    green,
                     leagueMembers[currentPick] + " UP NEXT",
                 )
             if seconds == 20:
@@ -167,7 +166,7 @@ class RunText(SampleBase):
                 )
             if seconds == 0:
                 currentPick += 1
-                seconds = 120
+                seconds = 80
                 if currentPick > 12:
                     currentRound += 1
                     currentPick = 1
