@@ -35,7 +35,11 @@ class RunText(SampleBase):
         while True:
             offscreen_canvas.Clear()
             text_string = (
-                currentRound + "." + currentPick + " " + leagueMembers[currentPick - 1]
+                str(currentRound)
+                + "."
+                + str(currentPick)
+                + " "
+                + leagueMembers[currentPick - 1]
             )
             len = graphics.DrawText(
                 offscreen_canvas, font, pos, 26, textColor, text_string
