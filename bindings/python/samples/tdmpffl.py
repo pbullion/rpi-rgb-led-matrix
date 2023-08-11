@@ -47,7 +47,7 @@ class RunText(SampleBase):
             "Snake",
             "Zane",
         ]
-        seconds = 120
+        seconds = 30
         while True:
             offscreen_canvas.Clear()
             round_text = "Rd " + str(currentRound) + "." + str(currentPick)
@@ -61,49 +61,54 @@ class RunText(SampleBase):
             roundStr = graphics.DrawText(
                 offscreen_canvas, font, 1, 26, blue, round_text
             )
-            nameStr = graphics.DrawText(
-                offscreen_canvas,
-                font,
-                roundStr + 10,
-                26,
-                green,
-                leagueMembers[currentPick - 1],
-            )
-            remainingTime = graphics.DrawText(
-                offscreen_canvas,
-                font,
-                roundStr + nameStr + 25,
-                26,
-                timeColor,
-                str(seconds),
-            )
-            onDeck = graphics.DrawText(
-                offscreen_canvas,
-                smallFont,
-                offscreen_canvas.width - 60,
-                14,
-                yellow,
-                str(currentRound)
-                + "."
-                + str(currentPick + 1)
-                + " "
-                + leagueMembers[currentPick],
-            )
-            inHole = graphics.DrawText(
-                offscreen_canvas,
-                smallFont,
-                offscreen_canvas.width - 60,
-                28,
-                yellow,
-                str(currentRound)
-                + "."
-                + str(currentPick + 2)
-                + " "
-                + leagueMembers[currentPick + 1],
-            )
+            if seconds == 20:
+                hurryUpText = graphics.DrawText(
+                    offscreen_canvas, font, 1, 26, red, "HURRY THE FUCK UP!"
+                )
+            else:
+                nameStr = graphics.DrawText(
+                    offscreen_canvas,
+                    font,
+                    roundStr + 10,
+                    26,
+                    green,
+                    leagueMembers[currentPick - 1],
+                )
+                remainingTime = graphics.DrawText(
+                    offscreen_canvas,
+                    font,
+                    roundStr + nameStr + 25,
+                    26,
+                    timeColor,
+                    str(seconds),
+                )
+                onDeck = graphics.DrawText(
+                    offscreen_canvas,
+                    smallFont,
+                    offscreen_canvas.width - 60,
+                    14,
+                    yellow,
+                    str(currentRound)
+                    + "."
+                    + str(currentPick + 1)
+                    + " "
+                    + leagueMembers[currentPick],
+                )
+                inHole = graphics.DrawText(
+                    offscreen_canvas,
+                    smallFont,
+                    offscreen_canvas.width - 60,
+                    28,
+                    yellow,
+                    str(currentRound)
+                    + "."
+                    + str(currentPick + 2)
+                    + " "
+                    + leagueMembers[currentPick + 1],
+                )
             if seconds == 0:
                 currentPick += 1
-                seconds = 120
+                seconds = 30
                 if currentPick > 12:
                     currentRound += 1
                     currentPick = 1
