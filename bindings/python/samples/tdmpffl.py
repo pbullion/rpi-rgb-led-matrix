@@ -64,14 +64,14 @@ class RunText(SampleBase):
                 timeColor = yellow
             if seconds < 20:
                 timeColor = red
-            if seconds == 60 or seconds == 59 or seconds == 58 or seconds == 57:
+            if seconds == 60 or seconds == 59:
                 blackHurryUpText = graphics.DrawText(
                     offscreen_canvas,
                     font,
                     -1000,
                     26,
                     green,
-                    leagueMembers[currentPick] + "'S UP NEXT",
+                    leagueMembers[currentPick] + " GET THAT FINGER OUT YO ASS",
                 )
                 hurryUpText = graphics.DrawText(
                     offscreen_canvas,
@@ -79,7 +79,24 @@ class RunText(SampleBase):
                     ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
                     26,
                     green,
-                    leagueMembers[currentPick] + "'S UP NEXT",
+                    leagueMembers[currentPick] + " GET THAT FINGER OUT YO ASS",
+                )
+            if seconds == 58 or seconds == 57:
+                blackHurryUpText = graphics.DrawText(
+                    offscreen_canvas,
+                    font,
+                    -1000,
+                    26,
+                    green,
+                    "YOU'RE UP NEXT!",
+                )
+                hurryUpText = graphics.DrawText(
+                    offscreen_canvas,
+                    font,
+                    ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
+                    26,
+                    green,
+                    "YOU'RE UP NEXT!",
                 )
             elif seconds == 20 or seconds == 19:
                 blackHurryUpText = graphics.DrawText(
