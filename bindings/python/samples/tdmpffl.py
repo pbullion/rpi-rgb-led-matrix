@@ -62,6 +62,10 @@ class RunText(SampleBase):
                 hurryUpText = graphics.DrawText(
                     offscreen_canvas, font, 1, 26, red, "HURRY THE FUCK UP!"
                 )
+            elif seconds == 19:
+                hurryUpText = graphics.DrawText(
+                    offscreen_canvas, font, 1, 26, red, "HURRY THE FUCK UP!"
+                )
             else:
                 roundStr = graphics.DrawText(
                     offscreen_canvas, font, 1, 26, blue, round_text
