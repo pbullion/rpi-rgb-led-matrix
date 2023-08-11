@@ -50,7 +50,7 @@ class RunText(SampleBase):
         seconds = 120
         while True:
             offscreen_canvas.Clear()
-            round_text = "Rd " + str(currentRound) + " Pk " + str(currentPick)
+            round_text = "Rd " + str(currentRound) + "." + str(currentPick)
             time.sleep(1)
             seconds -= 1
             timeColor = green
