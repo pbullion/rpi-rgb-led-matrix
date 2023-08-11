@@ -46,17 +46,17 @@ class RunText(SampleBase):
                 print(seconds)
                 time.sleep(1)
                 seconds -= 1
-            len = graphics.DrawText(
-                offscreen_canvas, font, 1, 26, textColor, text_string
-            )
-            remainingTime = graphics.DrawText(
-                offscreen_canvas,
-                font,
-                len + 25,
-                26,
-                textColor,
-                "seconds",
-            )
+                len = graphics.DrawText(
+                    offscreen_canvas, font, 1, 26, textColor, text_string
+                )
+                remainingTime = graphics.DrawText(
+                    offscreen_canvas,
+                    font,
+                    len + 25,
+                    26,
+                    textColor,
+                    "seconds",
+                )
             if pos + len < 0:
                 pos = offscreen_canvas.width
             time.sleep(0.01)
