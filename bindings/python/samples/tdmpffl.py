@@ -80,7 +80,7 @@ class RunText(SampleBase):
             onDeck = graphics.DrawText(
                 offscreen_canvas,
                 smallFont,
-                offscreen_canvas.width - 50,
+                offscreen_canvas.width - 60,
                 14,
                 yellow,
                 str(currentRound)
@@ -92,7 +92,7 @@ class RunText(SampleBase):
             inHole = graphics.DrawText(
                 offscreen_canvas,
                 smallFont,
-                offscreen_canvas.width - 50,
+                offscreen_canvas.width - 60,
                 28,
                 yellow,
                 str(currentRound)
