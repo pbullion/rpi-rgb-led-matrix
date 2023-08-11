@@ -44,6 +44,7 @@ class RunText(SampleBase):
             len = graphics.DrawText(
                 offscreen_canvas, font, 1, 26, textColor, text_string
             )
+            seconds = 120
             while seconds > 0:
                 minutes, seconds = divmod(seconds, 60)
                 time.sleep(1)
