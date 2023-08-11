@@ -33,35 +33,34 @@ class RunText(SampleBase):
             "Jeff",
         ]
         seconds = 10
-        while True:
-            while seconds > 0:
-                offscreen_canvas.Clear()
-                text_string = (
-                    str(currentRound)
-                    + "."
-                    + str(currentPick)
-                    + " "
-                    + leagueMembers[currentPick - 1]
-                )
-                time.sleep(1)
-                seconds -= 1
-                len = graphics.DrawText(
-                    offscreen_canvas, font, 1, 26, textColor, text_string
-                )
-                remainingTime = graphics.DrawText(
-                    offscreen_canvas,
-                    font,
-                    len + 25,
-                    26,
-                    textColor,
-                    str(seconds),
-                )
-            # if seconds == 0:
-            #     currentPick += 1
-            #     seconds = 10
-            #     if currentPick > len(leagueMembers):
-            #         currentRound += 1
-            #         currentPick = 1
+        if seconds == 0:
+            currentPick += 1
+            seconds = 10
+            if currentPick > len(leagueMembers):
+                currentRound += 1
+                currentPick = 1
+        while seconds > 0:
+            offscreen_canvas.Clear()
+            text_string = (
+                str(currentRound)
+                + "."
+                + str(currentPick)
+                + " "
+                + leagueMembers[currentPick - 1]
+            )
+            time.sleep(1)
+            seconds -= 1
+            len = graphics.DrawText(
+                offscreen_canvas, font, 1, 26, textColor, text_string
+            )
+            remainingTime = graphics.DrawText(
+                offscreen_canvas,
+                font,
+                len + 25,
+                26,
+                textColor,
+                str(seconds),
+            )
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
