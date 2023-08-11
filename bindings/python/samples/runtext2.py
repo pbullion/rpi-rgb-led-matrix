@@ -299,166 +299,166 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            # "Arizona Cardinals": Image.open(
-            #     requests.get(
-            #         "https://seeklogo.com/images/A/arizona-cardinals-logo-60AFACA5B9-seeklogo.com.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Atlanta Falcons": Image.open(
-            #     requests.get(
-            #         "https://cdn.freebiesupply.com/images/large/2x/atlanta-falcons-logo-on-black.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Baltimore Ravens": Image.open(
-            #     requests.get(
-            #         "https://assets.stickpng.com/images/580b585b2edbce24c47b2b09.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Buffalo Bills": Image.open(
-            #     requests.get(
-            #         "https://logos-download.com/wp-content/uploads/2018/03/Buffalo_Bills_logo_blue-700x502.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Carolina Panthers": Image.open(
-            #     requests.get(
-            #         "https://logos-download.com/wp-content/uploads/2018/02/Carolina_Panthers_logo_blue-700x380.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Chicago Bears": Image.open(
-            #     requests.get(
-            #         "https://assets.stickpng.com/images/580b585b2edbce24c47b2b16.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Cincinnati Bengals": Image.open(
-            #     requests.get(
-            #         "https://cdn.freebiesupply.com/images/thumbs/1x/cincinnati-bengals-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Cleveland Browns": Image.open(
-            #     requests.get(
-            #         "https://i.redd.it/1rsnuls0llu71.jpg",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Jacksonville Jaguars": Image.open(
-            #     requests.get(
-            #         "https://assets.stickpng.com/images/580b585b2edbce24c47b2b2f.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Las Vegas Raiders": Image.open(
-            #     requests.get(
-            #         "https://content.sportslogos.net/logos/7/6708/full/8521_las_vegas_raiders-primary-20201.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Dallas Cowboys": Image.open(
-            #     requests.get(
-            #         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dallas_Cowboys.svg/1076px-Dallas_Cowboys.svg.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Denver Broncos": Image.open(
-            #     requests.get(
-            #         "https://assets.stickpng.com/images/580b585b2edbce24c47b2b21.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Detroit Lions": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/nfl-detroit-lions-team-logo-2.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Green Bay Packers": Image.open(
-            #     requests.get(
-            #         "https://seeklogo.com/images/G/green-bay-packers-logo-2A5FB2D033-seeklogo.com.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Houston Texans": Image.open(
-            #     requests.get(
-            #         "https://assets.stickpng.com/images/580b585b2edbce24c47b2b29.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Indianapolis Colts": Image.open(
-            #     requests.get(
-            #         "https://s.yimg.com/it/api/res/1.2/1U2AxCGOmhypKITxE2PNMw--~A/YXBwaWQ9eW5ld3M7dz0xMjAwO2g9NjMwO3E9MTAw/https://s.yimg.com/cv/apiv2/default/nfl/20190724/500x500/2019_IND_wbg.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Los Angeles Chargers": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/nfl-los-angeles-chargers-team-logo-2.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Los Angeles Rams": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/los-angeles-rams-2020-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Miami Dolphins": Image.open(
-            #     requests.get(
-            #         "https://logos-download.com/wp-content/uploads/2018/02/Miami_Dolphins_logo_bright-609x700.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Minnesota Vikings": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/nfl-minnesota-vikings-team-logo-2.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
+            "Arizona Cardinals": Image.open(
+                requests.get(
+                    "https://seeklogo.com/images/A/arizona-cardinals-logo-60AFACA5B9-seeklogo.com.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Atlanta Falcons": Image.open(
+                requests.get(
+                    "https://cdn.freebiesupply.com/images/large/2x/atlanta-falcons-logo-on-black.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Baltimore Ravens": Image.open(
+                requests.get(
+                    "https://assets.stickpng.com/images/580b585b2edbce24c47b2b09.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Buffalo Bills": Image.open(
+                requests.get(
+                    "https://logos-download.com/wp-content/uploads/2018/03/Buffalo_Bills_logo_blue-700x502.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Carolina Panthers": Image.open(
+                requests.get(
+                    "https://logos-download.com/wp-content/uploads/2018/02/Carolina_Panthers_logo_blue-700x380.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Chicago Bears": Image.open(
+                requests.get(
+                    "https://assets.stickpng.com/images/580b585b2edbce24c47b2b16.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Cincinnati Bengals": Image.open(
+                requests.get(
+                    "https://cdn.freebiesupply.com/images/thumbs/1x/cincinnati-bengals-logo.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Cleveland Browns": Image.open(
+                requests.get(
+                    "https://i.redd.it/1rsnuls0llu71.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Jacksonville Jaguars": Image.open(
+                requests.get(
+                    "https://assets.stickpng.com/images/580b585b2edbce24c47b2b2f.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Las Vegas Raiders": Image.open(
+                requests.get(
+                    "https://content.sportslogos.net/logos/7/6708/full/8521_las_vegas_raiders-primary-20201.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Dallas Cowboys": Image.open(
+                requests.get(
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dallas_Cowboys.svg/1076px-Dallas_Cowboys.svg.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Denver Broncos": Image.open(
+                requests.get(
+                    "https://assets.stickpng.com/images/580b585b2edbce24c47b2b21.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Detroit Lions": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/nfl-detroit-lions-team-logo-2.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Green Bay Packers": Image.open(
+                requests.get(
+                    "https://seeklogo.com/images/G/green-bay-packers-logo-2A5FB2D033-seeklogo.com.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Houston Texans": Image.open(
+                requests.get(
+                    "https://assets.stickpng.com/images/580b585b2edbce24c47b2b29.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Indianapolis Colts": Image.open(
+                requests.get(
+                    "https://s.yimg.com/it/api/res/1.2/1U2AxCGOmhypKITxE2PNMw--~A/YXBwaWQ9eW5ld3M7dz0xMjAwO2g9NjMwO3E9MTAw/https://s.yimg.com/cv/apiv2/default/nfl/20190724/500x500/2019_IND_wbg.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Los Angeles Chargers": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/nfl-los-angeles-chargers-team-logo-2.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Los Angeles Rams": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/los-angeles-rams-2020-logo.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Miami Dolphins": Image.open(
+                requests.get(
+                    "https://logos-download.com/wp-content/uploads/2018/02/Miami_Dolphins_logo_bright-609x700.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Minnesota Vikings": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/nfl-minnesota-vikings-team-logo-2.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
             "Kansas City Chiefs": Image.open(
                 requests.get(
                     "https://loodibee.com/wp-content/uploads/nfl-kansas-city-chiefs-team-logo-2.png",
@@ -467,38 +467,38 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            # "New England Patriots": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/nfl-new-england-patriots-team-logo-2.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "New Orleans Saints": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/nfl-new-orleans-saints-team-logo-2.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "New York Giants": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/nfl-new-york-giants-team-logo-2.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "New York Jets": Image.open(
-            #     requests.get(
-            #         "https://www.liblogo.com/img-logo/max/ne809n810-new-york-jets-logo-new-york-jets-logos-history-amp-images-logos-lists-brands.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
+            "New England Patriots": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/nfl-new-england-patriots-team-logo-2.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "New Orleans Saints": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/nfl-new-orleans-saints-team-logo-2.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "New York Giants": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/nfl-new-york-giants-team-logo-2.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "New York Jets": Image.open(
+                requests.get(
+                    "https://www.liblogo.com/img-logo/max/ne809n810-new-york-jets-logo-new-york-jets-logos-history-amp-images-logos-lists-brands.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
             "Philadelphia Eagles": Image.open(
                 requests.get(
                     "https://loodibee.com/wp-content/uploads/nfl-philadelphia-eagles-team-logo-2.png",
@@ -507,54 +507,54 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            # "Pittsburgh Steelers": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/nfl-pittsburgh-steelers-team-logo-2.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "San Francisco 49ers": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/nfl-san-francisco-49ers-team-logo-2.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Seattle Seahawks": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/nfl-seattle-seahawks-team-logo-2.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Tampa Bay Buccaneers": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/tampa-bay-buccaneers-2020-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Tennessee Titans": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/nfl-tennessee-titans-team-logo-2.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
-            # "Washington Commanders": Image.open(
-            #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/washington-commanders-logo.png",
-            #         stream=True,
-            #     ).raw
-            # )
-            # .convert("RGB")
-            # .resize((50, 50), Image.ANTIALIAS),
+            "Pittsburgh Steelers": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/nfl-pittsburgh-steelers-team-logo-2.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "San Francisco 49ers": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/nfl-san-francisco-49ers-team-logo-2.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Seattle Seahawks": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/nfl-seattle-seahawks-team-logo-2.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Tampa Bay Buccaneers": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/tampa-bay-buccaneers-2020-logo.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Tennessee Titans": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/nfl-tennessee-titans-team-logo-2.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Washington Commanders": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/washington-commanders-logo.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
         }
         while True:
             green = graphics.Color(0, 255, 0)
