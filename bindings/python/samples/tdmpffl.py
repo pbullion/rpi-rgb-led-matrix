@@ -26,6 +26,8 @@ class RunText(SampleBase):
         yellow = graphics.Color(255, 255, 0)
         white = graphics.Color(255, 255, 0)
         font.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/texgyre-27.bdf")
+        middleFont = graphics.Font()
+        middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
         textColor = graphics.Color(255, 255, 0)
         pos = offscreen_canvas.width
         my_text = self.args.text
@@ -82,7 +84,7 @@ class RunText(SampleBase):
             elif seconds == 20 or seconds == 19:
                 blackHurryUpText = graphics.DrawText(
                     offscreen_canvas,
-                    font,
+                    middleFont,
                     -1000,
                     26,
                     red,
@@ -90,7 +92,7 @@ class RunText(SampleBase):
                 )
                 hurryUpText = graphics.DrawText(
                     offscreen_canvas,
-                    font,
+                    middleFont,
                     ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
                     26,
                     red,
