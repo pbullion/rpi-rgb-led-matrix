@@ -42,12 +42,10 @@ class RunText(SampleBase):
                 + leagueMembers[currentPick - 1]
             )
             len = graphics.DrawText(
-                offscreen_canvas, font, pos, 26, textColor, text_string
+                offscreen_canvas, font, 1, 26, textColor, text_string
             )
-            pos -= 1
             if pos + len < 0:
                 pos = offscreen_canvas.width
-
             time.sleep(0.01)
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
