@@ -34,18 +34,18 @@ class RunText(SampleBase):
         currentRound = 1
         currentPick = 1
         leagueMembers = [
-            "Teddie",
-            "Caleb",
-            "Bill",
-            "Brain",
-            "Dug",
-            "Japan",
-            "Duddy",
-            "Donny",
-            "Oscar",
-            "Denny",
-            "Snake",
-            "Zane",
+            "TEDDIE",
+            "CALEB",
+            "BILL",
+            "BRAIN",
+            "DUG",
+            "JAPAN",
+            "DUDDY",
+            "DONNY",
+            "OSCAR",
+            "DENNY",
+            "SNAKE",
+            "ZANE",
         ]
         seconds = 80
         randomSayings = [
