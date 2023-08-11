@@ -41,14 +41,14 @@ class RunText(SampleBase):
                 + " "
                 + leagueMembers[currentPick - 1]
             )
-            len = graphics.DrawText(
-                offscreen_canvas, font, 1, 26, textColor, text_string
-            )
             seconds = 120
             while seconds > 0:
                 print(seconds)
                 time.sleep(1)
                 seconds -= 1
+            len = graphics.DrawText(
+                offscreen_canvas, font, 1, 26, textColor, text_string
+            )
             remainingTime = graphics.DrawText(
                 offscreen_canvas,
                 font,
