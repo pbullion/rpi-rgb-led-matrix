@@ -56,12 +56,12 @@ class RunText(SampleBase):
                     textColor,
                     str(seconds),
                 )
-            if seconds == 0:
-                currentPick += 1
-                seconds = 10
-                if currentPick > len(leagueMembers):
-                    currentRound += 1
-                    currentPick = 1
+            # if seconds == 0:
+            #     currentPick += 1
+            #     seconds = 10
+            #     if currentPick > len(leagueMembers):
+            #         currentRound += 1
+            #         currentPick = 1
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
