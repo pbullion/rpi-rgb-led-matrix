@@ -96,7 +96,7 @@ class RunText(SampleBase):
                     green,
                     leagueMembers[currentPick] + " UP NEXT",
                 )
-            if seconds == 20:
+            elif seconds == 20:
                 blackHurryUpText = graphics.DrawText(
                     offscreen_canvas, font, -1000, 26, red, "HURRY THE FUCK UP!"
                 )
