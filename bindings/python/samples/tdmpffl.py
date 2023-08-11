@@ -29,8 +29,8 @@ class RunText(SampleBase):
         textColor = graphics.Color(255, 255, 0)
         pos = offscreen_canvas.width
         my_text = self.args.text
-        smallestFont = graphics.Font()
-        smallestFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/4x6.bdf")
+        smallFont = graphics.Font()
+        smallFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x13.bdf")
         currentRound = 1
         currentPick = 1
         leagueMembers = [
@@ -79,24 +79,26 @@ class RunText(SampleBase):
             )
             onDeck = graphics.DrawText(
                 offscreen_canvas,
-                smallestFont,
-                roundStr + nameStr + remainingTime + 10,
-                26,
+                smallFont,
+                roundStr + nameStr + remainingTime + 25,
+                12,
                 yellow,
                 str(currentRound)
                 + "."
                 + str(currentPick + 1)
+                + " "
                 + leagueMembers[currentPick],
             )
             inHole = graphics.DrawText(
                 offscreen_canvas,
-                smallestFont,
-                roundStr + nameStr + remainingTime + 10,
+                smallFont,
+                roundStr + nameStr + remainingTime + 25,
                 26,
                 yellow,
                 str(currentRound)
                 + "."
                 + str(currentPick + 2)
+                + " "
                 + leagueMembers[currentPick],
             )
             if seconds == 0:
