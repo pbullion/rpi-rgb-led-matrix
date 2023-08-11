@@ -69,7 +69,7 @@ class RunText(SampleBase):
                     -1000,
                     26,
                     green,
-                    leagueMembers[currentPick] + " UP NEXT",
+                    leagueMembers[currentPick] + "'s UP NEXT",
                 )
                 hurryUpText = graphics.DrawText(
                     offscreen_canvas,
@@ -77,7 +77,7 @@ class RunText(SampleBase):
                     ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
                     26,
                     green,
-                    leagueMembers[currentPick] + " UP NEXT",
+                    leagueMembers[currentPick] + "'s UP NEXT",
                 )
             elif seconds == 20 or seconds == 19:
                 blackHurryUpText = graphics.DrawText(
