@@ -25,19 +25,26 @@ class RunText(SampleBase):
         currentRound = 1
         currentPick = 1
         leagueMembers = [
-            "Patrick",
-            "Mike",
-            "Jim",
-            "Jason",
-            "Josh",
-            "Jeff",
+            "Bill",
+            "Dug",
+            "Japan",
+            "Duddy",
+            "Donny",
+            "Oscar",
+            "Denny",
+            "Teddie",
+            "Snake",
+            "Zane",
+            "Brain",
+            "Caleb",
         ]
         seconds = 10
         while True:
             offscreen_canvas.Clear()
             text_string = (
-                str(currentRound)
-                + "."
+                "Round "
+                + str(currentRound)
+                + " Pick "
                 + str(currentPick)
                 + " "
                 + leagueMembers[currentPick - 1]
@@ -58,7 +65,7 @@ class RunText(SampleBase):
             if seconds == 0:
                 currentPick += 1
                 seconds = 10
-                if currentPick > 6:
+                if currentPick > 12:
                     currentRound += 1
                     currentPick = 1
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
