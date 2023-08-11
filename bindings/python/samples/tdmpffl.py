@@ -46,9 +46,7 @@ class RunText(SampleBase):
             )
             seconds = 120
             while seconds > 0:
-                minutes, seconds = divmod(seconds, 60)
                 print(seconds)
-                print(f"Time remaining: {minutes:02d}:{seconds:02d}")
                 time.sleep(1)
                 seconds -= 1
             remainingTime = graphics.DrawText(
@@ -57,7 +55,7 @@ class RunText(SampleBase):
                 len + 25,
                 26,
                 textColor,
-                f"{minutes:02d}:{seconds:02d}",
+                seconds,
             )
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
