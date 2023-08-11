@@ -80,7 +80,7 @@ class RunText(SampleBase):
             onDeck = graphics.DrawText(
                 offscreen_canvas,
                 smallFont,
-                roundStr + nameStr + remainingTime + 25,
+                roundStr + nameStr + remainingTime + 35,
                 12,
                 yellow,
                 str(currentRound)
@@ -92,14 +92,14 @@ class RunText(SampleBase):
             inHole = graphics.DrawText(
                 offscreen_canvas,
                 smallFont,
-                roundStr + nameStr + remainingTime + 25,
+                roundStr + nameStr + remainingTime + 35,
                 26,
                 yellow,
                 str(currentRound)
                 + "."
                 + str(currentPick + 2)
                 + " "
-                + leagueMembers[currentPick],
+                + leagueMembers[currentPick + 1],
             )
             if seconds == 0:
                 currentPick += 1
