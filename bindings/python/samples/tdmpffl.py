@@ -47,7 +47,11 @@ class RunText(SampleBase):
             "Snake",
             "Zane",
         ]
-        seconds = 30
+        seconds = 120
+        randomSayings = [
+            "HURRY THE FUCK UP!",
+            "YOU'RE A CHICKEN BITCH",
+        ]
         while True:
             offscreen_canvas.Clear()
             round_text = "Rd " + str(currentRound) + "." + str(currentPick)
@@ -105,7 +109,7 @@ class RunText(SampleBase):
                 onDeck = graphics.DrawText(
                     offscreen_canvas,
                     smallFont,
-                    offscreen_canvas.width - 60,
+                    offscreen_canvas.width - 65,
                     14,
                     yellow,
                     str(currentRound)
@@ -117,7 +121,7 @@ class RunText(SampleBase):
                 inHole = graphics.DrawText(
                     offscreen_canvas,
                     smallFont,
-                    offscreen_canvas.width - 60,
+                    offscreen_canvas.width - 65,
                     28,
                     yellow,
                     str(currentRound)
@@ -128,7 +132,7 @@ class RunText(SampleBase):
                 )
             if seconds == 0:
                 currentPick += 1
-                seconds = 30
+                seconds = 120
                 if currentPick > 12:
                     currentRound += 1
                     currentPick = 1
