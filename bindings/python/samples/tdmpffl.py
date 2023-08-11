@@ -59,12 +59,28 @@ class RunText(SampleBase):
             if seconds < 20:
                 timeColor = red
             if seconds == 20:
+                blackHurryUpText = graphics.DrawText(
+                    offscreen_canvas, font, -1000, 26, red, "HURRY THE FUCK UP!"
+                )
                 hurryUpText = graphics.DrawText(
-                    offscreen_canvas, font, 1, 26, red, "HURRY THE FUCK UP!"
+                    offscreen_canvas,
+                    font,
+                    ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
+                    26,
+                    red,
+                    "HURRY THE FUCK UP!",
                 )
             elif seconds == 19:
+                blackHurryUpText = graphics.DrawText(
+                    offscreen_canvas, font, -1000, 26, red, "HURRY THE FUCK UP!"
+                )
                 hurryUpText = graphics.DrawText(
-                    offscreen_canvas, font, 1, 26, red, "HURRY THE FUCK UP!"
+                    offscreen_canvas,
+                    font,
+                    ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
+                    26,
+                    red,
+                    "HURRY THE FUCK UP!",
                 )
             else:
                 roundStr = graphics.DrawText(
