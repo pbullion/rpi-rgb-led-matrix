@@ -33,13 +33,7 @@ class RunText(SampleBase):
             "Jeff",
         ]
         seconds = 10
-        if seconds == 0:
-            currentPick += 1
-            seconds = 10
-            if currentPick > len(leagueMembers):
-                currentRound += 1
-                currentPick = 1
-        while seconds > 0:
+        while True:
             offscreen_canvas.Clear()
             text_string = (
                 str(currentRound)
@@ -61,6 +55,12 @@ class RunText(SampleBase):
                 textColor,
                 str(seconds),
             )
+            if seconds == 0:
+                currentPick += 1
+                seconds = 10
+                if currentPick > len(leagueMembers):
+                    currentRound += 1
+                    currentPick = 1
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
