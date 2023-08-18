@@ -98,7 +98,7 @@ class RunText(SampleBase):
                     green,
                     "YOU'RE UP NEXT!",
                 )
-            elif seconds == 0:
+            elif seconds == -1:
                 blackHurryUpText = graphics.DrawText(
                     offscreen_canvas,
                     middleFont,
