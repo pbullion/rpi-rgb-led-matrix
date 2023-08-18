@@ -49,7 +49,7 @@ class RunText(SampleBase):
             "SNAKE",
             "ZANE",
         ]
-        seconds = 80
+        seconds = 15
         randomSayings = [
             "HURRY THE FUCK UP!",
             "YOU'RE A CHICKEN BITCH",
@@ -160,11 +160,12 @@ class RunText(SampleBase):
                     + leagueMembers[currentPick + 1],
                 )
             if seconds == 0:
-                currentPick += 1
-                seconds = 80
-                if currentPick > 12:
-                    currentRound += 1
-                    currentPick = 1
+                input("Press Enter to continue...")
+                # currentPick += 1
+                # seconds = 80
+                # if currentPick > 12:
+                #     currentRound += 1
+                #     currentPick = 1
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
