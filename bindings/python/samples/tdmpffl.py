@@ -115,12 +115,7 @@ class RunText(SampleBase):
                     red,
                     "TAKE A SHOT " + leagueMembers[currentPick - 1] + "!",
                 )
-                input("Press Enter to continue...")
-                currentPick += 1
-                seconds = 10
-                if currentPick > 12:
-                    currentRound += 1
-                    currentPick = 1
+
             elif seconds == 20 or seconds == 19:
                 blackHurryUpText = graphics.DrawText(
                     offscreen_canvas,
@@ -182,7 +177,13 @@ class RunText(SampleBase):
                     + " "
                     + leagueMembers[currentPick + 1],
                 )
-
+            if seconds == 0:
+                input("Press Enter to continue...")
+                currentPick += 1
+                seconds = 10
+                if currentPick > 12:
+                    currentRound += 1
+                    currentPick = 1
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
