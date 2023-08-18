@@ -49,7 +49,7 @@ class RunText(SampleBase):
             "SNAKE",
             "ZANE",
         ]
-        seconds = 15
+        seconds = 5
         randomSayings = [
             "HURRY THE FUCK UP!",
             "YOU'RE A CHICKEN BITCH",
