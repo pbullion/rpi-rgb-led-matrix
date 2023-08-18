@@ -3,6 +3,7 @@
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
+import keyboard
 
 
 class RunText(SampleBase):
@@ -16,6 +17,7 @@ class RunText(SampleBase):
         )
 
     def run(self):
+        event = keyboard.read_event()
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
         green = graphics.Color(0, 255, 0)
@@ -55,6 +57,12 @@ class RunText(SampleBase):
             "YOU'RE A CHICKEN BITCH",
         ]
         while True:
+            if event.event_type != "down":
+                currentPick += 1
+                seconds = 10
+                if currentPick > 12:
+                    currentRound += 1
+                    currentPick = 1
             offscreen_canvas.Clear()
             round_text = "Rd " + str(currentRound) + "." + str(currentPick)
             time.sleep(1)
