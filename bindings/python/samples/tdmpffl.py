@@ -49,7 +49,7 @@ class RunText(SampleBase):
             "SNAKE",
             "ZANE",
         ]
-        seconds = 15
+        seconds = 5
         randomSayings = [
             "HURRY THE FUCK UP!",
             "YOU'RE A CHICKEN BITCH",
@@ -115,7 +115,7 @@ class RunText(SampleBase):
                     red,
                     "HURRY THE FUCK UP " + leagueMembers[currentPick - 1] + "!",
                 )
-            elif seconds == 0:
+            elif seconds == -1:
                 blackHurryUpText = graphics.DrawText(
                     offscreen_canvas,
                     middleFont,
@@ -176,7 +176,7 @@ class RunText(SampleBase):
                     + " "
                     + leagueMembers[currentPick + 1],
                 )
-            if seconds == 0:
+            if seconds == -1:
                 input("Press Enter to continue...")
                 currentPick += 1
                 seconds = 10
