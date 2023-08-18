@@ -49,7 +49,7 @@ class RunText(SampleBase):
             "SNAKE",
             "ZANE",
         ]
-        seconds = 5
+        seconds = 15
         randomSayings = [
             "HURRY THE FUCK UP!",
             "YOU'RE A CHICKEN BITCH",
@@ -98,24 +98,6 @@ class RunText(SampleBase):
                     green,
                     "YOU'RE UP NEXT!",
                 )
-            elif seconds == -1:
-                blackHurryUpText = graphics.DrawText(
-                    offscreen_canvas,
-                    middleFont,
-                    -1000,
-                    18,
-                    red,
-                    "TAKE A SHOT " + leagueMembers[currentPick - 1] + "!",
-                )
-                hurryUpText = graphics.DrawText(
-                    offscreen_canvas,
-                    middleFont,
-                    ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
-                    18,
-                    red,
-                    "TAKE A SHOT " + leagueMembers[currentPick - 1] + "!",
-                )
-
             elif seconds == 20 or seconds == 19:
                 blackHurryUpText = graphics.DrawText(
                     offscreen_canvas,
@@ -132,6 +114,23 @@ class RunText(SampleBase):
                     18,
                     red,
                     "HURRY THE FUCK UP " + leagueMembers[currentPick - 1] + "!",
+                )
+            elif seconds == 0:
+                blackHurryUpText = graphics.DrawText(
+                    offscreen_canvas,
+                    middleFont,
+                    -1000,
+                    18,
+                    red,
+                    "TAKE A SHOT " + leagueMembers[currentPick - 1] + "!",
+                )
+                hurryUpText = graphics.DrawText(
+                    offscreen_canvas,
+                    middleFont,
+                    ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
+                    18,
+                    red,
+                    "TAKE A SHOT " + leagueMembers[currentPick - 1] + "!",
                 )
             else:
                 roundStr = graphics.DrawText(
