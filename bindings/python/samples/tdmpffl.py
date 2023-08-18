@@ -161,11 +161,11 @@ class RunText(SampleBase):
                 )
             if seconds == 0:
                 input("Press Enter to continue...")
-                # currentPick += 1
-                # seconds = 80
-                # if currentPick > 12:
-                #     currentRound += 1
-                #     currentPick = 1
+                currentPick += 1
+                seconds = 80
+                if currentPick > 12:
+                    currentRound += 1
+                    currentPick = 1
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
