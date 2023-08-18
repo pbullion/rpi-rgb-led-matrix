@@ -98,6 +98,29 @@ class RunText(SampleBase):
                     green,
                     "YOU'RE UP NEXT!",
                 )
+            elif seconds == 0:
+                blackHurryUpText = graphics.DrawText(
+                    offscreen_canvas,
+                    middleFont,
+                    -1000,
+                    18,
+                    red,
+                    "TAKE A SHOT " + leagueMembers[currentPick - 1] + "!",
+                )
+                hurryUpText = graphics.DrawText(
+                    offscreen_canvas,
+                    middleFont,
+                    ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
+                    18,
+                    red,
+                    "TAKE A SHOT " + leagueMembers[currentPick - 1] + "!",
+                )
+                input("Press Enter to continue...")
+                currentPick += 1
+                seconds = 10
+                if currentPick > 12:
+                    currentRound += 1
+                    currentPick = 1
             elif seconds == 20 or seconds == 19:
                 blackHurryUpText = graphics.DrawText(
                     offscreen_canvas,
@@ -159,29 +182,7 @@ class RunText(SampleBase):
                     + " "
                     + leagueMembers[currentPick + 1],
                 )
-            if seconds == 0:
-                blackHurryUpText = graphics.DrawText(
-                    offscreen_canvas,
-                    middleFont,
-                    -1000,
-                    18,
-                    red,
-                    "TAKE A SHOT " + leagueMembers[currentPick - 1] + "!",
-                )
-                hurryUpText = graphics.DrawText(
-                    offscreen_canvas,
-                    middleFont,
-                    ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
-                    18,
-                    red,
-                    "TAKE A SHOT " + leagueMembers[currentPick - 1] + "!",
-                )
-                input("Press Enter to continue...")
-                currentPick += 1
-                seconds = 10
-                if currentPick > 12:
-                    currentRound += 1
-                    currentPick = 1
+
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
