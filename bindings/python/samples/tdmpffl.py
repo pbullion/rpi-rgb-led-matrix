@@ -17,6 +17,8 @@ class RunText(SampleBase):
         )
 
     def run(self):
+        event = keyboard.read_event()
+        print(event)
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
         green = graphics.Color(0, 255, 0)
