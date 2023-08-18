@@ -115,7 +115,7 @@ class RunText(SampleBase):
                     red,
                     "HURRY THE FUCK UP " + leagueMembers[currentPick - 1] + "!",
                 )
-            elif seconds == -1:
+            elif seconds == 0:
                 blackHurryUpText = graphics.DrawText(
                     offscreen_canvas,
                     middleFont,
