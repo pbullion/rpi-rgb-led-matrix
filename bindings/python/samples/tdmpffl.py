@@ -3,7 +3,7 @@
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
-import keyboard
+from pynput import keyboard
 
 
 class RunText(SampleBase):
@@ -17,7 +17,14 @@ class RunText(SampleBase):
         )
 
     def run(self):
-        event = keyboard.read_event()
+        def on_press(key):
+            try:
+                print("alphanumeric key {0} pressed".format(key.char))
+            except AttributeError:
+                print("special key {0} pressed".format(key))
+
+        with keyboard.Listener(on_press=on_press) as listener:
+            listener.join()
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
         green = graphics.Color(0, 255, 0)
