@@ -3,7 +3,7 @@
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
-from keyboard_listener import KeyboardListener, Combo, KeyWord
+from pynput import mouse, keyboard
 
 
 class RunText(SampleBase):
@@ -17,23 +17,25 @@ class RunText(SampleBase):
         )
 
     def run(self):
-        combinations = {
-            "function 1": Combo(["alt"], "f", function_1),
-            # Function 1 is executed when the user presses Alt+F
-            "function 2": Combo(["ctr", "alt"], "g", function_2),
-            # Function 2 is executed when the user presses Alt+G
-            "function 3": Combo(["shift", "alt"], "H", function_2),
-            # Be mindful when setting up Combos that include 'shift'. If the Combo includes the shift key, the character must be uppercase.
-        }
+        def on_press(key):
+            try:
+                print("alphanumeric key {0} pressed".format(key.char))
+            except AttributeError:
+                print("special key {0} pressed".format(key))
 
-        def function_1(arguments):
-            print("hello")
+        def on_release(key):
+            print("{0} released".format(key))
+            if key == keyboard.Key.esc:
+                # Stop listener
+                return False
 
-        def function_2(arguments):
-            print("goodbye")
+        # Collect events until released
+        with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
+            listener.join()
 
-        keyboard_listener = KeyboardListener(combinations=combinations)
-        keyboard_listener.run()
+        # ...or, in a non-blocking fashion:
+        listener = keyboard.Listener(on_press=on_press, on_release=on_release)
+        listener.start()
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
         green = graphics.Color(0, 255, 0)
