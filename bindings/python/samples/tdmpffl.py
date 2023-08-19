@@ -3,7 +3,7 @@
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
-from pynput import mouse, keyboard
+from pynput import keyboard
 
 
 class RunText(SampleBase):
