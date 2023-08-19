@@ -132,12 +132,6 @@ class RunText(SampleBase):
                     red,
                     "TAKE A SHOT " + leagueMembers[currentPick - 1] + "!",
                 )
-            elif KeyboardInterrupt:
-                currentPick += 1
-                seconds = 10
-                if currentPick > 12:
-                    currentRound += 1
-                    currentPick = 1
             else:
                 roundStr = graphics.DrawText(
                     offscreen_canvas, font, 1, 26, blue, round_text
@@ -182,6 +176,12 @@ class RunText(SampleBase):
                     + " "
                     + leagueMembers[currentPick + 1],
                 )
+            if KeyboardInterrupt:
+                currentPick += 1
+                seconds = 10
+                if currentPick > 12:
+                    currentRound += 1
+                    currentPick = 1
             if seconds == -1:
                 input("Press Enter to continue...")
                 currentPick += 1
