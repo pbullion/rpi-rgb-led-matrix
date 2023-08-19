@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # Display a runtext with double-buffering.
+os.environ["DISPLAY"] = ":0.0"
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
