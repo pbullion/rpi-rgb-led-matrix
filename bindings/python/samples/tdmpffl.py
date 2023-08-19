@@ -3,6 +3,7 @@
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
+from turtle import *
 
 
 class RunText(SampleBase):
@@ -55,6 +56,12 @@ class RunText(SampleBase):
             "YOU'RE A CHICKEN BITCH",
         ]
         while True:
+
+            def keypress():
+                print("it was pressed")
+
+            screen.onkey(f, "Up")
+            screen.listen()
             offscreen_canvas.Clear()
             round_text = "Rd " + str(currentRound) + "." + str(currentPick)
             time.sleep(1)
@@ -176,12 +183,7 @@ class RunText(SampleBase):
                     + " "
                     + leagueMembers[currentPick + 1],
                 )
-            if KeyboardInterrupt:
-                currentPick += 1
-                seconds = 10
-                if currentPick > 12:
-                    currentRound += 1
-                    currentPick = 1
+
             if seconds == -1:
                 input("Press Enter to continue...")
                 currentPick += 1
