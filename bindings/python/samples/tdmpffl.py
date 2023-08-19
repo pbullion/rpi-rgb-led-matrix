@@ -17,28 +17,22 @@ class RunText(SampleBase):
         )
 
     def run(self):
+        combinations = {
+            "function 1": Combo(["alt"], "f", function_1),
+            # Function 1 is executed when the user presses Alt+F
+            "function 2": Combo(["ctr", "alt"], "g", function_2),
+            # Function 2 is executed when the user presses Alt+G
+            "function 3": Combo(["shift", "alt"], "H", function_2),
+            # Be mindful when setting up Combos that include 'shift'. If the Combo includes the shift key, the character must be uppercase.
+        }
+
         def function_1(arguments):
             print("hello")
 
         def function_2(arguments):
             print("goodbye")
 
-        combinations = {
-            "function 1": Combo(["alt"], "f", function_1, arguments),
-            # Function 1 is executed when the user presses Alt+F
-            "function 2": Combo(["ctr", "alt"], "g", function_2, arguments),
-            # Function 2 is executed when the user presses Alt+G
-            "function 3": Combo(["shift", "alt"], "H", function_2, arguments),
-            # Be mindful when setting up Combos that include 'shift'. If the Combo includes the shift key, the character must be uppercase.
-        }
-
-        keywords = {
-            "keyword_1": KeyWord("keyword1", function_1, arguments),
-            "keyword_2": KeyWord("keyword1", function_2, arguments),
-        }
-        keyboard_listener = KeyboardListener(
-            combinations=combinations, keywords=keywords
-        )
+        keyboard_listener = KeyboardListener(combinations=combinations)
         keyboard_listener.run()
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
