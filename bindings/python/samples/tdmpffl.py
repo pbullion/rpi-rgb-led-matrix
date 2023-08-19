@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 # Display a runtext with double-buffering.
-os.environ["DISPLAY"] = ":0.0"
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
-from pynput import keyboard
 
 
 class RunText(SampleBase):
@@ -18,25 +16,6 @@ class RunText(SampleBase):
         )
 
     def run(self):
-        def on_press(key):
-            try:
-                print("alphanumeric key {0} pressed".format(key.char))
-            except AttributeError:
-                print("special key {0} pressed".format(key))
-
-        def on_release(key):
-            print("{0} released".format(key))
-            if key == keyboard.Key.esc:
-                # Stop listener
-                return False
-
-        # Collect events until released
-        with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
-            listener.join()
-
-        # ...or, in a non-blocking fashion:
-        listener = keyboard.Listener(on_press=on_press, on_release=on_release)
-        listener.start()
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
         green = graphics.Color(0, 255, 0)
@@ -159,6 +138,12 @@ class RunText(SampleBase):
                     red,
                     "TAKE A SHOT " + leagueMembers[currentPick - 1] + "!",
                 )
+            elif KeyboardInterrupt:
+                currentPick += 1
+                seconds = 10
+                if currentPick > 12:
+                    currentRound += 1
+                    currentPick = 1
             else:
                 roundStr = graphics.DrawText(
                     offscreen_canvas, font, 1, 26, blue, round_text
