@@ -3,7 +3,7 @@
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
-from turtle import *
+import keyboard
 
 
 class RunText(SampleBase):
@@ -56,12 +56,8 @@ class RunText(SampleBase):
             "YOU'RE A CHICKEN BITCH",
         ]
         while True:
-
-            def keypress():
-                print("it was pressed")
-
-            screen.onkey(f, "Up")
-            screen.listen()
+            if keyboard.read_key() == "space":
+                print("You pressed space")
             offscreen_canvas.Clear()
             round_text = "Rd " + str(currentRound) + "." + str(currentPick)
             time.sleep(1)
