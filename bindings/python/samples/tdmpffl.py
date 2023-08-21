@@ -55,6 +55,12 @@ class RunText(SampleBase):
             "YOU'RE A CHICKEN BITCH",
         ]
         while True:
+            if input("Press Enter to continue...") == "":
+                currentPick += 1
+                seconds = 10
+                if currentPick > 12:
+                    currentRound += 1
+                    currentPick = 1
             offscreen_canvas.Clear()
             round_text = "Rd " + str(currentRound) + "." + str(currentPick)
             time.sleep(1)
@@ -176,12 +182,6 @@ class RunText(SampleBase):
                     + " "
                     + leagueMembers[currentPick + 1],
                 )
-            if input("something?") == "something":
-                currentPick += 1
-                seconds = 10
-                if currentPick > 12:
-                    currentRound += 1
-                    currentPick = 1
             if seconds == -1:
                 input("Press Enter to continue...")
                 currentPick += 1
