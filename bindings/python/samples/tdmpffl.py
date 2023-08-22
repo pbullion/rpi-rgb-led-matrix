@@ -78,6 +78,7 @@ class RunText(SampleBase):
             while True:
                 screen.clear()
                 offscreen_canvas.Clear()
+                screen.addstr(0, 0, str(currentPickIndex))
                 if currentRound % 2 == 0:
                     if currentPickIndex > 1:
                         currentPicksName = leagueMembers[currentPickIndex]
@@ -91,7 +92,6 @@ class RunText(SampleBase):
                         currentPicksName = leagueMembers[currentPickIndex]
                         nextUpPicksName = leagueMembers[currentPickIndex]
                         inHolesPicksName = leagueMembers[currentPickIndex - 1]
-                screen.addstr(0, 0, str(currentPickIndex))
                 if currentRound % 2 != 0:
                     if currentPickIndex < 10:
                         currentPicksName = leagueMembers[currentPickIndex]
