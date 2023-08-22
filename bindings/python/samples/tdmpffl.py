@@ -35,8 +35,8 @@ class RunText(SampleBase):
         my_text = self.args.text
         smallFont = graphics.Font()
         smallFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x13.bdf")
-        currentRound = input("Current Round: ")
-        currentPick = input("Current Pick: ")
+        currentRound = int(input("Current Round: "))
+        currentPick = int(input("Current Pick: "))
         leagueMembers = [
             "TEDDIE",
             "CALEB",
