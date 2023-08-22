@@ -121,14 +121,12 @@ class RunText(SampleBase):
                 screen.addstr(
                     6, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
                 )
-                testing = True
-                while testing:
+                while seconds > 0:
                     offscreen_canvas.Clear()
                     char = screen.getch()
                     if char == ord("q"):
                         break
                     elif char == ord("d"):
-                        testing = False
                         screen.clear()
                         screen.addstr(0, 0, "going to the next pick")
                         seconds = 100
@@ -146,8 +144,8 @@ class RunText(SampleBase):
                         if currentRound % 2 != 0:
                             currentPickIndex += 1
                             currentPick += 1
-                    screen.addstr(12, 0, "Seconds: ")
                     screen.addstr(10, 0, "Seconds: {}".format(seconds))
+                    screen.addstr(12, 0, "Seconds: ")
                     curses.napms(1000)
                     round_text = "Rd " + str(currentRound) + "." + str(currentPick)
                     seconds -= 1
