@@ -146,6 +146,7 @@ class RunText(SampleBase):
                         if currentRound % 2 != 0:
                             currentPickIndex += 1
                             currentPick += 1
+                    screen.addstr(1, 0, "Seconds: {}".format(str(seconds)))
                     curses.napms(1000)
                     round_text = "Rd " + str(currentRound) + "." + str(currentPick)
                     seconds -= 1
