@@ -81,13 +81,13 @@ class RunText(SampleBase):
         screen.keypad(True)
         try:
             while True:
-                screen.clear()
                 offscreen_canvas.Clear()
                 char = screen.getch()
                 if char == ord("q"):
                     break
                 else:
-                    screen.addstr(0, 0, "Current Person: going to the next pick")
+                    screen.clear()
+                    screen.addstr(0, 0, "going to the next pick")
                     seconds = 1000
                     if currentPick == 1 and currentRound % 2 == 0:
                         currentRound += 1
