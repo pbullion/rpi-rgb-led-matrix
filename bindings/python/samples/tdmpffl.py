@@ -76,7 +76,6 @@ class RunText(SampleBase):
         screen.keypad(True)
         try:
             while True:
-                screen.clear()
                 offscreen_canvas.Clear()
                 screen.addstr(0, 0, str(currentPickIndex))
                 screen.addstr(10, 0, str(currentRound))
