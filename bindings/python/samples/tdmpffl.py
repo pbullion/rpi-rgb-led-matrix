@@ -3,7 +3,8 @@
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
-from sshkeyboard import listen_keyboard
+from sshkeyboard import listen_keyboard, listen_keyboard_manual
+import asyncio
 
 
 class RunText(SampleBase):
@@ -57,9 +58,16 @@ class RunText(SampleBase):
         def press(key):
             print(f"'{key}' pressed")
 
-        listen_keyboard(
-            on_press=press,
-        )
+        def start_keyboard_listening():
+            asyncio.run_coroutine_threadsafe(
+                listen_keyboard_manual(
+                    on_press=press,
+                ),
+                asyncio.get_event_loop(),
+            )
+
+        start_keyboard_listening()
+
         while True:
             if currentRound % 2 == 0:
                 if currentPickIndex > 1:
