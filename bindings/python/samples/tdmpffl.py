@@ -76,6 +76,7 @@ class RunText(SampleBase):
         try:
             while True:
                 screen.clear()
+                offscreen_canvas.Clear()
                 if currentRound % 2 == 0:
                     if currentPickIndex > 1:
                         currentPicksName = leagueMembers[currentPickIndex]
@@ -116,10 +117,7 @@ class RunText(SampleBase):
                 screen.addstr(
                     6, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
                 )
-                screen.refresh()
                 time.sleep(1)
-                offscreen_canvas.Clear()
-
                 screen.addstr(10, 0, "Seconds: {}".format(seconds))
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
                 seconds -= 1
