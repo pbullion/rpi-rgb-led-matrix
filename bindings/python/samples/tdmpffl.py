@@ -104,21 +104,23 @@ class RunText(SampleBase):
                         currentPicksName = leagueMembers[currentPickIndex]
                         nextUpPicksName = leagueMembers[currentPickIndex]
                         inHolesPicksName = leagueMembers[currentPickIndex - 1]
-                screen.addstr(1, 0, "Current Round: {}".format(str(currentRound)))
-                screen.addstr(2, 0, "Current Pick: {}".format(str(currentPick)))
-                screen.addstr(
-                    3, 0, "Current Pick Index: {}".format(str(currentPickIndex))
-                )
-                screen.addstr(
-                    4, 0, "Current Picks Name: {}".format(str(currentPicksName))
-                )
-                screen.addstr(
-                    5, 0, "Next Up Picks Name: {}".format(str(nextUpPicksName))
-                )
-                screen.addstr(
-                    6, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
-                )
-                screen.addstr(10, 0, "Seconds: {}".format(seconds))
+                        nextRound = currentRound + 1
+                        onDeckPickNum = 1
+                        inHolePickNum = 2
+                        inHoleString = (
+                            str(nextRound)
+                            + +"."
+                            + str(inHolePickNum)
+                            + " "
+                            + inHolesPicksName
+                        )
+                        onDeckString = (
+                            str(nextRound)
+                            + +"."
+                            + str(onDeckPickNum)
+                            + " "
+                            + onDeckPicksName
+                        )
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
                 if seconds > 0:
                     curses.napms(1000)
@@ -222,11 +224,7 @@ class RunText(SampleBase):
                         offscreen_canvas.width - 65,
                         14,
                         yellow,
-                        str(currentRound)
-                        + "."
-                        + str(currentPick + 1)
-                        + " "
-                        + nextUpPicksName,
+                        onDeckString,
                     )
                     inHole = graphics.DrawText(
                         offscreen_canvas,
@@ -234,11 +232,7 @@ class RunText(SampleBase):
                         offscreen_canvas.width - 65,
                         28,
                         yellow,
-                        str(currentRound)
-                        + "."
-                        + str(currentPick + 2)
-                        + " "
-                        + inHolesPicksName,
+                        inHoleString,
                     )
 
                 char = screen.getch()
