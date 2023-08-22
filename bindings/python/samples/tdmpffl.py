@@ -3,13 +3,22 @@
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
-from sshkeyboard import listen_keyboard
-import nest_asyncio
+import curses
+
+# get the curses screen window
+screen = curses.initscr()
+
+# turn off input echoing
+curses.noecho()
+
+# respond to keys immediately (don't wait for enter)
+curses.cbreak()
+
+# map arrow keys to special values
+screen.keypad(True)
 
 
 class RunText(SampleBase):
-    nest_asyncio.apply()
-
     def __init__(self, *args, **kwargs):
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument(
@@ -56,15 +65,20 @@ class RunText(SampleBase):
             "HURRY THE FUCK UP!",
             "YOU'RE A CHICKEN BITCH",
         ]
-
-        def press(key):
-            print(f"'{key}' pressed")
-
-        listen_keyboard(
-            on_press=press,
-        )
-
         while True:
+            char = screen.getch()
+            if char == ord("q"):
+                break
+            elif char == curses.KEY_RIGHT:
+                # print doesn't work with curses, use addstr instead
+                screen.addstr(0, 0, "right")
+            elif char == curses.KEY_LEFT:
+                screen.addstr(0, 0, "left ")
+            elif char == curses.KEY_UP:
+                screen.addstr(0, 0, "up   ")
+            elif char == curses.KEY_DOWN:
+                print("down")
+                screen.addstr(0, 0, "down ")
             if currentRound % 2 == 0:
                 if currentPickIndex > 1:
                     currentPicksName = leagueMembers[currentPickIndex]
