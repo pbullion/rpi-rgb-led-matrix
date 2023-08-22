@@ -118,9 +118,10 @@ class RunText(SampleBase):
                 screen.addstr(
                     6, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
                 )
-                curses.napms(1000)
                 screen.addstr(10, 0, "Seconds: {}".format(seconds))
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
+                if seconds > 0:
+                    curses.napms(1000)
                 seconds -= 1
                 timeColor = green
                 if seconds < 60:
@@ -178,23 +179,6 @@ class RunText(SampleBase):
                         red,
                         "HURRY THE FUCK UP " + currentPicksName + "!",
                     )
-                elif seconds == 0:
-                    blackHurryUpText = graphics.DrawText(
-                        offscreen_canvas,
-                        middleFont,
-                        -1000,
-                        18,
-                        red,
-                        "TAKE A SHOT " + currentPicksName + "!",
-                    )
-                    hurryUpText = graphics.DrawText(
-                        offscreen_canvas,
-                        middleFont,
-                        ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
-                        18,
-                        red,
-                        "TAKE A SHOT " + currentPicksName + "!",
-                    )
                 else:
                     roundStr = graphics.DrawText(
                         offscreen_canvas, font, 1, 26, blue, round_text
@@ -238,6 +222,23 @@ class RunText(SampleBase):
                         + str(currentPick + 2)
                         + " "
                         + inHolesPicksName,
+                    )
+                if seconds == 0:
+                    blackHurryUpText = graphics.DrawText(
+                        offscreen_canvas,
+                        middleFont,
+                        -1000,
+                        18,
+                        red,
+                        "TAKE A SHOT " + currentPicksName + "!",
+                    )
+                    hurryUpText = graphics.DrawText(
+                        offscreen_canvas,
+                        middleFont,
+                        ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
+                        18,
+                        red,
+                        "TAKE A SHOT " + currentPicksName + "!",
                     )
                 char = screen.getch()
                 if char == 10:
