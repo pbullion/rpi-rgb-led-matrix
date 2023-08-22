@@ -11,8 +11,6 @@ class RunText(SampleBase):
         self.parser.add_argument(
             "-t",
             "--text",
-            "--currentRound",
-            "--currentPick",
             help="The text to scroll on the RGB LED panel",
             default="Hello world!",
         )
@@ -30,9 +28,6 @@ class RunText(SampleBase):
         font.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/texgyre-27.bdf")
         middleFont = graphics.Font()
         middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
-        textColor = graphics.Color(255, 255, 0)
-        pos = offscreen_canvas.width
-        my_text = self.args.text
         smallFont = graphics.Font()
         smallFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x13.bdf")
         currentRound = int(input("Current Round: "))
@@ -51,18 +46,20 @@ class RunText(SampleBase):
             "SNAKE",
             "ZANE",
         ]
-        seconds = 5
+        seconds = 10
         randomSayings = [
             "HURRY THE FUCK UP!",
             "YOU'RE A CHICKEN BITCH",
         ]
         while True:
-            # if keyboard.is_pressed("S"):
-            #     currentPick += 1
-            #     seconds = 10
-            #     if currentPick > 12:
-            #         currentRound += 1
-            #         currentPick = 1
+            if currentRound % 2 == 0:
+                currentPicksName = leagueMembers[currentPick + 1]
+                nextUpPicksName = leagueMembers[currentPick]
+                inHolesPicksName = leagueMembers[currentPick - 1]
+            if currentRound % 2 != 0:
+                currentPicksName = leagueMembers[currentPick - 1]
+                nextUpPicksName = leagueMembers[currentPick]
+                inHolesPicksName = leagueMembers[currentPick + 1]
             offscreen_canvas.Clear()
             round_text = "Rd " + str(currentRound) + "." + str(currentPick)
             time.sleep(1)
@@ -79,7 +76,7 @@ class RunText(SampleBase):
                     -1000,
                     26,
                     green,
-                    leagueMembers[currentPick] + " GET YOUR FINGER OUT YO ASS",
+                    nextUpPicksName + " GET YOUR FINGER OUT YO ASS",
                 )
                 hurryUpText = graphics.DrawText(
                     offscreen_canvas,
@@ -87,7 +84,7 @@ class RunText(SampleBase):
                     ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
                     26,
                     green,
-                    leagueMembers[currentPick] + " GET YOUR FINGER OUT YO ASS",
+                    nextUpPicksName + " GET YOUR FINGER OUT YO ASS",
                 )
             elif seconds == 58 or seconds == 57:
                 blackHurryUpText = graphics.DrawText(
@@ -113,7 +110,7 @@ class RunText(SampleBase):
                     -1000,
                     18,
                     red,
-                    "HURRY THE FUCK UP " + leagueMembers[currentPick - 1] + "!",
+                    "HURRY THE FUCK UP " + currentPicksName + "!",
                 )
                 hurryUpText = graphics.DrawText(
                     offscreen_canvas,
@@ -121,7 +118,7 @@ class RunText(SampleBase):
                     ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
                     18,
                     red,
-                    "HURRY THE FUCK UP " + leagueMembers[currentPick - 1] + "!",
+                    "HURRY THE FUCK UP " + currentPicksName + "!",
                 )
             elif seconds == 0:
                 blackHurryUpText = graphics.DrawText(
@@ -130,7 +127,7 @@ class RunText(SampleBase):
                     -1000,
                     18,
                     red,
-                    "TAKE A SHOT " + leagueMembers[currentPick - 1] + "!",
+                    "TAKE A SHOT " + currentPicksName + "!",
                 )
                 hurryUpText = graphics.DrawText(
                     offscreen_canvas,
@@ -138,7 +135,7 @@ class RunText(SampleBase):
                     ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
                     18,
                     red,
-                    "TAKE A SHOT " + leagueMembers[currentPick - 1] + "!",
+                    "TAKE A SHOT " + currentPicksName + "!",
                 )
             else:
                 roundStr = graphics.DrawText(
@@ -150,7 +147,7 @@ class RunText(SampleBase):
                     roundStr + 10,
                     26,
                     green,
-                    leagueMembers[currentPick - 1],
+                    currentPicksName,
                 )
                 remainingTime = graphics.DrawText(
                     offscreen_canvas,
@@ -170,7 +167,7 @@ class RunText(SampleBase):
                     + "."
                     + str(currentPick + 1)
                     + " "
-                    + leagueMembers[currentPick],
+                    + nextUpPicksName,
                 )
                 inHole = graphics.DrawText(
                     offscreen_canvas,
@@ -182,14 +179,15 @@ class RunText(SampleBase):
                     + "."
                     + str(currentPick + 2)
                     + " "
-                    + leagueMembers[currentPick + 1],
+                    + inHolesPicksName,
                 )
             if seconds == -1:
                 input("Press Enter to continue...")
-                currentPick += 1
                 seconds = 10
-                if currentPick > 12:
-                    currentRound += 1
+                currentRound += 1
+                if currentRound % 2 == 0:
+                    currentPick = 12
+                if currentRound % 2 != 0:
                     currentPick = 1
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
