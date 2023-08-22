@@ -142,18 +142,19 @@ class RunText(SampleBase):
                 screen.addstr(
                     6, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
                 )
-                for i in range(0, 100):
+                for i in range(100, 0):
                     print(i)
+                    print(seconds)
                     offscreen_canvas.Clear()
                     time.sleep(1)
                     round_text = "Rd " + str(currentRound) + "." + str(currentPick)
                     seconds -= 1
                     timeColor = green
-                    if i < 60:
+                    if seconds < 60:
                         timeColor = yellow
-                    if i < 20:
+                    if seconds < 20:
                         timeColor = red
-                    if i == 60 or i == 59:
+                    if seconds == 60 or seconds == 59:
                         blackHurryUpText = graphics.DrawText(
                             offscreen_canvas,
                             middleFont,
@@ -170,7 +171,7 @@ class RunText(SampleBase):
                             green,
                             nextUpPicksName + " GET YOUR FINGER OUT YO ASS",
                         )
-                    elif i == 58 or i == 57:
+                    elif seconds == 58 or seconds == 57:
                         blackHurryUpText = graphics.DrawText(
                             offscreen_canvas,
                             font,
@@ -187,7 +188,7 @@ class RunText(SampleBase):
                             green,
                             "YOU'RE UP NEXT!",
                         )
-                    elif i == 20 or i == 19:
+                    elif seconds == 20 or seconds == 19:
                         blackHurryUpText = graphics.DrawText(
                             offscreen_canvas,
                             middleFont,
@@ -204,7 +205,7 @@ class RunText(SampleBase):
                             red,
                             "HURRY THE FUCK UP " + currentPicksName + "!",
                         )
-                    elif i == 0:
+                    elif seconds == 0:
                         blackHurryUpText = graphics.DrawText(
                             offscreen_canvas,
                             middleFont,
@@ -265,7 +266,7 @@ class RunText(SampleBase):
                             + " "
                             + inHolesPicksName,
                         )
-                    if i == -1:
+                    if seconds == -1:
                         curses.nocbreak()
                         screen.keypad(0)
                         curses.echo()
