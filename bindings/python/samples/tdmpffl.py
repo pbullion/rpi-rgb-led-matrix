@@ -88,6 +88,23 @@ class RunText(SampleBase):
                 elif char == curses.KEY_RIGHT:
                     # print doesn't work with curses, use addstr instead
                     screen.addstr(0, 0, "right")
+                    if char == curses.KEY_RIGHT:
+                        print("going to the next pick")
+                        seconds = 10
+                        if currentPick == 1 and currentRound % 2 == 0:
+                            currentRound += 1
+                            currentPickIndex = 11
+                            currentPick = 12
+                        if currentPick == 12 and currentRound % 2 != 0:
+                            currentRound += 1
+                            currentPickIndex = 0
+                            currentPick = 1
+                        if currentRound % 2 == 0:
+                            currentPickIndex -= 1
+                            currentPick += 1
+                        if currentRound % 2 != 0:
+                            currentPickIndex += 1
+                            currentPick += 1
                 elif char == curses.KEY_LEFT:
                     screen.addstr(0, 0, "left ")
                 elif char == curses.KEY_UP:
