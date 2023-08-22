@@ -143,7 +143,7 @@ class RunText(SampleBase):
                 screen.addstr(
                     6, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
                 )
-                for i in range(0,100):
+                for i in range(0, 100):
                     time.sleep(1)
                     round_text = "Rd " + str(currentRound) + "." + str(currentPick)
                     seconds -= 1
@@ -265,19 +265,34 @@ class RunText(SampleBase):
                             + inHolesPicksName,
                         )
                     if i == -1:
-                    curses.nocbreak()
-                    screen.keypad(0)
-                    curses.echo()
-                    curses.endwin()
-                    input("Press any key to continue...")
-                    char = screen.getch()
-                    if char == ord("q"):
                         curses.nocbreak()
                         screen.keypad(0)
                         curses.echo()
                         curses.endwin()
-                    if char == curses.KEY_RIGHT:
-                        print("going to the next pick")
+                        input("Press any key to continue...")
+                        char = screen.getch()
+                        if char == ord("q"):
+                            curses.nocbreak()
+                            screen.keypad(0)
+                            curses.echo()
+                            curses.endwin()
+                        if char == curses.KEY_RIGHT:
+                            print("going to the next pick")
+                            seconds = 1000
+                            if currentPick == 1 and currentRound % 2 == 0:
+                                currentRound += 1
+                                currentPickIndex = 11
+                                currentPick = 12
+                            if currentPick == 12 and currentRound % 2 != 0:
+                                currentRound += 1
+                                currentPickIndex = 0
+                                currentPick = 1
+                            if currentRound % 2 == 0:
+                                currentPickIndex -= 1
+                                currentPick += 1
+                            if currentRound % 2 != 0:
+                                currentPickIndex += 1
+                                currentPick += 1
                         seconds = 1000
                         if currentPick == 1 and currentRound % 2 == 0:
                             currentRound += 1
@@ -293,21 +308,6 @@ class RunText(SampleBase):
                         if currentRound % 2 != 0:
                             currentPickIndex += 1
                             currentPick += 1
-                    seconds = 1000
-                    if currentPick == 1 and currentRound % 2 == 0:
-                        currentRound += 1
-                        currentPickIndex = 11
-                        currentPick = 12
-                    if currentPick == 12 and currentRound % 2 != 0:
-                        currentRound += 1
-                        currentPickIndex = 0
-                        currentPick = 1
-                    if currentRound % 2 == 0:
-                        currentPickIndex -= 1
-                        currentPick += 1
-                    if currentRound % 2 != 0:
-                        currentPickIndex += 1
-                        currentPick += 1
                 offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
         finally:
             # shut down cleanly
