@@ -143,127 +143,128 @@ class RunText(SampleBase):
                 screen.addstr(
                     6, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
                 )
-                round_text = "Rd " + str(currentRound) + "." + str(currentPick)
-                curses.napms(1000)
-                seconds -= 1
-                timeColor = green
-                if seconds < 60:
-                    timeColor = yellow
-                if seconds < 20:
-                    timeColor = red
-                if seconds == 60 or seconds == 59:
-                    blackHurryUpText = graphics.DrawText(
-                        offscreen_canvas,
-                        middleFont,
-                        -1000,
-                        26,
-                        green,
-                        nextUpPicksName + " GET YOUR FINGER OUT YO ASS",
-                    )
-                    hurryUpText = graphics.DrawText(
-                        offscreen_canvas,
-                        middleFont,
-                        ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
-                        26,
-                        green,
-                        nextUpPicksName + " GET YOUR FINGER OUT YO ASS",
-                    )
-                elif seconds == 58 or seconds == 57:
-                    blackHurryUpText = graphics.DrawText(
-                        offscreen_canvas,
-                        font,
-                        -1000,
-                        26,
-                        green,
-                        "YOU'RE UP NEXT!",
-                    )
-                    hurryUpText = graphics.DrawText(
-                        offscreen_canvas,
-                        font,
-                        ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
-                        26,
-                        green,
-                        "YOU'RE UP NEXT!",
-                    )
-                elif seconds == 20 or seconds == 19:
-                    blackHurryUpText = graphics.DrawText(
-                        offscreen_canvas,
-                        middleFont,
-                        -1000,
-                        18,
-                        red,
-                        "HURRY THE FUCK UP " + currentPicksName + "!",
-                    )
-                    hurryUpText = graphics.DrawText(
-                        offscreen_canvas,
-                        middleFont,
-                        ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
-                        18,
-                        red,
-                        "HURRY THE FUCK UP " + currentPicksName + "!",
-                    )
-                elif seconds == 0:
-                    blackHurryUpText = graphics.DrawText(
-                        offscreen_canvas,
-                        middleFont,
-                        -1000,
-                        18,
-                        red,
-                        "TAKE A SHOT " + currentPicksName + "!",
-                    )
-                    hurryUpText = graphics.DrawText(
-                        offscreen_canvas,
-                        middleFont,
-                        ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
-                        18,
-                        red,
-                        "TAKE A SHOT " + currentPicksName + "!",
-                    )
-                else:
-                    roundStr = graphics.DrawText(
-                        offscreen_canvas, font, 1, 26, blue, round_text
-                    )
-                    nameStr = graphics.DrawText(
-                        offscreen_canvas,
-                        font,
-                        roundStr + 10,
-                        26,
-                        green,
-                        currentPicksName,
-                    )
-                    remainingTime = graphics.DrawText(
-                        offscreen_canvas,
-                        font,
-                        roundStr + nameStr + 25,
-                        26,
-                        timeColor,
-                        str(seconds),
-                    )
-                    onDeck = graphics.DrawText(
-                        offscreen_canvas,
-                        smallFont,
-                        offscreen_canvas.width - 65,
-                        14,
-                        yellow,
-                        str(currentRound)
-                        + "."
-                        + str(currentPick + 1)
-                        + " "
-                        + nextUpPicksName,
-                    )
-                    inHole = graphics.DrawText(
-                        offscreen_canvas,
-                        smallFont,
-                        offscreen_canvas.width - 65,
-                        28,
-                        yellow,
-                        str(currentRound)
-                        + "."
-                        + str(currentPick + 2)
-                        + " "
-                        + inHolesPicksName,
-                    )
-                if seconds == -1:
+                for i in range(0,100):
+                    time.sleep(1)
+                    round_text = "Rd " + str(currentRound) + "." + str(currentPick)
+                    seconds -= 1
+                    timeColor = green
+                    if i < 60:
+                        timeColor = yellow
+                    if i < 20:
+                        timeColor = red
+                    if i == 60 or i == 59:
+                        blackHurryUpText = graphics.DrawText(
+                            offscreen_canvas,
+                            middleFont,
+                            -1000,
+                            26,
+                            green,
+                            nextUpPicksName + " GET YOUR FINGER OUT YO ASS",
+                        )
+                        hurryUpText = graphics.DrawText(
+                            offscreen_canvas,
+                            middleFont,
+                            ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
+                            26,
+                            green,
+                            nextUpPicksName + " GET YOUR FINGER OUT YO ASS",
+                        )
+                    elif i == 58 or i == 57:
+                        blackHurryUpText = graphics.DrawText(
+                            offscreen_canvas,
+                            font,
+                            -1000,
+                            26,
+                            green,
+                            "YOU'RE UP NEXT!",
+                        )
+                        hurryUpText = graphics.DrawText(
+                            offscreen_canvas,
+                            font,
+                            ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
+                            26,
+                            green,
+                            "YOU'RE UP NEXT!",
+                        )
+                    elif i == 20 or i == 19:
+                        blackHurryUpText = graphics.DrawText(
+                            offscreen_canvas,
+                            middleFont,
+                            -1000,
+                            18,
+                            red,
+                            "HURRY THE FUCK UP " + currentPicksName + "!",
+                        )
+                        hurryUpText = graphics.DrawText(
+                            offscreen_canvas,
+                            middleFont,
+                            ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
+                            18,
+                            red,
+                            "HURRY THE FUCK UP " + currentPicksName + "!",
+                        )
+                    elif i == 0:
+                        blackHurryUpText = graphics.DrawText(
+                            offscreen_canvas,
+                            middleFont,
+                            -1000,
+                            18,
+                            red,
+                            "TAKE A SHOT " + currentPicksName + "!",
+                        )
+                        hurryUpText = graphics.DrawText(
+                            offscreen_canvas,
+                            middleFont,
+                            ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
+                            18,
+                            red,
+                            "TAKE A SHOT " + currentPicksName + "!",
+                        )
+                    else:
+                        roundStr = graphics.DrawText(
+                            offscreen_canvas, font, 1, 26, blue, round_text
+                        )
+                        nameStr = graphics.DrawText(
+                            offscreen_canvas,
+                            font,
+                            roundStr + 10,
+                            26,
+                            green,
+                            currentPicksName,
+                        )
+                        remainingTime = graphics.DrawText(
+                            offscreen_canvas,
+                            font,
+                            roundStr + nameStr + 25,
+                            26,
+                            timeColor,
+                            str(i),
+                        )
+                        onDeck = graphics.DrawText(
+                            offscreen_canvas,
+                            smallFont,
+                            offscreen_canvas.width - 65,
+                            14,
+                            yellow,
+                            str(currentRound)
+                            + "."
+                            + str(currentPick + 1)
+                            + " "
+                            + nextUpPicksName,
+                        )
+                        inHole = graphics.DrawText(
+                            offscreen_canvas,
+                            smallFont,
+                            offscreen_canvas.width - 65,
+                            28,
+                            yellow,
+                            str(currentRound)
+                            + "."
+                            + str(currentPick + 2)
+                            + " "
+                            + inHolesPicksName,
+                        )
+                    if i == -1:
                     curses.nocbreak()
                     screen.keypad(0)
                     curses.echo()
