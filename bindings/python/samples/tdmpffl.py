@@ -44,12 +44,12 @@ class RunText(SampleBase):
         middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
         smallFont = graphics.Font()
         smallFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x13.bdf")
-        # currentRound = int(input("Current Round: "))
-        # currentPick = int(input("Current Pick: "))
-        # currentPickIndex = int(input("Current Pick Index: "))
-        currentRound = 1
-        currentPick = 1
-        currentPickIndex = 0
+        currentRound = int(input("Current Round: "))
+        currentPick = int(input("Current Pick: "))
+        currentPickIndex = int(input("Current Pick Index: "))
+        # currentRound = 1
+        # currentPick = 1
+        # currentPickIndex = 0
         leagueMembers = [
             "TEDDIE",
             "CALEB",
