@@ -119,9 +119,9 @@ class RunText(SampleBase):
                         currentPicksName = leagueMembers[currentPickIndex]
                         nextUpPicksName = leagueMembers[currentPickIndex]
                         inHolesPicksName = leagueMembers[currentPickIndex - 1]
-                print("Current Round:" + str(currentRound))
-                print("Current Pick:" + str(currentPick))
-                print("Current Pick Index:" + str(currentPickIndex))
+                # print("Current Round:" + str(currentRound))
+                # print("Current Pick:" + str(currentPick))
+                # print("Current Pick Index:" + str(currentPickIndex))
                 offscreen_canvas.Clear()
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
                 time.sleep(1)
