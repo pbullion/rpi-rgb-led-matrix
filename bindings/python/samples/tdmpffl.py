@@ -16,17 +16,6 @@ class RunText(SampleBase):
             default="Hello world!",
         )
 
-    def press(key):
-        print(f"'{key}' pressed")
-
-    def release(key):
-        print(f"'{key}' released")
-
-    listen_keyboard(
-        on_press=press,
-        on_release=release,
-    )
-
     def run(self):
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
@@ -65,6 +54,13 @@ class RunText(SampleBase):
             "YOU'RE A CHICKEN BITCH",
         ]
         while True:
+
+            def press(key):
+                print(f"'{key}' pressed")
+
+            listen_keyboard(
+                on_press=press,
+            )
             if currentRound % 2 == 0:
                 if currentPickIndex > 1:
                     currentPicksName = leagueMembers[currentPickIndex]
