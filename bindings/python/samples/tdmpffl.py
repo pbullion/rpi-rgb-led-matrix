@@ -71,8 +71,11 @@ class RunText(SampleBase):
         while True:
             char = screen.getch()
             print(char)
-
             if char == ord("q"):
+                curses.nocbreak()
+                screen.keypad(0)
+                curses.echo()
+                curses.endwin()
                 break
             if char == curses.KEY_RIGHT:
                 print("going to the next pick")
