@@ -109,14 +109,14 @@ class RunText(SampleBase):
                         inHolePickNum = 2
                         inHoleString = (
                             str(nextRound)
-                            + +"."
+                            + "."
                             + str(inHolePickNum)
                             + " "
                             + inHolesPicksName
                         )
                         onDeckString = (
                             str(nextRound)
-                            + +"."
+                            + "."
                             + str(onDeckPickNum)
                             + " "
                             + nextUpPicksName
