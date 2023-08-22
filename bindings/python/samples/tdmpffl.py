@@ -123,10 +123,11 @@ class RunText(SampleBase):
                 )
                 testing = True
                 while testing:
+                    offscreen_canvas.Clear()
                     char = screen.getch()
                     if char == ord("q"):
                         break
-                    else:
+                    elif char == ord("d"):
                         testing = False
                         screen.clear()
                         screen.addstr(0, 0, "going to the next pick")
@@ -145,7 +146,6 @@ class RunText(SampleBase):
                         if currentRound % 2 != 0:
                             currentPickIndex += 1
                             currentPick += 1
-                    offscreen_canvas.Clear()
                     curses.napms(1000)
                     round_text = "Rd " + str(currentRound) + "." + str(currentPick)
                     seconds -= 1
