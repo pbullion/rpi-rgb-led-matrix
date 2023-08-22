@@ -81,28 +81,6 @@ class RunText(SampleBase):
         screen.keypad(True)
         try:
             while True:
-                char = screen.getch()
-                if char == ord("q"):
-                    break
-                else:
-                    testing = False
-                    screen.clear()
-                    screen.addstr(0, 0, "going to the next pick")
-                    seconds = 100
-                    if currentPick == 1 and currentRound % 2 == 0:
-                        currentRound += 1
-                        currentPickIndex = 11
-                        currentPick = 12
-                    if currentPick == 12 and currentRound % 2 != 0:
-                        currentRound += 1
-                        currentPickIndex = 0
-                        currentPick = 1
-                    if currentRound % 2 == 0:
-                        currentPickIndex -= 1
-                        currentPick += 1
-                    if currentRound % 2 != 0:
-                        currentPickIndex += 1
-                        currentPick += 1
                 if currentRound % 2 == 0:
                     if currentPickIndex > 1:
                         currentPicksName = leagueMembers[currentPickIndex]
@@ -145,6 +123,28 @@ class RunText(SampleBase):
                 )
                 testing = True
                 while testing:
+                    char = screen.getch()
+                    if char == ord("q"):
+                        break
+                    else:
+                        testing = False
+                        screen.clear()
+                        screen.addstr(0, 0, "going to the next pick")
+                        seconds = 100
+                        if currentPick == 1 and currentRound % 2 == 0:
+                            currentRound += 1
+                            currentPickIndex = 11
+                            currentPick = 12
+                        if currentPick == 12 and currentRound % 2 != 0:
+                            currentRound += 1
+                            currentPickIndex = 0
+                            currentPick = 1
+                        if currentRound % 2 == 0:
+                            currentPickIndex -= 1
+                            currentPick += 1
+                        if currentRound % 2 != 0:
+                            currentPickIndex += 1
+                            currentPick += 1
                     offscreen_canvas.Clear()
                     curses.napms(1000)
                     round_text = "Rd " + str(currentRound) + "." + str(currentPick)
