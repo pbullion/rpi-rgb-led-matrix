@@ -3,8 +3,10 @@
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
-from sshkeyboard import listen_keyboard, listen_keyboard_manual
-import asyncio
+from sshkeyboard import listen_keyboard
+import nest_asyncio
+
+nest_asyncio.apply()
 
 
 class RunText(SampleBase):
@@ -58,16 +60,11 @@ class RunText(SampleBase):
         def press(key):
             print(f"'{key}' pressed")
 
-        def start_keyboard_listening():
-            asyncio.run_coroutine_threadsafe(
-                listen_keyboard_manual(
-                    on_press=press,
-                ),
-                asyncio.get_event_loop(),
-            )
+        listen_keyboard(
+            on_press=press,
+        )
 
         while True:
-            start_keyboard_listening()
             if currentRound % 2 == 0:
                 if currentPickIndex > 1:
                     currentPicksName = leagueMembers[currentPickIndex]
