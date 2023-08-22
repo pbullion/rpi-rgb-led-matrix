@@ -196,7 +196,7 @@ class RunText(SampleBase):
                         red,
                         "TAKE A SHOT " + currentPicksName + "!",
                     )
-                elif:
+                else:
                     roundStr = graphics.DrawText(
                         offscreen_canvas, font, 1, 26, blue, round_text
                     )
