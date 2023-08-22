@@ -101,7 +101,6 @@ class RunText(SampleBase):
                     if currentRound % 2 != 0:
                         currentPickIndex += 1
                         currentPick += 1
-                print("here1")
                 if currentRound % 2 == 0:
                     if currentPickIndex > 1:
                         currentPicksName = leagueMembers[currentPickIndex]
@@ -128,19 +127,19 @@ class RunText(SampleBase):
                         currentPicksName = leagueMembers[currentPickIndex]
                         nextUpPicksName = leagueMembers[currentPickIndex]
                         inHolesPicksName = leagueMembers[currentPickIndex - 1]
-                screen.addstr(0, 0, "Current Round: {}".format(str(currentRound)))
-                screen.addstr(0, 0, "Current Pick: {}".format(str(currentPick)))
+                screen.addstr(1, 0, "Current Round: {}".format(str(currentRound)))
+                screen.addstr(2, 0, "Current Pick: {}".format(str(currentPick)))
                 screen.addstr(
-                    0, 0, "Current Pick Index: {}".format(str(currentPickIndex))
+                    3, 0, "Current Pick Index: {}".format(str(currentPickIndex))
                 )
                 screen.addstr(
-                    0, 0, "Current Picks Name: {}".format(str(currentPicksName))
+                    4, 0, "Current Picks Name: {}".format(str(currentPicksName))
                 )
                 screen.addstr(
-                    0, 0, "Next Up Picks Name: {}".format(str(nextUpPicksName))
+                    5, 0, "Next Up Picks Name: {}".format(str(nextUpPicksName))
                 )
                 screen.addstr(
-                    0, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
+                    6, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
                 )
                 offscreen_canvas.Clear()
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
