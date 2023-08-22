@@ -18,7 +18,6 @@ class RunText(SampleBase):
         )
 
     def run(self):
-        print(self)
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
         green = graphics.Color(0, 255, 0)
@@ -36,8 +35,8 @@ class RunText(SampleBase):
         my_text = self.args.text
         smallFont = graphics.Font()
         smallFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x13.bdf")
-        currentRound = self.args.currentRound
-        currentPick = self.args.currentPick
+        currentRound = input("Current Round: ")
+        currentPick = input("Current Pick: ")
         leagueMembers = [
             "TEDDIE",
             "CALEB",
