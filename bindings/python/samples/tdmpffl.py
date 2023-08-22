@@ -123,6 +123,7 @@ class RunText(SampleBase):
                     6, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
                 )
                 time.sleep(1)
+                screen.refresh()
                 offscreen_canvas.Clear()
                 char = screen.getch()
                 if char == ord("q"):
