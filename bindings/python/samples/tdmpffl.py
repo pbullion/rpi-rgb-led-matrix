@@ -73,7 +73,7 @@ class RunText(SampleBase):
             print(char)
             if char == curses.KEY_RIGHT:
                 print("going to the next pick")
-                seconds = 10
+                seconds = 100
                 if currentPick == 1 and currentRound % 2 == 0:
                     currentRound += 1
                     currentPickIndex = 11
