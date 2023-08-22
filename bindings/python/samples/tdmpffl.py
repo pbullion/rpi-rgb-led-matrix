@@ -70,9 +70,11 @@ class RunText(SampleBase):
         ]
         while True:
             char = screen.getch()
+            print(char)
+
             if char == ord("q"):
                 break
-            elif char == curses.KEY_RIGHT:
+            if char == curses.KEY_RIGHT:
                 print("going to the next pick")
                 seconds = 10
                 if currentPick == 1 and currentRound % 2 == 0:
