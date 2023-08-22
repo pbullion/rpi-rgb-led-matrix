@@ -66,9 +66,8 @@ class RunText(SampleBase):
                 asyncio.get_event_loop(),
             )
 
-        start_keyboard_listening()
-
         while True:
+            start_keyboard_listening()
             if currentRound % 2 == 0:
                 if currentPickIndex > 1:
                     currentPicksName = leagueMembers[currentPickIndex]
