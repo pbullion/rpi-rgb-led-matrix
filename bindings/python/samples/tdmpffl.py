@@ -10,6 +10,7 @@ screen = curses.initscr()
 
 # turn off input echoing
 curses.noecho()
+curses.nodelay(True)
 
 # respond to keys immediately (don't wait for enter)
 curses.cbreak()
