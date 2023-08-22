@@ -142,7 +142,8 @@ class RunText(SampleBase):
                 screen.addstr(
                     6, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
                 )
-                for i in range(0, 100):
+                testing = True
+                while testing:
                     key = screen.getch()
                     if key == ord("d"):
                         screen.clear()
@@ -162,7 +163,7 @@ class RunText(SampleBase):
                         if currentRound % 2 != 0:
                             currentPickIndex += 1
                             currentPick += 1
-                        break
+                        testing = False
                     offscreen_canvas.Clear()
                     time.sleep(1)
                     round_text = "Rd " + str(currentRound) + "." + str(currentPick)
