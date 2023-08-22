@@ -63,7 +63,7 @@ class RunText(SampleBase):
             "SNAKE",
             "ZANE",
         ]
-        seconds = 1000
+        seconds = 100
         randomSayings = [
             "HURRY THE FUCK UP!",
             "YOU'RE A CHICKEN BITCH",
@@ -87,7 +87,7 @@ class RunText(SampleBase):
                 else:
                     screen.clear()
                     screen.addstr(0, 0, "going to the next pick")
-                    seconds = 1000
+                    seconds = 100
                     if currentPick == 1 and currentRound % 2 == 0:
                         currentRound += 1
                         currentPickIndex = 11
@@ -142,7 +142,7 @@ class RunText(SampleBase):
                 screen.addstr(
                     6, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
                 )
-                for i in range(100, 0):
+                for i in range(0, 100):
                     print(i)
                     print(seconds)
                     offscreen_canvas.Clear()
@@ -280,7 +280,7 @@ class RunText(SampleBase):
                             curses.endwin()
                         if char == curses.KEY_RIGHT:
                             print("going to the next pick")
-                            seconds = 1000
+                            seconds = 100
                             if currentPick == 1 and currentRound % 2 == 0:
                                 currentRound += 1
                                 currentPickIndex = 11
@@ -295,7 +295,7 @@ class RunText(SampleBase):
                             if currentRound % 2 != 0:
                                 currentPickIndex += 1
                                 currentPick += 1
-                        seconds = 1000
+                        seconds = 100
                         if currentPick == 1 and currentRound % 2 == 0:
                             currentRound += 1
                             currentPickIndex = 11
