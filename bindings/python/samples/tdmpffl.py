@@ -243,12 +243,12 @@ class RunText(SampleBase):
                     if currentPick == 1 and currentRound % 2 == 0:
                         screen.addstr(0, 0, "first")
                         currentRound += 1
-                        currentPickIndex = 11
+                        currentPickIndex = 0
                         currentPick = 12
                     elif currentPick == 12 and currentRound % 2 != 0:
                         screen.addstr(1, 0, "second")
                         currentRound += 1
-                        currentPickIndex = 0
+                        currentPickIndex = 11
                         currentPick = 1
                     elif currentRound % 2 != 0:
                         screen.addstr(3, 0, "fourth")
