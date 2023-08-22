@@ -53,14 +53,14 @@ class RunText(SampleBase):
             "HURRY THE FUCK UP!",
             "YOU'RE A CHICKEN BITCH",
         ]
+
+        def press(key):
+            print(f"'{key}' pressed")
+
+        listen_keyboard(
+            on_press=press,
+        )
         while True:
-
-            def press(key):
-                print(f"'{key}' pressed")
-
-            listen_keyboard(
-                on_press=press,
-            )
             if currentRound % 2 == 0:
                 if currentPickIndex > 1:
                     currentPicksName = leagueMembers[currentPickIndex]
