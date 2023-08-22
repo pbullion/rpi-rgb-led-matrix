@@ -291,7 +291,7 @@ class RunText(SampleBase):
                 screen.addstr(10, 0, "lksjdflkjsdlkfjsdkljfslkdf")
                 if char == 10:
                     seconds = 100
-                    if currentPick == 1 and currentRound % 2 == 0:
+                    if currentPick == 12 and currentRound % 2 == 0:
                         screen.addstr(0, 0, "first")
                         currentRound += 1
                         currentPickIndex = 0
