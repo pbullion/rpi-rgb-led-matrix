@@ -121,7 +121,9 @@ class RunText(SampleBase):
             time.sleep(1)
             seconds -= 1
             timeColor = green
+            print(seconds)
             while seconds > 0:
+                print(seconds)
                 if seconds < 60:
                     timeColor = yellow
                 if seconds < 20:
