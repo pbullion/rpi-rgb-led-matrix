@@ -117,7 +117,7 @@ class RunText(SampleBase):
                 screen.addstr(
                     6, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
                 )
-                time.sleep(1)
+                curses.napms(1000)
                 screen.addstr(10, 0, "Seconds: {}".format(seconds))
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
                 seconds -= 1
