@@ -119,7 +119,7 @@ class RunText(SampleBase):
                             + +"."
                             + str(onDeckPickNum)
                             + " "
-                            + onDeckPicksName
+                            + nextUpPicksName
                         )
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
                 if seconds > 0:
