@@ -122,7 +122,7 @@ class RunText(SampleBase):
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
                 if seconds > 0:
                     curses.napms(1000)
-                seconds -= 1
+                    seconds -= 1
                 timeColor = green
                 if seconds < 60:
                     timeColor = yellow
