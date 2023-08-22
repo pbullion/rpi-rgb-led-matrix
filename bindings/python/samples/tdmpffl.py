@@ -81,7 +81,6 @@ class RunText(SampleBase):
         screen.keypad(True)
         try:
             while True:
-                curses.napms(1000)
                 char = screen.getch()
                 if char == ord("q"):
                     break
@@ -102,6 +101,7 @@ class RunText(SampleBase):
                     if currentRound % 2 != 0:
                         currentPickIndex += 1
                         currentPick += 1
+                print("here1")
                 if currentRound % 2 == 0:
                     if currentPickIndex > 1:
                         currentPicksName = leagueMembers[currentPickIndex]
@@ -128,9 +128,9 @@ class RunText(SampleBase):
                         currentPicksName = leagueMembers[currentPickIndex]
                         nextUpPicksName = leagueMembers[currentPickIndex]
                         inHolesPicksName = leagueMembers[currentPickIndex - 1]
-                # print("Current Round:" + str(currentRound))
-                # print("Current Pick:" + str(currentPick))
-                # print("Current Pick Index:" + str(currentPickIndex))
+                print("Current Round:" + str(currentRound))
+                print("Current Pick:" + str(currentPick))
+                print("Current Pick Index:" + str(currentPickIndex))
                 offscreen_canvas.Clear()
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
                 seconds -= 1
