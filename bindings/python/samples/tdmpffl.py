@@ -179,7 +179,24 @@ class RunText(SampleBase):
                         red,
                         "HURRY THE FUCK UP " + currentPicksName + "!",
                     )
-                else:
+                elif seconds == 0:
+                    blackHurryUpText = graphics.DrawText(
+                        offscreen_canvas,
+                        middleFont,
+                        -1000,
+                        18,
+                        red,
+                        "TAKE A SHOT " + currentPicksName + "!",
+                    )
+                    hurryUpText = graphics.DrawText(
+                        offscreen_canvas,
+                        middleFont,
+                        ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
+                        18,
+                        red,
+                        "TAKE A SHOT " + currentPicksName + "!",
+                    )
+                elif:
                     roundStr = graphics.DrawText(
                         offscreen_canvas, font, 1, 26, blue, round_text
                     )
@@ -223,23 +240,7 @@ class RunText(SampleBase):
                         + " "
                         + inHolesPicksName,
                     )
-                if seconds == 0:
-                    blackHurryUpText = graphics.DrawText(
-                        offscreen_canvas,
-                        middleFont,
-                        -1000,
-                        18,
-                        red,
-                        "TAKE A SHOT " + currentPicksName + "!",
-                    )
-                    hurryUpText = graphics.DrawText(
-                        offscreen_canvas,
-                        middleFont,
-                        ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
-                        18,
-                        red,
-                        "TAKE A SHOT " + currentPicksName + "!",
-                    )
+
                 char = screen.getch()
                 if char == 10:
                     screen.addstr(0, 0, "going to the next pick")
