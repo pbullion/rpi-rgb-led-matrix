@@ -81,6 +81,7 @@ class RunText(SampleBase):
         screen.keypad(True)
         try:
             while True:
+                screen.clear()
                 offscreen_canvas.Clear()
                 char = screen.getch()
                 if char == ord("q"):
