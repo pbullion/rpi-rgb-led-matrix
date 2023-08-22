@@ -6,10 +6,10 @@ import time
 from sshkeyboard import listen_keyboard
 import nest_asyncio
 
-nest_asyncio.apply()
-
 
 class RunText(SampleBase):
+    nest_asyncio.apply()
+
     def __init__(self, *args, **kwargs):
         super(RunText, self).__init__(*args, **kwargs)
         self.parser.add_argument(
