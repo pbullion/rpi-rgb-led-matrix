@@ -85,6 +85,7 @@ class RunText(SampleBase):
                 if char == ord("q"):
                     break
                 else:
+                    testing = False
                     screen.clear()
                     screen.addstr(0, 0, "going to the next pick")
                     seconds = 100
