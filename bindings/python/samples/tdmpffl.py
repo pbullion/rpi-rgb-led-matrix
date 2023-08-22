@@ -133,7 +133,6 @@ class RunText(SampleBase):
                 print("Current Pick Index:" + str(currentPickIndex))
                 offscreen_canvas.Clear()
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
-                time.sleep(1)
                 seconds -= 1
                 timeColor = green
                 if seconds < 60:
@@ -296,6 +295,7 @@ class RunText(SampleBase):
                     if currentRound % 2 != 0:
                         currentPickIndex += 1
                         currentPick += 1
+                time.sleep(1)
                 offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
         finally:
             # shut down cleanly
