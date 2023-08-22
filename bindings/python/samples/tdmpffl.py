@@ -144,26 +144,6 @@ class RunText(SampleBase):
                 )
                 testing = True
                 while testing:
-                    key = screen.getch()
-                    if key == ord("d"):
-                        screen.clear()
-                        screen.addstr(0, 0, "going to the next pick")
-                        seconds = 100
-                        if currentPick == 1 and currentRound % 2 == 0:
-                            currentRound += 1
-                            currentPickIndex = 11
-                            currentPick = 12
-                        if currentPick == 12 and currentRound % 2 != 0:
-                            currentRound += 1
-                            currentPickIndex = 0
-                            currentPick = 1
-                        if currentRound % 2 == 0:
-                            currentPickIndex -= 1
-                            currentPick += 1
-                        if currentRound % 2 != 0:
-                            currentPickIndex += 1
-                            currentPick += 1
-                        testing = False
                     offscreen_canvas.Clear()
                     time.sleep(1)
                     round_text = "Rd " + str(currentRound) + "." + str(currentPick)
