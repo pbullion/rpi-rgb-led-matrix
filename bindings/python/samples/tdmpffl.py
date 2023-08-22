@@ -238,20 +238,23 @@ class RunText(SampleBase):
 
                 char = screen.getch()
                 if char == 10:
-                    screen.addstr(0, 0, "going to the next pick")
                     seconds = 100
                     if currentPick == 1 and currentRound % 2 == 0:
+                        screen.addstr(0, 0, "first")
                         currentRound += 1
                         currentPickIndex = 11
                         currentPick = 12
                     if currentPick == 12 and currentRound % 2 != 0:
+                        screen.addstr(1, 0, "second")
                         currentRound += 1
                         currentPickIndex = 0
                         currentPick = 1
                     if currentRound % 2 == 0:
+                        screen.addstr(2, 0, "third")
                         currentPickIndex -= 1
                         currentPick += 1
                     if currentRound % 2 != 0:
+                        screen.addstr(3, 0, "fourth")
                         currentPickIndex += 1
                         currentPick += 1
                 else:
