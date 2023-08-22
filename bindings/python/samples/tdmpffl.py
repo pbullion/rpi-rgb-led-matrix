@@ -237,9 +237,9 @@ class RunText(SampleBase):
                     )
 
                 char = screen.getch()
+                screen.addstr(10, 0, "lksjdflkjsdlkfjsdkljfslkdf")
                 if char == 10:
                     seconds = 100
-                    screen.addstr(10, 0, "lksjdflkjsdlkfjsdkljfslkdf")
                     if currentPick == 1 and currentRound % 2 == 0:
                         screen.addstr(0, 0, "first")
                         currentRound += 1
