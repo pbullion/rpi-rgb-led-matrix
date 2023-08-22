@@ -125,7 +125,7 @@ class RunText(SampleBase):
                 while testing:
                     offscreen_canvas.Clear()
                     char = screen.getch()
-                    screen.addstr(1, 0, "Seconds: {}".format(str(seconds)))
+                    screen.addstr(1, 0, "Seconds: {}".format(seconds))
                     if char == ord("q"):
                         break
                     elif char == ord("d"):
