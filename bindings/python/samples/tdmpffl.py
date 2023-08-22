@@ -91,6 +91,7 @@ class RunText(SampleBase):
                         currentPicksName = leagueMembers[currentPickIndex]
                         nextUpPicksName = leagueMembers[currentPickIndex]
                         inHolesPicksName = leagueMembers[currentPickIndex - 1]
+                screen.addstr(0, 0, currentPickIndex)
                 if currentRound % 2 != 0:
                     if currentPickIndex < 10:
                         currentPicksName = leagueMembers[currentPickIndex]
