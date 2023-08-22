@@ -133,6 +133,7 @@ class RunText(SampleBase):
                 print("Current Pick Index:" + str(currentPickIndex))
                 offscreen_canvas.Clear()
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
+                time.sleep(1)
                 seconds -= 1
                 timeColor = green
                 if seconds < 60:
