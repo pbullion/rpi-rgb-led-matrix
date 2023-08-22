@@ -73,15 +73,22 @@ class RunText(SampleBase):
             if char == ord("q"):
                 break
             elif char == curses.KEY_RIGHT:
-                # print doesn't work with curses, use addstr instead
-                screen.addstr(0, 0, "right")
-            elif char == curses.KEY_LEFT:
-                screen.addstr(0, 0, "left ")
-            elif char == curses.KEY_UP:
-                screen.addstr(0, 0, "up   ")
-            elif char == curses.KEY_DOWN:
-                print("down")
-                screen.addstr(0, 0, "down ")
+                print("going to the next pick")
+                seconds = 10
+                if currentPick == 1 and currentRound % 2 == 0:
+                    currentRound += 1
+                    currentPickIndex = 11
+                    currentPick = 12
+                if currentPick == 12 and currentRound % 2 != 0:
+                    currentRound += 1
+                    currentPickIndex = 0
+                    currentPick = 1
+                if currentRound % 2 == 0:
+                    currentPickIndex -= 1
+                    currentPick += 1
+                if currentRound % 2 != 0:
+                    currentPickIndex += 1
+                    currentPick += 1
             if currentRound % 2 == 0:
                 if currentPickIndex > 1:
                     currentPicksName = leagueMembers[currentPickIndex]
@@ -233,7 +240,11 @@ class RunText(SampleBase):
                     + inHolesPicksName,
                 )
             if seconds == -1:
-                input("Press Enter to continue...")
+                curses.nocbreak()
+                screen.keypad(0)
+                curses.echo()
+                curses.endwin()
+                input("Press any key to continue...")
                 seconds = 10
                 if currentPick == 1 and currentRound % 2 == 0:
                     currentRound += 1
