@@ -3,7 +3,7 @@
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
-from pynput import keyboard
+from sshkeyboard import listen_keyboard
 
 
 class RunText(SampleBase):
@@ -16,19 +16,16 @@ class RunText(SampleBase):
             default="Hello world!",
         )
 
-    def on_key_press(key):
-        print("Key pressed:", key)
-        global testingCurrentPick
+    def press(key):
+        print(f"'{key}' pressed")
 
-        if hasattr(key, "char") and key.char == "+":
-            testingCurrentPick += 1
-            print("testingCurrentPick increased to:", testingCurrentPick)
+    def release(key):
+        print(f"'{key}' released")
 
-    def on_key_release(key):
-        pass
-
-    listener = keyboard.Listener(on_press=on_key_press, on_release=on_key_release)
-    listener.start()
+    listen_keyboard(
+        on_press=press,
+        on_release=release,
+    )
 
     def run(self):
         offscreen_canvas = self.matrix.CreateFrameCanvas()
