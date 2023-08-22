@@ -69,14 +69,12 @@ class RunText(SampleBase):
             "YOU'RE A CHICKEN BITCH",
         ]
         # get the curses screen window
+        curses.curs_set(0)
         screen = curses.initscr()
-
         # turn off input echoing
         curses.noecho()
-
         # respond to keys immediately (don't wait for enter)
         curses.cbreak()
-
         # map arrow keys to special values
         screen.keypad(True)
         try:
