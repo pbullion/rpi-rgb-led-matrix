@@ -81,6 +81,7 @@ class RunText(SampleBase):
         screen.keypad(True)
         try:
             while True:
+                curses.napms(1000)
                 char = screen.getch()
                 if char == ord("q"):
                     break
@@ -141,7 +142,6 @@ class RunText(SampleBase):
                 # print("Current Pick Index:" + str(currentPickIndex))
                 offscreen_canvas.Clear()
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
-                curses.napms(1000)
                 seconds -= 1
                 timeColor = green
                 if seconds < 60:
