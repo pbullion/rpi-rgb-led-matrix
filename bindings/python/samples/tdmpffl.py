@@ -257,6 +257,7 @@ class RunText(SampleBase):
                         screen.addstr(3, 0, "fourth")
                         currentPickIndex += 1
                         currentPick += 1
+                    screen.addstr(0, 0, "none")
 
                 offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
         finally:
