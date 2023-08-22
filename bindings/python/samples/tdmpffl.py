@@ -32,6 +32,7 @@ class RunText(SampleBase):
         smallFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x13.bdf")
         currentRound = int(input("Current Round: "))
         currentPick = int(input("Current Pick: "))
+        currentPickIndex = int(input("Current Pick Index: "))
         leagueMembers = [
             "TEDDIE",
             "CALEB",
@@ -53,13 +54,31 @@ class RunText(SampleBase):
         ]
         while True:
             if currentRound % 2 == 0:
-                currentPicksName = leagueMembers[currentPick + 1]
-                nextUpPicksName = leagueMembers[currentPick]
-                inHolesPicksName = leagueMembers[currentPick - 1]
+                if currentPickIndex > 1:
+                    currentPicksName = leagueMembers[currentPickIndex]
+                    nextUpPicksName = leagueMembers[currentPickIndex - 1]
+                    inHolesPicksName = leagueMembers[currentPickIndex - 2]
+                if currentPickIndex == 1:
+                    currentPicksName = leagueMembers[currentPickIndex]
+                    nextUpPicksName = leagueMembers[currentPickIndex - 1]
+                    inHolesPicksName = leagueMembers[currentPickIndex - 1]
+                if currentPickIndex == 0:
+                    currentPicksName = leagueMembers[currentPickIndex]
+                    nextUpPicksName = leagueMembers[currentPickIndex]
+                    inHolesPicksName = leagueMembers[currentPickIndex - 1]
             if currentRound % 2 != 0:
-                currentPicksName = leagueMembers[currentPick - 1]
-                nextUpPicksName = leagueMembers[currentPick]
-                inHolesPicksName = leagueMembers[currentPick + 1]
+                if currentPickIndex < 10:
+                    currentPicksName = leagueMembers[currentPickIndex]
+                    nextUpPicksName = leagueMembers[currentPickIndex + 1]
+                    inHolesPicksName = leagueMembers[currentPickIndex + 2]
+                if currentPickIndex == 10:
+                    currentPicksName = leagueMembers[currentPickIndex]
+                    nextUpPicksName = leagueMembers[currentPickIndex + 1]
+                    inHolesPicksName = leagueMembers[currentPickIndex + 1]
+                if currentPickIndex == 11:
+                    currentPicksName = leagueMembers[currentPickIndex]
+                    nextUpPicksName = leagueMembers[currentPickIndex]
+                    inHolesPicksName = leagueMembers[currentPickIndex - 1]
             offscreen_canvas.Clear()
             round_text = "Rd " + str(currentRound) + "." + str(currentPick)
             time.sleep(1)
@@ -185,10 +204,11 @@ class RunText(SampleBase):
                 input("Press Enter to continue...")
                 seconds = 10
                 currentRound += 1
+                currentPick += 1
                 if currentRound % 2 == 0:
-                    currentPick = 12
+                    currentPickIndex = 11
                 if currentRound % 2 != 0:
-                    currentPick = 1
+                    currentPickIndex = 0
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
