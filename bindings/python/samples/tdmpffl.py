@@ -245,20 +245,19 @@ class RunText(SampleBase):
                         currentRound += 1
                         currentPickIndex = 11
                         currentPick = 12
-                    elif currentRound % 2 != 0:
-                        screen.addstr(3, 0, "fourth")
-                        currentPickIndex += 1
-                        currentPick += 1
                     elif currentPick == 12 and currentRound % 2 != 0:
                         screen.addstr(1, 0, "second")
                         currentRound += 1
                         currentPickIndex = 0
                         currentPick = 1
+                    elif currentRound % 2 != 0:
+                        screen.addstr(3, 0, "fourth")
+                        currentPickIndex += 1
+                        currentPick += 1
                     else:
                         screen.addstr(2, 0, "third")
                         currentPickIndex -= 1
                         currentPick += 1
-                    screen.addstr(15, 0, "none")
 
                 offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
         finally:
