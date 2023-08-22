@@ -44,12 +44,12 @@ class RunText(SampleBase):
         middleFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/9x18B.bdf")
         smallFont = graphics.Font()
         smallFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/6x13.bdf")
-        currentRound = int(input("Current Round: "))
-        currentPick = int(input("Current Pick: "))
-        currentPickIndex = int(input("Current Pick Index: "))
-        # currentRound = 1
-        # currentPick = 1
-        # currentPickIndex = 0
+        # currentRound = int(input("Current Round: "))
+        # currentPick = int(input("Current Pick: "))
+        # currentPickIndex = int(input("Current Pick Index: "))
+        currentRound = 1
+        currentPick = 12
+        currentPickIndex = 11
         leagueMembers = [
             "TEDDIE",
             "CALEB",
@@ -64,7 +64,7 @@ class RunText(SampleBase):
             "SNAKE",
             "ZANE",
         ]
-        seconds = 10
+        seconds = 100
         # get the curses screen window
         curses.curs_set(0)
         screen = curses.initscr()
@@ -244,7 +244,7 @@ class RunText(SampleBase):
                 char = screen.getch()
                 if char == 10:
                     screen.addstr(0, 0, "going to the next pick")
-                    seconds = 10
+                    seconds = 100
                     if currentPick == 1 and currentRound % 2 == 0:
                         currentRound += 1
                         currentPickIndex = 11
