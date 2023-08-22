@@ -284,7 +284,7 @@ class RunText(SampleBase):
                 #         currentPickIndex += 1
                 #         currentPick += 1
                 char = screen.getch()
-                if char == ord("d"):
+                if char == ord("enter"):
                     screen.addstr(0, 0, "going to the next pick")
                     seconds = 100
                     if currentPick == 1 and currentRound % 2 == 0:
