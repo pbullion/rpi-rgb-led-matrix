@@ -144,7 +144,7 @@ class RunText(SampleBase):
                     6, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
                 )
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
-                screen.napms(1000)
+                curses.napms(1000)
                 seconds -= 1
                 timeColor = green
                 if seconds < 60:
