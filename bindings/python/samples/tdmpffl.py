@@ -143,8 +143,10 @@ class RunText(SampleBase):
                     6, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
                 )
                 for i in range(0, 100):
-                    print(i)
-                    print(seconds)
+                    key = screen.getch()
+                    if key != curses.ERR:
+                        # Go to the next person
+                        break
                     offscreen_canvas.Clear()
                     time.sleep(1)
                     round_text = "Rd " + str(currentRound) + "." + str(currentPick)
