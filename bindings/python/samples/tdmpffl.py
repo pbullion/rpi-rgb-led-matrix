@@ -257,8 +257,7 @@ class RunText(SampleBase):
                         screen.addstr(3, 0, "fourth")
                         currentPickIndex += 1
                         currentPick += 1
-                else:
-                    print("going to the next round")
+
                 offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
         finally:
             # shut down cleanly
