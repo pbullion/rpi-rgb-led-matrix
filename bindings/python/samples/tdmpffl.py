@@ -3,6 +3,7 @@
 from samplebase import SampleBase
 from rgbmatrix import graphics
 import time
+from pynput import keyboard
 
 
 class RunText(SampleBase):
@@ -14,6 +15,20 @@ class RunText(SampleBase):
             help="The text to scroll on the RGB LED panel",
             default="Hello world!",
         )
+
+    def on_key_press(key):
+        print("Key pressed:", key)
+        global testingCurrentPick
+
+        if hasattr(key, "char") and key.char == "+":
+            testingCurrentPick += 1
+            print("testingCurrentPick increased to:", testingCurrentPick)
+
+    def on_key_release(key):
+        pass
+
+    listener = keyboard.Listener(on_press=on_key_press, on_release=on_key_release)
+    listener.start()
 
     def run(self):
         offscreen_canvas = self.matrix.CreateFrameCanvas()
