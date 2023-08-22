@@ -131,8 +131,12 @@ class RunText(SampleBase):
                 print("Current Round:" + str(currentRound))
                 print("Current Pick:" + str(currentPick))
                 print("Current Pick Index:" + str(currentPickIndex))
+                print("Current Picks Name:" + str(currentPicksName))
+                print("Next Up Picks Name:" + str(nextUpPicksName))
+                print("In Holes Picks Name:" + str(inHolesPicksName))
                 offscreen_canvas.Clear()
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
+                time.sleep(1)
                 seconds -= 1
                 timeColor = green
                 if seconds < 60:
@@ -295,7 +299,6 @@ class RunText(SampleBase):
                     if currentRound % 2 != 0:
                         currentPickIndex += 1
                         currentPick += 1
-                time.sleep(1)
                 offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
         finally:
             # shut down cleanly
