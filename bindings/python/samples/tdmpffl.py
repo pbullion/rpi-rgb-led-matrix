@@ -10,13 +10,13 @@ screen = curses.initscr()
 
 # turn off input echoing
 curses.noecho()
-curses.nodelay(True)
 
 # respond to keys immediately (don't wait for enter)
 curses.cbreak()
 
 # map arrow keys to special values
 screen.keypad(True)
+screen.nodelay(True)
 
 
 class RunText(SampleBase):
