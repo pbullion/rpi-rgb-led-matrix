@@ -146,7 +146,7 @@ class RunText(SampleBase):
                 testing = True
                 while testing:
                     offscreen_canvas.Clear()
-                    time.sleep(1)
+                    curses.napms(1000)
                     round_text = "Rd " + str(currentRound) + "." + str(currentPick)
                     seconds -= 1
                     timeColor = green
