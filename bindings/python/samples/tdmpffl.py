@@ -259,7 +259,7 @@ class RunText(SampleBase):
                             roundStr + nameStr + 25,
                             26,
                             timeColor,
-                            str(i),
+                            str(seconds),
                         )
                         onDeck = graphics.DrawText(
                             offscreen_canvas,
