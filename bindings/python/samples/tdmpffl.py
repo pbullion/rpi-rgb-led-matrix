@@ -85,7 +85,7 @@ class RunText(SampleBase):
                 char = screen.getch()
                 if char == ord("q"):
                     break
-                elif char == curses.KEY_RIGHT:
+                else:
                     # print doesn't work with curses, use addstr instead
                     screen.addstr(0, 0, "right")
                     if char == curses.KEY_RIGHT:
@@ -105,12 +105,6 @@ class RunText(SampleBase):
                         if currentRound % 2 != 0:
                             currentPickIndex += 1
                             currentPick += 1
-                elif char == curses.KEY_LEFT:
-                    screen.addstr(0, 0, "left ")
-                elif char == curses.KEY_UP:
-                    screen.addstr(0, 0, "up   ")
-                elif char == curses.KEY_DOWN:
-                    screen.addstr(0, 0, "down ")
                 if currentRound % 2 == 0:
                     if currentPickIndex > 1:
                         currentPicksName = leagueMembers[currentPickIndex]
