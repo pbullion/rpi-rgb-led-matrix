@@ -79,6 +79,9 @@ class RunText(SampleBase):
                     currentPicksName = leagueMembers[currentPickIndex]
                     nextUpPicksName = leagueMembers[currentPickIndex]
                     inHolesPicksName = leagueMembers[currentPickIndex - 1]
+            print("Current Round:" + str(currentRound))
+            print("Current Pick:" + str(currentPick))
+            print("Current Pick Index:" + str(currentPickIndex))
             offscreen_canvas.Clear()
             round_text = "Rd " + str(currentRound) + "." + str(currentPick)
             time.sleep(1)
@@ -203,12 +206,20 @@ class RunText(SampleBase):
             if seconds == -1:
                 input("Press Enter to continue...")
                 seconds = 10
-                currentRound += 1
-                currentPick += 1
-                if currentRound % 2 == 0:
+                if currentPick == 1 and currentRound % 2 == 0:
+                    currentRound += 1
                     currentPickIndex = 11
-                if currentRound % 2 != 0:
+                    currentPick = 12
+                if currentPick == 12 and currentRound % 2 != 0:
+                    currentRound += 1
                     currentPickIndex = 0
+                    currentPick = 1
+                if currentRound % 2 == 0:
+                    currentPickIndex -= 1
+                    currentPick += 1
+                if currentRound % 2 != 0:
+                    currentPickIndex += 1
+                    currentPick += 1
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
 
 
