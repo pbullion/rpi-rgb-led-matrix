@@ -81,6 +81,7 @@ class RunText(SampleBase):
         screen.keypad(True)
         try:
             while True:
+                offscreen_canvas.Clear()
                 char = screen.getch()
                 if char == ord("q"):
                     break
@@ -141,7 +142,6 @@ class RunText(SampleBase):
                 screen.addstr(
                     6, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
                 )
-                offscreen_canvas.Clear()
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
                 time.sleep(1)
                 seconds -= 1
