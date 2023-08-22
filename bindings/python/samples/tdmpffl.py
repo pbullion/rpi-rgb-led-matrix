@@ -85,7 +85,7 @@ class RunText(SampleBase):
                 if char == ord("q"):
                     break
                 else:
-                    print("going to the next pick")
+                    screen.addstr(0, 0, "Current Person: going to the next pick")
                     seconds = 1000
                     if currentPick == 1 and currentRound % 2 == 0:
                         currentRound += 1
@@ -128,12 +128,20 @@ class RunText(SampleBase):
                         currentPicksName = leagueMembers[currentPickIndex]
                         nextUpPicksName = leagueMembers[currentPickIndex]
                         inHolesPicksName = leagueMembers[currentPickIndex - 1]
-                print("Current Round:" + str(currentRound))
-                print("Current Pick:" + str(currentPick))
-                print("Current Pick Index:" + str(currentPickIndex))
-                print("Current Picks Name:" + str(currentPicksName))
-                print("Next Up Picks Name:" + str(nextUpPicksName))
-                print("In Holes Picks Name:" + str(inHolesPicksName))
+                screen.addstr(0, 0, "Current Round: {}".format(str(currentRound)))
+                screen.addstr(0, 0, "Current Pick: {}".format(str(currentPick)))
+                screen.addstr(
+                    0, 0, "Current Pick Index: {}".format(str(currentPickIndex))
+                )
+                screen.addstr(
+                    0, 0, "Current Picks Name: {}".format(str(currentPicksName))
+                )
+                screen.addstr(
+                    0, 0, "Next Up Picks Name: {}".format(str(nextUpPicksName))
+                )
+                screen.addstr(
+                    0, 0, "In Holes Picks Name: {}".format(str(inHolesPicksName))
+                )
                 offscreen_canvas.Clear()
                 round_text = "Rd " + str(currentRound) + "." + str(currentPick)
                 time.sleep(1)
