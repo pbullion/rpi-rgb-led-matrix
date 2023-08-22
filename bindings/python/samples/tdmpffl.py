@@ -68,30 +68,30 @@ class RunText(SampleBase):
             "HURRY THE FUCK UP!",
             "YOU'RE A CHICKEN BITCH",
         ]
-        char = screen.getch()
-        if char == ord("q"):
-            curses.nocbreak()
-            screen.keypad(0)
-            curses.echo()
-            curses.endwin()
-        if char == curses.KEY_RIGHT:
-            print("going to the next pick")
-            seconds = 10
-            if currentPick == 1 and currentRound % 2 == 0:
-                currentRound += 1
-                currentPickIndex = 11
-                currentPick = 12
-            if currentPick == 12 and currentRound % 2 != 0:
-                currentRound += 1
-                currentPickIndex = 0
-                currentPick = 1
-            if currentRound % 2 == 0:
-                currentPickIndex -= 1
-                currentPick += 1
-            if currentRound % 2 != 0:
-                currentPickIndex += 1
-                currentPick += 1
         while True:
+            char = screen.getch()
+            if char == ord("q"):
+                curses.nocbreak()
+                screen.keypad(0)
+                curses.echo()
+                curses.endwin()
+            if char == curses.KEY_RIGHT:
+                print("going to the next pick")
+                seconds = 10
+                if currentPick == 1 and currentRound % 2 == 0:
+                    currentRound += 1
+                    currentPickIndex = 11
+                    currentPick = 12
+                if currentPick == 12 and currentRound % 2 != 0:
+                    currentRound += 1
+                    currentPickIndex = 0
+                    currentPick = 1
+                if currentRound % 2 == 0:
+                    currentPickIndex -= 1
+                    currentPick += 1
+                if currentRound % 2 != 0:
+                    currentPickIndex += 1
+                    currentPick += 1
             if currentRound % 2 == 0:
                 if currentPickIndex > 1:
                     currentPicksName = leagueMembers[currentPickIndex]
@@ -248,29 +248,6 @@ class RunText(SampleBase):
                 curses.echo()
                 curses.endwin()
                 input("Press any key to continue...")
-                char = screen.getch()
-                if char == ord("q"):
-                    curses.nocbreak()
-                    screen.keypad(0)
-                    curses.echo()
-                    curses.endwin()
-                if char == curses.KEY_RIGHT:
-                    print("going to the next pick")
-                    seconds = 10
-                    if currentPick == 1 and currentRound % 2 == 0:
-                        currentRound += 1
-                        currentPickIndex = 11
-                        currentPick = 12
-                    if currentPick == 12 and currentRound % 2 != 0:
-                        currentRound += 1
-                        currentPickIndex = 0
-                        currentPick = 1
-                    if currentRound % 2 == 0:
-                        currentPickIndex -= 1
-                        currentPick += 1
-                    if currentRound % 2 != 0:
-                        currentPickIndex += 1
-                        currentPick += 1
                 seconds = 10
                 if currentPick == 1 and currentRound % 2 == 0:
                     currentRound += 1
