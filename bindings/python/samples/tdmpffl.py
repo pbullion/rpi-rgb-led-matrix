@@ -64,10 +64,6 @@ class RunText(SampleBase):
             "ZANE",
         ]
         seconds = 100
-        randomSayings = [
-            "HURRY THE FUCK UP!",
-            "YOU'RE A CHICKEN BITCH",
-        ]
         # get the curses screen window
         curses.curs_set(0)
         screen = curses.initscr()
@@ -124,9 +120,7 @@ class RunText(SampleBase):
                 time.sleep(1)
                 offscreen_canvas.Clear()
                 char = screen.getch()
-                if char == ord("q"):
-                    break
-                elif char == ord("d"):
+                if char == ord("d"):
                     screen.addstr(0, 0, "going to the next pick")
                     seconds = 100
                     if currentPick == 1 and currentRound % 2 == 0:
@@ -263,50 +257,50 @@ class RunText(SampleBase):
                         + " "
                         + inHolesPicksName,
                     )
-                if seconds == -1:
-                    curses.nocbreak()
-                    screen.keypad(0)
-                    curses.echo()
-                    curses.endwin()
-                    input("Press any key to continue...")
-                    char = screen.getch()
-                    if char == ord("q"):
-                        curses.nocbreak()
-                        screen.keypad(0)
-                        curses.echo()
-                        curses.endwin()
-                    if char == curses.KEY_RIGHT:
-                        print("going to the next pick")
-                        seconds = 100
-                        if currentPick == 1 and currentRound % 2 == 0:
-                            currentRound += 1
-                            currentPickIndex = 11
-                            currentPick = 12
-                        if currentPick == 12 and currentRound % 2 != 0:
-                            currentRound += 1
-                            currentPickIndex = 0
-                            currentPick = 1
-                        if currentRound % 2 == 0:
-                            currentPickIndex -= 1
-                            currentPick += 1
-                        if currentRound % 2 != 0:
-                            currentPickIndex += 1
-                            currentPick += 1
-                    seconds = 100
-                    if currentPick == 1 and currentRound % 2 == 0:
-                        currentRound += 1
-                        currentPickIndex = 11
-                        currentPick = 12
-                    if currentPick == 12 and currentRound % 2 != 0:
-                        currentRound += 1
-                        currentPickIndex = 0
-                        currentPick = 1
-                    if currentRound % 2 == 0:
-                        currentPickIndex -= 1
-                        currentPick += 1
-                    if currentRound % 2 != 0:
-                        currentPickIndex += 1
-                        currentPick += 1
+                # if seconds == -1:
+                #     curses.nocbreak()
+                #     screen.keypad(0)
+                #     curses.echo()
+                #     curses.endwin()
+                #     input("Press any key to continue...")
+                #     char = screen.getch()
+                #     if char == ord("q"):
+                #         curses.nocbreak()
+                #         screen.keypad(0)
+                #         curses.echo()
+                #         curses.endwin()
+                #     if char == curses.KEY_RIGHT:
+                #         print("going to the next pick")
+                #         seconds = 100
+                #         if currentPick == 1 and currentRound % 2 == 0:
+                #             currentRound += 1
+                #             currentPickIndex = 11
+                #             currentPick = 12
+                #         if currentPick == 12 and currentRound % 2 != 0:
+                #             currentRound += 1
+                #             currentPickIndex = 0
+                #             currentPick = 1
+                #         if currentRound % 2 == 0:
+                #             currentPickIndex -= 1
+                #             currentPick += 1
+                #         if currentRound % 2 != 0:
+                #             currentPickIndex += 1
+                #             currentPick += 1
+                #     seconds = 100
+                #     if currentPick == 1 and currentRound % 2 == 0:
+                #         currentRound += 1
+                #         currentPickIndex = 11
+                #         currentPick = 12
+                #     if currentPick == 12 and currentRound % 2 != 0:
+                #         currentRound += 1
+                #         currentPickIndex = 0
+                #         currentPick = 1
+                #     if currentRound % 2 == 0:
+                #         currentPickIndex -= 1
+                #         currentPick += 1
+                #     if currentRound % 2 != 0:
+                #         currentPickIndex += 1
+                #         currentPick += 1
                 offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
         finally:
             # shut down cleanly
