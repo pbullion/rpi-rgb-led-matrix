@@ -214,7 +214,7 @@ class RunText(SampleBase):
                     timeColor = yellow
                 if seconds < 20:
                     timeColor = red
-                if seconds == 60 or seconds == 59:
+                if seconds == 61 or seconds == 60 or seconds == 59:
                     blackHurryUpText = graphics.DrawText(
                         offscreen_canvas,
                         middleFont,
