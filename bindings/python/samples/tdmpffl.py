@@ -169,9 +169,9 @@ class RunText(SampleBase):
                         currentPicksName = leagueMembers[currentPickIndex]
                         nextUpPicksName = leagueMembers[currentPickIndex + 1]
                         inHolesPicksName = leagueMembers[currentPickIndex + 1]
-                        nextRound = currentRound + 1
-                        onDeckPickNum = 1
-                        inHolePickNum = 2
+                        nextRound = currentRound
+                        onDeckPickNum = 12
+                        inHolePickNum = 1
                         inHoleString = (
                             str(nextRound)
                             + "."
@@ -180,7 +180,7 @@ class RunText(SampleBase):
                             + inHolesPicksName
                         )
                         onDeckString = (
-                            str(nextRound)
+                            str(nextRound + 1)
                             + "."
                             + str(onDeckPickNum)
                             + " "
