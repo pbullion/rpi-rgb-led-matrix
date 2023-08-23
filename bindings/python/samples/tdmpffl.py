@@ -172,19 +172,19 @@ class RunText(SampleBase):
                         nextRound = currentRound
                         onDeckPickNum = 12
                         inHolePickNum = 1
-                        inHoleString = (
-                            str(nextRound)
-                            + "."
-                            + str(inHolePickNum)
-                            + " "
-                            + inHolesPicksName
-                        )
                         onDeckString = (
-                            str(nextRound + 1)
+                            str(nextRound)
                             + "."
                             + str(onDeckPickNum)
                             + " "
                             + nextUpPicksName
+                        )
+                        inHoleString = (
+                            str(nextRound + 1)
+                            + "."
+                            + str(inHolePickNum)
+                            + " "
+                            + inHolesPicksName
                         )
                     if currentPickIndex == 11:
                         currentPicksName = leagueMembers[currentPickIndex]
