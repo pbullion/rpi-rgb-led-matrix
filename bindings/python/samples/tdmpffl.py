@@ -64,7 +64,7 @@ class RunText(SampleBase):
             "SNAKE",
             "ZANE",
         ]
-        seconds = 100
+        seconds = 65
         # get the curses screen window
         curses.curs_set(0)
         screen = curses.initscr()
@@ -321,7 +321,7 @@ class RunText(SampleBase):
 
                 char = screen.getch()
                 if char == 10:
-                    seconds = 100
+                    seconds = 65
                     if currentPick == 12 and currentRound % 2 == 0:
                         currentRound += 1
                         currentPickIndex = 0
