@@ -116,7 +116,7 @@ class RunText(SampleBase):
                             + inHolesPicksName
                         )
                         onDeckString = (
-                            str(nextRound)
+                            str(nextRound - 1)
                             + "."
                             + str(onDeckPickNum)
                             + " "
