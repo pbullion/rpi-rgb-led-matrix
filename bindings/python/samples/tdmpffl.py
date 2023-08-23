@@ -47,9 +47,9 @@ class RunText(SampleBase):
         # currentRound = int(input("Current Round: "))
         # currentPick = int(input("Current Pick: "))
         # currentPickIndex = int(input("Current Pick Index: "))
-        currentRound = 1
-        currentPick = 12
-        currentPickIndex = 11
+        currentRound = 3
+        currentPick = 11
+        currentPickIndex = 10
         leagueMembers = [
             "TEDDIE",
             "CALEB",
@@ -148,10 +148,44 @@ class RunText(SampleBase):
                         currentPicksName = leagueMembers[currentPickIndex]
                         nextUpPicksName = leagueMembers[currentPickIndex + 1]
                         inHolesPicksName = leagueMembers[currentPickIndex + 2]
+                        nextRound = currentRound
+                        onDeckPickNum = currentPick + 1
+                        inHolePickNum = currentPick + 2
+                        inHoleString = (
+                            str(nextRound)
+                            + "."
+                            + str(inHolePickNum)
+                            + " "
+                            + inHolesPicksName
+                        )
+                        onDeckString = (
+                            str(nextRound)
+                            + "."
+                            + str(onDeckPickNum)
+                            + " "
+                            + nextUpPicksName
+                        )
                     if currentPickIndex == 10:
                         currentPicksName = leagueMembers[currentPickIndex]
                         nextUpPicksName = leagueMembers[currentPickIndex + 1]
                         inHolesPicksName = leagueMembers[currentPickIndex + 1]
+                        nextRound = currentRound + 1
+                        onDeckPickNum = 1
+                        inHolePickNum = 2
+                        inHoleString = (
+                            str(nextRound)
+                            + "."
+                            + str(inHolePickNum)
+                            + " "
+                            + inHolesPicksName
+                        )
+                        onDeckString = (
+                            str(nextRound)
+                            + "."
+                            + str(onDeckPickNum)
+                            + " "
+                            + nextUpPicksName
+                        )
                     if currentPickIndex == 11:
                         currentPicksName = leagueMembers[currentPickIndex]
                         nextUpPicksName = leagueMembers[currentPickIndex]
