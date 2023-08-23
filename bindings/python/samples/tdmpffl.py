@@ -106,8 +106,8 @@ class RunText(SampleBase):
                         nextUpPicksName = leagueMembers[currentPickIndex - 1]
                         inHolesPicksName = leagueMembers[currentPickIndex - 1]
                         nextRound = currentRound + 1
-                        onDeckPickNum = 1
-                        inHolePickNum = 2
+                        onDeckPickNum = 12
+                        inHolePickNum = 1
                         inHoleString = (
                             str(nextRound)
                             + "."
