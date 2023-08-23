@@ -47,9 +47,9 @@ class RunText(SampleBase):
         # currentRound = int(input("Current Round: "))
         # currentPick = int(input("Current Pick: "))
         # currentPickIndex = int(input("Current Pick Index: "))
-        currentRound = 3
-        currentPick = 11
-        currentPickIndex = 10
+        currentRound = 1
+        currentPick = 1
+        currentPickIndex = 0
         leagueMembers = [
             "TEDDIE",
             "CALEB",
