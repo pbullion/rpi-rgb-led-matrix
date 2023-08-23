@@ -77,8 +77,6 @@ class RunText(SampleBase):
         try:
             while True:
                 offscreen_canvas.Clear()
-                screen.addstr(0, 0, str(currentPickIndex))
-                screen.addstr(10, 0, str(currentRound))
                 if currentRound % 2 == 0:
                     if currentPickIndex > 1:
                         currentPicksName = leagueMembers[currentPickIndex]
@@ -317,30 +315,25 @@ class RunText(SampleBase):
                         smallFont,
                         offscreen_canvas.width - 65,
                         28,
-                        yellow,
+                        purple,
                         inHoleString,
                     )
 
                 char = screen.getch()
-                screen.addstr(10, 0, "lksjdflkjsdlkfjsdkljfslkdf")
                 if char == 10:
                     seconds = 100
                     if currentPick == 12 and currentRound % 2 == 0:
-                        screen.addstr(0, 0, "first")
                         currentRound += 1
                         currentPickIndex = 0
                         currentPick = 12
                     elif currentPick == 12 and currentRound % 2 != 0:
-                        screen.addstr(1, 0, "second")
                         currentRound += 1
                         currentPickIndex = 11
                         currentPick = 1
                     elif currentRound % 2 != 0:
-                        screen.addstr(3, 0, "fourth")
                         currentPickIndex += 1
                         currentPick += 1
                     else:
-                        screen.addstr(2, 0, "third")
                         currentPickIndex -= 1
                         currentPick += 1
 
