@@ -81,7 +81,8 @@ class RunText(SampleBase):
                 running = True
                 char = screen.getch()
                 print(char)
-                if char == 10:
+                if char == 32:
+                    print("lksdjfkljsdkf")
                     running = False
                 if running:
                     curses.napms(1000)
