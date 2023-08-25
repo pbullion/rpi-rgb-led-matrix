@@ -79,42 +79,28 @@ class RunText(SampleBase):
                 offscreen_canvas.Clear()
                 timeColor = green
                 char = screen.getch()
-                if char != 10:
+                running = True
+                if running:
                     curses.napms(1000)
                     seconds += 1
-                    nameStr = graphics.DrawText(
-                        offscreen_canvas,
-                        font,
-                        10,
-                        26,
-                        green,
-                        "Caleb",
-                    )
-                    remainingTime = graphics.DrawText(
-                        offscreen_canvas,
-                        font,
-                        nameStr + 25,
-                        26,
-                        timeColor,
-                        str(seconds),
-                    )
-                else:
-                    nameStr = graphics.DrawText(
-                        offscreen_canvas,
-                        font,
-                        10,
-                        26,
-                        green,
-                        "Caleb",
-                    )
-                    remainingTime = graphics.DrawText(
-                        offscreen_canvas,
-                        font,
-                        nameStr + 25,
-                        26,
-                        timeColor,
-                        str(seconds),
-                    )
+                nameStr = graphics.DrawText(
+                    offscreen_canvas,
+                    font,
+                    10,
+                    26,
+                    green,
+                    "Caleb",
+                )
+                remainingTime = graphics.DrawText(
+                    offscreen_canvas,
+                    font,
+                    nameStr + 25,
+                    26,
+                    timeColor,
+                    str(seconds),
+                )
+                if char != 10:
+                    running = False
                 offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
         finally:
             # shut down cleanly
