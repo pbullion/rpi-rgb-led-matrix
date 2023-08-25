@@ -82,8 +82,8 @@ class RunText(SampleBase):
                 char = screen.getch()
                 print(char)
                 if char == 32:
-                    running = False
-                if running == True:
+                    final = seconds
+                if running:
                     curses.napms(1000)
                     seconds += 1
                 nameStr = graphics.DrawText(
@@ -94,6 +94,15 @@ class RunText(SampleBase):
                     green,
                     "Caleb",
                 )
+                if final > 0:
+                    remainingTime = graphics.DrawText(
+                        offscreen_canvas,
+                        font,
+                        nameStr + 50,
+                        26,
+                        timeColor,
+                        str(final),
+                    )
                 remainingTime = graphics.DrawText(
                     offscreen_canvas,
                     font,
