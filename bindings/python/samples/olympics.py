@@ -78,8 +78,8 @@ class RunText(SampleBase):
             while True:
                 offscreen_canvas.Clear()
                 timeColor = green
-                char = screen.getch()
                 running = True
+                char = screen.getch()
                 if char == 10:
                     running = False
                 if running:
@@ -96,7 +96,7 @@ class RunText(SampleBase):
                 remainingTime = graphics.DrawText(
                     offscreen_canvas,
                     font,
-                    nameStr + 25,
+                    nameStr + 50,
                     26,
                     timeColor,
                     str(seconds),
