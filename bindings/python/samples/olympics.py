@@ -99,6 +99,9 @@ class RunText(SampleBase):
                     str(seconds),
                 )
                 char = screen.getch()
+                if char != 10:
+                    curses.napms(1000)
+                    seconds += 1
                 offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
         finally:
             # shut down cleanly
