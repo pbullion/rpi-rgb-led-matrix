@@ -1,7 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix'
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./lib
- 
 make[1]: Entering directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/lib'
 echo 'c++ -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11' | cmp -s - compiler-flags || echo 'c++ -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11' > compiler-flags
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o gpio.o gpio.cc
@@ -23,7 +22,6 @@ make[1]: Leaving directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/li
 make[1]: Entering directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/examples-api-use'
 c++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o demo-main.o demo-main.cc
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C ../lib
- 
 make[2]: Entering directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/lib'
 echo 'c++ -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11' | cmp -s - compiler-flags || echo 'c++ -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11' > compiler-flags
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o gpio.o gpio.cc
@@ -35,6 +33,7 @@ c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o graphics.o graphics.cc
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o led-matrix-c.o led-matrix-c.cc
 cc  -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -c -o hardware-mapping.o hardware-mapping.c
+ 
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o pixel-mapper.o pixel-mapper.cc
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o multiplex-mappers.o multiplex-mappers.cc
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o content-streamer.o content-streamer.cc
@@ -59,6 +58,5 @@ c++ input-example.o -o input-example -L../lib -lrgbmatrix -lrt -lm -lpthread
 c++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o pixel-mover.o pixel-mover.cc
 c++ pixel-mover.o -o pixel-mover -L../lib -lrgbmatrix -lrt -lm -lpthread
 make[1]: Leaving directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/examples-api-use'
- 
 make: Leaving directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix'
  
