@@ -82,9 +82,8 @@ class RunText(SampleBase):
                 char = screen.getch()
                 print(char)
                 if char == 32:
-                    print("lksdjfkljsdkf")
                     running = False
-                if running:
+                if running == True:
                     curses.napms(1000)
                     seconds += 1
                 nameStr = graphics.DrawText(
