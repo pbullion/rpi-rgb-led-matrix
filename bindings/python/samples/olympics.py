@@ -77,9 +77,6 @@ class RunText(SampleBase):
         try:
             while True:
                 offscreen_canvas.Clear()
-                if seconds > 0:
-                    curses.napms(1000)
-                    seconds += 1
                 timeColor = green
                 curses.napms(1000)
                 seconds += 1
