@@ -78,6 +78,7 @@ class RunText(SampleBase):
             while True:
                 offscreen_canvas.Clear()
                 timeColor = green
+                char = screen.getch()
                 if char != 10:
                     curses.napms(1000)
                     seconds += 1
@@ -97,7 +98,6 @@ class RunText(SampleBase):
                     timeColor,
                     str(seconds),
                 )
-                char = screen.getch()
                 offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
         finally:
             # shut down cleanly
