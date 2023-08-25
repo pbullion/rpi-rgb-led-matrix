@@ -98,7 +98,7 @@ class RunText(SampleBase):
                     str(seconds),
                 )
                 char = screen.getch()
-                curses.napms(1000)
+                curses.napms(500)
                 seconds += 1
                 offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
         finally:
