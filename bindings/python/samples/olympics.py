@@ -93,7 +93,7 @@ class RunText(SampleBase):
                     10,
                     26,
                     green,
-                    "Caleb",
+                    "Brain Pooshard",
                 )
                 if final > 0:
                     remainingTime = graphics.DrawText(
