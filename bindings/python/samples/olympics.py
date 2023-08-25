@@ -74,6 +74,7 @@ class RunText(SampleBase):
         curses.cbreak()
         # map arrow keys to special values
         screen.keypad(True)
+        final = 0
         try:
             while True:
                 offscreen_canvas.Clear()
@@ -81,7 +82,6 @@ class RunText(SampleBase):
                 running = True
                 char = screen.getch()
                 print(char)
-                final = 0
                 if char == 32:
                     final = seconds
                 if running:
@@ -104,14 +104,15 @@ class RunText(SampleBase):
                         timeColor,
                         str(final),
                     )
-                remainingTime = graphics.DrawText(
-                    offscreen_canvas,
-                    font,
-                    nameStr + 50,
-                    26,
-                    timeColor,
-                    str(seconds),
-                )
+                else:
+                    remainingTime = graphics.DrawText(
+                        offscreen_canvas,
+                        font,
+                        nameStr + 50,
+                        26,
+                        timeColor,
+                        str(seconds),
+                    )
                 offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
         finally:
             # shut down cleanly
