@@ -81,6 +81,7 @@ class RunText(SampleBase):
                 running = True
                 char = screen.getch()
                 print(char)
+                final = 0
                 if char == 32:
                     final = seconds
                 if running:
