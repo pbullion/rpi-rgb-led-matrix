@@ -99,7 +99,7 @@ class RunText(SampleBase):
                     timeColor,
                     str(seconds),
                 )
-                if char != 10:
+                if char == 10:
                     running = False
                 offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
         finally:
