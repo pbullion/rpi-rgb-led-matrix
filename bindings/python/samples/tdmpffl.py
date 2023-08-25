@@ -323,11 +323,13 @@ class RunText(SampleBase):
                 if char == 10:
                     seconds = 120
                     if currentPick == 12 and currentRound % 2 == 0:
+                        print("if")
                         print(currentPick, currentRound)
                         currentRound += 1
                         currentPickIndex = 0
                         currentPick = 12
                     elif currentPick == 12 and currentRound % 2 != 0:
+                        print("elif")
                         print(currentPick, currentRound)
                         currentRound += 1
                         currentPickIndex = 11
