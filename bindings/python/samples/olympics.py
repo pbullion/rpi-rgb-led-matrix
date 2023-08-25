@@ -82,22 +82,39 @@ class RunText(SampleBase):
                 if char != 10:
                     curses.napms(1000)
                     seconds += 1
-                nameStr = graphics.DrawText(
-                    offscreen_canvas,
-                    font,
-                    10,
-                    26,
-                    green,
-                    "Caleb",
-                )
-                remainingTime = graphics.DrawText(
-                    offscreen_canvas,
-                    font,
-                    nameStr + 25,
-                    26,
-                    timeColor,
-                    str(seconds),
-                )
+                    nameStr = graphics.DrawText(
+                        offscreen_canvas,
+                        font,
+                        10,
+                        26,
+                        green,
+                        "Caleb",
+                    )
+                    remainingTime = graphics.DrawText(
+                        offscreen_canvas,
+                        font,
+                        nameStr + 25,
+                        26,
+                        timeColor,
+                        str(seconds),
+                    )
+                else:
+                    nameStr = graphics.DrawText(
+                        offscreen_canvas,
+                        font,
+                        10,
+                        26,
+                        green,
+                        "Caleb",
+                    )
+                    remainingTime = graphics.DrawText(
+                        offscreen_canvas,
+                        font,
+                        nameStr + 25,
+                        26,
+                        timeColor,
+                        str(seconds),
+                    )
                 offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
         finally:
             # shut down cleanly
