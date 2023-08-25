@@ -80,6 +80,7 @@ class RunText(SampleBase):
                 timeColor = green
                 running = True
                 char = screen.getch()
+                print(char)
                 if char == 10:
                     running = False
                 if running:
