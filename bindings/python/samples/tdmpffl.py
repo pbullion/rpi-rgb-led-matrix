@@ -327,7 +327,7 @@ class RunText(SampleBase):
                         print(currentPick, currentRound)
                         currentRound += 1
                         currentPickIndex = 0
-                        currentPick = 12
+                        currentPick = 1
                     elif currentPick == 12 and currentRound % 2 != 0:
                         print("elif")
                         print(currentPick, currentRound)
