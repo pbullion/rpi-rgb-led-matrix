@@ -76,7 +76,6 @@ class RunText(SampleBase):
         screen.keypad(True)
         try:
             while True:
-                person = input("enter your name...")
                 offscreen_canvas.Clear()
                 if seconds > 0:
                     curses.napms(1000)
@@ -88,7 +87,7 @@ class RunText(SampleBase):
                     10,
                     26,
                     green,
-                    person,
+                    "Caleb",
                 )
                 remainingTime = graphics.DrawText(
                     offscreen_canvas,
