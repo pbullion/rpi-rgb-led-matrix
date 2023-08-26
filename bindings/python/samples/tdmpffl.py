@@ -270,7 +270,7 @@ class RunText(SampleBase):
                         offscreen_canvas,
                         middleFont,
                         -1000,
-                        18,
+                        12,
                         red,
                         "TAKE A SHOT " + currentPicksName + "!",
                     )
@@ -278,7 +278,7 @@ class RunText(SampleBase):
                         offscreen_canvas,
                         middleFont,
                         ((offscreen_canvas.width / 2) - (blackHurryUpText / 2)),
-                        18,
+                        12,
                         red,
                         "TAKE A SHOT " + currentPicksName + "!",
                     )
@@ -286,7 +286,7 @@ class RunText(SampleBase):
                         offscreen_canvas,
                         middleFont,
                         -1000,
-                        12,
+                        24,
                         red,
                         "YOU HAVE DISRESPECTED THE LEAGUE.",
                     )
