@@ -286,7 +286,7 @@ class RunText(SampleBase):
                         offscreen_canvas,
                         middleFont,
                         -1000,
-                        18,
+                        12,
                         red,
                         "YOU HAVE DISRESPECTED THE LEAGUE.",
                     )
@@ -294,7 +294,7 @@ class RunText(SampleBase):
                         offscreen_canvas,
                         middleFont,
                         ((offscreen_canvas.width / 2) - (blackDisrespectText / 2)),
-                        18,
+                        24,
                         red,
                         "YOU HAVE DISRESPECTED THE LEAGUE.",
                     )
