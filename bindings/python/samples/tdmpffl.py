@@ -51,17 +51,17 @@ class RunText(SampleBase):
         currentPick = 1
         currentPickIndex = 0
         leagueMembers = [
-            "TEDDIE",
-            "CALEB",
-            "BILL",
-            "BRAIN",
-            "DUG",
-            "JAPAN",
-            "DUDDY",
-            "DONNY",
             "OSCAR",
+            "BRAIN",
+            "CALEB",
+            "DUDDY",
             "DENNY",
+            "TEDDIE",
+            "DUG",
+            "BILL",
             "SNAKE",
+            "DONNY",
+            "JAPAN",
             "ZANE",
         ]
         seconds = 120
@@ -323,14 +323,10 @@ class RunText(SampleBase):
                 if char == 10:
                     seconds = 120
                     if currentPick == 12 and currentRound % 2 == 0:
-                        print("if")
-                        print(currentPick, currentRound)
                         currentRound += 1
                         currentPickIndex = 0
                         currentPick = 1
                     elif currentPick == 12 and currentRound % 2 != 0:
-                        print("elif")
-                        print(currentPick, currentRound)
                         currentRound += 1
                         currentPickIndex = 11
                         currentPick = 1
