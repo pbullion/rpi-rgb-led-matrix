@@ -205,7 +205,7 @@ class RunText(SampleBase):
                             + " "
                             + nextUpPicksName
                         )
-                round_text = "Rd " + str(currentRound) + "." + str(currentPick)
+                round_text = str(currentRound) + "." + str(currentPick)
                 if seconds > 0:
                     curses.napms(1000)
                     seconds -= 1
