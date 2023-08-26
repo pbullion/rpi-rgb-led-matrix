@@ -282,6 +282,22 @@ class RunText(SampleBase):
                         red,
                         "TAKE A SHOT " + currentPicksName + "!",
                     )
+                    blackDisrespectText = graphics.DrawText(
+                        offscreen_canvas,
+                        middleFont,
+                        -1000,
+                        18,
+                        red,
+                        "YOU HAVE DISRESPECTED THE LEAGUE.",
+                    )
+                    hurryUpText = graphics.DrawText(
+                        offscreen_canvas,
+                        middleFont,
+                        ((offscreen_canvas.width / 2) - (blackDisrespectText / 2)),
+                        18,
+                        red,
+                        "YOU HAVE DISRESPECTED THE LEAGUE.",
+                    )
                 else:
                     roundStr = graphics.DrawText(
                         offscreen_canvas, font, 1, 26, blue, round_text
