@@ -197,7 +197,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Seattle Mariners": Image.open(
                 requests.get(
-                    "https://seeklogo.com/images/S/seattle-mariners-baseball-team-logo-15DEFC5218-seeklogo.com.png",
+                    "https://logodownload.org/wp-content/uploads/2020/10/seattle-mariners-logo-0.png",
                     stream=True,
                 ).raw
             )
