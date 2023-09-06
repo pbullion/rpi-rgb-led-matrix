@@ -1710,6 +1710,12 @@ class RunText(SampleBase):
                                 dayString = game[20]
                                 awaySpreadString = game[22]
                                 homeSpreadString = game[23]
+                                if "+" in awayOddsString:
+                                    awayBetsColor = green
+                                    homeBetsColor = red
+                                else:
+                                    awayBetsColor = red
+                                    homeBetsColor = green
                                 offscreen_canvas.SetImage(
                                     teamLogos[game[5]], pos + offset, -10
                                 )
@@ -1793,7 +1799,7 @@ class RunText(SampleBase):
                                     + scoreLocation
                                     + buffer,
                                     12,
-                                    green,
+                                    awayBetsColor,
                                     awaySpreadString,
                                 )
                                 homeSpread = graphics.DrawText(
@@ -1811,7 +1817,7 @@ class RunText(SampleBase):
                                     + scoreLocation
                                     + buffer,
                                     26,
-                                    green,
+                                    homeBetsColor,
                                     homeSpreadString,
                                 )
                                 awayOdds = graphics.DrawText(
@@ -1834,7 +1840,7 @@ class RunText(SampleBase):
                                     + scoreLocation
                                     + buffer,
                                     12,
-                                    green,
+                                    awayBetsColor,
                                     awayOddsString,
                                 )
                                 homeOdds = graphics.DrawText(
@@ -1857,7 +1863,7 @@ class RunText(SampleBase):
                                     + scoreLocation
                                     + buffer,
                                     26,
-                                    green,
+                                    homeBetsColor,
                                     homeOddsString,
                                 )
                                 overUnderStr = graphics.DrawText(
@@ -1885,7 +1891,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + scoreLocation,
                                     12,
-                                    green,
+                                    yellow,
                                     "O/U",
                                 )
                                 overUnderAmount = graphics.DrawText(
@@ -1913,7 +1919,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + scoreLocation,
                                     26,
-                                    green,
+                                    yellow,
                                     overUnderString,
                                 )
                             if "inProgress" in game[0]:

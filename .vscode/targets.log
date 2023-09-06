@@ -18,7 +18,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Thu Aug 10 20:21:49 2023
+# Make data base, printed on Tue Sep  5 20:24:10 2023
 
 # Variables
 
@@ -45,6 +45,7 @@ NVM_INC = /Users/patrickbullion/.nvm/versions/node/v16.13.1/include/node
 # automatic
 @F = $(notdir $@)
 # makefile
+ 
 CURDIR := /Users/patrickbullion/Code/led/rpi-rgb-led-matrix/lib
 # makefile
 SHELL = /bin/sh
@@ -71,17 +72,17 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 NVM_BIN = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin
 # environment
+LaunchInstanceID = 6328B9ED-FEC7-4414-9DC2-06D18E9494E7
+# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
 DEFAULT_USER = patrickbullion
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.o8Q45YPCTA/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ImUQty2tRK/Listeners
 # automatic
 %F = $(notdir $%)
-# environment
-SQLITE_EXEMPT_PATH_FROM_VNODE_GUARDS = /Users/patrickbullion/Library/WebKit/Databases
 # environment
 PWD = /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
 # environment
@@ -101,7 +102,7 @@ VSCODE_CLI = 1
 # makefile (from `Makefile', line 166)
 DEFINES = $(USER_DEFINES) -DDEFAULT_HARDWARE='"$(HARDWARE_DESC)"'
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/6445d93c81ebe42c4cbd7a60712e0b17d9463e97
+VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/6c3e3dba23e8fadc360aed75ce363ba185c49794
 # environment
 LOGNAME = patrickbullion
 # environment
@@ -128,7 +129,6 @@ SHLVL = 3
 MAKE_VERSION := 3.81
 # environment
 USER = patrickbullion
- 
 # makefile
 .DEFAULT_GOAL := all
 # environment
@@ -162,13 +162,15 @@ TERM_PROGRAM_VERSION = 3.4.20
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.183337057.183337063.D232376C-C1F9-4543-8A70-3760B26572F6
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.187255593.187255599.13A6382F-422E-4703-8567-B9B220AB6B49
 # environment
 LC_TERMINAL_VERSION = 3.4.20
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -191,6 +193,8 @@ ITERM_PROFILE = Default
 PAGER = less
 # environment
 LC_ALL = C
+# environment
+SECURITYSESSIONID = 186ac
 # automatic
 ^F = $(notdir $^)
 # default
@@ -204,9 +208,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 21568
+VSCODE_PID = 26024
 # variable set hash-table stats:
-# Load=91/1024=9%, Rehash=0, Collisions=2/142=1%
+# Load=93/1024=9%, Rehash=0, Collisions=2/144=1%
 
 # Pattern-specific Variable Values
 
@@ -263,6 +267,7 @@ FORCE:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
+ 
 #  File has been updated.
 #  Successfully updated.
 
@@ -445,7 +450,6 @@ compiler-flags: FORCE
 # ? := FORCE
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=3/24=12%
- 
 #  commands to execute (from `Makefile', line 194):
 	@echo '$(CXX) $(CXXFLAGS)' | cmp -s - $@ || echo '$(CXX) $(CXXFLAGS)' > $@
 	
@@ -475,13 +479,13 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Aug 10 20:21:49 2023
+# Finished Make data base on Tue Sep  5 20:24:10 2023
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Thu Aug 10 20:21:49 2023
+# Make data base, printed on Tue Sep  5 20:24:10 2023
 
 # Variables
 
@@ -511,6 +515,8 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en-us","availableLanguages":{}
 _ = /usr/bin/make
 # makefile (from `Makefile', line 5)
 RGB_LIBRARY_NAME = rgbmatrix
+# makefile (from `Makefile', line 10)
+CSHARP_LIB_DIR = bindings/c#
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
@@ -528,17 +534,17 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 NVM_BIN = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin
 # environment
+LaunchInstanceID = 6328B9ED-FEC7-4414-9DC2-06D18E9494E7
+# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
 DEFAULT_USER = patrickbullion
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.o8Q45YPCTA/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ImUQty2tRK/Listeners
 # automatic
 %F = $(notdir $%)
-# environment
-SQLITE_EXEMPT_PATH_FROM_VNODE_GUARDS = /Users/patrickbullion/Library/WebKit/Databases
 # environment
 PWD = /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
 # environment
@@ -556,7 +562,7 @@ MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/6445d93c81ebe42c4cbd7a60712e0b17d9463e97
+VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/6c3e3dba23e8fadc360aed75ce363ba185c49794
 # environment
 LOGNAME = patrickbullion
 # environment
@@ -622,13 +628,15 @@ TERM_PROGRAM_VERSION = 3.4.20
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.183337057.183337063.D232376C-C1F9-4543-8A70-3760B26572F6
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.187255593.187255599.13A6382F-422E-4703-8567-B9B220AB6B49
 # environment
 LC_TERMINAL_VERSION = 3.4.20
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -651,8 +659,9 @@ ITERM_PROFILE = Default
 PAGER = less
 # environment
 LC_ALL = C
-# makefile (from `Makefile', line 10)
-CSHARP_LIB_DIR = bindings/c#
+# environment
+SECURITYSESSIONID = 186ac
+ 
 # automatic
 ^F = $(notdir $^)
 # default
@@ -664,9 +673,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 21568
+VSCODE_PID = 26024
 # variable set hash-table stats:
-# Load=90/1024=9%, Rehash=0, Collisions=4/129=3%
+# Load=92/1024=9%, Rehash=0, Collisions=5/131=4%
 
 # Pattern-specific Variable Values
 
@@ -713,7 +722,7 @@ FORCE:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-02-16 17:19:47
+#  Last modified 2023-09-05 12:05:18
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -778,7 +787,6 @@ install-python: build-python
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 31):
- 
 	$(MAKE) -C $(PYTHON_LIB_DIR) install
 	
 
@@ -803,6 +811,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Aug 10 20:21:49 2023
+# Finished Make data base on Tue Sep  5 20:24:10 2023
 
  
