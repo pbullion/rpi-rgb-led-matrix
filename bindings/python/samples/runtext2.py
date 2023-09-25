@@ -77,7 +77,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Texas Rangers": Image.open(
                 requests.get(
-                    "https://sportslogohistory.com/wp-content/uploads/2016/SLH/mlb_alternate/texas_rangers_2003-2004_a.png",
+                    "https://cdn.inspireuplift.com/uploads/images/seller_products/1683356641_2.png",
                     stream=True,
                 ).raw
             )
