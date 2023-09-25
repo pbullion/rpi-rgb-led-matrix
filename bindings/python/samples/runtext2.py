@@ -149,7 +149,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cincinnati Reds": Image.open(
                 requests.get(
-                    "https://sportslogohistory.com/wp-content/uploads/2018/01/cincinnati_reds_2007-present_a.png",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Cincinnati_Reds_Logo.svg/1200px-Cincinnati_Reds_Logo.svg.png",
                     stream=True,
                 ).raw
             )
