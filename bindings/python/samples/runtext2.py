@@ -173,7 +173,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Minnesota Twins": Image.open(
                 requests.get(
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Minnesota_Twins_wordmark_logo_%282023_rebrand%29.svg/1200px-Minnesota_Twins_wordmark_logo_%282023_rebrand%29.svg.png",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW5d4zuFojuvYldGSmfFDf_L4YDpkGNNr1kP-gAUg&s",
                     stream=True,
                 ).raw
             )
