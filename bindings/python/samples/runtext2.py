@@ -173,7 +173,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Minnesota Twins": Image.open(
                 requests.get(
-                    "https://sportslogohistory.com/wp-content/uploads/2018/01/minnesota_twins_2010-pres_a.png",
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Minnesota_Twins_wordmark_logo_%282023_rebrand%29.svg/1200px-Minnesota_Twins_wordmark_logo_%282023_rebrand%29.svg.png",
                     stream=True,
                 ).raw
             )
