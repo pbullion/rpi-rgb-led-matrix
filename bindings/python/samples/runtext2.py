@@ -101,7 +101,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Oakland Athletics": Image.open(
                 requests.get(
-                    "https://vectorency.com/wp-content/uploads/2021/07/oakland_athletics_11.png",
+                    "https://1000logos.net/wp-content/uploads/2018/05/Oakland-Athletics-Logo-Color.jpg",
                     stream=True,
                 ).raw
             )
@@ -213,7 +213,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Detroit Tigers": Image.open(
                 requests.get(
-                    "https://vectorency.com/wp-content/uploads/2021/07/detroit_tigers_15.png",
+                    "https://1000logos.net/wp-content/uploads/2017/08/Detroit-Tigers-Logo-1994.jpg",
                     stream=True,
                 ).raw
             )
