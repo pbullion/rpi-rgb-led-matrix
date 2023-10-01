@@ -6,7 +6,6 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./lib
  
 # GNU Make 3.81
@@ -18,7 +17,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Mon Sep 25 15:13:08 2023
+# Make data base, printed on Sun Oct  1 12:07:24 2023
 
 # Variables
 
@@ -77,7 +76,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 DEFAULT_USER = patrickbullion
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Td4hqb4Ys2/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.WRiuZ4Luci/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -129,7 +128,7 @@ USER = patrickbullion
 # makefile
 .DEFAULT_GOAL := all
 # environment
-TERM_SESSION_ID = w1t4p0:D88B0705-5395-4E85-B1EF-CCAFEF6915D1
+TERM_SESSION_ID = w0t4p0:CC434030-A54D-4AD6-BDF4-E39481DCC7F7
 # environment
 LESS = -R
 # automatic
@@ -159,7 +158,7 @@ TERM_PROGRAM_VERSION = 3.4.20
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.199950452.199950458.E5A638F1-B762-409B-B43A-4D61C645554B
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.199950452.199950458.EF793518-CDD8-4047-9AB3-B29DD1A00DA4
 # environment
 LC_TERMINAL_VERSION = 3.4.20
 # environment
@@ -169,7 +168,7 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w1t4p0:D88B0705-5395-4E85-B1EF-CCAFEF6915D1
+ITERM_SESSION_ID = w0t4p0:CC434030-A54D-4AD6-BDF4-E39481DCC7F7
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
@@ -201,7 +200,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 95902
+VSCODE_PID = 83034
 # variable set hash-table stats:
 # Load=90/1024=9%, Rehash=0, Collisions=2/141=1%
 
@@ -472,13 +471,13 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Sep 25 15:13:08 2023
+# Finished Make data base on Sun Oct  1 12:07:24 2023
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Mon Sep 25 15:13:08 2023
+# Make data base, printed on Sun Oct  1 12:07:24 2023
 
 # Variables
 
@@ -507,7 +506,6 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en-us","availableLanguages":{}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 5)
- 
 RGB_LIBRARY_NAME = rgbmatrix
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
@@ -532,7 +530,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 DEFAULT_USER = patrickbullion
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Td4hqb4Ys2/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.WRiuZ4Luci/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -588,7 +586,7 @@ USER = patrickbullion
 # default
 MAKECMDGOALS := all
 # environment
-TERM_SESSION_ID = w1t4p0:D88B0705-5395-4E85-B1EF-CCAFEF6915D1
+TERM_SESSION_ID = w0t4p0:CC434030-A54D-4AD6-BDF4-E39481DCC7F7
 # environment
 LESS = -R
 # automatic
@@ -618,7 +616,7 @@ TERM_PROGRAM_VERSION = 3.4.20
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.199950452.199950458.E5A638F1-B762-409B-B43A-4D61C645554B
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.199950452.199950458.EF793518-CDD8-4047-9AB3-B29DD1A00DA4
 # environment
 LC_TERMINAL_VERSION = 3.4.20
 # environment
@@ -628,7 +626,7 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w1t4p0:D88B0705-5395-4E85-B1EF-CCAFEF6915D1
+ITERM_SESSION_ID = w0t4p0:CC434030-A54D-4AD6-BDF4-E39481DCC7F7
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
@@ -660,7 +658,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 95902
+VSCODE_PID = 83034
 # variable set hash-table stats:
 # Load=89/1024=9%, Rehash=0, Collisions=4/128=3%
 
@@ -779,6 +777,7 @@ install-python: build-python
 
 build-csharp:
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 25):
@@ -798,6 +797,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Sep 25 15:13:08 2023
+# Finished Make data base on Sun Oct  1 12:07:24 2023
 
  

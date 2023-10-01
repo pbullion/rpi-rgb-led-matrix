@@ -85,7 +85,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "New York Mets": Image.open(
                 requests.get(
-                    "https://vectorency.com/wp-content/uploads/2021/07/new_york_mets_11-600x598.png",
+                    "https://www.mlbstatic.com/team-logos/share/121.jpg",
                     stream=True,
                 ).raw
             )
