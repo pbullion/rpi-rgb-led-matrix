@@ -77,7 +77,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Texas Rangers": Image.open(
                 requests.get(
-                    "https://cdn.inspireuplift.com/uploads/images/seller_products/1683356641_2.png",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcvkAI8sinNSRfodR342oUFAo6JXPJUW9M8vM3yC5f3g&s",
                     stream=True,
                 ).raw
             )
