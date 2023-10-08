@@ -2283,8 +2283,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + scoreLocation
                                     + buffer
-                                    + buffer
-                                    + buffer
                                     + newOffset
                                     + homeOdds
                                     + homeSpreadAmount,
@@ -2316,8 +2314,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + scoreLocation
-                                    + buffer
-                                    + buffer
                                     + buffer
                                     + newOffset
                                     + homeOdds
