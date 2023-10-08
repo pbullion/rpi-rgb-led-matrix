@@ -2286,6 +2286,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + newOffset
+                                    + homeOdds
                                     + homeSpreadAmount,
                                     12,
                                     yellow,
@@ -2319,6 +2320,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + newOffset
+                                    + homeOdds
                                     + homeSpreadAmount,
                                     26,
                                     yellow,
