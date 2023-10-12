@@ -59,22 +59,22 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((40, 40), Image.ANTIALIAS),
-            "New York Yankees": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Washington Nationals": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-Washington-Nationals-Logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            # "New York Yankees": Image.open(
+            #     requests.get(
+            #         "https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Washington Nationals": Image.open(
+            #     requests.get(
+            #         "https://loodibee.com/wp-content/uploads/mlb-Washington-Nationals-Logo.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
             "Texas Rangers": Image.open(
                 requests.get(
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcvkAI8sinNSRfodR342oUFAo6JXPJUW9M8vM3yC5f3g&s",
@@ -83,110 +83,110 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "New York Mets": Image.open(
-                requests.get(
-                    "https://www.mlbstatic.com/team-logos/share/121.jpg",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Miami Marlins": Image.open(
-                requests.get(
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_zP8e4N4bDCCuMrkp1eGA7rIc8akKKqFmg&usqp=CAU",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Oakland Athletics": Image.open(
-                requests.get(
-                    "https://1000logos.net/wp-content/uploads/2018/05/Oakland-Athletics-Logo-Color.jpg",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Kansas City Royals": Image.open(
-                requests.get(
-                    "https://img.mlbstatic.com/mlb-images/image/private/t_1x1/t_w1024/mlb/y4j3k0mxap2tx6ozuac6.jpg",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Toronto Blue Jays": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-toronto-blue-jays-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Milwaukee Brewers": Image.open(
-                requests.get(
-                    "https://purepng.com/public/uploads/large/milwaukee-brewers-logo-9xg.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Boston Red Sox": Image.open(
-                requests.get(
-                    "https://www.freepnglogos.com/uploads/boston-red-sox-logo-png/boston-red-sox-circle-hd-picture-download-11.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Cleveland Guardians": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-cleveland-guardians-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Cincinnati Reds": Image.open(
-                requests.get(
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Cincinnati_Reds_Logo.svg/1200px-Cincinnati_Reds_Logo.svg.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "San Francisco Giants": Image.open(
-                requests.get(
-                    "https://i.ebayimg.com/images/g/bI0AAOSwqo1gMvNf/s-l500.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Colorado Rockies": Image.open(
-                requests.get(
-                    "https://cdn.cdnlogo.com/logos/c/19/colorado-rockies.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Minnesota Twins": Image.open(
-                requests.get(
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW5d4zuFojuvYldGSmfFDf_L4YDpkGNNr1kP-gAUg&s",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Los Angeles Dodgers": Image.open(
-                requests.get(
-                    "https://cdn.shopify.com/s/files/1/1949/1233/products/183165943449-0.jpg?v=1575428281",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            # "New York Mets": Image.open(
+            #     requests.get(
+            #         "https://www.mlbstatic.com/team-logos/share/121.jpg",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Miami Marlins": Image.open(
+            #     requests.get(
+            #         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_zP8e4N4bDCCuMrkp1eGA7rIc8akKKqFmg&usqp=CAU",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Oakland Athletics": Image.open(
+            #     requests.get(
+            #         "https://1000logos.net/wp-content/uploads/2018/05/Oakland-Athletics-Logo-Color.jpg",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Kansas City Royals": Image.open(
+            #     requests.get(
+            #         "https://img.mlbstatic.com/mlb-images/image/private/t_1x1/t_w1024/mlb/y4j3k0mxap2tx6ozuac6.jpg",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Toronto Blue Jays": Image.open(
+            #     requests.get(
+            #         "https://loodibee.com/wp-content/uploads/mlb-toronto-blue-jays-logo.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Milwaukee Brewers": Image.open(
+            #     requests.get(
+            #         "https://purepng.com/public/uploads/large/milwaukee-brewers-logo-9xg.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Boston Red Sox": Image.open(
+            #     requests.get(
+            #         "https://www.freepnglogos.com/uploads/boston-red-sox-logo-png/boston-red-sox-circle-hd-picture-download-11.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Cleveland Guardians": Image.open(
+            #     requests.get(
+            #         "https://loodibee.com/wp-content/uploads/mlb-cleveland-guardians-logo.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Cincinnati Reds": Image.open(
+            #     requests.get(
+            #         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Cincinnati_Reds_Logo.svg/1200px-Cincinnati_Reds_Logo.svg.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "San Francisco Giants": Image.open(
+            #     requests.get(
+            #         "https://i.ebayimg.com/images/g/bI0AAOSwqo1gMvNf/s-l500.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Colorado Rockies": Image.open(
+            #     requests.get(
+            #         "https://cdn.cdnlogo.com/logos/c/19/colorado-rockies.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Minnesota Twins": Image.open(
+            #     requests.get(
+            #         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW5d4zuFojuvYldGSmfFDf_L4YDpkGNNr1kP-gAUg&s",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Los Angeles Dodgers": Image.open(
+            #     requests.get(
+            #         "https://cdn.shopify.com/s/files/1/1949/1233/products/183165943449-0.jpg?v=1575428281",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
             "Atlanta Braves": Image.open(
                 requests.get(
                     "https://images.fineartamerica.com/images/artworkimages/medium/1/atlanta-braves-logo-jeromi-cesk-transparent.png",
@@ -195,30 +195,30 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "Seattle Mariners": Image.open(
-                requests.get(
-                    "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Seattle_Mariners_logo_%28low_res%29.svg/1200px-Seattle_Mariners_logo_%28low_res%29.svg.png",
-                    stream=True,
-                ).raw
-            )
-            # https://loodibee.com/wp-content/uploads/Seattle-Mariners-Logo-1977-1980-300x300.png
-            .convert("RGB").resize((50, 50), Image.ANTIALIAS),
-            "Los Angeles Angels": Image.open(
-                requests.get(
-                    "https://media-s3-us-east-1.ceros.com/mlb/images/2022/05/31/20ba2e8b96bd79f5c4c3fe0367fed23f/patch.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Detroit Tigers": Image.open(
-                requests.get(
-                    "https://1000logos.net/wp-content/uploads/2017/08/Detroit-Tigers-Logo-1994.jpg",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            # "Seattle Mariners": Image.open(
+            #     requests.get(
+            #         "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Seattle_Mariners_logo_%28low_res%29.svg/1200px-Seattle_Mariners_logo_%28low_res%29.svg.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # # https://loodibee.com/wp-content/uploads/Seattle-Mariners-Logo-1977-1980-300x300.png
+            # .convert("RGB").resize((50, 50), Image.ANTIALIAS),
+            # "Los Angeles Angels": Image.open(
+            #     requests.get(
+            #         "https://media-s3-us-east-1.ceros.com/mlb/images/2022/05/31/20ba2e8b96bd79f5c4c3fe0367fed23f/patch.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Detroit Tigers": Image.open(
+            #     requests.get(
+            #         "https://1000logos.net/wp-content/uploads/2017/08/Detroit-Tigers-Logo-1994.jpg",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
             "Arizona Diamondbacks": Image.open(
                 requests.get(
                     "https://loodibee.com/wp-content/uploads/mlb-arizona-diamondbacks-logo.png",
@@ -235,62 +235,62 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "San Diego Padres": Image.open(
-                requests.get(
-                    "https://s.yimg.com/it/api/res/1.2/3.wJ5Gj6m_PwuYk8zbM0.g--~A/YXBwaWQ9eW5ld3M7dz0xMjAwO2g9NjMwO3E9MTAw/https://s.yimg.com/cv/apiv2/default/mlb/20200508/500x500/padres_wbgs.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Pittsburgh Pirates": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-pittsburgh-pirates-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Tampa Bay Rays": Image.open(
-                requests.get(
-                    "https://i.ebayimg.com/images/g/ctwAAOSwYshgyTRa/s-l500.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Baltimore Orioles": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/Baltimore-Orioles-Logo-1989-1991-300x300.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Chicago White Sox": Image.open(
-                requests.get(
-                    "https://i.ebayimg.com/images/g/ducAAOSwXGxgQuJM/s-l500.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "St. Louis Cardinals": Image.open(
-                requests.get(
-                    "https://i.pinimg.com/originals/34/2c/0b/342c0baa25c6344e9cb9e3dddaec3f25.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Chicago Cubs": Image.open(
-                requests.get(
-                    "https://i.etsystatic.com/16901505/r/il/638115/1932889911/il_fullxfull.1932889911_4max.jpg",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            # "San Diego Padres": Image.open(
+            #     requests.get(
+            #         "https://s.yimg.com/it/api/res/1.2/3.wJ5Gj6m_PwuYk8zbM0.g--~A/YXBwaWQ9eW5ld3M7dz0xMjAwO2g9NjMwO3E9MTAw/https://s.yimg.com/cv/apiv2/default/mlb/20200508/500x500/padres_wbgs.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Pittsburgh Pirates": Image.open(
+            #     requests.get(
+            #         "https://loodibee.com/wp-content/uploads/mlb-pittsburgh-pirates-logo.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Tampa Bay Rays": Image.open(
+            #     requests.get(
+            #         "https://i.ebayimg.com/images/g/ctwAAOSwYshgyTRa/s-l500.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Baltimore Orioles": Image.open(
+            #     requests.get(
+            #         "https://loodibee.com/wp-content/uploads/Baltimore-Orioles-Logo-1989-1991-300x300.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Chicago White Sox": Image.open(
+            #     requests.get(
+            #         "https://i.ebayimg.com/images/g/ducAAOSwXGxgQuJM/s-l500.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "St. Louis Cardinals": Image.open(
+            #     requests.get(
+            #         "https://i.pinimg.com/originals/34/2c/0b/342c0baa25c6344e9cb9e3dddaec3f25.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Chicago Cubs": Image.open(
+            #     requests.get(
+            #         "https://i.etsystatic.com/16901505/r/il/638115/1932889911/il_fullxfull.1932889911_4max.jpg",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
             "Houston Astros": Image.open(
                 requests.get(
                     "https://images.ctfassets.net/iiozhi00a8lc/t117_favicon117_qgouernt_ehw9pj78_png/700d0ebafa92b5499f3dc09bf465fc98/t117_favicon.png",
