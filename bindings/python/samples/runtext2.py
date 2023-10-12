@@ -560,7 +560,7 @@ class RunText(SampleBase):
             green = graphics.Color(0, 255, 0)
             red = graphics.Color(255, 0, 0)
             blue = graphics.Color(0, 0, 255)
-            teal = graphics.Color(0, 255, 255)
+            # teal = graphics.Color(0, 255, 255)
             purple = graphics.Color(102, 0, 204)
             yellow = graphics.Color(255, 255, 0)
             white = graphics.Color(255, 255, 0)
