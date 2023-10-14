@@ -3158,6 +3158,91 @@ class RunText(SampleBase):
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
+                    elif isinstance(arr, list) and "ufc" in arr[0][0]:
+                        for game in arr:
+                            if "ufc" in game[0]:
+                                conferenceName = graphics.DrawText(
+                                    offscreen_canvas,
+                                    font,
+                                    pos + offset,
+                                    26,
+                                    green,
+                                    "UFC",
+                                )
+                            awayTeam = 0
+                            homeTeam = 0
+                            headlineString = 0
+                            awayTeamStatus = 0
+                            homeTeamStatus = 0
+                            if "pregame" in game[0]:
+                                awayTeamString = game[1]
+                                homeTeamString = game[3]
+                                awayOddsString = game[2]
+                                homeOddsString = game[4]
+                                awayTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    12,
+                                    yellow,
+                                    awayTeamString,
+                                )
+                                homeTeam = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + buffer,
+                                    26,
+                                    yellow,
+                                    homeTeamString,
+                                )
+                                if homeTeam > awayTeam:
+                                    scoreLocation = homeTeam
+                                else:
+                                    scoreLocation = awayTeam
+                                awayOdds = 0
+                                if awayOddsString != "":
+                                    awayOdds = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer
+                                        + homeSpread,
+                                        12,
+                                        green,
+                                        awayOddsString,
+                                    )
+                                    homeOdds = graphics.DrawText(
+                                        offscreen_canvas,
+                                        smallFont,
+                                        pos
+                                        + offset
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + buffer
+                                        + scoreLocation
+                                        + buffer
+                                        + homeSpread,
+                                        26,
+                                        green,
+                                        homeOddsString,
+                                    )
+                            if "pregame" in game[0]:
+                                offset = offset + 140
+                            else:
+                                offset = offset + homeTeam + 200
+                        time.sleep(0.018)
+                        if pos + offset < 0:
+                            running = False
+                            pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "xfl" in arr[0][0]:
                         for game in arr:
                             if "xfl" in game[0]:
