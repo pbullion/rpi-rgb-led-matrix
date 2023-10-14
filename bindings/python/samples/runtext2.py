@@ -3174,7 +3174,7 @@ class RunText(SampleBase):
                             headlineString = 0
                             awayTeamStatus = 0
                             homeTeamStatus = 0
-                            if "pregame" in game[0]:
+                            else:
                                 awayTeamString = game[1]
                                 homeTeamString = game[3]
                                 awayOddsString = game[2]
