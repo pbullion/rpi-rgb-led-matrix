@@ -3175,7 +3175,7 @@ class RunText(SampleBase):
                                     green,
                                     "UFC",
                                 )
-                            if "ufc" != game[0]::
+                            if "ufc" != game[0]:
                                 awayTeamString = game[0]
                                 homeTeamString = game[2]
                                 awayOddsString = game[1]
