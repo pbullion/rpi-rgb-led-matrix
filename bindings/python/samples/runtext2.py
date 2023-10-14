@@ -3175,69 +3175,66 @@ class RunText(SampleBase):
                                     green,
                                     "UFC",
                                 )
-                            elif "pregame" in game[0]:
-                                return
+                            awayTeamString = game[0]
+                            homeTeamString = game[2]
+                            awayOddsString = game[1]
+                            homeOddsString = game[3]
+                            awayTeam = graphics.DrawText(
+                                offscreen_canvas,
+                                smallFont,
+                                pos + offset + buffer + buffer + buffer,
+                                12,
+                                yellow,
+                                awayTeamString,
+                            )
+                            homeTeam = graphics.DrawText(
+                                offscreen_canvas,
+                                smallFont,
+                                pos + offset + buffer + buffer + buffer,
+                                26,
+                                yellow,
+                                homeTeamString,
+                            )
+                            if homeTeam > awayTeam:
+                                scoreLocation = homeTeam
                             else:
-                                awayTeamString = game[0]
-                                homeTeamString = game[2]
-                                awayOddsString = game[1]
-                                homeOddsString = game[3]
-                                awayTeam = graphics.DrawText(
+                                scoreLocation = awayTeam
+                            awayOdds = 0
+                            if awayOddsString != "":
+                                awayOdds = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + homeSpread,
                                     12,
-                                    yellow,
-                                    awayTeamString,
+                                    green,
+                                    awayOddsString,
                                 )
-                                homeTeam = graphics.DrawText(
+                                homeOdds = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + homeSpread,
                                     26,
-                                    yellow,
-                                    homeTeamString,
+                                    green,
+                                    homeOddsString,
                                 )
-                                if homeTeam > awayTeam:
-                                    scoreLocation = homeTeam
-                                else:
-                                    scoreLocation = awayTeam
-                                awayOdds = 0
-                                if awayOddsString != "":
-                                    awayOdds = graphics.DrawText(
-                                        offscreen_canvas,
-                                        smallFont,
-                                        pos
-                                        + offset
-                                        + buffer
-                                        + buffer
-                                        + buffer
-                                        + buffer
-                                        + buffer
-                                        + scoreLocation
-                                        + buffer
-                                        + homeSpread,
-                                        12,
-                                        green,
-                                        awayOddsString,
-                                    )
-                                    homeOdds = graphics.DrawText(
-                                        offscreen_canvas,
-                                        smallFont,
-                                        pos
-                                        + offset
-                                        + buffer
-                                        + buffer
-                                        + buffer
-                                        + buffer
-                                        + buffer
-                                        + scoreLocation
-                                        + buffer
-                                        + homeSpread,
-                                        26,
-                                        green,
-                                        homeOddsString,
-                                    )
                             if "pregame" in game[0]:
                                 offset = offset + 140
                             else:
