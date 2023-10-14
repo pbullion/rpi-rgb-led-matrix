@@ -3178,8 +3178,8 @@ class RunText(SampleBase):
                             if "ufc" != game[0]:
                                 awayTeamString = game[0]
                                 homeTeamString = game[2]
-                                awayOddsString = game[1]
-                                homeOddsString = game[3]
+                                awayOddsString = str(game[1])
+                                homeOddsString = str(game[3])
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
