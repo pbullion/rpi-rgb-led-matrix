@@ -3160,6 +3160,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "ufc" in arr[0][0]:
                         for game in arr:
+                            print(game)
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
