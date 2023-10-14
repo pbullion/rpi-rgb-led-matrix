@@ -3160,6 +3160,11 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "ufc" in arr[0][0]:
                         for game in arr:
+                            awayTeam = 0
+                            homeTeam = 0
+                            headlineString = 0
+                            awayTeamStatus = 0
+                            homeTeamStatus = 0
                             if "ufc" in game[0]:
                                 conferenceName = graphics.DrawText(
                                     offscreen_canvas,
@@ -3169,11 +3174,8 @@ class RunText(SampleBase):
                                     green,
                                     "UFC",
                                 )
-                            awayTeam = 0
-                            homeTeam = 0
-                            headlineString = 0
-                            awayTeamStatus = 0
-                            homeTeamStatus = 0
+                            elif "pregame" in game[0]:
+                                return
                             else:
                                 awayTeamString = game[1]
                                 homeTeamString = game[3]
