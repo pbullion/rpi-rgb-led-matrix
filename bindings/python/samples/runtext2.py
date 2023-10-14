@@ -3178,10 +3178,10 @@ class RunText(SampleBase):
                             elif "pregame" in game[0]:
                                 return
                             else:
-                                awayTeamString = game[1]
-                                homeTeamString = game[3]
-                                awayOddsString = game[2]
-                                homeOddsString = game[4]
+                                awayTeamString = game[0]
+                                homeTeamString = game[2]
+                                awayOddsString = game[1]
+                                homeOddsString = game[3]
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
