@@ -3178,9 +3178,9 @@ class RunText(SampleBase):
                             if "ufc" != game[0]:
                                 awayTeamString = game[0]
                                 print(awayTeamString)
-                                homeTeamString = game[2]
+                                homeTeamString = game[1]
                                 print(homeTeamString)
-                                awayOddsString = str(game[1])
+                                awayOddsString = str(game[2])
                                 print(awayOddsString)
                                 homeOddsString = str(game[3])
                                 print(homeOddsString)
