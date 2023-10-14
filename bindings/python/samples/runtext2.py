@@ -3218,7 +3218,6 @@ class RunText(SampleBase):
                                         + buffer
                                         + scoreLocation
                                         + buffer
-                                        + homeSpread,
                                         12,
                                         green,
                                         awayOddsString,
@@ -3235,7 +3234,6 @@ class RunText(SampleBase):
                                         + buffer
                                         + scoreLocation
                                         + buffer
-                                        + homeSpread,
                                         26,
                                         green,
                                         homeOddsString,
