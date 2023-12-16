@@ -75,14 +75,14 @@ class RunText(SampleBase):
             # )
             # .convert("RGB")
             # .resize((50, 50), Image.ANTIALIAS),
-            "Texas Rangers": Image.open(
-                requests.get(
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcvkAI8sinNSRfodR342oUFAo6JXPJUW9M8vM3yC5f3g&s",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            # "Texas Rangers": Image.open(
+            #     requests.get(
+            #         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcvkAI8sinNSRfodR342oUFAo6JXPJUW9M8vM3yC5f3g&s",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
             # "New York Mets": Image.open(
             #     requests.get(
             #         "https://www.mlbstatic.com/team-logos/share/121.jpg",
@@ -187,14 +187,14 @@ class RunText(SampleBase):
             # )
             # .convert("RGB")
             # .resize((50, 50), Image.ANTIALIAS),
-            "Atlanta Braves": Image.open(
-                requests.get(
-                    "https://images.fineartamerica.com/images/artworkimages/medium/1/atlanta-braves-logo-jeromi-cesk-transparent.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            # "Atlanta Braves": Image.open(
+            #     requests.get(
+            #         "https://images.fineartamerica.com/images/artworkimages/medium/1/atlanta-braves-logo-jeromi-cesk-transparent.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
             # "Seattle Mariners": Image.open(
             #     requests.get(
             #         "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Seattle_Mariners_logo_%28low_res%29.svg/1200px-Seattle_Mariners_logo_%28low_res%29.svg.png",
@@ -219,22 +219,22 @@ class RunText(SampleBase):
             # )
             # .convert("RGB")
             # .resize((50, 50), Image.ANTIALIAS),
-            "Arizona Diamondbacks": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-arizona-diamondbacks-logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "Philadelphia Phillies": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/mlb-Philadelphia-Phillies-Logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            # "Arizona Diamondbacks": Image.open(
+            #     requests.get(
+            #         "https://loodibee.com/wp-content/uploads/mlb-arizona-diamondbacks-logo.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
+            # "Philadelphia Phillies": Image.open(
+            #     requests.get(
+            #         "https://loodibee.com/wp-content/uploads/mlb-Philadelphia-Phillies-Logo.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
             # "San Diego Padres": Image.open(
             #     requests.get(
             #         "https://s.yimg.com/it/api/res/1.2/3.wJ5Gj6m_PwuYk8zbM0.g--~A/YXBwaWQ9eW5ld3M7dz0xMjAwO2g9NjMwO3E9MTAw/https://s.yimg.com/cv/apiv2/default/mlb/20200508/500x500/padres_wbgs.png",
