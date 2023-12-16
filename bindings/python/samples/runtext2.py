@@ -43,14 +43,14 @@ class RunText(SampleBase):
         #         ).raw
         #     ).convert("RGB").resize((50, 50), Image.ANTIALIAS)
         teamLogos = {
-            "MLB": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            # "MLB": Image.open(
+            #     requests.get(
+            #         "https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((50, 50), Image.ANTIALIAS),
             "NFL": Image.open(
                 requests.get(
                     "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png",
