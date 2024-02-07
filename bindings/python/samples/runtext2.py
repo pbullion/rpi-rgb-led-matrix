@@ -769,7 +769,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Toronto Raptors": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/raptors.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/raptors.jpg"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
