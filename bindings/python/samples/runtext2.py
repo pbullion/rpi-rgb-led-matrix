@@ -566,10 +566,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Brooklyn Nets": Image.open(
-                requests.get(
-                    "https://logowik.com/content/uploads/images/brooklyn-nets3982.jpg",
-                    stream=True,
-                ).raw
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nets.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -580,7 +577,6 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago Bulls": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bulls.png"
-
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -591,7 +587,6 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Dallas Mavericks": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mavs.png"
-
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -615,7 +610,6 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Houston Rockets": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/rockets.png"
-
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
