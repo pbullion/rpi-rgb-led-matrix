@@ -689,10 +689,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Oklahoma City Thunder": Image.open(
-                requests.get(
-                    "https://logowik.com/content/uploads/images/oklahoma-city-thunder3319.jpg",
-                    stream=True,
-                ).raw
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/thunder.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -719,7 +716,6 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Portland Trail Blazers": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/blazers.png",
-
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -4675,7 +4671,9 @@ class RunText(SampleBase):
                                 if overUnderString != "":
                                     overUnderText = "O/U"
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Sacramento Kings"], pos + offset, -10
+                                    teamLogos["Oklahoma City Thunder"],
+                                    pos + offset,
+                                    -10,
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["Portland Trail Blazers"],
