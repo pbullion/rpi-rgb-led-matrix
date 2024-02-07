@@ -580,10 +580,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Charlotte Hornets": Image.open(
-                requests.get(
-                    "https://logowik.com/content/uploads/images/charlotte-hornets1515.jpg",
-                    stream=True,
-                ).raw
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/hornets.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -772,10 +769,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Toronto Raptors": Image.open(
-                requests.get(
-                    "https://logowik.com/content/uploads/images/toronto-raptors3665.jpg",
-                    stream=True,
-                ).raw
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/raptors.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -4727,7 +4721,10 @@ class RunText(SampleBase):
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + buffer + teamLogos[awayTeamString].width,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogos[awayTeamString].width,
                                     24,
                                     green,
                                     "vs",
@@ -4776,7 +4773,8 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + scoreLocation + newBuffer
+                                        + scoreLocation
+                                        + newBuffer
                                         + buffer,
                                         12,
                                         green,
@@ -4789,7 +4787,8 @@ class RunText(SampleBase):
                                         + offset
                                         + buffer
                                         + buffer
-                                        + buffer + newBuffer
+                                        + buffer
+                                        + newBuffer
                                         + buffer
                                         + scoreLocation
                                         + buffer,
@@ -4807,7 +4806,8 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + buffer + newBuffer
+                                        + buffer
+                                        + newBuffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4825,7 +4825,8 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + buffer + newBuffer
+                                        + buffer
+                                        + newBuffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4845,7 +4846,8 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer + newBuffer
+                                    + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -4868,7 +4870,8 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer + newBuffer
+                                    + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
