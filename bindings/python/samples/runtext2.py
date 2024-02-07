@@ -718,10 +718,8 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Portland Trail Blazers": Image.open(
-                requests.get(
-                    "https://logowik.com/content/uploads/images/new-portland-trail-blazers5838.jpg",
-                    stream=True,
-                ).raw
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/blazers.png",
+
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -4680,7 +4678,7 @@ class RunText(SampleBase):
                                     teamLogos["Sacramento Kings"], pos + offset, -10
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Utah Jazz"],
+                                    teamLogos["Portland Trail Blazers"],
                                     pos + 50 + offset,
                                     -10,
                                 )
