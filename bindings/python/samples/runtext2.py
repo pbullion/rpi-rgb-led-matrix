@@ -741,10 +741,8 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Utah Jazz": Image.open(
-                requests.get(
-                    "https://logowik.com/content/uploads/images/utah-jazz-old1653.logowik.com.webp",
-                    stream=True,
-                ).raw
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/jazz.png",
+
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -4665,7 +4663,7 @@ class RunText(SampleBase):
                             headlineString = 0
                             awayTeamStatus = 0
                             homeTeamStatus = 0
-                            newBuffer = 150
+                            newBuffer = 140
                             if "pregame" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -4680,13 +4678,22 @@ class RunText(SampleBase):
                                 if overUnderString != "":
                                     overUnderText = "O/U"
                                 offscreen_canvas.SetImage(
-                                    teamLogos[awayTeamString], pos + offset, -10
+                                    teamLogos["Sacremento Kings"], pos + offset, -10
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos["Utah Jazz"], pos + newBuffer+ offset, -10
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos[awayTeamString],
+                                    pos + newBuffer + offset,
+                                    -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
                                     pos
                                     + offset
+                                    + newBuffer
                                     + buffer
                                     + teamLogos[awayTeamString].width,
                                     24,
