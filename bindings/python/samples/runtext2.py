@@ -4676,7 +4676,7 @@ class RunText(SampleBase):
                                     -10,
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Portland Trail Blazers"],
+                                    teamLogos["New York Knicks"],
                                     pos + 50 + offset,
                                     -10,
                                 )
