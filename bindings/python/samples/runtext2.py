@@ -593,11 +593,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Cavaliers": Image.open(
-                requests.get(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/cavs.png"
-                    ,
-                    stream=True,
-                ).raw
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -783,11 +779,8 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Washington Wizards": Image.open(
-                requests.get(
                     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/wizards.png",
-                    stream=True,
-                ).raw
-            )
+                )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
         }
