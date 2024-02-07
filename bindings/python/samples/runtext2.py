@@ -594,7 +594,8 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Cleveland Cavaliers": Image.open(
                 requests.get(
-                    "https://logowik.com/content/uploads/images/cleveland-cavaliers8618.jpg",
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/cavs.png"
+                    ,
                     stream=True,
                 ).raw
             )
@@ -783,7 +784,8 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Washington Wizards": Image.open(
                 requests.get(
-                    "https://logowik.com/content/uploads/images/washington-wizards3044.jpg",
+                                    "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/wizards.png",
+
                     stream=True,
                 ).raw
             )
