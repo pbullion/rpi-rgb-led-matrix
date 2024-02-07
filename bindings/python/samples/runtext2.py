@@ -4639,7 +4639,7 @@ class RunText(SampleBase):
                                     overUnderText = "O/U"
                                 offscreen_canvas.SetImage(
                                     teamLogos[awayTeamString],
-                                    pos  + offset,
+                                    pos + offset,
                                     -10,
                                 )
                                 versus = graphics.DrawText(
@@ -4647,7 +4647,6 @@ class RunText(SampleBase):
                                     middleFont,
                                     pos
                                     + offset
-                                    + newBuffer
                                     + buffer
                                     + teamLogos[awayTeamString].width,
                                     24,
@@ -4847,10 +4846,38 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
+                                offscreen_canvas.SetImage(
+                                    teamLogos[awayTeamString],
+                                    pos + offset,
+                                    -10,
+                                )
+                                versus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogos[awayTeamString].width,
+                                    24,
+                                    green,
+                                    "vs",
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos[homeTeamString],
+                                    pos
+                                    + offset
+                                    + teamLogos[awayTeamString].width
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer,
+                                    -10,
+                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + newBuffer + offset + buffer + buffer + buffer,
                                     12,
                                     awayColor,
                                     awayTeamString,
@@ -4858,7 +4885,7 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + newBuffer + offset + buffer + buffer + buffer,
                                     26,
                                     homeColor,
                                     homeTeamString,
@@ -4875,6 +4902,7 @@ class RunText(SampleBase):
                                     + offset
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + scoreLocation
@@ -4889,6 +4917,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -4904,6 +4933,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -4925,6 +4955,7 @@ class RunText(SampleBase):
                                     + offset
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + scoreLocation
                                     + buffer
@@ -4944,6 +4975,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + scoreLocation
@@ -4965,6 +4997,7 @@ class RunText(SampleBase):
                                     + offset
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + scoreLocation
                                     + buffer
@@ -4987,6 +5020,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + scoreLocation
@@ -5010,6 +5044,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + scoreLocation
@@ -5036,6 +5071,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + scoreLocation
@@ -5059,7 +5095,7 @@ class RunText(SampleBase):
                             if "pregame" in game[0]:
                                 offset = offset + 125 + newBuffer
                             if "inProgress" in game[0]:
-                                offset = offset + 220
+                                offset = offset + 220 + newBuffer
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -5084,10 +5120,38 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
+                                offscreen_canvas.SetImage(
+                                    teamLogos[awayTeamString],
+                                    pos + offset,
+                                    -10,
+                                )
+                                versus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogos[awayTeamString].width,
+                                    24,
+                                    green,
+                                    "vs",
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos[homeTeamString],
+                                    pos
+                                    + offset
+                                    + teamLogos[awayTeamString].width
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer,
+                                    -10,
+                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + newBuffer,
                                     12,
                                     awayColor,
                                     awayTeamString,
@@ -5095,7 +5159,7 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + newBuffer,
                                     26,
                                     homeColor,
                                     homeTeamString,
@@ -5113,6 +5177,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + scoreLocation
                                     + buffer,
@@ -5126,6 +5191,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -5142,6 +5208,7 @@ class RunText(SampleBase):
                                     + awayTeamStatus
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -5149,7 +5216,7 @@ class RunText(SampleBase):
                                 finalString = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + runningTotal,
+                                    pos + offset + buffer + runningTotal + newBuffer,
                                     12,
                                     yellow,
                                     oddsString,
@@ -5157,7 +5224,7 @@ class RunText(SampleBase):
                                 headlineString = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + runningTotal,
+                                    pos + offset + buffer + runningTotal + newBuffer,
                                     26,
                                     green,
                                     headline,
@@ -5168,6 +5235,7 @@ class RunText(SampleBase):
                                     + awayTeam
                                     + awayTeamStatus
                                     + headlineString
+                                    + newBuffer
                                     + 130
                                 )
                             else:
@@ -5176,6 +5244,7 @@ class RunText(SampleBase):
                                     + homeTeam
                                     + homeTeamStatus
                                     + headlineString
+                                    + newBuffer
                                     + 130
                                 )
                         time.sleep(0.018)
