@@ -647,10 +647,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Memphis Grizzlies": Image.open(
-                requests.get(
-                    "https://logowik.com/content/uploads/images/109_memphis_grizzlies.jpg",
-                    stream=True,
-                ).raw
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/grizzlies.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -4668,7 +4665,7 @@ class RunText(SampleBase):
                                 if overUnderString != "":
                                     overUnderText = "O/U"
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Oklahoma City Thunder"],
+                                    teamLogos["Memphis Grizzlies"],
                                     pos + offset,
                                     -10,
                                 )
