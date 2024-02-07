@@ -746,10 +746,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "San Antonio Spurs": Image.open(
-                requests.get(
-                    "https://logowik.com/content/uploads/images/san-antonio-spurs6036.jpg",
-                    stream=True,
-                ).raw
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/spurs.png",
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
