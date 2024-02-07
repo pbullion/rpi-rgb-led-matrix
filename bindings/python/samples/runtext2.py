@@ -4638,18 +4638,8 @@ class RunText(SampleBase):
                                 if overUnderString != "":
                                     overUnderText = "O/U"
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Brooklyn Nets"],
-                                    pos + offset,
-                                    -10,
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos["Denver Nuggets"],
-                                    pos + 50 + offset,
-                                    -10,
-                                )
-                                offscreen_canvas.SetImage(
                                     teamLogos[awayTeamString],
-                                    pos + newBuffer + offset,
+                                    pos  + offset,
                                     -10,
                                 )
                                 versus = graphics.DrawText(
