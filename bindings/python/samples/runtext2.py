@@ -591,10 +591,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Denver Nuggets": Image.open(
-                requests.get(
-                    "https://logowik.com/content/uploads/images/denver-nuggets1676.jpg",
-                    stream=True,
-                ).raw
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nuggets.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -4646,7 +4643,7 @@ class RunText(SampleBase):
                                     -10,
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Dallas Mavericks"],
+                                    teamLogos["Chicago Bulls"],
                                     pos + 50 + offset,
                                     -10,
                                 )
