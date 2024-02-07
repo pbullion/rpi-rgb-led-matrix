@@ -579,10 +579,8 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Chicago Bulls": Image.open(
-                requests.get(
-                    "https://logowik.com/content/uploads/images/992_chicago_bulls_logo.jpg",
-                    stream=True,
-                ).raw
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bulls.png"
+
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -592,10 +590,8 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Dallas Mavericks": Image.open(
-                requests.get(
-                    "https://logowik.com/content/uploads/images/dallas-mavericks-mavs4648.jpg",
-                    stream=True,
-                ).raw
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mavs.png"
+
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -618,10 +614,8 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Houston Rockets": Image.open(
-                requests.get(
-                    "https://logowik.com/content/uploads/images/672_houston_rockets_logo.jpg",
-                    stream=True,
-                ).raw
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/rockets.png"
+
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -4653,12 +4647,12 @@ class RunText(SampleBase):
                                 if overUnderString != "":
                                     overUnderText = "O/U"
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Indiana Pacers"],
+                                    teamLogos["Houston Rockets"],
                                     pos + offset,
                                     -10,
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Minnesota Timberwolves"],
+                                    teamLogos["Dallas Mavericks"],
                                     pos + 50 + offset,
                                     -10,
                                 )
