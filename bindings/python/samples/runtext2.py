@@ -742,7 +742,6 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Utah Jazz": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/jazz.png",
-
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -4678,10 +4677,12 @@ class RunText(SampleBase):
                                 if overUnderString != "":
                                     overUnderText = "O/U"
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Sacremento Kings"], pos + offset, -10
+                                    teamLogos["Sacramento Kings"], pos + offset, -10
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Utah Jazz"], pos + newBuffer+ offset, -10
+                                    teamLogos["Utah Jazz"],
+                                    pos + newBuffer + offset,
+                                    -10,
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos[awayTeamString],
