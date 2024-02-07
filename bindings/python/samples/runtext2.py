@@ -555,6 +555,246 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
+            "Atlanta Hawks": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/atlanta-hawks7500.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Boston Celtics": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/boston-celtics7817.logowik.com.webp",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Brooklyn Nets": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/brooklyn-nets3982.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Charlotte Hornets": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/charlotte-hornets1515.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Chicago Bulls": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/992_chicago_bulls_logo.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Cleveland Cavaliers": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/cleveland-cavaliers8618.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Dallas Mavericks": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/dallas-mavericks-mavs4648.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Denver Nuggets": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/denver-nuggets1676.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Detroit Pistons": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/detroit-pistons1723.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Golden State Warriors": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/605_golden_state.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Houston Rockets": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/672_houston_rockets_logo.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Indiana Pacers": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/indiana-pacers7708.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Los Angeles Clippers": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/746_los_angeles_clippers_logo.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Los Angeles Lakers": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/224_losangeleslakers.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Memphis Grizzlies": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/109_memphis_grizzlies.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Miami Heat": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/miami-heat8168.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Milwaukee Bucks": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/milwaukee-bucks3419.logowik.com.webp",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Minnesota Timberwolves": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/minnesota-timberwolves-new5892.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "New Orleans Pelicans": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/new-orleans-pelicans9575.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "New York Knicks": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/new-york-knicks4661.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Oklahoma City Thunder": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/oklahoma-city-thunder3319.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Orlando Magic": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/orlando-magic4073.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Philadelphia 76ers": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/philadelphia-76ers3745.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Phoenix Suns": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/914_phoenix_suns_logo.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Portland Trail Blazers": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/new-portland-trail-blazers5838.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Sacramento Kings": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/sacramento-kings1210.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "San Antonio Spurs": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/san-antonio-spurs6036.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Toronto Raptors": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/toronto-raptors3665.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Utah Jazz": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/utah-jazz-old1653.logowik.com.webp",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Washington Wizards": Image.open(
+                requests.get(
+                    "https://logowik.com/content/uploads/images/washington-wizards3044.jpg",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
         }
         while True:
             green = graphics.Color(0, 255, 0)
@@ -4467,6 +4707,7 @@ class RunText(SampleBase):
                             headlineString = 0
                             awayTeamStatus = 0
                             homeTeamStatus = 0
+                            newBuffer = 80
                             if "pregame" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -4480,10 +4721,33 @@ class RunText(SampleBase):
                                 overUnderText = ""
                                 if overUnderString != "":
                                     overUnderText = "O/U"
+                                offscreen_canvas.SetImage(
+                                    teamLogos[awayTeamString], pos + offset, -10
+                                )
+                                versus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos + offset + buffer + teamLogos[awayTeamString].width,
+                                    24,
+                                    green,
+                                    "vs",
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos[homeTeamString],
+                                    pos
+                                    + offset
+                                    + teamLogos[awayTeamString].width
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer,
+                                    -10,
+                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + newBuffer,
                                     12,
                                     yellow,
                                     awayTeamString,
@@ -4491,7 +4755,7 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + newBuffer,
                                     26,
                                     yellow,
                                     homeTeamString,
@@ -4512,7 +4776,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + scoreLocation
+                                        + scoreLocation + newBuffer
                                         + buffer,
                                         12,
                                         green,
@@ -4525,7 +4789,7 @@ class RunText(SampleBase):
                                         + offset
                                         + buffer
                                         + buffer
-                                        + buffer
+                                        + buffer + newBuffer
                                         + buffer
                                         + scoreLocation
                                         + buffer,
@@ -4543,7 +4807,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + buffer
+                                        + buffer + newBuffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4561,7 +4825,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + buffer
+                                        + buffer + newBuffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4581,7 +4845,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
+                                    + buffer + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -4604,7 +4868,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
+                                    + buffer + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
