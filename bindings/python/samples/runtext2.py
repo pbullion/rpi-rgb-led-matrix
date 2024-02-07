@@ -4681,7 +4681,7 @@ class RunText(SampleBase):
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["Utah Jazz"],
-                                    pos + newBuffer + offset,
+                                    pos + 50 + offset,
                                     -10,
                                 )
                                 offscreen_canvas.SetImage(
