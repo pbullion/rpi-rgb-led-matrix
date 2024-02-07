@@ -784,8 +784,7 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Washington Wizards": Image.open(
                 requests.get(
-                                    "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/wizards.png",
-
+                    "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/wizards.png",
                     stream=True,
                 ).raw
             )
