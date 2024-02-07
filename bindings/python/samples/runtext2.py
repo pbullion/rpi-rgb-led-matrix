@@ -622,10 +622,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Golden State Warriors": Image.open(
-                requests.get(
-                    "https://logowik.com/content/uploads/images/605_golden_state.jpg",
-                    stream=True,
-                ).raw
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/warriors.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -779,8 +776,8 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Washington Wizards": Image.open(
-                    "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/wizards.png",
-                )
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/wizards.png",
+            )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
         }
