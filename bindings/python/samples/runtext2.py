@@ -711,6 +711,21 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
+            "Ducks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ducks Background Removed.png",
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Coyotes": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/coyotes Background Removed.png",
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Blue Jackets": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bluejackets Background Removed.png",
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
         }
         while True:
             green = graphics.Color(0, 255, 0)
@@ -4638,7 +4653,7 @@ class RunText(SampleBase):
                                 if overUnderString != "":
                                     overUnderText = "O/U"
                                 offscreen_canvas.SetImage(
-                                    teamLogos[awayTeamString],
+                                    teamLogos["Ducks"],
                                     pos + offset,
                                     -10,
                                 )
@@ -4654,7 +4669,7 @@ class RunText(SampleBase):
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos[homeTeamString],
+                                    teamLogos["Blue Jackets"],
                                     pos
                                     + offset
                                     + teamLogos[awayTeamString].width
