@@ -726,6 +726,166 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
+            "Anaheim Ducks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ducks Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Arizona Coyotes": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/coyotes Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Boston Bruins": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bruins Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Buffalo Sabres": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/sabres Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Calgary Flames": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/flames Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Carolina Hurricanes": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/hurricanes Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Chicago Blackhawks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/blackhawks Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Colorado Avalanche": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/avalanche Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Columbus Blue Jackets": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bluejackets Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Dallas Stars": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/stars Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Detroit Red Wings": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/redwings Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Edmonton Oilers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/oilers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Florida Panthers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/panthers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Los Angeles Kings": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/lakings Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Minnesota Wild": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/wild Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Montreal Canadiens": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/canadiens Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Nashville Predators": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/predators Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "New Jersey Devils": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/devils Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "New York Islanders": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/islanders Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "New York Rangers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nyrangers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Ottawa Senators": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/senators Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Philadelphia Flyers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/flyers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Pittsburgh Penguins": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/penguins Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "San Jose Sharks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/sharks Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Seattle Kraken": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/kraken Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "St. Louis Blues": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/blues Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Tampa Bay Lightning": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/lightning Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Toronto Maple Leafs": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mapleleafs Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Vancouver Canucks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/canucks Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Vegas Golden Knights": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/goldenknights Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Washington Capitals": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/capitals Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Winnipeg Jets": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/winnipegjets Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
         }
         while True:
             green = graphics.Color(0, 255, 0)
@@ -4638,7 +4798,7 @@ class RunText(SampleBase):
                             headlineString = 0
                             awayTeamStatus = 0
                             homeTeamStatus = 0
-                            newBuffer = 140
+                            newBuffer = 110
                             if "pregame" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -4653,7 +4813,7 @@ class RunText(SampleBase):
                                 if overUnderString != "":
                                     overUnderText = "O/U"
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Ducks"],
+                                    teamLogos[awayTeamString],
                                     pos + offset,
                                     -10,
                                 )
@@ -4669,7 +4829,7 @@ class RunText(SampleBase):
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos["Blue Jackets"],
+                                    teamLogos[homeTeamString],
                                     pos
                                     + offset
                                     + teamLogos[awayTeamString].width
@@ -5273,6 +5433,7 @@ class RunText(SampleBase):
                             headlineString = 0
                             awayTeamStatus = 0
                             homeTeamStatus = 0
+                            newBuffer = 120
                             if "pregame" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -5286,10 +5447,38 @@ class RunText(SampleBase):
                                 overUnderText = ""
                                 if overUnderString != "":
                                     overUnderText = "O/U"
+                                offscreen_canvas.SetImage(
+                                    teamLogos[awayTeamString],
+                                    pos + offset,
+                                    -10,
+                                )
+                                versus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogos[awayTeamString].width,
+                                    24,
+                                    green,
+                                    "vs",
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos[homeTeamString],
+                                    pos
+                                    + offset
+                                    + teamLogos[awayTeamString].width
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer,
+                                    -10,
+                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + newBuffer + buffer + buffer,
                                     12,
                                     yellow,
                                     awayTeamString,
@@ -5297,7 +5486,7 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + newBuffer,
                                     26,
                                     yellow,
                                     homeTeamString,
@@ -5317,6 +5506,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
+                                        + newBuffer
                                         + buffer
                                         + scoreLocation
                                         + buffer,
@@ -5331,6 +5521,7 @@ class RunText(SampleBase):
                                         + offset
                                         + buffer
                                         + buffer
+                                        + newBuffer
                                         + buffer
                                         + buffer
                                         + scoreLocation
@@ -5349,6 +5540,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
+                                        + newBuffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -5368,6 +5560,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
+                                        + newBuffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -5385,6 +5578,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -5409,6 +5603,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -5461,10 +5656,38 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
+                                offscreen_canvas.SetImage(
+                                    teamLogos[awayTeamString],
+                                    pos + offset,
+                                    -10,
+                                )
+                                versus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogos[awayTeamString].width,
+                                    24,
+                                    green,
+                                    "vs",
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos[homeTeamString],
+                                    pos
+                                    + offset
+                                    + teamLogos[awayTeamString].width
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer,
+                                    -10,
+                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + newBuffer,
                                     12,
                                     awayColor,
                                     awayTeamString,
@@ -5472,7 +5695,7 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + newBuffer,
                                     26,
                                     homeColor,
                                     homeTeamString,
@@ -5490,6 +5713,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + scoreLocation
                                     + buffer,
@@ -5503,6 +5727,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -5518,6 +5743,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -5538,6 +5764,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + scoreLocation
@@ -5559,6 +5786,7 @@ class RunText(SampleBase):
                                     + offset
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + scoreLocation
                                     + buffer
@@ -5579,6 +5807,7 @@ class RunText(SampleBase):
                                     + offset
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + scoreLocation
                                     + buffer
@@ -5607,6 +5836,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -5632,6 +5862,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -5656,6 +5887,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -5671,9 +5903,9 @@ class RunText(SampleBase):
                                     homeSpreadString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 100
+                                offset = offset + 100 + newBuffer
                             if "inProgress" in game[0]:
-                                offset = offset + 100
+                                offset = offset + 100 + newBuffer
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -5698,10 +5930,38 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
+                                offscreen_canvas.SetImage(
+                                    teamLogos[awayTeamString],
+                                    pos + offset,
+                                    -10,
+                                )
+                                versus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogos[awayTeamString].width,
+                                    24,
+                                    green,
+                                    "vs",
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos[homeTeamString],
+                                    pos
+                                    + offset
+                                    + teamLogos[awayTeamString].width
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer,
+                                    -10,
+                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + newBuffer,
                                     12,
                                     awayColor,
                                     awayTeamString,
@@ -5709,7 +5969,7 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + newBuffer,
                                     26,
                                     homeColor,
                                     homeTeamString,
@@ -5728,6 +5988,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + scoreLocation
                                     + buffer,
                                     12,
@@ -5742,6 +6003,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + scoreLocation
                                     + buffer,
@@ -5753,6 +6015,7 @@ class RunText(SampleBase):
                                     scoreLocation
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + awayTeamStatus
                                     + buffer
                                     + buffer
@@ -5763,7 +6026,7 @@ class RunText(SampleBase):
                                 finalString = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + runningTotal,
+                                    pos + offset + buffer + runningTotal + newBuffer,
                                     12,
                                     yellow,
                                     oddsString,
@@ -5771,7 +6034,7 @@ class RunText(SampleBase):
                                 headlineString = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + runningTotal,
+                                    pos + offset + buffer + runningTotal + newBuffer,
                                     26,
                                     green,
                                     headline,
@@ -5782,6 +6045,7 @@ class RunText(SampleBase):
                                     + awayTeam
                                     + awayTeamStatus
                                     + headlineString
+                                    + newBuffer
                                     + 240
                                 )
                             else:
@@ -5790,6 +6054,7 @@ class RunText(SampleBase):
                                     + homeTeam
                                     + homeTeamStatus
                                     + headlineString
+                                    + newBuffer
                                     + 240
                                 )
                         time.sleep(0.018)
