@@ -999,7 +999,7 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "Nevada Wolfpack": Image.open(
+            "Nevada Wolf Pack": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/rams Background Removed.png"
             )
             .convert("RGB")
