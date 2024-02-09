@@ -5407,7 +5407,6 @@ class RunText(SampleBase):
                                     + awayTeam
                                     + awayTeamStatus
                                     + headlineString
-                                    + newBuffer
                                     + 130
                                 )
                             else:
@@ -5416,7 +5415,6 @@ class RunText(SampleBase):
                                     + homeTeam
                                     + homeTeamStatus
                                     + headlineString
-                                    + newBuffer
                                     + 130
                                 )
                         time.sleep(0.018)
@@ -6042,7 +6040,6 @@ class RunText(SampleBase):
                                     + awayTeam
                                     + awayTeamStatus
                                     + headlineString
-                                    + newBuffer
                                     + 240
                                 )
                             else:
@@ -6051,7 +6048,6 @@ class RunText(SampleBase):
                                     + homeTeam
                                     + homeTeamStatus
                                     + headlineString
-                                    + newBuffer
                                     + 240
                                 )
                         time.sleep(0.018)
