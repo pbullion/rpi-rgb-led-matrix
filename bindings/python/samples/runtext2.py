@@ -2860,42 +2860,10 @@ class RunText(SampleBase):
                                 print(re.sub(pattern, "", homeTeamString))
                                 if overUnderString != "":
                                     overUnderText = "O/U"
-                                offscreen_canvas.SetImage(
-                                    teamLogos[re.sub(pattern, "", awayTeamString)],
-                                    pos + offset,
-                                    -10,
-                                )
-                                versus = graphics.DrawText(
-                                    offscreen_canvas,
-                                    middleFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + teamLogos[
-                                        re.sub(pattern, "", homeTeamString)
-                                    ].width,
-                                    24,
-                                    green,
-                                    "vs",
-                                )
-                                offscreen_canvas.SetImage(
-                                    teamLogos[homeTeamString],
-                                    pos
-                                    + offset
-                                    + teamLogos[
-                                        re.sub(pattern, "", awayTeamString)
-                                    ].width
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer,
-                                    -10,
-                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer + newBuffer,
+                                    pos + offset + buffer + buffer + buffer ,
                                     12,
                                     yellow,
                                     awayTeamString,
@@ -2903,7 +2871,7 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer + newBuffer,
+                                    pos + offset + buffer + buffer + buffer ,
                                     26,
                                     yellow,
                                     homeTeamString,
@@ -2922,7 +2890,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + newBuffer
+                                        
                                         + buffer
                                         + scoreLocation
                                         + buffer,
@@ -2936,7 +2904,7 @@ class RunText(SampleBase):
                                         pos
                                         + offset
                                         + buffer
-                                        + newBuffer
+                                        
                                         + buffer
                                         + buffer
                                         + buffer
@@ -2953,7 +2921,7 @@ class RunText(SampleBase):
                                         pos
                                         + offset
                                         + buffer
-                                        + newBuffer
+                                        
                                         + buffer
                                         + buffer
                                         + buffer
@@ -2973,7 +2941,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + newBuffer
+                                        
                                         + buffer
                                         + buffer
                                         + scoreLocation
@@ -2994,7 +2962,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + newBuffer
+                                        
                                         + buffer
                                         + buffer
                                         + buffer
@@ -3014,7 +2982,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + newBuffer
+                                        
                                         + buffer
                                         + buffer
                                         + buffer
@@ -3035,7 +3003,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + newBuffer
+                                    
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3058,7 +3026,7 @@ class RunText(SampleBase):
                                     + offset
                                     + buffer
                                     + buffer
-                                    + newBuffer
+                                    
                                     + buffer
                                     + buffer
                                     + buffer
