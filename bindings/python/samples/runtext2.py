@@ -7,6 +7,7 @@ import time
 import requests, json
 import json
 from PIL import Image
+import re
 
 userFile = open("/home/pi/rpi-rgb-led-matrix/user.json")
 
@@ -2969,6 +2970,7 @@ class RunText(SampleBase):
                             if "pregame" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
+                                pattern = r"#\d+\s"
                                 statusString = game[11]
                                 oddsString = game[14]
                                 awayOddsString = game[15]
@@ -2982,7 +2984,7 @@ class RunText(SampleBase):
                                 if overUnderString != "":
                                     overUnderText = "O/U"
                                 offscreen_canvas.SetImage(
-                                    teamLogos[awayTeamString],
+                                    teamLogos[re.sub(pattern, "", awayTeamString)],
                                     pos + offset,
                                     -10,
                                 )
@@ -2992,7 +2994,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + teamLogos[awayTeamString].width,
+                                    + teamLogos[re.sub(pattern, "", homeTeamString)].width,
                                     24,
                                     green,
                                     "vs",
@@ -3001,7 +3003,7 @@ class RunText(SampleBase):
                                     teamLogos[homeTeamString],
                                     pos
                                     + offset
-                                    + teamLogos[awayTeamString].width
+                                    + teamLogos[re.sub(pattern, "", awayTeamString)].width
                                     + buffer
                                     + buffer
                                     + buffer
