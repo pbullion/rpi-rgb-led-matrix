@@ -883,6 +883,131 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
+            "UConn Huskies": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/uconn Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Purdue Boilermakers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/purdue Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "North Carolina Tar Heels": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/northcarolina Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Kansas Jayhawks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/kansas Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Houston Cougars": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/houston Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Tennessee Volunteers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/tennessee Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Marquette Golden Eagles": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/marquette Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Arizona Wildcats": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/arizona Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Duke Blue Devils": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/duke Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Illinois Fighting Illini": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/illinois Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Wisconsin Badgers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/wisconsin Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Auburn Tigers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/auburn Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Baylor Bears": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/baylor Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Iowa State Cyclones": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/iowastate Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "South Carolina Gamecocks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/southcarolina Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Alabama Crimson Tide": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/alabama Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Kentucky Wildcats": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/kentucky Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Dayton Flyers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/dayton Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Creighton Bluejays": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/creighton Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Florida Atlantic Owls": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/floridaatlantic Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "BYU Cougars": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/byu Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Utah State Aggies": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/utahstate Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Texas Tech Red Raiders": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/texastech Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "San Diego State Aztecs": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/sandiegostate Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "New Mexico Lobos": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/newmexico Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
         }
         while True:
             green = graphics.Color(0, 255, 0)
@@ -2111,7 +2236,6 @@ class RunText(SampleBase):
                                     scoreLocation = homeTeam
                                 else:
                                     scoreLocation = awayTeam
-
                                 awaySpread = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
@@ -2841,6 +2965,7 @@ class RunText(SampleBase):
                             headlineString = 0
                             awayTeamStatus = 0
                             homeTeamStatus = 0
+                            newBuffer = 120
                             if "pregame" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -2856,10 +2981,38 @@ class RunText(SampleBase):
                                 overUnderText = ""
                                 if overUnderString != "":
                                     overUnderText = "O/U"
+                                offscreen_canvas.SetImage(
+                                    teamLogos[awayTeamString],
+                                    pos + offset,
+                                    -10,
+                                )
+                                versus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogos[awayTeamString].width,
+                                    24,
+                                    green,
+                                    "vs",
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos[homeTeamString],
+                                    pos
+                                    + offset
+                                    + teamLogos[awayTeamString].width
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer,
+                                    -10,
+                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + newBuffer,
                                     12,
                                     yellow,
                                     awayTeamString,
@@ -2867,7 +3020,7 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + newBuffer,
                                     26,
                                     yellow,
                                     homeTeamString,
@@ -2886,6 +3039,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
+                                        + newBuffer
                                         + buffer
                                         + scoreLocation
                                         + buffer,
@@ -2899,6 +3053,7 @@ class RunText(SampleBase):
                                         pos
                                         + offset
                                         + buffer
+                                        + newBuffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -2915,6 +3070,7 @@ class RunText(SampleBase):
                                         pos
                                         + offset
                                         + buffer
+                                        + newBuffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -2934,6 +3090,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
+                                        + newBuffer
                                         + buffer
                                         + buffer
                                         + scoreLocation
@@ -2954,6 +3111,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
+                                        + newBuffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -2973,6 +3131,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
+                                        + newBuffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -2993,6 +3152,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3015,6 +3175,7 @@ class RunText(SampleBase):
                                     + offset
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3361,9 +3522,9 @@ class RunText(SampleBase):
                                     homeSpreadString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 140
+                                offset = offset + 50 + newBuffer
                             if "inProgress" in game[0]:
-                                offset = offset + 140
+                                offset = offset + 100 + newBuffer
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
