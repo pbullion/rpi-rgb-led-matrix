@@ -2863,7 +2863,7 @@ class RunText(SampleBase):
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer ,
+                                    pos + offset + buffer + buffer + buffer,
                                     12,
                                     yellow,
                                     awayTeamString,
@@ -2871,7 +2871,7 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer ,
+                                    pos + offset + buffer + buffer + buffer,
                                     26,
                                     yellow,
                                     homeTeamString,
@@ -2890,7 +2890,6 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        
                                         + buffer
                                         + scoreLocation
                                         + buffer,
@@ -2904,7 +2903,6 @@ class RunText(SampleBase):
                                         pos
                                         + offset
                                         + buffer
-                                        
                                         + buffer
                                         + buffer
                                         + buffer
@@ -2921,7 +2919,6 @@ class RunText(SampleBase):
                                         pos
                                         + offset
                                         + buffer
-                                        
                                         + buffer
                                         + buffer
                                         + buffer
@@ -2941,7 +2938,6 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        
                                         + buffer
                                         + buffer
                                         + scoreLocation
@@ -2962,7 +2958,6 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        
                                         + buffer
                                         + buffer
                                         + buffer
@@ -2982,7 +2977,6 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        
                                         + buffer
                                         + buffer
                                         + buffer
@@ -3003,7 +2997,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3026,7 +3019,6 @@ class RunText(SampleBase):
                                     + offset
                                     + buffer
                                     + buffer
-                                    
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3373,7 +3365,7 @@ class RunText(SampleBase):
                                     homeSpreadString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 90 + newBuffer
+                                offset = offset + 100 + newBuffer
                             if "inProgress" in game[0]:
                                 offset = offset + 100 + newBuffer
                             if "final" in game[0]:
@@ -5277,7 +5269,7 @@ class RunText(SampleBase):
                                     homeSpreadString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 90 + newBuffer
+                                offset = offset + 100 + newBuffer
                             if "inProgress" in game[0]:
                                 offset = offset + 100 + newBuffer
                             if "final" in game[0]:
