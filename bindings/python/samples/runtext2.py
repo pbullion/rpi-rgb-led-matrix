@@ -994,8 +994,28 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
+            "VCU Rams": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/rams Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Nevada Wolfpack": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/rams Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
             "Texas Tech Red Raiders": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/texastech Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "San José State Spartans": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/spartans Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Colorado State Rams": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/cstaterams Background Removed.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -2994,7 +3014,9 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + teamLogos[re.sub(pattern, "", homeTeamString)].width,
+                                    + teamLogos[
+                                        re.sub(pattern, "", homeTeamString)
+                                    ].width,
                                     24,
                                     green,
                                     "vs",
@@ -3003,7 +3025,9 @@ class RunText(SampleBase):
                                     teamLogos[homeTeamString],
                                     pos
                                     + offset
-                                    + teamLogos[re.sub(pattern, "", awayTeamString)].width
+                                    + teamLogos[
+                                        re.sub(pattern, "", awayTeamString)
+                                    ].width
                                     + buffer
                                     + buffer
                                     + buffer
