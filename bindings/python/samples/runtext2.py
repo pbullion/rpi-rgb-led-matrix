@@ -661,7 +661,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Orlando Magic": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/76ers.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/magic.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
