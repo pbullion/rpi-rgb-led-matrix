@@ -5392,7 +5392,7 @@ class RunText(SampleBase):
                                 finalString = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + runningTotal + newBuffer,
+                                    pos + offset + buffer + runningTotal,
                                     12,
                                     yellow,
                                     oddsString,
@@ -5400,7 +5400,7 @@ class RunText(SampleBase):
                                 headlineString = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + runningTotal + newBuffer,
+                                    pos + offset + buffer + runningTotal,
                                     26,
                                     green,
                                     headline,
@@ -6025,7 +6025,7 @@ class RunText(SampleBase):
                                 finalString = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + runningTotal + newBuffer,
+                                    pos + offset + buffer + runningTotal,
                                     12,
                                     yellow,
                                     oddsString,
