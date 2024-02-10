@@ -5410,7 +5410,7 @@ class RunText(SampleBase):
                                     offset
                                     + awayTeam
                                     + awayTeamStatus
-                                    + headlineString
+                                    + headlineString+newBuffer
                                     + 130
                                 )
                             else:
@@ -5418,7 +5418,7 @@ class RunText(SampleBase):
                                     offset
                                     + homeTeam
                                     + homeTeamStatus
-                                    + headlineString
+                                    + headlineString+newBuffer
                                     + 130
                                 )
                         time.sleep(0.018)
