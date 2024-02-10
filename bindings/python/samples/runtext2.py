@@ -1029,6 +1029,442 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
+    'Alabama Crimson Tide': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Arizona State Sun Devils': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Arizona Wildcats': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Arkansas Razorbacks': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Auburn Tigers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Baylor Bears': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Boston College Eagles': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Butler Bulldogs': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'California Golden Bears': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Cincinnati Bearcats': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Clemson Tigers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Colorado Buffaloes': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Creighton Bluejays': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'DePaul Blue Demons': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Duke Blue Devils': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'East Carolina Pirates': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Florida Gators': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Florida State Seminoles': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Georgetown Hoyas': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Georgia Bulldogs': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Georgia Tech Yellow Jackets': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Houston Cougars': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Illinois Fighting Illini': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Indiana Hoosiers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Iowa Hawkeyes': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Iowa State Cyclones': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Kansas Jayhawks': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Kansas State Wildcats': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Kentucky Wildcats': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'LSU Tigers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Louisville Cardinals': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Marquette Golden Eagles': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Maryland Terrapins': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Memphis Tigers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Miami Hurricanes': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Michigan State Spartans': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Michigan Wolverines': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Minnesota Golden Gophers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Mississippi State Bulldogs': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Missouri Tigers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'NC State Wolfpack': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Navy Midshipmen': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Nebraska Cornhuskers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'North Carolina Tar Heels': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Northwestern Wildcats': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Notre Dame Fighting Irish': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Ohio State Buckeyes': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Oklahoma Sooners': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Oklahoma State Cowboys': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Ole Miss Rebels': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Oregon Ducks': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Oregon State Beavers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Penn State Nittany Lions': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Pittsburgh Panthers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Providence Friars': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Purdue Boilermakers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Rutgers Scarlet Knights': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'SMU Mustangs': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Seton Hall Pirates': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'South Carolina Gamecocks': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'South Florida Bulls': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    "St. John's Red Storm",
+    'Stanford Cardinal': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Syracuse Orange': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'TCU Horned Frogs': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Temple Owls': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Tennessee Volunteers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Texas A&M Aggies': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Texas Longhorns': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Texas Tech Red Raiders': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Tulane Green Wave': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Tulsa Golden Hurricane': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'UCF Knights': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'UCLA Bruins': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'UConn Huskies': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'USC Trojans': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Utah Utes': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Vanderbilt Commodores': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Villanova Wildcats': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Virginia Cavaliers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Virginia Tech Hokies': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Wake Forest Demon Deacons': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Washington Huskies': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Washington State Cougars': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'West Virginia Mountaineers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Wichita State Shockers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Wisconsin Badgers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+    'Xavier Musketeers': Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/changethis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
         }
         while True:
             green = graphics.Color(0, 255, 0)
@@ -3550,9 +3986,9 @@ class RunText(SampleBase):
                                     homeSpreadString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 50 + newBuffer
+                                offset = offset + 115 + newBuffer
                             if "inProgress" in game[0]:
-                                offset = offset + 100 + newBuffer
+                                offset = offset + 180 + newBuffer
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -5454,9 +5890,9 @@ class RunText(SampleBase):
                                     homeSpreadString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 50 + newBuffer
+                                offset = offset + 115 + newBuffer
                             if "inProgress" in game[0]:
-                                offset = offset + 100 + newBuffer
+                                offset = offset + 180 + newBuffer
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -5577,7 +6013,7 @@ class RunText(SampleBase):
                                 finalString = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + runningTotal + newBuffer,
+                                    pos + offset + buffer + runningTotal,
                                     12,
                                     yellow,
                                     oddsString,
@@ -5585,7 +6021,7 @@ class RunText(SampleBase):
                                 headlineString = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + runningTotal + newBuffer,
+                                    pos + offset + buffer + runningTotal,
                                     26,
                                     green,
                                     headline,
@@ -6087,9 +6523,9 @@ class RunText(SampleBase):
                                     homeSpreadString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 100 + newBuffer
+                                offset = offset + 115 + newBuffer
                             if "inProgress" in game[0]:
-                                offset = offset + 100 + newBuffer
+                                offset = offset + 180 + newBuffer
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -6210,7 +6646,7 @@ class RunText(SampleBase):
                                 finalString = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + runningTotal + newBuffer,
+                                    pos + offset + buffer + runningTotal,
                                     12,
                                     yellow,
                                     oddsString,
