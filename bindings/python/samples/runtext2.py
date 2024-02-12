@@ -46,7 +46,7 @@ class RunText(SampleBase):
         teamLogos = {
             # "MLB": Image.open(
             #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png",
+            #         "https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_ Background Removed.png",
             #         stream=True,
             #     ).raw
             # )
@@ -62,7 +62,7 @@ class RunText(SampleBase):
             .resize((40, 40), Image.ANTIALIAS),
             # "New York Yankees": Image.open(
             #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-new-york-yankees-logo.png",
+            #         "https://loodibee.com/wp-content/uploads/mlb-new-york-yankees- Background Removed.png",
             #         stream=True,
             #     ).raw
             # )
@@ -70,7 +70,7 @@ class RunText(SampleBase):
             # .resize((50, 50), Image.ANTIALIAS),
             # "Washington Nationals": Image.open(
             #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-Washington-Nationals-Logo.png",
+            #         "https://loodibee.com/wp-content/uploads/mlb-Washington-Nationals- Background Removed.png",
             #         stream=True,
             #     ).raw
             # )
@@ -118,7 +118,7 @@ class RunText(SampleBase):
             # .resize((50, 50), Image.ANTIALIAS),
             # "Toronto Blue Jays": Image.open(
             #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-toronto-blue-jays-logo.png",
+            #         "https://loodibee.com/wp-content/uploads/mlb-toronto-blue-jays- Background Removed.png",
             #         stream=True,
             #     ).raw
             # )
@@ -142,7 +142,7 @@ class RunText(SampleBase):
             # .resize((50, 50), Image.ANTIALIAS),
             # "Cleveland Guardians": Image.open(
             #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-cleveland-guardians-logo.png",
+            #         "https://loodibee.com/wp-content/uploads/mlb-cleveland-guardians- Background Removed.png",
             #         stream=True,
             #     ).raw
             # )
@@ -222,7 +222,7 @@ class RunText(SampleBase):
             # .resize((50, 50), Image.ANTIALIAS),
             # "Arizona Diamondbacks": Image.open(
             #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-arizona-diamondbacks-logo.png",
+            #         "https://loodibee.com/wp-content/uploads/mlb-arizona-diamondbacks- Background Removed.png",
             #         stream=True,
             #     ).raw
             # )
@@ -230,7 +230,7 @@ class RunText(SampleBase):
             # .resize((50, 50), Image.ANTIALIAS),
             # "Philadelphia Phillies": Image.open(
             #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-Philadelphia-Phillies-Logo.png",
+            #         "https://loodibee.com/wp-content/uploads/mlb-Philadelphia-Phillies- Background Removed.png",
             #         stream=True,
             #     ).raw
             # )
@@ -246,7 +246,7 @@ class RunText(SampleBase):
             # .resize((50, 50), Image.ANTIALIAS),
             # "Pittsburgh Pirates": Image.open(
             #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/mlb-pittsburgh-pirates-logo.png",
+            #         "https://loodibee.com/wp-content/uploads/mlb-pittsburgh-pirates- Background Removed.png",
             #         stream=True,
             #     ).raw
             # )
@@ -350,7 +350,7 @@ class RunText(SampleBase):
             # .resize((50, 50), Image.ANTIALIAS),
             # "Cincinnati Bengals": Image.open(
             #     requests.get(
-            #         "https://cdn.freebiesupply.com/images/thumbs/1x/cincinnati-bengals-logo.png",
+            #         "https://cdn.freebiesupply.com/images/thumbs/1x/cincinnati-bengals- Background Removed.png",
             #         stream=True,
             #     ).raw
             # )
@@ -438,7 +438,7 @@ class RunText(SampleBase):
             # .resize((50, 50), Image.ANTIALIAS),
             # "Los Angeles Rams": Image.open(
             #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/los-angeles-rams-2020-logo.png",
+            #         "https://loodibee.com/wp-content/uploads/los-angeles-rams-2020- Background Removed.png",
             #         stream=True,
             #     ).raw
             # )
@@ -534,7 +534,7 @@ class RunText(SampleBase):
             # .resize((50, 50), Image.ANTIALIAS),
             # "Tampa Bay Buccaneers": Image.open(
             #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/tampa-bay-buccaneers-2020-logo.png",
+            #         "https://loodibee.com/wp-content/uploads/tampa-bay-buccaneers-2020- Background Removed.png",
             #         stream=True,
             #     ).raw
             # )
@@ -550,7 +550,7 @@ class RunText(SampleBase):
             # .resize((50, 50), Image.ANTIALIAS),
             # "Washington Commanders": Image.open(
             #     requests.get(
-            #         "https://loodibee.com/wp-content/uploads/washington-commanders-logo.png",
+            #         "https://loodibee.com/wp-content/uploads/washington-commanders- Background Removed.png",
             #         stream=True,
             #     ).raw
             # )
@@ -673,7 +673,6 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Phoenix Suns": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/suns.png"
-
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -879,6 +878,677 @@ class RunText(SampleBase):
             .resize((50, 50), Image.ANTIALIAS),
             "Winnipeg Jets": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/winnipegjets Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            # Big 12 Teams
+            "Baylor Bears": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/baylorbears Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Iowa State Cyclones": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/iowastatecyclones Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Kansas Jayhawks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/kansasjayhawks Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Kansas State Wildcats": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/kansasstatewildcats Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Oklahoma Sooners": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/oklahomasooners Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Oklahoma State Cowboys": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/oklahomastatecowboys Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "TCU Horned Frogs": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/tcuhornedfrogs Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Texas Tech Red Raiders": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/texastechredraiders Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "West Virginia Mountaineers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/westvirginiamountaineers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Texas Longhorns": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/texaslonghorns Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            # SEC Teams
+            "Alabama Crimson Tide": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/alabamacrimsontide Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Arkansas Razorbacks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/arkansasrazorbacks Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Auburn Tigers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/auburntigers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Florida Gators": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/floridagators Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Georgia Bulldogs": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/georgiabulldogs Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Kentucky Wildcats": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/kentuckywildcats Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "LSU Tigers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/lsutigers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Mississippi State Bulldogs": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mississippistatebulldogs Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Missouri Tigers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/missouritigers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Ole Miss Rebels": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/olemissrebels Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "South Carolina Gamecocks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/southcarolinagamecocks Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Tennessee Volunteers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/tennesseevolunteers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Texas A&M Aggies": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/texasamaggies Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Vanderbilt Commodores": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/vanderbiltcommodores Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            # Big Ten Teams
+            "Illinois Fighting Illini": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/illinoisfightingillini Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Indiana Hoosiers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/indianahoosiers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Iowa Hawkeyes": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/iowahawkeyes Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Maryland Terrapins": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/marylandterrapins Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Michigan Wolverines": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/michiganwolverines Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Michigan State Spartans": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/michiganstatespartans Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Minnesota Golden Gophers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/minnesotagoldengophers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Nebraska Cornhuskers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nebraskacornhuskers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Northwestern Wildcats": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/northwesternwildcats Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Ohio State Buckeyes": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ohiostatebuckeyes Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Penn State Nittany Lions": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pennstatenittanylions Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Purdue Boilermakers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/purdueboilermakers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Rutgers Scarlet Knights": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/rutgersscarletknights Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Wisconsin Badgers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/wisconsinbadgers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            # ACC Teams
+            "Boston College Eagles": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bostoncollegeeagles Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Clemson Tigers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/clemsontigers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Duke Blue Devils": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/dukebluedevils Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Florida State Seminoles": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/floridastateseminoles Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Georgia Tech Yellow Jackets": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/georgiatechyellowjackets Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Louisville Cardinals": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/louisvillecardinals Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Miami Hurricanes": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/miamihurricanes Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "North Carolina Tar Heels": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/northcarolinatarheels Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "NC State Wolfpack": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncstatewolfpack Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Notre Dame Fighting Irish": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/notredamefightingirish Background Removed.png"
+            )
+            .convert("RGB")
+            .resize(
+                (50, 50), Image.ANTIALIAS
+            ),  # Note: Notre Dame is a partial ACC member for certain sports
+            "Pittsburgh Panthers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pittsburghpanthers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Syracuse Orange": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/syracuseorange Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Virginia Cavaliers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/virginiacavaliers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Virginia Tech Hokies": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/virginiatechhokies Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Wake Forest Demon Deacons": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/wakeforestdemondeacons Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Cincinnati Bearcats": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/cincinnatibearcats Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "East Carolina Pirates": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/eastcarolinapirates Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Houston Cougars": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/houstoncougars Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Memphis Tigers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/memphistigers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Navy Midshipmen": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/navymidshipmen Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "SMU Mustangs": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/smumustangs Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "South Florida Bulls": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/southfloridabulls Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Temple Owls": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/templeowls Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Tulane Green Wave": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/tulanegreenwave Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Tulsa Golden Hurricane": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/tulsagoldenhurricane Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "UCF Knights": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ucfknights Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Wichita State Shockers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/wichitastateshockers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Butler Bulldogs": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/butlerbulldogs Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Creighton Bluejays": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/creightonbluejays Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "DePaul Blue Demons": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/depaulbluedemons Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Georgetown Hoyas": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/georgetownhoyas Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Marquette Golden Eagles": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/marquettegoldeneagles Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Providence Friars": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/providencefriars Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "St. John's Red Storm": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/stjohnsredstorm Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Seton Hall Pirates": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/setonhallpirates Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Villanova Wildcats": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/villanovawildcats Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Xavier Musketeers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/xaviermusketeers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "UConn Huskies": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/uconnhuskies Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Air Force Falcons": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/airforcefalcons Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Boise State Broncos": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/boisestatebroncos Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Colorado State Rams": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/coloradostaterams Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Fresno State Bulldogs": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/fresnostatebulldogs Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Hawaii Rainbow Warriors": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/hawaiirainbowwarriors Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),  # Note: Hawaii football only
+            "Nevada Wolf Pack": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nevadawolfpack Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "New Mexico Lobos": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/newmexicolobos Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "San Diego State Aztecs": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/sandiegostateaztecs Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "San Jose State Spartans": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/sanjosestatespartans Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "UNLV Rebels": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/unlvrebels Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Utah State Aggies": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/utahstateaggies Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Wyoming Cowboys": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/wyomingcowboys Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Davidson Wildcats": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/davidsonwildcats Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Dayton Flyers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/daytonflyers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Duquesne Dukes": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/duquesnedukes Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Fordham Rams": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/fordhamrams Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "George Mason Patriots": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/georgemasonpatriots Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "George Washington Colonials": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/georgewashingtoncolonials Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "La Salle Explorers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/lasalleexplorers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "UMass Minutemen": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/umassminutemen Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Rhode Island Rams": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/rhodeislandrams Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Richmond Spiders": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/richmondspiders Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Saint Joseph's Hawks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/saintjosephshawks Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Saint Louis Billikens": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/saintlouisbillikens Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "St. Bonaventure Bonnies": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/stbonaventurebonnies Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "VCU Rams": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/vcurams Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Bradley Braves": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bradleybraves Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Drake Bulldogs": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/drakebulldogs Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Evansville Purple Aces": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/evansvillepurpleaces Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Illinois State Redbirds": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/illinoisstateredbirds Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Indiana State Sycamores": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/indianastatesycamores Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Loyola Chicago Ramblers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/loyolachicagoramblers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Missouri State Bears": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/missouristatebears Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Northern Iowa Panthers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/northerniowapanthers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Southern Illinois Salukis": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/southernillinoissalukis Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Valparaiso Beacons": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/valparaisobeacons Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Gonzaga Bulldogs": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/gonzagabulldogs Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Loyola Marymount Lions": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/loyolamarymountlions Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Pacific Tigers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pacifictigers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Pepperdine Waves": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pepperdinewaves Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Portland Pilots": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/portlandpilots Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Saint Mary's Gaels": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/saintmarysgaels Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "San Diego Toreros": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/sandiegotoreros Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "San Francisco Dons": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/sanfranciscodons Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Santa Clara Broncos": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/santaclarabroncos Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Arizona Wildcats": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/arizonawildcats Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Arizona State Sun Devils": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/arizonastatesundevils Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "California Golden Bears": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/californiagoldenbears Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Colorado Buffaloes": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/coloradobuffaloes Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Oregon Ducks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/oregonducks Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Oregon State Beavers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/oregonstatebeavers Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Stanford Cardinal": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/stanfordcardinal Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "UCLA Bruins": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/uclabruins Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "USC Trojans": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/usctrojans Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Utah Utes": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/utahutes Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Washington Huskies": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/washingtonhuskies Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Washington State Cougars": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/washingtonstatecougars Background Removed.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -2858,10 +3528,38 @@ class RunText(SampleBase):
                                 print(re.sub(pattern, "", homeTeamString))
                                 if overUnderString != "":
                                     overUnderText = "O/U"
+                                offscreen_canvas.SetImage(
+                                    teamLogos[awayTeamString],
+                                    pos + offset,
+                                    -10,
+                                )
+                                versus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogos[awayTeamString].width,
+                                    24,
+                                    green,
+                                    "vs",
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos[homeTeamString],
+                                    pos
+                                    + offset
+                                    + teamLogos[awayTeamString].width
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer,
+                                    -10,
+                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset +newBuffer+ buffer + buffer + buffer,
                                     12,
                                     yellow,
                                     awayTeamString,
@@ -2869,7 +3567,7 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer+newBuffer,
                                     26,
                                     yellow,
                                     homeTeamString,
@@ -2887,7 +3585,7 @@ class RunText(SampleBase):
                                         + offset
                                         + buffer
                                         + buffer
-                                        + buffer
+                                        + buffer+newBuffer
                                         + buffer
                                         + scoreLocation
                                         + buffer,
@@ -2902,7 +3600,7 @@ class RunText(SampleBase):
                                         + offset
                                         + buffer
                                         + buffer
-                                        + buffer
+                                        + buffer+newBuffer
                                         + buffer
                                         + scoreLocation
                                         + buffer,
@@ -2918,7 +3616,7 @@ class RunText(SampleBase):
                                         + offset
                                         + buffer
                                         + buffer
-                                        + buffer
+                                        + buffer+newBuffer
                                         + buffer
                                         + buffer
                                         + scoreLocation
@@ -2937,7 +3635,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + buffer
+                                        + buffer+newBuffer
                                         + scoreLocation
                                         + buffer
                                         + homeSpread,
@@ -2954,7 +3652,7 @@ class RunText(SampleBase):
                                         + offset
                                         + buffer
                                         + buffer
-                                        + buffer
+                                        + buffer+newBuffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -2977,7 +3675,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + buffer
+                                        + buffer+newBuffer
                                         + buffer
                                         + buffer
                                         + awayOdds
@@ -2995,7 +3693,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
+                                    + buffer+newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3016,7 +3714,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + buffer
+                                    + buffer+newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3071,10 +3769,39 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
+                                    
+                                offscreen_canvas.SetImage(
+                                    teamLogos[awayTeamString],
+                                    pos + offset,
+                                    -10,
+                                )
+                                versus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogos[awayTeamString].width,
+                                    24,
+                                    green,
+                                    "vs",
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos[homeTeamString],
+                                    pos
+                                    + offset
+                                    + teamLogos[awayTeamString].width
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer,
+                                    -10,
+                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer+newBuffer,
                                     12,
                                     awayColor,
                                     awayTeamString,
@@ -3082,23 +3809,23 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer+newBuffer,
                                     26,
                                     homeColor,
                                     homeTeamString,
                                 )
                                 scoreLocation = 0
                                 if homeTeam > awayTeam:
-                                    scoreLocation = homeTeam + buffer
+                                    scoreLocation = homeTeam + buffer+newBuffer
                                 else:
-                                    scoreLocation = awayTeam + buffer
+                                    scoreLocation = awayTeam + buffer+newBuffer
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
                                     pos
                                     + offset
                                     + buffer
-                                    + buffer
+                                    + buffer+newBuffer
                                     + buffer
                                     + buffer
                                     + scoreLocation
@@ -3112,7 +3839,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + buffer
+                                    + buffer+newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3129,7 +3856,7 @@ class RunText(SampleBase):
                                         pos
                                         + offset
                                         + buffer
-                                        + buffer
+                                        + buffer+newBuffer
                                         + buffer
                                         + buffer
                                         + scoreLocation
@@ -3149,7 +3876,7 @@ class RunText(SampleBase):
                                         + offset
                                         + buffer
                                         + buffer
-                                        + buffer
+                                        + buffer+newBuffer
                                         + buffer
                                         + scoreLocation
                                         + buffer
@@ -3169,7 +3896,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + buffer
+                                        + buffer+newBuffer
                                         + scoreLocation
                                         + buffer
                                         + buffer
@@ -3185,7 +3912,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + buffer
+                                    + buffer+newBuffer
                                     + buffer
                                     + buffer
                                     + scoreLocation
@@ -3205,7 +3932,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + buffer
+                                    + buffer+newBuffer
                                     + buffer
                                     + buffer
                                     + scoreLocation
@@ -3229,7 +3956,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + buffer
+                                    + buffer+newBuffer
                                     + buffer
                                     + buffer
                                     + scoreLocation
@@ -3250,7 +3977,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + buffer
+                                    + buffer+newBuffer
                                     + buffer
                                     + scoreLocation
                                     + buffer
@@ -3275,7 +4002,7 @@ class RunText(SampleBase):
                                     + scoreLocation
                                     + buffer
                                     + buffer
-                                    + buffer
+                                    + buffer+newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3297,7 +4024,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + scoreLocation
                                     + buffer
-                                    + buffer
+                                    + buffer+newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3320,7 +4047,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + scoreLocation
                                     + buffer
-                                    + buffer
+                                    + buffer+newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3351,7 +4078,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
+                                    + buffer+newBuffer
                                     + buffer
                                     + buffer
                                     + newOffset
@@ -3390,10 +4117,38 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
+                                offscreen_canvas.SetImage(
+                                    teamLogos[awayTeamString],
+                                    pos + offset,
+                                    -10,
+                                )
+                                versus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogos[awayTeamString].width,
+                                    24,
+                                    green,
+                                    "vs",
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos[homeTeamString],
+                                    pos
+                                    + offset
+                                    + teamLogos[awayTeamString].width
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer,
+                                    -10,
+                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer+newBuffer,
                                     12,
                                     awayColor,
                                     awayTeamString,
@@ -3401,23 +4156,23 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer+newBuffer,
                                     26,
                                     homeColor,
                                     homeTeamString,
                                 )
                                 scoreLocation = 0
                                 if homeTeam > awayTeam:
-                                    scoreLocation = homeTeam + buffer
+                                    scoreLocation = homeTeam + buffer+newBuffer
                                 else:
-                                    scoreLocation = awayTeam + buffer
+                                    scoreLocation = awayTeam + buffer+newBuffer
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
                                     pos
                                     + offset
                                     + buffer
-                                    + buffer
+                                    + buffer+newBuffer
                                     + buffer
                                     + buffer
                                     + scoreLocation
@@ -3432,7 +4187,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + buffer
+                                    + buffer+newBuffer
                                     + buffer
                                     + buffer
                                     + scoreLocation
@@ -3447,7 +4202,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + awayTeamStatus
                                     + buffer
-                                    + buffer
+                                    + buffer+newBuffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3455,7 +4210,7 @@ class RunText(SampleBase):
                                 finalString = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + runningTotal,
+                                    pos + offset + buffer + runningTotal+newBuffer,
                                     12,
                                     yellow,
                                     oddsString,
@@ -3463,7 +4218,7 @@ class RunText(SampleBase):
                                 headlineString = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + runningTotal,
+                                    pos + offset + buffer + runningTotal+newBuffer,
                                     26,
                                     green,
                                     headline,
@@ -5408,7 +6163,8 @@ class RunText(SampleBase):
                                     offset
                                     + awayTeam
                                     + awayTeamStatus
-                                    + headlineString+newBuffer
+                                    + headlineString
+                                    + newBuffer
                                     + 130
                                 )
                             else:
@@ -5416,7 +6172,8 @@ class RunText(SampleBase):
                                     offset
                                     + homeTeam
                                     + homeTeamStatus
-                                    + headlineString+newBuffer
+                                    + headlineString
+                                    + newBuffer
                                     + 130
                                 )
                         time.sleep(0.018)
