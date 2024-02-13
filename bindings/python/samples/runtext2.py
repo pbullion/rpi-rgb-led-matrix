@@ -3640,7 +3640,7 @@ class RunText(SampleBase):
                                 if overUnderString != "":
                                     overUnderText = "O/U"
                                 offscreen_canvas.SetImage(
-                                    re.sub(r'^#\d+\s+', '', teamLogos[awayTeamString]),
+                                    re.sub(pattern, "", teamLogos[awayTeamString]),
                                     pos + offset,
                                     -10,
                                 )
@@ -3650,16 +3650,20 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + re.sub(r'^#\d+\s+', '', teamLogos[awayTeamString]).width,
+                                    + re.sub(
+                                        pattern, "", teamLogos[awayTeamString]
+                                    ).width,
                                     24,
                                     green,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    re.sub(r'^#\d+\s+', '', teamLogos[homeTeamString]),
+                                    re.sub(pattern, "", teamLogos[homeTeamString]),
                                     pos
                                     + offset
-                                    + re.sub(r'^#\d+\s+', '', teamLogos[awayTeamString]).width
+                                    + re.sub(
+                                        pattern, "", teamLogos[awayTeamString]
+                                    ).width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3889,7 +3893,7 @@ class RunText(SampleBase):
                                     homeColor = red
                                     awayColor = green
                                 offscreen_canvas.SetImage(
-                                    re.sub(r'^#\d+\s+', '', teamLogos[awayTeamString]),
+                                    re.sub(pattern, "", teamLogos[awayTeamString]),
                                     pos + offset,
                                     -10,
                                 )
@@ -3899,16 +3903,20 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + re.sub(r'^#\d+\s+', '', teamLogos[awayTeamString]).width,
+                                    + re.sub(
+                                        pattern, "", teamLogos[awayTeamString]
+                                    ).width,
                                     24,
                                     green,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    re.sub(r'^#\d+\s+', '', teamLogos[homeTeamString]),
+                                    re.sub(pattern, "", teamLogos[homeTeamString]),
                                     pos
                                     + offset
-                                    + re.sub(r'^#\d+\s+', '', teamLogos[awayTeamString]).width
+                                    + re.sub(
+                                        pattern, "", teamLogos[awayTeamString]
+                                    ).width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -4248,9 +4256,8 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
-                                print(re.sub(r'^#\d+\s+', '', teamLogos[awayTeamString]))
                                 offscreen_canvas.SetImage(
-                                    re.sub(r'^#\d+\s+', '', teamLogos[awayTeamString]),
+                                    re.sub(pattern, "", teamLogos[awayTeamString]),
                                     pos + offset,
                                     -10,
                                 )
@@ -4260,16 +4267,20 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + re.sub(r'^#\d+\s+', '', teamLogos[awayTeamString]).width,
+                                    + re.sub(
+                                        pattern, "", teamLogos[awayTeamString]
+                                    ).width,
                                     24,
                                     green,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    re.sub(r'^#\d+\s+', '', teamLogos[homeTeamString]),
+                                    re.sub(pattern, "", teamLogos[homeTeamString]),
                                     pos
                                     + offset
-                                    + re.sub(r'^#\d+\s+', '', teamLogos[awayTeamString]).width
+                                    + re.sub(
+                                        pattern, "", teamLogos[awayTeamString]
+                                    ).width
                                     + buffer
                                     + buffer
                                     + buffer
