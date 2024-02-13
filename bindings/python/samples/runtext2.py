@@ -994,7 +994,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Texas A&M Aggies": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/texasamaggies Background Removed.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/texasa&maggies Background Removed.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
