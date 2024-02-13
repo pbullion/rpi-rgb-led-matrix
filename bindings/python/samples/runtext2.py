@@ -1668,6 +1668,16 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
+            "NCAA Logo": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaalogo Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "English Premier League Logo": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/englishpremierleague Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
         }
         while True:
             green = graphics.Color(0, 255, 0)
@@ -3612,13 +3622,18 @@ class RunText(SampleBase):
                     elif isinstance(arr, list) and "ncaa" in arr[0][0]:
                         for game in arr:
                             if "conference" in game[0]:
-                                conferenceName = graphics.DrawText(
-                                    offscreen_canvas,
-                                    font,
+                                # conferenceName = graphics.DrawText(
+                                #     offscreen_canvas,
+                                #     font,
+                                #     pos + offset,
+                                #     26,
+                                #     green,
+                                #     game[1],
+                                # )
+                                offscreen_canvas.SetImage(
+                                    teamLogos["NCAA Logo"],
                                     pos + offset,
-                                    26,
-                                    green,
-                                    game[1],
+                                    -10,
                                 )
                             awayTeam = 0
                             homeTeam = 0
@@ -5139,13 +5154,18 @@ class RunText(SampleBase):
                     elif isinstance(arr, list) and "soccer" in arr[0][0]:
                         for game in arr:
                             if "soccer" == game[0]:
-                                conferenceName = graphics.DrawText(
-                                    offscreen_canvas,
-                                    font,
+                                # conferenceName = graphics.DrawText(
+                                #     offscreen_canvas,
+                                #     font,
+                                #     pos + offset,
+                                #     26,
+                                #     green,
+                                #     game[1],
+                                # )
+                                offscreen_canvas.SetImage(
+                                    teamLogos['English Premier League Logo'],
                                     pos + offset,
-                                    26,
-                                    green,
-                                    game[1],
+                                    -10,
                                 )
                             awayTeam = 0
                             homeTeam = 0
