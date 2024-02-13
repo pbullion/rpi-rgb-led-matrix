@@ -4248,6 +4248,7 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
+                                print(re.sub(r'^#\d+\s+', '', teamLogos[awayTeamString]))
                                 offscreen_canvas.SetImage(
                                     re.sub(r'^#\d+\s+', '', teamLogos[awayTeamString]),
                                     pos + offset,
