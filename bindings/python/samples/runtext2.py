@@ -3640,8 +3640,6 @@ class RunText(SampleBase):
                                 awaySpreadString = game[22]
                                 homeSpreadString = game[23]
                                 overUnderText = ""
-                                print(re.sub(pattern, "", awayTeamString))
-                                print(re.sub(pattern, "", homeTeamString))
                                 if overUnderString != "":
                                     overUnderText = "O/U"
                                 offscreen_canvas.SetImage(
