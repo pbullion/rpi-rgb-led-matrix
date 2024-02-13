@@ -3640,31 +3640,30 @@ class RunText(SampleBase):
                                 if overUnderString != "":
                                     overUnderText = "O/U"
                                 offscreen_canvas.SetImage(
-                                    re.sub(pattern, "", teamLogos[awayTeamString]),
+                                    teamLogos[re.sub(pattern, "", awayTeamString)],
                                     pos + offset,
                                     -10,
                                 )
-                                print('hereeeeeeeeee')
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
                                     pos
                                     + offset
                                     + buffer
-                                    + re.sub(
-                                        pattern, "", teamLogos[awayTeamString]
-                                    ).width,
+                                    + teamLogos[
+                                        re.sub(pattern, "", awayTeamString)
+                                    ].width,
                                     24,
                                     green,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    re.sub(pattern, "", teamLogos[homeTeamString]),
+                                    teamLogos[re.sub(pattern, "", homeTeamString)],
                                     pos
                                     + offset
-                                    + re.sub(
-                                        pattern, "", teamLogos[awayTeamString]
-                                    ).width
+                                    + teamLogos[
+                                        re.sub(pattern, "", awayTeamString)
+                                    ].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3894,7 +3893,7 @@ class RunText(SampleBase):
                                     homeColor = red
                                     awayColor = green
                                 offscreen_canvas.SetImage(
-                                    re.sub(pattern, "", teamLogos[awayTeamString]),
+                                    teamLogos[re.sub(pattern, "", awayTeamString)],
                                     pos + offset,
                                     -10,
                                 )
@@ -3904,20 +3903,20 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + re.sub(
-                                        pattern, "", teamLogos[awayTeamString]
-                                    ).width,
+                                    + teamLogos[
+                                        re.sub(pattern, "", awayTeamString)
+                                    ].width,
                                     24,
                                     green,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    re.sub(pattern, "", teamLogos[homeTeamString]),
+                                    teamLogos[re.sub(pattern, "", homeTeamString)],
                                     pos
                                     + offset
-                                    + re.sub(
-                                        pattern, "", teamLogos[awayTeamString]
-                                    ).width
+                                    + teamLogos[
+                                        re.sub(pattern, "", awayTeamString)
+                                    ].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -4258,7 +4257,7 @@ class RunText(SampleBase):
                                     homeColor = red
                                     awayColor = green
                                 offscreen_canvas.SetImage(
-                                    re.sub(pattern, "", teamLogos[awayTeamString]),
+                                    teamLogos[re.sub(pattern, "", awayTeamString)],
                                     pos + offset,
                                     -10,
                                 )
@@ -4268,20 +4267,20 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + re.sub(
-                                        pattern, "", teamLogos[awayTeamString]
-                                    ).width,
+                                    + teamLogos[
+                                        re.sub(pattern, "", awayTeamString)
+                                    ].width,
                                     24,
                                     green,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    re.sub(pattern, "", teamLogos[homeTeamString]),
+                                    teamLogos[re.sub(pattern, "", homeTeamString)],
                                     pos
                                     + offset
-                                    + re.sub(
-                                        pattern, "", teamLogos[awayTeamString]
-                                    ).width
+                                    + teamLogos[
+                                        re.sub(pattern, "", awayTeamString)
+                                    ].width
                                     + buffer
                                     + buffer
                                     + buffer
