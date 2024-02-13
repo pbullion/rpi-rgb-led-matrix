@@ -882,6 +882,11 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             # Big 12 Teams
+            "BYU Cougars": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/byucougars Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
             "Baylor Bears": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/baylorbears Background Removed.png"
             )
