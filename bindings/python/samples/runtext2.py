@@ -3621,10 +3621,10 @@ class RunText(SampleBase):
                             awayTeamStatus = 0
                             homeTeamStatus = 0
                             newBuffer = 120
+                            pattern = r"#\d+\s"
                             if "pregame" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
-                                pattern = r"#\d+\s"
                                 statusString = game[11]
                                 oddsString = game[14]
                                 awayOddsString = game[15]
@@ -3644,6 +3644,7 @@ class RunText(SampleBase):
                                     pos + offset,
                                     -10,
                                 )
+                                print('hereeeeeeeeee')
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
