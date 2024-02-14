@@ -1678,16 +1678,6 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "NBA Logo": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nbalogo.png"
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
-            "NHL Logo": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nhllogo.png"
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
         }
         while True:
             green = graphics.Color(0, 255, 0)
@@ -4319,7 +4309,7 @@ class RunText(SampleBase):
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + newBuffer,
                                     12,
                                     awayColor,
                                     awayTeamString,
@@ -4327,16 +4317,16 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + newBuffer,
                                     26,
                                     homeColor,
                                     homeTeamString,
                                 )
                                 scoreLocation = 0
                                 if homeTeam > awayTeam:
-                                    scoreLocation = homeTeam + buffer + newBuffer
+                                    scoreLocation = homeTeam + buffer
                                 else:
-                                    scoreLocation = awayTeam + buffer + newBuffer
+                                    scoreLocation = awayTeam + buffer
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
@@ -5833,12 +5823,6 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "nba" in arr[0][0]:
                         for game in arr:
-                            if "logo" in game[0]:
-                                offscreen_canvas.SetImage(
-                                    teamLogos["NBA Logo"],
-                                    pos + offset,
-                                    -10,
-                                )
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
@@ -6474,12 +6458,6 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "nhl" in arr[0][0]:
                         for game in arr:
-                            if "logo" in game[0]:
-                                offscreen_canvas.SetImage(
-                                    teamLogos["NHL Logo"],
-                                    pos + offset,
-                                    -10,
-                                )
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
