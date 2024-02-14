@@ -3970,9 +3970,9 @@ class RunText(SampleBase):
                                 )
                                 scoreLocation = 0
                                 if homeTeam > awayTeam:
-                                    scoreLocation = homeTeam + buffer + newBuffer
+                                    scoreLocation = homeTeam + buffer
                                 else:
-                                    scoreLocation = awayTeam + buffer + newBuffer
+                                    scoreLocation = awayTeam + buffer
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
