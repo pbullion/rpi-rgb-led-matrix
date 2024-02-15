@@ -4066,7 +4066,7 @@ class RunText(SampleBase):
                                     + possessionPop,
                                     12,
                                     yellow,
-                                    statusString,
+                                    statusString.split(" - ")[0],
                                 )
                                 situationStr = graphics.DrawText(
                                     offscreen_canvas,
@@ -4087,7 +4087,7 @@ class RunText(SampleBase):
                                     + possessionPop,
                                     26,
                                     yellow,
-                                    situationString,
+                                    statusString.split(" - ")[1],
                                 )
                                 newOffset = 0
                                 if statusStr > situationStr:
@@ -6142,7 +6142,27 @@ class RunText(SampleBase):
                                     + buffer,
                                     12,
                                     yellow,
-                                    statusString,
+                                    statusString.split(" - ")[0],
+                                )
+                                situationStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + newBuffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer,
+                                    26,
+                                    yellow,
+                                    statusString.split(" - ")[1],
                                 )
                                 newOffset = statusStr
                                 awayOdds = graphics.DrawText(
