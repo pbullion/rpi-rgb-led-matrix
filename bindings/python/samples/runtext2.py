@@ -3622,14 +3622,6 @@ class RunText(SampleBase):
                     elif isinstance(arr, list) and "ncaa" in arr[0][0]:
                         for game in arr:
                             if "conference" in game[0]:
-                                # conferenceName = graphics.DrawText(
-                                #     offscreen_canvas,
-                                #     font,
-                                #     pos + offset,
-                                #     26,
-                                #     green,
-                                #     game[1],
-                                # )
                                 offscreen_canvas.SetImage(
                                     teamLogos["NCAA Logo"],
                                     pos + offset,
