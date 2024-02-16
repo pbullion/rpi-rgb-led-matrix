@@ -5146,14 +5146,6 @@ class RunText(SampleBase):
                     elif isinstance(arr, list) and "soccer" in arr[0][0]:
                         for game in arr:
                             if "soccer" == game[0]:
-                                # conferenceName = graphics.DrawText(
-                                #     offscreen_canvas,
-                                #     font,
-                                #     pos + offset,
-                                #     26,
-                                #     green,
-                                #     game[1],
-                                # )
                                 offscreen_canvas.SetImage(
                                     teamLogos["English Premier League Logo"],
                                     pos + offset,
@@ -5173,7 +5165,7 @@ class RunText(SampleBase):
                                 awayOddsString = game[15]
                                 homeOddsString = game[16]
                                 overUnderString = game[17]
-                                dayString = game[20]
+                                dayString = game[22]
                                 timeString = game[21]
                                 overUnderText = ""
                                 if overUnderString != "":
@@ -5227,7 +5219,6 @@ class RunText(SampleBase):
                                     scoreLocation = homeTeam
                                 else:
                                     scoreLocation = awayTeam
-
                                 awayOdds = 0
                                 if awayOddsString != "":
                                     awayOdds = graphics.DrawText(
@@ -5322,7 +5313,7 @@ class RunText(SampleBase):
                                     + scoreLocation,
                                     12,
                                     yellow,
-                                    dayString,
+                                    dayString.split(',')[0],
                                 )
                                 timeStr = graphics.DrawText(
                                     offscreen_canvas,
