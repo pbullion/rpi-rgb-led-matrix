@@ -3686,7 +3686,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + newBuffer + buffer + buffer + buffer,
                                     12,
-                                    yellow,
+                                    white,
                                     awayTeamString,
                                 )
                                 homeTeam = graphics.DrawText(
@@ -3694,7 +3694,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + buffer + buffer + buffer + newBuffer,
                                     26,
-                                    yellow,
+                                    white,
                                     homeTeamString,
                                 )
                                 if homeTeam > awayTeam:
@@ -5313,7 +5313,7 @@ class RunText(SampleBase):
                                     + scoreLocation,
                                     12,
                                     yellow,
-                                    dayString.split(',')[0],
+                                    dayString.split(",")[0],
                                 )
                                 timeStr = graphics.DrawText(
                                     offscreen_canvas,
@@ -6528,7 +6528,6 @@ class RunText(SampleBase):
                                     scoreLocation = homeTeam
                                 else:
                                     scoreLocation = awayTeam
-
                                 awayOdds = 0
                                 if awayOddsString != "":
                                     awayOdds = graphics.DrawText(
