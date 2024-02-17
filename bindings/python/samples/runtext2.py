@@ -6657,6 +6657,12 @@ class RunText(SampleBase):
                                 homeTeamStatusString = game[13]
                                 situationString = game[15]
                                 statusString = game[16]
+                                if "of" in statusString:
+                                    statusStringUpper = statusString.split(" of ")[0]
+                                    statusStringLower = statusString.split(" of ")[1]
+                                if "-" in statusString:
+                                    statusStringUpper = statusString.split(" - ")[0]
+                                    statusStringLower = statusString.split(" - ")[1]
                                 possession = game[17]
                                 awayOddsString = game[19]
                                 homeOddsString = game[20]
@@ -6786,8 +6792,28 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer,
                                     12,
-                                    yellow,
-                                    statusString,
+                                    white,
+                                    statusStringUpper,
+                                )
+                                statusStr = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + newBuffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + scoreLocation
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer,
+                                    26,
+                                    white,
+                                    statusStringLower,
                                 )
                                 newOffset = statusStr
                                 awayOdds = graphics.DrawText(
