@@ -5204,7 +5204,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + buffer + buffer + buffer + newBuffer,
                                     12,
-                                    yellow,
+                                    white,
                                     awayTeamString,
                                 )
                                 homeTeam = graphics.DrawText(
@@ -5212,7 +5212,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + buffer + buffer + buffer + newBuffer,
                                     26,
-                                    yellow,
+                                    white,
                                     homeTeamString,
                                 )
                                 if homeTeam > awayTeam:
@@ -5858,7 +5858,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + buffer + buffer + buffer + newBuffer,
                                     12,
-                                    yellow,
+                                    white,
                                     awayTeamString,
                                 )
                                 homeTeam = graphics.DrawText(
@@ -5866,7 +5866,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + buffer + buffer + buffer + newBuffer,
                                     26,
-                                    yellow,
+                                    white,
                                     homeTeamString,
                                 )
                                 if homeTeam > awayTeam:
@@ -6513,7 +6513,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + buffer + newBuffer + buffer + buffer,
                                     12,
-                                    yellow,
+                                    white,
                                     awayTeamString,
                                 )
                                 homeTeam = graphics.DrawText(
@@ -6521,7 +6521,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + buffer + buffer + buffer + newBuffer,
                                     26,
-                                    yellow,
+                                    white,
                                     homeTeamString,
                                 )
                                 if homeTeam > awayTeam:
