@@ -6659,7 +6659,7 @@ class RunText(SampleBase):
                                 statusString = game[16]
                                 if "of" in statusString:
                                     statusStringUpper = statusString.split(" of ")[0]
-                                    statusStringLower = statusString.split(" of ")[1]
+                                    statusStringLower = statusString.split(" of ")[1].replace(' Period','')
                                 if "-" in statusString:
                                     statusStringUpper = statusString.split(" - ")[0]
                                     statusStringLower = statusString.split(" - ")[1]
