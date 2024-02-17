@@ -1706,11 +1706,12 @@ class RunText(SampleBase):
             )
             # url = requests.get(f"http://10.0.0.22:3001/patrick/all-data-2/{user}")
             responseArr = json.loads(url.text)
-            print(responseArr)
+            filteredArr = [item for item in responseArr if item != " "]
+            print(filteredArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
             color = green
-            for arr in responseArr:
+            for arr in filteredArr:
                 running = True
                 while running:
                     offscreen_canvas.Clear()
