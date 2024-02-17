@@ -1678,6 +1678,11 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
+            "UFC Logo": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ufclogo.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
         }
         while True:
             green = graphics.Color(0, 255, 0)
@@ -4407,14 +4412,11 @@ class RunText(SampleBase):
                             headlineString = 0
                             awayTeamStatus = 0
                             homeTeamStatus = 0
-                            if "ufc" in game[0]:
-                                conferenceName = graphics.DrawText(
-                                    offscreen_canvas,
-                                    font,
+                            if "ufc" == game[0]:
+                                offscreen_canvas.SetImage(
+                                    teamLogos["UFC Logo"],
                                     pos + offset,
-                                    26,
-                                    green,
-                                    "UFC",
+                                    -10,
                                 )
                             if "ufc" != game[0]:
                                 awayTeamString = game[0]
@@ -4426,7 +4428,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + buffer + buffer + buffer,
                                     12,
-                                    yellow,
+                                    white,
                                     awayTeamString,
                                 )
                                 homeTeam = graphics.DrawText(
@@ -4434,7 +4436,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + buffer + buffer + buffer,
                                     26,
-                                    yellow,
+                                    white,
                                     homeTeamString,
                                 )
                                 if homeTeam > awayTeam:
@@ -4456,7 +4458,7 @@ class RunText(SampleBase):
                                         + scoreLocation
                                         + buffer,
                                         12,
-                                        green,
+                                        green if "+" in awayOddsString else red,
                                         awayOddsString,
                                     )
                                     homeOdds = graphics.DrawText(
@@ -4472,7 +4474,7 @@ class RunText(SampleBase):
                                         + scoreLocation
                                         + buffer,
                                         26,
-                                        green,
+                                        green if "+" in homeOddsString else red,
                                         homeOddsString,
                                     )
                             if "pregame" in game[0]:
@@ -5171,7 +5173,6 @@ class RunText(SampleBase):
                                 overUnderText = ""
                                 if overUnderString != "":
                                     overUnderText = "O/U"
-
                                 offscreen_canvas.SetImage(
                                     teamLogos[awayTeamString],
                                     pos + offset,
@@ -5235,7 +5236,7 @@ class RunText(SampleBase):
                                         + scoreLocation
                                         + buffer,
                                         12,
-                                        green,
+                                        green if "+" in awayOddsString else red,
                                         awayOddsString,
                                     )
                                     homeOdds = graphics.DrawText(
@@ -5251,7 +5252,7 @@ class RunText(SampleBase):
                                         + scoreLocation
                                         + buffer,
                                         26,
-                                        green,
+                                        green if "+" in homeOddsString else red,
                                         homeOddsString,
                                     )
                                 overUnderAmount = 0
@@ -5272,7 +5273,7 @@ class RunText(SampleBase):
                                         + awayOdds
                                         + scoreLocation,
                                         12,
-                                        green,
+                                        yellow,
                                         overUnderText,
                                     )
                                     overUnderAmount = graphics.DrawText(
@@ -5291,7 +5292,7 @@ class RunText(SampleBase):
                                         + awayOdds
                                         + scoreLocation,
                                         26,
-                                        green,
+                                        yellow,
                                         overUnderString,
                                     )
                                 dayStr = graphics.DrawText(
@@ -5313,7 +5314,7 @@ class RunText(SampleBase):
                                     + overUnderAmount
                                     + scoreLocation,
                                     12,
-                                    yellow,
+                                    white,
                                     dayString.split(",")[0],
                                 )
                                 timeStr = graphics.DrawText(
@@ -5335,7 +5336,7 @@ class RunText(SampleBase):
                                     + overUnderAmount
                                     + scoreLocation,
                                     26,
-                                    yellow,
+                                    white,
                                     timeString,
                                 )
                             if "inProgress" in game[0]:
