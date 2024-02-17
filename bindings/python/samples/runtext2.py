@@ -2205,7 +2205,7 @@ class RunText(SampleBase):
                                     middleFont,
                                     pos + offset + buffer + teamLogos[game[5]].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
@@ -2666,7 +2666,7 @@ class RunText(SampleBase):
                                     middleFont,
                                     pos + offset + buffer + teamLogos[game[5]].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
@@ -3090,7 +3090,7 @@ class RunText(SampleBase):
                                     middleFont,
                                     pos + offset + buffer + teamLogos[game[5]].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
@@ -3480,7 +3480,7 @@ class RunText(SampleBase):
                                     middleFont,
                                     pos + offset + buffer + teamLogos[game[5]].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
@@ -3664,7 +3664,7 @@ class RunText(SampleBase):
                                         re.sub(pattern, "", awayTeamString)
                                     ].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
@@ -3716,7 +3716,7 @@ class RunText(SampleBase):
                                         + scoreLocation
                                         + buffer,
                                         12,
-                                        green,
+                                        green if "+" in awayOddsString else red,
                                         awaySpreadString,
                                     )
                                     homeSpread = graphics.DrawText(
@@ -3732,7 +3732,7 @@ class RunText(SampleBase):
                                         + scoreLocation
                                         + buffer,
                                         26,
-                                        green,
+                                        green if "+" in awayOddsString else red,
                                         homeSpreadString,
                                     )
                                 if awayOddsString != "":
@@ -3751,7 +3751,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + homeSpread,
                                         12,
-                                        green,
+                                        green if "+" in awayOddsString else red,
                                         awayOddsString,
                                     )
                                     homeOdds = graphics.DrawText(
@@ -3769,7 +3769,7 @@ class RunText(SampleBase):
                                         + buffer
                                         + homeSpread,
                                         26,
-                                        green,
+                                        green if "+" in homeOddsString else red,
                                         homeOddsString,
                                     )
                                 overUnderAmount = 0
@@ -3792,7 +3792,7 @@ class RunText(SampleBase):
                                         + homeSpread
                                         + scoreLocation,
                                         12,
-                                        green,
+                                        yellow,
                                         overUnderText,
                                     )
                                     overUnderAmount = graphics.DrawText(
@@ -3813,7 +3813,7 @@ class RunText(SampleBase):
                                         + homeSpread
                                         + scoreLocation,
                                         26,
-                                        green,
+                                        yellow,
                                         overUnderString,
                                     )
                                 dayStr = graphics.DrawText(
@@ -3837,7 +3837,7 @@ class RunText(SampleBase):
                                     + overUnderAmount
                                     + scoreLocation,
                                     12,
-                                    yellow,
+                                    white,
                                     dayString,
                                 )
                                 timeStr = graphics.DrawText(
@@ -3861,7 +3861,7 @@ class RunText(SampleBase):
                                     + overUnderAmount
                                     + scoreLocation,
                                     26,
-                                    yellow,
+                                    white,
                                     timeString,
                                 )
                             if "inProgress" in game[0]:
@@ -3917,7 +3917,7 @@ class RunText(SampleBase):
                                         re.sub(pattern, "", awayTeamString)
                                     ].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
@@ -4281,7 +4281,7 @@ class RunText(SampleBase):
                                         re.sub(pattern, "", awayTeamString)
                                     ].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
@@ -5184,7 +5184,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + teamLogos[awayTeamString].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
@@ -5389,7 +5389,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + teamLogos[awayTeamString].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
@@ -5688,7 +5688,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + teamLogos[awayTeamString].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
@@ -5838,7 +5838,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + teamLogos[awayTeamString].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
@@ -6047,7 +6047,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + teamLogos[awayTeamString].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
@@ -6341,7 +6341,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + teamLogos[awayTeamString].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
@@ -6493,7 +6493,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + teamLogos[awayTeamString].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
@@ -6543,7 +6543,7 @@ class RunText(SampleBase):
                                         + scoreLocation
                                         + buffer,
                                         12,
-                                        green,
+                                        green if "+" in awayOddsString else red,
                                         awayOddsString,
                                     )
                                     homeOdds = graphics.DrawText(
@@ -6559,7 +6559,7 @@ class RunText(SampleBase):
                                         + scoreLocation
                                         + buffer,
                                         26,
-                                        green,
+                                        green if "+" in awayOddsString else red,
                                         homeOddsString,
                                     )
                                 overUnderAmount = 0
@@ -6580,7 +6580,7 @@ class RunText(SampleBase):
                                         + awayOdds
                                         + scoreLocation,
                                         12,
-                                        green,
+                                        yellow,
                                         overUnderText,
                                     )
                                     overUnderAmount = graphics.DrawText(
@@ -6599,7 +6599,7 @@ class RunText(SampleBase):
                                         + awayOdds
                                         + scoreLocation,
                                         26,
-                                        green,
+                                        yellow,
                                         overUnderString,
                                     )
                                 dayStr = graphics.DrawText(
@@ -6711,7 +6711,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + teamLogos[awayTeamString].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
@@ -7005,7 +7005,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + teamLogos[awayTeamString].width,
                                     24,
-                                    green,
+                                    white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
