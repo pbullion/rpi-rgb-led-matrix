@@ -1686,7 +1686,7 @@ class RunText(SampleBase):
             # teal = graphics.Color(0, 255, 255)
             purple = graphics.Color(102, 0, 204)
             yellow = graphics.Color(255, 255, 0)
-            white = graphics.Color(255, 255, 0)
+            white = graphics.Color(255, 255, 255)
             bFont = graphics.Font()
             bFont.LoadFont("/home/pi/rpi-rgb-led-matrix/fonts/8x13.bdf")
             font = graphics.Font()
