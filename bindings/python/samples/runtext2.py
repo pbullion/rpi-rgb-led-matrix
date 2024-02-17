@@ -5649,7 +5649,7 @@ class RunText(SampleBase):
                                     homeSpreadString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 140 + newBuffer
+                                offset = offset + 140
                             if "inProgress" in game[0]:
                                 offset = offset + 220 + newBuffer
                             if "final" in game[0]:
