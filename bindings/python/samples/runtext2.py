@@ -3716,7 +3716,7 @@ class RunText(SampleBase):
                                         + scoreLocation
                                         + buffer,
                                         12,
-                                        green if "+" in awayOddsString else red,
+                                        green if "+" in awaySpreadString else red,
                                         awaySpreadString,
                                     )
                                     homeSpread = graphics.DrawText(
@@ -3732,7 +3732,7 @@ class RunText(SampleBase):
                                         + scoreLocation
                                         + buffer,
                                         26,
-                                        green if "+" in awayOddsString else red,
+                                        green if "+" in homeSpreadString else red,
                                         homeSpreadString,
                                     )
                                 if awayOddsString != "":
