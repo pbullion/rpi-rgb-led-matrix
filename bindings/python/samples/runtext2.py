@@ -1262,6 +1262,11 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
+            "Florida Atlantic Owls": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/floridaatlanticowls Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
             "Xavier Musketeers": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/xaviermusketeers Background Removed.png"
             )
