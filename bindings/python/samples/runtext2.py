@@ -4076,7 +4076,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + possessionPop,
                                     12,
-                                    yellow,
+                                    white,
                                     statusString.split(" - ")[0],
                                 )
                                 situationStr = graphics.DrawText(
@@ -4097,7 +4097,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + possessionPop,
                                     26,
-                                    yellow,
+                                    white,
                                     statusString.split(" - ")[1],
                                 )
                                 newOffset = 0
@@ -6566,7 +6566,7 @@ class RunText(SampleBase):
                                         + scoreLocation
                                         + buffer,
                                         26,
-                                        green if "+" in awayOddsString else red,
+                                        green if "+" in homeOddsString else red,
                                         homeOddsString,
                                     )
                                 overUnderAmount = 0
@@ -6630,7 +6630,7 @@ class RunText(SampleBase):
                                     + overUnderAmount
                                     + scoreLocation,
                                     12,
-                                    yellow,
+                                    white,
                                     dayString,
                                 )
                                 timeStr = graphics.DrawText(
@@ -6654,7 +6654,7 @@ class RunText(SampleBase):
                                     + overUnderAmount
                                     + scoreLocation,
                                     26,
-                                    yellow,
+                                    white,
                                     timeString,
                                 )
                             if "inProgress" in game[0]:
