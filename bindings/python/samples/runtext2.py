@@ -4559,6 +4559,7 @@ class RunText(SampleBase):
                                 awayOddsString = game[2]
                                 homeOddsString = game[3]
                                 timeString = game[4]
+                                pattern = r"#\d+\s"
                                 newBuffer = 120
                                 offscreen_canvas.SetImage(
                                     teamLogos[re.sub(pattern, "", awayTeamString)],
