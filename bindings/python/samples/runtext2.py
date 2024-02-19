@@ -1688,6 +1688,136 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
+            "Muhammad Naimov": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/muhammadnaimov.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Erik Silva": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/eriksilva.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Victor Altamirano": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/victoraltamirano.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Felipe dos Santos": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/felipedossantos.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Luis Rodriguez": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/luisrodriguez.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Denys Bondar": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/denysbondar.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Claudio Puelles": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/claudiopuelles.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Farés Ziam": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/faresziam.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Daniel Lacerda": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/daniellacerda.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Édgar Cháirez": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/edgarchairez.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Jesus Aguilar": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/jesusaguilar.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Mateus Mendonca": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/mateusmendonca.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Raoni Barcelos": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/raonibarcelos.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Cristian Quiñonez": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/cristianquinonez.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Chris Duncan": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/chrisduncan.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Manuel Torres": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/manueltorres.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Sam Hughes": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/samhughes.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Yazmin Jauregui": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/yazminjauregui.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Ricky Turcios": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/rickyturcios.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Raul Rosas Jr.": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/raulrosasjr.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Daniel Zellhuber": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/danielzellhuber.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Francisco Prado": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/franciscoprado.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Brian Ortega": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/brianortega.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Yair Rodriguez": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/yairrodriguez.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Brandon Moreno": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/brandonmoreno.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Brandon Royval": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/brandonroyval.png"
+            )
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
         }
         while True:
             green = graphics.Color(0, 255, 0)
@@ -4428,10 +4558,44 @@ class RunText(SampleBase):
                                 homeTeamString = game[1]
                                 awayOddsString = game[2]
                                 homeOddsString = game[3]
+                                timeString = game[4]
+                                newBuffer = 120
+                                offscreen_canvas.SetImage(
+                                    teamLogos[re.sub(pattern, "", awayTeamString)],
+                                    pos + offset,
+                                    -10,
+                                )
+                                versus = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogos[
+                                        re.sub(pattern, "", awayTeamString)
+                                    ].width,
+                                    24,
+                                    white,
+                                    timeString,
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos[re.sub(pattern, "", homeTeamString)],
+                                    pos
+                                    + offset
+                                    + teamLogos[
+                                        re.sub(pattern, "", awayTeamString)
+                                    ].width
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer,
+                                    -10,
+                                )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + newBuffer,
                                     12,
                                     white,
                                     awayTeamString,
@@ -4439,7 +4603,7 @@ class RunText(SampleBase):
                                 homeTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos + offset + buffer + buffer + buffer,
+                                    pos + offset + buffer + buffer + buffer + newBuffer,
                                     26,
                                     white,
                                     homeTeamString,
@@ -4455,6 +4619,7 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
+                                        + newBuffer
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4473,6 +4638,7 @@ class RunText(SampleBase):
                                         + offset
                                         + buffer
                                         + buffer
+                                        + newBuffer
                                         + buffer
                                         + buffer
                                         + buffer
