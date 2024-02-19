@@ -4590,6 +4590,8 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + buffer
+                                    + buffer
                                     + buffer,
                                     -10,
                                 )
@@ -4650,9 +4652,9 @@ class RunText(SampleBase):
                                         homeOddsString,
                                     )
                             if "pregame" in game[0]:
-                                offset = offset + 100
+                                offset = offset + 100 + newBuffer
                             else:
-                                offset = offset + homeTeam + 100
+                                offset = offset + homeTeam + 100 + newBuffer
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
