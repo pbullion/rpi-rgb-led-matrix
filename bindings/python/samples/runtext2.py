@@ -1689,7 +1689,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Muhammad Naimov": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/testing.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/muhammadnaimov.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -4547,7 +4547,7 @@ class RunText(SampleBase):
                             headlineString = 0
                             awayTeamStatus = 0
                             homeTeamStatus = 0
-                            newBuffer = 120
+                            newBuffer = 140
                             if "ufc" == game[0]:
                                 offscreen_canvas.SetImage(
                                     teamLogos["UFC Logo"],
@@ -4586,6 +4586,7 @@ class RunText(SampleBase):
                                     + teamLogos[
                                         re.sub(pattern, "", awayTeamString)
                                     ].width
+                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
