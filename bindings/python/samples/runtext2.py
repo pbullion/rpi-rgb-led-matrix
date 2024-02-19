@@ -1689,7 +1689,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Muhammad Naimov": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/muhammadnaimov.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/testing.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
