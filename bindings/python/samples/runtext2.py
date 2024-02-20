@@ -4552,7 +4552,7 @@ class RunText(SampleBase):
                             headlineString = 0
                             awayTeamStatus = 0
                             homeTeamStatus = 0
-                            newBuffer = 120
+                            newBuffer = 130
                             if "ufc" == game[0]:
                                 offscreen_canvas.SetImage(
                                     teamLogos["UFC Logo"],
