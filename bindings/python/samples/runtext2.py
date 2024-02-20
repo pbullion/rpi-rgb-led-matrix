@@ -4561,11 +4561,9 @@ class RunText(SampleBase):
                                 )
                                 fightName = graphics.DrawText(
                                     offscreen_canvas,
-                                    middleFont,
-                                    pos
-                                    + offset +buffer+buffer
-                                    + teamLogos["UFC Logo"].width,
-                                    14,
+                                    smallFont,
+                                    pos + offset + buffer + teamLogos["UFC Logo"].width,
+                                    16,
                                     white,
                                     game[1],
                                 )
