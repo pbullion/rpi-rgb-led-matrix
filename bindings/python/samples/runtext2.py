@@ -4563,7 +4563,7 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     smallFont,
                                     pos + offset + buffer + teamLogos["UFC Logo"].width,
-                                    16,
+                                    18,
                                     white,
                                     game[1],
                                 )
@@ -7446,7 +7446,7 @@ class RunText(SampleBase):
                             arr[1],
                         )
                         length = graphics.DrawText(
-                            offscreen_canvas, bFont, pos, 26, green, arr[2]
+                            offscreen_canvas, smallFont, pos, 26, green, arr[2]
                         )
                         pos -= 1
                         if pos + length < 0:
@@ -7499,7 +7499,7 @@ class RunText(SampleBase):
                         )
                         # versus2 = graphics.DrawText(offscreen_canvas, bFont,(offscreen_canvas.width / 2)+ versus + 25, 12, blue, arr[2])
                         length = graphics.DrawText(
-                            offscreen_canvas, bFont, pos, 26, green, arr[3]
+                            offscreen_canvas, smallFont, pos, 26, green, arr[3]
                         )
                         pos -= 1
                         time.sleep(0.020)
