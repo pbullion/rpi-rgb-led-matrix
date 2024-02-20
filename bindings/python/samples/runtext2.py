@@ -4559,6 +4559,16 @@ class RunText(SampleBase):
                                     pos + offset,
                                     -10,
                                 )
+                                fightName = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos
+                                    + offset +buffer+buffer
+                                    + teamLogos["UFC Logo"].width,
+                                    14,
+                                    white,
+                                    game[1],
+                                )
                             if "ufc" != game[0]:
                                 awayTeamString = game[0]
                                 homeTeamString = game[1]
