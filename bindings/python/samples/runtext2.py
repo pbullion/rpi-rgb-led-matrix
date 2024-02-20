@@ -4625,7 +4625,6 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + buffer
-                                        + buffer
                                         + scoreLocation
                                         + buffer,
                                         12,
@@ -4640,7 +4639,6 @@ class RunText(SampleBase):
                                         + buffer
                                         + buffer
                                         + newBuffer
-                                        + buffer
                                         + buffer
                                         + buffer
                                         + scoreLocation
