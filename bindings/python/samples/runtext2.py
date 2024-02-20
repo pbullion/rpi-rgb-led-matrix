@@ -1687,7 +1687,7 @@ class RunText(SampleBase):
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ufclogo.png"
             )
             .convert("RGB")
-            .resize((40, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "Muhammad Naimov": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/muhammadnaimov.png"
             )
