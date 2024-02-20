@@ -7426,13 +7426,13 @@ class RunText(SampleBase):
                             arr[1],
                         )
                         length = graphics.DrawText(
-                            offscreen_canvas, smallFont, pos, 26, green, arr[2]
+                            offscreen_canvas, bFont, pos, 26, green, arr[2]
                         )
                         pos -= 1
                         if pos + length < 0:
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.018)
+                        time.sleep(0.021)
                     elif isinstance(arr, list) and "rssFeed" in arr[0]:
                         blackVs = graphics.DrawText(
                             offscreen_canvas, bFont, -1000, 12, green, arr[1]
@@ -7446,13 +7446,13 @@ class RunText(SampleBase):
                             arr[1],
                         )
                         length = graphics.DrawText(
-                            offscreen_canvas, smallFont, pos, 26, green, arr[2]
+                            offscreen_canvas, bFont, pos, 26, green, arr[2]
                         )
                         pos -= 1
                         if pos + length < 0:
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.018)
+                        time.sleep(0.021)
                     elif arr == None:
                         running = False
                         pos = offscreen_canvas.width
@@ -7499,10 +7499,10 @@ class RunText(SampleBase):
                         )
                         # versus2 = graphics.DrawText(offscreen_canvas, bFont,(offscreen_canvas.width / 2)+ versus + 25, 12, blue, arr[2])
                         length = graphics.DrawText(
-                            offscreen_canvas, smallFont, pos, 26, green, arr[3]
+                            offscreen_canvas, bFont, pos, 26, green, arr[3]
                         )
                         pos -= 1
-                        time.sleep(0.018)
+                        time.sleep(0.020)
                         if pos + length < 0:
                             running = False
                             pos = offscreen_canvas.width
