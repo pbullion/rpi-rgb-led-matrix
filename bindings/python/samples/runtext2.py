@@ -1708,6 +1708,11 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((40, 40), Image.ANTIALIAS),
+            "Ronaldo Rodriguez": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/luisrodriguez.png"
+            )
+            .convert("RGB")
+            .resize((40, 40), Image.ANTIALIAS),
             "Luis Rodriguez": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/luisrodriguez.png"
             )
