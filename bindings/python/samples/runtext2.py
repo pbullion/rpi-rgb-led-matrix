@@ -5218,13 +5218,13 @@ class RunText(SampleBase):
                             awayTeamStatus = 0
                             homeTeamStatus = 0
                             newBuffer = 120
-                            if "pga" == game[0]:
+                            if "golf" == game[0]:
                                 offscreen_canvas.SetImage(
                                     teamLogos["Mexico Open"],
                                     pos + offset,
                                     -10,
                                 )
-                            if "pga" != game[0]:
+                            if "golf" != game[0]:
                                 athID = game[0]
                                 position = game[1]
                                 athleteName = game[2]
@@ -8089,7 +8089,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                         time.sleep(0.018)
                     elif isinstance(arr, list) and (
-                        arr[0] == "golf" or "rankings" in arr[0]
+                         "rankings" in arr[0]
                     ):
                         blackVs = graphics.DrawText(
                             offscreen_canvas, bFont, -1000, 12, green, arr[1]
