@@ -6150,12 +6150,15 @@ class RunText(SampleBase):
                             if "pregame" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
+                                awayTeamLogo = awayTeamString
+                                homeTeamLogo = homeTeamString
                                 if "English Premier" == game[1]:
                                     awayTeamLogo = awayTeamString
                                     homeTeamLogo = homeTeamString
                                 if "MLS" == game[1]:
                                     awayTeamLogo = game[30]
                                     homeTeamLogo = game[31]
+                                print(awayTeamLogo)
                                 statusString = game[11]
                                 oddsString = game[14]
                                 awayOddsString = game[15]
