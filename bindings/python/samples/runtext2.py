@@ -5305,11 +5305,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
-                                    + buffer
                                     + buffer,
                                     26,
                                     red,
