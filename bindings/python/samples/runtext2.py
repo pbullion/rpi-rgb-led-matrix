@@ -5303,13 +5303,12 @@ class RunText(SampleBase):
                                     ).width
                                     + offset
                                     + buffer
-                                    + buffer
                                     + buffer,
                                     26,
                                     red,
                                     score,
                                 )
-                            offset = offset + 80 + newBuffer
+                            offset = offset + 90 + newBuffer
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
