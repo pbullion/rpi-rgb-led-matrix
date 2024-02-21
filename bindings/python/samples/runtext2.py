@@ -5210,7 +5210,7 @@ class RunText(SampleBase):
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
-                    elif isinstance(arr, list) and "pga" in arr[0][0]:
+                    elif isinstance(arr, list) and "golf" in arr[0][0]:
                         for game in arr:
                             awayTeam = 0
                             homeTeam = 0
@@ -8088,9 +8088,7 @@ class RunText(SampleBase):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.018)
-                    elif isinstance(arr, list) and (
-                         "rankings" in arr[0]
-                    ):
+                    elif isinstance(arr, list) and ("rankings" in arr[0]):
                         blackVs = graphics.DrawText(
                             offscreen_canvas, bFont, -1000, 12, green, arr[1]
                         )
