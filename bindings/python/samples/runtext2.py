@@ -5227,7 +5227,7 @@ class RunText(SampleBase):
                                     white,
                                     game[1],
                                 )
-                                offset = offset
+                                offset = offset + 50
                             if "golf" != game[0]:
                                 athID = game[0]
                                 # position = game[1]
@@ -5291,7 +5291,7 @@ class RunText(SampleBase):
                                     white,
                                     teeTime,
                                 )
-                                positionText = graphics.DrawText(
+                                scoreText = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
                                     pos
