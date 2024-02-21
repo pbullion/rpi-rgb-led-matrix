@@ -5294,7 +5294,18 @@ class RunText(SampleBase):
                                 positionText = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset,
+                                    pos
+                                    + positionText
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer,
                                     26,
                                     red,
                                     score,
