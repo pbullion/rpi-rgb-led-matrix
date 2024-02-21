@@ -5301,9 +5301,7 @@ class RunText(SampleBase):
                                         re.sub(pattern, "", athID),
                                         "Default Person",
                                     ).width
-                                    + offset
-                                    + buffer
-                                    + buffer,
+                                    + offset,
                                     26,
                                     red,
                                     score,
