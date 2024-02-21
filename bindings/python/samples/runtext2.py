@@ -5304,7 +5304,7 @@ class RunText(SampleBase):
                                     + offset
                                     + buffer,
                                     26,
-                                    red,
+                                    red if '-' in score else yellow if 'E' in score else green,
                                     score,
                                 )
                             offset = offset + 90 + newBuffer
