@@ -5226,7 +5226,8 @@ class RunText(SampleBase):
                                 )
                             if "golf" != game[0]:
                                 athID = game[0]
-                                position = game[1]
+                                # position = game[1]
+                                position = '1'
                                 athleteName = game[2]
                                 score = game[3]
                                 teeTime = game[4]
@@ -5245,12 +5246,7 @@ class RunText(SampleBase):
                                 athleteNameText = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + positionText
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + newBuffer,
+                                    pos + positionText + offset + buffer + buffer,
                                     12,
                                     white,
                                     athleteName,
@@ -5258,12 +5254,7 @@ class RunText(SampleBase):
                                 teeTimeText = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
-                                    pos
-                                    + positionText
-                                    + offset
-                                    + buffer
-                                    + buffer
-                                    + newBuffer,
+                                    pos + positionText + offset + buffer + buffer,
                                     26,
                                     white,
                                     teeTime,
