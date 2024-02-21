@@ -5221,9 +5221,9 @@ class RunText(SampleBase):
                             if "golf" == game[0]:
                                 graphics.DrawText(
                                     offscreen_canvas,
-                                    smallFont,
+                                    middleFont,
                                     pos + offset,
-                                    18,
+                                    16,
                                     white,
                                     game[1],
                                 )
@@ -5289,7 +5289,7 @@ class RunText(SampleBase):
                                     white,
                                     teeTime,
                                 )
-                            offset = offset + 90 + newBuffer
+                            offset = offset + 80 + newBuffer
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
