@@ -5230,11 +5230,11 @@ class RunText(SampleBase):
                                 offset = offset + 50
                             if "golf" != game[0]:
                                 athID = game[0]
-                                # position = game[1]
-                                position = "1"
+                                position = game[1]
+                                # position = "1"
                                 athleteName = game[2]
-                                # score = game[3]
-                                score = "-3"
+                                score = game[3]
+                                # score = "-3"
                                 teeTime = game[4]
                                 pattern = r"#\d+\s"
                                 positionText = graphics.DrawText(
