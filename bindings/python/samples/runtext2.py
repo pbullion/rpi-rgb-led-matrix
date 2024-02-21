@@ -5227,7 +5227,7 @@ class RunText(SampleBase):
                                     white,
                                     game[1],
                                 )
-                                offset = offset + 40 + tournamentName
+                                offset = offset + tournamentName
                             if "golf" != game[0]:
                                 athID = game[0]
                                 # position = game[1]
@@ -5305,6 +5305,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + newBuffer
                                     + buffer,
                                     26,
                                     red,
