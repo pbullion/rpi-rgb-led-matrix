@@ -5219,10 +5219,13 @@ class RunText(SampleBase):
                             homeTeamStatus = 0
                             newBuffer = 120
                             if "golf" == game[0]:
-                                offscreen_canvas.SetImage(
-                                    teamLogos["Mexico Open"],
+                                graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
                                     pos + offset,
-                                    0,
+                                    18,
+                                    white,
+                                    game[1],
                                 )
                             if "golf" != game[0]:
                                 athID = game[0]
@@ -5286,7 +5289,7 @@ class RunText(SampleBase):
                                     white,
                                     teeTime,
                                 )
-                            offset = offset + 120 + newBuffer
+                            offset = offset + 90 + newBuffer
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
