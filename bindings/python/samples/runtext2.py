@@ -5234,7 +5234,7 @@ class RunText(SampleBase):
                                 pattern = r"#\d+\s"
                                 positionText = graphics.DrawText(
                                     offscreen_canvas,
-                                    font,
+                                    middleFont,
                                     pos + offset,
                                     26,
                                     white,
@@ -5259,6 +5259,9 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
                                     + buffer,
                                     12,
                                     white,
@@ -5275,12 +5278,15 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
                                     + buffer,
                                     26,
                                     white,
                                     teeTime,
                                 )
-                            offset = offset + 150 + newBuffer
+                            offset = offset + 13+ newBuffer
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
