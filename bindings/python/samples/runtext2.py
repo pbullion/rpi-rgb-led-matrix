@@ -5233,7 +5233,12 @@ class RunText(SampleBase):
                                 teeTime = game[4]
                                 pattern = r"#\d+\s"
                                 positionText = graphics.DrawText(
-                                    offscreen_canvas, font, pos, 26, white, position
+                                    offscreen_canvas,
+                                    font,
+                                    pos + offset,
+                                    26,
+                                    white,
+                                    position,
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos.get(
@@ -5275,10 +5280,7 @@ class RunText(SampleBase):
                                     white,
                                     teeTime,
                                 )
-                            offset = offset + teamLogos.get(
-                                        re.sub(pattern, "", athID),
-                                        "Default Person",
-                                    ).width +athleteNameText + 100 + newBuffer
+                            offset = offset + athleteNameText + 100 + newBuffer
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
