@@ -5222,7 +5222,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos["Mexico Open"],
                                     pos + offset,
-                                    -10,
+                                    0,
                                 )
                             if "golf" != game[0]:
                                 athID = game[0]
@@ -5286,7 +5286,7 @@ class RunText(SampleBase):
                                     white,
                                     teeTime,
                                 )
-                            offset = offset + 13+ newBuffer
+                            offset = offset + 120 + newBuffer
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
