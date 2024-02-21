@@ -6152,6 +6152,7 @@ class RunText(SampleBase):
                                 homeTeamString = game[10]
                                 awayTeamLogo = awayTeamString
                                 homeTeamLogo = homeTeamString
+                                print(game[1])
                                 if "English Premier" == game[1]:
                                     awayTeamLogo = awayTeamString
                                     homeTeamLogo = homeTeamString
