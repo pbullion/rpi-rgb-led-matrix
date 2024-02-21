@@ -5304,7 +5304,11 @@ class RunText(SampleBase):
                                     + offset
                                     + buffer,
                                     26,
-                                    red if '-' in score else yellow if 'E' in score else green,
+                                    (
+                                        red
+                                        if "-" in score
+                                        else yellow if "E" in score else green
+                                    ),
                                     score,
                                 )
                             offset = offset + 90 + newBuffer
@@ -7796,7 +7800,7 @@ class RunText(SampleBase):
                             if "pregame" in game[0]:
                                 offset = offset + 115 + newBuffer
                             if "inProgress" in game[0]:
-                                offset = offset + 180 + newBuffer
+                                offset = offset + 140 + newBuffer
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
