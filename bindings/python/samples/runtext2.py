@@ -6654,6 +6654,8 @@ class RunText(SampleBase):
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
+                                awayTeamLogo = awayTeamString
+                                homeTeamLogo = homeTeamString
                                 if "English Premier" == game[1]:
                                     awayTeamLogo = awayTeamString
                                     homeTeamLogo = homeTeamString
