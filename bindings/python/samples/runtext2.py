@@ -5296,6 +5296,11 @@ class RunText(SampleBase):
                                     middleFont,
                                     pos
                                     + positionText
+                                    + athleteNameText
+                                    + teamLogos.get(
+                                        re.sub(pattern, "", athID),
+                                        "Default Person",
+                                    ).width
                                     + offset
                                     + buffer
                                     + buffer
