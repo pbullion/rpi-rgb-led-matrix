@@ -6141,12 +6141,6 @@ class RunText(SampleBase):
                                     pos + offset,
                                     -10,
                                 )
-                            if "English Premier" == game[1]:
-                                awayTeamLogo = awayTeamString
-                                homeTeamLogo = homeTeamString
-                            if "MLS" == game[1]:
-                                awayTeamLogo = game[30]
-                                homeTeamLogo = game[31]
                             awayTeam = 0
                             homeTeam = 0
                             headlineString = 0
@@ -6156,6 +6150,12 @@ class RunText(SampleBase):
                             if "pregame" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
+                                if "English Premier" == game[1]:
+                                    awayTeamLogo = awayTeamString
+                                    homeTeamLogo = homeTeamString
+                                if "MLS" == game[1]:
+                                    awayTeamLogo = game[30]
+                                    homeTeamLogo = game[31]
                                 statusString = game[11]
                                 oddsString = game[14]
                                 awayOddsString = game[15]
@@ -6335,6 +6335,12 @@ class RunText(SampleBase):
                             if "inProgress" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
+                                if "English Premier" == game[1]:
+                                    awayTeamLogo = awayTeamString
+                                    homeTeamLogo = homeTeamString
+                                if "MLS" == game[1]:
+                                    awayTeamLogo = game[30]
+                                    homeTeamLogo = game[31]
                                 awayTeamStatusString = game[12]
                                 homeTeamStatusString = game[13]
                                 situationString = game[15]
@@ -6648,6 +6654,12 @@ class RunText(SampleBase):
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
+                                if "English Premier" == game[1]:
+                                    awayTeamLogo = awayTeamString
+                                    homeTeamLogo = homeTeamString
+                                if "MLS" == game[1]:
+                                    awayTeamLogo = game[30]
+                                    homeTeamLogo = game[31]
                                 awayTeamStatusString = game[12]
                                 homeTeamStatusString = game[13]
                                 statusString = game[11]
