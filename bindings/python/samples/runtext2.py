@@ -5275,10 +5275,10 @@ class RunText(SampleBase):
                                     white,
                                     teeTime,
                                 )
-                            if "pregame" in game[0]:
-                                offset = offset + 100 + newBuffer
-                            else:
-                                offset = offset + homeTeam + 100 + newBuffer
+                            offset = offset + teamLogos.get(
+                                        re.sub(pattern, "", athID),
+                                        "Default Person",
+                                    ).width +athleteNameText + 100 + newBuffer
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
