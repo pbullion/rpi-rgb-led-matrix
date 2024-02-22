@@ -6130,12 +6130,6 @@ class RunText(SampleBase):
                     elif isinstance(arr, list) and "soccer" in arr[0][0]:
                         for game in arr:
                             if "English Premier" == game[1]:
-                                awayTeamLogo = awayTeamString
-                                homeTeamLogo = homeTeamString
-                            if "MLS" == game[1]:
-                                awayTeamLogo = game[30]
-                                homeTeamLogo = game[31]
-                            if "English Premier" == game[1]:
                                 offscreen_canvas.SetImage(
                                     teamLogos["English Premier League Logo"],
                                     pos + offset,
@@ -6158,8 +6152,12 @@ class RunText(SampleBase):
                                 homeTeamString = game[10]
                                 awayTeamLogo = awayTeamString
                                 homeTeamLogo = homeTeamString
-                                print(game[1])
-                                print(awayTeamLogo)
+                                if "English Premier" == arr[0][0]:
+                                    awayTeamLogo = awayTeamString
+                                    homeTeamLogo = homeTeamString
+                                if "MLS" == arr[0][0]:
+                                    awayTeamLogo = game[30]
+                                    homeTeamLogo = game[31]
                                 statusString = game[11]
                                 oddsString = game[14]
                                 awayOddsString = game[15]
@@ -6339,6 +6337,12 @@ class RunText(SampleBase):
                             if "inProgress" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
+                                if "English Premier" == arr[0][0]:
+                                    awayTeamLogo = awayTeamString
+                                    homeTeamLogo = homeTeamString
+                                if "MLS" == arr[0][0]:
+                                    awayTeamLogo = game[30]
+                                    homeTeamLogo = game[31]
                                 awayTeamStatusString = game[12]
                                 homeTeamStatusString = game[13]
                                 situationString = game[15]
@@ -6654,6 +6658,12 @@ class RunText(SampleBase):
                                 homeTeamString = game[10]
                                 awayTeamLogo = awayTeamString
                                 homeTeamLogo = homeTeamString
+                                if "English Premier" == arr[0][0]]:
+                                    awayTeamLogo = awayTeamString
+                                    homeTeamLogo = homeTeamString
+                                if "MLS" == arr[0][0]]:
+                                    awayTeamLogo = game[30]
+                                    homeTeamLogo = game[31]
                                 awayTeamStatusString = game[12]
                                 homeTeamStatusString = game[13]
                                 statusString = game[11]
