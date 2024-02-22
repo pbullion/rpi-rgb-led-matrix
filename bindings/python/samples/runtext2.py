@@ -5396,11 +5396,18 @@ class RunText(SampleBase):
                                     white,
                                     position,
                                 )
-                                offscreen_canvas.SetImage(
-                                    teamLogos[athID],
-                                    pos + positionText + offset,
-                                    0,
-                                )
+                                try:
+                                    offscreen_canvas.SetImage(
+                                        teamLogos[athID],
+                                        pos + positionText + offset,
+                                        0,
+                                    )
+                                except KeyError:
+                                    offscreen_canvas.SetImage(
+                                        teamLogos[0000000000],
+                                        pos + positionText + offset,
+                                        0,
+                                    )
                                 athleteNameText = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
