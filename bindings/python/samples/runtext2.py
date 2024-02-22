@@ -5398,7 +5398,7 @@ class RunText(SampleBase):
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos.get(
-                                        re.sub(pattern, "", athID),
+                                         athID,
                                         "Default Person",
                                     ),
                                     pos + positionText + offset,
