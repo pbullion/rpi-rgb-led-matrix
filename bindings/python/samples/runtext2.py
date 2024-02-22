@@ -5396,18 +5396,16 @@ class RunText(SampleBase):
                                     white,
                                     position,
                                 )
+                                logoValue = athID
                                 try:
-                                    offscreen_canvas.SetImage(
-                                        teamLogos[athID],
-                                        pos + positionText + offset,
-                                        0,
-                                    )
+                                    value = teamLogos[athID]
                                 except KeyError:
-                                    offscreen_canvas.SetImage(
-                                        teamLogos[0000000000],
-                                        pos + positionText + offset,
-                                        0,
-                                    )
+                                    logoValue = "0000000000"
+                                offscreen_canvas.SetImage(
+                                    teamLogos[logoValue],
+                                    pos + positionText + offset,
+                                    0,
+                                )
                                 athleteNameText = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
