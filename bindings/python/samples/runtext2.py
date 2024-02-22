@@ -5461,7 +5461,7 @@ class RunText(SampleBase):
                                     ),
                                     score,
                                 )
-                            offset = offset + 90 + newBuffer
+                            offset = offset + 100 + newBuffer
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
