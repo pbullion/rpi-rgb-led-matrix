@@ -5392,9 +5392,21 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     middleFont,
                                     pos + offset,
-                                    26,
+                                    12,
                                     white,
                                     position,
+                                )
+                                scoreText = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos + offset,
+                                    26,
+                                    (
+                                        red
+                                        if "-" in score
+                                        else yellow if "E" in score else green
+                                    ),
+                                    score,
                                 )
                                 logoValue = athID
                                 try:
@@ -5443,23 +5455,6 @@ class RunText(SampleBase):
                                     26,
                                     white,
                                     teeTime,
-                                )
-                                scoreText = graphics.DrawText(
-                                    offscreen_canvas,
-                                    middleFont,
-                                    pos
-                                    + positionText
-                                    + athleteNameText
-                                    + teamLogos[logoValue].width
-                                    + offset
-                                    + buffer,
-                                    26,
-                                    (
-                                        red
-                                        if "-" in score
-                                        else yellow if "E" in score else green
-                                    ),
-                                    score,
                                 )
                             offset = offset + 100 + newBuffer
                         time.sleep(0.018)
