@@ -6152,11 +6152,11 @@ class RunText(SampleBase):
                                 homeTeamString = game[10]
                                 awayTeamLogo = awayTeamString
                                 homeTeamLogo = homeTeamString
-                                if "English Premier" == arr[0][0]:
+                                if "English Premier" == arr[0][1]:
                                     awayTeamLogo = awayTeamString
                                     homeTeamLogo = homeTeamString
                                 print(arr[0][0])
-                                if "MLS" == arr[0][0]:
+                                if "MLS" == arr[0][1]:
                                     awayTeamLogo = game[30]
                                     homeTeamLogo = game[31]
                                 statusString = game[11]
@@ -6338,10 +6338,10 @@ class RunText(SampleBase):
                             if "inProgress" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
-                                if "English Premier" == arr[0][0]:
+                                if "English Premier" == arr[0][1]:
                                     awayTeamLogo = awayTeamString
                                     homeTeamLogo = homeTeamString
-                                if "MLS" == arr[0][0]:
+                                if "MLS" == arr[0][1]:
                                     awayTeamLogo = game[30]
                                     homeTeamLogo = game[31]
                                 awayTeamStatusString = game[12]
@@ -6659,10 +6659,10 @@ class RunText(SampleBase):
                                 homeTeamString = game[10]
                                 awayTeamLogo = awayTeamString
                                 homeTeamLogo = homeTeamString
-                                if "English Premier" == arr[0][0]:
+                                if "English Premier" == arr[0][1]:
                                     awayTeamLogo = awayTeamString
                                     homeTeamLogo = homeTeamString
-                                if "MLS" == arr[0][0]:
+                                if "MLS" == arr[0][1]:
                                     awayTeamLogo = game[30]
                                     homeTeamLogo = game[31]
                                 awayTeamStatusString = game[12]
