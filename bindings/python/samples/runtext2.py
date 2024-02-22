@@ -1828,7 +1828,7 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
-            "Default Person": Image.open(
+            "0000000000": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/default.png"
             )
             .convert("RGB")
@@ -5398,8 +5398,8 @@ class RunText(SampleBase):
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos.get(
-                                         athID,
-                                        "Default Person",
+                                        athID,
+                                        0000000000,
                                     ),
                                     pos + positionText + offset,
                                     0,
