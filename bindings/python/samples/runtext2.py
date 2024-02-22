@@ -6658,7 +6658,7 @@ class RunText(SampleBase):
                                 homeTeamString = game[10]
                                 awayTeamLogo = awayTeamString
                                 homeTeamLogo = homeTeamString
-                                if "English Premier" == arr[0][0]]:
+                                if "English Premier" == arr[0][0]:
                                     awayTeamLogo = awayTeamString
                                     homeTeamLogo = homeTeamString
                                 if "MLS" == arr[0][0]:
