@@ -5460,10 +5460,7 @@ class RunText(SampleBase):
                                     white,
                                     teeTime,
                                 )
-                            if "pregame" in game[0]:
-                                offset = offset + 100 + newBuffer
-                            else:
-                                offset = offset + athleteNameText + 10 + newBuffer
+                            offset = offset + 100 + newBuffer + 10
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
