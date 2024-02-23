@@ -5380,7 +5380,6 @@ class RunText(SampleBase):
                                 offset = offset + 50
                             if "golf" != game[0]:
                                 athID = game[0]
-                                print(athID)
                                 position = game[1]
                                 # position = "1"
                                 athleteName = game[2]
