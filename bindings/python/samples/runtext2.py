@@ -5456,7 +5456,7 @@ class RunText(SampleBase):
                                     white,
                                     teeTime,
                                 )
-                            offset = offset + 100 + newBuffer
+                            offset = offset + athleteNameText + newBuffer + 10
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
