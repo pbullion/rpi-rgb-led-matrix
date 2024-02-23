@@ -5407,6 +5407,10 @@ class RunText(SampleBase):
                                     ),
                                     score,
                                 )
+                                if scoreText > positionText:
+                                    bufffer = scoreText
+                                else:
+                                    bufffer = positionText
                                 logoValue = athID
                                 try:
                                     value = teamLogos[athID]
@@ -5414,7 +5418,7 @@ class RunText(SampleBase):
                                     logoValue = "0000000000"
                                 offscreen_canvas.SetImage(
                                     teamLogos[logoValue],
-                                    pos + positionText + offset + buffer + buffer,
+                                    pos + offset + bufffer + buffer,
                                     0,
                                 )
                                 athleteNameText = graphics.DrawText(
