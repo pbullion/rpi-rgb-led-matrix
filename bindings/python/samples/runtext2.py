@@ -5415,7 +5415,7 @@ class RunText(SampleBase):
                                     logoValue = "0000000000"
                                 offscreen_canvas.SetImage(
                                     teamLogos[logoValue],
-                                    pos + positionText + offset,
+                                    pos + positionText + offset + buffer + buffer,
                                     0,
                                 )
                                 athleteNameText = graphics.DrawText(
@@ -5424,6 +5424,8 @@ class RunText(SampleBase):
                                     pos
                                     + positionText
                                     + offset
+                                    + buffer
+                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -5443,6 +5445,8 @@ class RunText(SampleBase):
                                     pos
                                     + positionText
                                     + offset
+                                    + buffer
+                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer

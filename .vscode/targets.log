@@ -6,7 +6,6 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./lib
  
 # GNU Make 3.81
@@ -18,7 +17,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Thu Feb 22 13:31:48 2024
+# Make data base, printed on Fri Feb 23 12:25:16 2024
 
 # Variables
 
@@ -27,12 +26,12 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # automatic
 ?F = $(notdir $?)
 # environment
+ 
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # makefile (from `Makefile', line 167)
 INCDIR = ../include
 # makefile (from `Makefile', line 37)
 HARDWARE_DESC = adafruit-hat
- 
 # environment
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # makefile (from `Makefile', line 11)
@@ -162,7 +161,7 @@ TERM_PROGRAM_VERSION = 3.4.23
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.230595858.230595864.C2C3EC87-5D50-4546-BD20-8F779E3C150B
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.230595858.230595864.705A4C51-5B85-43A7-890F-6C07FEF440DE
 # environment
 LC_TERMINAL_VERSION = 3.4.23
 # environment
@@ -242,6 +241,7 @@ multiplex-mappers.o:
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 librgbmatrix.a: gpio.o led-matrix.o options-initialize.o framebuffer.o thread.o bdf-font.o graphics.o led-matrix-c.o hardware-mapping.o pixel-mapper.o multiplex-mappers.o content-streamer.o
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -304,7 +304,6 @@ Makefile:
 hardware-mapping.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 
 # Not a target:
@@ -412,6 +411,7 @@ led-matrix-c.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 
 framebuffer.o: framebuffer.cc framebuffer-internal.h
 #  Implicit rule search has not been done.
@@ -477,13 +477,13 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Feb 22 13:31:48 2024
+# Finished Make data base on Fri Feb 23 12:25:16 2024
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Thu Feb 22 13:31:48 2024
+# Make data base, printed on Fri Feb 23 12:25:16 2024
 
 # Variables
 
@@ -526,8 +526,8 @@ RGB_LIBDIR = ./lib
 # environment
 VSCODE_CWD = /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
 # environment
-PATH = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin:/Users/patrickbullion/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:~/.dotnet/tools
  
+PATH = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin:/Users/patrickbullion/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:~/.dotnet/tools
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
@@ -627,7 +627,7 @@ TERM_PROGRAM_VERSION = 3.4.23
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.230595858.230595864.C2C3EC87-5D50-4546-BD20-8F779E3C150B
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.230595858.230595864.705A4C51-5B85-43A7-890F-6C07FEF440DE
 # environment
 LC_TERMINAL_VERSION = 3.4.23
 # environment
@@ -792,12 +792,12 @@ build-csharp:
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 25):
 	$(MAKE) -C $(CSHARP_LIB_DIR) build
- 
 	
 
 # files hash-table stats:
 # Load=11/1024=1%, Rehash=0, Collisions=0/31=0%
 # VPATH Search Paths
+ 
 
 # No `vpath' search paths.
 
@@ -808,6 +808,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Feb 22 13:31:48 2024
+# Finished Make data base on Fri Feb 23 12:25:16 2024
 
  
