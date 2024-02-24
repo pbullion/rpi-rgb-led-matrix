@@ -18,7 +18,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Wed Dec 13 15:01:03 2023
+# Make data base, printed on Fri Feb 23 12:31:23 2024
 
 # Variables
 
@@ -31,6 +31,7 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 # makefile (from `Makefile', line 167)
 INCDIR = ../include
 # makefile (from `Makefile', line 37)
+ 
 HARDWARE_DESC = adafruit-hat
 # environment
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
@@ -71,17 +72,18 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 NVM_BIN = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin
 # environment
+LaunchInstanceID = 32B1FE34-474B-46E7-B50A-B0C32D8CD701
+# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
 DEFAULT_USER = patrickbullion
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.uTIo8mHrLC/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.XG4KeqG9pi/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
- 
 PWD = /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
 # environment
 HOMEBREW_CELLAR = /opt/homebrew/Cellar
@@ -100,7 +102,7 @@ VSCODE_CLI = 1
 # makefile (from `Makefile', line 166)
 DEFINES = $(USER_DEFINES) -DDEFAULT_HARDWARE='"$(HARDWARE_DESC)"'
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/af28b32d7e553898b2a91af498b1fb666fdebe0c
+VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/903b1e9d8990623e3d7da1df3d33db3e42d80eda
 # environment
 LOGNAME = patrickbullion
 # environment
@@ -130,7 +132,7 @@ USER = patrickbullion
 # makefile
 .DEFAULT_GOAL := all
 # environment
-TERM_SESSION_ID = w0t4p0:CC434030-A54D-4AD6-BDF4-E39481DCC7F7
+TERM_SESSION_ID = w0t4p0:6AC4E47E-6342-49A3-8472-263F06071058
 # environment
 LESS = -R
 # automatic
@@ -146,7 +148,7 @@ TMPDIR = /var/folders/w9/1zr47vg90ss5sbzpm40bn78r0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.85-main.sock
+VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.86-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -156,13 +158,13 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-TERM_PROGRAM_VERSION = 3.4.22
+TERM_PROGRAM_VERSION = 3.4.23
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.217022399.217022405.CA44E69D-4E3C-497B-9674-A9B474E4BCD3
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.230595858.230595864.5A4E7575-E09F-4E2C-89D6-FCBFC2AED63F
 # environment
-LC_TERMINAL_VERSION = 3.4.22
+LC_TERMINAL_VERSION = 3.4.23
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -170,10 +172,11 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t4p0:CC434030-A54D-4AD6-BDF4-E39481DCC7F7
+ITERM_SESSION_ID = w0t4p0:6AC4E47E-6342-49A3-8472-263F06071058
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
+ 
 COLORFGBG = 15;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
@@ -189,6 +192,8 @@ ITERM_PROFILE = Default
 PAGER = less
 # environment
 LC_ALL = C
+# environment
+SECURITYSESSIONID = 186b1
 # automatic
 ^F = $(notdir $^)
 # default
@@ -202,9 +207,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 85115
+VSCODE_PID = 850
 # variable set hash-table stats:
-# Load=90/1024=9%, Rehash=0, Collisions=2/141=1%
+# Load=92/1024=9%, Rehash=0, Collisions=2/143=1%
 
 # Pattern-specific Variable Values
 
@@ -212,7 +217,7 @@ VSCODE_PID = 85115
 
 # Directories
 
-# . (device 16777230, inode 10097197): 22 files, no impossibilities.
+# . (device 16777232, inode 10097197): 22 files, no impossibilities.
 
 # 22 files, no impossibilities in 1 directories.
 
@@ -220,7 +225,6 @@ VSCODE_PID = 85115
 
 %.o: %.cc compiler-flags
 #  commands to execute (from `Makefile', line 185):
- 
 	$(CXX) -I$(INCDIR) $(CXXFLAGS) -c -o $@ $<
 	
 
@@ -413,7 +417,6 @@ framebuffer.o: framebuffer.cc framebuffer-internal.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
 # Not a target:
 thread.cc:
@@ -449,6 +452,7 @@ compiler-flags: FORCE
 	@echo '$(CXX) $(CXXFLAGS)' | cmp -s - $@ || echo '$(CXX) $(CXXFLAGS)' > $@
 	
 
+ 
 # Not a target:
 framebuffer.cc:
 #  Implicit rule search has not been done.
@@ -474,13 +478,13 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Dec 13 15:01:03 2023
+# Finished Make data base on Fri Feb 23 12:31:23 2024
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Wed Dec 13 15:01:03 2023
+# Make data base, printed on Fri Feb 23 12:31:23 2024
 
 # Variables
 
@@ -489,11 +493,11 @@ make: *** [lib/librgbmatrix.a] Error 1
 # automatic
 ?F = $(notdir $?)
 # environment
- 
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # environment
+ 
 NVM_INC = /Users/patrickbullion/.nvm/versions/node/v16.13.1/include/node
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
@@ -511,6 +515,8 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en-us","availableLanguages":{}
 _ = /usr/bin/make
 # makefile (from `Makefile', line 5)
 RGB_LIBRARY_NAME = rgbmatrix
+# makefile (from `Makefile', line 10)
+CSHARP_LIB_DIR = bindings/c#
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
@@ -528,13 +534,15 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 NVM_BIN = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin
 # environment
+LaunchInstanceID = 32B1FE34-474B-46E7-B50A-B0C32D8CD701
+# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
 DEFAULT_USER = patrickbullion
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.uTIo8mHrLC/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.XG4KeqG9pi/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -554,7 +562,7 @@ MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/af28b32d7e553898b2a91af498b1fb666fdebe0c
+VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/903b1e9d8990623e3d7da1df3d33db3e42d80eda
 # environment
 LOGNAME = patrickbullion
 # environment
@@ -590,7 +598,7 @@ USER = patrickbullion
 # default
 MAKECMDGOALS := all
 # environment
-TERM_SESSION_ID = w0t4p0:CC434030-A54D-4AD6-BDF4-E39481DCC7F7
+TERM_SESSION_ID = w0t4p0:6AC4E47E-6342-49A3-8472-263F06071058
 # environment
 LESS = -R
 # automatic
@@ -599,7 +607,6 @@ LESS = -R
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # environment
 TERM_PROGRAM = iTerm.app
- 
 # default
 .VARIABLES := 
 # environment
@@ -607,7 +614,7 @@ TMPDIR = /var/folders/w9/1zr47vg90ss5sbzpm40bn78r0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.85-main.sock
+VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.86-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -617,13 +624,13 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-TERM_PROGRAM_VERSION = 3.4.22
+TERM_PROGRAM_VERSION = 3.4.23
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.217022399.217022405.CA44E69D-4E3C-497B-9674-A9B474E4BCD3
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.230595858.230595864.5A4E7575-E09F-4E2C-89D6-FCBFC2AED63F
 # environment
-LC_TERMINAL_VERSION = 3.4.22
+LC_TERMINAL_VERSION = 3.4.23
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -631,7 +638,7 @@ HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t4p0:CC434030-A54D-4AD6-BDF4-E39481DCC7F7
+ITERM_SESSION_ID = w0t4p0:6AC4E47E-6342-49A3-8472-263F06071058
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
@@ -646,12 +653,13 @@ MAKEFILES :=
 <F = $(notdir $<)
 # environment
 ITERM_PROFILE = Default
+ 
 # environment
 PAGER = less
 # environment
 LC_ALL = C
-# makefile (from `Makefile', line 10)
-CSHARP_LIB_DIR = bindings/c#
+# environment
+SECURITYSESSIONID = 186b1
 # automatic
 ^F = $(notdir $^)
 # default
@@ -663,9 +671,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 85115
+VSCODE_PID = 850
 # variable set hash-table stats:
-# Load=89/1024=9%, Rehash=0, Collisions=4/128=3%
+# Load=91/1024=9%, Rehash=0, Collisions=5/130=4%
 
 # Pattern-specific Variable Values
 
@@ -673,7 +681,7 @@ VSCODE_PID = 85115
 
 # Directories
 
-# . (device 16777230, inode 10096968): 22 files, no impossibilities.
+# . (device 16777232, inode 10096968): 22 files, no impossibilities.
 
 # 22 files, no impossibilities in 1 directories.
 
@@ -782,7 +790,6 @@ install-python: build-python
 
 build-csharp:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 25):
@@ -802,6 +809,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Dec 13 15:01:03 2023
+# Finished Make data base on Fri Feb 23 12:31:23 2024
 
  

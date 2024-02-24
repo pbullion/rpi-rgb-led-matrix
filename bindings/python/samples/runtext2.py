@@ -1828,8 +1828,8 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
-            "Default Person": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/default.png"
+            "0000000000": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/defaultperson2.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
@@ -5441,16 +5441,34 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     middleFont,
                                     pos + offset,
-                                    26,
+                                    12,
                                     white,
                                     position,
                                 )
-                                offscreen_canvas.SetImage(
-                                    teamLogos.get(
-                                        re.sub(pattern, "", athID),
-                                        "Default Person",
+                                scoreText = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos + offset,
+                                    26,
+                                    (
+                                        red
+                                        if "-" in score
+                                        else yellow if "E" in score else green
                                     ),
-                                    pos + positionText + offset,
+                                    score,
+                                )
+                                if scoreText > positionText:
+                                    bufffer = scoreText
+                                else:
+                                    bufffer = positionText
+                                logoValue = athID
+                                try:
+                                    value = teamLogos[athID]
+                                except KeyError:
+                                    logoValue = "0000000000"
+                                offscreen_canvas.SetImage(
+                                    teamLogos[logoValue],
+                                    pos + offset + bufffer + buffer,
                                     0,
                                 )
                                 athleteNameText = graphics.DrawText(
@@ -5459,6 +5477,8 @@ class RunText(SampleBase):
                                     pos
                                     + positionText
                                     + offset
+                                    + buffer
+                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -5486,32 +5506,14 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + buffer
+                                    + buffer
                                     + buffer,
                                     26,
                                     white,
                                     teeTime,
                                 )
-                                scoreText = graphics.DrawText(
-                                    offscreen_canvas,
-                                    middleFont,
-                                    pos
-                                    + positionText
-                                    + athleteNameText
-                                    + teamLogos.get(
-                                        re.sub(pattern, "", athID),
-                                        "Default Person",
-                                    ).width
-                                    + offset
-                                    + buffer,
-                                    26,
-                                    (
-                                        red
-                                        if "-" in score
-                                        else yellow if "E" in score else green
-                                    ),
-                                    score,
-                                )
-                            offset = offset + 90 + newBuffer
+                            offset = offset + 100 + newBuffer + 10
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
