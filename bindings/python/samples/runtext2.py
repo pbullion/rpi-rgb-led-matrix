@@ -5437,7 +5437,8 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer,
+                                    + buffer
+                                    + bufffer,
                                     12,
                                     white,
                                     athleteName,
@@ -5458,7 +5459,8 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer,
+                                    + buffer
+                                    + bufffer,
                                     26,
                                     white,
                                     teeTime,
