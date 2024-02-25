@@ -5238,7 +5238,7 @@ class RunText(SampleBase):
                             headlineString = 0
                             awayTeamStatus = 0
                             homeTeamStatus = 0
-                            newBuffer = 130
+                            newBuffer = 135
                             if "ufc" == game[0]:
                                 offscreen_canvas.SetImage(
                                     teamLogos["UFC Logo"],
@@ -5259,6 +5259,8 @@ class RunText(SampleBase):
                                 awayOddsString = game[2]
                                 homeOddsString = game[3]
                                 timeString = game[4]
+                                isAthOneWinner = game[6]
+                                isAthTwoWinner = game[7]
                                 pattern = r"#\d+\s"
                                 offscreen_canvas.SetImage(
                                     teamLogos.get(
@@ -5295,15 +5297,24 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + buffer
                                     + buffer,
                                     0,
                                 )
+                                awayColor = white
+                                if isAthOneWinner:
+                                    awayColor = green
+                                    homeColor = red
+                                homeColor = white
+                                if isAthTwoWinner:
+                                    homeColor = green
+                                    awayColor = red
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
                                     pos + offset + buffer + buffer + newBuffer,
                                     12,
-                                    white,
+                                    awayColor,
                                     awayTeamString,
                                 )
                                 homeTeam = graphics.DrawText(
@@ -5311,7 +5322,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset + buffer + buffer + newBuffer,
                                     26,
-                                    white,
+                                    homeColor,
                                     homeTeamString,
                                 )
                                 if homeTeam > awayTeam:
@@ -5319,7 +5330,7 @@ class RunText(SampleBase):
                                 else:
                                     scoreLocation = awayTeam
                                 awayOdds = 0
-                                if awayOddsString != "":
+                                if awayOddsString != "n/a":
                                     awayOdds = graphics.DrawText(
                                         offscreen_canvas,
                                         smallFont,
