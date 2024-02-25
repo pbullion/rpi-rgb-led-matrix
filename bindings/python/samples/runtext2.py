@@ -5238,7 +5238,7 @@ class RunText(SampleBase):
                             headlineString = 0
                             awayTeamStatus = 0
                             homeTeamStatus = 0
-                            newBuffer = 135
+                            newBuffer = 140
                             if "ufc" == game[0]:
                                 offscreen_canvas.SetImage(
                                     teamLogos["UFC Logo"],
@@ -5292,6 +5292,7 @@ class RunText(SampleBase):
                                     + teamLogos[
                                         re.sub(pattern, "", awayTeamString)
                                     ].width
+                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
