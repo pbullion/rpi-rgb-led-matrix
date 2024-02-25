@@ -5302,10 +5302,11 @@ class RunText(SampleBase):
                                     + buffer,
                                     0,
                                 )
+                                awayColor = white
+                                homeColor = white
                                 if isAthOneWinner:
                                     awayColor = green
                                     homeColor = red
-                                homeColor = white
                                 if isAthTwoWinner:
                                     homeColor = green
                                     awayColor = red
