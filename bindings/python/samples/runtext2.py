@@ -5436,8 +5436,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
-                                    + buffer
                                     + bufffer,
                                     12,
                                     white,
@@ -5449,8 +5447,6 @@ class RunText(SampleBase):
                                     pos
                                     + positionText
                                     + offset
-                                    + buffer
-                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
