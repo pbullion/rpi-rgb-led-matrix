@@ -5262,36 +5262,34 @@ class RunText(SampleBase):
                                 isAthOneWinner = game[6]
                                 isAthTwoWinner = game[7]
                                 pattern = r"#\d+\s"
+                                logoValueAway = awayTeamString
+                                logoValueHome = homeTeamString
+                                try:
+                                    value = teamLogos[awayTeamString]
+                                except KeyError:
+                                    logoValueAway = "0000000000"
+                                try:
+                                    value = teamLogos[homeTeamString]
+                                except KeyError:
+                                    logoValueHome = "0000000000"
                                 offscreen_canvas.SetImage(
-                                    teamLogos.get(
-                                        re.sub(pattern, "", awayTeamString),
-                                        "Default Person",
-                                    ),
+                                    teamLogos[logoValueAway],
                                     pos + offset,
                                     0,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos
-                                    + offset
-                                    + teamLogos[
-                                        re.sub(pattern, "", awayTeamString)
-                                    ].width,
+                                    pos + offset + teamLogos[logoValueAway].width,
                                     24,
                                     white,
                                     timeString,
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos.get(
-                                        re.sub(pattern, "", homeTeamString),
-                                        "Default Person",
-                                    ),
+                                    teamLogos[logoValueHome],
                                     pos
                                     + offset
-                                    + teamLogos[
-                                        re.sub(pattern, "", awayTeamString)
-                                    ].width
+                                    + teamLogos[logoValueAway].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -5302,14 +5300,15 @@ class RunText(SampleBase):
                                     + buffer,
                                     0,
                                 )
-                                awayColor = white
-                                homeColor = white
                                 if isAthOneWinner:
                                     awayColor = green
                                     homeColor = red
-                                if isAthTwoWinner:
+                                elif isAthTwoWinner:
                                     homeColor = green
                                     awayColor = red
+                                else:
+                                    awayColor = white
+                                    homeColor = white
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
                                     smallFont,
@@ -6897,7 +6896,6 @@ class RunText(SampleBase):
                                     scoreLocation = homeTeam
                                 else:
                                     scoreLocation = awayTeam
-
                                 awayOdds = 0
                                 if awayOddsString != "":
                                     awayOdds = graphics.DrawText(
@@ -7989,7 +7987,7 @@ class RunText(SampleBase):
                                     homeSpreadString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 115 + newBuffer
+                                offset = offset + 100 + newBuffer
                             if "inProgress" in game[0]:
                                 offset = offset + 140 + newBuffer
                             if "final" in game[0]:
@@ -8131,7 +8129,7 @@ class RunText(SampleBase):
                                     + awayTeam
                                     + awayTeamStatus
                                     + headlineString
-                                    + 240
+                                    + 180
                                 )
                             else:
                                 offset = (
@@ -8139,7 +8137,7 @@ class RunText(SampleBase):
                                     + homeTeam
                                     + homeTeamStatus
                                     + headlineString
-                                    + 240
+                                    + 180
                                 )
                         time.sleep(0.018)
                         if pos + offset < 0:
