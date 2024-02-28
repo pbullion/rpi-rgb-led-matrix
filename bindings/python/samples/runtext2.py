@@ -1913,7 +1913,7 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
-            "Abdul Kareem Al Selwady": Image.open(
+            "AbdulKareem AlSelwady": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/tysonpedro.png"
             )
             .convert("RGB")
