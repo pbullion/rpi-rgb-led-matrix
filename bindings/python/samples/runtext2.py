@@ -1684,12 +1684,12 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "UFC Logo": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ufc.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ufclogo.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "MLS Logo": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mls.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlslogo.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
