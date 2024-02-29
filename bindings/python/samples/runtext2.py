@@ -2999,6 +2999,11 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
+            "F1 Car": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/car.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
             "Mercedes": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/mercedes-logo.png"
             )
@@ -5925,6 +5930,11 @@ class RunText(SampleBase):
                                     pos + offset,
                                     -10,
                                 )
+                                offscreen_canvas.SetImage(
+                                    teamLogos["F1 Car"],
+                                    pos + offset + 60,
+                                    -10,
+                                )
                             if "f1" != game[0]:
                                 teamName = game[0]
                                 driverOne = game[1]
@@ -6022,7 +6032,7 @@ class RunText(SampleBase):
                                     teamName,
                                 )
                             if "f1" in game[0]:
-                                offset = offset + 100 + newBuffer
+                                offset = offset + 160 + newBuffer
                             else:
                                 offset = offset + 400 + newBuffer
                         time.sleep(0.018)
