@@ -3025,7 +3025,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((30, 30), Image.ANTIALIAS),
             "Aston Martin": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/aston-martin-logo.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/aston-martin-logo Background Removed.png"
             )
             .convert("RGB")
             .resize((30, 30), Image.ANTIALIAS),
