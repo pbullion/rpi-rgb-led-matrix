@@ -3033,14 +3033,12 @@ class RunText(SampleBase):
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/rb-logo Background Removed.png"
             )
             .convert("RGB")
-            .resize(
-                (30, 40), Image.ANTIALIAS
-            ),  
+            .resize((30, 30), Image.ANTIALIAS),
             "Ferrari": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/ferrari-logo Background Removed.png"
             )
             .convert("RGB")
-            .resize((30, 30), Image.ANTIALIAS),
+            .resize((30, 40), Image.ANTIALIAS),
             "Kick Sauber": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/kick-sauber-logo Background Removed.png"
             )
