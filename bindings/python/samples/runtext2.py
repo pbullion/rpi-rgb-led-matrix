@@ -3018,7 +3018,7 @@ class RunText(SampleBase):
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/red-bull-racing-logo Background Removed.png"
             )
             .convert("RGB")
-            .resize((30, 30), Image.ANTIALIAS),
+            .resize((30, 50), Image.ANTIALIAS),
             "McLaren": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/mclaren-logo Background Removed.png"
             )
@@ -3033,7 +3033,7 @@ class RunText(SampleBase):
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/rb-logo Background Removed.png"
             )
             .convert("RGB")
-            .resize((30, 30), Image.ANTIALIAS),
+            .resize((25, 25), Image.ANTIALIAS),
             "Ferrari": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/ferrari-logo Background Removed.png"
             )
