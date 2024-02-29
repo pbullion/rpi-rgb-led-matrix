@@ -3003,7 +3003,7 @@ class RunText(SampleBase):
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/car.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((65, 40), Image.ANTIALIAS),
             "Mercedes": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/mercedes-logo.png"
             )
@@ -6032,7 +6032,7 @@ class RunText(SampleBase):
                                     teamName,
                                 )
                             if "f1" in game[0]:
-                                offset = offset + 160 + newBuffer
+                                offset = offset + 190 + newBuffer
                             else:
                                 offset = offset + 400 + newBuffer
                         time.sleep(0.018)
