@@ -3003,7 +3003,7 @@ class RunText(SampleBase):
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/car.png"
             )
             .convert("RGB")
-            .resize((65, 40), Image.ANTIALIAS),
+            .resize((70, 40), Image.ANTIALIAS),
             "Mercedes": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/mercedes-logo.png"
             )
@@ -5933,7 +5933,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos["F1 Car"],
                                     pos + offset + 60,
-                                    -10,
+                                    0,
                                 )
                             if "f1" != game[0]:
                                 teamName = game[0]
