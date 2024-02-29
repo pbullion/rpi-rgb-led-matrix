@@ -5995,6 +5995,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + teamLogos[teamName].width
+                                    + teamLogos[driverTwo].width
                                     + teamLogos[driverOne].width
                                     + buffer
                                     + buffer
@@ -6009,6 +6010,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + teamLogos[teamName].width
+                                    + teamLogos[driverTwo].width
                                     + teamLogos[driverOne].width
                                     + buffer
                                     + buffer
@@ -6024,7 +6026,7 @@ class RunText(SampleBase):
                             if "f1" in game[0]:
                                 offset = offset + 100 + newBuffer
                             else:
-                                offset = offset + 300 + newBuffer
+                                offset = offset + 400 + newBuffer
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
