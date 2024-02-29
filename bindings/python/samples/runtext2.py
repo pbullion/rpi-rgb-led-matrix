@@ -3045,7 +3045,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((30, 30), Image.ANTIALIAS),  # Ensure the team name and file match
             "Williams": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/williams-logo Background Removed.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/williams-logo.png"
             )
             .convert("RGB")
             .resize((30, 30), Image.ANTIALIAS),
