@@ -6036,7 +6036,7 @@ class RunText(SampleBase):
                                     teamName,
                                 )
                             if "f1" in game[0]:
-                                offset = offset + 190 + newBuffer
+                                offset = offset + 210 + newBuffer
                             else:
                                 offset = offset + 400 + newBuffer
                         time.sleep(0.018)
