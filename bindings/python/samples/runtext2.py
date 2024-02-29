@@ -5932,7 +5932,11 @@ class RunText(SampleBase):
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["F1 Logo"],
-                                    pos + offset  + teamLogos["F1 Car"].width,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + teamLogos["F1 Car"].width,
                                     -10,
                                 )
                             if "f1" != game[0]:
