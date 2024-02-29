@@ -5967,7 +5967,8 @@ class RunText(SampleBase):
                                     + offset
                                     + buffer
                                     + +teamLogos[teamName].width
-                                    + teamLogos[driverOne].widthbuffer
+                                    + teamLogos[driverOne].width
+                                    + buffer
                                     + newBuffer,
                                     26,
                                     white,
