@@ -3030,7 +3030,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((30, 30), Image.ANTIALIAS),
             "RB": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/rb-logo Background Removed.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/rb-logo.png"
             )
             .convert("RGB")
             .resize(
