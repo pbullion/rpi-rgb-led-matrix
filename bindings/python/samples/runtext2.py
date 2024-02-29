@@ -6022,10 +6022,10 @@ class RunText(SampleBase):
                                     white,
                                     teamName,
                                 )
-                            if "pregame" in game[0]:
-                                offset = offset + 200 + newBuffer
+                            if "f1" in game[0]:
+                                offset = offset + 100 + newBuffer
                             else:
-                                offset = offset + homeTeam + 200 + newBuffer
+                                offset = offset + 300 + newBuffer
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
