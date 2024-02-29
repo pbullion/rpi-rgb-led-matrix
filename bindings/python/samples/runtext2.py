@@ -3000,7 +3000,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Mercedes": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/mercedes-logo Background Removed.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/mercedes-logo.png"
             )
             .convert("RGB")
             .resize((30, 30), Image.ANTIALIAS),
@@ -3030,7 +3030,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((30, 30), Image.ANTIALIAS),
             "RB": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/rb-logo.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/rb-logo Background Removed.png"
             )
             .convert("RGB")
             .resize(
