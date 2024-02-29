@@ -2594,11 +2594,6 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "186": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mls/186 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
             "21812": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mls/21812 Background Removed.png"
             )
@@ -2614,7 +2609,9 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "10048": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/10048 Background Removed.png")
+            "10048": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/10048 Background Removed.png"
+            )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "10054": Image.open(
@@ -2897,6 +2894,138 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
+            "Logan Sargeant": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Logan Sargeant.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Alexander Albon": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Alexander Albon.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Yuki Tsunoda": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Yuki Tsunoda.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Esteban Ocon": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Esteban Ocon.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Lance Stroll": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Lance Stroll.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Kevin Magnussen": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Kevin Magnussen.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Lando Norris": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Lando Norris.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Sergio Perez": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Sergio Perez.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Carlos Sainz": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Carlos Sainz.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Pierre Gasly": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Pierre Gasly.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Charles Leclerc": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Charles Leclerc.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Valtteri Bottas": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Valtteri Bottas.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Fernando Alonso": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Fernando Alonso.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Guanyu Zhou": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Guanyu Zhou.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Oscar Piastri": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Oscar Piastri.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "George Russell": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/George Russell.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Nico Hulkenberg": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Nico Hulkenberg.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Lewis Hamilton": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Lewis Hamilton.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Max Verstappen": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Max Verstappen.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "F1 Logo": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/f1logo.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
+            "Mercedes": Image.open("path/to/mercedes-logo.png")
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Alpine": Image.open("path/to/alpine-logo.png")
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Haas F1 Team": Image.open("path/to/haas-f1-team-logo.png")
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Red Bull Racing": Image.open("path/to/red-bull-racing-logo.png")
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "McLaren": Image.open("path/to/mclaren-logo.png")
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Aston Martin": Image.open("path/to/aston-martin-logo.png")
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "RB": Image.open("path/to/rb-logo.png")
+            .convert("RGB")
+            .resize(
+                (50, 50), Image.ANTIALIAS
+            ),  # Adjust based on the correct team name if necessary
+            "Ferrari": Image.open("path/to/ferrari-logo.png")
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
+            "Kick Sauber": Image.open("path/to/kick-sauber-logo.png")
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),  # Ensure the team name and file match
+            "Williams": Image.open("path/to/williams-logo.png")
+            .convert("RGB")
+            .resize((50, 50), Image.ANTIALIAS),
         }
         while True:
             green = graphics.Color(0, 255, 0)
@@ -5755,6 +5884,102 @@ class RunText(SampleBase):
                                 offset = offset + 100 + newBuffer
                             else:
                                 offset = offset + homeTeam + 100 + newBuffer
+                        time.sleep(0.018)
+                        if pos + offset < 0:
+                            running = False
+                            pos = offscreen_canvas.width
+                    elif isinstance(arr, list) and "f1" in arr[0][0]:
+                        for game in arr:
+                            awayTeam = 0
+                            homeTeam = 0
+                            headlineString = 0
+                            awayTeamStatus = 0
+                            homeTeamStatus = 0
+                            newBuffer = 140
+                            if "f1" == game[0]:
+                                offscreen_canvas.SetImage(
+                                    teamLogos["F1 Logo"],
+                                    pos + offset,
+                                    -10,
+                                )
+                            if "f1" != game[0]:
+                                teamName = game[0]
+                                driverOne = game[1]
+                                driverTwo = game[2]
+                                pattern = r"#\d+\s"
+                                offscreen_canvas.SetImage(
+                                    teamLogos[teamName],
+                                    pos + offset,
+                                    0,
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos[driverOne],
+                                    pos
+                                    + offset
+                                    + teamLogos[teamName].width
+                                    + buffer
+                                    + buffer,
+                                    0,
+                                )
+                                driverOneText = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + newBuffer,
+                                    12,
+                                    white,
+                                    driverOne,
+                                )
+                                teamNameText = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset + buffer + buffer + newBuffer,
+                                    26,
+                                    white,
+                                    teamName,
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogos[driverTwo],
+                                    pos
+                                    + offset
+                                    + teamLogos[teamName].width
+                                    + teamLogos[driverOne].width
+                                    + buffer
+                                    + buffer
+                                    + buffer,
+                                    0,
+                                )
+                                driverTwoText = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newBuffer,
+                                    12,
+                                    white,
+                                    driverTwo,
+                                )
+                                teamNameText2 = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + newBuffer,
+                                    26,
+                                    white,
+                                    teamName,
+                                )
+                            if "pregame" in game[0]:
+                                offset = offset + 200 + newBuffer
+                            else:
+                                offset = offset + homeTeam + 200 + newBuffer
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
