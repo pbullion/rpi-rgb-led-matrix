@@ -5953,8 +5953,7 @@ class RunText(SampleBase):
                                     + offset
                                     + buffer
                                     + buffer
-                                    + teamLogos[teamName].width
-                                    + newBuffer,
+                                    + teamLogos[teamName].width,
                                     12,
                                     white,
                                     driverOne,
@@ -5967,8 +5966,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + teamLogos[teamName].width
                                     + teamLogos[driverOne].width
-                                    + buffer
-                                    + newBuffer,
+                                    + buffer,
                                     26,
                                     white,
                                     teamName,
