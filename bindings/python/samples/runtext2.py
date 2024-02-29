@@ -2994,36 +2994,56 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
-            "Mercedes": Image.open("path/to/mercedes-logo.png")
+            "Mercedes": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/mercedes-logo.png"
+            )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "Alpine": Image.open("path/to/alpine-logo.png")
+            "Alpine": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/alpine-logo.png"
+            )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "Haas F1 Team": Image.open("path/to/haas-f1-team-logo.png")
+            "Haas F1 Team": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/haas-f1-team-logo.png"
+            )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "Red Bull Racing": Image.open("path/to/red-bull-racing-logo.png")
+            "Red Bull Racing": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/red-bull-racing-logo.png"
+            )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "McLaren": Image.open("path/to/mclaren-logo.png")
+            "McLaren": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/mclaren-logo.png"
+            )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "Aston Martin": Image.open("path/to/aston-martin-logo.png")
+            "Aston Martin": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/aston-martin-logo.png"
+            )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "RB": Image.open("path/to/rb-logo.png")
+            "RB": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/rb-logo.png"
+            )
             .convert("RGB")
             .resize(
                 (50, 50), Image.ANTIALIAS
             ),  # Adjust based on the correct team name if necessary
-            "Ferrari": Image.open("path/to/ferrari-logo.png")
+            "Ferrari": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/ferrari-logo.png"
+            )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
-            "Kick Sauber": Image.open("path/to/kick-sauber-logo.png")
+            "Kick Sauber": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/kick-sauber-logo.png"
+            )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),  # Ensure the team name and file match
-            "Williams": Image.open("path/to/williams-logo.png")
+            "Williams": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/williams-logo.png"
+            )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
         }
