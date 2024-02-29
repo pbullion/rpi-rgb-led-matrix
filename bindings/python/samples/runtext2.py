@@ -5969,6 +5969,7 @@ class RunText(SampleBase):
                                     + teamLogos[teamName].width
                                     + teamLogos[driverOne].width
                                     + buffer
+                                    + driverOneText
                                     + buffer
                                     + buffer,
                                     0,
@@ -5978,8 +5979,11 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
+                                    + driverOneText
                                     + buffer
                                     + buffer
+                                    + teamLogos[teamName].width
+                                    + teamLogos[driverOne].width
                                     + buffer
                                     + buffer
                                     + newBuffer,
@@ -5992,8 +5996,11 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
+                                    + teamLogos[teamName].width
+                                    + teamLogos[driverOne].width
                                     + buffer
                                     + buffer
+                                    + driverOneText
                                     + buffer
                                     + buffer
                                     + newBuffer,
