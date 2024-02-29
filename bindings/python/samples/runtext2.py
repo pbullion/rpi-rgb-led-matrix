@@ -3034,8 +3034,8 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize(
-                (30, 30), Image.ANTIALIAS
-            ),  # Adjust based on the correct team name if necessary
+                (30, 40), Image.ANTIALIAS
+            ),  
             "Ferrari": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/ferrari-logo Background Removed.png"
             )
