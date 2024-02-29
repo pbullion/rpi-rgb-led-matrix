@@ -5928,7 +5928,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos["F1 Car"],
                                     pos + offset,
-                                    -10,
+                                    -5,
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["F1 Logo"],
