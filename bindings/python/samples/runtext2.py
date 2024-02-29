@@ -5920,7 +5920,7 @@ class RunText(SampleBase):
                             headlineString = 0
                             awayTeamStatus = 0
                             homeTeamStatus = 0
-                            newBuffer = 140
+                            newBuffer = 0
                             if "f1" == game[0]:
                                 offscreen_canvas.SetImage(
                                     teamLogos["F1 Logo"],
@@ -5952,6 +5952,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
+                                    + teamLogos[driverOne].width
                                     + buffer
                                     + teamLogos[teamName].width,
                                     12,
