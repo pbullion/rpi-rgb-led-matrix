@@ -3003,7 +3003,7 @@ class RunText(SampleBase):
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/car.png"
             )
             .convert("RGB")
-            .resize((120, 50), Image.ANTIALIAS),
+            .resize((125, 50), Image.ANTIALIAS),
             "Mercedes": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/mercedes-logo.png"
             )
