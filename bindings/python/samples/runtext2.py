@@ -2895,102 +2895,102 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Logan Sargeant": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Logan Sargeant.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Logan Sargeant Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Alexander Albon": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Alexander Albon.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Alexander Albon Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Yuki Tsunoda": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Yuki Tsunoda.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Yuki Tsunoda Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Esteban Ocon": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Esteban Ocon.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Esteban Ocon Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Lance Stroll": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Lance Stroll.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Lance Stroll Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Kevin Magnussen": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Kevin Magnussen.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Kevin Magnussen Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Lando Norris": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Lando Norris.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Lando Norris Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Sergio Perez": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Sergio Perez.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Sergio Perez Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Carlos Sainz": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Carlos Sainz.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Carlos Sainz Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Pierre Gasly": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Pierre Gasly.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Pierre Gasly Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Charles Leclerc": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Charles Leclerc.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Charles Leclerc Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Valtteri Bottas": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Valtteri Bottas.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Valtteri Bottas Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Fernando Alonso": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Fernando Alonso.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Fernando Alonso Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Guanyu Zhou": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Guanyu Zhou.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Guanyu Zhou Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Oscar Piastri": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Oscar Piastri.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Oscar Piastri Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "George Russell": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/George Russell.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/George Russell Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Nico Hulkenberg": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Nico Hulkenberg.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Nico Hulkenberg Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Lewis Hamilton": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Lewis Hamilton.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Lewis Hamilton Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Max Verstappen": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Max Verstappen.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Max Verstappen Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Daniel Ricciardo": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Max Verstappen.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Max Verstappen Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
@@ -3000,54 +3000,54 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             "Mercedes": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/mercedes-logo.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/mercedes-logo Background Removed.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Alpine": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/alpine-logo.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/alpine-logo Background Removed.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Haas F1 Team": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/haas-f1-team-logo.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/haas-f1-team-logo Background Removed.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Red Bull Racing": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/red-bull-racing-logo.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/red-bull-racing-logo Background Removed.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "McLaren": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/mclaren-logo.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/mclaren-logo Background Removed.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Aston Martin": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/aston-martin-logo.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/aston-martin-logo Background Removed.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "RB": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/rb-logo.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/rb-logo Background Removed.png"
             )
             .convert("RGB")
             .resize(
                 (50, 50), Image.ANTIALIAS
             ),  # Adjust based on the correct team name if necessary
             "Ferrari": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/ferrari-logo.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/ferrari-logo Background Removed.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "Kick Sauber": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/kick-sauber-logo.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/kick-sauber-logo Background Removed.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),  # Ensure the team name and file match
             "Williams": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/williams-logo.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/williams-logo Background Removed.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
