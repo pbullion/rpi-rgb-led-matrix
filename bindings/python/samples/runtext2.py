@@ -2989,6 +2989,11 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
+            "Daniel Ricciardo": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/drivers/Max Verstappen.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
             "F1 Logo": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/f1logo.png"
             )
