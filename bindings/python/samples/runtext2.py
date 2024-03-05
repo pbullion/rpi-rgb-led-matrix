@@ -1693,206 +1693,206 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
-            "Muhammad Naimov": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/muhammadnaimov.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Erik Silva": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/eriksilva.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Victor Altamirano": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/victoraltamirano.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Felipe dos Santos": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/felipedossantos.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Ronaldo Rodriguez": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/luisrodriguez.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Luis Rodriguez": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/luisrodriguez.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Denys Bondar": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/denysbondar.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Claudio Puelles": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/claudiopuelles.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Farés Ziam": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/faresziam.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Daniel Lacerda": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/daniellacerda.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Édgar Cháirez": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/edgarchairez.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Jesus Aguilar": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/jesusaguilar.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Mateus Mendonca": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/mateusmendonca.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Raoni Barcelos": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/raonibarcelos.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Cristian Quiñonez": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/cristianquinonez.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Chris Duncan": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/chrisduncan.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Manuel Torres": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/manueltorres.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Sam Hughes": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/samhughes.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Yazmin Jauregui": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/yazminjauregui.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Ricky Turcios": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/rickyturcios.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Raul Rosas Jr.": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/raulrosasjr.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Daniel Zellhuber": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/danielzellhuber.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Francisco Prado": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/franciscoprado.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Brian Ortega": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/brianortega.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Yair Rodriguez": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/yairrodriguez.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Brandon Moreno": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/brandonmoreno.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Brandon Royval": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/brandonroyval.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Loik Radzhabov": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/loikradzhabov.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Vinicius Oliveira": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/viniciusoliveira.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Yanis Ghemmouri": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/yanisghemmouri.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Christian Leroy Duncan": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/christianleroyduncan.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Claudio Ribeiro": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/claudioribeiro.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Aiemann Zahabi": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/aiemannzahabi.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Javid Basharat": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/javidbasharat.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Ludovit Klein": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/ludovitklein.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Joel Alvarez": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/joelalvarez.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Eryk Anders": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/erykanders.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Jamie Pickett": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/jamiepickett.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Matt Schnell": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/mattschnell.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Steve Erceg": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/steveerceg.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            # "Muhammad Naimov": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/muhammadnaimov.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Erik Silva": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/eriksilva.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Victor Altamirano": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/victoraltamirano.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Felipe dos Santos": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/felipedossantos.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Ronaldo Rodriguez": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/luisrodriguez.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Luis Rodriguez": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/luisrodriguez.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Denys Bondar": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/denysbondar.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Claudio Puelles": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/claudiopuelles.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Farés Ziam": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/faresziam.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Daniel Lacerda": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/daniellacerda.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Édgar Cháirez": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/edgarchairez.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Jesus Aguilar": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/jesusaguilar.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Mateus Mendonca": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/mateusmendonca.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Raoni Barcelos": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/raonibarcelos.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Cristian Quiñonez": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/cristianquinonez.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Chris Duncan": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/chrisduncan.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Manuel Torres": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/manueltorres.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Sam Hughes": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/samhughes.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Yazmin Jauregui": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/yazminjauregui.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Ricky Turcios": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/rickyturcios.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Raul Rosas Jr.": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/raulrosasjr.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Daniel Zellhuber": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/danielzellhuber.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Francisco Prado": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/franciscoprado.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Brian Ortega": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/brianortega.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Yair Rodriguez": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/yairrodriguez.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Brandon Moreno": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/brandonmoreno.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Brandon Royval": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/brandonroyval.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Loik Radzhabov": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/loikradzhabov.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Vinicius Oliveira": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/viniciusoliveira.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Yanis Ghemmouri": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/yanisghemmouri.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Christian Leroy Duncan": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/christianleroyduncan.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Claudio Ribeiro": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/claudioribeiro.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Aiemann Zahabi": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/aiemannzahabi.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Javid Basharat": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/javidbasharat.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Ludovit Klein": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/ludovitklein.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Joel Alvarez": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/joelalvarez.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Eryk Anders": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/erykanders.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Jamie Pickett": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/jamiepickett.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Matt Schnell": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/mattschnell.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Steve Erceg": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/steveerceg.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
             "3028064": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3028064 Background Removed.png"
             )
@@ -2033,46 +2033,46 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
-            "Umar Nurmagomedov": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/umarnurmagomedov.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Alex Perez": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/alexperez.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Muhammad Mokaev": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/muhammadmokaev.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Tyson Pedro": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/tysonpedro.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Abdul-Kareem Al-Selwady": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/tysonpedro.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Vitor Petrino": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/vitorpetrino.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Jairzinho Rozenstruik": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/jairzinhorozenstruik.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "Shamil Gaziev": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/shamilgaziev.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            # "Umar Nurmagomedov": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/umarnurmagomedov.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Alex Perez": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/alexperez.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Muhammad Mokaev": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/muhammadmokaev.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Tyson Pedro": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/tysonpedro.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Abdul-Kareem Al-Selwady": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/tysonpedro.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Vitor Petrino": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/vitorpetrino.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Jairzinho Rozenstruik": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/jairzinhorozenstruik.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
+            # "Shamil Gaziev": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/shamilgaziev.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
             "0000000000": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/defaultperson2.png"
             )
