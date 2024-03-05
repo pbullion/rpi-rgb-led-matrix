@@ -1692,7 +1692,7 @@ class RunText(SampleBase):
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlslogo.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((55, 40), Image.ANTIALIAS),
             "Muhammad Naimov": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/muhammadnaimov.png"
             )
@@ -5806,15 +5806,17 @@ class RunText(SampleBase):
                                 timeString = game[4]
                                 isAthOneWinner = game[6]
                                 isAthTwoWinner = game[7]
+                                athOneID = game[8]
+                                athTwoID = game[9]
                                 pattern = r"#\d+\s"
-                                logoValueAway = awayTeamString
-                                logoValueHome = homeTeamString
+                                logoValueAway = athOneID
+                                logoValueHome = athTwoID
                                 try:
-                                    value = teamLogos[awayTeamString]
+                                    value = teamLogos[athOneID]
                                 except KeyError:
                                     logoValueAway = "0000000000"
                                 try:
-                                    value = teamLogos[homeTeamString]
+                                    value = teamLogos[athTwoID]
                                 except KeyError:
                                     logoValueHome = "0000000000"
                                 offscreen_canvas.SetImage(
