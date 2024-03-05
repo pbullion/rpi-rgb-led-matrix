@@ -5962,7 +5962,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos[logoValueAway],
                                     pos + offset,
-                                    0,
+                                    ,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -5985,7 +5985,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    ,
                                 )
                                 if isAthOneWinner:
                                     awayColor = green
