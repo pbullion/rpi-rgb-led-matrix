@@ -8801,7 +8801,7 @@ class RunText(SampleBase):
                                     + awayTeam
                                     + awayTeamStatus
                                     + headlineString
-                                    + 195
+                                    + 205
                                 )
                             else:
                                 offset = (
@@ -8809,7 +8809,7 @@ class RunText(SampleBase):
                                     + homeTeam
                                     + homeTeamStatus
                                     + headlineString
-                                    + 195
+                                    + 205
                                 )
                         time.sleep(0.018)
                         if pos + offset < 0:
