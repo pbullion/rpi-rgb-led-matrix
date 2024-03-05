@@ -1918,11 +1918,11 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
-            "5189560": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5189560.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            # "5189560": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5189560.png"
+            # )
+            # .convert("RGB")
+            # .resize((55, 40), Image.ANTIALIAS),
             "4012999": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4012999.png"
             )
