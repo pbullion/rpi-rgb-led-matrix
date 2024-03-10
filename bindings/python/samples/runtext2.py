@@ -7839,6 +7839,16 @@ class RunText(SampleBase):
                                 homeTeamStatusString = game[13]
                                 situationString = game[15]
                                 statusString = game[16]
+                                if "of" in statusString:
+                                    statusStringUpper = statusString.split(" of ")[0]
+                                    statusStringLower = statusString.split(" of ")[
+                                        1
+                                    ].replace(" Period", "")
+                                if "-" in statusString:
+                                    statusStringUpper = statusString.split(" - ")[0]
+                                    statusStringLower = statusString.split(" - ")[
+                                        1
+                                    ].replace(" Period", "")
                                 possession = game[17]
                                 awayOddsString = game[19]
                                 homeOddsString = game[20]
@@ -7969,7 +7979,7 @@ class RunText(SampleBase):
                                     + buffer,
                                     12,
                                     yellow,
-                                    statusString.split(" - ")[0],
+                                    statusStringUpper,
                                 )
                                 situationStr = graphics.DrawText(
                                     offscreen_canvas,
@@ -7989,7 +7999,7 @@ class RunText(SampleBase):
                                     + buffer,
                                     26,
                                     yellow,
-                                    statusString.split(" - ")[1],
+                                    statusStringLower,
                                 )
                                 newOffset = statusStr
                                 awayOdds = graphics.DrawText(
