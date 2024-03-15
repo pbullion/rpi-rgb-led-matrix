@@ -6,7 +6,6 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./lib
  
 # GNU Make 3.81
@@ -18,7 +17,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Tue Mar 12 22:59:41 2024
+# Make data base, printed on Fri Mar 15 14:25:10 2024
 
 # Variables
 
@@ -28,7 +27,6 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 ?F = $(notdir $?)
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
- 
 # makefile (from `Makefile', line 167)
 INCDIR = ../include
 # makefile (from `Makefile', line 37)
@@ -54,6 +52,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en-us","availableLanguages":{}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 168)
+ 
 CFLAGS = -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC $(DEFINES)
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
@@ -162,7 +161,7 @@ TERM_PROGRAM_VERSION = 3.4.23
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.233666031.233666037.595A00FD-5515-46C5-BAC7-DEE53DED4CF9
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.233666031.233666037.B90B560E-6396-4893-B0E0-3DE8762219E4
 # environment
 LC_TERMINAL_VERSION = 3.4.23
 # environment
@@ -299,7 +298,6 @@ Makefile:
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
- 
 
 # Not a target:
 hardware-mapping.o:
@@ -323,6 +321,7 @@ content-streamer.o:
 #  File has not been updated.
 
 librgbmatrix.so.1: gpio.o led-matrix.o options-initialize.o framebuffer.o thread.o bdf-font.o graphics.o led-matrix-c.o hardware-mapping.o pixel-mapper.o multiplex-mappers.o content-streamer.o
+ 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -447,6 +446,7 @@ compiler-flags: FORCE
 # automatic
 # ? := FORCE
 # variable set hash-table stats:
+ 
 # Load=8/32=25%, Rehash=0, Collisions=3/24=12%
 #  commands to execute (from `Makefile', line 194):
 	@echo '$(CXX) $(CXXFLAGS)' | cmp -s - $@ || echo '$(CXX) $(CXXFLAGS)' > $@
@@ -477,13 +477,13 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue Mar 12 22:59:41 2024
+# Finished Make data base on Fri Mar 15 14:25:10 2024
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Tue Mar 12 22:59:41 2024
+# Make data base, printed on Fri Mar 15 14:25:10 2024
 
 # Variables
 
@@ -494,6 +494,7 @@ make: *** [lib/librgbmatrix.a] Error 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
+ 
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # environment
 NVM_INC = /Users/patrickbullion/.nvm/versions/node/v16.13.1/include/node
@@ -506,7 +507,6 @@ NVM_INC = /Users/patrickbullion/.nvm/versions/node/v16.13.1/include/node
 # makefile
 CURDIR := /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
 # makefile
- 
 SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en-us","availableLanguages":{},"_languagePackSupport":true}
@@ -590,6 +590,7 @@ RGB_LIBRARY = $(RGB_LIBDIR)/lib$(RGB_LIBRARY_NAME).a
 SHLVL = 3
 # default
 MAKE_VERSION := 3.81
+ 
 # environment
 USER = patrickbullion
 # makefile
@@ -627,7 +628,7 @@ TERM_PROGRAM_VERSION = 3.4.23
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.233666031.233666037.595A00FD-5515-46C5-BAC7-DEE53DED4CF9
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.233666031.233666037.B90B560E-6396-4893-B0E0-3DE8762219E4
 # environment
 LC_TERMINAL_VERSION = 3.4.23
 # environment
@@ -742,9 +743,9 @@ lib/librgbmatrix.a: FORCE
 # @ := lib/librgbmatrix.a
 # automatic
 # % := 
+ 
 # automatic
 # * := 
- 
 # automatic
 # + := FORCE
 # automatic
@@ -808,6 +809,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue Mar 12 22:59:41 2024
+# Finished Make data base on Fri Mar 15 14:25:10 2024
 
  

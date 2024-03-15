@@ -8,7 +8,6 @@ c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o led-matrix.o led-matrix.cc
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o options-initialize.o options-initialize.cc
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o framebuffer.o framebuffer.cc
- 
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o thread.o thread.cc
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o bdf-font.o bdf-font.cc
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o graphics.o graphics.cc
@@ -30,6 +29,7 @@ c++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o demo-main.o de
 make[2]: Entering directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/lib'
 echo 'c++ -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11' | cmp -s - compiler-flags || echo 'c++ -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11' > compiler-flags
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o gpio.o gpio.cc
+ 
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o led-matrix.o led-matrix.cc
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o options-initialize.o options-initialize.cc
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o framebuffer.o framebuffer.cc
@@ -39,6 +39,7 @@ c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o led-matrix-c.o led-matrix-c.cc
 cc  -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -c -o hardware-mapping.o hardware-mapping.c
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o pixel-mapper.o pixel-mapper.cc
+ 
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o multiplex-mappers.o multiplex-mappers.cc
 c++ -I../include -W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC  -DDEFAULT_HARDWARE='"adafruit-hat"' -fno-exceptions -std=c++11 -c -o content-streamer.o content-streamer.cc
 ar rcs librgbmatrix.a gpio.o led-matrix.o options-initialize.o framebuffer.o thread.o bdf-font.o graphics.o led-matrix-c.o hardware-mapping.o pixel-mapper.o multiplex-mappers.o content-streamer.o
@@ -48,7 +49,6 @@ make[2]: Leaving directory `/Users/patrickbullion/Code/led/rpi-rgb-led-matrix/li
 c++ demo-main.o -o demo -L../lib -lrgbmatrix -lrt -lm -lpthread
 c++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o minimal-example.o minimal-example.cc
 c++ minimal-example.o -o minimal-example -L../lib -lrgbmatrix -lrt -lm -lpthread
- 
 cc -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o c-example.o c-example.c
 cc c-example.o -o c-example -L../lib -lrgbmatrix -lrt -lm -lpthread -lstdc++
 c++ -I../include -Wall -O3 -g -Wextra -Wno-unused-parameter -c -o text-example.o text-example.cc
