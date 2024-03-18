@@ -6162,15 +6162,15 @@ class RunText(SampleBase):
                                 homeSpreadString = game[23]
                                 overUnderText = ""
                                 awayTeamID = game[30]
-                                print(awayTeamID)
                                 homeTeamID = game[31]
-                                print(homeTeamID)
+                                homeTeamIDdd = game[356]
+                                print(homeTeamIDdd)
                                 try:
-                                    value = teamLogos[awayTeamID]
+                                    value = teamLogosNCAA[awayTeamID]
                                 except KeyError:
                                     awayTeamID = "0000000000"
                                 try:
-                                    value = teamLogos[homeTeamID]
+                                    value = teamLogosNCAA[homeTeamID]
                                 except KeyError:
                                     homeTeamID = "0000000000"
                                 if overUnderString != "":
@@ -6405,11 +6405,11 @@ class RunText(SampleBase):
                                 awayTeamID = game[27]
                                 homeTeamID = game[28]
                                 try:
-                                    value = teamLogos[awayTeamID]
+                                    value = teamLogosNCAA[awayTeamID]
                                 except KeyError:
                                     awayTeamID = "0000000000"
                                 try:
-                                    value = teamLogos[homeTeamID]
+                                    value = teamLogosNCAA[homeTeamID]
                                 except KeyError:
                                     homeTeamID = "0000000000"
                                 if overUnderString != "":
