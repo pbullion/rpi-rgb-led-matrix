@@ -44,7 +44,7 @@ class RunText(SampleBase):
         #         ).raw
         #     ).convert("RGB").resize((50, 50), Image.ANTIALIAS)
         teamLogosNCAA = {
-                       "0000000000": Image.open(
+            "0000000000": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/defaultperson2.png"
             ),
             "47": Image.open(
@@ -6182,9 +6182,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + teamLogosNCAA[
-                                        awayTeamID
-                                    ].width,
+                                    + teamLogosNCAA[awayTeamID].width,
                                     24,
                                     white,
                                     "vs",
@@ -6193,9 +6191,7 @@ class RunText(SampleBase):
                                     teamLogosNCAA[homeTeamID],
                                     pos
                                     + offset
-                                    + teamLogosNCAA[
-                                        awayTeamID
-                                    ].width
+                                    + teamLogosNCAA[awayTeamID].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -6437,26 +6433,23 @@ class RunText(SampleBase):
                                     homeColor = red
                                     awayColor = green
                                 offscreen_canvas.SetImage(
-                                    teamLogos[re.sub(pattern, "", awayTeamID)],
+                                    teamLogos[awayTeamID],
                                     pos + offset,
                                     -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos
-                                    + offset
-                                    + buffer
-                                    + teamLogos[re.sub(pattern, "", awayTeamID)].width,
+                                    pos + offset + buffer + teamLogos[awayTeamID].width,
                                     24,
                                     white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos[re.sub(pattern, "", homeTeamID)],
+                                    teamLogos[homeTeamID],
                                     pos
                                     + offset
-                                    + teamLogos[re.sub(pattern, "", awayTeamID)].width
+                                    + teamLogos[awayTeamID].width
                                     + buffer
                                     + buffer
                                     + buffer
