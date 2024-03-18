@@ -46,7 +46,8 @@ class RunText(SampleBase):
         teamLogosNCAA = {
             "0000000000": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/defaultperson2.png"
-            ),
+            )            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),s,
             "47": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/47.png"
             )
@@ -6433,23 +6434,26 @@ class RunText(SampleBase):
                                     homeColor = red
                                     awayColor = green
                                 offscreen_canvas.SetImage(
-                                    teamLogos[awayTeamID],
+                                    teamLogosNCAA[awayTeamID],
                                     pos + offset,
                                     -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + buffer + teamLogos[awayTeamID].width,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogosNCAA[awayTeamID].width,
                                     24,
                                     white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos[homeTeamID],
+                                    teamLogosNCAA[homeTeamID],
                                     pos
                                     + offset
-                                    + teamLogos[awayTeamID].width
+                                    + teamLogosNCAA[awayTeamID].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -6779,11 +6783,11 @@ class RunText(SampleBase):
                                 awayTeamID = game[31]
                                 homeTeamID = game[32]
                                 try:
-                                    value = teamLogos[awayTeamID]
+                                    value = teamLogosNCAA[awayTeamID]
                                 except KeyError:
                                     awayTeamID = "0000000000"
                                 try:
-                                    value = teamLogos[homeTeamID]
+                                    value = teamLogosNCAA[homeTeamID]
                                 except KeyError:
                                     homeTeamID = "0000000000"
                                 if int(awayTeamStatusString) < int(
@@ -6800,7 +6804,7 @@ class RunText(SampleBase):
                                     homeColor = red
                                     awayColor = green
                                 offscreen_canvas.SetImage(
-                                    teamLogos[re.sub(pattern, "", awayTeamID)],
+                                    teamLogosNCAA[awayTeamID],
                                     pos + offset,
                                     -10,
                                 )
@@ -6810,16 +6814,16 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + teamLogos[re.sub(pattern, "", awayTeamID)].width,
+                                    + teamLogosNCAA[awayTeamID].width,
                                     24,
                                     white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos[re.sub(pattern, "", homeTeamID)],
+                                    teamLogosNCAA[homeTeamID],
                                     pos
                                     + offset
-                                    + teamLogos[re.sub(pattern, "", awayTeamID)].width
+                                    + teamLogosNCAA[awayTeamID].width
                                     + buffer
                                     + buffer
                                     + buffer
