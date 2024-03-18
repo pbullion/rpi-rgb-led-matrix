@@ -230,7 +230,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "99": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/99 Background Removed.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/99.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
@@ -475,7 +475,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "98": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/98.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/98 Background Removed.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
