@@ -570,7 +570,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
             "300": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/300 Background Removed.png"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/300.png"
             )
             .convert("RGB")
             .resize((50, 50), Image.ANTIALIAS),
