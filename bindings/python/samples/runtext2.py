@@ -6163,8 +6163,6 @@ class RunText(SampleBase):
                                 overUnderText = ""
                                 awayTeamID = game[30]
                                 homeTeamID = game[31]
-                                homeTeamIDdd = game[356]
-                                print(homeTeamIDdd)
                                 try:
                                     value = teamLogosNCAA[awayTeamID]
                                 except KeyError:
