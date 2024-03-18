@@ -46,623 +46,624 @@ class RunText(SampleBase):
         teamLogosNCAA = {
             "0000000000": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/defaultperson2.png"
-            )            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),s,
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
             "47": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/47.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "258": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/258.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "147": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/147.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "68": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/68.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "344": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/344.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "252": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/252.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "156": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/156.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "12": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/12.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "153": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/153.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "356": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/356.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2579": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2579.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2168": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2168.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "251": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/251.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "96": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/96.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2250": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2250.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "66": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/66.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2633": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2633.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2641": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2641.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2305": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2305.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "265": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/265.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2226": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2226.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "239": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/239.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "21": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/21.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "269": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/269.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "41": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/41.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "228": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/228.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "57": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/57.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "158": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/158.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "150": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/150.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2509": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2509.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "333": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/333.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "248": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/248.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "275": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/275.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "328": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/328.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2608": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2608.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "99": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/99.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2507": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2507.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "61": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/61.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "194": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/194.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2116": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2116.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "259": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/259.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2086": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2086.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2294": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2294.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "254": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/254.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2550": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2550.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "282": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/282.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "71": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/71.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "163": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/163.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "154": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/154.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2132": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2132.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "222": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/222.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2032": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2032.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "28": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/28.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2547": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2547.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2458": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2458.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "149": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/149.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2217": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2217.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2514": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2514.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2272": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2272.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2627": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2627.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "357": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/357.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "189": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/189.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2046": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2046.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2681": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2681.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "36": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/36.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2755": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2755.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "38": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/38.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "127": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/127.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2184": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2184.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2006": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2006.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "299": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/299.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2413": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2413.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2483": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2483.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2440": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2440.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2473": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2473.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2377": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2377.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2571": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2571.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2612": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2612.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "152": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/152.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2535": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2535.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2181": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2181.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "77": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/77.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2142": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2142.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "5": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/5.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "98": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/98.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "56": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/56.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "167": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/167.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "43": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/43.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "245": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/245.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "261": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/261.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "232": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/232.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2344": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2344.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "256": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/256.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2628": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2628.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2253": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2253.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "249": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/249.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "103": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/103.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2752": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2752.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "172": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/172.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "58": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/58.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "257": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/257.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "135": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/135.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2306": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2306.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "300": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/300.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2603": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2603.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2567": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2567.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2350": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2350.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2439": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2439.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2026": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2026.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2539": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2539.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2670": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2670.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2065": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2065.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2130": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2130.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2169": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2169.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "325": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/325.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2506": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2506.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2031": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2031.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "339": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/339.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2640": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2640.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2000": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2000.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2870": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2870.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
             "2010": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/2010.png"
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 50), Image.ANTIALIAS),
         }
         teamLogos = {
             # "MLB": Image.open(
