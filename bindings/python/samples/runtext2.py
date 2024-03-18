@@ -44,6 +44,9 @@ class RunText(SampleBase):
         #         ).raw
         #     ).convert("RGB").resize((50, 50), Image.ANTIALIAS)
         teamLogosNCAA = {
+                       "0000000000": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/defaultperson2.png"
+            ),
             "47": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ncaa/47.png"
             )
@@ -6169,7 +6172,7 @@ class RunText(SampleBase):
                                 if overUnderString != "":
                                     overUnderText = "O/U"
                                 offscreen_canvas.SetImage(
-                                    teamLogosNCAA[re.sub(pattern, "", awayTeamID)],
+                                    teamLogosNCAA[awayTeamID],
                                     pos + offset,
                                     -10,
                                 )
@@ -6180,18 +6183,18 @@ class RunText(SampleBase):
                                     + offset
                                     + buffer
                                     + teamLogosNCAA[
-                                        re.sub(pattern, "", awayTeamID)
+                                        awayTeamID
                                     ].width,
                                     24,
                                     white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogosNCAA[re.sub(pattern, "", homeTeamID)],
+                                    teamLogosNCAA[homeTeamID],
                                     pos
                                     + offset
                                     + teamLogosNCAA[
-                                        re.sub(pattern, "", awayTeamID)
+                                        awayTeamID
                                     ].width
                                     + buffer
                                     + buffer
