@@ -6162,7 +6162,9 @@ class RunText(SampleBase):
                                 homeSpreadString = game[23]
                                 overUnderText = ""
                                 awayTeamID = game[30]
+                                print(awayTeamID)
                                 homeTeamID = game[31]
+                                print(homeTeamID)
                                 try:
                                     value = teamLogos[awayTeamID]
                                 except KeyError:
