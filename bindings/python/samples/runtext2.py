@@ -27,14 +27,14 @@ class RunText(SampleBase):
         userJSON = json.load(userFile)
         houstonOpenLogo1 = (
             Image.open(
-                    "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/houstonopen Background Removed.png",
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/houstonopen Background Removed.png",
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS)
         )
         houstonOpenLogo2 = (
             Image.open(
-                    "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/houstonopen.png",
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/houstonopen.png",
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS)
@@ -10317,18 +10317,18 @@ class RunText(SampleBase):
                             -7,
                         )
                         mancavedisplays = graphics.DrawText(
-                            offscreen_canvas, font, pos + 40, 26, green, arr
+                            offscreen_canvas, font, pos + 60, 26, green, arr
                         )
                         offscreen_canvas.SetImage(
                             houstonOpenLogo2,
-                            pos + mancavedisplays+offset,
+                            pos + mancavedisplays + offset,
                             -7,
                         )
                         pos -= 1
-                        if pos + 40 + mancavedisplays + 40 < 0:
+                        if pos + 60 + mancavedisplays + 60 < 0:
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.018)
+                        time.sleep(0.021)
                     elif arr == "MANCAVEDISPLAYS":
                         www = graphics.DrawText(
                             offscreen_canvas, middleFont, pos, 26, green, "www."
