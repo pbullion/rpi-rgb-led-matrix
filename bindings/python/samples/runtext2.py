@@ -30,7 +30,7 @@ class RunText(SampleBase):
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/houstonopen2.png",
             )
             .convert("RGB")
-            .resize((40, 40), Image.ANTIALIAS)
+            .resize((35, 35), Image.ANTIALIAS)
         )
         mmaLogos = {
             "UFC Logo": Image.open(
@@ -10322,7 +10322,7 @@ class RunText(SampleBase):
                         if pos + 60 + mancavedisplays + 60 < 0:
                             running = False
                             pos = offscreen_canvas.width
-                        time.sleep(0.03)
+                        time.sleep(0.025)
                     elif arr == "MANCAVEDISPLAYS":
                         www = graphics.DrawText(
                             offscreen_canvas, middleFont, pos, 26, green, "www."
