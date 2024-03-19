@@ -10308,7 +10308,7 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(
                             houstonOpenLogo2,
                             pos + offset,
-                            -7,
+                            0,
                         )
                         mancavedisplays = graphics.DrawText(
                             offscreen_canvas, font, pos + 60, 26, orange, arr
@@ -10316,7 +10316,7 @@ class RunText(SampleBase):
                         offscreen_canvas.SetImage(
                             houstonOpenLogo2,
                             pos + mancavedisplays + 60 + offset,
-                            -7,
+                            0,
                         )
                         pos -= 1
                         if pos + 60 + mancavedisplays + 60 < 0:
