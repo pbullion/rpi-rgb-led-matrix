@@ -7308,6 +7308,10 @@ class RunText(SampleBase):
                                     white,
                                     teeTime,
                                 )
+                                if athleteNameText > teeTimeText:
+                                    golfBallLocation = athleteNameText
+                                else:
+                                    golfBallLocation = teeTimeText
                                 offscreen_canvas.SetImage(
                                     teamLogos["golfball"],
                                     pos
@@ -7328,10 +7332,10 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + bufffer
-                                    + athleteNameText,
+                                    + golfBallLocation,
                                     5,
                                 )
-                            offset = offset + 100 + newBuffer + 40
+                            offset = offset + 100 + newBuffer + golfBallLocation
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
