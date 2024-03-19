@@ -25,24 +25,26 @@ class RunText(SampleBase):
 
     def run(self):
         userJSON = json.load(userFile)
-        # crawfishLogo = Image.open(
-        #         requests.get(
-        #             "https://thumbs.dreamstime.com/b/shrimp-crayfish-black-background-beautiful-colour-nature-under-water-shrimp-crayfish-black-background-111681193.jpg",
-        #             stream=True,
-        #         ).raw
-        #     ).convert("RGB").resize((45,45), Image.ANTIALIAS)
-        # venmoLogo = Image.open(
-        #         requests.get(
-        #             "https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/40/43/e8/4043e84a-182c-c361-5bf8-b14b472d41a6/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
-        #             stream=True,
-        #         ).raw
-        #     ).convert("RGB").resize((45,45), Image.ANTIALIAS)
-        # crawfishLogo2 = Image.open(
-        #         requests.get(
-        #             "https://i.pinimg.com/564x/bb/c2/95/bbc295ff2f2fd6e579d5c02c562bc230.jpg",
-        #             stream=True,
-        #         ).raw
-        #     ).convert("RGB").resize((45,45), Image.ANTIALIAS)
+        houstonOpenLogo1 = (
+            Image.open(
+                requests.get(
+                    "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/houstonopen Background Removed.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS)
+        )
+        houstonOpenLogo2 = (
+            Image.open(
+                requests.get(
+                    "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/houstonopen.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS)
+        )
         mmaLogos = {
             "UFC Logo": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ufclogo.png"
@@ -10314,6 +10316,25 @@ class RunText(SampleBase):
                         print("it was empty string")
                         running = False
                         pos = offscreen_canvas.width
+                    elif arr == "HOUSTON OPEN WEEK MOTHERFUCKERS":
+                        offscreen_canvas.SetImage(
+                            houstonOpenLogo1,
+                            pos + offset,
+                            -7,
+                        )
+                        mancavedisplays = graphics.DrawText(
+                            offscreen_canvas, font, pos + 40, 26, green, arr
+                        )
+                        offscreen_canvas.SetImage(
+                            houstonOpenLogo2,
+                            pos + mancavedisplays+offset,
+                            -7,
+                        )
+                        pos -= 1
+                        if pos + 40 + mancavedisplays + 40 < 0:
+                            running = False
+                            pos = offscreen_canvas.width
+                        time.sleep(0.018)
                     elif arr == "MANCAVEDISPLAYS":
                         www = graphics.DrawText(
                             offscreen_canvas, middleFont, pos, 26, green, "www."
