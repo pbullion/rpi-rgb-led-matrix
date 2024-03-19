@@ -49,6 +49,11 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
+            "0000000000": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/defaultperson2.png"
+            )
+            .convert("RGB")
+            .resize((55, 40), Image.ANTIALIAS),
             "2312150": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/2312150 Background Removed.png"
             )
