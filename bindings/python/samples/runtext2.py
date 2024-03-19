@@ -25,16 +25,9 @@ class RunText(SampleBase):
 
     def run(self):
         userJSON = json.load(userFile)
-        houstonOpenLogo1 = (
-            Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/houstonopen Background Removed.png",
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS)
-        )
         houstonOpenLogo2 = (
             Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/houstonopen.png",
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/houstonopen2.png",
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS)
@@ -10312,7 +10305,7 @@ class RunText(SampleBase):
                         pos = offscreen_canvas.width
                     elif arr == "HOUSTON OPEN WEEK MOTHERFUCKERS":
                         offscreen_canvas.SetImage(
-                            houstonOpenLogo1,
+                            houstonOpenLogo2,
                             pos + offset,
                             -7,
                         )
