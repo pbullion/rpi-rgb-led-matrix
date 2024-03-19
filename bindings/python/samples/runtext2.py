@@ -4290,7 +4290,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + versus,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -4737,7 +4737,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -5198,7 +5198,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -5389,7 +5389,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + versus,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -5622,7 +5622,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -6012,7 +6012,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -6144,7 +6144,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos["NCAA Logo"],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                             awayTeam = 0
                             homeTeam = 0
@@ -6181,7 +6181,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogosNCAA[awayTeamID],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -6204,7 +6204,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -6442,7 +6442,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogosNCAA[awayTeamID],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -6465,7 +6465,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -6812,7 +6812,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogosNCAA[awayTeamID],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -6835,7 +6835,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -6950,7 +6950,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos["UFC Logo"],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                                 fightName = graphics.DrawText(
                                     offscreen_canvas,
@@ -6984,7 +6984,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos[logoValueAway],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -7007,7 +7007,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 if isAthOneWinner:
                                     awayColor = green
@@ -7092,7 +7092,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos["F1 Car"],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogos["F1 Logo"],
@@ -7101,7 +7101,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + teamLogos["F1 Car"].width,
-                                    0,
+                                    -10,
                                 )
                             if "f1" != game[0]:
                                 teamName = game[0]
@@ -8003,13 +8003,13 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos["English Premier League Logo"],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                             if "MLS" == game[1]:
                                 offscreen_canvas.SetImage(
                                     teamLogos["MLS Logo"],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                             awayTeam = 0
                             homeTeam = 0
@@ -8041,7 +8041,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos[awayTeamLogo],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -8064,7 +8064,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -8252,7 +8252,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos[awayTeamLogo],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -8275,7 +8275,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -8559,7 +8559,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos[awayTeamLogo],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -8582,7 +8582,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -8709,7 +8709,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos[awayTeamString],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -8732,7 +8732,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -8927,7 +8927,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos[awayTeamString],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -8950,7 +8950,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -9221,7 +9221,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos[awayTeamString],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -9244,7 +9244,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -9373,7 +9373,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos[awayTeamString],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -9396,7 +9396,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -9591,7 +9591,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos[awayTeamString],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -9614,7 +9614,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
@@ -9885,7 +9885,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     teamLogos[awayTeamString],
                                     pos + offset,
-                                    0,
+                                    -10,
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -9908,7 +9908,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer,
-                                    0,
+                                    -10,
                                 )
                                 awayTeam = graphics.DrawText(
                                     offscreen_canvas,
