@@ -27,20 +27,14 @@ class RunText(SampleBase):
         userJSON = json.load(userFile)
         houstonOpenLogo1 = (
             Image.open(
-                requests.get(
                     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/houstonopen Background Removed.png",
-                    stream=True,
-                ).raw
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS)
         )
         houstonOpenLogo2 = (
             Image.open(
-                requests.get(
                     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/houstonopen.png",
-                    stream=True,
-                ).raw
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS)
