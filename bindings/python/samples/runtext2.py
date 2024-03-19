@@ -2836,6 +2836,11 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
+            "golfball": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/golf_ball.png"
+            )
+            .convert("RGB")
+            .resize((20, 20), Image.ANTIALIAS),
             "10048": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/10048 Background Removed.png"
             )
@@ -7303,7 +7308,24 @@ class RunText(SampleBase):
                                     white,
                                     teeTime,
                                 )
-                            offset = offset + 100 + newBuffer + 10
+                                offscreen_canvas.SetImage(
+                                    teamLogos["golfball"],
+                                    pos
+                                    + positionText
+                                    + offset
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + bufffer,
+                                    10,
+                                )
+                            offset = offset + 100 + newBuffer + 30
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
