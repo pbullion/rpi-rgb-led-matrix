@@ -7322,10 +7322,13 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + bufffer,
+                                    + buffer
+                                    + buffer
+                                    + bufffer
+                                    + athleteNameText,
                                     10,
                                 )
-                            offset = offset + 100 + newBuffer + 30
+                            offset = offset + 100 + newBuffer + 50
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
