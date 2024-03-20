@@ -6968,8 +6968,8 @@ class RunText(SampleBase):
                                 homePitcherString = game[19]
                                 runnerSituationString = game[15]
                                 headline = game[29]
-                                awayTeamID = game[31]
-                                homeTeamID = game[32]
+                                awayTeamID = game[30]
+                                homeTeamID = game[31]
                                 try:
                                     value = teamLogosNCAA[awayTeamID]
                                 except KeyError:
