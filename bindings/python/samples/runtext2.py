@@ -6409,6 +6409,8 @@ class RunText(SampleBase):
                                 else:
                                     scoreLocation = awayTeam
                                 awayOdds = 0
+                                homeSpread = 0
+                                awaySpread = 0
                                 if awaySpreadString != "":
                                     awaySpread = graphics.DrawText(
                                         offscreen_canvas,
