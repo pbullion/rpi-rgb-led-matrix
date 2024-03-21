@@ -6996,6 +6996,7 @@ class RunText(SampleBase):
                                     white,
                                     teeTime,
                                 )
+                                golfBallLocation = 0
                                 if athleteNameText > teeTimeText:
                                     golfBallLocation = athleteNameText
                                 else:
