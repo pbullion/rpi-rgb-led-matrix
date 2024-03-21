@@ -7024,7 +7024,7 @@ class RunText(SampleBase):
                                     + golfBallLocation,
                                     5,
                                 )
-                            offset = offset + 100 + newBuffer + golfBallLocation
+                            offset = offset + 100 + newBuffer + 60
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
