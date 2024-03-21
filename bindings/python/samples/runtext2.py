@@ -1096,7 +1096,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
             "2": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/2. Background Removedpng"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/2 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1106,7 +1106,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
             "4": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/4. Background Removedpng"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/4 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1116,7 +1116,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
             "5": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/5. Background Removedpng"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/5 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1126,7 +1126,7 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
             "6": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/6. Background Removedpng"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/6 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1136,12 +1136,12 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
             "7": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/7. Background Removedpng"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/7 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
             "3": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/3. Background Removedpng"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/3 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1156,12 +1156,12 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
             "8": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/8. Background Removedpng"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/8 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
             "9": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/9. Background Removedpng"
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/9 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -2585,7 +2585,7 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "St. Bonaventure Bonnies": Image.open(
+            "St Bonaventure Bonnies": Image.o.pen(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/stbonaventurebonnies Background Removed.png"
             )
             .convert("RGB")
