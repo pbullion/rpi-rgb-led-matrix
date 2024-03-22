@@ -1071,166 +1071,166 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
         }
-        # teamLogosMLB = {
-        #     "MLB": Image.open(
-        #         requests.get(
-        #             "https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_ Background Removed.png",
-        #             stream=True,
-        #         ).raw
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "29": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/29 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "15": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/15 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "1": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/1 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "2": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/2 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "16": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/16 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "4": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/4 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "17": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/17 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "5": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/5 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "27": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/27 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "6": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/6 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "18": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/18 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "7": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/7 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "3": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/3 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "19": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/19 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "28": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/28 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "8": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/8 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "9": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/9 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "21": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/21 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "10": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/10 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "11": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/11 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "22": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/22 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "23": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/23 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "25": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/25 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "26": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/26 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "12": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/12 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "24": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/24 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "30": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/30 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "13": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/13 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "14": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/14 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        #     "20": Image.open(
-        #         "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/20 Background Removed.png"
-        #     )
-        #     .convert("RGB")
-        #     .resize((45, 45), Image.ANTIALIAS),
-        # }
+        teamLogosMLB = {
+            "MLB": Image.open(
+                requests.get(
+                    "https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_ Background Removed.png",
+                    stream=True,
+                ).raw
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "29": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/29 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "15": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/15 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "1": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/1 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "2": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/2 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "16": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/16 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/4 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "17": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/17 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "5": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/5 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "27": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/27 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "6": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/6 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "18": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/18 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "7": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/7 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "3": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/3 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "19": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/19 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "28": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/28 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "8": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/8 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "9": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/9 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "21": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/21 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "10": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/10 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "11": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/11 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "22": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/22 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "23": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/23 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "25": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/25 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "26": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/26 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "12": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/12 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "24": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/24 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "30": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/30 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "13": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/13 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "14": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/14 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "20": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mlb/20 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+        }
         teamLogos = {
             # "MLB": Image.open(
             #     requests.get(
@@ -4824,6 +4824,16 @@ class RunText(SampleBase):
                                 countString = game[21]
                                 outsString = game[22]
                                 headline = game[29]
+                                awayTeamID = game[30]
+                                homeTeamID = game[31]
+                                try:
+                                    value = teamLogosMLB[awayTeamID]
+                                except KeyError:
+                                    awayTeamID = "0000000000"
+                                try:
+                                    value = teamLogosMLB[homeTeamID]
+                                except KeyError:
+                                    homeTeamID = "0000000000"
                                 if int(awayTeamStatusString) < int(
                                     homeTeamStatusString
                                 ):
@@ -4838,21 +4848,21 @@ class RunText(SampleBase):
                                     homeColor = red
                                     awayColor = green
                                 offscreen_canvas.SetImage(
-                                    teamLogos[game[5]], pos + offset, -5
+                                    teamLogosMLB[game[5]], pos + offset, -5
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + buffer + teamLogos[game[5]].width,
+                                    pos + offset + buffer + teamLogosMLB[game[5]].width,
                                     24,
                                     white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos[game[10]],
+                                    teamLogosMLB[game[10]],
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosMLB[game[5]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -4865,9 +4875,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosMLB[game[5]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosMLB[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -4880,9 +4890,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosMLB[game[5]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosMLB[game[10]].width
                                     + buffer
                                     + buffer
                                     + buffer,
