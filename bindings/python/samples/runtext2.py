@@ -1074,7 +1074,7 @@ class RunText(SampleBase):
         teamLogosMLB = {
             "MLB": Image.open(
                 requests.get(
-                    "https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_ Background Removed.png",
+                    "https://loodibee.com/wp-content/uploads/Major_League_Baseball_MLB_transparent_logo.png",
                     stream=True,
                 ).raw
             )
