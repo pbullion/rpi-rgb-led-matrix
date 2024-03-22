@@ -4317,8 +4317,8 @@ class RunText(SampleBase):
                                 OUString = ""
                                 awayBetsColor = blue
                                 homeBetsColor = blue
-                                awayTeamID = game[30]
-                                homeTeamID = game[31]
+                                awayTeamID = game[29]
+                                homeTeamID = game[30]
                                 try:
                                     value = teamLogosMLB[awayTeamID]
                                 except KeyError:
