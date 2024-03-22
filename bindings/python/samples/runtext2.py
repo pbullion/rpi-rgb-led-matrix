@@ -3872,6 +3872,16 @@ class RunText(SampleBase):
                                 OUString = ""
                                 awayBetsColor = blue
                                 homeBetsColor = blue
+                                awayTeamID = game[30]
+                                homeTeamID = game[31]
+                                try:
+                                    value = teamLogosMLB[awayTeamID]
+                                except KeyError:
+                                    awayTeamID = "0000000000"
+                                try:
+                                    value = teamLogosMLB[homeTeamID]
+                                except KeyError:
+                                    homeTeamID = "0000000000"
                                 if "+" in awayOddsString:
                                     awayBetsColor = green
                                     homeBetsColor = red
@@ -3882,21 +3892,24 @@ class RunText(SampleBase):
                                     OUString = "O/U"
                                     awayColor = red
                                 offscreen_canvas.SetImage(
-                                    teamLogos[game[5]], pos + offset, -5
+                                    teamLogosMLB[awayTeamID], pos + offset, -5
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + buffer + teamLogos[game[5]].width,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogosMLB[awayTeamID].width,
                                     24,
                                     green,
                                     statusString,
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos[game[10]],
+                                    teamLogosMLB[homeTeamID],
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosMLB[awayTeamID].width
                                     + buffer
                                     + buffer
                                     + versus,
@@ -3907,9 +3920,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosMLB[awayTeamID].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosMLB[homeTeamID].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -3922,9 +3935,9 @@ class RunText(SampleBase):
                                     smallestFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosMLB[awayTeamID].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosMLB[homeTeamID].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3939,9 +3952,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosMLB[awayTeamID].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosMLB[homeTeamID].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -3954,9 +3967,9 @@ class RunText(SampleBase):
                                     smallestFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosMLB[awayTeamID].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosMLB[homeTeamID].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -3973,9 +3986,9 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogosMLB[homeTeamID].width
                                         + buffer
                                         + buffer
                                         + buffer
@@ -3994,9 +4007,9 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogosMLB[homeTeamID].width
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4015,9 +4028,9 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogosMLB[homeTeamID].width
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4043,9 +4056,9 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogosMLB[homeTeamID].width
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4072,9 +4085,9 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogosMLB[homeTeamID].width
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4093,9 +4106,9 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogosMLB[homeTeamID].width
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4114,9 +4127,9 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogosMLB[homeTeamID].width
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4142,9 +4155,9 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogosMLB[homeTeamID].width
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4171,11 +4184,11 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
                                         + homeOdds
                                         + overUnderStr
-                                        + teamLogos[game[10]].width
+                                        + teamLogosMLB[homeTeamID].width
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4200,11 +4213,11 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
                                         + homeOdds
                                         + overUnderStr
-                                        + teamLogos[game[10]].width
+                                        + teamLogosMLB[homeTeamID].width
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4230,11 +4243,11 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
                                         + homeOdds
                                         + overUnderStr
-                                        + teamLogos[game[10]].width
+                                        + teamLogosMLB[homeTeamID].width
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4258,11 +4271,11 @@ class RunText(SampleBase):
                                         smallFont,
                                         pos
                                         + offset
-                                        + teamLogos[game[5]].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
                                         + homeOdds
                                         + overUnderStr
-                                        + teamLogos[game[10]].width
+                                        + teamLogosMLB[homeTeamID].width
                                         + buffer
                                         + buffer
                                         + buffer
@@ -4304,6 +4317,16 @@ class RunText(SampleBase):
                                 OUString = ""
                                 awayBetsColor = blue
                                 homeBetsColor = blue
+                                awayTeamID = game[30]
+                                homeTeamID = game[31]
+                                try:
+                                    value = teamLogosMLB[awayTeamID]
+                                except KeyError:
+                                    awayTeamID = "0000000000"
+                                try:
+                                    value = teamLogosMLB[homeTeamID]
+                                except KeyError:
+                                    homeTeamID = "0000000000"
                                 if "+" in awayOddsString:
                                     awayBetsColor = green
                                     homeBetsColor = red
@@ -4327,21 +4350,24 @@ class RunText(SampleBase):
                                     homeColor = red
                                     awayColor = green
                                 offscreen_canvas.SetImage(
-                                    teamLogos[game[5]], pos + offset, -5
+                                    teamLogosMLB[awayTeamID], pos + offset, -5
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + buffer + teamLogos[game[5]].width,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogosMLB[awayTeamID].width,
                                     24,
                                     white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos[game[10]],
+                                    teamLogosMLB[homeTeamID],
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosMLB[awayTeamID].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -4354,9 +4380,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosMLB[awayTeamID].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosMLB[homeTeamID].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -4369,9 +4395,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosMLB[awayTeamID].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosMLB[homeTeamID].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -4384,17 +4410,17 @@ class RunText(SampleBase):
                                     scoreLocation = (
                                         homeTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogosMLB[homeTeamID].width
                                     )
                                 else:
                                     scoreLocation = (
                                         awayTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogosMLB[homeTeamID].width
                                     )
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
@@ -4982,7 +5008,7 @@ class RunText(SampleBase):
                                     awayBetsColor = red
                                     homeBetsColor = green
                                 offscreen_canvas.SetImage(
-                                    teamLogos[game[5]], pos + offset, -5
+                                    teamLogosMLB[awayTeamID], pos + offset, -5
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
