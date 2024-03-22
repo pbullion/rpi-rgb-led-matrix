@@ -4848,21 +4848,24 @@ class RunText(SampleBase):
                                     homeColor = red
                                     awayColor = green
                                 offscreen_canvas.SetImage(
-                                    teamLogosMLB[game[5]], pos + offset, -5
+                                    teamLogosMLB[awayTeamID], pos + offset, -5
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + buffer + teamLogosMLB[game[5]].width,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogosMLB[awayTeamID].width,
                                     24,
                                     white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogosMLB[game[10]],
+                                    teamLogosMLB[homeTeamID],
                                     pos
                                     + offset
-                                    + teamLogosMLB[game[5]].width
+                                    + teamLogosMLB[awayTeamID].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -4875,9 +4878,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogosMLB[game[5]].width
+                                    + teamLogosMLB[awayTeamID].width
                                     + versus
-                                    + teamLogosMLB[game[10]].width
+                                    + teamLogosMLB[homeTeamID].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -4890,9 +4893,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogosMLB[game[5]].width
+                                    + teamLogosMLB[awayTeamID].width
                                     + versus
-                                    + teamLogosMLB[game[10]].width
+                                    + teamLogosMLB[homeTeamID].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -4905,17 +4908,17 @@ class RunText(SampleBase):
                                     scoreLocation = (
                                         homeTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
+                                        + teamLogos[awayTeamID].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogos[homeTeamID].width
                                     )
                                 else:
                                     scoreLocation = (
                                         awayTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
+                                        + teamLogos[awayTeamID].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogos[homeTeamID].width
                                     )
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
