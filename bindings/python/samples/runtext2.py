@@ -3240,18 +3240,8 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
-            "10548": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/10548 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
             "10562": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/10562 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "10583": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/10583 Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
@@ -3265,18 +3255,8 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
-            "10906": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/10906 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
             "10929": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/10929 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "10990": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/10990 Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
@@ -3290,23 +3270,8 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
-            "11143": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/11143 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
             "11183": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/11183 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "11332": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/11332 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "11333": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/11333 Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
@@ -3325,28 +3290,13 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
-            "11376": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/11376 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
             "11385": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/11385 Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
-            "11393": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/11393 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
             "11407": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/11407 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
-            "11456": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/11456 Background Removed.png"
             )
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
@@ -4908,17 +4858,17 @@ class RunText(SampleBase):
                                     scoreLocation = (
                                         homeTeam
                                         + buffer
-                                        + teamLogos[awayTeamID].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
-                                        + teamLogos[homeTeamID].width
+                                        + teamLogosMLB[homeTeamID].width
                                     )
                                 else:
                                     scoreLocation = (
                                         awayTeam
                                         + buffer
-                                        + teamLogos[awayTeamID].width
+                                        + teamLogosMLB[awayTeamID].width
                                         + versus
-                                        + teamLogos[homeTeamID].width
+                                        + teamLogosMLB[homeTeamID].width
                                     )
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
