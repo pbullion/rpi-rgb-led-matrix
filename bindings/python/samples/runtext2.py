@@ -9855,7 +9855,7 @@ class RunText(SampleBase):
                         print("it was empty string")
                         running = False
                         pos = offscreen_canvas.width
-                    elif arr == "DONT SUCK THIS WEEK, JIMMY.":
+                    elif arr == "MAKE THE HOUSTON OPEN YOUR BITCH, JIMMY":
                         offscreen_canvas.SetImage(
                             teamLogos["446"],
                             pos + offset,
