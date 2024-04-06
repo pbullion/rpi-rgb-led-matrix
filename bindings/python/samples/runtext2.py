@@ -5418,8 +5418,8 @@ class RunText(SampleBase):
                 ],
             ]
             # responseArr = json.loads(url.text)
-            responseArr = json.loads(data)
-            filteredArr = [item for item in responseArr if item != " "]
+            # responseArr = json.loads(data)
+            filteredArr = [item for item in data if item != " "]
             print(filteredArr)
             offscreen_canvas = self.matrix.CreateFrameCanvas()
             pos = offscreen_canvas.width
