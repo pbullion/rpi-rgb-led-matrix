@@ -9235,6 +9235,8 @@ class RunText(SampleBase):
                                 homeTeamStatusString = game[13]
                                 situationString = game[15]
                                 statusString = game[16]
+                                statusStringUpper = ''
+                                statusStringLower = ''
                                 if "of" in statusString:
                                     statusStringUpper = statusString.split(" of ")[0]
                                     statusStringLower = statusString.split(" of ")[
@@ -9899,6 +9901,8 @@ class RunText(SampleBase):
                                 homeTeamStatusString = game[13]
                                 situationString = game[15]
                                 statusString = game[16]
+                                statusStringUpper = ''
+                                statusStringLower = ''
                                 if "of" in statusString:
                                     statusStringUpper = statusString.split(" of ")[0]
                                     statusStringLower = statusString.split(" of ")[
