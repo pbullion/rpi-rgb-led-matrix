@@ -68,6 +68,146 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
+            "4292760": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4292760 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4601333": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4601333 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "3151934": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3151934 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4046059": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4046059 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4963343": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4963343 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "5143888": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5143888 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4063869": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4063869 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "5088886": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5088886 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "3153106": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3153106 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4046629": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4046629 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4350871": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4350871 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4397795": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4397795 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4294832": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4294832 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4416297": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4416297 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "3955778": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3955778 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4193694": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4193694 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4423214": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4423214 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4423448": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4423448 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4077475": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4077475 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "5143223": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5143223 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4685871": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4685871 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "5077131": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5077131 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "3928693": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3928693 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "5088844": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5088844 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "2594871": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/2594871 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4233039": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4233039 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "3154860": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3154860 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4690539": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4690539 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
             "4351085": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4351085 Background Removed.png"
             )
