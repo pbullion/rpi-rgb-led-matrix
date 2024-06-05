@@ -68,11 +68,6 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "4292760": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4292760 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "4601333": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4601333 Background Removed.png"
             )
