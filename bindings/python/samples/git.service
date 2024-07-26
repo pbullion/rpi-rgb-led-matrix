@@ -1,0 +1,13 @@
+[Unit]
+Description=Ticker Service
+After=multi-user.target
+
+[Service]
+Type=idle
+User=pi
+ExecStart=cd /home/pi/rpi-rgb-led-matrix git pull
+Restart=always
+RestartSec=10000
+
+[Install]
+WantedBy=multi-user.target
