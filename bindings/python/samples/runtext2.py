@@ -25,13 +25,6 @@ class RunText(SampleBase):
 
     def run(self):
         userJSON = json.load(userFile)
-        houstonOpenLogo2 = (
-            Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/houstonopen2.png",
-            )
-            .convert("RGB")
-            .resize((35, 35), Image.ANTIALIAS)
-        )
         mmaLogos = {
             "UFC Logo": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ufclogo.png"
@@ -3810,11 +3803,6 @@ class RunText(SampleBase):
             .convert("RGB")
             .resize((55, 40), Image.ANTIALIAS),
             # PGA PLAYERS
-            "Mexico Open": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/mexicoopen.png"
-            )
-            .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
             "golfball": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/golf_ball.png"
             )
