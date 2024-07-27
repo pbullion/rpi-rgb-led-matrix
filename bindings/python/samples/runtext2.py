@@ -8560,6 +8560,7 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "olympicMedals" in arr[0]:
                         for country in arr:
+                            print(country)
                             if country != "olympicMedals":
                                 print(country)
                                 offscreen_canvas.SetImage(
