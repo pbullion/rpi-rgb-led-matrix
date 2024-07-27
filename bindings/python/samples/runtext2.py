@@ -5460,6 +5460,9 @@ class RunText(SampleBase):
             green = graphics.Color(0, 255, 0)
             red = graphics.Color(255, 0, 0)
             blue = graphics.Color(0, 0, 255)
+            gold = graphics.Color(255,215,0)
+            silver = graphics.Color(192,192,192)
+            bronze = graphics.Color(205, 127, 50)
             # teal = graphics.Color(0, 255, 255)
             orange = graphics.Color(255, 165, 0)
             purple = graphics.Color(102, 0, 204)
@@ -8551,6 +8554,51 @@ class RunText(SampleBase):
                                     country,
                                 )
                             offset = offset + 60
+                        time.sleep(0.018)
+                        if pos + offset < 0:
+                            running = False
+                            pos = offscreen_canvas.width
+                    elif isinstance(arr, list) and "olympicMedals" in arr[0]:
+                        for country in arr:
+                            if country != "olympicMedals":
+                                offscreen_canvas.SetImage(
+                                    olympicCountries[country.c_NOCShort],
+                                    pos + offset,
+                                    3,
+                                )
+                                countryName = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos + offset,
+                                    31,
+                                    green,
+                                    country.c_NOC,
+                                )
+                                goldMedals = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos + offset + 23,
+                                    3,
+                                    gold,
+                                    country.n_Gold,
+                                )
+                                silverMedals = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos + offset + 20 + goldMedals + 2,
+                                    3,
+                                    silver,
+                                    country.n_Silver,
+                                )
+                                bronzeMedals = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos + offset + 20 + goldMedals + 2 + silverMedals + 2,
+                                    3,
+                                    bronze,
+                                    country.n_Bronze,
+                                )
+                            offset = offset + country.c_NOC+ 60
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
