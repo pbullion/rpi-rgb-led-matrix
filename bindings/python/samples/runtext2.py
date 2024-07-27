@@ -8551,7 +8551,7 @@ class RunText(SampleBase):
                                     white,
                                     country,
                                 )
-                            offset = offset + 10 + newBuffer
+                            offset = offset + 60 + newBuffer
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
