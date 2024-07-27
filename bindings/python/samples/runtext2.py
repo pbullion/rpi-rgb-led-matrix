@@ -8597,18 +8597,34 @@ class RunText(SampleBase):
                                     gold,
                                     str(country['n_Gold']),
                                 )
+                                goldMedalsBulletPoint = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos + offset + 25 + 4,
+                                    16,
+                                    white,
+                                    '•',
+                                )
                                 silverMedals = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + 20 + goldMedals + 6,
+                                    pos + offset + 20 + goldMedals + goldMedalsBulletPoint+ 10,
                                     16,
                                     silver,
                                     str(country['n_Silver']),
                                 )
+                                silverMedalsBulletPoint = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos + offset + 20 + goldMedals + goldMedalsBulletPoint + silverMedals + 10,
+                                    16,
+                                    white,
+                                    '•',
+                                )
                                 bronzeMedals = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + 20 + goldMedals + 6 + silverMedals,
+                                    pos + offset + 20 + goldMedals + goldMedalsBulletPoint + silverMedals + silverMedalsBulletPoint + 10,
                                     16,
                                     bronze,
                                     str(country['n_Bronze']),
