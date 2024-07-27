@@ -8581,7 +8581,7 @@ class RunText(SampleBase):
                                     pos + offset + 23,
                                     3,
                                     gold,
-                                    country['n_Gold'],
+                                    str(country['n_Gold']),
                                 )
                                 silverMedals = graphics.DrawText(
                                     offscreen_canvas,
@@ -8589,7 +8589,7 @@ class RunText(SampleBase):
                                     pos + offset + 20 + goldMedals + 2,
                                     3,
                                     silver,
-                                    country['n_Silver'],
+                                    str(country['n_Silver']),
                                 )
                                 bronzeMedals = graphics.DrawText(
                                     offscreen_canvas,
@@ -8597,7 +8597,7 @@ class RunText(SampleBase):
                                     pos + offset + 20 + goldMedals + 2 + silverMedals + 2,
                                     3,
                                     bronze,
-                                    country['n_Bronze'],
+                                    str(country['n_Bronze']),
                                 )
                             offset = offset + 150 + 60
                         time.sleep(0.018)
