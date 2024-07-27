@@ -8540,8 +8540,8 @@ class RunText(SampleBase):
                             if country != "olympicCountries":
                                 offscreen_canvas.SetImage(
                                     olympicCountries[country],
-                                    pos + offset + 5,
-                                    5,
+                                    pos + offset + 3,
+                                    0,
                                 )
                                 countryName = graphics.DrawText(
                                     offscreen_canvas,
