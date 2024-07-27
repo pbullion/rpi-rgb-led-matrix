@@ -8561,9 +8561,9 @@ class RunText(SampleBase):
                     elif isinstance(arr, list) and "olympicMedals" in arr[0]:
                         for country in arr:
                             if country != "olympicMedals":
-                                print(country.c_NOCShort)
+                                print(country)
                                 offscreen_canvas.SetImage(
-                                    olympicCountries[country.c_NOCShort],
+                                    olympicCountries[country['c_NOCShort']],
                                     pos + offset,
                                     3,
                                 )
@@ -8573,7 +8573,7 @@ class RunText(SampleBase):
                                     pos + offset,
                                     31,
                                     green,
-                                    country.c_NOC,
+                                    country['c_NOC'],
                                 )
                                 goldMedals = graphics.DrawText(
                                     offscreen_canvas,
@@ -8581,7 +8581,7 @@ class RunText(SampleBase):
                                     pos + offset + 23,
                                     3,
                                     gold,
-                                    country.n_Gold,
+                                    country['n_Gold'],
                                 )
                                 silverMedals = graphics.DrawText(
                                     offscreen_canvas,
@@ -8589,7 +8589,7 @@ class RunText(SampleBase):
                                     pos + offset + 20 + goldMedals + 2,
                                     3,
                                     silver,
-                                    country.n_Silver,
+                                    country['n_Silver'],
                                 )
                                 bronzeMedals = graphics.DrawText(
                                     offscreen_canvas,
@@ -8597,9 +8597,9 @@ class RunText(SampleBase):
                                     pos + offset + 20 + goldMedals + 2 + silverMedals + 2,
                                     3,
                                     bronze,
-                                    country.n_Bronze,
+                                    country['n_Bronze'],
                                 )
-                            offset = offset + 200+ 60
+                            offset = offset + countryName + 60
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
