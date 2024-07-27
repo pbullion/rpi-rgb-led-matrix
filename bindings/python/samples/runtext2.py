@@ -30,147 +30,147 @@ class RunText(SampleBase):
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/AUS.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "BEL": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/BEL.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "CAN": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/CAN.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "CZE": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/CZE.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "EST": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/EST.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "FRA": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/FRA.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "GER": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/GER.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "ITA": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/ITA.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "KOR": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/KOR.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "NED": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/NED.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "NZL": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/NZL.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "ROC": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/ROC.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "SUI": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/SUI.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "SWE": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/SWE.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "USA": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/USA.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "AUT": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/AUT.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "BLR": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/BLR.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "CHN": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/CHN.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "ESP": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/ESP.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "FIN": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/FIN.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "GBR": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/GBR.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "HUN": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/HUN.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "JPN": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/JPN.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "LAT": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/LAT.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "NOR": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/NOR.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "POL": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/POL.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "SLO": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/SLO.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "SVK": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/SVK.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
             "UKR": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/UKR.png"
             )
             .convert("RGB")
-            .resize((50, 50), Image.ANTIALIAS),
+            .resize((30, 30), Image.ANTIALIAS),
         }
         mmaLogos = {
             "UFC Logo": Image.open(
