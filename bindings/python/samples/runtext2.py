@@ -8576,7 +8576,6 @@ class RunText(SampleBase):
                     elif isinstance(arr, list) and "olympicMedals" in arr[0]:
                         for country in arr:
                             if country != "olympicMedals":
-                                print(country)
                                 offscreen_canvas.SetImage(
                                     olympicCountries[country['c_NOCShort']],
                                     pos + offset,
@@ -8593,28 +8592,28 @@ class RunText(SampleBase):
                                 goldMedals = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + 23,
-                                    3,
+                                    pos + offset + 25,
+                                    16,
                                     gold,
                                     str(country['n_Gold']),
                                 )
                                 silverMedals = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + 20 + goldMedals + 2,
-                                    3,
+                                    pos + offset + 20 + goldMedals + 6,
+                                    16,
                                     silver,
                                     str(country['n_Silver']),
                                 )
                                 bronzeMedals = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + 20 + goldMedals + 2 + silverMedals + 2,
-                                    3,
+                                    pos + offset + 20 + goldMedals + 6 + silverMedals,
+                                    16,
                                     bronze,
                                     str(country['n_Bronze']),
                                 )
-                            offset = offset + 150 + 60
+                            offset = offset + 100 + 60
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
