@@ -8598,7 +8598,7 @@ class RunText(SampleBase):
                                     bronze,
                                     country.n_Bronze,
                                 )
-                            offset = offset + country.c_NOC+ 60
+                            offset = offset + countryName+ 60
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
