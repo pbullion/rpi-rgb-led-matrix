@@ -9983,7 +9983,7 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
-
+                                print(awayTeamLogo)
                                 offscreen_canvas.SetImage(
                                     teamLogos[awayTeamLogo],
                                     pos + offset,
