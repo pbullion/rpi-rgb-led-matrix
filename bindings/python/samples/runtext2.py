@@ -8585,7 +8585,7 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     middleFont,
                                     pos + offset,
-                                    31,
+                                    29,
                                     green,
                                     country['c_NOC'],
                                 )
