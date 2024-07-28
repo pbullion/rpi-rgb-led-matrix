@@ -8579,7 +8579,7 @@ class RunText(SampleBase):
                                 offscreen_canvas.SetImage(
                                     olympicCountries[country['c_NOCShort']],
                                     pos + offset,
-                                    3,
+                                    1,
                                 )
                                 countryName = graphics.DrawText(
                                     offscreen_canvas,
