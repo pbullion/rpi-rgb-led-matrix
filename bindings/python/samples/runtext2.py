@@ -8592,7 +8592,7 @@ class RunText(SampleBase):
                                 goldMedals = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + 25,
+                                    pos + offset + 30,
                                     16,
                                     gold,
                                     str(country['n_Gold']),
@@ -8600,7 +8600,7 @@ class RunText(SampleBase):
                                 goldMedalsBulletPoint = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + 25 + 10,
+                                    pos + offset + 30 + 10,
                                     16,
                                     white,
                                     '•',
