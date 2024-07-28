@@ -141,6 +141,11 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((20,15), Image.ANTIALIAS),
+            "HKG": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/HKG.png"
+            )
+            .convert("RGB")
+            .resize((20,15), Image.ANTIALIAS),
             "HUN": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/HUN.png"
             )
