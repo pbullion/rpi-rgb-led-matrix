@@ -30,162 +30,162 @@ class RunText(SampleBase):
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/AUS.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "BEL": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/BEL.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "CAN": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/CAN.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "CZE": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/CZE.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "EST": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/EST.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "FRA": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/FRA.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "GER": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/GER.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "ITA": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/ITA.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "KOR": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/KOR.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "NED": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/NED.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "NZL": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/NZL.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "ROC": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/ROC.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "SUI": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/SUI.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "SWE": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/SWE.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "USA": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/USA.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "AUT": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/AUT.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "BLR": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/BLR.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "FIJ": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/CHN.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "KAZ": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/KAZ.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "CHN": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/CHN.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "ESP": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/ESP.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "FIN": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/FIN.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "GBR": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/GBR.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "HKG": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/HKG.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "HUN": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/HUN.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "JPN": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/JPN.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "LAT": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/LAT.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "NOR": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/NOR.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "POL": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/POL.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "SLO": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/SLO.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "SVK": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/SVK.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "UKR": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/UKR.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
         }
         mmaLogos = {
             "UFC Logo": Image.open(
@@ -195,6 +195,131 @@ class RunText(SampleBase):
             .resize((45, 45), Image.ANTIALIAS),
             "0000000000": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/defaultperson2.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4969973": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4969973 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "5060467": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5060467 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4078246": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4078246 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "5125178": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5125178 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4348673": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4348673 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "5060398": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5060398 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4226626": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4226626 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4249193": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4249193 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "5145498": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5145498 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4330061": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4330061 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "5172124": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5172124 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "3948876": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3948876 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4227265": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4227265 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4411888": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4411888 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "5110006": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5110006 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4021217": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4021217 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4700617": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4700617 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "2560085": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/2560085 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "2960681": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/2960681 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "3155424": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3155424 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4189320": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4189320 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4012999": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4012999 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4421784": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4421784 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4294504": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4294504 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4569549": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4569549 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -498,11 +623,6 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "4421784": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4421784 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "3026011": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3026011 Background Removed.png"
             )
@@ -635,11 +755,6 @@ class RunText(SampleBase):
             .resize((45, 45), Image.ANTIALIAS),
             "3955820": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3955820 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "4684776": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4684776 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -868,11 +983,6 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "4012999": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4012999 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "3093653": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3093653 Background Removed.png"
             )
@@ -940,11 +1050,6 @@ class RunText(SampleBase):
             .resize((45, 45), Image.ANTIALIAS),
             "4891678": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4891678 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "4249193": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4249193 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1018,18 +1123,8 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "3155425": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3155425 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "3163637": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3163637 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "4189320": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4189320 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1068,11 +1163,6 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "4881999": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4881999 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "3028404": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3028404 Background Removed.png"
             )
@@ -1093,18 +1183,8 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "3156612": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3156612 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "4079314": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4079314 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "4684474": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4684474 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1148,11 +1228,6 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "4705658": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4705658 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "4916974": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4916974 Background Removed.png"
             )
@@ -1165,11 +1240,6 @@ class RunText(SampleBase):
             .resize((45, 45), Image.ANTIALIAS),
             "5032015": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5032015 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "5144068": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5144068 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1218,11 +1288,6 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "3088232": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3088232 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "4786358": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4786358 Background Removed.png"
             )
@@ -1238,11 +1303,6 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            # "5147389": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5147389 Background Removed.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
             "3089069": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3089069 Background Removed.png"
             )
@@ -1293,18 +1353,8 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "4697476": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4697476 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "4420893": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4420893 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "5060398": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5060398 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1343,11 +1393,6 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "4700617": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4700617 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "3821549": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3821549 Background Removed.png"
             )
@@ -1380,11 +1425,6 @@ class RunText(SampleBase):
             .resize((45, 45), Image.ANTIALIAS),
             "4422103": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4422103 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "5060467": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5060467 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1573,26 +1613,11 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "5060505": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5060505 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "5145496": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5145496 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "5157669": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5157669 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            # "4894780": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4894780 Background Removed.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
             "5093484": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5093484 Background Removed.png"
             )
@@ -1608,33 +1633,13 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            # "4402367": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4402367 Background Removed.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            "4686723": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4686723 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "2591306": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/2591306 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "4010864": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4010864 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "3571515": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3571515 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "3955577": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3955577 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1673,11 +1678,6 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "5144008": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5144008 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "4354318": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4354318 Background Removed.png"
             )
@@ -1695,11 +1695,6 @@ class RunText(SampleBase):
             .resize((45, 45), Image.ANTIALIAS),
             "4915907": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4915907 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "3032973": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3032973 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1735,11 +1730,6 @@ class RunText(SampleBase):
             .resize((45, 45), Image.ANTIALIAS),
             "4702589": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4702589 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "3955778": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3955778 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1793,16 +1783,6 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "4334306": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4334306 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "4875511": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4875511 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "4918083": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4918083 Background Removed.png"
             )
@@ -1820,11 +1800,6 @@ class RunText(SampleBase):
             .resize((45, 45), Image.ANTIALIAS),
             "4815998": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4815998 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "4875506": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4875506 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1848,11 +1823,6 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "4294926": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4294926 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "4396359": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4396359 Background Removed.png"
             )
@@ -1860,11 +1830,6 @@ class RunText(SampleBase):
             .resize((45, 45), Image.ANTIALIAS),
             "4276994": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4276994 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "4012999": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4012999 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -1913,16 +1878,6 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "3922557": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3922557 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "4873640": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4873640 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "3151289": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3151289 Background Removed.png"
             )
@@ -1943,28 +1898,8 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
-            "3022067": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3022067 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "3943695": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3943695 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "2506549": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/2506549 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
             "4895362": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4895362 Background Removed.png"
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
-            "3155424": Image.open(
-                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3155424 Background Removed.png"
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
@@ -3969,7 +3904,7 @@ class RunText(SampleBase):
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/golf_ball.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "10046": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pga/10046 Background Removed.png"
             )
@@ -5424,12 +5359,12 @@ class RunText(SampleBase):
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/mercedes-logo.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "Alpine": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/alpine-logo Background Removed.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "Haas F1 Team": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/haas-f1-team-logo Background Removed.png"
             )
@@ -5444,7 +5379,7 @@ class RunText(SampleBase):
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/mclaren-logo Background Removed.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
             "Aston Martin": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/aston-martin-logo Background Removed.png"
             )
@@ -5469,14 +5404,14 @@ class RunText(SampleBase):
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/f1/teams/williams-logo.png"
             )
             .convert("RGB")
-            .resize((20,15), Image.ANTIALIAS),
+            .resize((20, 15), Image.ANTIALIAS),
         }
         while True:
             green = graphics.Color(0, 255, 0)
             red = graphics.Color(255, 0, 0)
             blue = graphics.Color(0, 0, 255)
-            gold = graphics.Color(255,215,0)
-            silver = graphics.Color(192,192,192)
+            gold = graphics.Color(255, 215, 0)
+            silver = graphics.Color(192, 192, 192)
             bronze = graphics.Color(205, 127, 50)
             # teal = graphics.Color(0, 255, 255)
             orange = graphics.Color(255, 165, 0)
@@ -8577,7 +8512,7 @@ class RunText(SampleBase):
                         for country in arr:
                             if country != "olympicMedals":
                                 offscreen_canvas.SetImage(
-                                    olympicCountries[country['c_NOCShort']],
+                                    olympicCountries[country["c_NOCShort"]],
                                     pos + offset,
                                     1,
                                 )
@@ -8587,7 +8522,7 @@ class RunText(SampleBase):
                                     pos + offset,
                                     29,
                                     green,
-                                    country['c_NOC'],
+                                    country["c_NOC"],
                                 )
                                 goldMedals = graphics.DrawText(
                                     offscreen_canvas,
@@ -8595,7 +8530,7 @@ class RunText(SampleBase):
                                     pos + offset + 30,
                                     16,
                                     gold,
-                                    str(country['n_Gold']),
+                                    str(country["n_Gold"]),
                                 )
                                 goldMedalsBulletPoint = graphics.DrawText(
                                     offscreen_canvas,
@@ -8603,31 +8538,49 @@ class RunText(SampleBase):
                                     pos + offset + 30 + 10,
                                     16,
                                     white,
-                                    '•',
+                                    "•",
                                 )
                                 silverMedals = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + 20 + goldMedals + goldMedalsBulletPoint + 10,
+                                    pos
+                                    + offset
+                                    + 20
+                                    + goldMedals
+                                    + goldMedalsBulletPoint
+                                    + 10,
                                     16,
                                     silver,
-                                    str(country['n_Silver']),
+                                    str(country["n_Silver"]),
                                 )
                                 silverMedalsBulletPoint = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + 20 + goldMedals + goldMedalsBulletPoint + silverMedals + 10,
+                                    pos
+                                    + offset
+                                    + 20
+                                    + goldMedals
+                                    + goldMedalsBulletPoint
+                                    + silverMedals
+                                    + 10,
                                     16,
                                     white,
-                                    '•',
+                                    "•",
                                 )
                                 bronzeMedals = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + 20 + goldMedals + goldMedalsBulletPoint + silverMedals + silverMedalsBulletPoint + 10,
+                                    pos
+                                    + offset
+                                    + 20
+                                    + goldMedals
+                                    + goldMedalsBulletPoint
+                                    + silverMedals
+                                    + silverMedalsBulletPoint
+                                    + 10,
                                     16,
                                     bronze,
-                                    str(country['n_Bronze']),
+                                    str(country["n_Bronze"]),
                                 )
                             offset = offset + 100 + 60
                         time.sleep(0.018)

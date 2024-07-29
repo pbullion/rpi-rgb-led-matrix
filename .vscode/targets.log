@@ -6,9 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./lib
- 
 # GNU Make 3.81
 # Copyright (C) 2006  Free Software Foundation, Inc.
 # This is free software; see the source for copying conditions.
@@ -16,9 +14,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
 
-# Make data base, printed on Sat Jul 27 13:26:03 2024
+# Make data base, printed on Mon Jul 29 14:34:53 2024
 
 # Variables
 
@@ -30,7 +27,6 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # makefile (from `Makefile', line 167)
 INCDIR = ../include
- 
 # makefile (from `Makefile', line 37)
 HARDWARE_DESC = adafruit-hat
 # environment
@@ -132,7 +128,7 @@ USER = patrickbullion
 # makefile
 .DEFAULT_GOAL := all
 # environment
-TERM_SESSION_ID = w0t3p0:9DE316C6-A023-4CFF-AA86-0C732C16CC78
+TERM_SESSION_ID = w0t3p0:72E8263A-6876-4658-9FEC-4D85C684E443
 # environment
 LESS = -R
 # automatic
@@ -156,14 +152,13 @@ MAKEFLAGS = Rrqp
 # environment
 MFLAGS = -Rrqp
 # automatic
- 
 *D = $(patsubst %/,%,$(dir $*))
 # environment
 TERM_PROGRAM_VERSION = 3.5.3
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.253902103.253902109.1052900C-7F75-4F03-AF9B-23F0509AC061
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.253902103.253902109.383E7AF2-5B81-4CAA-8018-089189AABF90
 # environment
 LC_TERMINAL_VERSION = 3.5.3
 # environment
@@ -175,7 +170,7 @@ HOMEBREW_PREFIX = /opt/homebrew
 # environment
 TERMINFO_DIRS = /Applications/iTerm.app/Contents/Resources/terminfo:/usr/share/terminfo
 # environment
-ITERM_SESSION_ID = w0t3p0:9DE316C6-A023-4CFF-AA86-0C732C16CC78
+ITERM_SESSION_ID = w0t3p0:72E8263A-6876-4658-9FEC-4D85C684E443
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
@@ -266,6 +261,7 @@ FORCE:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
+ 
 #  File has been updated.
 #  Successfully updated.
 
@@ -405,7 +401,6 @@ thread.o: thread.cc ../include/thread.h
 framebuffer-internal.h:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 
 # Not a target:
@@ -478,13 +473,13 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sat Jul 27 13:26:03 2024
+# Finished Make data base on Mon Jul 29 14:34:53 2024
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Sat Jul 27 13:26:03 2024
+# Make data base, printed on Mon Jul 29 14:34:53 2024
 
 # Variables
 
@@ -494,7 +489,6 @@ make: *** [lib/librgbmatrix.a] Error 1
 ?F = $(notdir $?)
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
- 
 # environment
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # environment
@@ -584,7 +578,6 @@ MAKE = $(MAKE_COMMAND)
 # environment
 LC_TERMINAL = iTerm2
 # makefile (from `Makefile', line 6)
- 
 RGB_LIBRARY = $(RGB_LIBDIR)/lib$(RGB_LIBRARY_NAME).a
 # environment
 SHLVL = 3
@@ -597,7 +590,7 @@ USER = patrickbullion
 # default
 MAKECMDGOALS := all
 # environment
-TERM_SESSION_ID = w0t3p0:9DE316C6-A023-4CFF-AA86-0C732C16CC78
+TERM_SESSION_ID = w0t3p0:72E8263A-6876-4658-9FEC-4D85C684E443
 # environment
 LESS = -R
 # automatic
@@ -627,7 +620,7 @@ TERM_PROGRAM_VERSION = 3.5.3
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.253902103.253902109.1052900C-7F75-4F03-AF9B-23F0509AC061
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.253902103.253902109.383E7AF2-5B81-4CAA-8018-089189AABF90
 # environment
 LC_TERMINAL_VERSION = 3.5.3
 # environment
@@ -639,7 +632,7 @@ HOMEBREW_PREFIX = /opt/homebrew
 # environment
 TERMINFO_DIRS = /Applications/iTerm.app/Contents/Resources/terminfo:/usr/share/terminfo
 # environment
-ITERM_SESSION_ID = w0t3p0:9DE316C6-A023-4CFF-AA86-0C732C16CC78
+ITERM_SESSION_ID = w0t3p0:72E8263A-6876-4658-9FEC-4D85C684E443
 # environment
 HOMEBREW_REPOSITORY = /opt/homebrew
 # environment
@@ -667,6 +660,7 @@ SUFFIXES :=
 # environment
 MAKELEVEL := 0
 # environment
+ 
 LANG = C
 # environment
 TERM = xterm-256color
@@ -760,7 +754,6 @@ lib/librgbmatrix.a: FORCE
 # Load=8/32=25%, Rehash=0, Collisions=3/15=20%
 #  commands to execute (from `Makefile', line 15):
 	$(MAKE) -C $(RGB_LIBDIR)
- 
 	$(MAKE) -C examples-api-use
 	
 
@@ -810,6 +803,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sat Jul 27 13:26:03 2024
+# Finished Make data base on Mon Jul 29 14:34:53 2024
 
  
