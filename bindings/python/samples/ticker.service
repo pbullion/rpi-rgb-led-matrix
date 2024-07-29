@@ -5,7 +5,7 @@ After=multi-user.target
 [Service]
 Type=idle
 User=pi
-ExecStart=sudo -u pi /usr/bin/python3 /home/pi/rpi-rgb-led-matrix/bindings/python/samples/runtext2.py --led-gpio-mapping=adafruit-hat --led-slowdown-gpio=5 --led-chain=1 --led-rows=32 --led-cols=64 --led-rgb-sequence=BRG
+ExecStart=sudo -u pi /usr/bin/python3 /home/pi/rpi-rgb-led-matrix/bindings/python/samples/runtext2.py --led-gpio-mapping=adafruit-hat --led-slowdown-gpio=5 --led-chain=5 --led-rows=32 --led-cols=64 --led-rgb-sequence=BRG
 Restart=always
 RestartSec=60
 
