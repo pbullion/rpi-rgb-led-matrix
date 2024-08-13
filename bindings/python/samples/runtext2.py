@@ -3594,6 +3594,11 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
+            # "NewsImage": Image.open(
+            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/newsImage.png"
+            # )
+            # .convert("RGB")
+            # .resize((45, 45), Image.ANTIALIAS),
             "Manchester City": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/manchestercity Background Removed.png"
             )
@@ -8528,7 +8533,7 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     middleFont,
                                     pos + offset + 30,
-                                    16,
+                                    20,
                                     gold,
                                     str(country["n_Gold"]),
                                 )
@@ -8536,7 +8541,7 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     middleFont,
                                     pos + offset + 30 + 15,
-                                    16,
+                                    20,
                                     white,
                                     "•",
                                 )
@@ -8549,7 +8554,7 @@ class RunText(SampleBase):
                                     + goldMedals
                                     + goldMedalsBulletPoint
                                     + 15,
-                                    16,
+                                    20,
                                     silver,
                                     str(country["n_Silver"]),
                                 )
@@ -8563,7 +8568,7 @@ class RunText(SampleBase):
                                     + goldMedalsBulletPoint
                                     + silverMedals
                                     + 15,
-                                    16,
+                                    20,
                                     white,
                                     "•",
                                 )
@@ -8578,7 +8583,7 @@ class RunText(SampleBase):
                                     + silverMedals
                                     + silverMedalsBulletPoint
                                     + 15,
-                                    16,
+                                    20,
                                     bronze,
                                     str(country["n_Bronze"]),
                                 )
@@ -11543,6 +11548,21 @@ class RunText(SampleBase):
                             running = False
                             pos = offscreen_canvas.width
                         time.sleep(0.021)
+                    # elif isinstance(arr, list) and "espnGameNews" in arr[0]:
+                    #     for item in arr:
+                    #         offscreen_canvas.SetImage(
+                    #             teamLogos["NewsImage"],
+                    #             pos,
+                    #             -7,
+                    #         )
+                    #         headline = graphics.DrawText(
+                    #             offscreen_canvas, font, pos + 10, 26, white, item
+                    #         )
+                    #     pos -= 1
+                    #     if pos + length < 0:
+                    #         running = False
+                    #         pos = offscreen_canvas.width
+                    #     time.sleep(0.021)
                     elif arr == None:
                         running = False
                         pos = offscreen_canvas.width

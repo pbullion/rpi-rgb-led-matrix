@@ -6,6 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
 /Applications/Xcode.app/Contents/Developer/usr/bin/make -C ./lib
  
 # GNU Make 3.81
@@ -17,7 +18,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Fri Aug  9 00:29:27 2024
+# Make data base, printed on Sun Aug 11 14:28:30 2024
 
 # Variables
 
@@ -59,7 +60,6 @@ MAKEFILE_LIST :=  Makefile
 CXXFLAGS = $(CFLAGS) -fno-exceptions -std=c++11
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
- 
 # environment
 INFOPATH = /opt/homebrew/share/info:
 # environment
@@ -94,7 +94,6 @@ MANPATH = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/D
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /Users/patrickbullion
- 
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
@@ -162,7 +161,7 @@ TERM_PROGRAM_VERSION = 3.5.3
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.257300014.257300020.50530B8E-130A-4B3B-A2D4-49BC401AA0B9
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.257300014.257300020.4A9FA13A-8795-4044-8494-E145696305AB
 # environment
 LC_TERMINAL_VERSION = 3.5.3
 # environment
@@ -208,7 +207,6 @@ TERM = xterm-256color
 # environment
 VSCODE_PID = 80781
 # variable set hash-table stats:
- 
 # Load=92/1024=9%, Rehash=0, Collisions=2/143=1%
 
 # Pattern-specific Variable Values
@@ -217,7 +215,6 @@ VSCODE_PID = 80781
 
 # Directories
 
- 
 # . (device 16777232, inode 10097197): 22 files, no impossibilities.
 
 # 22 files, no impossibilities in 1 directories.
@@ -284,6 +281,7 @@ gpio.o: gpio.cc compiler-flags
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/14=0%
 #  commands to execute (from `Makefile', line 185):
+ 
 	$(CXX) -I$(INCDIR) $(CXXFLAGS) -c -o $@ $<
 	
 
@@ -343,7 +341,6 @@ bdf-font.o:
 #  Modification time never checked.
 #  File has not been updated.
 
- 
 graphics.o: graphics.cc utf8-internal.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -371,7 +368,6 @@ led-matrix.cc:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
 # Not a target:
 utf8-internal.h:
@@ -435,7 +431,6 @@ compiler-flags: FORCE
 #  Needs to be updated (-q is set).
 # automatic
 # @ := compiler-flags
- 
 # automatic
 # % := 
 # automatic
@@ -446,7 +441,6 @@ compiler-flags: FORCE
 # | := 
 # automatic
 # < := FORCE
- 
 # automatic
 # ^ := FORCE
 # automatic
@@ -482,17 +476,16 @@ options-initialize.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Aug  9 00:29:27 2024
+# Finished Make data base on Sun Aug 11 14:28:30 2024
 
  
 make: *** [lib/librgbmatrix.a] Error 1
 
 
-# Make data base, printed on Fri Aug  9 00:29:27 2024
+# Make data base, printed on Sun Aug 11 14:28:30 2024
 
 # Variables
 
- 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
@@ -524,11 +517,13 @@ MAKEFILE_LIST :=  Makefile
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
+ 
 INFOPATH = /opt/homebrew/share/info:
 # makefile (from `Makefile', line 4)
 RGB_LIBDIR = ./lib
 # environment
 VSCODE_CWD = /Users/patrickbullion/Code/led/rpi-rgb-led-matrix
+ 
 # environment
 PATH = /Users/patrickbullion/.nvm/versions/node/v16.13.1/bin:/Users/patrickbullion/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:~/.dotnet/tools:/Applications/iTerm.app/Contents/Resources/utilities
 # environment
@@ -563,7 +558,6 @@ HOME = /Users/patrickbullion
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
 VSCODE_CLI = 1
- 
 # environment
 VSCODE_CODE_CACHE_PATH = /Users/patrickbullion/Library/Application Support/Code/CachedData/b1c0a14de1414fcdaa400695b4db1c0799bc3124
 # environment
@@ -616,6 +610,7 @@ TERM_PROGRAM = iTerm.app
 TMPDIR = /var/folders/w9/1zr47vg90ss5sbzpm40bn78r0000gn/T/
 # automatic
 *F = $(notdir $*)
+ 
 # environment
 VSCODE_IPC_HOOK = /Users/patrickbullion/Library/Application Support/Code/1.92-main.sock
 # environment
@@ -631,7 +626,7 @@ TERM_PROGRAM_VERSION = 3.5.3
 # environment
 NVM_DIR = /Users/patrickbullion/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.257300014.257300020.50530B8E-130A-4B3B-A2D4-49BC401AA0B9
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.257300014.257300020.4A9FA13A-8795-4044-8494-E145696305AB
 # environment
 LC_TERMINAL_VERSION = 3.5.3
 # environment
@@ -755,6 +750,7 @@ lib/librgbmatrix.a: FORCE
 # automatic
 # | := 
 # automatic
+ 
 # < := FORCE
 # automatic
 # ^ := FORCE
@@ -813,6 +809,6 @@ build-csharp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Aug  9 00:29:27 2024
+# Finished Make data base on Sun Aug 11 14:28:30 2024
 
  
