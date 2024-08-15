@@ -8532,16 +8532,16 @@ class RunText(SampleBase):
                                 goldMedals = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + 30,
-                                    20,
+                                    pos + offset + 35,
+                                    16,
                                     gold,
                                     str(country["n_Gold"]),
                                 )
                                 goldMedalsBulletPoint = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + 30 + 15,
-                                    20,
+                                    pos + offset + 35 + 15,
+                                    16,
                                     white,
                                     "•",
                                 )
@@ -8550,11 +8550,11 @@ class RunText(SampleBase):
                                     middleFont,
                                     pos
                                     + offset
-                                    + 25
+                                    + 30
                                     + goldMedals
                                     + goldMedalsBulletPoint
                                     + 15,
-                                    20,
+                                    16,
                                     silver,
                                     str(country["n_Silver"]),
                                 )
@@ -8563,12 +8563,12 @@ class RunText(SampleBase):
                                     middleFont,
                                     pos
                                     + offset
-                                    + 25
+                                    + 30
                                     + goldMedals
                                     + goldMedalsBulletPoint
                                     + silverMedals
                                     + 15,
-                                    20,
+                                    16,
                                     white,
                                     "•",
                                 )
@@ -8577,13 +8577,13 @@ class RunText(SampleBase):
                                     middleFont,
                                     pos
                                     + offset
-                                    + 25
+                                    + 30
                                     + goldMedals
                                     + goldMedalsBulletPoint
                                     + silverMedals
                                     + silverMedalsBulletPoint
                                     + 15,
-                                    20,
+                                    16,
                                     bronze,
                                     str(country["n_Bronze"]),
                                 )
