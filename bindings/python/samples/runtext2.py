@@ -8550,7 +8550,7 @@ class RunText(SampleBase):
                                     middleFont,
                                     pos
                                     + offset
-                                    + 30
+                                    + 25
                                     + goldMedals
                                     + goldMedalsBulletPoint
                                     + 15,
@@ -8563,7 +8563,7 @@ class RunText(SampleBase):
                                     middleFont,
                                     pos
                                     + offset
-                                    + 30
+                                    + 25
                                     + goldMedals
                                     + goldMedalsBulletPoint
                                     + silverMedals
@@ -8577,7 +8577,7 @@ class RunText(SampleBase):
                                     middleFont,
                                     pos
                                     + offset
-                                    + 30
+                                    + 25
                                     + goldMedals
                                     + goldMedalsBulletPoint
                                     + silverMedals
