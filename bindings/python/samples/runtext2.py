@@ -8540,7 +8540,7 @@ class RunText(SampleBase):
                                 goldMedalsBulletPoint = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + 35 + 15,
+                                    pos + offset + 35 + 20,
                                     16,
                                     white,
                                     "•",
