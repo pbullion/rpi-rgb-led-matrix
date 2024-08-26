@@ -6661,7 +6661,7 @@ class RunText(SampleBase):
                                     + 5
                                     + teamLogosNFL[game[30]].width,
                                     14,
-                                    green,
+                                    white,
                                     dayString.split(",")[0].upper(),
                                 )
                                 versus = graphics.DrawText(
@@ -6669,7 +6669,7 @@ class RunText(SampleBase):
                                     middleFont,
                                     pos + offset + buffer + teamLogosNFL[game[30]].width,
                                     26,
-                                    green,
+                                    white,
                                     statusString,
                                 )
                                 offscreen_canvas.SetImage(
@@ -6694,7 +6694,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer,
                                     12,
-                                    yellow,
+                                    white,
                                     awayTeamString,
                                 )
                                 homeTeam = graphics.DrawText(
@@ -6709,7 +6709,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer,
                                     26,
-                                    yellow,
+                                    white,
                                     homeTeamString,
                                 )
                                 if homeTeam > awayTeam:
