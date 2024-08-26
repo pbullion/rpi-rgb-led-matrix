@@ -25,6 +25,40 @@ class RunText(SampleBase):
 
     def run(self):
         userJSON = json.load(userFile)
+        teamLogosNFL = {
+    "22": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/22.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "1": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/1.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "33": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/33.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "2": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/2.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "29": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/29.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "3": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/3.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "4": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/4.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "5": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/5.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "6": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/6.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "7": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/7.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "8": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/8.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "9": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/9.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "34": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/34.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "11": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/11.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "30": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/30.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "12": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/12.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "13": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/13.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "24": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/24.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "14": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/14.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "15": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/15.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "16": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/16.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "17": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/17.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "18": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/18.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "19": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/19.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "20": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/20.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "21": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/21.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "23": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/23.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "25": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/25.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "26": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/26.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "27": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/27.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "10": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/10.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "28": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/28.png").convert("RGB").resize((45, 45), Image.ANTIALIAS)
+}
         olympicCountries = {
             "AUS": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/AUS.png"
@@ -3108,14 +3142,14 @@ class RunText(SampleBase):
             # )
             # .convert("RGB")
             # .resize((45,45), Image.ANTIALIAS),
-            "Kansas City Chiefs": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-kansas-city-chiefs-team-logo-2.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
+            # "Kansas City Chiefs": Image.open(
+            #     requests.get(
+            #         "https://loodibee.com/wp-content/uploads/nfl-kansas-city-chiefs-team-logo-2.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((45, 45), Image.ANTIALIAS),
             # "New England Patriots": Image.open(
             #     requests.get(
             #         "https://loodibee.com/wp-content/uploads/nfl-new-england-patriots-team-logo-2.png",
@@ -3164,14 +3198,14 @@ class RunText(SampleBase):
             # )
             # .convert("RGB")
             # .resize((45,45), Image.ANTIALIAS),
-            "San Francisco 49ers": Image.open(
-                requests.get(
-                    "https://loodibee.com/wp-content/uploads/nfl-san-francisco-49ers-team-logo-2.png",
-                    stream=True,
-                ).raw
-            )
-            .convert("RGB")
-            .resize((45, 45), Image.ANTIALIAS),
+            # "San Francisco 49ers": Image.open(
+            #     requests.get(
+            #         "https://loodibee.com/wp-content/uploads/nfl-san-francisco-49ers-team-logo-2.png",
+            #         stream=True,
+            #     ).raw
+            # )
+            # .convert("RGB")
+            # .resize((45, 45), Image.ANTIALIAS),
             # "Seattle Seahawks": Image.open(
             #     requests.get(
             #         "https://loodibee.com/wp-content/uploads/nfl-seattle-seahawks-team-logo-2.png",
@@ -6616,7 +6650,7 @@ class RunText(SampleBase):
                                     awayBetsColor = red
                                     homeBetsColor = green
                                 offscreen_canvas.SetImage(
-                                    teamLogosMLB[awayTeamID], pos + offset, -5
+                                    teamLogosNFL[game[30]], pos + offset, -5
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -6625,7 +6659,7 @@ class RunText(SampleBase):
                                     + offset
                                     + buffer
                                     + 5
-                                    + teamLogos[game[5]].width,
+                                    + teamLogosNFL[game[30]].width,
                                     14,
                                     green,
                                     dayString.split(",")[0].upper(),
@@ -6633,16 +6667,16 @@ class RunText(SampleBase):
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + buffer + teamLogos[game[5]].width,
+                                    pos + offset + buffer + teamLogosNFL[game[30]].width,
                                     26,
                                     green,
                                     statusString,
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos[game[10]],
+                                    teamLogosNFL[game[31]],
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosNFL[game[30]].width
                                     + buffer
                                     + buffer
                                     + versus,
@@ -6653,9 +6687,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosNFL[game[30]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosNFL[game[31]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -6668,9 +6702,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosNFL[game[30]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosNFL[game[31]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -6687,9 +6721,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosNFL[game[30]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosNFL[game[31]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -6705,9 +6739,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosNFL[game[30]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosNFL[game[31]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -6723,9 +6757,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosNFL[game[30]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosNFL[game[31]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -6746,9 +6780,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosNFL[game[30]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosNFL[game[31]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -6769,9 +6803,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosNFL[game[30]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosNFL[game[31]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -6797,9 +6831,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosNFL[game[30]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosNFL[game[31]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -6859,21 +6893,21 @@ class RunText(SampleBase):
                                     homeColor = red
                                     awayColor = green
                                 offscreen_canvas.SetImage(
-                                    teamLogos[game[5]], pos + offset, -5
+                                    teamLogosNFL[game[30]], pos + offset, -5
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + buffer + teamLogos[game[5]].width,
+                                    pos + offset + buffer + teamLogosNFL[game[30]].width,
                                     24,
                                     white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos[game[10]],
+                                    teamLogosNFL[game[31]],
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosNFL[game[30]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -6886,9 +6920,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosNFL[game[30]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosNFL[game[31]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -6901,9 +6935,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosNFL[game[30]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosNFL[game[31]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -6916,17 +6950,17 @@ class RunText(SampleBase):
                                     scoreLocation = (
                                         homeTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
+                                        + teamLogosNFL[game[30]].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogosNFL[game[31]].width
                                     )
                                 else:
                                     scoreLocation = (
                                         awayTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
+                                        + teamLogosNFL[game[30]].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogosNFL[game[31]].width
                                     )
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
@@ -7249,21 +7283,21 @@ class RunText(SampleBase):
                                     homeColor = red
                                     awayColor = green
                                 offscreen_canvas.SetImage(
-                                    teamLogos[game[5]], pos + offset, -5
+                                    teamLogosNFL[game[30]], pos + offset, -5
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + buffer + teamLogos[game[5]].width,
+                                    pos + offset + buffer + teamLogosNFL[game[30]].width,
                                     24,
                                     white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogos[game[10]],
+                                    teamLogosNFL[game[31]],
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosNFL[game[30]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -7276,9 +7310,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosNFL[game[30]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosNFL[game[31]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -7291,9 +7325,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogos[game[5]].width
+                                    + teamLogosNFL[game[30]].width
                                     + versus
-                                    + teamLogos[game[10]].width
+                                    + teamLogosNFL[game[31]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -7306,17 +7340,17 @@ class RunText(SampleBase):
                                     scoreLocation = (
                                         homeTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
+                                        + teamLogosNFL[game[30]].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogosNFL[game[31]].width
                                     )
                                 else:
                                     scoreLocation = (
                                         awayTeam
                                         + buffer
-                                        + teamLogos[game[5]].width
+                                        + teamLogosNFL[game[30]].width
                                         + versus
-                                        + teamLogos[game[10]].width
+                                        + teamLogosNFL[game[31]].width
                                     )
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
