@@ -26,39 +26,167 @@ class RunText(SampleBase):
     def run(self):
         userJSON = json.load(userFile)
         teamLogosNFL = {
-    "22": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/22 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "1": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/1.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "33": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/33 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "2": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/2 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "29": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/29 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "3": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/3 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "4": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/4 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "5": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/5 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "6": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/6 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "7": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/7 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "8": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/8 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "9": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/9.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "34": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/34 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "11": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/11 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "30": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/30 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "12": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/12 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "13": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/13.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "24": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/24.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "14": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/14 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "15": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/15 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "16": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/16 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "17": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/17 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "18": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/18 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "19": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/19 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "20": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/20.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "21": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/21 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "23": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/23 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "25": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/25 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "26": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/26 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "27": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/27 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "10": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/10 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
-    "28": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/28 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS)
-}
+            "22": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/22 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "1": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/1.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "33": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/33 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "2": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/2 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "29": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/29 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "3": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/3 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "4": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/4 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "5": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/5 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "6": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/6 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "7": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/7 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "8": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/8 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "9": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/9.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "34": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/34 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "11": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/11 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "30": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/30 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "12": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/12 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "13": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/13.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "24": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/24.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "14": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/14 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "15": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/15 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "16": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/16 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "17": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/17 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "18": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/18 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "19": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/19 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "20": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/20.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "21": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/21 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "23": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/23 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "25": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/25 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "26": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/26 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "27": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/27 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "10": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/10 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "28": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nfl/28 Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+        }
         olympicCountries = {
             "AUS": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/olympics/countries/AUS.png"
@@ -7492,7 +7620,10 @@ class RunText(SampleBase):
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + buffer + teamLogosNFL[game[30]].width,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogosNFL[game[30]].width,
                                     26,
                                     white,
                                     statusString,
@@ -7723,7 +7854,10 @@ class RunText(SampleBase):
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + buffer + teamLogosNFL[game[30]].width,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogosNFL[game[30]].width,
                                     24,
                                     white,
                                     "vs",
@@ -8113,7 +8247,10 @@ class RunText(SampleBase):
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + buffer + teamLogosNFL[game[30]].width,
+                                    pos
+                                    + offset
+                                    + buffer
+                                    + teamLogosNFL[game[30]].width,
                                     24,
                                     white,
                                     "vs",
@@ -10262,6 +10399,8 @@ class RunText(SampleBase):
                             awayTeamStatus = 0
                             homeTeamStatus = 0
                             newBuffer = 120
+                            awayTeamID = game[30]
+                            homeTeamID = game[31]
                             if "pregame" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -10273,6 +10412,14 @@ class RunText(SampleBase):
                                 if "MLS" == arr[0][1]:
                                     awayTeamLogo = game[30]
                                     homeTeamLogo = game[31]
+                                try:
+                                    value = teamLogos[awayTeamLogo]
+                                except KeyError:
+                                    awayTeamLogo = "English Premier League Logo"
+                                try:
+                                    value = teamLogos[homeTeamLogo]
+                                except KeyError:
+                                    homeTeamLogo = "English Premier League Logo"
                                 statusString = game[11]
                                 oddsString = game[14]
                                 awayOddsString = game[15]
@@ -10458,6 +10605,14 @@ class RunText(SampleBase):
                                 if "MLS" == arr[0][1]:
                                     awayTeamLogo = game[30]
                                     homeTeamLogo = game[31]
+                                try:
+                                    value = teamLogos[awayTeamLogo]
+                                except KeyError:
+                                    awayTeamLogo = "English Premier League Logo"
+                                try:
+                                    value = teamLogos[homeTeamLogo]
+                                except KeyError:
+                                    homeTeamLogo = "English Premier League Logo"
                                 awayTeamStatusString = game[12]
                                 homeTeamStatusString = game[13]
                                 situationString = game[15]
@@ -10493,7 +10648,6 @@ class RunText(SampleBase):
                                 else:
                                     homeColor = red
                                     awayColor = green
-
                                 offscreen_canvas.SetImage(
                                     teamLogos[awayTeamLogo],
                                     pos + offset,
@@ -10779,6 +10933,14 @@ class RunText(SampleBase):
                                 if "MLS" == arr[0][1]:
                                     awayTeamLogo = game[30]
                                     homeTeamLogo = game[31]
+                                try:
+                                    value = teamLogos[awayTeamLogo]
+                                except KeyError:
+                                    awayTeamLogo = "English Premier League Logo"
+                                try:
+                                    value = teamLogos[homeTeamLogo]
+                                except KeyError:
+                                    homeTeamLogo = "English Premier League Logo"
                                 awayTeamStatusString = game[12]
                                 homeTeamStatusString = game[13]
                                 statusString = game[11]
