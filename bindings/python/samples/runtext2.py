@@ -9590,8 +9590,8 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "ncaa football rankings" in arr[0]:
                         for team in arr:
-                            teamName =0
-                            teamNameTop  =0
+                            teamName = 0
+                            teamNameTop = 0
                             if team != "ncaa football rankings":
                                 teamName = graphics.DrawText(
                                     offscreen_canvas,
@@ -9617,10 +9617,7 @@ class RunText(SampleBase):
                                 teamNameTop = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos
-                                    + offset
-                                    + teamName + buffer + buffer
-                                    + 50,
+                                    pos + offset + teamName + buffer + buffer + 50,
                                     12,
                                     white,
                                     team[2],
@@ -9628,10 +9625,7 @@ class RunText(SampleBase):
                                 teamNameBottom = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos
-                                    + offset
-                                    + teamName + buffer + buffer
-                                    + 50,
+                                    pos + offset + teamName + buffer + buffer + 50,
                                     28,
                                     white,
                                     team[3],
@@ -9639,7 +9633,7 @@ class RunText(SampleBase):
                             if teamNameTop > teamNameBottom:
                                 offset = offset + teamName + 60 + teamNameTop + 80
                             else:
-                                offset = offset + teamName + 60 + teamNameBottom + 80                               
+                                offset = offset + teamName + 60 + teamNameBottom + 80
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
