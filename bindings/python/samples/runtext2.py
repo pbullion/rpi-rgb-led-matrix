@@ -9592,6 +9592,7 @@ class RunText(SampleBase):
                         for team in arr:
                             teamName = 0
                             teamNameTop = 0
+                            teamNameBottom = 0
                             if team != "ncaa football rankings":
                                 teamName = graphics.DrawText(
                                     offscreen_canvas,
