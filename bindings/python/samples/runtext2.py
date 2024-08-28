@@ -9590,6 +9590,8 @@ class RunText(SampleBase):
                             pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "ncaa football rankings" in arr[0]:
                         for team in arr:
+                            teamName =0
+                            teamNameTop  =0
                             if team != "ncaa football rankings":
                                 teamName = graphics.DrawText(
                                     offscreen_canvas,
