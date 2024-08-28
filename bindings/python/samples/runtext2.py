@@ -9618,7 +9618,13 @@ class RunText(SampleBase):
                                 teamNameTop = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + teamName + buffer + buffer + 50,
+                                    pos
+                                    + offset
+                                    + teamName
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + 50,
                                     12,
                                     white,
                                     team[2],
@@ -9626,7 +9632,13 @@ class RunText(SampleBase):
                                 teamNameBottom = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
-                                    pos + offset + teamName + buffer + buffer + 50,
+                                    pos
+                                    + offset
+                                    + teamName
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + 50,
                                     28,
                                     white,
                                     team[3],
