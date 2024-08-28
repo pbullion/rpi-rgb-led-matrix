@@ -9588,6 +9588,57 @@ class RunText(SampleBase):
                         if pos + offset < 0:
                             running = False
                             pos = offscreen_canvas.width
+                    elif isinstance(arr, list) and "ncaa football rankings" in arr[0]:
+                        for team in arr:
+                            if team != "ncaa football rankings":
+                                teamName = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos + offset,
+                                    8,
+                                    green,
+                                    team[0],
+                                )
+                                goldMedals = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset,
+                                    18,
+                                    green,
+                                    team[1],
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogosNCAA[team[4]],
+                                    pos + offset + teamName + buffer + buffer,
+                                    1,
+                                )
+                                teamNameTop = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos
+                                    + offset
+                                    + teamName + buffer + buffer
+                                    + 15,
+                                    8,
+                                    white,
+                                    team[2],
+                                )
+                                teamNameBottom = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos
+                                    + offset
+                                    + teamName + buffer + buffer
+                                    + 15,
+                                    18,
+                                    white,
+                                    team[3],
+                                )
+                            offset = offset + teamName + 60 + teamNameTop + 20
+                        time.sleep(0.018)
+                        if pos + offset < 0:
+                            running = False
+                            pos = offscreen_canvas.width
                     elif isinstance(arr, list) and "golf" in arr[0][0]:
                         for game in arr:
                             homeTeamStatus = 0
