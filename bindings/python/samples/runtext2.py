@@ -9597,7 +9597,7 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     middleFont,
                                     pos + offset,
-                                    8,
+                                    16,
                                     green,
                                     team[0],
                                 )
@@ -9605,14 +9605,14 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     smallFont,
                                     pos + offset,
-                                    18,
+                                    26,
                                     green,
                                     team[1],
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogosNCAA[team[4]],
                                     pos + offset + teamName + buffer + buffer,
-                                    1,
+                                    -10,
                                 )
                                 teamNameTop = graphics.DrawText(
                                     offscreen_canvas,
@@ -9620,8 +9620,8 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + teamName + buffer + buffer
-                                    + 15,
-                                    8,
+                                    + 50,
+                                    16,
                                     white,
                                     team[2],
                                 )
@@ -9631,8 +9631,8 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + teamName + buffer + buffer
-                                    + 15,
-                                    18,
+                                    + 50,
+                                    26,
                                     white,
                                     team[3],
                                 )
