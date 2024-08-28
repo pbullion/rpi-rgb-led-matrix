@@ -9597,7 +9597,7 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     middleFont,
                                     pos + offset,
-                                    16,
+                                    12,
                                     green,
                                     team[0],
                                 )
@@ -9605,7 +9605,7 @@ class RunText(SampleBase):
                                     offscreen_canvas,
                                     smallFont,
                                     pos + offset,
-                                    26,
+                                    28,
                                     green,
                                     team[1],
                                 )
@@ -9621,7 +9621,7 @@ class RunText(SampleBase):
                                     + offset
                                     + teamName + buffer + buffer
                                     + 50,
-                                    16,
+                                    12,
                                     white,
                                     team[2],
                                 )
@@ -9632,11 +9632,11 @@ class RunText(SampleBase):
                                     + offset
                                     + teamName + buffer + buffer
                                     + 50,
-                                    26,
+                                    28,
                                     white,
                                     team[3],
                                 )
-                            offset = offset + teamName + 60 + teamNameTop + 20
+                            offset = offset + teamName + 60 + teamNameTop + 80
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
