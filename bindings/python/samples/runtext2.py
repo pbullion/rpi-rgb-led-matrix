@@ -9612,7 +9612,7 @@ class RunText(SampleBase):
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogosNCAA[team[4]],
-                                    pos + offset + teamName + buffer + buffer,
+                                    pos + offset + teamName + buffer + buffer+ buffer + buffer,
                                     -8,
                                 )
                                 teamNameTop = graphics.DrawText(
@@ -9623,9 +9623,9 @@ class RunText(SampleBase):
                                     + teamName
                                     + buffer
                                     + buffer
-                                    + buffer
+                                    + buffer+ buffer + buffer
                                     + 50,
-                                    12,
+                                    13,
                                     white,
                                     team[2],
                                 )
@@ -9637,7 +9637,7 @@ class RunText(SampleBase):
                                     + teamName
                                     + buffer
                                     + buffer
-                                    + buffer
+                                    + buffer+ buffer + buffer
                                     + 50,
                                     28,
                                     white,
