@@ -9636,8 +9636,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + goldMedals
-                                    + 50,
+                                    + goldMedals,
                                     13,
                                     white,
                                     team[2],
@@ -9655,8 +9654,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + goldMedals
-                                    + 50,
+                                    + goldMedals,
                                     28,
                                     white,
                                     team[3],
