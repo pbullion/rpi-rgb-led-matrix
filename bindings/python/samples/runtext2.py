@@ -9621,6 +9621,7 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
+                                    + buffer
                                     + goldMedals,
                                     -8,
                                 )
@@ -9630,6 +9631,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + teamName
+                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
@@ -9648,6 +9650,7 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + teamName
+                                    + buffer
                                     + buffer
                                     + buffer
                                     + buffer
