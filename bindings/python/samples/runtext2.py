@@ -9619,8 +9619,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
-                                    + buffer
                                     + goldMedals,
                                     -8,
                                 )
@@ -9663,9 +9661,13 @@ class RunText(SampleBase):
                                     team[3],
                                 )
                             if teamNameTop > teamNameBottom:
-                                offset = offset + teamName + 60 + teamNameTop + 60
+                                offset = (
+                                    offset + teamName + 60 + teamNameTop + goldMedals
+                                )
                             else:
-                                offset = offset + teamName + 60 + teamNameBottom + 60
+                                offset = (
+                                    offset + teamName + goldMedals + teamNameBottom + 60
+                                )
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
