@@ -9620,7 +9620,8 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer,
+                                    + buffer
+                                    + goldMedals,
                                     -8,
                                 )
                                 teamNameTop = graphics.DrawText(
