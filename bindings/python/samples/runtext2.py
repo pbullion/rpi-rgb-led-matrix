@@ -9621,7 +9621,6 @@ class RunText(SampleBase):
                                     + buffer
                                     + buffer
                                     + buffer
-                                    + buffer
                                     + goldMedals,
                                     -8,
                                 )
