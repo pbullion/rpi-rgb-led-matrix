@@ -9618,8 +9618,6 @@ class RunText(SampleBase):
                                     + teamName
                                     + buffer
                                     + buffer
-                                    + buffer
-                                    + buffer
                                     + goldMedals,
                                     -8,
                                 )
@@ -9663,7 +9661,12 @@ class RunText(SampleBase):
                                 )
                             if teamNameTop > teamNameBottom:
                                 offset = (
-                                    offset + teamName + 60 + teamNameTop + goldMedals
+                                    offset
+                                    + teamName
+                                    + 60
+                                    + teamNameTop
+                                    + goldMedals
+                                    + 60
                                 )
                             else:
                                 offset = (
