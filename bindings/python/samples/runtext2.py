@@ -9613,7 +9613,7 @@ class RunText(SampleBase):
                                 )
                                 offscreen_canvas.SetImage(
                                     teamLogosNCAA[team[4]],
-                                    pos + offset + teamName + buffer + goldMedals,
+                                    pos + offset + teamName + goldMedals,
                                     -8,
                                 )
                                 teamNameTop = graphics.DrawText(
@@ -9656,11 +9656,11 @@ class RunText(SampleBase):
                                 )
                             if teamNameTop > teamNameBottom:
                                 offset = (
-                                    offset + teamName + 60 + teamNameTop + goldMedals
+                                    offset + teamName + 70 + teamNameTop + goldMedals
                                 )
                             else:
                                 offset = (
-                                    offset + teamName + goldMedals + teamNameBottom + 60
+                                    offset + teamName + goldMedals + teamNameBottom + 70
                                 )
                         time.sleep(0.018)
                         if pos + offset < 0:
