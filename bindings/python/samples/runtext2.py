@@ -9608,7 +9608,7 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos + offset,
                                     28,
-                                    green,
+                                    yellow,
                                     team[1],
                                 )
                                 offscreen_canvas.SetImage(
