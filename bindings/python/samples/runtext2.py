@@ -3934,7 +3934,7 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 40), Image.ANTIALIAS),
             # "New York Yankees": Image.open(
             #     requests.get(
             #         "https://loodibee.com/wp-content/uploads/mlb-new-york-yankees- Background Removed.png",
@@ -7567,7 +7567,7 @@ class RunText(SampleBase):
                             if "pregame" in game[0]:
                                 offset = offset + 190
                             if "inProgress" in game[0]:
-                                offset = offset + 190
+                                offset = offset + 165
                         time.sleep(0.015)
                         if pos + offset < 0:
                             running = False
@@ -8214,7 +8214,7 @@ class RunText(SampleBase):
                                     overUnderString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 190
+                                offset = offset + 165
                             if "inProgress" in game[0]:
                                 offset = offset + 190
                             if "final" in game[0]:
