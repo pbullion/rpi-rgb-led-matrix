@@ -8214,7 +8214,7 @@ class RunText(SampleBase):
                                     overUnderString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 165
+                                offset = offset + 155
                             if "inProgress" in game[0]:
                                 offset = offset + 190
                             if "final" in game[0]:
