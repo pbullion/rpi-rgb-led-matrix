@@ -3934,7 +3934,7 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .resize((55, 40), Image.ANTIALIAS),
+            .resize((50, 40), Image.ANTIALIAS),
             # "New York Yankees": Image.open(
             #     requests.get(
             #         "https://loodibee.com/wp-content/uploads/mlb-new-york-yankees- Background Removed.png",
@@ -7567,7 +7567,7 @@ class RunText(SampleBase):
                             if "pregame" in game[0]:
                                 offset = offset + 190
                             if "inProgress" in game[0]:
-                                offset = offset + 190
+                                offset = offset + 165
                         time.sleep(0.015)
                         if pos + offset < 0:
                             running = False
@@ -8214,7 +8214,7 @@ class RunText(SampleBase):
                                     overUnderString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 190
+                                offset = offset + 155
                             if "inProgress" in game[0]:
                                 offset = offset + 190
                             if "final" in game[0]:
@@ -9053,9 +9053,9 @@ class RunText(SampleBase):
                                     homeSpreadString,
                                 )
                             if "pregame" in game[0]:
-                                offset = offset + 115 + 50
+                                offset = offset + 115 + 30
                             if "inProgress" in game[0]:
-                                offset = offset + 180 + 50
+                                offset = offset + 180 + 30
                             if "final" in game[0]:
                                 awayTeamString = game[5]
                                 homeTeamString = game[10]
@@ -9584,6 +9584,84 @@ class RunText(SampleBase):
                                     str(country["n_Bronze"]),
                                 )
                             offset = offset + 100 + 60
+                        time.sleep(0.018)
+                        if pos + offset < 0:
+                            running = False
+                            pos = offscreen_canvas.width
+                    elif isinstance(arr, list) and "ncaa football rankings" in arr[0]:
+                        for team in arr:
+                            teamName = 0
+                            teamNameTop = 0
+                            teamNameBottom = 0
+                            goldMedals = 0
+                            if team != "ncaa football rankings":
+                                teamName = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos + offset,
+                                    12,
+                                    green,
+                                    team[0],
+                                )
+                                goldMedals = graphics.DrawText(
+                                    offscreen_canvas,
+                                    smallFont,
+                                    pos + offset,
+                                    28,
+                                    yellow,
+                                    team[1],
+                                )
+                                offscreen_canvas.SetImage(
+                                    teamLogosNCAA[team[4]],
+                                    pos + offset + teamName + goldMedals,
+                                    -8,
+                                )
+                                teamNameTop = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos
+                                    + offset
+                                    + teamName
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + goldMedals,
+                                    13,
+                                    white,
+                                    team[2],
+                                )
+                                teamNameBottom = graphics.DrawText(
+                                    offscreen_canvas,
+                                    middleFont,
+                                    pos
+                                    + offset
+                                    + teamName
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + buffer
+                                    + goldMedals,
+                                    28,
+                                    white,
+                                    team[3],
+                                )
+                            if teamNameTop > teamNameBottom:
+                                offset = (
+                                    offset + teamName + 70 + teamNameTop + goldMedals
+                                )
+                            else:
+                                offset = (
+                                    offset + teamName + goldMedals + teamNameBottom + 70
+                                )
                         time.sleep(0.018)
                         if pos + offset < 0:
                             running = False
