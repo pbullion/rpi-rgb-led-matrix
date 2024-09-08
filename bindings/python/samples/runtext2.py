@@ -7849,7 +7849,7 @@ class RunText(SampleBase):
                                     homeColor = red
                                     awayColor = green
                                 offscreen_canvas.SetImage(
-                                    teamLogosNFL[game[30]], pos + offset, -5
+                                    teamLogosNFL[game[27]], pos + offset, -5
                                 )
                                 versus = graphics.DrawText(
                                     offscreen_canvas,
@@ -7857,16 +7857,16 @@ class RunText(SampleBase):
                                     pos
                                     + offset
                                     + buffer
-                                    + teamLogosNFL[game[30]].width,
+                                    + teamLogosNFL[game[27]].width,
                                     24,
                                     white,
                                     "vs",
                                 )
                                 offscreen_canvas.SetImage(
-                                    teamLogosNFL[game[31]],
+                                    teamLogosNFL[game[28]],
                                     pos
                                     + offset
-                                    + teamLogosNFL[game[30]].width
+                                    + teamLogosNFL[game[27]].width
                                     + buffer
                                     + buffer
                                     + buffer
@@ -7879,9 +7879,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogosNFL[game[30]].width
+                                    + teamLogosNFL[game[27]].width
                                     + versus
-                                    + teamLogosNFL[game[31]].width
+                                    + teamLogosNFL[game[28]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -7894,9 +7894,9 @@ class RunText(SampleBase):
                                     smallFont,
                                     pos
                                     + offset
-                                    + teamLogosNFL[game[30]].width
+                                    + teamLogosNFL[game[27]].width
                                     + versus
-                                    + teamLogosNFL[game[31]].width
+                                    + teamLogosNFL[game[28]].width
                                     + buffer
                                     + buffer
                                     + buffer,
@@ -7909,17 +7909,17 @@ class RunText(SampleBase):
                                     scoreLocation = (
                                         homeTeam
                                         + buffer
-                                        + teamLogosNFL[game[30]].width
+                                        + teamLogosNFL[game[27]].width
                                         + versus
-                                        + teamLogosNFL[game[31]].width
+                                        + teamLogosNFL[game[28]].width
                                     )
                                 else:
                                     scoreLocation = (
                                         awayTeam
                                         + buffer
-                                        + teamLogosNFL[game[30]].width
+                                        + teamLogosNFL[game[27]].width
                                         + versus
-                                        + teamLogosNFL[game[31]].width
+                                        + teamLogosNFL[game[28]].width
                                     )
                                 awayTeamStatus = graphics.DrawText(
                                     offscreen_canvas,
