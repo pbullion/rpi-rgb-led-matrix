@@ -360,6 +360,16 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
+                "5075992": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5075992 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "5142277": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5142277 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "5145681": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5145681 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "5222338": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5222338 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "5216849": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5216849 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "5220883": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5220883 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "4082400": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4082400 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "5153082": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5153082 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "4047571": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4047571 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "5216851": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5216851 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
             "5195917": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5195917 Background Removed.png"
             )
