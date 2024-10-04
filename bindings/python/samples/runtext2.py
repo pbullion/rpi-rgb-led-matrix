@@ -360,6 +360,30 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
+                "2500946": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/2500946 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "2504639": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/2504639 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "2559934": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/2559934 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "3032972": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3032972 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "2500735": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/2500735 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "3887606": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3887606 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "4873642": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4873642 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "5144068": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5144068 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "4018757": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4018757 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "4397797": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4397797 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "4379258": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4379258 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "5080935": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5080935 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "2615077": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/2615077 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "4024714": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4024714 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "4039865": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4039865 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "4332765": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4332765 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "3943695": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/3943695 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "4411508": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4411508 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "2447641": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/2447641 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "4410868": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4410868 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "2951361": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/2951361 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "2995167": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/2995167 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "4028627": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4028627 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
+    "4705658": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/4705658 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
                 "5075992": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5075992 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
     "5142277": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5142277 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
     "5145681": Image.open("/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mma/5145681 Background Removed.png").convert("RGB").resize((45, 45), Image.ANTIALIAS),
@@ -3944,7 +3968,7 @@ class RunText(SampleBase):
                 ).raw
             )
             .convert("RGB")
-            .resize((50, 40), Image.ANTIALIAS),
+            .resize((40, 40), Image.ANTIALIAS),
             # "New York Yankees": Image.open(
             #     requests.get(
             #         "https://loodibee.com/wp-content/uploads/mlb-new-york-yankees- Background Removed.png",
