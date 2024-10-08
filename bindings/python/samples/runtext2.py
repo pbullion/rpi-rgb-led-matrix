@@ -4640,6 +4640,11 @@ class RunText(SampleBase):
             )
             .convert("RGB")
             .resize((45, 45), Image.ANTIALIAS),
+            "Utah Hockey Club": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/utah Background Removed.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
             "Boston Bruins": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bruins Background Removed.png"
             )
