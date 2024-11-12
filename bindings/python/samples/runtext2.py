@@ -4465,156 +4465,156 @@ class RunText(SampleBase):
             # )
             # .convert("RGB")
             # .resize((45,45), Image.ANTIALIAS),
-            # "Atlanta Hawks": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/hawks.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Boston Celtics": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/celtics.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Brooklyn Nets": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nets.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Charlotte Hornets": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/hornets.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Chicago Bulls": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bulls.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Cleveland Cavaliers": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/cavs.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Dallas Mavericks": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mavs.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Denver Nuggets": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nuggets.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Detroit Pistons": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pistons.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Golden State Warriors": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/warriors.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Houston Rockets": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/rockets.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Indiana Pacers": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pacers.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Los Angeles Clippers": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/clippers.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Los Angeles Lakers": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/lakers.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Memphis Grizzlies": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/grizzlies.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Miami Heat": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/heat.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Milwaukee Bucks": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bucks.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Minnesota Timberwolves": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/twolves.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "New Orleans Pelicans": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pelicans.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "New York Knicks": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/knicks.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Oklahoma City Thunder": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/thunder.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Orlando Magic": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/magic.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Philadelphia 76ers": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/76ers.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Phoenix Suns": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/suns.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Portland Trail Blazers": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/blazers.png",
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Sacramento Kings": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/kings.png",
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "San Antonio Spurs": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/spurs.png",
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Toronto Raptors": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/raptors.png"
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Utah Jazz": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/jazz.png",
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
-            # "Washington Wizards": Image.open(
-            #     "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/wizards.png",
-            # )
-            # .convert("RGB")
-            # .resize((45, 45), Image.ANTIALIAS),
+            "Atlanta Hawks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/hawks.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Boston Celtics": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/celtics.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Brooklyn Nets": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nets.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Charlotte Hornets": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/hornets.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Chicago Bulls": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bulls.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Cleveland Cavaliers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/cavs.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Dallas Mavericks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/mavs.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Denver Nuggets": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/nuggets.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Detroit Pistons": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pistons.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Golden State Warriors": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/warriors.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Houston Rockets": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/rockets.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Indiana Pacers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pacers.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Los Angeles Clippers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/clippers.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Los Angeles Lakers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/lakers.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Memphis Grizzlies": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/grizzlies.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Miami Heat": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/heat.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Milwaukee Bucks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/bucks.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Minnesota Timberwolves": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/twolves.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "New Orleans Pelicans": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/pelicans.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "New York Knicks": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/knicks.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Oklahoma City Thunder": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/thunder.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Orlando Magic": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/magic.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Philadelphia 76ers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/76ers.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Phoenix Suns": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/suns.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Portland Trail Blazers": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/blazers.png",
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Sacramento Kings": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/kings.png",
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "San Antonio Spurs": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/spurs.png",
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Toronto Raptors": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/raptors.png"
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Utah Jazz": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/jazz.png",
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
+            "Washington Wizards": Image.open(
+                "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/wizards.png",
+            )
+            .convert("RGB")
+            .resize((45, 45), Image.ANTIALIAS),
             "Ducks": Image.open(
                 "/home/pi/rpi-rgb-led-matrix/bindings/python/samples/images/logos/ducks Background Removed.png",
             )
