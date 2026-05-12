@@ -314,10 +314,12 @@ class RunText(SampleBase):
                             smallFont,
                             runningCount,
                             11,
-                            green
-                            if int(item["awayTeam"]["score"])
-                            > int(item["homeTeam"]["score"])
-                            else red,
+                            (
+                                green
+                                if int(item["awayTeam"]["score"])
+                                > int(item["homeTeam"]["score"])
+                                else red
+                            ),
                             item["awayTeam"]["score"],
                         )
                         homeScore = graphics.DrawText(
@@ -325,10 +327,12 @@ class RunText(SampleBase):
                             smallFont,
                             runningCount,
                             24,
-                            green
-                            if int(item["homeTeam"]["score"])
-                            > int(item["awayTeam"]["score"])
-                            else red,
+                            (
+                                green
+                                if int(item["homeTeam"]["score"])
+                                > int(item["awayTeam"]["score"])
+                                else red
+                            ),
                             item["homeTeam"]["score"],
                         )
                         runningCount = runningCount + homeScore + 10
@@ -337,10 +341,12 @@ class RunText(SampleBase):
                             smallFont,
                             runningCount,
                             11,
-                            green
-                            if int(item["awayTeam"]["score"])
-                            > int(item["homeTeam"]["score"])
-                            else red,
+                            (
+                                green
+                                if int(item["awayTeam"]["score"])
+                                > int(item["homeTeam"]["score"])
+                                else red
+                            ),
                             item["awayTeam"]["hits"]["displayValue"],
                         )
                         awayHitTotal = graphics.DrawText(
@@ -348,10 +354,12 @@ class RunText(SampleBase):
                             smallFont,
                             runningCount,
                             24,
-                            green
-                            if int(item["homeTeam"]["score"])
-                            > int(item["awayTeam"]["score"])
-                            else red,
+                            (
+                                green
+                                if int(item["homeTeam"]["score"])
+                                > int(item["awayTeam"]["score"])
+                                else red
+                            ),
                             item["homeTeam"]["hits"]["displayValue"],
                         )
                         runningCount = runningCount + homeHitTotal + 10
@@ -360,10 +368,12 @@ class RunText(SampleBase):
                             smallFont,
                             runningCount,
                             11,
-                            green
-                            if int(item["awayTeam"]["score"])
-                            > int(item["homeTeam"]["score"])
-                            else red,
+                            (
+                                green
+                                if int(item["awayTeam"]["score"])
+                                > int(item["homeTeam"]["score"])
+                                else red
+                            ),
                             item["awayTeam"]["errors"]["displayValue"],
                         )
                         awayErrorTotal = graphics.DrawText(
@@ -371,10 +381,12 @@ class RunText(SampleBase):
                             smallFont,
                             runningCount,
                             24,
-                            green
-                            if int(item["homeTeam"]["score"])
-                            > int(item["awayTeam"]["score"])
-                            else red,
+                            (
+                                green
+                                if int(item["homeTeam"]["score"])
+                                > int(item["awayTeam"]["score"])
+                                else red
+                            ),
                             item["homeTeam"]["errors"]["displayValue"],
                         )
                         runningCount = runningCount + homeErrorTotal + 10
@@ -645,10 +657,12 @@ class RunText(SampleBase):
                                 smallFont,
                                 runningCount,
                                 11,
-                                green
-                                if int(item["awayTeam"]["score"])
-                                > int(item["homeTeam"]["score"])
-                                else red,
+                                (
+                                    green
+                                    if int(item["awayTeam"]["score"])
+                                    > int(item["homeTeam"]["score"])
+                                    else red
+                                ),
                                 item["awayTeam"]["score"],
                             )
                             homeScore = graphics.DrawText(
@@ -656,10 +670,12 @@ class RunText(SampleBase):
                                 smallFont,
                                 runningCount,
                                 24,
-                                green
-                                if int(item["homeTeam"]["score"])
-                                > int(item["awayTeam"]["score"])
-                                else red,
+                                (
+                                    green
+                                    if int(item["homeTeam"]["score"])
+                                    > int(item["awayTeam"]["score"])
+                                    else red
+                                ),
                                 item["homeTeam"]["score"],
                             )
                             runningCount = runningCount + homeScore + 10
@@ -668,10 +684,12 @@ class RunText(SampleBase):
                                 smallFont,
                                 runningCount,
                                 11,
-                                green
-                                if int(item["awayTeam"]["score"])
-                                > int(item["homeTeam"]["score"])
-                                else red,
+                                (
+                                    green
+                                    if int(item["awayTeam"]["score"])
+                                    > int(item["homeTeam"]["score"])
+                                    else red
+                                ),
                                 item["awayTeam"]["hits"]["displayValue"],
                             )
                             awayHitTotal = graphics.DrawText(
@@ -679,10 +697,12 @@ class RunText(SampleBase):
                                 smallFont,
                                 runningCount,
                                 24,
-                                green
-                                if int(item["homeTeam"]["score"])
-                                > int(item["awayTeam"]["score"])
-                                else red,
+                                (
+                                    green
+                                    if int(item["homeTeam"]["score"])
+                                    > int(item["awayTeam"]["score"])
+                                    else red
+                                ),
                                 item["homeTeam"]["hits"]["displayValue"],
                             )
                             runningCount = runningCount + homeHitTotal + 10
@@ -691,10 +711,12 @@ class RunText(SampleBase):
                                 smallFont,
                                 runningCount,
                                 11,
-                                green
-                                if int(item["awayTeam"]["score"])
-                                > int(item["homeTeam"]["score"])
-                                else red,
+                                (
+                                    green
+                                    if int(item["awayTeam"]["score"])
+                                    > int(item["homeTeam"]["score"])
+                                    else red
+                                ),
                                 item["awayTeam"]["errors"]["displayValue"],
                             )
                             awayErrorTotal = graphics.DrawText(
@@ -702,10 +724,12 @@ class RunText(SampleBase):
                                 smallFont,
                                 runningCount,
                                 24,
-                                green
-                                if int(item["homeTeam"]["score"])
-                                > int(item["awayTeam"]["score"])
-                                else red,
+                                (
+                                    green
+                                    if int(item["homeTeam"]["score"])
+                                    > int(item["awayTeam"]["score"])
+                                    else red
+                                ),
                                 item["homeTeam"]["errors"]["displayValue"],
                             )
                             runningCount = runningCount + homeErrorTotal + 5
@@ -1022,10 +1046,12 @@ class RunText(SampleBase):
                             middleFont,
                             runningCount,
                             14,
-                            green
-                            if int(item["awayTeam"]["score"])
-                            > int(item["homeTeam"]["score"])
-                            else red,
+                            (
+                                green
+                                if int(item["awayTeam"]["score"])
+                                > int(item["homeTeam"]["score"])
+                                else red
+                            ),
                             item["awayTeam"]["score"],
                         )
                         homeScore = graphics.DrawText(
@@ -1033,10 +1059,12 @@ class RunText(SampleBase):
                             middleFont,
                             runningCount,
                             29,
-                            green
-                            if int(item["homeTeam"]["score"])
-                            > int(item["awayTeam"]["score"])
-                            else red,
+                            (
+                                green
+                                if int(item["homeTeam"]["score"])
+                                > int(item["awayTeam"]["score"])
+                                else red
+                            ),
                             item["homeTeam"]["score"],
                         )
                         runningCount = runningCount + homeScore + 10
@@ -1105,10 +1133,12 @@ class RunText(SampleBase):
                             smallFont,
                             runningCount,
                             12,
-                            green
-                            if int(item["awayTeam"]["score"])
-                            > int(item["homeTeam"]["score"])
-                            else red,
+                            (
+                                green
+                                if int(item["awayTeam"]["score"])
+                                > int(item["homeTeam"]["score"])
+                                else red
+                            ),
                             item["awayTeam"]["score"],
                         )
                         homeScore = graphics.DrawText(
@@ -1116,10 +1146,12 @@ class RunText(SampleBase):
                             smallFont,
                             runningCount,
                             23,
-                            green
-                            if int(item["homeTeam"]["score"])
-                            > int(item["awayTeam"]["score"])
-                            else red,
+                            (
+                                green
+                                if int(item["homeTeam"]["score"])
+                                > int(item["awayTeam"]["score"])
+                                else red
+                            ),
                             item["homeTeam"]["score"],
                         )
                         runningCount = runningCount + homeScore + 10
@@ -1354,9 +1386,11 @@ class RunText(SampleBase):
                             )
                         teamName = graphics.DrawText(
                             canvas,
-                            alilbiggerFont
-                            if team["team"] == "Mariners"
-                            else slightlyBiggerFont,
+                            (
+                                alilbiggerFont
+                                if team["team"] == "Mariners"
+                                else slightlyBiggerFont
+                            ),
                             0,
                             runningBuffer,
                             teamColorSecondary,
@@ -1788,6 +1822,89 @@ class RunText(SampleBase):
                         item["currentTime"],
                     )
                     time.sleep(120)
+                elif type(item) is dict and item.get("type") == "claude-usage":
+                    session_pct = item.get("session_pct", 0)
+                    weekly_pct = item.get("weekly_pct", 0)
+                    session_reset_min = item.get("session_reset_min", 0)
+                    weekly_reset_min = item.get("weekly_reset_min", 0)
+
+                    def usage_color(pct):
+                        if pct >= 80:
+                            return red
+                        elif pct >= 50:
+                            return yellow
+                        else:
+                            return green
+
+                    session_color = usage_color(session_pct)
+                    weekly_color = usage_color(weekly_pct)
+
+                    if session_reset_min < 60:
+                        session_reset_str = "{}m".format(int(session_reset_min))
+                    else:
+                        h = int(session_reset_min // 60)
+                        m = int(session_reset_min % 60)
+                        session_reset_str = "{}h{}m".format(h, m)
+
+                    if weekly_reset_min < 1440:
+                        wh = int(weekly_reset_min // 60)
+                        weekly_reset_str = "{}h".format(wh)
+                    else:
+                        d = int(weekly_reset_min // 1440)
+                        wh = int((weekly_reset_min % 1440) // 60)
+                        weekly_reset_str = "{}d{}h".format(d, wh)
+
+                    # Labels + pct text
+                    graphics.DrawText(canvas, alilbiggerFont, 0, 10, white, "5H")
+                    graphics.DrawText(canvas, alilbiggerFont, 65, 10, white, "7D")
+                    graphics.DrawText(
+                        canvas,
+                        smallestFont,
+                        22,
+                        10,
+                        session_color,
+                        "{}%".format(session_pct),
+                    )
+                    graphics.DrawText(
+                        canvas,
+                        smallestFont,
+                        87,
+                        10,
+                        weekly_color,
+                        "{}%".format(weekly_pct),
+                    )
+
+                    # Bars: each occupies x=0..59 (left) and x=65..124 (right), y=13..18 (4px tall)
+                    BAR_W = 59
+                    session_fill = int(BAR_W * session_pct / 100)
+                    weekly_fill = int(BAR_W * weekly_pct / 100)
+                    for by in range(13, 19):
+                        # background (dark grey)
+                        graphics.DrawLine(
+                            canvas, 0, by, BAR_W, by, graphics.Color(40, 40, 40)
+                        )
+                        graphics.DrawLine(
+                            canvas, 65, by, 65 + BAR_W, by, graphics.Color(40, 40, 40)
+                        )
+                        # filled portion
+                        if session_fill > 0:
+                            graphics.DrawLine(
+                                canvas, 0, by, session_fill, by, session_color
+                            )
+                        if weekly_fill > 0:
+                            graphics.DrawLine(
+                                canvas, 65, by, 65 + weekly_fill, by, weekly_color
+                            )
+
+                    # Reset countdowns
+                    graphics.DrawText(
+                        canvas, smallestFont, 0, 28, white,  session_reset_str
+                    )
+                    graphics.DrawText(
+                        canvas, smallestFont, 65, 28, white,  weekly_reset_str
+                    )
+
+                    time.sleep(10)
                 else:
                     time.sleep(0)
                 canvas.Clear()
