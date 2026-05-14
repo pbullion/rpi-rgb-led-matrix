@@ -1854,55 +1854,46 @@ class RunText(SampleBase):
                         wh = int((weekly_reset_min % 1440) // 60)
                         weekly_reset_str = "{}d{}h".format(d, wh)
 
-                    # Labels + pct text
-                    graphics.DrawText(canvas, alilbiggerFont, 0, 10, white, "5H")
-                    graphics.DrawText(canvas, alilbiggerFont, 65, 10, white, "7D")
-                    graphics.DrawText(
-                        canvas,
-                        smallestFont,
-                        22,
-                        10,
-                        session_color,
-                        "{}%".format(session_pct),
-                    )
-                    graphics.DrawText(
-                        canvas,
-                        smallestFont,
-                        87,
-                        10,
-                        weekly_color,
-                        "{}%".format(weekly_pct),
-                    )
-
-                    # Bars: each occupies x=0..59 (left) and x=65..124 (right), y=13..18 (4px tall)
-                    BAR_W = 59
+                    # Stacked layout on 128x32 display
+                    BAR_W = 127
                     session_fill = int(BAR_W * session_pct / 100)
                     weekly_fill = int(BAR_W * weekly_pct / 100)
-                    for by in range(13, 19):
-                        # background (dark grey)
+
+                    # --- Top half: 5H ---
+                    graphics.DrawText(
+                        canvas,
+                        smallestFont,
+                        0,
+                        7,
+                        session_color,
+                        "5H {}%  resets in {}".format(session_pct, session_reset_str),
+                    )
+                    for by in range(9, 14):
                         graphics.DrawLine(
                             canvas, 0, by, BAR_W, by, graphics.Color(40, 40, 40)
                         )
-                        graphics.DrawLine(
-                            canvas, 65, by, 65 + BAR_W, by, graphics.Color(40, 40, 40)
-                        )
-                        # filled portion
                         if session_fill > 0:
                             graphics.DrawLine(
                                 canvas, 0, by, session_fill, by, session_color
                             )
+
+                    # --- Bottom half: 7D ---
+                    graphics.DrawText(
+                        canvas,
+                        smallestFont,
+                        0,
+                        22,
+                        weekly_color,
+                        "7D {}%  resets in {}".format(weekly_pct, weekly_reset_str),
+                    )
+                    for by in range(24, 29):
+                        graphics.DrawLine(
+                            canvas, 0, by, BAR_W, by, graphics.Color(40, 40, 40)
+                        )
                         if weekly_fill > 0:
                             graphics.DrawLine(
-                                canvas, 65, by, 65 + weekly_fill, by, weekly_color
+                                canvas, 0, by, weekly_fill, by, weekly_color
                             )
-
-                    # Reset countdowns
-                    graphics.DrawText(
-                        canvas, smallestFont, 0, 28, white,  session_reset_str
-                    )
-                    graphics.DrawText(
-                        canvas, smallestFont, 65, 28, white,  weekly_reset_str
-                    )
 
                     time.sleep(10)
                 else:
