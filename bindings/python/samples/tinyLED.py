@@ -1862,7 +1862,7 @@ class RunText(SampleBase):
                     # --- Top half: 5H ---
                     graphics.DrawText(
                         canvas,
-                        smallestFont,
+                        alilbiggerFont,
                         0,
                         7,
                         session_color,
@@ -1880,7 +1880,7 @@ class RunText(SampleBase):
                     # --- Bottom half: 7D ---
                     graphics.DrawText(
                         canvas,
-                        smallestFont,
+                        alilbiggerFont,
                         0,
                         22,
                         weekly_color,
