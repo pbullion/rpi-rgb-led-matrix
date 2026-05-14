@@ -1839,20 +1839,21 @@ class RunText(SampleBase):
                     session_color = usage_color(session_pct)
                     weekly_color = usage_color(weekly_pct)
 
-                    if session_reset_min < 60:
-                        session_reset_str = "{}m".format(int(session_reset_min))
+                    sh = int(session_reset_min // 60)
+                    sm = int(session_reset_min % 60)
+                    if sh == 0:
+                        session_reset_str = "{} min".format(sm)
                     else:
-                        h = int(session_reset_min // 60)
-                        m = int(session_reset_min % 60)
-                        session_reset_str = "{}h{}m".format(h, m)
+                        session_reset_str = "{} hrs {} min".format(sh, sm)
 
-                    if weekly_reset_min < 1440:
-                        wh = int(weekly_reset_min // 60)
-                        weekly_reset_str = "{}h".format(wh)
+                    wd = int(weekly_reset_min // 1440)
+                    wh = int((weekly_reset_min % 1440) // 60)
+                    if wd == 0:
+                        weekly_reset_str = "{} hrs".format(wh)
+                    elif wd == 1:
+                        weekly_reset_str = "1 day {} hrs".format(wh)
                     else:
-                        d = int(weekly_reset_min // 1440)
-                        wh = int((weekly_reset_min % 1440) // 60)
-                        weekly_reset_str = "{}d{}h".format(d, wh)
+                        weekly_reset_str = "{} days {} hrs".format(wd, wh)
 
                     # Stacked layout on 128x32 display
                     BAR_W = 127
@@ -1917,7 +1918,7 @@ class RunText(SampleBase):
                                 canvas, 0, by, weekly_fill, by, weekly_color
                             )
 
-                    time.sleep(10)
+                    time.sleep(15)
                 else:
                     time.sleep(0)
                 canvas.Clear()
