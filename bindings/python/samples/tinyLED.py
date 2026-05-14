@@ -1865,8 +1865,19 @@ class RunText(SampleBase):
                         alilbiggerFont,
                         0,
                         7,
-                        session_color,
-                        "5H {}%  resets in {}".format(session_pct, session_reset_str),
+                        purple,
+                        "5H {}%".format(session_pct),
+                    )
+                    session_reset_w = graphics.DrawText(
+                        canvas, alilbiggerFont, 150, 7, black, session_reset_str
+                    )
+                    graphics.DrawText(
+                        canvas,
+                        alilbiggerFont,
+                        127 - session_reset_w,
+                        7,
+                        purple,
+                        session_reset_str,
                     )
                     for by in range(9, 14):
                         graphics.DrawLine(
@@ -1883,8 +1894,19 @@ class RunText(SampleBase):
                         alilbiggerFont,
                         0,
                         22,
-                        weekly_color,
-                        "7D {}%  resets in {}".format(weekly_pct, weekly_reset_str),
+                        purple,
+                        "7D {}%".format(weekly_pct),
+                    )
+                    weekly_reset_w = graphics.DrawText(
+                        canvas, alilbiggerFont, 150, 22, black, weekly_reset_str
+                    )
+                    graphics.DrawText(
+                        canvas,
+                        alilbiggerFont,
+                        127 - weekly_reset_w,
+                        22,
+                        purple,
+                        weekly_reset_str,
                     )
                     for by in range(24, 29):
                         graphics.DrawLine(
