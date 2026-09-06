@@ -9846,15 +9846,38 @@ class RunText(SampleBase):
                             homeTeamStatus = 0
                             newBuffer = 120
                             if "golf" == game[0]:
+                                # Between tournaments the backend sends a
+                                # HEADER-ONLY block -- just [name, dates], no
+                                # player rows -- because ESPN has no field yet.
+                                # Two things have to change for that case, and
+                                # both are scoped to it so a live tournament
+                                # renders exactly as it did before:
+                                #   1. draw the dates too, otherwise the panel
+                                #      shows a tournament name with no hint
+                                #      that it has not started.
+                                #   2. advance by the REAL text width. The
+                                #      hardcoded 50 below is fine when player
+                                #      rows follow and add their own offsets,
+                                #      but on its own it ends the scroll at
+                                #      pos < -50 -- snapping the name off
+                                #      screen while most of it is still
+                                #      visible. DrawText returns the width in
+                                #      pixels (same use as line ~9534).
+                                headerOnly = len(arr) == 1
+                                headerText = game[1]
+                                if headerOnly and len(game) > 2 and game[2]:
+                                    headerText = headerText + "  " + game[2]
                                 tournamentName = graphics.DrawText(
                                     offscreen_canvas,
                                     middleFont,
                                     pos + offset,
                                     16,
                                     white,
-                                    game[1],
+                                    headerText,
                                 )
-                                offset = offset + 50
+                                offset = offset + (
+                                    tournamentName + 20 if headerOnly else 50
+                                )
                             if "golf" != game[0]:
                                 athID = game[0]
                                 position = game[1]
